@@ -7,6 +7,7 @@ block_week: 13
 distance_km: 11.3
 duration_s: 5400
 target_mode: effort
+anchor: true
 intent: >
   The second half of the Big Day weekend, and the closest this block gets to rehearsing the thing
   that actually decides a 100-miler. Start 03:00, on ~5 hours of sleep, on legs that ran 50k

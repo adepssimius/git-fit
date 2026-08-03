@@ -64,6 +64,8 @@ class Event:
     detail: str = ""
     authored: bool = True   # False = seed placeholder, not yet authored in endurance/
     excluded_from_budget: bool = False  # concurrent:meetings sessions
+    kind: str = ""          # frontmatter `type`
+    key: bool = False       # anchor session worth spotting at a glance
 
 
 # ---------------------------------------------------------------------------
@@ -84,6 +86,12 @@ def parse_frontmatter(text: str) -> dict:
         m = re.match(r"^(\w+):\s*(.*)$", line)
         if m and not line.startswith(" "):
             key, val = m.group(1), m.group(2).strip()
+            if val in (">", "|", ">-", "|-") and key == "budget_exception":
+                data[key] = "yes"
+                i += 1
+                while i < len(lines) and (lines[i].startswith("  ") or lines[i].strip() == ""):
+                    i += 1
+                continue
             if val in (">", "|", ">-", "|-"):
                 i += 1
                 buf = []
@@ -131,6 +139,9 @@ def load_endurance_events(root: Path) -> list[Event]:
             detail=fm.get("intent", ""),
             authored=True,
             excluded_from_budget=(fm.get("concurrent") == "meetings"),
+            kind=fm.get("type", ""),
+            key=(fm.get("type") in ("lap-sim", "race", "night")
+                 or "budget_exception" in fm or fm.get("anchor") == "true"),
         ))
     return events
 
@@ -178,6 +189,25 @@ def load_strength_events(root: Path) -> list[Event]:
             exercises.append(m_ex.group(1).strip())
     flush()
     return events
+
+
+def block_week_of(d: date) -> int | None:
+    """Block week for any date, from the fixed week-9 anchor. None outside the block."""
+    wk = 9 + (d - BLOCK_WEEK_9_START).days // 7
+    return wk if 9 <= wk <= 19 else None
+
+
+def load_week_labels(root: Path) -> dict[int, str]:
+    """Short label per block week, scraped from training/weeks/wNN.md headlines."""
+    labels = {}
+    for f in (root / "training" / "weeks").glob("w*.md"):
+        m_wk = re.match(r"w(\d+)\.md", f.name)
+        if not m_wk:
+            continue
+        m = re.search(r"\*\*Champion week \d+ — ([^.*]+)\.?\*\*", f.read_text())
+        if m:
+            labels[int(m_wk.group(1))] = m.group(1).strip()
+    return labels
 
 
 def load_race_days(root: Path) -> dict[date, str]:
@@ -279,7 +309,8 @@ def render_day_cell(d: date, month: int, events_by_date: dict[date, list[Event]]
                 parts.append(f"· {ev.distance_km:g}km")
             title = html.escape(ev.detail) if ev.detail else html.escape(ev.name)
             style = f"border-left-color:{color}"
-            body.append(f'<div class="badge" style="{style}" title="{title}">{" ".join(parts)}</div>')
+            cls = "badge key" if ev.key else "badge"
+            body.append(f'<div class="{cls}" style="{style}" title="{title}">{" ".join(parts)}</div>')
 
     return f'<td class="{" ".join(classes)}">{"".join(body)}</td>'
 
@@ -320,6 +351,57 @@ def render_month(year: int, month: int, events_by_date: dict[date, list[Event]],
         <tbody>{"".join(rows)}</tbody>
       </table>
     </section>
+    """
+
+
+def build_summary(events_by_date, week_labels, weekly_budget, race_days) -> str:
+    """One-row-per-block-week overview: volume, longest session, key anchor session."""
+    rows = []
+    for wk in range(9, 20):
+        start = BLOCK_WEEK_9_START + timedelta(weeks=wk - 9)
+        days = [start + timedelta(days=i) for i in range(7)]
+        run = walk = ride = 0.0
+        longest = 0.0
+        longest_name = ""
+        anchors = []
+        for d in days:
+            for ev in events_by_date.get(d, []):
+                if not ev.authored or ev.sport == "Lift":
+                    continue
+                if ev.excluded_from_budget:
+                    if ev.sport == "Walk":
+                        walk += ev.duration_min or 0
+                    else:
+                        ride += ev.duration_min or 0
+                    continue
+                if ev.kind == "race":
+                    anchors.append("🏁 RACE")
+                    continue
+                run += ev.duration_min or 0
+                if (ev.duration_min or 0) > longest:
+                    longest, longest_name = ev.duration_min, ev.name
+                if ev.key:
+                    anchors.append(ev.name.split("—")[0].strip())
+        label = week_labels.get(wk, "")
+        cls = "race" if any("RACE" in a for a in anchors) else (
+              "peak" if weekly_budget and run > weekly_budget * 0.78 else "")
+        hrs = f"{int(longest)//60}h{int(longest)%60:02d}" if longest else "—"
+        rows.append(
+            f"<tr class='{cls}'><td><b>W{wk}</b></td>"
+            f"<td>{start.strftime('%b %-d')}</td>"
+            f"<td>{html.escape(label)}</td>"
+            f"<td class='num'>{int(run)}</td>"
+            f"<td class='num'>{hrs}</td>"
+            f"<td class='num'>{int(walk)}</td>"
+            f"<td class='num'>{int(ride)}</td>"
+            f"<td>{html.escape(', '.join(dict.fromkeys(anchors))) or '—'}</td></tr>")
+    return f"""
+    <h2>The block at a glance</h2>
+    <table class="summary">
+      <thead><tr><th>Wk</th><th>Starts</th><th>Character</th><th>Run min</th>
+      <th>Longest</th><th>Walk</th><th>Ride</th><th>Anchor session</th></tr></thead>
+      <tbody>{''.join(rows)}</tbody>
+    </table>
     """
 
 
@@ -371,6 +453,7 @@ PAGE_TEMPLATE = """<!doctype html>
     text-overflow: ellipsis;
   }}
   .badge.race-badge {{ border-left-color: #c92a2a; font-weight: 600; }}
+  .badge.key {{ font-weight: 700; background: color-mix(in srgb, var(--fg) 12%, var(--card)); }}
   .badge.seed {{ color: var(--muted); border-left-style: dashed; font-style: italic; }}
   td.total-cell {{
     text-align: right; vertical-align: middle; font-size: 12.5px; color: var(--muted);
@@ -378,6 +461,16 @@ PAGE_TEMPLATE = """<!doctype html>
   }}
   td.total-cell.over {{ color: #e03131; font-weight: 600; }}
   td.total-cell .unit {{ font-size: 10px; }}
+  td.total-cell .wk {{ font-weight: 700; color: var(--fg); font-size: 12px; }}
+  table.summary {{ min-width: 640px; margin-bottom: 28px; }}
+  table.summary th, table.summary td {{ border: 1px solid var(--border); padding: 5px 8px;
+        font-size: 12.5px; text-align: left; color: var(--fg); text-transform: none;
+        letter-spacing: 0; }}
+  table.summary th {{ color: var(--muted); font-size: 11.5px; text-transform: uppercase; }}
+  table.summary td.num {{ text-align: right; font-variant-numeric: tabular-nums; }}
+  table.summary tr.peak td {{ background: color-mix(in srgb, var(--fg) 7%, var(--card)); }}
+  table.summary tr.race td {{ background: color-mix(in srgb, #c92a2a 14%, var(--card));
+        font-weight: 700; }}
   footer {{ margin-top: 32px; color: var(--muted); font-size: 12px; }}
   footer code {{ background: var(--card); padding: 1px 5px; border-radius: 3px; }}
 </style>
@@ -393,6 +486,7 @@ PAGE_TEMPLATE = """<!doctype html>
     <span class="item"><span class="swatch" style="background:#c92a2a"></span>Race day</span>
     <span class="item"><span class="seed-swatch"></span>Old Runna plan, outside this block</span>
   </div>
+  {summary}
   {months}
   <footer>
     Generated by <code>scripts/generate_calendar.py</code> from
@@ -447,7 +541,9 @@ def main():
         f"{next(iter(race_days.keys()), '?')} 9:00 AM."
     )
 
-    out.write_text(PAGE_TEMPLATE.format(subtitle=html.escape(subtitle), months=months_html))
+    summary_html = build_summary(events_by_date, load_week_labels(root), weekly_budget, race_days)
+    out.write_text(PAGE_TEMPLATE.format(subtitle=html.escape(subtitle),
+                                       summary=summary_html, months=months_html))
     print(f"Wrote {out} ({len(all_events)} events across {len(months)} month(s))")
 
 

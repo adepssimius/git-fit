@@ -6,6 +6,7 @@ type: long
 block_week: 16
 duration_s: 14400
 target_mode: effort
+anchor: true
 intent: >
   NIGHT SESSION 3 of 4, and the peak long run, in one session. Start at 03:00 in full night
   kit and run through the dark into sunrise. Race night has ~13 hours of darkness and laps
