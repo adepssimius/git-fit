@@ -14,4 +14,4 @@ published:
 ---
 
 Easy/Moderate
-- 75m 6:15/km Pace
+- 75m 7:15/km Pace

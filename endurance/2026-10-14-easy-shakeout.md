@@ -4,7 +4,7 @@ sport: Run
 name: Easy Shakeout
 type: recovery
 block_week: 19
-distance_km: 5.1
+distance_km: 4.3
 duration_s: 1800
 target_mode: pace
 intent: >
@@ -15,4 +15,4 @@ published:
 ---
 
 Easy
-- 30m 5:50/km Pace
+- 30m 7:00/km Pace

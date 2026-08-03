@@ -17,14 +17,14 @@ published:
 ---
 
 Warmup — headlamp on, full night kit
-- 20m 6:00/km Pace
+- 20m 7:00/km Pace
 
 Night Blocks 9x
-- 20m 6:00/km Pace
+- 20m 7:00/km Pace
 - 3m 9:00/km Pace
 
 Dawn Finish
-- 5m 5:20/km Pace
+- 5m 6:15/km Pace
 
 Cooldown
-- 8m 6:30/km Pace
+- 8m 7:30/km Pace

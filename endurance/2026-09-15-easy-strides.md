@@ -4,8 +4,8 @@ sport: Run
 name: Easy + Hill Strides
 type: easy
 block_week: 15
-distance_km: 8.2
-duration_s: 3000
+distance_km: 6.9
+duration_s: 2950
 target_mode: pace
 intent: >
   Strides — smooth and quick, each one an opportunity to improve leg speed.
@@ -15,11 +15,11 @@ published:
 ---
 
 Warmup
-- 33m 6:00/km Pace
+- 33m 7:00/km Pace
 
 Hill Strides 5x
-- 20s 4:00/km Pace
+- 20s 4:35/km Pace
 - 90s 9:00/km Pace
 
 Cooldown
-- 7m 6:00/km Pace
+- 7m 7:00/km Pace

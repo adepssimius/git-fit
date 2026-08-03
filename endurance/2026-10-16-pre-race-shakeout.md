@@ -4,7 +4,7 @@ sport: Run
 name: Pre-Race Shakeout
 type: recovery
 block_week: 19
-distance_km: 3.4
+distance_km: 2.8
 duration_s: 1200
 target_mode: pace
 intent: >
@@ -16,8 +16,8 @@ published:
 ---
 
 Easy
-- 14m 5:50/km Pace
+- 14m 7:00/km Pace
 
 Pickups 4x
-- 30s 4:30/km Pace
+- 30s 5:10/km Pace
 - 60s 9:00/km Pace

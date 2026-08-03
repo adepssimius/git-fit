@@ -15,15 +15,15 @@ published:
 ---
 
 Warmup
-- 40m 6:05/km Pace
+- 40m 7:00/km Pace
 
 Threshold 4x
-- 6m 5:05/km Pace
+- 6m 5:55/km Pace
 - 2m 9:00/km Pace
 
 Run/Walk 5x
-- 15m 6:00/km Pace
+- 15m 7:00/km Pace
 - 3m 9:00/km Pace
 
 Cooldown
-- 15m 6:15/km Pace
+- 15m 7:15/km Pace

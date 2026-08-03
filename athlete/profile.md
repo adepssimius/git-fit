@@ -30,7 +30,8 @@ time_budget:
   # over-cap session without one, and errors again if more than `long_run_exceptions_per_block`
   # carry it. That keeps "a few exceptions are fine" honest instead of quietly becoming "every
   # long run drifts long."
-  long_run_exception_max_min: 360  # absolute ceiling even for flagged sessions
+  long_run_exception_max_min: 400  # absolute ceiling even for flagged sessions
+                                   # (a genuine 50k at this athlete's moderate effort is ~6h)
   long_run_exceptions_per_block: 3
   sunday_b2b_max_min: 150
   weekly_total_max_min: 600        # running only; excludes meeting-time trainer/walk sessions
@@ -129,23 +130,35 @@ training              STAGE(1mi) --------- TURNAROUND(7.5mi) --------- STAGE
 - The closed first mile is the one section that will be fresh on race day. It's also the section
   already run in the prior 50k here, so it's familiar rather than unknown.
 
-Sessions scheduled on the course (3 trips — deliberately limited, since each costs travel time on
-top of run time, which the running budget does *not* currently account for):
+**The course is 10 minutes away**, so travel is not a meaningful constraint — it's effectively
+the home training ground, and long runs should default to it rather than treating each trip as a
+budgeted expense.
 
-| Block week | Session | Why on-course |
-|---|---|---|
-| 13 (Sep 5) | **Big Day — 50k = 2 full laps, evening start** | Distance, night, course and crew rehearsal in one session |
-| 15 (Sep 19) | Lap Simulation 1 — 1 lap | Real segment geometry and crew stop timing |
-| 17 (Oct 3) | Lap Simulation 2 — 1 lap, full dress rehearsal | Final check on the real thing |
+**The athlete's established resupply setup**, which the plan builds on rather than reinventing:
 
-Week 16's night long run stays local on purpose — its job is the dark→dawn transition, which
-doesn't need the course, and a 4th trip isn't worth the travel.
+```
+  south end of                  CAR                    DROP BAG          north terminus
+  accessible section        (resupply hub)                              (7.5mi turnaround)
+        |------- 3km -------|--------- 5km ---------|------ 2.5km ------|
+        |<---------------- 10.5km accessible section ------------------>|
+```
+
+- **Car parked on the trail ~3km north of the southern end** of the accessible section — the main
+  resupply point, and the natural start/finish for training sessions.
+- **Drop bag ~2.5km from the northern terminus.**
+- From the car: north terminus and back = **14.9km** (drop bag passed twice); south end and back
+  = **6km**; the full accessible out-and-back = **20.9km**, passing the car mid-session.
+- Net effect: resupply every 3–5km in training, versus aid roughly every 6km on race day. The
+  existing setup already approximates race aid density — no need to engineer anything new.
 
 ```yaml
 course_access:
   available: true
-  coverage: "all but the final mile"
-  travel_min_each_way: null        # TODO: fill in — this is real time the budget doesn't yet model
+  coverage: "northern 6.5mi (mile 1 to the 7.5mi turnaround); first mile closed outside race day"
+  travel_min_each_way: 10
+  car_resupply_km_from_south: 3
+  drop_bag_km_from_north_terminus: 2.5
+  full_accessible_out_and_back_km: 20.9
 ```
 
 ## Equipment

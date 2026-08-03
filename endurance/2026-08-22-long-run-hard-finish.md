@@ -15,14 +15,14 @@ published:
 ---
 
 Warmup
-- 30m 6:05/km Pace
+- 30m 7:00/km Pace
 
 Run/Walk 8x
-- 18m 6:00/km Pace
+- 18m 7:00/km Pace
 - 3m 9:00/km Pace
 
 Hard Finish
-- 5m 5:05/km Pace
+- 5m 5:55/km Pace
 
 Cooldown
-- 7m 6:30/km Pace
+- 7m 7:30/km Pace

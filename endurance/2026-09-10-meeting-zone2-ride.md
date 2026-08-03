@@ -4,7 +4,7 @@ sport: Ride
 name: Meeting Z2 + surges
 type: aerobic-base
 block_week: 14
-duration_s: 5400
+duration_s: 3600
 target_mode: power
 concurrent: meetings
 intent: >

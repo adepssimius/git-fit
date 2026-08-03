@@ -15,11 +15,11 @@ published:
 ---
 
 Warmup
-- 15m 6:00/km Pace
+- 15m 7:00/km Pace
 
 Run/Walk 5x
-- 15m 6:05/km Pace
+- 15m 7:00/km Pace
 - 3m 9:00/km Pace
 
 Cooldown
-- 5m 6:30/km Pace
+- 5m 7:30/km Pace

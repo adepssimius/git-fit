@@ -1,41 +1,69 @@
-# Pace, HR, and power zones. Pace zones seeded from what Runna actually prescribed (see
-# seed/runna-plan.md) — real numbers this athlete was already hitting, not generic tables.
-# HR and bike power are unset; fill in from a threshold test before HR-targeted sessions
-# (lap simulations, long runs) become load-bearing — they default to effort/RPE until then.
+# Pace zones derived from ACTUAL RACE/TIME-TRIAL DATA, not from prescribed targets.
+#
+# HISTORY: these were originally seeded from the paces Runna prescribed (tempo 5:05, threshold
+# 4:55, vo2 4:35, easy ceiling 6:05). Those were contradicted by the athlete's own PRs — a 5k PR
+# of 26:30 is 5:18/km, so Runna's "tempo" was FASTER than his best-ever 5k pace, which is not a
+# runnable prescription. Everything below is rebuilt from measured performance instead.
+#
+# Source PRs (all within the 2026 block):
+#   5k   26:30   = 5:18/km   <- anchors VO2/speed end
+#   10k  56:36   = 5:39/km   <- ~57min effort, so 10k pace ~= threshold (LT2)
+#   HM   2:29:51 = 7:06/km   } NOT time trials. Athlete confirms these are the byproduct of
+#   30k  3:41:24 = 7:22/km   } block sessions and progressive long runs with slow segments at
+#                              both ends — so the average pace is dragged down by design and
+#                              UNDERSTATES real capability. Do not use them to set zones.
+#
+# Zones are therefore anchored ONLY on the 5k/10k, which are genuine efforts and mutually
+# consistent (pace ratio 1.068, textbook). Riegel from the 10k predicts a ~2:05 half (5:55/km)
+# versus the 2:29 training-run figure, which is the size of the gap those slow bookends create.
+#
+# Standing caveat: because no long time trial exists, the endurance end of this table is an
+# estimate extrapolated from 10k fitness, and extrapolation flatters runners whose long-run
+# volume is limited. Treat the easy/long numbers as a starting hypothesis to be corrected with
+# real data from the Big Day and the lap simulations — that's what pace_review below is for.
 
 units: { distance: km, pace: min_per_km, load: lb }
 
 pace:
-  # Easy ceiling tightens across the seed plan: 6:10 (wk8) -> 6:05 (wk9-12) -> 6:00 (wk13-15)
-  # -> 5:55 (wk16-17) -> 5:50 (wk18-19). Update this value as each threshold is crossed and
-  # record the date it moved — this is the "get faster" goal made measurable.
-  easy_ceiling: "6:05"
-  easy_ceiling_history:
-    - { through_week: 12, pace: "6:05" }
-    - { through_week: 15, pace: "6:00" }
-    - { through_week: 17, pace: "5:55" }
-    - { through_week: 19, pace: "5:50" }
+  # THE most important number here. This is a CEILING, not a target: easy days must be no
+  # FASTER than this, and slower is always fine. Given the speed/endurance gap above, running
+  # easy days too fast is this athlete's most likely training error, and the one that would
+  # quietly wreck an ultra build. If 7:00 feels like work, go slower.
+  easy_ceiling: "7:00"
+  recovery: "7:45"           # day-after-long-run and shakeout pace
 
-  long_steady: "5:40"        # long-run progressive/steady segments in the seed (30-42km runs)
-  tempo: "5:05"               # the recurring Wednesday tempo number across the whole seed plan
-  threshold: "4:55"           # recurring 1km/1.6km interval pace
-  vo2: "4:35"                 # 400m repeat pace, tightens to 4:25 for 200s later in the plan
+  long_run: "6:50-7:10"      # long-run cruising, easy effort
+  long_steady: "6:30"         # the "steady" segments inside progressive long runs
+  steady: "6:15"              # marathon-ish effort
+  tempo: "5:55"               # sustained ~40-60min effort
+  threshold: "5:40"          # = 10k PR pace; his 10k takes ~57min so this IS ~1-hour pace
+  vo2: "5:18"                # = 5k PR pace
+  rep: "5:05"                # short reps (200-400m), ~3k effort
+  stride: "4:35"             # 20-30s strides — fast but not sprinting form
 
-  walk_recovery: "9:00"       # used for all interval rest steps
+  walk_recovery: "9:00"      # all interval rest steps and race walk breaks
 
-  # Deliberately far slower than Runna's discarded 50km race pace (5:35-5:55/km) — see
-  # races/2026-10-17-ghost-train.md. These are moving paces including planned walk breaks.
-  ultra_lap_early: "7:00-7:30"   # laps 1-2, should feel absurdly easy
-  ultra_lap_late: "8:30-10:00"   # laps 4+, run/walk, moving pace
+  # Ultra targets. Deliberately far slower than anything above: at an 11:11/km cutoff average
+  # for 100mi, the failure mode is starting anywhere near normal easy pace. Lap 1 should feel
+  # almost embarrassingly slow. These are MOVING paces, excluding crew stops.
+  ultra_lap_early: "8:15-8:45"    # laps 1-2
+  ultra_lap_late: "9:45-11:00"    # laps 4+, run/walk
+
+# Re-test triggers: update this file when a new PR lands, or after the Big Day (block week 13)
+# and each lap simulation, which give real long-effort data at ultra pace.
+pace_review:
+  last_updated: "2026-08-03"
+  next_review: "after the Big Day, 2026-09-05"
 
 hr:
-  lthr: null                 # TODO: set from a threshold test or a hard recent tempo effort
+  lthr: null                 # TODO: still worth setting — a threshold test would confirm the
+                             # 5:40/km estimate and unlock HR-targeted long runs
   zones: { z1: null, z2: null, z3: null, z4: null, z5: null }
-  note: "Until set, author HR-targeted sessions (lap-sim, long runs) with target_mode: effort instead."
+  note: "Until set, HR-targeted sessions fall back to target_mode: effort."
 
 bike:
-  ftp_w: null                # TODO: set from a ramp or 20-min test on the trainer
+  ftp_w: null                # TODO: ramp or 20-min test on the trainer
   z2_w: null                 # ~56-75% FTP — the only zone meeting-time trainer sessions use
   cadence: "85-95rpm"
 
-bodyweight_lb: null           # TODO: fill in — used by strength/program.liftoscript accessory sizing
+bodyweight_lb: null          # TODO

@@ -16,11 +16,11 @@ published:
 ---
 
 Warmup
-- 15m 6:05/km Pace
+- 15m 7:00/km Pace
 
 Main Set 6x
-- 4m 4:55/km Pace
-- 90s 7:30/km Pace
+- 4m 5:40/km Pace
+- 90s 8:15/km Pace
 
 Cooldown
-- 10m 6:05/km Pace
+- 10m 7:00/km Pace

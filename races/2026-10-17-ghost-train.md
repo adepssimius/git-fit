@@ -37,31 +37,39 @@ Not chasing a scored lap tier — laps here are a logistics unit, not the object
 
 ## Pacing and clock
 
-30h cutoff = **11:11/km (18:00/mi) average including every stop** for 100 miles — generous given
-existing fitness (42km training runs at ~5:40/km) and course knowledge. The limiter is not speed;
-it's **durability, fueling, and sleep management** overnight. See `athlete/zones.yml` for the
-`ultra_lap_early` / `ultra_lap_late` moving-pace targets used in training and race pacing.
+30h cutoff = **11:11/km (18:00/mi) average including every stop** for 100 miles. See
+`athlete/zones.yml` for the `ultra_lap_early` / `ultra_lap_late` moving-pace targets these splits
+use — those are derived from the athlete's 5k/10k PRs, not from prescribed targets.
 
-**Start 9:00 AM Saturday, cutoff 3:00 PM Sunday.**
+**Start 9:00 AM Saturday, cutoff 3:00 PM Sunday.** Splits include realistic crew stops
+(8-10 min per lap, 5 on the last).
 
-| Lap | Distance (cum.) | Target moving pace | Lap time | Clock | Elapsed |
+| Lap | Cum. distance | Moving pace | Lap time | Clock | Elapsed |
 |---|---|---|---|---|---|
-| 1 | 24.1km | 7:00-7:30/km | ~2h55 | 11:55am Sat | 2h55 |
-| 2 | 48.3km | 7:15-7:45/km | ~3h05 | 3:00pm Sat | 6h00 |
-| 3 | 72.4km | 7:45-8:15/km | ~3h15 | 6:15pm Sat 🌒 | 9h15 |
-| 4 | 96.6km | 8:15-8:45/km | ~3h30 | 9:45pm Sat | 12h45 |
-| **~100km** | **100km** | — | — | **~10:15pm Sat** | **13h15** |
-| 5 | 120.7km | 8:45-9:30/km run/walk | ~3h50 | 1:35am Sun | 16h35 |
-| 6 | 144.8km | run/walk, night pace | ~4h10 | 5:45am Sun | 20h45 |
-| 7 (10mi) | 160.9km | run/walk, fading | ~2h55 | 8:40am Sun ☀️ | **23h40** |
+| 1 | 24.1km | 8:15/km | 3h18 | 12:26pm Sat | 3h26 |
+| 2 | 48.3km | 8:30/km | 3h24 | 4:00pm Sat | 6h59 |
+| 3 | 72.4km | 8:54/km | 3h34 | 7:42pm Sat 🌒 | 10h42 |
+| 4 | 96.6km | 9:24/km | 3h46 | 11:36pm Sat | 14h36 |
+| **~100km** | **100km** | — | — | **~12:08am Sun** | **15h08** |
+| 5 | 120.7km | 10:00/km | 4h01 | 3:47am Sun | 18h47 |
+| 6 | 144.8km | 10:42/km | 4h17 | 8:15am Sun ☀️ | 23h15 |
+| 7 (10mi) | 160.9km | 11:12/km | 3h00 | 11:20am Sun | **26h20** |
 
-The margin is the headline: **100km lands around 10pm Saturday with 17 hours of cutoff left**, and
-even the full 100-mile stretch goal finishes ~8:40am Sunday with **more than 6 hours to spare**.
-Nothing about this race is a speed problem. The deciding factors are durability, feet, fueling, and
-getting through the night — train accordingly (`training/block.md`).
+**How to read this:**
 
-Splits are a training-block estimate; refine as real long-run and lap-simulation data lands in
-`log/`.
+- **100km lands around midnight Saturday, ~15 hours in, with roughly 15 hours of cutoff left.**
+  That goal is not in doubt on current fitness — the question is only how it feels.
+- **100 miles finishes ~11:20am Sunday with about 3h40 of margin.** Real, but not generous. It
+  assumes the late laps hold near 10:00-11:00/km moving, which is where sleep, feet and GI decide
+  the outcome. Losing an hour per lap over laps 5-7 — entirely plausible — eats most of that margin.
+
+> ⚠️ **An earlier version of this file claimed a 6+ hour margin on 100 miles.** That was computed
+> from pace targets Runna prescribed, which turned out to be faster than this athlete's actual 5k
+> PR pace. Rebuilt on real PR data, the margin is roughly 3h40. 100km stays comfortable; 100 miles
+> is a genuine stretch that depends on the back half not unravelling.
+
+Splits are a training-block estimate. Refine them with real data from the Big Day (block week 13)
+and both lap simulations — that's what `athlete/zones.yml` → `pace_review` exists for.
 
 ## The darkness window — over half the race
 

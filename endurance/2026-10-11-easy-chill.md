@@ -4,7 +4,7 @@ sport: Run
 name: Easy — pure chill
 type: recovery
 block_week: 18
-distance_km: 7.7
+distance_km: 6.4
 duration_s: 2700
 target_mode: pace
 intent: >
@@ -15,4 +15,4 @@ published:
 ---
 
 Easy
-- 45m 5:55/km Pace
+- 45m 7:00/km Pace

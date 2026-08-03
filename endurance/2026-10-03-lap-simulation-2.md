@@ -4,8 +4,8 @@ sport: Run
 name: Lap Simulation 2 — one lap on course, full dress rehearsal
 type: lap-sim
 block_week: 17
-distance_km: 24.1
-duration_s: 10620
+distance_km: 24.8
+duration_s: 12320
 target_mode: effort
 intent: >
   LAP SIM 2 of 2 — the complete dress rehearsal, and the last of the three on-course sessions.
@@ -19,17 +19,20 @@ published:
   suunto: null
 ---
 
-Out to the 7.5mi turnaround
-- 10.5km 7:05/km Pace
+Car -> north terminus (drop bag passed at 5km)
+- 7.5km 8:15/km Pace
 
-Turnaround — crew stop, full protocol, timed
+Turnaround — drop-bag check, refuel
 - 3m 9:00/km Pace
 
-Back to staging
-- 10.5km 7:05/km Pace
+North terminus -> car
+- 7.5km 8:15/km Pace
 
-Staging — crew stop, full protocol, timed
+Car — crew stop, sock change, foot care, timed
 - 3m 9:00/km Pace
+
+Car -> south end -> car
+- 6km 8:15/km Pace
 
 Top-up to a full race-lap distance
-- 3.1km 7:10/km Pace
+- 3.1km 8:25/km Pace

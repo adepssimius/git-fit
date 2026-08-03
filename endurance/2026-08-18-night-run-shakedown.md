@@ -4,7 +4,7 @@ sport: Run
 name: Night Run — kit shakedown
 type: night
 block_week: 11
-distance_km: 8.0
+distance_km: 7.1
 duration_s: 3000
 target_mode: pace
 intent: >
@@ -18,10 +18,10 @@ published:
 ---
 
 Warmup
-- 15m 6:05/km Pace
+- 15m 7:00/km Pace
 
 Steady
-- 25m 6:00/km Pace
+- 25m 7:00/km Pace
 
 Cooldown
-- 10m 6:15/km Pace
+- 10m 7:15/km Pace

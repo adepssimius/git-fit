@@ -4,7 +4,7 @@ sport: Run
 name: Night Run — short, taper
 type: night
 block_week: 18
-distance_km: 6.9
+distance_km: 5.7
 duration_s: 2400
 target_mode: pace
 intent: >
@@ -17,10 +17,10 @@ published:
 ---
 
 Warmup
-- 12m 5:50/km Pace
+- 12m 7:00/km Pace
 
 Steady
-- 20m 5:50/km Pace
+- 20m 7:00/km Pace
 
 Cooldown
-- 8m 6:05/km Pace
+- 8m 7:00/km Pace

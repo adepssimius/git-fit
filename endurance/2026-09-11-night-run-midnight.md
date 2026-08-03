@@ -18,11 +18,11 @@ published:
 ---
 
 Warmup
-- 15m 6:00/km Pace
+- 15m 7:00/km Pace
 
 Night Steady 4x
-- 15m 6:00/km Pace
+- 15m 7:00/km Pace
 - 2m 9:00/km Pace
 
 Cooldown
-- 7m 6:30/km Pace
+- 7m 7:30/km Pace

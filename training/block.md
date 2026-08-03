@@ -70,13 +70,15 @@ the seed's drop to 20km the following week lands exactly on its mid-cycle rest b
 - **Weight-vest incline walking** during meeting time — this *is* the Champion Plan's uphill/vest
   work, at zero time cost. Ramp under the same walking rules; see `athlete/profile.md`.
 - **Heat training** — sauna/hot tub 20–30min on rest days. Low stress, real plasma-volume return.
-- **The Big Day** (block wk 13, Sat Sep 5): a **true 50k on the accessible northern 6.5mi of the
-  course, run as three out-and-backs from the staging point (20.9 + 20.9 + 8.2km), starting ~18:00**
-  — then week 14's mid-cycle rest absorbs it. Three passes through the staging point means three
-  crew stops rehearsed, and the real 7.5mi turnaround is hit twice. It is the only session in the
-  block that rehearses distance, surface, turnaround and crew cadence simultaneously, and it carries
-  an explicit budget exception (below). Starting later than 18:00 is fine if preferred — the athlete
-  is comfortable at night — at the cost of a rougher Sunday.
+- **The Big Day weekend** (block wk 13) — the most important 30 hours of the block, deliberately
+  built as **two sessions, not one**:
+  - **Sat Sep 5, ~06:00: a true 50k on course** (three out-and-backs from the car: 20.9 + 20.9 +
+    8.2km, ~6h). Finishing around noon protects the Saturday-afternoon family blackout.
+  - **Sun Sep 6, 03:00: 90min pre-dawn, on ~5h sleep and 15-hour-old 50k legs, in the dark.**
+  Separately, neither session tests the thing that actually decides a 100-miler. Together they
+  stack **fatigue + sleep pressure + darkness**, which is precisely the state race laps 5-6 impose
+  and which nothing else in an 11-week block gets near. Week 14's mid-cycle rest exists to absorb
+  the pair. The Saturday session carries an explicit budget exception (below).
 - **Strength recedes as running stress rises** — Champion drops midweek strength around its week 13
   and ends squats at week 14. Applied here: taper Lower A toward Lower B in character from block
   week 16, last heavy squat day block week 17, no strength race week.

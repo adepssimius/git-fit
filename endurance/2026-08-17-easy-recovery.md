@@ -4,7 +4,7 @@ sport: Run
 name: Easy Recovery
 type: easy
 block_week: 11
-distance_km: 6.5
+distance_km: 5.7
 duration_s: 2400
 target_mode: pace
 intent: >
@@ -15,4 +15,4 @@ published:
 ---
 
 Easy
-- 40m 6:05/km Pace
+- 40m 7:00/km Pace

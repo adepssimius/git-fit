@@ -5,7 +5,7 @@ name: Sunday Back-to-Back
 type: b2b
 block_week: 9
 distance_km: 8.0
-duration_s: 3000
+duration_s: 3440
 target_mode: pace
 intent: >
   Medium-long on tired legs, the day after the long run — the closest available proxy for the back
@@ -17,4 +17,4 @@ published:
 ---
 
 Easy/Moderate
-- 8km 6:10/km Pace
+- 8km 7:10/km Pace

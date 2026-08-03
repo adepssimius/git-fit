@@ -4,8 +4,8 @@ sport: Run
 name: Easy + Hill Strides
 type: easy
 block_week: 10
-distance_km: 7.2
-duration_s: 2700
+distance_km: 6.3
+duration_s: 2710
 target_mode: pace
 intent: >
   Cheap speed stimulus on an easy day. Ease into each stride — the injury risk is higher
@@ -16,11 +16,11 @@ published:
 ---
 
 Warmup
-- 30m 6:05/km Pace
+- 30m 7:00/km Pace
 
 Hill Strides 5x
-- 20s 4:00/km Pace
+- 20s 4:35/km Pace
 - 90s 9:00/km Pace
 
 Cooldown
-- 6m 6:05/km Pace
+- 6m 7:00/km Pace

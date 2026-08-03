@@ -5,7 +5,7 @@ name: Easy Recovery
 type: easy
 block_week: 9
 distance_km: 5.0
-duration_s: 1800
+duration_s: 2100
 target_mode: pace
 intent: Down-week Monday recovery run, paired with Lower A lifting after. Nothing hard today.
 origin: authored
@@ -14,4 +14,4 @@ published:
 ---
 
 Easy
-- 5km 6:05/km Pace
+- 5km 7:00/km Pace
