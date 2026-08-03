@@ -36,6 +36,28 @@ No specialized equipment required for the current program.
 - **Copenhagen Plank:** adductor/hip stability, directly protective against the lateral-stability
   breakdown that shows up in fatigued running form late in a race.
 
+## Travel fallback — 2026-08-22 to 2026-09-01 (block week 12, Liftoscript Week 4)
+
+Gym access is uncertain while away. Rather than fork the program file (which would break the
+calendar's week↔day mapping), keep Liftoscript Week 4 as written and substitute per-exercise if
+the equipment isn't there. Lifting is first in the cut order anyway — a travel week that loses
+some strength work is working as designed, not failing.
+
+| Programmed | Bodyweight / hotel substitute |
+|---|---|
+| Squat | Bulgarian split squat, or single-leg squat to a chair |
+| Romanian Deadlift | Single-leg RDL, bodyweight, slow eccentric |
+| Bench Press | Push-up variations (feet elevated to add load) |
+| Barbell Row | Inverted row under a table, or band row |
+| Weighted Pull Up | Whatever bar exists; else band pulldown |
+| Overhead Press | Pike push-up |
+| Incline Bench Press | Decline push-up |
+| Face Pull | Band pull-apart |
+
+Lower B is nearly bodyweight already (calf raise, Nordic, single-leg RDL, Copenhagen, dead bug) —
+it travels unchanged and is the session to protect if only one lift happens that week, since the
+calf/achilles work is the highest-value durability item in the whole program.
+
 ## Taper handling (from `training/block.md`)
 
 - From block week 16: Lower A shifts in character toward Lower B (lighter loads, less bilateral

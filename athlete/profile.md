@@ -44,7 +44,11 @@ time_budget:
     - "sat 06:00-10:00"
 
   blackout:
-    - "friday morning"             # hard constraint — conveniently doubles as the pre-long-run rest day
+    # Friday morning is NO LONGER blacked out (lifted 2026-08-03). Friday is now available
+    # training time. It still defaults to easy/rest because rules/strength-authoring.md requires
+    # a complete leg-recovery day immediately before the Saturday long run — but that's a
+    # training choice now, not a hard constraint, and Friday can absorb an easy session or an
+    # upper-body lift when a week needs the room.
     - "sat afternoon"
     - "sun afternoon"
 ```
@@ -103,6 +107,35 @@ heat:
   note: "Aerobic/plasma-volume benefit only — race is mid-October in NH, no heat acclimation block needed"
 core:
   daily: "1-2 x short core routine"
+```
+
+## Travel — 2026-08-22 to 2026-09-01
+
+**Out of state for 11 days**, landing squarely on the biggest build stretch of the block: block
+week 11's Saturday long run, the whole of block week 12, and block week 13's first two days.
+
+Constraints while away, and how the plan adapts (see `training/block.md` § "Travel weeks"):
+
+| Lost | Adaptation |
+|---|---|
+| Race-course access | Nothing on-course until the Big Day (Sep 5), 4 days after returning — that session is unaffected |
+| The bike trainer | Thursday x-train becomes an easy run; a hotel-gym bike or elliptical is the better substitute if one exists |
+| Measured routes / track | Distance-based sessions rewritten as **time-based** so they work on any unfamiliar route |
+| Reliable gym access | Bodyweight strength fallback — see `strength/notes.md` |
+| A single long-run block | **Long runs split across two consecutive days**, per the athlete's own preference. Less stimulus than one long effort, but genuinely ultra-specific, and far more robust to travel logistics |
+
+Meeting-time walking continues — the source changes (airports, exploring, hotel treadmill) but the
+weekly ramp target and the 15%/week cap still apply.
+
+```yaml
+travel:
+  - start: 2026-08-22
+    end: 2026-09-01
+    affects_block_weeks: [11, 12, 13]
+    course_access: false
+    trainer_access: false
+    gym_access: uncertain
+    long_runs: split_across_two_days
 ```
 
 ## Course access — a major asset

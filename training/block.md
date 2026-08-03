@@ -124,10 +124,17 @@ Mon — Easy/recovery + heat        | Lower A     (farthest from the long run; T
 Tue — Easy + 5-6x20-30s hill strides | Upper A  (cheap speed; upper paired with a run day)
 Wed — THE BIG WORKOUT             | —           (left clean deliberately)
 Thu — X-train 1-2.5h Z2 (meeting) | Lower B     (low-fatigue, runner-specific, non-impact day)
-Fri — Rest + heat                 | —           (blackout + full leg recovery before the long run)
+Fri — Optional easy 30-40min, or rest + heat | —   (Friday blackout lifted 2026-08-03; still
+                                                    defaults easy so legs are fresh for Sat)
 Sat — Long run, quality embedded  | —
 Sun — Easy/mod flex (run/eMTB/group ride) | Upper B  (Champion's flex day; upper on a run day)
 ```
+
+**Friday note:** the Friday-morning blackout was lifted on 2026-08-03, so Friday is now available
+training time rather than a hard constraint. It still defaults to easy or rest, because
+`rules/strength-authoring.md` requires a complete leg-recovery day immediately before the Saturday
+long run — but that is now a training choice, and Friday is the obvious place to find room when a
+week needs it.
 
 Checks this satisfies against `rules/strength-authoring.md`: Lower A sits farthest from the long run
 and precedes an easy day; Lower B is low-fatigue and separated from Saturday by a complete rest day;
@@ -188,6 +195,27 @@ time-budget check fails repeatedly, drop Upper B before touching anything else.
 Peak long-run skeleton already in the seed, to convert to time-on-feet targets and build Sunday
 back-to-backs onto: 38km (Aug 22), 30km (Aug 29), 42.2km (Sep 5), 20km (Sep 12), 38km (Sep 19),
 40km (Sep 26), 23km (Oct 3), 13km (Oct 10).
+
+## Travel weeks
+
+Travel is recorded in `athlete/profile.md` → `travel`. When a block week falls inside a travel
+window, adapt it rather than pretending it will run normally:
+
+1. **Split the long run across two consecutive days.** This is the athlete's stated preference and
+   it's the right call: one long block is fragile to travel logistics, whereas two moderate days
+   are robust and produce a genuine back-to-back — closer to the back half of a 100-miler than a
+   single long run anyway. Accept the modest loss of single-session stimulus.
+2. **Rewrite distance-based sessions as time-based.** No measured routes or tracks away from home,
+   so `4x800m` becomes `4x3min`. Identical stimulus, works anywhere.
+3. **The Thursday x-train slot loses the trainer.** A hotel bike or elliptical is the best
+   substitute because it preserves non-impact aerobic volume; failing that, a short easy run keeps
+   the day honest without adding real impact load. Do not simply convert 2h of riding into 2h of
+   running — that's a large hidden increase in impact during a disrupted week.
+4. **Strength degrades gracefully** — see the substitution table in `strength/notes.md`. Lower B
+   travels essentially unchanged and is the session to protect if only one happens.
+5. **Walking continues**, but the source changes (airports, exploring, hotel treadmill). The weekly
+   ramp target and the 15%/week cap still apply — travel is not a reason to spike or drop it.
+6. **Nothing on-course**, obviously. Schedule on-course sessions either side of the window.
 
 ## Unplanned sessions
 
