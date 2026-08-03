@@ -49,6 +49,7 @@ SPORT_STYLE = {
     "Run": ("#2f9e44", "🏃"),
     "Ride": ("#1971c2", "🚴"),
     "Walk": ("#e8590c", "🚶"),
+    "Hike": ("#5c940d", "🥾"),
     "Lift": ("#9c36b5", "🏋️"),
     "Race": ("#c92a2a", "🏁"),
 }
@@ -138,7 +139,7 @@ def load_endurance_events(root: Path) -> list[Event]:
             distance_km=dist_km,
             detail=fm.get("intent", ""),
             authored=True,
-            excluded_from_budget=(fm.get("concurrent") == "meetings"),
+            excluded_from_budget=("concurrent" in fm),
             kind=fm.get("type", ""),
             key=(fm.get("type") in ("lap-sim", "race", "night")
                  or "budget_exception" in fm or fm.get("anchor") == "true"),

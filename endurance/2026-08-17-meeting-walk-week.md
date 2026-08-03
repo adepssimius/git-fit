@@ -4,7 +4,7 @@ sport: Walk
 name: Meeting walks (weekly total)
 type: walk
 block_week: 11
-duration_s: 14100
+duration_s: 10200
 target_mode: effort
 concurrent: meetings
 publish: False
@@ -15,8 +15,8 @@ intent: >
 origin: authored
 ---
 
-Weekly target: **235 minutes** of brisk walking, distributed across call-heavy days
-rather than done in one block. Flat to slight incline; add the weight vest per
+Weekly target: **170 minutes** of brisk walking, distributed across call-heavy days
+rather than done in one block. Mon-Fri at home only; the trip starts Saturday, and hiking takes over from there. Flat to slight incline; add the weight vest per
 `athlete/profile.md` once past block week 12.
 
 Tracked in-repo only (`publish: false`) — this is a load-tracking record, not a

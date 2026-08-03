@@ -1,7 +1,7 @@
 ---
 date: 2026-08-22
 sport: Run
-name: Long Run (split 1 of 2) — hard finish
+name: Long run — travel day
 type: long
 block_week: 11
 duration_s: 7200
@@ -12,6 +12,7 @@ intent: >
   First half of a split long run. Travel day, so this is the shorter of the pair.
   Run/walk throughout, then 5min genuinely hard on tired legs — that last block is
   the point and survives the split intact. Fuel at 75g/hr minimum.
+  Travel day, so likely a lot of sitting either side. Get this in before or after the drive/flight; from here the trip's hiking takes over as the primary time-on-feet stimulus.
 origin: adapted
 published:
   suunto: null

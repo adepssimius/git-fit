@@ -42,6 +42,23 @@ python3 scripts/generate_calendar.py  # write calendar.html, a month-by-month ov
 
 Both read the repo and never write back into the plan.
 
+## Published calendar
+
+`.github/workflows/pages.yml` builds the calendar on every push and deploys it to GitHub Pages.
+The workflow runs `scripts/verify_plan.py` **first**, so a week that busts the time budget, the
+long-run cap, or the `m`-means-minutes trap fails the build instead of publishing a broken plan.
+
+To enable it once: repo **Settings → Pages → Build and deployment → Source: GitHub Actions**.
+
+> ⚠️ **On a public repo, GitHub Pages publishes all of this to the open internet.** This repo holds
+> a lot of personal information: PR times, daily schedule and protected training windows, your
+> kids' bedtime, the exact location of your regular training route including where the car and drop
+> bag sit on it, and **dated windows stating when you are away from home**. A home-area route plus
+> precise away-from-home dates is the combination worth thinking hardest about.
+>
+> Options: keep the repo **private** (Pages on a private repo requires GitHub Pro), or strip
+> `athlete/profile.md` and `log/` before going public.
+
 ## Why it's built this way
 
 - **Runna is gone.** It generated the original plan but is being abandoned; `seed/runna-plan.md`

@@ -201,10 +201,18 @@ back-to-backs onto: 38km (Aug 22), 30km (Aug 29), 42.2km (Sep 5), 20km (Sep 12),
 Travel is recorded in `athlete/profile.md` → `travel`. When a block week falls inside a travel
 window, adapt it rather than pretending it will run normally:
 
-1. **Split the long run across two consecutive days.** This is the athlete's stated preference and
-   it's the right call: one long block is fragile to travel logistics, whereas two moderate days
-   are robust and produce a genuine back-to-back — closer to the back half of a 100-miler than a
-   single long run anyway. Accept the modest loss of single-session stimulus.
+1. **Ask first what the trip itself provides.** The Aug 22 - Sep 1 trip is mountain hiking with
+   the kids — several hours on feet on roughly half the days, with real climbing and descending.
+   That is not a hole in the plan, it is a large dose of exactly what this block is chasing:
+   time on feet, calf/achilles durability, and eccentric quad loading that a flat rail trail
+   cannot provide. **So cut planned running rather than defending it.** Block week 12 drops from
+   ~420 to ~210 running minutes; the hiking more than covers the difference in total load.
+   Log hiking as `sport: Hike`, `concurrent: family` — free in time budget terms, emphatically
+   not free in recovery terms.
+2. **Split the long run across two consecutive days** where a long block still makes sense. One
+   long effort is fragile to travel logistics, whereas two moderate days are robust and produce a
+   genuine back-to-back — closer to the back half of a 100-miler anyway. Accept the modest loss
+   of single-session stimulus.
 2. **Rewrite distance-based sessions as time-based.** No measured routes or tracks away from home,
    so `4x800m` becomes `4x3min`. Identical stimulus, works anywhere.
 3. **The Thursday x-train slot loses the trainer.** A hotel bike or elliptical is the best
@@ -216,6 +224,11 @@ window, adapt it rather than pretending it will run normally:
 5. **Walking continues**, but the source changes (airports, exploring, hotel treadmill). The weekly
    ramp target and the 15%/week cap still apply — travel is not a reason to spike or drop it.
 6. **Nothing on-course**, obviously. Schedule on-course sessions either side of the window.
+7. **Watch the return.** Sustained downhill hiking on legs unused to it produces real quad DOMS,
+   and this trip ends four days before the Big Day. Keep the last day or two of any trip
+   descent-light, and if the quads are still sore on Sep 3-4, **shorten the Big Day rather than
+   pushing through it** — a compromised 50k teaches less than a clean 40k, and week 14's rest
+   block can only absorb so much.
 
 ## Unplanned sessions
 

@@ -76,8 +76,8 @@ def main() -> int:
     warnings: list[str] = []
     exceptions: list[tuple] = []
     weeks: dict[int, dict] = defaultdict(
-        lambda: {"run": 0.0, "walk": 0.0, "ride": 0.0, "longest": 0.0, "longest_name": "",
-                 "longest_flagged": False}
+        lambda: {"run": 0.0, "walk": 0.0, "ride": 0.0, "hike": 0.0, "longest": 0.0,
+                 "longest_name": "", "longest_flagged": False}
     )
 
     for f in sorted((root / "endurance").glob("*.md")):
@@ -97,11 +97,13 @@ def main() -> int:
             continue
 
         sport, typ = fm["sport"], fm["type"]
-        concurrent = fm.get("concurrent") == "meetings"
+        concurrent = "concurrent" in fm   # meetings | family — free time, still real load
         w = weeks[bw]
 
         if concurrent:
-            w["walk" if sport == "Walk" else "ride"] += dur
+            w["walk" if sport in ("Walk", "Hike") else "ride"] += dur
+            if sport == "Hike":
+                w["hike"] += dur
         elif typ != "race":  # the race itself isn't a training session
             w["run"] += dur
             # Over-cap long runs are allowed only when explicitly flagged, and only a few
@@ -173,7 +175,14 @@ def main() -> int:
         if d["longest"] > budget["long_run_max_min"] and not d["longest_flagged"]:
             flags.append(f"LONG RUN OVER CAP ({d['longest_name']})")
         if prev_walk and d["walk"] > prev_walk * (1 + budget["walk_ramp_pct"] / 100) + 1:
-            flags.append(f"WALK RAMP >{budget['walk_ramp_pct']}% ({prev_walk:.0f}->{d['walk']:.0f})")
+            msg = f"time-on-feet ramp >{budget['walk_ramp_pct']}% ({prev_walk:.0f}->{d['walk']:.0f})"
+            if d["hike"] > 0:
+                # Family hiking isn't a schedulable load — flag it, don't fail on it.
+                warnings.append(f"block week {wk}: {msg}, driven by {d['hike']:.0f}min of "
+                                f"family hiking. Unavoidable; running volume is cut to compensate. "
+                                f"Watch calves/achilles and quads (descents).")
+            else:
+                flags.append(f"WALK RAMP >{budget['walk_ramp_pct']}% ({prev_walk:.0f}->{d['walk']:.0f})")
         status = "ok" if not flags else " | ".join(flags)
         longest_s = f"{d['longest']:.0f}" + ("*" if d["longest_flagged"] else "")
         print(f"{wk:>3} {d['run']:>6.0f} {budget['weekly_total_max_min']:>5} "
