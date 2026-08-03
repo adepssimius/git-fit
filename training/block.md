@@ -70,9 +70,12 @@ the seed's drop to 20km the following week lands exactly on its mid-cycle rest b
 - **Weight-vest incline walking** during meeting time — this *is* the Champion Plan's uphill/vest
   work, at zero time cost. Ramp under the same walking rules; see `athlete/profile.md`.
 - **Heat training** — sauna/hot tub 20–30min on rest days. Low stress, real plasma-volume return.
-- **The Big Day** (block wk 13, Sat Sep 5): the existing 42.2km run becomes a moderately hard 50k-ish
-  effort with full race fueling, deliberately aiming to get sore, followed by the mid-cycle rest
-  block in week 14.
+- **The Big Day** (block wk 13, Sat Sep 5): a **true 50k, run as two full laps of the actual course,
+  starting ~18:00 so four of its five-plus hours are in the dark** — then the mid-cycle rest block in
+  week 14 absorbs it. Because the athlete has course access, this single session covers the Big Day,
+  a night run, course recon, and a two-lap crew rehearsal at once. It is the only session in the
+  block that rehearses distance, darkness, surface and logistics simultaneously, and it carries an
+  explicit budget exception (below).
 - **Strength recedes as running stress rises** — Champion drops midweek strength around its week 13
   and ends squats at week 14. Applied here: taper Lower A toward Lower B in character from block
   week 16, last heavy squat day block week 17, no strength race week.
@@ -135,8 +138,19 @@ time-budget check fails repeatedly, drop Upper B before touching anything else.
    a week done.
 2. **Back-to-back weekends are the centerpiece.** Saturday long + Sunday medium-long on tired legs —
    the closest available proxy for the back half of a 100-miler, cheaper in family time than one
-   monster run. Roughly 3.5–4h Saturday + 2–2.5h Sunday at peak. The long run is deliberately capped
+   monster run. Roughly 3.5–4h Saturday + 2–2.5h Sunday at peak. The long run is normally capped
    at `long_run_max_min`; cumulative weekly volume carries the load, not one long effort.
+   **Exception mechanism:** a handful of sessions may exceed the cap, but each must carry an explicit
+   `budget_exception: <reason>` in its frontmatter, and no more than
+   `long_run_exceptions_per_block` (3) may do so. This keeps "a few long ones are fine" from quietly
+   becoming "every long run drifts long" — `scripts/verify_plan.py` enforces both halves. Currently
+   1 of 3 is used, by the Big Day.
+
+2b. **Use the course access.** Three sessions are run on the real Ghost Train course — the Big Day
+   (wk 13) and both lap simulations (wk 15, wk 17). Everything else stays local. Each on-course
+   session costs travel time on top of run time, which the running budget does *not* model, so
+   three trips is the deliberate ceiling. Week 16's night long run stays local because its purpose
+   (the dark→dawn transition) doesn't need the course.
 3. **Convert long runs to time-on-feet at HR/effort**, never a pace target, for anything over ~2h.
 4. **Use doubles** (40–50min easy, pre-dawn or post-bedtime) to add volume without a second
    family-disruption block.

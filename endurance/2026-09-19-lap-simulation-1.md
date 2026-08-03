@@ -1,15 +1,17 @@
 ---
 date: 2026-09-19
 sport: Run
-name: Lap Simulation 1 — 24.1km
+name: Lap Simulation 1 — one lap, on course
 type: lap-sim
 block_week: 15
 distance_km: 24.1
 duration_s: 10560
 target_mode: effort
 intent: >
-  LAP SIM 1 of 2. One full Ghost Train lap, structured exactly as the real course: 4 x 6km
-  between aid, with crew stops at 12km (the 7.5mi turnaround) and 24km (start/finish).
+  LAP SIM 1 of 2, run ON THE ACTUAL COURSE. One full Ghost Train lap: 4 x 6km
+  between aid, with crew stops at 12km (the real 7.5mi turnaround) and 24km (start/finish).
+  Second of three on-course sessions (athlete/profile.md). Note the surface, the turnaround,
+  and anything about the geometry that differs from how you've been imagining it.
   Rehearse the fueling handoff, a sock change, and foot care at each crew stop. Run at
   ultra_lap_early pace — it should feel absurdly easy. Because crew is available every
   ~12km on race day, practise running LIGHT rather than practising a heavy carry.

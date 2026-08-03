@@ -58,6 +58,8 @@ def load_budget(root: Path) -> dict:
     return {
         "weekly_total_max_min": num("weekly_total_max_min", 600),
         "long_run_max_min": num("long_run_max_min", 240),
+        "long_run_exception_max_min": num("long_run_exception_max_min", 360),
+        "long_run_exceptions_per_block": num("long_run_exceptions_per_block", 3),
         "weekday_session_max_min": num("weekday_session_max_min", 60),
         "night_session_max_min": num("night_session_max_min", 90),
         "walk_ramp_pct": num("weekly_ramp_max_pct", 15),
@@ -72,8 +74,10 @@ def main() -> int:
 
     errors: list[str] = []
     warnings: list[str] = []
+    exceptions: list[tuple] = []
     weeks: dict[int, dict] = defaultdict(
-        lambda: {"run": 0.0, "walk": 0.0, "ride": 0.0, "longest": 0.0, "longest_name": ""}
+        lambda: {"run": 0.0, "walk": 0.0, "ride": 0.0, "longest": 0.0, "longest_name": "",
+                 "longest_flagged": False}
     )
 
     for f in sorted((root / "endurance").glob("*.md")):
@@ -100,8 +104,24 @@ def main() -> int:
             w["walk" if sport == "Walk" else "ride"] += dur
         elif typ != "race":  # the race itself isn't a training session
             w["run"] += dur
+            # Over-cap long runs are allowed only when explicitly flagged, and only a few
+            # per block — see athlete/profile.md. Unflagged over-cap sessions are errors.
+            if dur > budget["long_run_max_min"]:
+                if "budget_exception" not in fm:
+                    errors.append(
+                        f"{rel}: {dur:.0f}min exceeds long_run_max_min "
+                        f"({budget['long_run_max_min']}min) with no `budget_exception:` reason")
+                else:
+                    exceptions.append((rel, dur))
+                    if dur > budget["long_run_exception_max_min"]:
+                        errors.append(
+                            f"{rel}: {dur:.0f}min exceeds even the flagged-exception ceiling "
+                            f"({budget['long_run_exception_max_min']}min)")
+            # Always record the true longest session so the weekly readout reflects reality,
+            # flagged or not. The per-file check above is what enforces the cap.
             if dur > w["longest"]:
                 w["longest"], w["longest_name"] = dur, fm["name"]
+                w["longest_flagged"] = "budget_exception" in fm
             if typ in WEEKDAY_TYPES and dur > budget["weekday_session_max_min"]:
                 errors.append(
                     f"{rel}: {dur:.0f}min exceeds weekday cap "
@@ -150,17 +170,29 @@ def main() -> int:
         flags = []
         if d["run"] > budget["weekly_total_max_min"]:
             flags.append(f"OVER RUN BUDGET ({d['run']:.0f}>{budget['weekly_total_max_min']})")
-        if d["longest"] > budget["long_run_max_min"]:
+        if d["longest"] > budget["long_run_max_min"] and not d["longest_flagged"]:
             flags.append(f"LONG RUN OVER CAP ({d['longest_name']})")
         if prev_walk and d["walk"] > prev_walk * (1 + budget["walk_ramp_pct"] / 100) + 1:
             flags.append(f"WALK RAMP >{budget['walk_ramp_pct']}% ({prev_walk:.0f}->{d['walk']:.0f})")
         status = "ok" if not flags else " | ".join(flags)
+        longest_s = f"{d['longest']:.0f}" + ("*" if d["longest_flagged"] else "")
         print(f"{wk:>3} {d['run']:>6.0f} {budget['weekly_total_max_min']:>5} "
-              f"{d['longest']:>9.0f} {d['walk']:>6.0f} {d['ride']:>6.0f}   {status}")
+              f"{longest_s:>9} {d['walk']:>6.0f} {d['ride']:>6.0f}   {status}")
         errors.extend(f"block week {wk}: {fl}" for fl in flags)
         prev_walk = d["walk"]
 
     print()
+    if exceptions:
+        limit = budget["long_run_exceptions_per_block"]
+        print(f"Flagged long-run exceptions ({len(exceptions)}/{limit} allowed per block):")
+        for rel, dur in exceptions:
+            print(f"  • {rel}  {dur/60:.1f}h")
+        if len(exceptions) > limit:
+            errors.append(
+                f"{len(exceptions)} flagged long-run exceptions exceeds the per-block limit "
+                f"of {limit} (athlete/profile.md) — going long should stay special")
+        print()
+
     for wmsg in warnings:
         print(f"WARN  {wmsg}")
     if errors:

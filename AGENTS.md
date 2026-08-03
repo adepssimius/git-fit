@@ -26,6 +26,10 @@ what the professionally designed plan says), never edit it, never treat it as cu
    `concurrent: meetings`) and confirm it's within `weekly_total_max_min`. If it isn't, cut — in
    order: strength volume (drop to a lower set-variation tier, or drop Upper B first) → doubles →
    easy volume → quality → long run. The long run and the Saturday/Sunday back-to-back are cut last.
+1b. **A long run may exceed `long_run_max_min` only with an explicit `budget_exception: <reason>`
+   in its frontmatter**, and no more than `long_run_exceptions_per_block` sessions may carry one.
+   Never raise the cap globally to make a session fit — flag the session instead, so going long
+   stays rare and visible. `scripts/verify_plan.py` enforces both the flag and the count.
 2. **Running always wins conflicts with lifting**, per the user's own strength spec in
    `rules/strength-authoring.md`. Never schedule heavy lower-body work the day before a long run or
    a quality session. Never let a lift compromise Wednesday's big workout or the weekend.

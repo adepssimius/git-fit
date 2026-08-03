@@ -23,7 +23,15 @@ time_budget:
   # the whole reason training/block.md calls night running "free" in family terms. They still
   # cost recovery and sleep, so they get their own ceiling rather than no ceiling.
   night_session_max_min: 90
-  long_run_max_min: 240            # hard cap — buy durability with the Sunday b2b, not a 6h run
+  long_run_max_min: 240            # default cap — buy durability with the Sunday b2b, not a 6h run
+  # A few long runs may exceed the cap, but only a few — the point is that going long stays
+  # special rather than becoming the default. A session over the cap MUST carry a
+  # `budget_exception: <reason>` field in its frontmatter; scripts/verify_plan.py errors on any
+  # over-cap session without one, and errors again if more than `long_run_exceptions_per_block`
+  # carry it. That keeps "a few exceptions are fine" honest instead of quietly becoming "every
+  # long run drifts long."
+  long_run_exception_max_min: 360  # absolute ceiling even for flagged sessions
+  long_run_exceptions_per_block: 3
   sunday_b2b_max_min: 150
   weekly_total_max_min: 600        # running only; excludes meeting-time trainer/walk sessions
   doubles_ok: true                 # 40-50min easy, pre-dawn or post-bedtime
@@ -94,6 +102,31 @@ heat:
   note: "Aerobic/plasma-volume benefit only — race is mid-October in NH, no heat acclimation block needed"
 core:
   daily: "1-2 x short core routine"
+```
+
+## Course access — a major asset
+
+**Has training access to all but the last mile of the actual Ghost Train race course.** This is
+unusually valuable and the plan should exploit it: key sessions are run on the real surface, with
+the real 7.5mi turnaround and the real aid/crew geometry, rather than approximated locally.
+
+Sessions scheduled on the course (3 trips — deliberately limited, since each costs travel time on
+top of run time, which the running budget does *not* currently account for):
+
+| Block week | Session | Why on-course |
+|---|---|---|
+| 13 (Sep 5) | **Big Day — 50k = 2 full laps, evening start** | Distance, night, course and crew rehearsal in one session |
+| 15 (Sep 19) | Lap Simulation 1 — 1 lap | Real segment geometry and crew stop timing |
+| 17 (Oct 3) | Lap Simulation 2 — 1 lap, full dress rehearsal | Final check on the real thing |
+
+Week 16's night long run stays local on purpose — its job is the dark→dawn transition, which
+doesn't need the course, and a 4th trip isn't worth the travel.
+
+```yaml
+course_access:
+  available: true
+  coverage: "all but the final mile"
+  travel_min_each_way: null        # TODO: fill in — this is real time the budget doesn't yet model
 ```
 
 ## Equipment
