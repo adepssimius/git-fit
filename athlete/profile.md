@@ -106,9 +106,28 @@ core:
 
 ## Course access — a major asset
 
-**Has training access to all but the last mile of the actual Ghost Train race course.** This is
-unusually valuable and the plan should exploit it: key sessions are run on the real surface, with
-the real 7.5mi turnaround and the real aid/crew geometry, rather than approximated locally.
+**Has training access to the northern 6.5 miles of the actual Ghost Train course.** Only the first
+mile — the southern end, nearest the race start/finish — is closed outside race day. This is
+unusually valuable and the plan exploits it: key sessions run on the real surface with the real
+7.5mi turnaround, rather than being approximated locally.
+
+**What this geometry means for training:**
+
+```
+race day    START(0mi) ---- aid(3.75) ---- TURNAROUND(7.5mi) ---- back ---- START   = 15mi lap
+             └─ closed ─┘
+training              STAGE(1mi) --------- TURNAROUND(7.5mi) --------- STAGE
+                      └────────── 6.5mi each way = 13mi / 20.9km ──────────┘
+```
+
+- A **training out-and-back is 20.9km (13mi)**, not the full 24.1km race lap. Sessions that need a
+  true race-lap distance add a short out-and-back from the staging point to top up.
+- **The 7.5mi turnaround is accessible**, so the actual turnaround — the thing you hit 12+ times on
+  race day — can be rehearsed for real.
+- **Crew contact in training lands every 10.5km** (staging point ↔ turnaround) versus every 12.1km
+  on race day. Close enough that fueling and crew-stop cadence transfer directly.
+- The closed first mile is the one section that will be fresh on race day. It's also the section
+  already run in the prior 50k here, so it's familiar rather than unknown.
 
 Sessions scheduled on the course (3 trips — deliberately limited, since each costs travel time on
 top of run time, which the running budget does *not* currently account for):

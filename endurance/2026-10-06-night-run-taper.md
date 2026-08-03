@@ -8,8 +8,9 @@ distance_km: 6.9
 duration_s: 2400
 target_mode: pace
 intent: >
-  NIGHT SESSION 4 of 4. Short, ~20:45 start, full kit. Nothing hard — this exists purely to
-  keep the night-running adaptation and the kit routine fresh through the taper.
+  Short, ~20:45 start, full kit. Nothing hard. Not a night-adaptation session — that isn't
+  needed here — but a final check that the exact headlamp, batteries and layers going in the
+  crew bag all still work, done in a taper week where there's slack to fix anything that doesn't.
 origin: authored
 published:
   suunto: null

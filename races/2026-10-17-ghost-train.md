@@ -72,9 +72,9 @@ Approximate for Brookline NH on this date (**confirm exact times closer to race 
 
 That's **~13 hours of darkness out of a ~24-hour effort** — laps 3 through 6 are run entirely or
 mostly in the dark, and they're exactly the laps where fatigue, sleepiness, and foot problems
-compound. This is why `training/block.md` treats night running as non-negotiable rather than
-optional, and why the night sessions in blocks 11, 14, 16 and 18 are scheduled rather than
-improvised.
+compound. The athlete is an experienced night runner who enjoys it, so darkness alone is not the
+concern — but darkness *combined with* 15+ hours of accumulated fatigue and rising sleep pressure
+is a different problem, and that combination is what laps 4-6 actually test.
 
 Practical consequences: headlamp plus **at least one spare set of batteries and a backup light** in
 the start/finish crew bag, a warm layer available from lap 3 onward (temperatures in the 40s°F

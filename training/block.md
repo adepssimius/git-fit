@@ -70,12 +70,13 @@ the seed's drop to 20km the following week lands exactly on its mid-cycle rest b
 - **Weight-vest incline walking** during meeting time — this *is* the Champion Plan's uphill/vest
   work, at zero time cost. Ramp under the same walking rules; see `athlete/profile.md`.
 - **Heat training** — sauna/hot tub 20–30min on rest days. Low stress, real plasma-volume return.
-- **The Big Day** (block wk 13, Sat Sep 5): a **true 50k, run as two full laps of the actual course,
-  starting ~18:00 so four of its five-plus hours are in the dark** — then the mid-cycle rest block in
-  week 14 absorbs it. Because the athlete has course access, this single session covers the Big Day,
-  a night run, course recon, and a two-lap crew rehearsal at once. It is the only session in the
-  block that rehearses distance, darkness, surface and logistics simultaneously, and it carries an
-  explicit budget exception (below).
+- **The Big Day** (block wk 13, Sat Sep 5): a **true 50k on the accessible northern 6.5mi of the
+  course, run as three out-and-backs from the staging point (20.9 + 20.9 + 8.2km), starting ~18:00**
+  — then week 14's mid-cycle rest absorbs it. Three passes through the staging point means three
+  crew stops rehearsed, and the real 7.5mi turnaround is hit twice. It is the only session in the
+  block that rehearses distance, surface, turnaround and crew cadence simultaneously, and it carries
+  an explicit budget exception (below). Starting later than 18:00 is fine if preferred — the athlete
+  is comfortable at night — at the cost of a rougher Sunday.
 - **Strength recedes as running stress rises** — Champion drops midweek strength around its week 13
   and ends squats at week 14. Applied here: taper Lower A toward Lower B in character from block
   week 16, last heavy squat day block week 17, no strength race week.
@@ -100,12 +101,18 @@ mileage. Ghost Train is flat, so:
 It's a mountain-ultra plan and says nothing about running through a night or a lapped, crewed
 course. Not optional for this race:
 
-- **Night running** — at least 3 sessions, one past 2am, one on already-tired legs, full race kit.
-  The single largest gap in the supplied plan for this specific race.
+- **Night running** — the athlete is already an experienced and willing night runner, so darkness
+  itself is NOT a skill gap here, and the plan should not pretend otherwise. Night sessions stay in
+  for three narrower reasons: (a) post-bedtime hours are genuinely free family-time, which matters
+  enormously under this time budget; (b) kit validation — headlamp, battery life, layers — is worth
+  doing regardless of comfort in the dark; (c) the **real** untested variable is not darkness but
+  **sleep deprivation stacked on 15+ hours of accumulated fatigue**, which no 11-week block can
+  fully rehearse. The Big Day (finishing ~23:30 after 5h27) is the closest available approximation.
 - **Run/walk protocol from session one**, rehearsed in every long run — never introduced for the
   first time on race day.
-- **Lap simulations** — 4 × 6km aid segments with crew stops at 12km and 24km, mirroring the real
-  course topology.
+- **Lap simulations** — staging point → real 7.5mi turnaround → staging (20.9km), plus a 3.1km
+  top-up to cover a true race-lap distance. Crew contact every ~10.5km, close to race day's ~12.1km,
+  so fueling and stop cadence transfer directly.
 - **The crew-stop decision tree** and per-lap logistics — see `races/2026-10-17-ghost-train.md`.
 
 ## The weekly template
@@ -159,8 +166,10 @@ time-budget check fails repeatedly, drop Upper B before touching anything else.
    week toward the peak, respecting `weekly_ramp_max_pct`.
 6. **Run/walk from session one.** Fix a ratio and use it in every long run so it's automatic under
    fatigue — never introduced for the first time at mile 60.
-7. **Night running is mandatory and free** — schedule it after the kids are down; it satisfies a
-   non-negotiable race requirement at near-zero family cost.
+7. **Night running is free time, not skill acquisition.** The athlete already runs at night
+   comfortably and enjoys it. Schedule these sessions because post-bedtime hours cost no family
+   time and because kit needs validating — not as rehearsal for a feared unknown. The genuinely
+   untested thing is sleep deprivation on top of deep fatigue past hour 15.
 8. **Two full lap simulations** (24.1km, structured as 4×6km aid segments with crew stops at 12km
    and 24km) in the peak block, rehearsing fueling handoffs, sock/shoe change, and foot care.
 9. **Gut training is a training variable** — progress carb intake toward 90–120g/hr on long runs;

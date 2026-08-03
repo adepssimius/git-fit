@@ -9,8 +9,9 @@ target_mode: effort
 intent: >
   NIGHT SESSION 2 of 4, and the important one. Start ~22:00 and run past midnight — this is
   the only week in the block where sacrificing Friday's rest is cheap, because Saturday is
-  short and easy. Full night kit. Race night has ~13 hours of darkness (races/), so this
-  rehearses the single largest untrained variable in the plan.
+  short and easy. Full night kit. Not about learning to run in the dark — that's already
+  comfortable — but about pushing into the small hours when sleep pressure, not darkness, is
+  the thing that actually bites on race night.
 origin: authored
 published:
   suunto: null

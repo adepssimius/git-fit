@@ -8,9 +8,10 @@ distance_km: 8.0
 duration_s: 3000
 target_mode: pace
 intent: >
-  NIGHT SESSION 1 of 4. Start ~20:45, after the kids are down — free time that satisfies a
-  non-negotiable race requirement. Use the exact headlamp, batteries and layers planned for
-  race night; the point of this one is finding out what doesn't work while it's cheap.
+  NIGHT SESSION 1 of 4. Start ~20:45, after the kids are down — genuinely free training time
+  under this time budget. This one is a KIT check, not a skill session: run the exact headlamp,
+  batteries and layers planned for race night and find out what chafes, dies or annoys you while
+  it's still cheap to fix.
 origin: authored
 published:
   suunto: null
