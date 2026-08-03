@@ -1,0 +1,18 @@
+---
+date: 2026-09-27
+sport: Run
+name: Sunday Back-to-Back
+type: b2b
+block_week: 16
+duration_s: 5400
+target_mode: effort
+intent: >
+  Longest back-to-back of the block, on the most tired legs of the block. This is the
+  closest the plan gets to simulating the back half of a 100-miler. Upper B after.
+origin: authored
+published:
+  suunto: null
+---
+
+Easy/Moderate
+- 90m 6:20/km Pace

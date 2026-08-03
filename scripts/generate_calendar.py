@@ -194,8 +194,10 @@ def load_race_days(root: Path) -> dict[date, str]:
 
 
 def load_seed_placeholders(root: Path, covered_dates: set[date]) -> list[Event]:
-    """Runna ICS upcoming events, used only as a faded placeholder for dates that
-    don't already have an authored endurance/*.md Run session."""
+    """Runna ICS upcoming events, shown faded only for dates the current plan doesn't
+    touch at all. A date with any authored session is considered handled — e.g. the
+    seed's Thursday quality runs were deliberately replaced by the Thursday x-train
+    day, so they shouldn't linger as if they were unfinished work."""
     ics = root / "seed" / "runna-plan.ics"
     if not ics.exists():
         return []
@@ -265,7 +267,7 @@ def render_day_cell(d: date, month: int, events_by_date: dict[date, list[Event]]
         for ev in events_by_date.get(d, []):
             color, icon = SPORT_STYLE.get(ev.sport, ("#868e96", "•"))
             if not ev.authored:
-                title = html.escape(f"Seed reference (not yet authored): {ev.name}")
+                title = html.escape(f"Old Runna plan, not part of this block: {ev.name}")
                 body.append(
                     f'<div class="badge seed" title="{title}">·&nbsp;{html.escape(ev.name)}</div>'
                 )
@@ -389,7 +391,7 @@ PAGE_TEMPLATE = """<!doctype html>
     <span class="item"><span class="swatch" style="background:#e8590c"></span>Walk (meeting time)</span>
     <span class="item"><span class="swatch" style="background:#9c36b5"></span>Lift</span>
     <span class="item"><span class="swatch" style="background:#c92a2a"></span>Race day</span>
-    <span class="item"><span class="seed-swatch"></span>Seed reference, not yet authored</span>
+    <span class="item"><span class="seed-swatch"></span>Old Runna plan, outside this block</span>
   </div>
   {months}
   <footer>
@@ -419,7 +421,7 @@ def main():
     race_days = load_race_days(root)
     weekly_budget = load_weekly_budget(root)
 
-    covered = {e.date for e in endurance if e.sport == "Run"} | set(race_days.keys())
+    covered = {e.date for e in endurance} | set(race_days.keys())
     seed = load_seed_placeholders(root, covered)
 
     all_events = endurance + strength + seed
@@ -440,9 +442,9 @@ def main():
     n_authored = sum(1 for e in endurance)
     n_seed = len(seed)
     subtitle = (
-        f"{n_authored} authored sessions, {n_seed} seed placeholders not yet authored, "
-        f"{len(strength)} lifting days, race day "
-        f"{next(iter(race_days.values()), '?')} on {next(iter(race_days.keys()), '?')}."
+        f"{n_authored} authored sessions, {len(strength)} lifting days, {n_seed} untouched Runna "
+        f"seed dates. Race: {next(iter(race_days.values()), '?')}, "
+        f"{next(iter(race_days.keys()), '?')} 9:00 AM."
     )
 
     out.write_text(PAGE_TEMPLATE.format(subtitle=html.escape(subtitle), months=months_html))

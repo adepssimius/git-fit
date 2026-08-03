@@ -19,6 +19,10 @@ them without an explicit override in `log/`.
 time_budget:
   weekday_session_max_min: 60      # door-to-door, incl. changing
   weekday_sessions_per_week: 4
+  # Night sessions sit outside the weekday cap on purpose: they run post-bedtime, which is
+  # the whole reason training/block.md calls night running "free" in family terms. They still
+  # cost recovery and sleep, so they get their own ceiling rather than no ceiling.
+  night_session_max_min: 90
   long_run_max_min: 240            # hard cap — buy durability with the Sunday b2b, not a 6h run
   sunday_b2b_max_min: 150
   weekly_total_max_min: 600        # running only; excludes meeting-time trainer/walk sessions
@@ -55,11 +59,18 @@ meeting_budget:
 
   walking:
     # Ramp deliberately — jumping straight to 10h/wk invites plantar fascia / achilles injury.
+    # NOTE: the ramp cap is the binding constraint, not the peak target. Starting at 180 and
+    # capped at +15%/wk, the reachable peak is ~465-480 min at block weeks 16-17, NOT 600 by
+    # week 15. The cap wins; the peak arrives later and lower. Per rules/progression.md, never
+    # bust the ramp to hit a target number.
     weekly_min_start: 180          # block week 9
-    weekly_min_peak: 600           # by block weeks 15-16
+    weekly_min_peak: 465           # realistically reached at block weeks 16-17, then tapers
     weekly_ramp_max_pct: 15        # max week-over-week increase — check this every week
     style: "brisk, sustained; incline pad + weight vest = the Champion Plan's uphill/vest work"
     weight_vest_from_week: 12      # introduce gradually, after a walking base is established
+    # Planned per-block-week totals (min), respecting the cap and tapering into race week:
+    # wk9 180 | wk10 205 | wk11 235 | wk12 270 | wk13 310 | wk14 355
+    # wk15 405 | wk16 465 | wk17 465 (hold) | wk18 300 (taper) | wk19 150 (race week)
 
   counts_toward_weekly_total: false
 ```

@@ -1,7 +1,13 @@
 # Ghost Train Trail Races — 30-Hour Ultra
 
-**Date:** 2026-10-17 (Saturday), start time TBD — confirm and update this file once registration
-info is set. **Location:** Brookline, NH, on the Granite Town Rail Trail.
+**Date:** 2026-10-17 to 2026-10-18 (Sat–Sun). **30-hour ultra starts Saturday 9:00 AM**, cutoff
+**Sunday 3:00 PM**. **Location:** Brookline, NH, on the Granite Town Rail Trail.
+Confirmed against [UltraSignup](https://ultrasignup.com/register.aspx?did=133446) and the
+[UltraRunning calendar](https://ultrarunning.com/calendar/event/ghost-train-rail-trail-races).
+
+> **⚠️ Registration:** the 30-Hour Ultra is listed as **SOLD OUT**, with the waitlist capped at 175
+> and reportedly filled in early May 2026. Confirm you actually hold an entry (or a waitlist
+> position) before this block gets much further — everything downstream assumes a start line.
 
 This file replaces Runna's race model entirely. Runna prescribed `50km race at 5:35-5:55/km`
 (road-marathon logic) — **discarded**. 50km isn't how this event is structured or scored, and that
@@ -36,21 +42,44 @@ existing fitness (42km training runs at ~5:40/km) and course knowledge. The limi
 it's **durability, fueling, and sleep management** overnight. See `athlete/zones.yml` for the
 `ultra_lap_early` / `ultra_lap_late` moving-pace targets used in training and race pacing.
 
-| Lap | Distance (cum.) | Target moving pace | Est. clock (start ~7:00am Sat) |
-|---|---|---|---|
-| 1 | 24.1km | 7:00-7:30/km | ~10:00am |
-| 2 | 48.3km | 7:15-7:45/km | ~1:15pm |
-| 3 | 72.4km | 7:45-8:15/km | ~4:45pm |
-| 4 | 96.6km | 8:15-8:45/km | ~8:30pm |
-| **~100km** | **100km** | — | **~9:00pm** (14h in — well inside the 30h window) |
-| 5 | 120.7km | 8:45-9:30/km, run/walk | ~1:00am |
-| 6 | 144.8km | run/walk, night pace | ~6:30am |
-| 7 (10mi) | 160.9km | run/walk, fading | ~10:00-11:00am Sun |
+**Start 9:00 AM Saturday, cutoff 3:00 PM Sunday.**
 
-Splits are a training-block placeholder — refine once real long-run and lap-simulation data exists
-(`log/` entries feed this). The point of the table is the margin: even the 100mi stretch goal
-finishes with hours of cutoff to spare at these paces, so the deciding factor really is durability,
-not fitness — train accordingly (`training/block.md`).
+| Lap | Distance (cum.) | Target moving pace | Lap time | Clock | Elapsed |
+|---|---|---|---|---|---|
+| 1 | 24.1km | 7:00-7:30/km | ~2h55 | 11:55am Sat | 2h55 |
+| 2 | 48.3km | 7:15-7:45/km | ~3h05 | 3:00pm Sat | 6h00 |
+| 3 | 72.4km | 7:45-8:15/km | ~3h15 | 6:15pm Sat 🌒 | 9h15 |
+| 4 | 96.6km | 8:15-8:45/km | ~3h30 | 9:45pm Sat | 12h45 |
+| **~100km** | **100km** | — | — | **~10:15pm Sat** | **13h15** |
+| 5 | 120.7km | 8:45-9:30/km run/walk | ~3h50 | 1:35am Sun | 16h35 |
+| 6 | 144.8km | run/walk, night pace | ~4h10 | 5:45am Sun | 20h45 |
+| 7 (10mi) | 160.9km | run/walk, fading | ~2h55 | 8:40am Sun ☀️ | **23h40** |
+
+The margin is the headline: **100km lands around 10pm Saturday with 17 hours of cutoff left**, and
+even the full 100-mile stretch goal finishes ~8:40am Sunday with **more than 6 hours to spare**.
+Nothing about this race is a speed problem. The deciding factors are durability, feet, fueling, and
+getting through the night — train accordingly (`training/block.md`).
+
+Splits are a training-block estimate; refine as real long-run and lap-simulation data lands in
+`log/`.
+
+## The darkness window — over half the race
+
+Approximate for Brookline NH on this date (**confirm exact times closer to race day**):
+
+- **Sunset Sat ≈ 5:57 PM** — headlamp on partway through **lap 3**
+- **Sunrise Sun ≈ 6:58 AM** — daylight returns partway through **lap 7**
+
+That's **~13 hours of darkness out of a ~24-hour effort** — laps 3 through 6 are run entirely or
+mostly in the dark, and they're exactly the laps where fatigue, sleepiness, and foot problems
+compound. This is why `training/block.md` treats night running as non-negotiable rather than
+optional, and why the night sessions in blocks 11, 14, 16 and 18 are scheduled rather than
+improvised.
+
+Practical consequences: headlamp plus **at least one spare set of batteries and a backup light** in
+the start/finish crew bag, a warm layer available from lap 3 onward (temperatures in the 40s°F
+overnight are typical for mid-October NH), and caffeine timing planned around the 1am–6am low
+(`rules/fueling.md`).
 
 ## Continue/stop decision tree — evaluate at every crew stop
 

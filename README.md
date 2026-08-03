@@ -31,6 +31,16 @@ adjust a week.
 | `rules/` | The instructions an LLM follows to author or adjust the plan — syntax references and house rules. |
 | `seed/` | Frozen one-time imports: the old Runna plan and the supplied "Champion Plan." Reference only, never edited. |
 | `log/` | Actuals — RPE, sleep, soreness, unplanned sessions (group rides, eMTB) — feeds autoregulation. |
+| `scripts/` | `verify_plan.py` (checks the hard invariants) and `generate_calendar.py` (HTML overview). |
+
+## Scripts
+
+```bash
+python3 scripts/verify_plan.py        # check every week against athlete/profile.md — exits non-zero on failure
+python3 scripts/generate_calendar.py  # write calendar.html, a month-by-month overview
+```
+
+Both read the repo and never write back into the plan.
 
 ## Why it's built this way
 

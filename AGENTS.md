@@ -67,12 +67,24 @@ file that was already pushed changes.
 **Publishing**: see `rules/publishing.md`. Push a rolling ~2-week window, not the whole plan at
 once — the plan is meant to adapt to how training actually goes.
 
-## Verification checklist (run before considering a week "done")
+## Verification — run the script
 
-- [ ] Weekly running-time total ≤ `athlete/profile.md` → `time_budget.weekly_total_max_min`
-- [ ] No single session exceeds its per-session cap or falls outside a `protected_windows` slot
-- [ ] No heavy lower-body lift precedes a long run or Wednesday's big workout
-- [ ] Friday is a true rest day (blackout + pre-long-run leg recovery)
-- [ ] Every long/ultra session uses `target_mode: hr` or `effort`, not `pace`
-- [ ] No endurance file uses bare `m` where meters was meant
-- [ ] `sport: Walk` weekly total respects `meeting_budget.walking.weekly_ramp_max_pct`
+```bash
+python3 scripts/verify_plan.py
+```
+
+It checks the mechanical invariants against `athlete/profile.md` (nothing is hardcoded) and exits
+non-zero on failure: weekly running-time budget, per-session and long-run caps, the night-session
+cap, the walking ramp limit, the `m`-means-minutes trap, rest steps missing a target, long sessions
+wrongly using `target_mode: pace`, and malformed frontmatter. Run it after authoring or editing any
+week.
+
+Then eyeball the two things a script can't judge:
+
+- [ ] No heavy lower-body lift precedes a long run or Wednesday's big workout, and Friday is still
+      a true rest day (the placement rules in `rules/strength-authoring.md`)
+- [ ] The week's sessions actually fit inside `protected_windows` given real-life scheduling
+
+```bash
+python3 scripts/generate_calendar.py   # visual overview of the whole block
+```

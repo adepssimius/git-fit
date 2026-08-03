@@ -1,0 +1,18 @@
+---
+date: 2026-09-09
+sport: Run
+name: Easy — easing back in
+type: easy
+block_week: 14
+distance_km: 6.6
+duration_s: 2400
+target_mode: pace
+intent: >
+  First run back after two rest days. Really ease into it (Champion week 11).
+origin: authored
+published:
+  suunto: null
+---
+
+Easy
+- 40m 6:00/km Pace

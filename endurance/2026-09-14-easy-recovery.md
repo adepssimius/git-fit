@@ -1,0 +1,18 @@
+---
+date: 2026-09-14
+sport: Run
+name: Easy Recovery
+type: easy
+block_week: 15
+distance_km: 7.4
+duration_s: 2700
+target_mode: pace
+intent: >
+  Lower A after.
+origin: authored
+published:
+  suunto: null
+---
+
+Easy
+- 45m 6:00/km Pace
