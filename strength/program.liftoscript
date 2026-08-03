@@ -1,0 +1,31 @@
+# Week 1
+## Lower A — primary strength
+// Farthest from the long run in the weekly template (Monday). Tier 1/2/3 = full/reduced/minimal,
+// selected each session by the readiness check in rules/progression.md.
+main: Squat / ! 3x5 / 2x5 / 1x5 / 185lb / 180s / progress: lp(5lb, 1, 0, 10%, 1)
+main: Romanian Deadlift / ! 3x6 / 2x6 / 1x6 / 155lb / 150s / progress: lp(5lb, 1, 0, 10%, 1)
+accessory: Bulgarian Split Squat / 3x8 / 30lb / 90s / progress: dp(5lb, 8, 12)
+core: Hanging Leg Raise / 3x10 / 60s
+
+## Upper A
+// Paired with Tuesday's easy run + hill strides to consolidate fatigue.
+main: Bench Press / ! 3x5 / 2x5 / 1x5 / 155lb / 180s / progress: lp(5lb, 1, 0, 10%, 1)
+main: Barbell Row / 3x8 / 115lb / 120s / progress: dp(5lb, 8, 12)
+accessory: Overhead Press / 3x8 / 75lb / 90s / progress: dp(5lb, 8, 12)
+core: Pallof Press / 3x10 / 60s
+
+## Lower B — runner-specific, low fatigue
+// Unilateral/stability/calves/hamstrings/core, deliberately light. Thursday, non-impact day,
+// separated from Saturday's long run by Friday's full rest day.
+accessory: Single Leg Calf Raise / 4x15 / bodyweight / 60s / progress: dp(5lb, 12, 20)
+accessory: Nordic Hamstring Curl / 3x6 / bodyweight / 90s
+accessory: Single Leg Romanian Deadlift / 3x10 / 25lb / 60s
+accessory: Copenhagen Plank / 3x30s|30s
+core: Dead Bug / 3x12 / 45s
+
+## Upper B
+// Champion Plan's Sunday flex day; paired with the easy/mod run.
+main: Weighted Pull Up / ! 3x6 / 2x6 / 1x6 / 25lb / 150s / progress: lp(2.5lb, 1, 0, 10%, 1)
+main: Incline Bench Press / 3x8 / 115lb / 120s / progress: dp(5lb, 8, 12)
+accessory: Face Pull / 3x15 / 30lb / 60s
+core: Side Plank / 3x30s|30s

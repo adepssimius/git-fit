@@ -1,0 +1,41 @@
+# Pace, HR, and power zones. Pace zones seeded from what Runna actually prescribed (see
+# seed/runna-plan.md) — real numbers this athlete was already hitting, not generic tables.
+# HR and bike power are unset; fill in from a threshold test before HR-targeted sessions
+# (lap simulations, long runs) become load-bearing — they default to effort/RPE until then.
+
+units: { distance: km, pace: min_per_km, load: lb }
+
+pace:
+  # Easy ceiling tightens across the seed plan: 6:10 (wk8) -> 6:05 (wk9-12) -> 6:00 (wk13-15)
+  # -> 5:55 (wk16-17) -> 5:50 (wk18-19). Update this value as each threshold is crossed and
+  # record the date it moved — this is the "get faster" goal made measurable.
+  easy_ceiling: "6:05"
+  easy_ceiling_history:
+    - { through_week: 12, pace: "6:05" }
+    - { through_week: 15, pace: "6:00" }
+    - { through_week: 17, pace: "5:55" }
+    - { through_week: 19, pace: "5:50" }
+
+  long_steady: "5:40"        # long-run progressive/steady segments in the seed (30-42km runs)
+  tempo: "5:05"               # the recurring Wednesday tempo number across the whole seed plan
+  threshold: "4:55"           # recurring 1km/1.6km interval pace
+  vo2: "4:35"                 # 400m repeat pace, tightens to 4:25 for 200s later in the plan
+
+  walk_recovery: "9:00"       # used for all interval rest steps
+
+  # Deliberately far slower than Runna's discarded 50km race pace (5:35-5:55/km) — see
+  # races/2026-10-17-ghost-train.md. These are moving paces including planned walk breaks.
+  ultra_lap_early: "7:00-7:30"   # laps 1-2, should feel absurdly easy
+  ultra_lap_late: "8:30-10:00"   # laps 4+, run/walk, moving pace
+
+hr:
+  lthr: null                 # TODO: set from a threshold test or a hard recent tempo effort
+  zones: { z1: null, z2: null, z3: null, z4: null, z5: null }
+  note: "Until set, author HR-targeted sessions (lap-sim, long runs) with target_mode: effort instead."
+
+bike:
+  ftp_w: null                # TODO: set from a ramp or 20-min test on the trainer
+  z2_w: null                 # ~56-75% FTP — the only zone meeting-time trainer sessions use
+  cadence: "85-95rpm"
+
+bodyweight_lb: null           # TODO: fill in — used by strength/program.liftoscript accessory sizing

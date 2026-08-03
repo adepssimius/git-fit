@@ -1,0 +1,22 @@
+# Lift training maxes, in lb. Nothing was supplied at seed time — placeholders below match the
+# working numbers used in strength/program.liftoscript Week 1 (block week 9) as a reasonable
+# starting point for an intermediate lifter; correct these on first read and let Liftoscript's
+# `progress: lp(...)` / `dp(...)` take over from there. Do not hand-edit these once the Liftosaur
+# MCP is live — the program file plus the app's own state become the source of truth then.
+
+units: lb
+
+lifts:
+  squat: 185
+  bench_press: 155
+  romanian_deadlift: 155
+  weighted_pull_up: 25        # added load, bodyweight not included
+  incline_bench_press: 115
+  barbell_row: 115
+  overhead_press: 75
+
+bodyweight_lb: null            # TODO: fill in — see athlete/zones.yml
+
+note: >
+  All figures are placeholders pending real numbers from the user. Update this file and the
+  matching Week 1 lines in strength/program.liftoscript together so they don't drift.

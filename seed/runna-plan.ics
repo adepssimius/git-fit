@@ -1,0 +1,1012 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Runna//EN
+X-WR-CALNAME:Runna
+
+
+BEGIN:VEVENT
+UID:UPCOMING_PLAN_WORKOUT-23bf20cd-4642-4b6d-9b69-b3e16a4c2076_plan_week_8_EASY_RUN_0
+DTSTAMP:20260803
+DTSTART:20260728
+DTEND:20260729
+SUMMARY:🏃 6km Easy Run • 6km
+DESCRIPTION:Easy Run • 6km • 35m - 40m\n\n6km easy run at a conversational pace (no faster than 6:10/km). This is a limit, not a target - run at whatever pace feels truly easy!\n\n📲 View in the Runna app: https://club.runna.com/n9Tx/workout?dayId=23bf20cd-4642-4b6d-9b69-b3e16a4c2076_plan_week_8_EASY_RUN_0&weekIndex=8
+X-GOOGLE-ID:_68pm4phi61hm8b9k6oq34b9kc8r68b9pc8r3ibb26dij2dj16hhj4c1n6pfn0r31dpfnepb5ddfjgnq5859linqial75uc0
+X-USER-TIMEZONE:America/New_York
+X-WORKOUT-ESTIMATED-DURATION:2400
+END:VEVENT
+
+BEGIN:VEVENT
+UID:UPCOMING_PLAN_WORKOUT-23bf20cd-4642-4b6d-9b69-b3e16a4c2076_plan_week_8_INTERVALS_0
+DTSTAMP:20260803
+DTSTART:20260729
+DTEND:20260730
+SUMMARY:🏃 Progressive Mile Repeats • 7.4km
+DESCRIPTION:Intervals • 7.4km • 45m - 50m\n\n1.4km warm up at a conversational pace (no faster than 6:10/km), 90s walking rest\n\n3 reps of:\n• 400m at 5:45/km\n• 400m at 5:25/km\n• 400m at 5:10/km\n• 400m at 4:55/km, 120s walking rest\n\n1.2km cool down at a conversational pace (or slower!)\n\n📲 View in the Runna app: https://club.runna.com/n9Tx/workout?dayId=23bf20cd-4642-4b6d-9b69-b3e16a4c2076_plan_week_8_INTERVALS_0&weekIndex=8
+X-GOOGLE-ID:_68pm4phi61hm8b9k6oq34b9kc8r68b9pc8r3ibb26dij2dj16hhj4c1n6pfn0r31dpfnepb5ddfjgnq99pa4akim85656npg
+X-USER-TIMEZONE:America/New_York
+X-WORKOUT-ESTIMATED-DURATION:3000
+END:VEVENT
+
+BEGIN:VEVENT
+UID:UPCOMING_PLAN_WORKOUT-23bf20cd-4642-4b6d-9b69-b3e16a4c2076_plan_week_9_INTERVALS_0
+DTSTAMP:20260803
+DTSTART:20260804
+DTEND:20260805
+SUMMARY:🏃 Broken Miles • 5km
+DESCRIPTION:Intervals • 5km • 30m - 35m\n\n1km warm up at a conversational pace (no faster than 6:05/km), 90s walking rest\n\n2 reps of:\n• 1.2km at 5:00/km, 120s walking rest\n• 400m at 4:40/km, 60s walking rest\n\n800m cool down at a conversational pace (or slower!)\n\n📲 View in the Runna app: https://club.runna.com/n9Tx/workout?dayId=23bf20cd-4642-4b6d-9b69-b3e16a4c2076_plan_week_9_INTERVALS_0&weekIndex=9
+X-GOOGLE-ID:_68pm4phi61hm8b9k6oq34b9kc8r68b9pc8r3ibb26dij2dj16hhj4c1n6pfn0r31dpfnepb5ddfjinq99pa4akim85656npg
+X-USER-TIMEZONE:America/New_York
+X-WORKOUT-ESTIMATED-DURATION:2100
+END:VEVENT
+
+BEGIN:VEVENT
+UID:UPCOMING_PLAN_WORKOUT-23bf20cd-4642-4b6d-9b69-b3e16a4c2076_plan_week_9_TEMPO_0
+DTSTAMP:20260803
+DTSTART:20260806
+DTEND:20260807
+SUMMARY:🏃 Tempo 2km • 5km
+DESCRIPTION:Tempo • 5km • 25m - 35m\n\n2km warm up at a conversational pace (no faster than 6:05/km)\n\n2km at 5:05/km (4:55-5:15/km), 120s walking rest\n\n1km cool down at a conversational pace (or slower!)\n\n📲 View in the Runna app: https://club.runna.com/n9Tx/workout?dayId=23bf20cd-4642-4b6d-9b69-b3e16a4c2076_plan_week_9_TEMPO_0&weekIndex=9
+X-GOOGLE-ID:_68pm4phi61hm8b9k6oq34b9kc8r68b9pc8r3ibb26dij2dj16hhj4c1n6pfn0r31dpfnepb5ddfjinqk8l6l0jqv60
+X-USER-TIMEZONE:America/New_York
+X-WORKOUT-ESTIMATED-DURATION:2100
+END:VEVENT
+
+BEGIN:VEVENT
+UID:UPCOMING_PLAN_WORKOUT-23bf20cd-4642-4b6d-9b69-b3e16a4c2076_plan_week_9_LONG_RUN_0
+DTSTAMP:20260803
+DTSTART:20260808
+DTEND:20260809
+SUMMARY:🏃 15km Long Run • 15km
+DESCRIPTION:Long Run • 15km • 1h30m - 1h40m\n\n15km at a conversational pace\n\n📲 View in the Runna app: https://club.runna.com/n9Tx/workout?dayId=23bf20cd-4642-4b6d-9b69-b3e16a4c2076_plan_week_9_LONG_RUN_0&weekIndex=9
+X-GOOGLE-ID:_68pm4phi61hm8b9k6oq34b9kc8r68b9pc8r3ibb26dij2dj16hhj4c1n6pfn0r31dpfnepb5ddfjinqc9t74enqial75uc0
+X-USER-TIMEZONE:America/New_York
+X-WORKOUT-ESTIMATED-DURATION:5700
+END:VEVENT
+
+BEGIN:VEVENT
+UID:UPCOMING_PLAN_WORKOUT-23bf20cd-4642-4b6d-9b69-b3e16a4c2076_plan_week_10_INTERVALS_0
+DTSTAMP:20260803
+DTSTART:20260813
+DTEND:20260814
+SUMMARY:🏃 Mile Up & Overs • 5km
+DESCRIPTION:Intervals • 5km • 30m - 35m\n\n1km warm up at a conversational pace (no faster than 6:05/km), 90s walking rest\n\n2 reps of:\n• 400m at 5:50/km\n• 400m at 5:00/km\n• 400m at 5:50/km\n• 400m at 5:00/km, 120s walking rest\n\n800m cool down at a conversational pace (or slower!)\n\n📲 View in the Runna app: https://club.runna.com/n9Tx/workout?dayId=23bf20cd-4642-4b6d-9b69-b3e16a4c2076_plan_week_10_INTERVALS_0&weekIndex=10
+X-GOOGLE-ID:_68pm4phi61hm8b9k6oq34b9kc8r68b9pc8r3ibb26dij2dj16hhj4c1n6pfn0r31dpfnepb5ddfj2c2v95758haiap0kokqv60
+X-USER-TIMEZONE:America/New_York
+X-WORKOUT-ESTIMATED-DURATION:2100
+END:VEVENT
+
+BEGIN:VEVENT
+UID:UPCOMING_PLAN_WORKOUT-23bf20cd-4642-4b6d-9b69-b3e16a4c2076_plan_week_10_EASY_RUN_0
+DTSTAMP:20260803
+DTSTART:20260810
+DTEND:20260811
+SUMMARY:🏃 7.5km Easy Run • 7.5km
+DESCRIPTION:Easy Run • 7.5km • 45m - 50m\n\n7.5km easy run at a conversational pace (no faster than 6:05/km). This is a limit, not a target - run at whatever pace feels truly easy!\n\n📲 View in the Runna app: https://club.runna.com/n9Tx/workout?dayId=23bf20cd-4642-4b6d-9b69-b3e16a4c2076_plan_week_10_EASY_RUN_0&weekIndex=10
+X-GOOGLE-ID:_68pm4phi61hm8b9k6oq34b9kc8r68b9pc8r3ibb26dij2dj16hhj4c1n6pfn0r31dpfnepb5ddfj2c2v8l0l6mava9aksnpg
+X-USER-TIMEZONE:America/New_York
+X-WORKOUT-ESTIMATED-DURATION:3000
+END:VEVENT
+
+BEGIN:VEVENT
+UID:UPCOMING_PLAN_WORKOUT-23bf20cd-4642-4b6d-9b69-b3e16a4c2076_plan_week_10_TEMPO_0
+DTSTAMP:20260803
+DTSTART:20260811
+DTEND:20260812
+SUMMARY:🏃 On Off Ks • 8km
+DESCRIPTION:Tempo • 8km • 40m - 50m\n\n1km warm up at a conversational pace (no faster than 6:05/km)\n\nRepeat the following 3x:\n----------\n1km at 5:40/km\n1km at 5:05/km\n----------\n\n90s walking rest\n\n1km cool down at a conversational pace (or slower!)\n\n📲 View in the Runna app: https://club.runna.com/n9Tx/workout?dayId=23bf20cd-4642-4b6d-9b69-b3e16a4c2076_plan_week_10_TEMPO_0&weekIndex=10
+X-GOOGLE-ID:_68pm4phi61hm8b9k6oq34b9kc8r68b9pc8r3ibb26dij2dj16hhj4c1n6pfn0r31dpfnepb5ddfj2c2vah2kqk2fbso0
+X-USER-TIMEZONE:America/New_York
+X-WORKOUT-ESTIMATED-DURATION:3000
+END:VEVENT
+
+BEGIN:VEVENT
+UID:UPCOMING_PLAN_WORKOUT-23bf20cd-4642-4b6d-9b69-b3e16a4c2076_plan_week_10_LONG_RUN_0
+DTSTAMP:20260803
+DTSTART:20260815
+DTEND:20260816
+SUMMARY:🏃 34km Block Long Run • 34km
+DESCRIPTION:Long Run • 34km • 3h10m - 3h30m\n\n12km at a conversational pace\n10km at 5:40/km\n12km at a conversational pace\n\n📲 View in the Runna app: https://club.runna.com/n9Tx/workout?dayId=23bf20cd-4642-4b6d-9b69-b3e16a4c2076_plan_week_10_LONG_RUN_0&weekIndex=10
+X-GOOGLE-ID:_68pm4phi61hm8b9k6oq34b9kc8r68b9pc8r3ibb26dij2dj16hhj4c1n6pfn0r31dpfnepb5ddfj2c2v9h7kshqva9aksnpg
+X-USER-TIMEZONE:America/New_York
+X-WORKOUT-ESTIMATED-DURATION:12600
+END:VEVENT
+
+BEGIN:VEVENT
+UID:UPCOMING_PLAN_WORKOUT-23bf20cd-4642-4b6d-9b69-b3e16a4c2076_plan_week_11_INTERVALS_0
+DTSTAMP:20260803
+DTSTART:20260820
+DTEND:20260821
+SUMMARY:🏃 400m Repeats • 5km
+DESCRIPTION:Intervals • 5km • 30m - 35m\n\n1.6km warm up at a conversational pace (no faster than 6:05/km), 90s walking rest\n\n6 reps of:\n• 400m at 4:35/km (4:25-4:45/km), 60s walking rest\n\n1km cool down at a conversational pace (or slower!)\n\n📲 View in the Runna app: https://club.runna.com/n9Tx/workout?dayId=23bf20cd-4642-4b6d-9b69-b3e16a4c2076_plan_week_11_INTERVALS_0&weekIndex=11
+X-GOOGLE-ID:_68pm4phi61hm8b9k6oq34b9kc8r68b9pc8r3ibb26dij2dj16hhj4c1n6pfn0r31dpfnepb5ddfj2cav95758haiap0kokqv60
+X-USER-TIMEZONE:America/New_York
+X-WORKOUT-ESTIMATED-DURATION:2100
+END:VEVENT
+
+BEGIN:VEVENT
+UID:UPCOMING_PLAN_WORKOUT-23bf20cd-4642-4b6d-9b69-b3e16a4c2076_plan_week_11_EASY_RUN_0
+DTSTAMP:20260803
+DTSTART:20260817
+DTEND:20260818
+SUMMARY:🏃 6km Easy Run • 6km
+DESCRIPTION:Easy Run • 6km • 35m - 40m\n\n6km easy run at a conversational pace (no faster than 6:05/km). This is a limit, not a target - run at whatever pace feels truly easy!\n\n📲 View in the Runna app: https://club.runna.com/n9Tx/workout?dayId=23bf20cd-4642-4b6d-9b69-b3e16a4c2076_plan_week_11_EASY_RUN_0&weekIndex=11
+X-GOOGLE-ID:_68pm4phi61hm8b9k6oq34b9kc8r68b9pc8r3ibb26dij2dj16hhj4c1n6pfn0r31dpfnepb5ddfj2cav8l0l6mava9aksnpg
+X-USER-TIMEZONE:America/New_York
+X-WORKOUT-ESTIMATED-DURATION:2400
+END:VEVENT
+
+BEGIN:VEVENT
+UID:UPCOMING_PLAN_WORKOUT-23bf20cd-4642-4b6d-9b69-b3e16a4c2076_plan_week_11_TEMPO_0
+DTSTAMP:20260803
+DTSTART:20260818
+DTEND:20260819
+SUMMARY:🏃 Tempo 3km • 8km
+DESCRIPTION:Tempo • 8km • 45m - 50m\n\n2.5km warm up at a conversational pace (no faster than 6:05/km)\n\n3km at 5:10/km (5:00-5:20/km), 150s walking rest\n\n2.5km cool down at a conversational pace (or slower!)\n\n📲 View in the Runna app: https://club.runna.com/n9Tx/workout?dayId=23bf20cd-4642-4b6d-9b69-b3e16a4c2076_plan_week_11_TEMPO_0&weekIndex=11
+X-GOOGLE-ID:_68pm4phi61hm8b9k6oq34b9kc8r68b9pc8r3ibb26dij2dj16hhj4c1n6pfn0r31dpfnepb5ddfj2cavah2kqk2fbso0
+X-USER-TIMEZONE:America/New_York
+X-WORKOUT-ESTIMATED-DURATION:3000
+END:VEVENT
+
+BEGIN:VEVENT
+UID:UPCOMING_PLAN_WORKOUT-23bf20cd-4642-4b6d-9b69-b3e16a4c2076_plan_week_11_LONG_RUN_0
+DTSTAMP:20260803
+DTSTART:20260822
+DTEND:20260823
+SUMMARY:🏃 38km Long Run • 38km
+DESCRIPTION:Long Run • 38km • 3h40m - 4h0m\n\n38km at a conversational pace\n\n📲 View in the Runna app: https://club.runna.com/n9Tx/workout?dayId=23bf20cd-4642-4b6d-9b69-b3e16a4c2076_plan_week_11_LONG_RUN_0&weekIndex=11
+X-GOOGLE-ID:_68pm4phi61hm8b9k6oq34b9kc8r68b9pc8r3ibb26dij2dj16hhj4c1n6pfn0r31dpfnepb5ddfj2cav9h7kshqva9aksnpg
+X-USER-TIMEZONE:America/New_York
+X-WORKOUT-ESTIMATED-DURATION:14100
+END:VEVENT
+
+BEGIN:VEVENT
+UID:UPCOMING_PLAN_WORKOUT-23bf20cd-4642-4b6d-9b69-b3e16a4c2076_plan_week_12_INTERVALS_0
+DTSTAMP:20260803
+DTSTART:20260825
+DTEND:20260826
+SUMMARY:🏃 Descending Intervals • 11km
+DESCRIPTION:Intervals • 11km • 1h10m - 1h20m\n\n2km warm up at a conversational pace (no faster than 6:00/km), 90s walking rest\n\n2 reps of:\n• 1.6km at 5:00/km, 120s walking rest\n\n3 reps of:\n• 800m at 4:50/km, 90s walking rest\n\n4 reps of:\n• 400m at 4:35/km, 60s walking rest\n\n1.8km cool down at a conversational pace (or slower!)\n\n📲 View in the Runna app: https://club.runna.com/n9Tx/workout?dayId=23bf20cd-4642-4b6d-9b69-b3e16a4c2076_plan_week_12_INTERVALS_0&weekIndex=12
+X-GOOGLE-ID:_68pm4phi61hm8b9k6oq34b9kc8r68b9pc8r3ibb26dij2dj16hhj4c1n6pfn0r31dpfnepb5ddfj2civ95758haiap0kokqv60
+X-USER-TIMEZONE:America/New_York
+X-WORKOUT-ESTIMATED-DURATION:4500
+END:VEVENT
+
+BEGIN:VEVENT
+UID:UPCOMING_PLAN_WORKOUT-23bf20cd-4642-4b6d-9b69-b3e16a4c2076_plan_week_12_EASY_RUN_0
+DTSTAMP:20260803
+DTSTART:20260830
+DTEND:20260831
+SUMMARY:🏃 11km Easy Run • 11km
+DESCRIPTION:Easy Run • 11km • 1h0m - 1h10m\n\n11km easy run at a conversational pace (no faster than 6:00/km). This is a limit, not a target - run at whatever pace feels truly easy!\n\n📲 View in the Runna app: https://club.runna.com/n9Tx/workout?dayId=23bf20cd-4642-4b6d-9b69-b3e16a4c2076_plan_week_12_EASY_RUN_0&weekIndex=12
+X-GOOGLE-ID:_68pm4phi61hm8b9k6oq34b9kc8r68b9pc8r3ibb26dij2dj16hhj4c1n6pfn0r31dpfnepb5ddfj2civ8l0l6mava9aksnpg
+X-USER-TIMEZONE:America/New_York
+X-WORKOUT-ESTIMATED-DURATION:4200
+END:VEVENT
+
+BEGIN:VEVENT
+UID:UPCOMING_PLAN_WORKOUT-23bf20cd-4642-4b6d-9b69-b3e16a4c2076_plan_week_12_TEMPO_0
+DTSTAMP:20260803
+DTSTART:20260827
+DTEND:20260828
+SUMMARY:🏃 Over and Unders 2km • 11km
+DESCRIPTION:Tempo • 11km • 1h0m - 1h10m\n\n1.5km warm up at a conversational pace (no faster than 6:00/km)\n\nRepeat the following 2x:\n----------\n2km at 5:45/km\n2km at 5:05/km\n----------\n\n90s walking rest\n\n1.5km cool down at a conversational pace (or slower!)\n\n📲 View in the Runna app: https://club.runna.com/n9Tx/workout?dayId=23bf20cd-4642-4b6d-9b69-b3e16a4c2076_plan_week_12_TEMPO_0&weekIndex=12
+X-GOOGLE-ID:_68pm4phi61hm8b9k6oq34b9kc8r68b9pc8r3ibb26dij2dj16hhj4c1n6pfn0r31dpfnepb5ddfj2civah2kqk2fbso0
+X-USER-TIMEZONE:America/New_York
+X-WORKOUT-ESTIMATED-DURATION:3900
+END:VEVENT
+
+BEGIN:VEVENT
+UID:UPCOMING_PLAN_WORKOUT-23bf20cd-4642-4b6d-9b69-b3e16a4c2076_plan_week_12_LONG_RUN_0
+DTSTAMP:20260803
+DTSTART:20260829
+DTEND:20260830
+SUMMARY:🏃 30km Progressive Long Run • 30km
+DESCRIPTION:Long Run • 30km • 2h50m - 3h0m\n\n11km at a conversational pace\n6.5km at 5:50/km\n6km at 5:40/km\n5.5km at 5:30/km\n1km at a conversational pace\n\n📲 View in the Runna app: https://club.runna.com/n9Tx/workout?dayId=23bf20cd-4642-4b6d-9b69-b3e16a4c2076_plan_week_12_LONG_RUN_0&weekIndex=12
+X-GOOGLE-ID:_68pm4phi61hm8b9k6oq34b9kc8r68b9pc8r3ibb26dij2dj16hhj4c1n6pfn0r31dpfnepb5ddfj2civ9h7kshqva9aksnpg
+X-USER-TIMEZONE:America/New_York
+X-WORKOUT-ESTIMATED-DURATION:10800
+END:VEVENT
+
+BEGIN:VEVENT
+UID:UPCOMING_PLAN_WORKOUT-23bf20cd-4642-4b6d-9b69-b3e16a4c2076_plan_week_13_TEMPO_0
+DTSTAMP:20260803
+DTSTART:20260901
+DTEND:20260902
+SUMMARY:🏃 Half Easy, Half Tempo • 8km
+DESCRIPTION:Tempo • 8km • 40m - 50m\n\n1km warm up at a conversational pace (no faster than 6:00/km)\n\n3km at 5:40/km\n3km at 5:05/km, 90s walking rest\n\n1km cool down at a conversational pace (or slower!)\n\n📲 View in the Runna app: https://club.runna.com/n9Tx/workout?dayId=23bf20cd-4642-4b6d-9b69-b3e16a4c2076_plan_week_13_TEMPO_0&weekIndex=13
+X-GOOGLE-ID:_68pm4phi61hm8b9k6oq34b9kc8r68b9pc8r3ibb26dij2dj16hhj4c1n6pfn0r31dpfnepb5ddfj2cqvah2kqk2fbso0
+X-USER-TIMEZONE:America/New_York
+X-WORKOUT-ESTIMATED-DURATION:3000
+END:VEVENT
+
+BEGIN:VEVENT
+UID:UPCOMING_PLAN_WORKOUT-23bf20cd-4642-4b6d-9b69-b3e16a4c2076_plan_week_13_EASY_RUN_0
+DTSTAMP:20260803
+DTSTART:20260831
+DTEND:20260901
+SUMMARY:🏃 7km Easy Run • 7km
+DESCRIPTION:Easy Run • 7km • 40m - 45m\n\n7km easy run at a conversational pace (no faster than 6:00/km). This is a limit, not a target - run at whatever pace feels truly easy!\n\n📲 View in the Runna app: https://club.runna.com/n9Tx/workout?dayId=23bf20cd-4642-4b6d-9b69-b3e16a4c2076_plan_week_13_EASY_RUN_0&weekIndex=13
+X-GOOGLE-ID:_68pm4phi61hm8b9k6oq34b9kc8r68b9pc8r3ibb26dij2dj16hhj4c1n6pfn0r31dpfnepb5ddfj2cqv8l0l6mava9aksnpg
+X-USER-TIMEZONE:America/New_York
+X-WORKOUT-ESTIMATED-DURATION:2700
+END:VEVENT
+
+BEGIN:VEVENT
+UID:UPCOMING_PLAN_WORKOUT-23bf20cd-4642-4b6d-9b69-b3e16a4c2076_plan_week_13_INTERVALS_0
+DTSTAMP:20260803
+DTSTART:20260903
+DTEND:20260904
+SUMMARY:🏃 400s into 200s • 8km
+DESCRIPTION:Intervals • 8km • 1h0m - 1h10m\n\n2km warm up at a conversational pace (no faster than 6:00/km), 90s walking rest\n\n7 reps of:\n• 400m at 4:40/km, 60s walking rest\n\n7 reps of:\n• 200m at 4:25/km, 90s walking rest\n\n1.8km cool down at a conversational pace (or slower!)\n\n📲 View in the Runna app: https://club.runna.com/n9Tx/workout?dayId=23bf20cd-4642-4b6d-9b69-b3e16a4c2076_plan_week_13_INTERVALS_0&weekIndex=13
+X-GOOGLE-ID:_68pm4phi61hm8b9k6oq34b9kc8r68b9pc8r3ibb26dij2dj16hhj4c1n6pfn0r31dpfnepb5ddfj2cqv95758haiap0kokqv60
+X-USER-TIMEZONE:America/New_York
+X-WORKOUT-ESTIMATED-DURATION:3900
+END:VEVENT
+
+BEGIN:VEVENT
+UID:UPCOMING_PLAN_WORKOUT-23bf20cd-4642-4b6d-9b69-b3e16a4c2076_plan_week_13_LONG_RUN_0
+DTSTAMP:20260803
+DTSTART:20260905
+DTEND:20260906
+SUMMARY:🏃 Marathon Long Run • 42.2km
+DESCRIPTION:Long Run • 42.2km • 4h0m - 4h20m\n\nMarathon at a conversational pace\n\n📲 View in the Runna app: https://club.runna.com/n9Tx/workout?dayId=23bf20cd-4642-4b6d-9b69-b3e16a4c2076_plan_week_13_LONG_RUN_0&weekIndex=13
+X-GOOGLE-ID:_68pm4phi61hm8b9k6oq34b9kc8r68b9pc8r3ibb26dij2dj16hhj4c1n6pfn0r31dpfnepb5ddfj2cqv9h7kshqva9aksnpg
+X-USER-TIMEZONE:America/New_York
+X-WORKOUT-ESTIMATED-DURATION:15600
+END:VEVENT
+
+BEGIN:VEVENT
+UID:UPCOMING_PLAN_WORKOUT-23bf20cd-4642-4b6d-9b69-b3e16a4c2076_plan_week_14_TEMPO_0
+DTSTAMP:20260803
+DTSTART:20260908
+DTEND:20260909
+SUMMARY:🏃 Rolling 300s • 6.6km
+DESCRIPTION:Tempo • 6.6km • 35m - 40m\n\n2km warm up at a conversational pace (no faster than 6:00/km)\n\nRepeat the following 5x:\n----------\n300m at 4:55/km\n300m at 5:40/km\n----------\n\n90s walking rest\n\n1.6km cool down at a conversational pace (or slower!)\n\n📲 View in the Runna app: https://club.runna.com/n9Tx/workout?dayId=23bf20cd-4642-4b6d-9b69-b3e16a4c2076_plan_week_14_TEMPO_0&weekIndex=14
+X-GOOGLE-ID:_68pm4phi61hm8b9k6oq34b9kc8r68b9pc8r3ibb26dij2dj16hhj4c1n6pfn0r31dpfnepb5ddfj2d2vah2kqk2fbso0
+X-USER-TIMEZONE:America/New_York
+X-WORKOUT-ESTIMATED-DURATION:2400
+END:VEVENT
+
+BEGIN:VEVENT
+UID:UPCOMING_PLAN_WORKOUT-23bf20cd-4642-4b6d-9b69-b3e16a4c2076_plan_week_14_INTERVALS_0
+DTSTAMP:20260803
+DTSTART:20260910
+DTEND:20260911
+SUMMARY:🏃 K200s • 5km
+DESCRIPTION:Intervals • 5km • 30m - 35m\n\n1.6km warm up at a conversational pace, add 2x 15s fast bursts as part of your warm up jog to inject some pace into your legs before the main session!, 90s walking rest\n\n2 reps of:\n• 1km at 4:55/km\n• 200m at 4:25/km, 120s walking rest\n\n1km cool down at a conversational pace (or slower!)\n\n📲 View in the Runna app: https://club.runna.com/n9Tx/workout?dayId=23bf20cd-4642-4b6d-9b69-b3e16a4c2076_plan_week_14_INTERVALS_0&weekIndex=14
+X-GOOGLE-ID:_68pm4phi61hm8b9k6oq34b9kc8r68b9pc8r3ibb26dij2dj16hhj4c1n6pfn0r31dpfnepb5ddfj2d2v95758haiap0kokqv60
+X-USER-TIMEZONE:America/New_York
+X-WORKOUT-ESTIMATED-DURATION:2100
+END:VEVENT
+
+BEGIN:VEVENT
+UID:UPCOMING_PLAN_WORKOUT-23bf20cd-4642-4b6d-9b69-b3e16a4c2076_plan_week_14_LONG_RUN_0
+DTSTAMP:20260803
+DTSTART:20260912
+DTEND:20260913
+SUMMARY:🏃 20km Long Run • 20km
+DESCRIPTION:Long Run • 20km • 1h50m - 2h0m\n\n20km at a conversational pace\n\n📲 View in the Runna app: https://club.runna.com/n9Tx/workout?dayId=23bf20cd-4642-4b6d-9b69-b3e16a4c2076_plan_week_14_LONG_RUN_0&weekIndex=14
+X-GOOGLE-ID:_68pm4phi61hm8b9k6oq34b9kc8r68b9pc8r3ibb26dij2dj16hhj4c1n6pfn0r31dpfnepb5ddfj2d2v9h7kshqva9aksnpg
+X-USER-TIMEZONE:America/New_York
+X-WORKOUT-ESTIMATED-DURATION:7200
+END:VEVENT
+
+BEGIN:VEVENT
+UID:UPCOMING_PLAN_WORKOUT-23bf20cd-4642-4b6d-9b69-b3e16a4c2076_plan_week_14_EASY_RUN_0
+DTSTAMP:20260803
+DTSTART:20260913
+DTEND:20260914
+SUMMARY:🏃 5.5km Easy Run • 5.5km
+DESCRIPTION:Easy Run • 5.5km • 30m - 35m\n\n5.5km easy run at a conversational pace (no faster than 6:00/km). This is a limit, not a target - run at whatever pace feels truly easy!\n\n📲 View in the Runna app: https://club.runna.com/n9Tx/workout?dayId=23bf20cd-4642-4b6d-9b69-b3e16a4c2076_plan_week_14_EASY_RUN_0&weekIndex=14
+X-GOOGLE-ID:_68pm4phi61hm8b9k6oq34b9kc8r68b9pc8r3ibb26dij2dj16hhj4c1n6pfn0r31dpfnepb5ddfj2d2v8l0l6mava9aksnpg
+X-USER-TIMEZONE:America/New_York
+X-WORKOUT-ESTIMATED-DURATION:2100
+END:VEVENT
+
+BEGIN:VEVENT
+UID:UPCOMING_PLAN_WORKOUT-23bf20cd-4642-4b6d-9b69-b3e16a4c2076_plan_week_15_TEMPO_0
+DTSTAMP:20260803
+DTSTART:20260915
+DTEND:20260916
+SUMMARY:🏃 Tempo 4km • 11km
+DESCRIPTION:Tempo • 11km • 1h0m - 1h10m\n\n4km warm up at a conversational pace (no faster than 6:00/km)\n\n4km at 5:00/km (4:50-5:10/km), 150s walking rest\n\n3km cool down at a conversational pace (or slower!)\n\n📲 View in the Runna app: https://club.runna.com/n9Tx/workout?dayId=23bf20cd-4642-4b6d-9b69-b3e16a4c2076_plan_week_15_TEMPO_0&weekIndex=15
+X-GOOGLE-ID:_68pm4phi61hm8b9k6oq34b9kc8r68b9pc8r3ibb26dij2dj16hhj4c1n6pfn0r31dpfnepb5ddfj2davah2kqk2fbso0
+X-USER-TIMEZONE:America/New_York
+X-WORKOUT-ESTIMATED-DURATION:4200
+END:VEVENT
+
+BEGIN:VEVENT
+UID:UPCOMING_PLAN_WORKOUT-23bf20cd-4642-4b6d-9b69-b3e16a4c2076_plan_week_15_EASY_RUN_0
+DTSTAMP:20260803
+DTSTART:20260914
+DTEND:20260915
+SUMMARY:🏃 11km Easy Run • 11km
+DESCRIPTION:Easy Run • 11km • 1h0m - 1h10m\n\n11km easy run at a conversational pace (no faster than 6:00/km). This is a limit, not a target - run at whatever pace feels truly easy!\n\n📲 View in the Runna app: https://club.runna.com/n9Tx/workout?dayId=23bf20cd-4642-4b6d-9b69-b3e16a4c2076_plan_week_15_EASY_RUN_0&weekIndex=15
+X-GOOGLE-ID:_68pm4phi61hm8b9k6oq34b9kc8r68b9pc8r3ibb26dij2dj16hhj4c1n6pfn0r31dpfnepb5ddfj2dav8l0l6mava9aksnpg
+X-USER-TIMEZONE:America/New_York
+X-WORKOUT-ESTIMATED-DURATION:4200
+END:VEVENT
+
+BEGIN:VEVENT
+UID:UPCOMING_PLAN_WORKOUT-23bf20cd-4642-4b6d-9b69-b3e16a4c2076_plan_week_15_INTERVALS_0
+DTSTAMP:20260803
+DTSTART:20260917
+DTEND:20260918
+SUMMARY:🏃 600s into 200s • 11km
+DESCRIPTION:Intervals • 11km • 1h10m - 1h30m\n\n3.5km warm up at a conversational pace (no faster than 6:00/km), 90s walking rest\n\n6 reps of:\n• 600m at 4:40/km, 90s walking rest\n\n7 reps of:\n• 200m at 4:25/km, 90s walking rest\n\n2.5km cool down at a conversational pace (or slower!)\n\n📲 View in the Runna app: https://club.runna.com/n9Tx/workout?dayId=23bf20cd-4642-4b6d-9b69-b3e16a4c2076_plan_week_15_INTERVALS_0&weekIndex=15
+X-GOOGLE-ID:_68pm4phi61hm8b9k6oq34b9kc8r68b9pc8r3ibb26dij2dj16hhj4c1n6pfn0r31dpfnepb5ddfj2dav95758haiap0kokqv60
+X-USER-TIMEZONE:America/New_York
+X-WORKOUT-ESTIMATED-DURATION:5100
+END:VEVENT
+
+BEGIN:VEVENT
+UID:UPCOMING_PLAN_WORKOUT-23bf20cd-4642-4b6d-9b69-b3e16a4c2076_plan_week_15_LONG_RUN_0
+DTSTAMP:20260803
+DTSTART:20260919
+DTEND:20260920
+SUMMARY:🏃 38km Progressive Repeat Long Run • 38km
+DESCRIPTION:Long Run • 38km • 3h30m - 3h50m\n\n15km at a conversational pace\n2.5km at 5:40/km\n2.5km at 5:30/km\n13km at 5:45/km\n2.5km at 5:40/km\n2.5km at 5:30/km\n\n📲 View in the Runna app: https://club.runna.com/n9Tx/workout?dayId=23bf20cd-4642-4b6d-9b69-b3e16a4c2076_plan_week_15_LONG_RUN_0&weekIndex=15
+X-GOOGLE-ID:_68pm4phi61hm8b9k6oq34b9kc8r68b9pc8r3ibb26dij2dj16hhj4c1n6pfn0r31dpfnepb5ddfj2dav9h7kshqva9aksnpg
+X-USER-TIMEZONE:America/New_York
+X-WORKOUT-ESTIMATED-DURATION:13500
+END:VEVENT
+
+BEGIN:VEVENT
+UID:UPCOMING_PLAN_WORKOUT-23bf20cd-4642-4b6d-9b69-b3e16a4c2076_plan_week_16_INTERVALS_0
+DTSTAMP:20260803
+DTSTART:20260922
+DTEND:20260923
+SUMMARY:🏃 Mile Repeats • 11km
+DESCRIPTION:Intervals • 11km • 1h0m - 1h10m\n\n3km warm up at a conversational pace (no faster than 5:55/km), 90s walking rest\n\n4 reps of:\n• 1.6km at 4:55/km (4:45-5:05/km), 120s walking rest\n\n1.6km cool down at a conversational pace (or slower!)\n\n📲 View in the Runna app: https://club.runna.com/n9Tx/workout?dayId=23bf20cd-4642-4b6d-9b69-b3e16a4c2076_plan_week_16_INTERVALS_0&weekIndex=16
+X-GOOGLE-ID:_68pm4phi61hm8b9k6oq34b9kc8r68b9pc8r3ibb26dij2dj16hhj4c1n6pfn0r31dpfnepb5ddfj2div95758haiap0kokqv60
+X-USER-TIMEZONE:America/New_York
+X-WORKOUT-ESTIMATED-DURATION:4200
+END:VEVENT
+
+BEGIN:VEVENT
+UID:UPCOMING_PLAN_WORKOUT-23bf20cd-4642-4b6d-9b69-b3e16a4c2076_plan_week_16_EASY_RUN_0
+DTSTAMP:20260803
+DTSTART:20260921
+DTEND:20260922
+SUMMARY:🏃 12km Easy Run • 12km
+DESCRIPTION:Easy Run • 12km • 1h10m - 1h20m\n\n12km easy run at a conversational pace (no faster than 5:55/km). This is a limit, not a target - run at whatever pace feels truly easy!\n\n📲 View in the Runna app: https://club.runna.com/n9Tx/workout?dayId=23bf20cd-4642-4b6d-9b69-b3e16a4c2076_plan_week_16_EASY_RUN_0&weekIndex=16
+X-GOOGLE-ID:_68pm4phi61hm8b9k6oq34b9kc8r68b9pc8r3ibb26dij2dj16hhj4c1n6pfn0r31dpfnepb5ddfj2div8l0l6mava9aksnpg
+X-USER-TIMEZONE:America/New_York
+X-WORKOUT-ESTIMATED-DURATION:4500
+END:VEVENT
+
+BEGIN:VEVENT
+UID:UPCOMING_PLAN_WORKOUT-23bf20cd-4642-4b6d-9b69-b3e16a4c2076_plan_week_16_TEMPO_0
+DTSTAMP:20260803
+DTSTART:20260924
+DTEND:20260925
+SUMMARY:🏃 Progressive Run • 11km
+DESCRIPTION:Tempo • 11km • 1h0m - 1h10m\n\n1.5km warm up at a conversational pace (no faster than 5:55/km)\n\n2km at 5:35/km\n2km at 5:25/km\n2km at 5:10/km\n2km at 5:00/km, 90s walking rest\n\n1.5km cool down at a conversational pace (or slower!)\n\n📲 View in the Runna app: https://club.runna.com/n9Tx/workout?dayId=23bf20cd-4642-4b6d-9b69-b3e16a4c2076_plan_week_16_TEMPO_0&weekIndex=16
+X-GOOGLE-ID:_68pm4phi61hm8b9k6oq34b9kc8r68b9pc8r3ibb26dij2dj16hhj4c1n6pfn0r31dpfnepb5ddfj2divah2kqk2fbso0
+X-USER-TIMEZONE:America/New_York
+X-WORKOUT-ESTIMATED-DURATION:3900
+END:VEVENT
+
+BEGIN:VEVENT
+UID:UPCOMING_PLAN_WORKOUT-23bf20cd-4642-4b6d-9b69-b3e16a4c2076_plan_week_16_LONG_RUN_0
+DTSTAMP:20260803
+DTSTART:20260926
+DTEND:20260927
+SUMMARY:🏃 40km Long Run • 40km
+DESCRIPTION:Long Run • 40km • 3h50m - 4h0m\n\n40km at a conversational pace\n\n📲 View in the Runna app: https://club.runna.com/n9Tx/workout?dayId=23bf20cd-4642-4b6d-9b69-b3e16a4c2076_plan_week_16_LONG_RUN_0&weekIndex=16
+X-GOOGLE-ID:_68pm4phi61hm8b9k6oq34b9kc8r68b9pc8r3ibb26dij2dj16hhj4c1n6pfn0r31dpfnepb5ddfj2div9h7kshqva9aksnpg
+X-USER-TIMEZONE:America/New_York
+X-WORKOUT-ESTIMATED-DURATION:14400
+END:VEVENT
+
+BEGIN:VEVENT
+UID:UPCOMING_PLAN_WORKOUT-23bf20cd-4642-4b6d-9b69-b3e16a4c2076_plan_week_17_INTERVALS_0
+DTSTAMP:20260803
+DTSTART:20260929
+DTEND:20260930
+SUMMARY:🏃 Broken 600s • 11km
+DESCRIPTION:Intervals • 11km • 1h10m - 1h20m\n\n4km warm up at a conversational pace (no faster than 5:55/km), 90s walking rest\n\n8 reps of:\n• 300m at 5:05/km\n• 300m at 4:40/km, 90s walking rest\n\n2.2km cool down at a conversational pace (or slower!)\n\n📲 View in the Runna app: https://club.runna.com/n9Tx/workout?dayId=23bf20cd-4642-4b6d-9b69-b3e16a4c2076_plan_week_17_INTERVALS_0&weekIndex=17
+X-GOOGLE-ID:_68pm4phi61hm8b9k6oq34b9kc8r68b9pc8r3ibb26dij2dj16hhj4c1n6pfn0r31dpfnepb5ddfj2dqv95758haiap0kokqv60
+X-USER-TIMEZONE:America/New_York
+X-WORKOUT-ESTIMATED-DURATION:4500
+END:VEVENT
+
+BEGIN:VEVENT
+UID:UPCOMING_PLAN_WORKOUT-23bf20cd-4642-4b6d-9b69-b3e16a4c2076_plan_week_17_EASY_RUN_0
+DTSTAMP:20260803
+DTSTART:20261004
+DTEND:20261005
+SUMMARY:🏃 12km Easy Run • 12km
+DESCRIPTION:Easy Run • 12km • 1h10m - 1h20m\n\n12km easy run at a conversational pace (no faster than 5:55/km). This is a limit, not a target - run at whatever pace feels truly easy!\n\n📲 View in the Runna app: https://club.runna.com/n9Tx/workout?dayId=23bf20cd-4642-4b6d-9b69-b3e16a4c2076_plan_week_17_EASY_RUN_0&weekIndex=17
+X-GOOGLE-ID:_68pm4phi61hm8b9k6oq34b9kc8r68b9pc8r3ibb26dij2dj16hhj4c1n6pfn0r31dpfnepb5ddfj2dqv8l0l6mava9aksnpg
+X-USER-TIMEZONE:America/New_York
+X-WORKOUT-ESTIMATED-DURATION:4500
+END:VEVENT
+
+BEGIN:VEVENT
+UID:UPCOMING_PLAN_WORKOUT-23bf20cd-4642-4b6d-9b69-b3e16a4c2076_plan_week_17_TEMPO_0
+DTSTAMP:20260803
+DTSTART:20261001
+DTEND:20261002
+SUMMARY:🏃 Tempo 2-1-1 • 8km
+DESCRIPTION:Tempo • 8km • 45m - 50m\n\n2km warm up at a conversational pace (no faster than 5:55/km)\n\n2km at 5:05/km, 120s walking rest\n1km at 4:55/km, 90s walking rest\n1km at 4:55/km, 90s walking rest\n\n2km cool down at a conversational pace (or slower!)\n\n📲 View in the Runna app: https://club.runna.com/n9Tx/workout?dayId=23bf20cd-4642-4b6d-9b69-b3e16a4c2076_plan_week_17_TEMPO_0&weekIndex=17
+X-GOOGLE-ID:_68pm4phi61hm8b9k6oq34b9kc8r68b9pc8r3ibb26dij2dj16hhj4c1n6pfn0r31dpfnepb5ddfj2dqvah2kqk2fbso0
+X-USER-TIMEZONE:America/New_York
+X-WORKOUT-ESTIMATED-DURATION:3000
+END:VEVENT
+
+BEGIN:VEVENT
+UID:UPCOMING_PLAN_WORKOUT-23bf20cd-4642-4b6d-9b69-b3e16a4c2076_plan_week_17_LONG_RUN_0
+DTSTAMP:20260803
+DTSTART:20261003
+DTEND:20261004
+SUMMARY:🏃 23km Block Long Run • 23km
+DESCRIPTION:Long Run • 23km • 2h10m - 2h20m\n\n8.5km at a conversational pace\n6.5km at 5:35/km\n8km at a conversational pace\n\n📲 View in the Runna app: https://club.runna.com/n9Tx/workout?dayId=23bf20cd-4642-4b6d-9b69-b3e16a4c2076_plan_week_17_LONG_RUN_0&weekIndex=17
+X-GOOGLE-ID:_68pm4phi61hm8b9k6oq34b9kc8r68b9pc8r3ibb26dij2dj16hhj4c1n6pfn0r31dpfnepb5ddfj2dqv9h7kshqva9aksnpg
+X-USER-TIMEZONE:America/New_York
+X-WORKOUT-ESTIMATED-DURATION:8100
+END:VEVENT
+
+BEGIN:VEVENT
+UID:UPCOMING_PLAN_WORKOUT-23bf20cd-4642-4b6d-9b69-b3e16a4c2076_plan_week_18_EASY_RUN_0
+DTSTAMP:20260803
+DTSTART:20261005
+DTEND:20261006
+SUMMARY:🏃 11km Easy Run • 11km
+DESCRIPTION:Easy Run • 11km • 1h0m - 1h10m\n\n11km easy run at a conversational pace (no faster than 5:55/km). This is a limit, not a target - run at whatever pace feels truly easy!\n\n📲 View in the Runna app: https://club.runna.com/n9Tx/workout?dayId=23bf20cd-4642-4b6d-9b69-b3e16a4c2076_plan_week_18_EASY_RUN_0&weekIndex=18
+X-GOOGLE-ID:_68pm4phi61hm8b9k6oq34b9kc8r68b9pc8r3ibb26dij2dj16hhj4c1n6pfn0r31dpfnepb5ddfj2e2v8l0l6mava9aksnpg
+X-USER-TIMEZONE:America/New_York
+X-WORKOUT-ESTIMATED-DURATION:4200
+END:VEVENT
+
+BEGIN:VEVENT
+UID:UPCOMING_PLAN_WORKOUT-23bf20cd-4642-4b6d-9b69-b3e16a4c2076_plan_week_18_TEMPO_0
+DTSTAMP:20260803
+DTSTART:20261006
+DTEND:20261007
+SUMMARY:🏃 Tempo 5km • 8km
+DESCRIPTION:Tempo • 8km • 40m - 50m\n\n1.5km warm up at a conversational pace (no faster than 5:55/km)\n\n5km at 5:05/km (4:55-5:15/km), 150s walking rest\n\n1.5km cool down at a conversational pace (or slower!)\n\n📲 View in the Runna app: https://club.runna.com/n9Tx/workout?dayId=23bf20cd-4642-4b6d-9b69-b3e16a4c2076_plan_week_18_TEMPO_0&weekIndex=18
+X-GOOGLE-ID:_68pm4phi61hm8b9k6oq34b9kc8r68b9pc8r3ibb26dij2dj16hhj4c1n6pfn0r31dpfnepb5ddfj2e2vah2kqk2fbso0
+X-USER-TIMEZONE:America/New_York
+X-WORKOUT-ESTIMATED-DURATION:3000
+END:VEVENT
+
+BEGIN:VEVENT
+UID:UPCOMING_PLAN_WORKOUT-23bf20cd-4642-4b6d-9b69-b3e16a4c2076_plan_week_18_LONG_RUN_0
+DTSTAMP:20260803
+DTSTART:20261010
+DTEND:20261011
+SUMMARY:🏃 13km Long Run • 13km
+DESCRIPTION:Long Run • 13km • 1h10m - 1h20m\n\n13km at a conversational pace\n\n📲 View in the Runna app: https://club.runna.com/n9Tx/workout?dayId=23bf20cd-4642-4b6d-9b69-b3e16a4c2076_plan_week_18_LONG_RUN_0&weekIndex=18
+X-GOOGLE-ID:_68pm4phi61hm8b9k6oq34b9kc8r68b9pc8r3ibb26dij2dj16hhj4c1n6pfn0r31dpfnepb5ddfj2e2v9h7kshqva9aksnpg
+X-USER-TIMEZONE:America/New_York
+X-WORKOUT-ESTIMATED-DURATION:4800
+END:VEVENT
+
+BEGIN:VEVENT
+UID:UPCOMING_PLAN_WORKOUT-23bf20cd-4642-4b6d-9b69-b3e16a4c2076_plan_week_19_TAPER_INTERVALS_0
+DTSTAMP:20260803
+DTSTART:20261014
+DTEND:20261015
+SUMMARY:🏃 Taper Intervals • 8km
+DESCRIPTION:Taper Intervals • 8km • 45m - 50m\n\n3km warm up at a conversational pace (no faster than 5:50/km), keeping things easy\n\n2 reps of:\n• 1km at 5:25/km, keeping it steady before a short pick up!, 90s walking rest\n\n500m at 4:55/km, picking up the pace to inject a little bit of speed into the legs!\n\n2.5km cool down at a conversational pace (or slower!)\n\n📲 View in the Runna app: https://club.runna.com/n9Tx/workout?dayId=23bf20cd-4642-4b6d-9b69-b3e16a4c2076_plan_week_19_TAPER_INTERVALS_0&weekIndex=19
+X-GOOGLE-ID:_68pm4phi61hm8b9k6oq34b9kc8r68b9pc8r3ibb26dij2dj16hhj4c1n6pfn0r31dpfnepb5ddfj2eavah0l0haibt4ksl25a9b42j2jbso0
+X-USER-TIMEZONE:America/New_York
+X-WORKOUT-ESTIMATED-DURATION:3000
+END:VEVENT
+
+BEGIN:VEVENT
+UID:UPCOMING_PLAN_WORKOUT-23bf20cd-4642-4b6d-9b69-b3e16a4c2076_plan_week_19_EASY_RUN_0
+DTSTAMP:20260803
+DTSTART:20261012
+DTEND:20261013
+SUMMARY:🏃 7km Easy Run • 7km
+DESCRIPTION:Easy Run • 7km • 40m - 45m\n\n7km easy run at a conversational pace (no faster than 5:50/km). This is a limit, not a target - run at whatever pace feels truly easy!\n\n📲 View in the Runna app: https://club.runna.com/n9Tx/workout?dayId=23bf20cd-4642-4b6d-9b69-b3e16a4c2076_plan_week_19_EASY_RUN_0&weekIndex=19
+X-GOOGLE-ID:_68pm4phi61hm8b9k6oq34b9kc8r68b9pc8r3ibb26dij2dj16hhj4c1n6pfn0r31dpfnepb5ddfj2eav8l0l6mava9aksnpg
+X-USER-TIMEZONE:America/New_York
+X-WORKOUT-ESTIMATED-DURATION:2700
+END:VEVENT
+
+BEGIN:VEVENT
+UID:UPCOMING_PLAN_WORKOUT-23bf20cd-4642-4b6d-9b69-b3e16a4c2076_plan_week_19_RACE_0
+DTSTAMP:20260803
+DTSTART:20261017
+DTEND:20261018
+SUMMARY:🏃 Ghost Train 30H Ultra • 50km
+DESCRIPTION:Race • 50km • 4h39m - 4h56m\n\n50km race at 5:35-5:55/km\n\n📲 View in the Runna app: https://club.runna.com/n9Tx/workout?dayId=23bf20cd-4642-4b6d-9b69-b3e16a4c2076_plan_week_19_RACE_0&weekIndex=19
+X-GOOGLE-ID:_68pm4phi61hm8b9k6oq34b9kc8r68b9pc8r3ibb26dij2dj16hhj4c1n6pfn0r31dpfnepb5ddfj2eava90k6hav60
+X-USER-TIMEZONE:America/New_York
+X-WORKOUT-ESTIMATED-DURATION:18000
+END:VEVENT
+
+BEGIN:VEVENT
+UID:UPCOMING_PLAN_WORKOUT-23bf20cd-4642-4b6d-9b69-b3e16a4c2076_plan_week_18_INTERVALS_0
+DTSTAMP:20260803
+DTSTART:20261008
+DTEND:20261009
+SUMMARY:🏃 Drop Set • 7km
+DESCRIPTION:Intervals • 7km • 45m - 50m\n\n1.6km warm up at a conversational pace (no faster than 5:55/km), 90s walking rest\n\n1.2km at 4:55/km, 90s walking rest\n1km at 4:50/km, 90s walking rest\n800m at 4:40/km, 90s walking rest\n600m at 4:35/km, 90s walking rest\n400m at 4:30/km, 90s walking rest\n200m at 4:20/km, 90s walking rest\n\n1.2km cool down at a conversational pace (or slower!)\n\n📲 View in the Runna app: https://club.runna.com/n9Tx/workout?dayId=23bf20cd-4642-4b6d-9b69-b3e16a4c2076_plan_week_18_INTERVALS_0&weekIndex=18
+X-GOOGLE-ID:_68pm4phi61hm8b9k6oq34b9kc8r68b9pc8r3ibb26dij2dj16hhj4c1n6pfn0r31dpfnepb5ddfj2e2v95758haiap0kokqv60
+X-USER-TIMEZONE:America/New_York
+X-WORKOUT-ESTIMATED-DURATION:3000
+END:VEVENT
+
+
+
+BEGIN:VEVENT
+UID:COMPLETED_PLAN_WORKOUT-24be034d-6539-4f78-806c-a911052b88d8
+DTSTAMP:20260405T224226
+DTSTART:20260404T200504
+DTEND:20260404T212650
+SUMMARY:Stronger Upper Body
+DESCRIPTION:📋 Description:\n3 sets of:\n• Press Up\n• Walking Lunge\n• Travelling Press Up Walk out\n• Press Up Position Walk Out\n\n2 sets of:\n• Single Arm Row\n• Single Arm Clean and Press\n\n2 sets of:\n• Seated Barbell Press\n• Single Arm Bench Press\n\n2 sets of:\n• Lunge and Press\n• Press-Up Position with Single Arm Extensions\n\n2 sets of:\n• Banded Face Pulls\n• Diagonal Toe Tap\n\n3 sets of:\n• Short Lever Copenhagen Plank\n• Double Arm Clean\n\n3 sets of:\n• Hanging Leg Raise\n• Banded Toe Raise\n\n📲 View in the Runna app: https://club.runna.com/n9Tx/activities?activityId=24be034d-6539-4f78-806c-a911052b88d8
+LOCATION:Amherst, NH, USA
+X-GOOGLE-ID:_68q64p9g6cq68b9m6kpjib9kcorjgb9o60r66bb174oj2c1l69h3ge3470
+X-USER-TIMEZONE:America/New_York
+END:VEVENT
+
+BEGIN:VEVENT
+UID:COMPLETED_PLAN_WORKOUT-2577d217-63d2-4a28-ae78-8a6bbf99fbb8
+DTSTAMP:20260405T224229
+DTSTART:20260402T174000
+DTEND:20260402T181913
+SUMMARY:🏃 On Off Ks
+DESCRIPTION:📊 Summary:\nDistance: 5.61km\nTime: 39:12\nAvg Pace: 6:59 /km\n\n📋 Description:\n1km warm up at a conversational pace (no faster than 8.5kph)\n\nRepeat the following 2x:\n----------\n1km at 9kph\n1km at 9.7kph\n----------\n\n90s walking rest\n\n500m cool down at a conversational pace, or slower! Since you've worked at a particularly high intensity today with a semi short cool down, walk for 5-10 minutes to end the workout.\n\n♻️ Laps:\n1.00 km @ 8:03 /km\n1.00 km @ 6:40 /km\n1.00 km @ 6:11 /km\n1.00 km @ 6:40 /km\n1.00 km @ 6:11 /km\n0.10 km @ 15:00 /km\n0.50 km @ 7:09 /km\n0.01 km @ 38:10 /km\n📲 View in the Runna app: https://club.runna.com/n9Tx/activities?activityId=2577d217-63d2-4a28-ae78-8a6bbf99fbb8
+X-GOOGLE-ID:_68qjedr468ojeb9m6di34b9kc4p3gbb1ckrjgb9oc4r64oj674smcoj270
+X-USER-TIMEZONE:America/New_York
+END:VEVENT
+
+BEGIN:VEVENT
+UID:COMPLETED_PLAN_WORKOUT-4aed68d6-8dd5-4ff2-b9f1-f69c8b84f4e5
+DTSTAMP:20260405T224229
+DTSTART:20260405T090942
+DTEND:20260405T100634
+SUMMARY:🏃 8km Hilly Long Run
+DESCRIPTION:📊 Summary:\nDistance: 8.00km\nTime: 56:51\nAvg Pace: 7:06 /km\n\n📋 Description:\n8km at a conversational pace\n\n♻️ Laps:\n8.00 km @ 7:05 /km\n0.00 km @ 39:47 /km\n📲 View in the Runna app: https://club.runna.com/n9Tx/activities?activityId=4aed68d6-8dd5-4ff2-b9f1-f69c8b84f4e5
+LOCATION:Nashua, NH, USA
+GEO:42.80071006156504;-71.54035057872534
+X-GOOGLE-ID:_6hgmap1m71i3cb9ochi3ab9kcpj34bb275j32bb66osm6e3270q6cd356k
+X-USER-TIMEZONE:America/New_York
+END:VEVENT
+
+BEGIN:VEVENT
+UID:COMPLETED_PLAN_WORKOUT-strava-15030655040
+DTSTAMP:20260405T224226
+DTSTART:20250706T193058
+DTEND:20250706T203646
+SUMMARY:🏃 3.75mi Easy Run
+DESCRIPTION:📊 Summary:\nDistance: 6.06km\nTime: 1:02:59\nAvg Pace: 10:23 /km\n\n📋 Description:\n3.75mi easy run at a conversational pace (no faster than 10:50/mi). This is a limit, not a target - run at whatever pace feels truly easy!\n\n♻️ Laps:\n1.61 km @ 9:31 /km\n1.61 km @ 12:04 /km\n1.61 km @ 11:24 /km\n1.23 km @ 10:21 /km\n📲 View in the Runna app: https://club.runna.com/n9Tx/activities?activityId=strava-15030655040
+LOCATION:Amherst, United States
+GEO:42.878898;-71.614368
+X-GOOGLE-ID:_edq74obmc4mj2d9g6co3cd9l60q30
+X-USER-TIMEZONE:America/New_York
+END:VEVENT
+
+BEGIN:VEVENT
+UID:COMPLETED_PLAN_WORKOUT-strava-15035739986
+DTSTAMP:20260405T224227
+DTSTART:20250707T094732
+DTEND:20250707T105839
+SUMMARY:🏃 3.5mi Easy Run
+DESCRIPTION:📊 Summary:\nDistance: 6.03km\nTime: 1:04:15\nAvg Pace: 10:39 /km\n\n📋 Description:\n3.5mi easy run at a conversational pace (no faster than 10:45/mi). This is a limit, not a target - run at whatever pace feels truly easy!\n\n♻️ Laps:\n1.61 km @ 10:25 /km\n1.61 km @ 12:49 /km\n1.61 km @ 12:15 /km\n1.20 km @ 11:39 /km\n📲 View in the Runna app: https://club.runna.com/n9Tx/activities?activityId=strava-15035739986
+LOCATION:Amherst, United States
+GEO:42.878865;-71.614467
+X-GOOGLE-ID:_edq74obmc4mj2d9g6cqjecpp74s3c
+X-USER-TIMEZONE:America/New_York
+END:VEVENT
+
+BEGIN:VEVENT
+UID:COMPLETED_PLAN_WORKOUT-strava-15193239503
+DTSTAMP:20260405T224226
+DTSTART:20250721T215216
+DTEND:20250721T222751
+SUMMARY:🏃 2.5mi Easy Run
+DESCRIPTION:📊 Summary:\nDistance: 4.19km\nTime: 35:27\nAvg Pace: 8:27 /km\n\n📋 Description:\n2.5mi easy run at a conversational pace (no faster than 10:35/mi). This is a limit, not a target - run at whatever pace feels truly easy!\n\n♻️ Laps:\n1.61 km @ 8:35 /km\n1.61 km @ 8:30 /km\n0.97 km @ 8:22 /km\n📲 View in the Runna app: https://club.runna.com/n9Tx/activities?activityId=strava-15193239503
+LOCATION:Amherst, United States
+GEO:42.878852;-71.614407
+X-GOOGLE-ID:_edq74obmc4mj2d9h74pj4cpp6ko36
+X-USER-TIMEZONE:America/New_York
+END:VEVENT
+
+BEGIN:VEVENT
+UID:COMPLETED_PLAN_WORKOUT-strava-15211450816
+DTSTAMP:20260405T224227
+DTSTART:20250723T101932
+DTEND:20250723T121855
+SUMMARY:🏃 5mi Long Run
+DESCRIPTION:📊 Summary:\nDistance: 8.47km\nTime: 1:32:25\nAvg Pace: 10:54 /km\n\n📋 Description:\n5mi at a conversational pace\n\n♻️ Laps:\n1.61 km @ 10:09 /km\n1.61 km @ 11:29 /km\n1.61 km @ 15:00 /km\n1.61 km @ 23:28 /km\n1.61 km @ 10:53 /km\n0.43 km @ 11:49 /km\n📲 View in the Runna app: https://club.runna.com/n9Tx/activities?activityId=strava-15211450816
+LOCATION:Amherst, United States
+GEO:42.878982;-71.61417
+X-GOOGLE-ID:_edq74obmc4mj2d9i64oj8d9g70ojc
+X-USER-TIMEZONE:America/New_York
+END:VEVENT
+
+BEGIN:VEVENT
+UID:COMPLETED_PLAN_WORKOUT-strava-15245461413
+DTSTAMP:20260405T224227
+DTSTART:20250726T141611
+DTEND:20250726T145611
+SUMMARY:🏃 800m Repeats
+DESCRIPTION:📊 Summary:\nDistance: 5.74km\nTime: 39:32\nAvg Pace: 6:53 /km\n\n📋 Description:\n0.5mi warm up at a conversational pace (no faster than 10:35/mi), 90s walking rest\n\n3 reps of:\n• 0.5mi at 8:35/mi (8:20-8:50/mi), 120s walking rest\n\n0.5mi cool down at a conversational pace (or slower!)\n\n♻️ Laps:\n0.80 km @ 6:43 /km\n0.13 km @ 11:15 /km\n0.80 km @ 5:14 /km\n0.16 km @ 12:43 /km\n0.80 km @ 5:25 /km\n0.18 km @ 11:02 /km\n0.80 km @ 5:21 /km\n0.17 km @ 11:34 /km\n0.80 km @ 5:26 /km\n0.17 km @ 11:49 /km\n0.80 km @ 8:30 /km\n0.09 km @ 9:24 /km\n📲 View in the Runna app: https://club.runna.com/n9Tx/activities?activityId=strava-15245461413
+LOCATION:Hollis, United States
+GEO:42.712385;-71.572065
+X-GOOGLE-ID:_edq74obmc4mj2d9i6gqj8dhh6goj6
+X-USER-TIMEZONE:America/New_York
+END:VEVENT
+
+BEGIN:VEVENT
+UID:COMPLETED_PLAN_WORKOUT-strava-15281618766
+DTSTAMP:20260405T224227
+DTSTART:20250729T211323
+DTEND:20250729T215920
+SUMMARY:🏃 3.25mi Easy Run
+DESCRIPTION:📊 Summary:\nDistance: 5.41km\nTime: 45:41\nAvg Pace: 8:27 /km\n\n📋 Description:\n3.25mi easy run at a conversational pace (no faster than 10:30/mi). This is a limit, not a target - run at whatever pace feels truly easy!\n\n♻️ Laps:\n1.61 km @ 8:05 /km\n1.61 km @ 8:30 /km\n1.61 km @ 8:46 /km\n0.58 km @ 8:46 /km\n📲 View in the Runna app: https://club.runna.com/n9Tx/activities?activityId=strava-15281618766
+LOCATION:Amherst, United States
+GEO:42.878828;-71.614418
+X-GOOGLE-ID:_edq74obmc4mj2d9i70ojcc9o6sr3c
+X-USER-TIMEZONE:America/New_York
+END:VEVENT
+
+BEGIN:VEVENT
+UID:COMPLETED_PLAN_WORKOUT-strava-15299875141
+DTSTAMP:20260405T224227
+DTSTART:20250731T105429
+DTEND:20250731T130746
+SUMMARY:🏃 9mi Progressive Long Run
+DESCRIPTION:📊 Summary:\nDistance: 17.52km\nTime: 2:11:42\nAvg Pace: 7:31 /km\n\n📋 Description:\n2.5mi at a conversational pace\n2.5mi at 10:00/mi\n2mi at 9:40/mi\n2mi at 9:25/mi\n\n♻️ Laps:\n4.02 km @ 8:03 /km\n4.02 km @ 6:24 /km\n3.22 km @ 6:54 /km\n3.22 km @ 6:06 /km\n3.03 km @ 10:25 /km\n📲 View in the Runna app: https://club.runna.com/n9Tx/activities?activityId=strava-15299875141
+LOCATION:Amherst, United States
+GEO:42.878817;-71.614385
+X-GOOGLE-ID:_edq74obmc4mj2d9i74sjgdpl64q32
+X-USER-TIMEZONE:America/New_York
+END:VEVENT
+
+BEGIN:VEVENT
+UID:COMPLETED_PLAN_WORKOUT-strava-15334425825
+DTSTAMP:20260405T224227
+DTSTART:20250803T143612
+DTEND:20250803T151055
+SUMMARY:🏃 Over and Unders 1km
+DESCRIPTION:📊 Summary:\nDistance: 4.72km\nTime: 34:10\nAvg Pace: 7:14 /km\n\n📋 Description:\n0.5mi warm up at a conversational pace (no faster than 10:30/mi)\n\nRepeat the following 2x:\n----------\n0.62mi at 9:35/mi\n0.62mi at 9:05/mi\n----------\n\n90s walking rest\n\n0.25mi cool down at a conversational pace, or slower! Since you've worked at a particularly high intensity today with a semi short cool down, walk for 5-10 minutes to end the workout.\n\n♻️ Laps:\n0.55 km @ 10:32 /km\n4.17 km @ 6:54 /km\n📲 View in the Runna app: https://club.runna.com/n9Tx/activities?activityId=strava-15334425825
+LOCATION:Hollis, United States
+GEO:42.712455;-71.57204
+X-GOOGLE-ID:_edq74obmc4mj2d9j6cq38chl70p3a
+X-USER-TIMEZONE:America/New_York
+END:VEVENT
+
+BEGIN:VEVENT
+UID:COMPLETED_PLAN_WORKOUT-strava-15342710175
+DTSTAMP:20260405T224227
+DTSTART:20250804T111727
+DTEND:20250804T123245
+SUMMARY:🏃 6km Easy Run
+DESCRIPTION:📊 Summary:\nDistance: 7.62km\nTime: 1:10:24\nAvg Pace: 9:14 /km\n\n📋 Description:\n6km easy run at a conversational pace (no faster than 6:25/km). This is a limit, not a target - run at whatever pace feels truly easy!\n\n📲 View in the Runna app: https://club.runna.com/n9Tx/activities?activityId=strava-15342710175
+LOCATION:Amherst, United States
+GEO:42.87885;-71.614388
+X-GOOGLE-ID:_edq74obmc4mj2d9j6gp3ec9g64rja
+X-USER-TIMEZONE:America/New_York
+END:VEVENT
+
+BEGIN:VEVENT
+UID:COMPLETED_PLAN_WORKOUT-strava-15369253726
+DTSTAMP:20260405T224227
+DTSTART:20250806T132851
+DTEND:20250806T160537
+SUMMARY:🏃 18km Long Run
+DESCRIPTION:📊 Summary:\nDistance: 18.10km\nTime: 2:33:41\nAvg Pace: 8:29 /km\n\n📋 Description:\n18km at a conversational pace\n\n♻️ Laps:\n1.00 km @ 8:43 /km\n1.00 km @ 8:32 /km\n1.00 km @ 10:21 /km\n1.00 km @ 9:00 /km\n1.00 km @ 9:21 /km\n1.00 km @ 9:34 /km\n1.00 km @ 7:58 /km\n1.00 km @ 7:34 /km\n1.00 km @ 8:40 /km\n1.00 km @ 8:57 /km\n1.00 km @ 8:03 /km\n1.00 km @ 8:57 /km\n1.00 km @ 7:56 /km\n1.00 km @ 8:03 /km\n1.00 km @ 7:47 /km\n1.00 km @ 9:06 /km\n1.00 km @ 8:10 /km\n1.00 km @ 8:20 /km\n0.11 km @ 13:07 /km\n📲 View in the Runna app: https://club.runna.com/n9Tx/activities?activityId=strava-15369253726
+LOCATION:Milford, United States
+GEO:42.825473;-71.648365
+X-GOOGLE-ID:_edq74obmc4mj2d9j6osj4d9j6sp3c
+X-USER-TIMEZONE:America/New_York
+END:VEVENT
+
+BEGIN:VEVENT
+UID:COMPLETED_PLAN_WORKOUT-strava-15411756551
+DTSTAMP:20260405T224227
+DTSTART:20250810T095749
+DTEND:20250810T105609
+SUMMARY:🏃 Mile Repeats
+DESCRIPTION:📊 Summary:\nDistance: 7.67km\nTime: 58:16\nAvg Pace: 7:35 /km\n\n📋 Description:\n1km warm up at a conversational pace (no faster than 6:25/km), 90s walking rest\n\n2 reps of:\n• 1.6km at 5:25/km (5:15-5:35/km), 120s walking rest\n\n800m cool down at a conversational pace (or slower!)\n\n♻️ Laps:\n6.18 km @ 6:21 /km\n0.00 km @ 11:06 /km\n0.01 km @ 10:36 /km\n0.00 km @ 11:06 /km\n1.47 km @ 12:49 /km\n📲 View in the Runna app: https://club.runna.com/n9Tx/activities?activityId=strava-15411756551
+LOCATION:Brookline, United States
+GEO:42.786213;-71.659273
+X-GOOGLE-ID:_edq74obmc4mj2d9k64ojed9m6kqj2
+X-USER-TIMEZONE:America/New_York
+END:VEVENT
+
+BEGIN:VEVENT
+UID:COMPLETED_PLAN_WORKOUT-strava-15421296871
+DTSTAMP:20260405T224227
+DTSTART:20250811T085819
+DTEND:20250811T095238
+SUMMARY:🏃 5km Easy Run
+DESCRIPTION:📊 Summary:\nDistance: 5.45km\nTime: 51:46\nAvg Pace: 9:29 /km\n\n📋 Description:\n5km easy run at a conversational pace (no faster than 6:25/km). This is a limit, not a target - run at whatever pace feels truly easy!\n\n♻️ Laps:\n0.03 km @ 8:00 /km\n5.43 km @ 9:58 /km\n📲 View in the Runna app: https://club.runna.com/n9Tx/activities?activityId=strava-15421296871
+LOCATION:Amherst, United States
+GEO:42.8788;-71.61441
+X-GOOGLE-ID:_edq74obmc4mj2d9k68oj4e9m70rj2
+X-USER-TIMEZONE:America/New_York
+END:VEVENT
+
+BEGIN:VEVENT
+UID:COMPLETED_PLAN_WORKOUT-strava-15456898410
+DTSTAMP:20260802T182543
+DTSTART:20250814T073226
+DTEND:20250814T102030
+SUMMARY:🏃 22km Progressive Repeat Long Run
+DESCRIPTION:📊 Summary:\nDistance: 22.11km\nTime: 2:37:11\nAvg Pace: 7:06 /km\n\n📋 Description:\n6km at a conversational pace\n4km at 6:05/km\n3km at 5:55/km\n4km at 6:05/km\n3km at 5:45/km\n2km at a conversational pace\n\n♻️ Laps:\n22.11 km @ 7:36 /km\n0.00 km @ 33:20 /km\n🏆 PBs:\n10km: 1:04:12\n10mi: 1:49:41\nHalf Marathon: 2:33:02\n\n📲 View in the Runna app: https://club.runna.com/n9Tx/activities?activityId=strava-15456898410
+LOCATION:Brookline, United States
+GEO:42.759413;-71.675592
+X-GOOGLE-ID:_edq74obmc4mj2d9k6kr3ge9o6goj0
+X-USER-TIMEZONE:America/New_York
+END:VEVENT
+
+BEGIN:VEVENT
+UID:COMPLETED_PLAN_WORKOUT-strava-15553910244
+DTSTAMP:20260405T224227
+DTSTART:20250817T082101
+DTEND:20250817T085432
+SUMMARY:🏃 Progressive Run
+DESCRIPTION:📊 Summary:\nDistance: 5.24km\nTime: 33:30\nAvg Pace: 6:23 /km\n\n📋 Description:\n500m warm up at a conversational pace (no faster than 6:25/km)\n\n1.5km at 6:00/km\n1.5km at 5:35/km\n1.5km at 5:25/km, 90s walking rest\n\n♻️ Laps:\n0.50 km @ 9:38 /km\n1.50 km @ 5:58 /km\n1.50 km @ 5:37 /km\n1.50 km @ 5:27 /km\n0.13 km @ 11:11 /km\n0.10 km @ 15:34 /km\n📲 View in the Runna app: https://club.runna.com/n9Tx/activities?activityId=strava-15553910244
+LOCATION:Mission Beach, United States
+GEO:32.772665;-117.250957
+X-GOOGLE-ID:_edq74obmc4mj2d9l6kpjic9g68q38
+X-USER-TIMEZONE:America/New_York
+END:VEVENT
+
+BEGIN:VEVENT
+UID:COMPLETED_PLAN_WORKOUT-suunto-68aa6ba4fbdf4557423d920c
+DTSTAMP:20260405T224229
+DTSTART:20250823T175339
+DTEND:20250823T182938
+SUMMARY:🏃 1km Repeats
+DESCRIPTION:📊 Summary:\nDistance: 5.38km\nTime: 35:32\nAvg Pace: 6:36 /km\n\n📋 Description:\n1km warm up at a conversational pace (no faster than 6:20/km), 90s walking rest\n\n3 reps of:\n• 1km at 5:15/km (5:05-5:25/km), 90s walking rest\n\n1km cool down at a conversational pace (or slower!)\n\n♻️ Laps:\n0.73 km @ 6:59 /km\n1.00 km @ 7:19 /km\n1.00 km @ 5:51 /km\n1.00 km @ 5:26 /km\n1.00 km @ 6:02 /km\n1.00 km @ 7:55 /km\n0.38 km @ 7:45 /km\n📲 View in the Runna app: https://club.runna.com/n9Tx/activities?activityId=suunto-68aa6ba4fbdf4557423d920c
+LOCATION:Oceanside, United States
+GEO:33.221397489536244;-117.34552542587402
+X-GOOGLE-ID:_edqnarjkdsmjce31c4r64o9kcph68phk6kqjed1i6di3ichgcc
+X-USER-TIMEZONE:America/New_York
+END:VEVENT
+
+BEGIN:VEVENT
+UID:COMPLETED_PLAN_WORKOUT-suunto-68ab44e5fbdf455742443ee0
+DTSTAMP:20260405T224227
+DTSTART:20250824T091747
+DTEND:20250824T095658
+SUMMARY:🏃 5km Easy Run
+DESCRIPTION:📊 Summary:\nDistance: 5.01km\nTime: 39:11\nAvg Pace: 7:49 /km\n\n📋 Description:\n5km easy run at a conversational pace (no faster than 6:20/km). This is a limit, not a target - run at whatever pace feels truly easy!\n\n♻️ Laps:\n1.00 km @ 8:23 /km\n5.00 km @ 7:49 /km\n1.00 km @ 7:28 /km\n1.00 km @ 7:51 /km\n1.00 km @ 7:13 /km\n1.00 km @ 8:10 /km\n0.01 km @ 9:57 /km\n📲 View in the Runna app: https://club.runna.com/n9Tx/activities?activityId=suunto-68ab44e5fbdf455742443ee0
+LOCATION:Oceanside, United States
+GEO:33.18836751124118;-117.32305387929138
+X-GOOGLE-ID:_edqnarjkdsmjce31c8q38p9lcph68phk6kqjed1i6gq36pb560
+X-USER-TIMEZONE:America/New_York
+END:VEVENT
+
+BEGIN:VEVENT
+UID:COMPLETED_PLAN_WORKOUT-suunto-68ac9867514f897ff69c1ffa
+DTSTAMP:20260405T224229
+DTSTART:20250825T090615
+DTEND:20250825T100218
+SUMMARY:🏃 7km Easy Run
+DESCRIPTION:📊 Summary:\nDistance: 7.32km\nTime: 56:03\nAvg Pace: 7:39 /km\n\n📋 Description:\n7km easy run at a conversational pace (no faster than 6:20/km). This is a limit, not a target - run at whatever pace feels truly easy!\n\n♻️ Laps:\n7.00 km @ 7:28 /km\n0.32 km @ 11:49 /km\n📲 View in the Runna app: https://club.runna.com/n9Tx/activities?activityId=suunto-68ac9867514f897ff69c1ffa
+LOCATION:San Diego, United States
+GEO:32.728264237814706;-117.21169543685012
+X-GOOGLE-ID:_edqnarjkdsmjce31ccsjgdhn6koj8pho74rmcphm75hj2pj6c4
+X-USER-TIMEZONE:America/New_York
+END:VEVENT
+
+BEGIN:VEVENT
+UID:COMPLETED_PLAN_WORKOUT-suunto-68b6445a10ba3d53cb58b5a5
+DTSTAMP:20260405T224229
+DTSTART:20250901T202344
+DTEND:20250901T210749
+SUMMARY:🏃 6km Easy Run
+DESCRIPTION:📊 Summary:\nDistance: 6.08km\nTime: 44:06\nAvg Pace: 7:15 /km\n\n📋 Description:\n6km easy run at a conversational pace (no faster than 6:15/km). This is a limit, not a target - run at whatever pace feels truly easy!\n\n♻️ Laps:\n6.00 km @ 7:13 /km\n0.08 km @ 9:53 /km\n📲 View in the Runna app: https://club.runna.com/n9Tx/activities?activityId=suunto-68b6445a10ba3d53cb58b5a5
+LOCATION:Amherst, United States
+GEO:42.87880723844376;-71.6143399272367
+X-GOOGLE-ID:_edqnarjkdsmjce326oq38db164o64o9jcgqj6or26ks64db16k
+X-USER-TIMEZONE:America/New_York
+END:VEVENT
+
+BEGIN:VEVENT
+UID:COMPLETED_PLAN_WORKOUT-suunto-68bf0f8708727a0e2cb5e605
+DTSTAMP:20260405T224229
+DTSTART:20250908T120735
+DTEND:20250908T131351
+SUMMARY:🏃 6.5km Easy Run
+DESCRIPTION:📊 Summary:\nDistance: 6.78km\nTime: 1:06:17\nAvg Pace: 9:46 /km\n\n📋 Description:\n6.5km easy run at a conversational pace (no faster than 6:15/km). This is a limit, not a target - run at whatever pace feels truly easy!\n\n♻️ Laps:\n6.50 km @ 9:47 /km\n0.28 km @ 9:25 /km\n📲 View in the Runna app: https://club.runna.com/n9Tx/activities?activityId=suunto-68bf0f8708727a0e2cb5e605
+LOCATION:Amherst, United States
+GEO:42.87881394396614;-71.61441494526827
+X-GOOGLE-ID:_edqnarjkdsmjce32coo6ce1n60s3echnc4o6acj3c8qmadhg6k
+X-USER-TIMEZONE:America/New_York
+END:VEVENT
+
+BEGIN:VEVENT
+UID:COMPLETED_PLAN_WORKOUT-suunto-68c3885c39f65b6a8c97dff3
+DTSTAMP:20260405T224229
+DTSTART:20250911T181019
+DTEND:20250911T223919
+SUMMARY:🏃 32km Progressive Long Run
+DESCRIPTION:📊 Summary:\nDistance: 32.25km\nTime: 4:28:42\nAvg Pace: 8:20 /km\n\n📋 Description:\n20km at a conversational pace\n4km at 6:00/km\n4km at 5:50/km\n4km at 5:35/km\n\n♻️ Laps:\n1.00 km @ 9:08 /km\n1.26 km @ 8:57 /km\n1.00 km @ 9:04 /km\n18.75 km @ 9:13 /km\n1.00 km @ 8:44 /km\n1.00 km @ 8:49 /km\n1.00 km @ 8:41 /km\n1.00 km @ 9:35 /km\n1.00 km @ 8:29 /km\n1.00 km @ 8:47 /km\n1.00 km @ 13:32 /km\n1.00 km @ 8:29 /km\n1.00 km @ 11:57 /km\n1.00 km @ 8:24 /km\n1.00 km @ 8:23 /km\n1.00 km @ 8:08 /km\n1.00 km @ 8:50 /km\n1.00 km @ 7:30 /km\n1.00 km @ 10:04 /km\n1.00 km @ 8:42 /km\n1.00 km @ 8:36 /km\n1.00 km @ 6:20 /km\n1.00 km @ 6:02 /km\n1.00 km @ 6:53 /km\n1.00 km @ 5:47 /km\n1.00 km @ 6:14 /km\n1.00 km @ 6:25 /km\n1.00 km @ 9:43 /km\n1.00 km @ 6:10 /km\n1.00 km @ 6:53 /km\n1.00 km @ 7:50 /km\n1.00 km @ 6:45 /km\n0.25 km @ 12:46 /km\n📲 View in the Runna app: https://club.runna.com/n9Tx/activities?activityId=suunto-68c3885c39f65b6a8c97dff3
+LOCATION:Brookline, United States
+GEO:42.766367279062464;-71.67566327045928
+X-GOOGLE-ID:_edqnarjkdsmjce336cs3gdb36csmcdhlc8r62e3374rm8pj66c
+X-USER-TIMEZONE:America/New_York
+END:VEVENT
+
+BEGIN:VEVENT
+UID:COMPLETED_PLAN_WORKOUT-suunto-68dbdb9c21e12b589eaae738
+DTSTAMP:20260405T224228
+DTSTART:20250930T085139
+DTEND:20250930T092742
+SUMMARY:🏃 5.5km Easy Run
+DESCRIPTION:📊 Summary:\nDistance: 5.52km\nTime: 36:04\nAvg Pace: 6:32 /km\n\n📋 Description:\n5.5km easy run at a conversational pace (no faster than 6:30/km). This is a limit, not a target - run at whatever pace feels truly easy!\n\n♻️ Laps:\n1.00 km @ 6:14 /km\n5.50 km @ 6:32 /km\n1.00 km @ 6:29 /km\n1.00 km @ 6:37 /km\n1.00 km @ 6:42 /km\n1.00 km @ 6:25 /km\n0.52 km @ 6:56 /km\n📲 View in the Runna app: https://club.runna.com/n9Tx/activities?activityId=suunto-68dbdb9c21e12b589eaae738
+LOCATION:Amherst, United States
+GEO:42.8787872895147;-71.61456825027356
+X-GOOGLE-ID:_edqnarjkdsmjce34c9i64eb368omac9ic8qjgeb5c5gmadpj70
+X-USER-TIMEZONE:America/New_York
+END:VEVENT
+
+BEGIN:VEVENT
+UID:COMPLETED_PLAN_WORKOUT-suunto-68dd50fc660e14661176f2a2
+DTSTAMP:20260405T224229
+DTSTART:20251001T111334
+DTEND:20251001T120156
+SUMMARY:🏃 7km Long Run
+DESCRIPTION:📊 Summary:\nDistance: 7.15km\nTime: 48:23\nAvg Pace: 6:46 /km\n\n📋 Description:\n7km at a conversational pace\n\n♻️ Laps:\n1.00 km @ 7:04 /km\n1.00 km @ 6:40 /km\n1.00 km @ 6:37 /km\n1.00 km @ 6:01 /km\n1.00 km @ 7:14 /km\n1.00 km @ 6:34 /km\n1.00 km @ 6:23 /km\n0.15 km @ 11:45 /km\n📲 View in the Runna app: https://club.runna.com/n9Tx/activities?activityId=suunto-68dd50fc660e14661176f2a2
+LOCATION:Amherst, United States
+GEO:42.87883724565639;-71.61442500355183
+X-GOOGLE-ID:_edqnarjkdsmjce34cgqj0pj36or30p9h6gr3cc9h6sr6ccj168
+X-USER-TIMEZONE:America/New_York
+END:VEVENT
+
+BEGIN:VEVENT
+UID:COMPLETED_PLAN_WORKOUT-suunto-68dfeea1c92730037c537e2c
+DTSTAMP:20260405T224229
+DTSTART:20251003T105025
+DTEND:20251003T114016
+SUMMARY:🏃 400m Repeats
+DESCRIPTION:📊 Summary:\nDistance: 6.16km\nTime: 49:52\nAvg Pace: 8:06 /km\n\n📋 Description:\n1.8km warm up at a conversational pace (no faster than 6:30/km), 90s walking rest\n\n5 reps of:\n• 400m at 5:00/km (4:50-5:10/km), 60s walking rest\n\n1.5km cool down at a conversational pace (or slower!)\n\n♻️ Laps:\n1.00 km @ 12:40 /km\n1.80 km @ 10:09 /km\n1.00 km @ 7:20 /km\n0.40 km @ 4:58 /km\n1.00 km @ 6:07 /km\n0.10 km @ 10:20 /km\n0.40 km @ 5:04 /km\n0.40 km @ 5:14 /km\n1.00 km @ 6:04 /km\n0.10 km @ 10:01 /km\n0.40 km @ 5:04 /km\n0.40 km @ 5:00 /km\n1.00 km @ 7:14 /km\n1.50 km @ 8:24 /km\n1.00 km @ 8:30 /km\n0.16 km @ 12:04 /km\n📲 View in the Runna app: https://club.runna.com/n9Tx/activities?activityId=suunto-68dfeea1c92730037c537e2c
+LOCATION:Baldwin County, United States
+GEO:33.17391250047672;-83.29038465810008
+X-GOOGLE-ID:_edqnarjkdsmjce34cpimao9hccsj4dpj60o36dr36kpjep9icc
+X-USER-TIMEZONE:America/New_York
+END:VEVENT
+
+BEGIN:VEVENT
+UID:COMPLETED_PLAN_WORKOUT-suunto-68e175f4072ea052f7e6dd0c
+DTSTAMP:20260405T224229
+DTSTART:20251004T130826
+DTEND:20251004T135340
+SUMMARY:🏃 4.5km Easy Run
+DESCRIPTION:📊 Summary:\nDistance: 4.57km\nTime: 45:15\nAvg Pace: 9:53 /km\n\n📋 Description:\n4.5km easy run at a conversational pace (no faster than 6:30/km). This is a limit, not a target - run at whatever pace feels truly easy!\n\n♻️ Laps:\n1.00 km @ 10:00 /km\n4.50 km @ 9:46 /km\n1.00 km @ 12:09 /km\n1.00 km @ 10:18 /km\n1.00 km @ 7:55 /km\n0.57 km @ 8:28 /km\n📲 View in the Runna app: https://club.runna.com/n9Tx/activities?activityId=suunto-68e175f4072ea052f7e6dd0c
+LOCATION:White County, United States
+GEO:34.77904742187333;-83.73633466926897
+X-GOOGLE-ID:_edqnarjkdsmjce3564rjaphk60rj4pb160qj4phnckr68p1gcc
+X-USER-TIMEZONE:America/New_York
+END:VEVENT
+
+BEGIN:VEVENT
+UID:COMPLETED_PLAN_WORKOUT-suunto-68e5b71c37ad38282958796c
+DTSTAMP:20260405T224229
+DTSTART:20251007T201456
+DTEND:20251007T205508
+SUMMARY:🏃 5.5km Easy Run
+DESCRIPTION:📊 Summary:\nDistance: 5.54km\nTime: 40:13\nAvg Pace: 7:15 /km\n\n📋 Description:\n5.5km easy run at a conversational pace (no faster than 6:25/km). This is a limit, not a target - run at whatever pace feels truly easy!\n\n♻️ Laps:\n1.00 km @ 7:27 /km\n5.50 km @ 7:11 /km\n1.00 km @ 7:09 /km\n1.00 km @ 7:07 /km\n1.00 km @ 7:08 /km\n1.00 km @ 6:46 /km\n0.54 km @ 8:25 /km\n📲 View in the Runna app: https://club.runna.com/n9Tx/activities?activityId=suunto-68e5b71c37ad38282958796c
+LOCATION:Amherst, United States
+GEO:42.878687293412284;-71.61469322444682
+X-GOOGLE-ID:_edqnarjkdsmjce356lh3ecb36crm2p1j70p3gchp6ks3ee9mcc
+X-USER-TIMEZONE:America/New_York
+END:VEVENT
+
+BEGIN:VEVENT
+UID:COMPLETED_PLAN_WORKOUT-suunto-68e6e8022ad945368b9bc774
+DTSTAMP:20260405T224229
+DTSTART:20251008T174600
+DTEND:20251008T183744
+SUMMARY:🏃 8km Hilly Progressive Long Run
+DESCRIPTION:📊 Summary:\nDistance: 8.03km\nTime: 51:45\nAvg Pace: 6:26 /km\n\n📋 Description:\n1km at a conversational pace\n2km at 6:20/km\n2km at 6:10/km\n2km at 6:00/km\n1km at a conversational pace\n\n♻️ Laps:\n1.00 km @ 7:48 /km\n1.00 km @ 7:48 /km\n1.00 km @ 6:17 /km\n2.00 km @ 6:18 /km\n1.00 km @ 6:04 /km\n2.00 km @ 6:05 /km\n1.00 km @ 5:52 /km\n2.00 km @ 5:54 /km\n1.00 km @ 7:01 /km\n1.00 km @ 7:01 /km\n0.03 km @ 12:37 /km\n📲 View in the Runna app: https://club.runna.com/n9Tx/activities?activityId=suunto-68e6e8022ad945368b9bc774
+LOCATION:Amherst, United States
+GEO:42.878780667811355;-71.61436993444933
+X-GOOGLE-ID:_edqnarjkdsmjce356pijgc1i69gm8e9k6kpjce3275h66dpn6g
+X-USER-TIMEZONE:America/New_York
+END:VEVENT
+
+BEGIN:VEVENT
+UID:COMPLETED_PLAN_WORKOUT-suunto-68e907532ad945368badd6d3
+DTSTAMP:20260405T224229
+DTSTART:20251010T083737
+DTEND:20251010T091439
+SUMMARY:🏃 5km Easy Run
+DESCRIPTION:📊 Summary:\nDistance: 5.10km\nTime: 37:03\nAvg Pace: 7:16 /km\n\n📋 Description:\n5km easy run at a conversational pace (no faster than 6:25/km). This is a limit, not a target - run at whatever pace feels truly easy!\n\n♻️ Laps:\n1.00 km @ 7:15 /km\n5.00 km @ 7:17 /km\n1.00 km @ 7:13 /km\n1.00 km @ 7:01 /km\n1.00 km @ 7:38 /km\n1.00 km @ 7:16 /km\n0.10 km @ 6:31 /km\n📲 View in the Runna app: https://club.runna.com/n9Tx/activities?activityId=suunto-68e907532ad945368badd6d3
+LOCATION:Amherst, United States
+GEO:42.86469068892118;-71.62509499839277
+X-GOOGLE-ID:_edqnarjkdsmjce3574o3ed9j69gm8e9k6kpjce32c5i68dj46c
+X-USER-TIMEZONE:America/New_York
+END:VEVENT
+
+BEGIN:VEVENT
+UID:COMPLETED_PLAN_WORKOUT-suunto-68eacd592ad945368bbd6eac
+DTSTAMP:20260405T224229
+DTSTART:20251011T165820
+DTEND:20251011T173140
+SUMMARY:🏃 Progressive Run
+DESCRIPTION:📊 Summary:\nDistance: 5.29km\nTime: 33:20\nAvg Pace: 6:18 /km\n\n📋 Description:\n1km warm up at a conversational pace (no faster than 6:25/km)\n\n1km at 5:55/km\n1km at 5:30/km\n1km at 5:25/km, 90s walking rest\n\n1km cool down at a conversational pace (or slower!)\n\n♻️ Laps:\n1.00 km @ 7:16 /km\n1.00 km @ 5:51 /km\n1.00 km @ 5:51 /km\n1.00 km @ 5:26 /km\n1.00 km @ 5:26 /km\n1.00 km @ 5:16 /km\n1.00 km @ 5:16 /km\n1.00 km @ 7:09 /km\n1.00 km @ 6:56 /km\n0.29 km @ 7:59 /km\n📲 View in the Runna app: https://club.runna.com/n9Tx/activities?activityId=suunto-68eacd592ad945368bbd6eac
+LOCATION:Amherst, United States
+GEO:42.87882894757245;-71.61447328331293
+X-GOOGLE-ID:_edqnarjkdsmjce35c5hm8d9p69gm8e9k6kpjce32c9i3cpb1cc
+X-USER-TIMEZONE:America/New_York
+END:VEVENT
+
+BEGIN:VEVENT
+UID:COMPLETED_PLAN_WORKOUT-suunto-68ec0ecd5181080a23c41715
+DTSTAMP:20260405T224229
+DTSTART:20251012T145353
+DTEND:20251012T162116
+SUMMARY:🏃 7.5km Easy Run
+DESCRIPTION:📊 Summary:\nDistance: 10.12km\nTime: 1:27:21\nAvg Pace: 8:37 /km\n\n📋 Description:\n7.5km easy run at a conversational pace (no faster than 6:25/km). This is a limit, not a target - run at whatever pace feels truly easy!\n\n♻️ Laps:\n1.00 km @ 7:06 /km\n7.50 km @ 8:54 /km\n1.00 km @ 7:42 /km\n1.00 km @ 8:32 /km\n1.00 km @ 9:13 /km\n1.00 km @ 7:31 /km\n1.00 km @ 12:33 /km\n1.00 km @ 8:34 /km\n1.00 km @ 10:56 /km\n1.00 km @ 7:23 /km\n1.00 km @ 6:44 /km\n0.12 km @ 8:50 /km\n📲 View in the Runna app: https://club.runna.com/n9Tx/activities?activityId=suunto-68ec0ecd5181080a23c41715
+LOCATION:Milford, United States
+GEO:42.80259227113109;-71.66266159785054
+X-GOOGLE-ID:_edqnarjkdsmjce35cco6aor46kojgc9g70o62chjccq32dph6k
+X-USER-TIMEZONE:America/New_York
+END:VEVENT
+
+BEGIN:VEVENT
+UID:COMPLETED_PLAN_WORKOUT-suunto-68eee5931c8f340de3787a07
+DTSTAMP:20260405T224229
+DTSTART:20251014T192307
+DTEND:20251014T200546
+SUMMARY:🏃 6km Easy Run
+DESCRIPTION:📊 Summary:\nDistance: 6.06km\nTime: 42:40\nAvg Pace: 7:02 /km\n\n📋 Description:\n6km easy run at a conversational pace (no faster than 6:25/km). This is a limit, not a target - run at whatever pace feels truly easy!\n\n♻️ Laps:\n1.00 km @ 7:05 /km\n6.00 km @ 6:58 /km\n1.00 km @ 6:57 /km\n1.00 km @ 6:54 /km\n1.00 km @ 6:59 /km\n1.00 km @ 6:54 /km\n1.00 km @ 7:00 /km\n0.06 km @ 14:04 /km\n📲 View in the Runna app: https://club.runna.com/n9Tx/activities?activityId=suunto-68eee5931c8f340de3787a07
+LOCATION:Amherst, United States
+GEO:42.87874068613419;-71.61460328662797
+X-GOOGLE-ID:_edqnarjkdsmjce35clijae9j65hjgphj6go68p9j6ss3eo9g6s
+X-USER-TIMEZONE:America/New_York
+END:VEVENT
+
+BEGIN:VEVENT
+UID:COMPLETED_PLAN_WORKOUT-suunto-69caa7c9cdb0d27a395da7de
+DTSTAMP:20260405T224229
+DTSTART:20260330T114019
+DTEND:20260330T123941
+SUMMARY:🏃 6km Easy Run
+DESCRIPTION:📊 Summary:\nDistance: 6.15km\nTime: 59:23\nAvg Pace: 9:40 /km\n\n📋 Description:\n6km easy run at a conversational pace (no faster than 7:05/km). This is a limit, not a target - run at whatever pace feels truly easy!\n\n♻️ Laps:\n1.00 km @ 9:36 /km\n1.00 km @ 9:09 /km\n1.00 km @ 9:33 /km\n1.00 km @ 9:48 /km\n1.00 km @ 10:45 /km\n1.00 km @ 8:27 /km\n0.15 km @ 14:08 /km\n📲 View in the Runna app: https://club.runna.com/n9Tx/activities?activityId=suunto-69caa7c9cdb0d27a395da7de
+LOCATION:Amherst, NH, USA
+GEO:42.878932296436055;-71.61426658558572
+X-GOOGLE-ID:_edqnarjkdsmjceb3c5gjeoppcdi64c3468rm2cpp6li62dr4ck
+X-USER-TIMEZONE:America/New_York
+END:VEVENT
+
+BEGIN:VEVENT
+UID:COMPLETED_PLAN_WORKOUT-suunto-69e2393ebf486d396e287d80
+DTSTAMP:20260417T183937
+DTSTART:20260417T085021
+DTEND:20260417T094336
+SUMMARY:🏃 4.3mi Easy Run
+DESCRIPTION:📊 Summary:\nDistance: 4.51mi\nTime: 53:17\nAvg Pace: 11:48 /mi\n\n📋 Description:\n4.3mi easy run at a conversational pace (no faster than 5.3mph). This is a limit, not a target - run at whatever pace feels truly easy!\n\n♻️ Laps:\n0.62 mi @ 14:11 /mi\n0.62 mi @ 13:51 /mi\n0.62 mi @ 13:33 /mi\n0.62 mi @ 13:20 /mi\n0.62 mi @ 13:53 /mi\n0.62 mi @ 13:49 /mi\n0.09 mi @ 20:58 /mi\n📲 View in the Runna app: https://club.runna.com/n9Tx/activities?activityId=suunto-69e2393ebf486d396e287d80
+X-GOOGLE-ID:_edqnarjkdsmjceb568pjicr5c9j38e1mcgpjidj568s3ep1o60
+X-USER-TIMEZONE:America/New_York
+END:VEVENT
+
+BEGIN:VEVENT
+UID:COMPLETED_PLAN_WORKOUT-suunto-69e68c78451d8229cb57d3d2
+DTSTAMP:20260420T222100
+DTSTART:20260420T152829
+DTEND:20260420T162741
+SUMMARY:🏃 Tempo 2-1-1
+DESCRIPTION:📊 Summary:\nDistance: 5.17mi\nTime: 59:13\nAvg Pace: 11:26 /mi\n\n📋 Description:\n1.25mi warm up at a conversational pace (no faster than 5.3mph)\n\n1.25mi at 6mph, 120s walking rest\n0.62mi at 6.1mph, 90s walking rest\n0.62mi at 6.1mph, 90s walking rest\n\n0.95mi cool down at a conversational pace (or slower!)\n\n♻️ Laps:\n0.62 mi @ 11:35 /mi\n1.24 mi @ 11:08 /mi\n0.62 mi @ 10:42 /mi\n0.62 mi @ 10:13 /mi\n1.24 mi @ 10:11 /mi\n0.62 mi @ 11:22 /mi\n0.62 mi @ 9:40 /mi\n0.62 mi @ 11:12 /mi\n0.62 mi @ 9:57 /mi\n0.62 mi @ 12:01 /mi\n0.93 mi @ 11:26 /mi\n0.62 mi @ 10:59 /mi\n0.20 mi @ 21:27 /mi\n📲 View in the Runna app: https://club.runna.com/n9Tx/activities?activityId=suunto-69e68c78451d8229cb57d3d2
+X-GOOGLE-ID:_edqnarjkdsmjceb56os66dpo6gqj2p1o68p3ior26krm8cr468
+X-USER-TIMEZONE:America/New_York
+END:VEVENT
+
+BEGIN:VEVENT
+UID:COMPLETED_PLAN_WORKOUT-suunto-6a470c8c4c887162ea2d5e9e
+DTSTAMP:20260703T011804
+DTSTART:20260702T200608
+DTEND:20260702T210815
+SUMMARY:🏃 7km Easy Run
+DESCRIPTION:📊 Summary:\nDistance: 7.08km\nTime: 1:02:08\nAvg Pace: 8:46 /km\n\n📋 Description:\n7km easy run at a conversational pace (no faster than 6:15/km). This is a limit, not a target - run at whatever pace feels truly easy!\n\n♻️ Laps:\n1.00 km @ 9:26 /km\n7.00 km @ 8:46 /km\n1.00 km @ 8:01 /km\n1.00 km @ 8:38 /km\n1.00 km @ 8:51 /km\n1.00 km @ 10:11 /km\n1.00 km @ 8:05 /km\n1.00 km @ 8:11 /km\n0.09 km @ 8:11 /km\n📲 View in the Runna app: https://club.runna.com/n9Tx/activities?activityId=suunto-6a470c8c4c887162ea2d5e9e
+LOCATION:Amherst, NH, USA
+GEO:42.8789106711264;-71.61433825085611
+X-GOOGLE-ID:_edqnarjkdsmjco9k6so66e336hhjge1n64r34pb169i3ap9pck
+X-USER-TIMEZONE:America/New_York
+END:VEVENT
+
+
+END:VCALENDAR
