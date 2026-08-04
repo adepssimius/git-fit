@@ -111,7 +111,25 @@ hr:
 # measures it directly and daily, instead of inferring it from a percentage table.
 zonesense:
   available: true
-  used_as_live_target: false      # Targets.ZoneSenseZones = "None" — worth switching on
+  chest_strap_required: true      # ZoneSense does not function on optical wrist HR
+  used_as_live_target: true       # athlete's PRIMARY target; pace is secondary on effort-based runs
+
+  # WHEN TO TRUST IT — a1 is computed over a rolling ~2min RR window, so its usefulness is a
+  # direct function of how long the effort lasts. This is inherent to the method, not a Suunto flaw.
+  use_for:
+    long_run:        "YES — the flagship case. Zone 1. Immune to heat/fatigue drift over hours."
+    easy_run:        "YES — prevents easy-day creep, the highest-value application."
+    lap_sim_and_race: "YES — Zone 1 discipline is the whole pacing strategy (see races/)."
+    continuous_tempo: "OK as a cross-check on 15-20min blocks; pace is fine here too."
+    threshold_reps:   "MARGINAL on 5-6min reps — still converging when the rep ends."
+    short_intervals:  "NO — 2min reps, 400s, strides. The window cannot track them. Use pace."
+
+  # Two caveats on the threshold end, both real:
+  #  1. The a1~0.5 / VT2 correspondence is less well validated than a1~1.0 / VT1, and a1 gets
+  #     noisier as intensity rises. Fine distinctions near VO2max are the metric's weak point.
+  #  2. Holding the TOP of Zone 2 means sitting essentially AT LT2. Classic threshold work is
+  #     ~95-100% of LT2, i.e. slightly below. If threshold sessions feel harder than the
+  #     prescribed pace suggests, this is the likely reason — ease off a touch within Zone 2.
   observed:
     2026-08-02_30k:  { z1: "51.7%", z2: "42.6%", z3: "5.8%",  note: "86F, deliberate 10k inside" }
     2026-08-03_easy: { z1: "94.9%", z2: "5.1%",  z3: "0%",    note: "correctly executed" }

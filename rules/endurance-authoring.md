@@ -48,6 +48,20 @@ before and after. A bare `Nx` on its own line also works as a repeat marker.
 
 **Ramps** (rarely used here given the Suunto display caveat above): `- 10m ramp 50%-75%`.
 
+## Which target to prescribe: ZoneSense, HR, or pace
+
+The athlete runs ZoneSense (DFA a1) off a chest strap as the primary target. Match the instrument
+to the session length — a1 needs a rolling ~2min RR window, so it cannot track short efforts:
+
+| Session type | Prescribe |
+|---|---|
+| `long`, `b2b`, `lap-sim`, `race` | **ZoneSense Zone 1.** Pace in the body is a guide only. |
+| `easy`, `recovery` | **ZoneSense Zone 1**, plus the `easy_ceiling` pace as an upper bound |
+| `tempo` (continuous 15-20min blocks) | Pace, with ZoneSense as a cross-check |
+| `intervals`, strides, anything under ~3min | **Pace or HR only** — ZoneSense cannot respond fast enough |
+
+See `athlete/zones.yml` → `zonesense` for the reasoning and caveats.
+
 ## Frontmatter schema
 
 ```yaml
