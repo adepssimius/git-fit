@@ -8,6 +8,8 @@
     1
   ],
   "usage": "workout",
+  "owner": "git-fit",
+  "url": "https://github.com/local/git-fit",
   "externalId": "git-fit-2026-08-04-easy-strides",
   "steps": [
     {

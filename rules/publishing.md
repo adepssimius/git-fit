@@ -11,20 +11,58 @@ intuition from other DSLs (see `strength/notes.md` for the specific ones that bi
 needs an explicit rep count before the duration — `3x1 30s|30s`, not `3x30s|30s` — and cross-week
 carry-forward could not be made to work reliably, so every week is written out in full).
 
-## Endurance sessions → Suunto MCP
+## Endurance sessions → suuntool MCP
+
+**Use `suuntool` only.** There is a second Suunto MCP (`suunto-mcp`) that also compiles workouts,
+but it reports `backend: "private"` and writes to a local store — guides created there never reach
+the watch. `suuntool` is authenticated against the real account. Don't mix them.
+
+**The body is not what gets pushed.** An earlier version of this file said to "push the body (the
+intervals.icu-syntax text)" directly. That was never true of this toolchain: `suuntool` is
+byte-transparent — `guides_upload` sends whatever zip bytes it is handed and never opens or
+validates the archive. The watch wants a `guide.json` step tree in absolute wire units, so the
+markdown has to be compiled and packed first, by scripts in this repo:
+
+```bash
+python3 scripts/compile_guide.py endurance/2026-08-04-easy-strides.md   # -> guide.json
+python3 scripts/pack_guide.py    endurance/2026-08-04-easy-strides.md --base64
+```
+
+Then pass that base64 to `mcp__suuntool__guides_upload`. `suuntool` needs `--allow-write`.
 
 1. **Push a rolling ~2-week window**, not the whole plan at once. The plan is meant to adapt to how
    training actually goes (see `rules/progression.md`), and pushing far-future sessions that will
    likely be revised is wasted work and watch clutter.
 2. For each `endurance/*.md` file in the window:
-   - Skip if `publish: false` is set in frontmatter (meeting-time walks tracked in-repo only).
+   - Skip if `publish:` is false in frontmatter (meeting-time walks tracked in-repo only, and the
+     race file). **Compare case-insensitively** — the repo contains both `false` and `False`, and a
+     case-sensitive check silently publishes ten sessions that opted out. `compile_guide.py`
+     already refuses these; don't reintroduce the check by hand.
    - Skip if `published.suunto` is already set **and** the file hasn't changed since — this is the
      idempotency check. There is no separate ledger; the frontmatter field is the source of truth.
-   - Otherwise, push the body (the intervals.icu-syntax text after the frontmatter) via the MCP tool,
-     using `frontmatter.name` as the guide name.
+     The packer is deterministic (fixed mtime, stable JSON serialisation), so "has this changed" is
+     a plain `sha256` comparison of the archive, not a judgment call.
+   - Otherwise compile, pack, and upload.
    - On success, write the current timestamp into `published.suunto` in that file.
-3. If a push errors, check `rules/endurance-authoring.md` first — most failures are a syntax gotcha
-   (bare `m` for meters, a rest step with no target, a missing description), not an MCP problem.
+3. If compilation errors, check `rules/endurance-authoring.md` first — most failures are a syntax
+   gotcha (bare `m` for meters, a rest step with no target), not a tooling problem.
+4. **`owner` is deliberately not set** in either `manifest.json` or `guide.json`. The server echoes
+   back `"Suunto"` regardless of what is uploaded, so any value is fiction. If a future server build
+   requires the key to be present, set `OWNER` in `scripts/compile_guide.py` — it must then match in
+   both files or the archive is rejected before upload.
+
+### Known blocker: the 9 trainer rides cannot be published
+
+Every `sport: Ride` session targets a percentage (`- 40m 65% 85-95rpm`), i.e. %FTP. But
+`athlete/zones.yml` sets `ftp_w: null` — "UNKNOWN and not worth testing for this block" — and
+directs trainer sessions to prescribe HR or RPE instead. **The guide format has no representation
+for relative targets**; a percentage must resolve to an absolute number before it goes on the wire.
+So these nine files contradict the zones file and cannot be compiled at all.
+
+`compile_guide.py` refuses them rather than inventing an FTP. Fix by rewriting their targets in HR
+(`- 40m Z2 HR`, which the compiler resolves from the LTHR-based zone table) or by setting
+`bike.ftp_w`. Until then, 51 of 60 sessions are publishable and the rides stay watch-less — which
+costs little, since they're ridden through meetings at conversational effort anyway.
 
 ## Strength program → Liftosaur MCP
 

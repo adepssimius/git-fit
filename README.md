@@ -4,9 +4,11 @@ A version-controlled training plan for **Ghost Train Trail Races** (Brookline, N
 2026-10-17, 30-hour lapped ultra), authored and maintained by an LLM following the rules in this
 repo, and pushed to devices via two MCP tools:
 
-- **Running / cycling / walking** → a Suunto MCP tool, which consumes [intervals.icu text
-  syntax](https://forum.intervals.icu/t/workout-builder-syntax-quick-guide/123701) and pushes it as
-  a SuuntoPlus Guide.
+- **Running / cycling / walking** → the `suuntool` MCP. Sessions are stored as [intervals.icu text
+  syntax](https://forum.intervals.icu/t/workout-builder-syntax-quick-guide/123701), compiled to the
+  SuuntoPlus `guide.json` wire format by `scripts/compile_guide.py`, packed into a guide archive by
+  `scripts/pack_guide.py`, and uploaded as zip bytes. `suuntool` is byte-transparent and never opens
+  the archive, so the repo owns compilation and validation — see `rules/publishing.md`.
 - **Strength** → a Liftosaur MCP tool, which consumes
   [Liftoscript](https://www.liftosaur.com/doc/liftoscript).
 
@@ -38,9 +40,13 @@ adjust a week.
 ```bash
 python3 scripts/verify_plan.py        # check every week against athlete/profile.md — exits non-zero on failure
 python3 scripts/generate_calendar.py  # write calendar.html, a month-by-month overview
+python3 scripts/compile_guide.py --all    # compile every session to guide.json; reports what can't
+python3 scripts/pack_guide.py --all       # pack each into a guide archive, with sha256s
 ```
 
-Both read the repo and never write back into the plan.
+None of them write back into the plan. `pack_guide.py` is deterministic — the same session always
+produces byte-identical archive bytes, which is what makes "has this changed since it was
+published" a `sha256` comparison rather than a guess.
 
 ## Published calendar
 

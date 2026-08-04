@@ -14,6 +14,8 @@ Checks, all derived from athlete/profile.md rather than hardcoded:
   6. Rest steps carry an explicit target (intervals.icu requires one)
   7. Long/ultra sessions (>~2h) use target_mode hr|effort, never pace
   8. Frontmatter is well-formed and required keys are present
+  9. Race-session paces sit inside the ultra bands in athlete/zones.yml, and are never
+     faster than the easy-day ceiling (AGENTS.md invariant 6)
   9. log/ entries are well-formed, and the manual readiness signals they carry
      (soreness, session-RPE) are in range and consistent with the day's session
      — see rules/logging.md
@@ -189,7 +191,21 @@ def load_budget(root: Path) -> dict:
         m = re.search(rf"{key}:\s*(\d+)", text)
         return int(m.group(1)) if m else default
 
+    ztext = (root / "athlete" / "zones.yml").read_text()
+
+    def pace_secs(key, which=0):
+        """min:sec (or a min:sec-min:sec range) from zones.yml -> seconds/km."""
+        m = re.search(rf'{key}:\s*"(\d+):(\d\d)(?:-(\d+):(\d\d))?"', ztext)
+        if not m:
+            return None
+        g = m.groups()
+        if which == 0 or not g[2]:
+            return int(g[0]) * 60 + int(g[1])
+        return int(g[2]) * 60 + int(g[3])
+
     return {
+        "easy_ceiling_s": pace_secs("easy_ceiling"),
+        "ultra_early_fast_s": pace_secs("ultra_lap_early", 0),
         "weekly_total_max_min": num("weekly_total_max_min", 600),
         "long_run_max_min": num("long_run_max_min", 240),
         "long_run_exception_max_min": num("long_run_exception_max_min", 360),
@@ -276,8 +292,33 @@ def main() -> int:
                 f"{rel}: {dur:.0f}min session uses target_mode: pace — "
                 f"must be hr or effort (AGENTS.md invariant 4)")
 
+        # 9. Race paces must not contradict the race model. This is the exact shape of the
+        # discarded Runna prescription — a race pace faster than the athlete can hold — and it
+        # recurred once already when zones were rebuilt and this file wasn't updated with them.
+        # Checked BEFORE the publish skip: the race file is publish: False, but being unpublished
+        # is no reason to let it stay wrong in the repo.
+        if typ == "race" and budget.get("ultra_early_fast_s"):
+            for m in re.finditer(r"(\d+):(\d\d)(?:-(\d+):(\d\d))?/km", body):
+                fastest = (int(m.group(3)) * 60 + int(m.group(4))) if m.group(3) \
+                    else (int(m.group(1)) * 60 + int(m.group(2)))
+                ue = budget["ultra_early_fast_s"]
+                if fastest < ue:
+                    errors.append(
+                        f"{rel}: race pace {m.group(0)} is faster than ultra_lap_early "
+                        f"({ue // 60}:{ue % 60:02d}/km) in athlete/zones.yml — a race pace must "
+                        f"never exceed the race model (AGENTS.md invariant 6)")
+                ec = budget.get("easy_ceiling_s")
+                if ec and fastest <= ec:
+                    errors.append(
+                        f"{rel}: race pace {m.group(0)} is at or faster than the EASY-DAY ceiling "
+                        f"({ec // 60}:{ec % 60:02d}/km). A 30-hour race cannot be paced at "
+                        f"easy-run pace.")
+
         # Body checks only apply to files actually pushed as watch guides.
-        if fm.get("publish") == "false":
+        # Case-insensitive on purpose: the repo contains both `publish: false` and
+        # `publish: False`, and a case-sensitive compare silently treats ten opted-out
+        # sessions as publishable.
+        if fm.get("publish", "").strip().lower() == "false":
             continue
 
         for line in body.splitlines():

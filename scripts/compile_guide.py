@@ -31,10 +31,13 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 
-# `owner` is deliberately NOT set. The Suunto server echoes back "Suunto" regardless of what
-# is uploaded (observed in suuntool's round-trip test), so any value we pick is fiction. If a
-# future server build requires the key to merely be present, set it here — the value is ignored.
-OWNER: str | None = None
+# The server echoes `owner` back as "Suunto" regardless of what is uploaded (observed in
+# suuntool's round-trip test), so the VALUE is fiction. The key still has to be PRESENT:
+# omitting it returns HTTP 400 "Instantiation of ... Guide$Sequence value failed", because the
+# server's deserialiser treats it as a required creator property. Same for `url`. So these are
+# set to something honest and ignored, rather than left out.
+OWNER = "git-fit"
+URL = "https://github.com/local/git-fit"
 
 MAX_STEP_TITLE = 13      # the watch's renderer truncates past these; enforce rather than discover
 MAX_FIELD_TITLE = 9
@@ -326,7 +329,9 @@ def compile_session(path: Path, zones: dict | None = None) -> dict:
     # or the push errors.
     description = ascii_fold(fm.get("follow") or fm.get("intent") or fm["name"])[:MAX_DESCRIPTION]
 
-    guide = {
+    # Key order mirrors a known-good compile of this format. Order doesn't affect parsing, but
+    # it keeps a diff against a reference guide readable.
+    return {
         "name": ascii_fold(fm["name"])[:60],
         "description": description,
         "shortDescription": ascii_fold(fm["name"])[:23],
@@ -334,12 +339,11 @@ def compile_session(path: Path, zones: dict | None = None) -> dict:
         "type": "sequence",
         "activities": [ACTIVITY_IDS[fm["sport"]]],
         "usage": "workout",
+        "owner": OWNER,
+        "url": URL,
         "externalId": f"git-fit-{path.stem}"[:64],
         "steps": steps,
     }
-    if OWNER:
-        guide["owner"] = OWNER
-    return guide
 
 
 # --------------------------------------------------------------------------- cli
