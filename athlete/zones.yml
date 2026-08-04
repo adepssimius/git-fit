@@ -56,10 +56,29 @@ pace_review:
   next_review: "after the Big Day, 2026-09-05"
 
 hr:
-  lthr: null                 # TODO: still worth setting — a threshold test would confirm the
-                             # 5:40/km estimate and unlock HR-targeted long runs
-  zones: { z1: null, z2: null, z3: null, z4: null, z5: null }
-  note: "Until set, HR-targeted sessions fall back to target_mode: effort."
+  # Observed from Suunto, not estimated: 187 was recorded during the 2026-08-02 30k, above the
+  # 186 the watch had stored. Max is therefore AT LEAST 187.
+  max_observed: 187
+  lthr: null                 # still unset — needs a threshold test or a hard ~1hr effort with HR.
+                             # The 10k PR (56:36) is the natural candidate if that file has HR.
+  # Percentage-of-max zones. Rough, but good enough to catch the problem below.
+  zones:
+    z1_recovery: "<112"      # <60%
+    z2_aerobic: "112-131"    # 60-70%  <- where long runs belong
+    z3_steady: "131-150"     # 70-80%
+    z4_threshold: "150-168"  # 80-90%
+    z5: ">168"               # 90%+
+
+  # ⚠️ THE FINDING THAT MATTERS. Two datapoints, 2026-08-02/03:
+  #   30k long run  -> avg 159 (Z4, threshold-adjacent) sustained 3h31, max 187, TSS 307
+  #   7k easy run   -> avg 131 (top of Z2), 7:48/km — correctly easy
+  # The easy day was executed well. The LONG RUN was not: 3.5 hours at ~85% max is a threshold
+  # session, not aerobic work. That is exactly the pattern that produces the speed/endurance gap
+  # visible in the PRs (strong 5k/10k, comparatively weak long stuff), and for a 100-miler the
+  # aerobic base is the thing that decides the outcome.
+  # ACTION: long runs should sit in z2_aerobic (112-131). If pace has to drop to 8:00/km+ to
+  # hold that, drop it — the pace will come down on its own as the aerobic base builds.
+  long_run_hr_ceiling: 140   # allow a little drift above Z2, but 159 is far too high
 
 bike:
   ftp_w: null                # TODO: ramp or 20-min test on the trainer
