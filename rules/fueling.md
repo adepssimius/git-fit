@@ -65,35 +65,46 @@ benefit tapers as reps lengthen and disappears entirely at aerobic intensity.
 > the rate where buffering matters. On race day a dose would be zero benefit, a GI variable, and a
 > large sodium load you'd have to plan around. Spend them all in training.
 
-**Five sessions, not seven** — the trip (2026-08-22 to 09-01) rules out two otherwise-good
-candidates, and bicarb isn't going on vacation.
+**Use ONE here. Save the rest for the post-race VO2max block.**
 
-| # | Date | Wk | Session | Why |
-|---|---|---|---|---|
-| 1 | **2026-08-12** | 10 | Threshold — 7x2min | Repeated short efforts, classic bicarb territory. First use also doubles as a tolerance check. |
-| 2 | **2026-08-19** | 11 | Uphill Threshold — 6x4min | Moderate — reps getting long for the mechanism |
-| 3 | **2026-09-16** | 15 | Track — 8x400m @5:18 | Shortest, fastest reps in the block. **Best single fit.** |
-| 4 | **2026-09-23** | 16 | Uphill Threshold — 2x10min + 2x5min | Lower — 10min reps are past bicarb's window |
-| 5 | **2026-09-30** | 17 | Uphill Threshold — 5x5min | Moderate |
+This is the right call and it took the athlete pointing it out to see it. Bicarb buffers H+ — so
+its value tracks how much H+ a session actually generates. Sorting this block's quality sessions by
+that measure is unflattering:
 
-**Ruled out by travel:** 2026-08-26 (Threshold 4x3min) and 2026-09-01 (Pre-Big-Day Tune-Up) both
-fall inside the 08-22 → 09-01 trip.
+| Session | Work pace | Sits at | Bicarb value |
+|---|---|---|---|
+| Aug 12 · Threshold 7x2min | 5:40/km | threshold (LTHR pace) | marginal |
+| Aug 19 · Uphill Thr 6x4min | 5:40/km | threshold | marginal |
+| **Sep 16 · Track 8x400m** | **5:18/km** | **VO2 / 5k pace** | **genuine** |
+| Sep 23 · 2x10min + 2x5min | 5:55/km | tempo, below threshold | near zero |
+| Sep 30 · Uphill Thr 5x5min | 5:55/km | tempo, below threshold | near zero |
 
-**Ruled out on merit:** 2026-08-05 (continuous progression run — aerobic, no mechanism to help) and
-2026-10-13 (race week — never introduce a GI variable seven days out).
+**The block is threshold-dominated by design** — correct for a 100-miler — but threshold is by
+definition the intensity at which H+ clearance still matches production. There is very little for
+a buffer to do. Only **2026-09-16 (Track 8x400m @5:18)** sits at a pace where bicarb earns its keep.
 
-### The two leftover doses
+A VO2max block is the opposite: 3–5min reps at or above 5k pace, repeated, twice a week. Every one
+of those sessions is a better candidate than four of the five above. Spending doses here to "use
+them up" would trade a real effect later for a negligible one now.
 
-**Bank them.** Forcing a dose into an aerobic session to use up inventory wastes it — the mechanism
-simply isn't engaged below threshold. They keep (check the date on the packet), and a post-race
-block or any future speed-focused period is a better home than a long run where they do nothing.
+### Allocation
 
-If they must be used this season, **2026-08-05** is the least-bad option: its 2.5km @5:55 block is
-~15 minutes continuous, past bicarb's best window but not entirely outside it. That is a
-consolation use, not a recommendation.
+- **1 dose: 2026-09-16**, Track 8x400m. The only session in the block at genuinely VO2 pace.
+- **6 doses: banked for the post-race VO2max block** — roughly one per week for a six-week block,
+  on the hardest session of each week.
+- Optionally add a second here (Aug 12) *only* if it has been long enough since the last use that a
+  tolerance re-check is worth a dose. Otherwise don't.
 
-**On bicarb days, do not add your usual sodium.** The dose carries a substantial load already —
-this is the athlete's existing practice and it's correct.
+> Check the date on the packet before banking. If they expire before a realistic VO2 block starts,
+> that changes the arithmetic — spend them in September instead.
+
+### When can the VO2 block actually start?
+
+Not soon after the race. Recovery from 100km is on the order of **2–3 weeks** before structured
+work resumes; from 100 miles, **3–4+ weeks**, and that's before any rebuilding. A VO2max block
+realistically begins **mid-to-late November**, after a couple of weeks of easy running to
+re-establish a base. Starting hard intervals on legs three weeks out from an ultra is a good way to
+turn a successful race into an injury.
 
 ### ⚠️ The binding constraint is timing, not supply
 
