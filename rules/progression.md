@@ -22,12 +22,24 @@ Also confirm no single session exceeds its per-session cap and every session fal
 
 Check each morning against the day's plan, worst signal wins:
 
-| Signal | Green | Amber | Red |
-|---|---|---|---|
-| Sleep (last night) | ≥7h | 5.5–7h | <5.5h |
-| Soreness (0–10, from `log/`) | ≤3 | 4–6 | ≥7 |
-| RPE trend (last 3 sessions) | on target | +1 over plan | +2 or more |
-| Illness/injury flag | none | minor, monitored | present |
+**Three of these four signals are now pulled automatically from Suunto wellness** rather than
+hand-logged — sleep duration/quality, HRV, and resting HR all come from the nightly record, and
+body-resource "balance" is sampled through the day. Only soreness and RPE need entering by hand.
+
+| Signal | Green | Amber | Red | Source |
+|---|---|---|---|---|
+| Sleep duration | ≥7h30 | 6–7h30 | <6h | Suunto `wellness_sleep` |
+| Sleep quality / fragmentation | ≥0.75, one block | 0.55–0.75 | <0.55, **or broken into 3+ fragments** | Suunto |
+| HRV (nightly avg RMSSD) | ≥80 | 60–80 | <60 | Suunto |
+| Resting HR | ≤43 | 44–48 | ≥49 | Suunto |
+| Body resources ("balance") | ≥0.70 | 0.40–0.70 | <0.40 | Suunto `wellness_recovery` |
+| Soreness (0–10) | ≤3 | 4–6 | ≥7 | manual, `log/` |
+| RPE trend (last 3 sessions) | on target | +1 over plan | +2 or more | manual, `log/` |
+
+Baselines to compare against are in `athlete/zones.yml` → `baseline`. **Fragmentation matters as
+much as duration** — the night of 2026-08-01 totalled 8h00 but arrived in seven separate pieces
+with HRV suppressed to 49, and the 30k the next morning followed. Total hours alone would have
+scored that night green.
 
 - **Green** → run the day as planned; main lifts at tier 1.
 - **Amber** → main lifts drop to tier 2; easy runs stay easy (don't let effort creep); Wednesday's

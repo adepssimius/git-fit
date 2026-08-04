@@ -141,6 +141,18 @@ zonesense:
 # AnT. Set the watch to the LTHR-based zones above.
 watch_hr_zones_need_update: true
 
+# ---------------------------------------------------------------------------
+# Baseline physiology — all measured from Suunto 24/7 wellness, not estimated
+# ---------------------------------------------------------------------------
+baseline:
+  resting_hr: 41            # 41-42 bpm across good nights. Strong aerobic marker.
+  hrv_rmssd_typical: 81-108 # nightly average; 108 on the best night in the window
+  hrv_rmssd_suppressed: 49  # seen on the fragmented night of 08-01 — a usable red flag
+  vo2max_estimate: 47.5     # watch-derived, 2026-08
+  fitness_age: 34           # watch-derived, "Good"
+  typical_sleep: "7h50-9h20"
+  source: "Suunto wellness API, pulled 2026-08-04"
+
 bike:
   ftp_w: null                # TODO: ramp or 20-min test on the trainer
   z2_w: null                 # ~56-75% FTP — the only zone meeting-time trainer sessions use
