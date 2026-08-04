@@ -69,16 +69,20 @@ hr:
     z4_threshold: "150-168"  # 80-90%
     z5: ">168"               # 90%+
 
-  # ⚠️ THE FINDING THAT MATTERS. Two datapoints, 2026-08-02/03:
-  #   30k long run  -> avg 159 (Z4, threshold-adjacent) sustained 3h31, max 187, TSS 307
-  #   7k easy run   -> avg 131 (top of Z2), 7:48/km — correctly easy
-  # The easy day was executed well. The LONG RUN was not: 3.5 hours at ~85% max is a threshold
-  # session, not aerobic work. That is exactly the pattern that produces the speed/endurance gap
-  # visible in the PRs (strong 5k/10k, comparatively weak long stuff), and for a 100-miler the
-  # aerobic base is the thing that decides the outcome.
-  # ACTION: long runs should sit in z2_aerobic (112-131). If pace has to drop to 8:00/km+ to
-  # hold that, drop it — the pace will come down on its own as the aerobic base builds.
-  long_run_hr_ceiling: 140   # allow a little drift above Z2, but 159 is far too high
+  # Context for the 2026-08-02 30k, which showed avg HR 159 (85% max) over 3h31.
+  # That is NOT evidence of chronically mis-paced long runs — an earlier version of this file
+  # said it was, and that was wrong. Breaking the run down:
+  #     20.1 km @ 7:42/km   <- the actual long-run portion, appropriately easy
+  #     10.0 km @ 5:39/km   <- a deliberate sub-60 10k chased mid-run
+  #   ...run in 86F, which lifts HR substantially on its own via thermoregulation and drift.
+  # So it was ~20km easy plus a threshold 10k in serious heat: a hard, legitimate workout.
+  # The easy portion at 7:42/km is if anything MORE conservative than the 7:00 easy ceiling.
+  #
+  # Standard ultra-build guidance still applies, just not as a correction to anything:
+  long_run_hr_ceiling: 150   # let it drift on hot days; deliberate efforts inside a long run are fine
+
+  # Heat note: 86F on 08-02. Race day is mid-October in NH (likely 40s-60s F), so heat-adjusted
+  # fitness is better than raw summer numbers suggest. Do not read summer HR as a fitness verdict.
 
 bike:
   ftp_w: null                # TODO: ramp or 20-min test on the trainer
