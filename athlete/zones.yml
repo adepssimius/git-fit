@@ -56,33 +56,36 @@ pace_review:
   next_review: "after the Big Day, 2026-09-05"
 
 hr:
-  # Observed from Suunto, not estimated: 187 was recorded during the 2026-08-02 30k, above the
-  # 186 the watch had stored. Max is therefore AT LEAST 187.
+  # HRmax observed 187 during the 2026-08-02 30k, above the 186 the watch had stored.
   max_observed: 187
-  lthr: null                 # still unset — needs a threshold test or a hard ~1hr effort with HR.
-                             # The 10k PR (56:36) is the natural candidate if that file has HR.
-  # Percentage-of-max zones. Rough, but good enough to catch the problem below.
+
+  # LTHR is ESTIMATED, not measured — but bounded usefully from both directions:
+  #   FLOOR:  averaged 159 bpm for 3h31 on 2026-08-02. You cannot hold above threshold for
+  #           three and a half hours, so LTHR is comfortably ABOVE 159.
+  #   CEILING: treadmill efforts of 42-66min averaged 147-151 (max 177-181), and the athlete
+  #           reports having had 2-3 min in hand — so those weren't maximal.
+  # Best estimate ~170. Confirm with a real test before treating it as precise.
+  lthr_estimated: 170
+  lthr_measured: null        # TODO: 30min TT, average HR of the final 20min
+
+  # Friel LTHR-based zones (more useful here than %max, given LTHR is the better-bounded number)
   zones:
-    z1_recovery: "<112"      # <60%
-    z2_aerobic: "112-131"    # 60-70%  <- where long runs belong
-    z3_steady: "131-150"     # 70-80%
-    z4_threshold: "150-168"  # 80-90%
-    z5: ">168"               # 90%+
+    z1_recovery: "<138"      # <81% LTHR
+    z2_aerobic: "138-151"    # 81-89%  <- where the bulk of long-run time belongs
+    z3_steady: "153-158"     # 90-93%
+    z4_threshold: "160-168"  # 94-99%
+    z5: ">170"
 
-  # Context for the 2026-08-02 30k, which showed avg HR 159 (85% max) over 3h31.
-  # That is NOT evidence of chronically mis-paced long runs — an earlier version of this file
-  # said it was, and that was wrong. Breaking the run down:
-  #     20.1 km @ 7:42/km   <- the actual long-run portion, appropriately easy
-  #     10.0 km @ 5:39/km   <- a deliberate sub-60 10k chased mid-run
-  #   ...run in 86F, which lifts HR substantially on its own via thermoregulation and drift.
-  # So it was ~20km easy plus a threshold 10k in serious heat: a hard, legitimate workout.
-  # The easy portion at 7:42/km is if anything MORE conservative than the 7:00 easy ceiling.
-  #
-  # Standard ultra-build guidance still applies, just not as a correction to anything:
-  long_run_hr_ceiling: 150   # let it drift on hot days; deliberate efforts inside a long run are fine
+  # Re-reading the two known sessions against these:
+  #   2026-08-03 easy, avg 131  -> Z1. Genuinely gentle; correct the day after a 30k.
+  #   2026-08-02 30k,  avg 159  -> Z3 steady, NOT threshold. Firm for a long run but defensible,
+  #                                especially with a deliberate 10k effort inside it and 86F heat.
+  long_run_hr_ceiling: 155   # aim Z2, allow drift into low Z3 on hot days or with efforts inside
 
-  # Heat note: 86F on 08-02. Race day is mid-October in NH (likely 40s-60s F), so heat-adjusted
-  # fitness is better than raw summer numbers suggest. Do not read summer HR as a fitness verdict.
+  # ⚠️ TREADMILL DISTANCE IS UNRELIABLE. Every recorded treadmill session shows 6:11-6:46/km at
+  # avg HR 147-151, which cannot be reconciled with a 56:36 10k (5:39/km). Wrist-based distance
+  # on a treadmill is the likely culprit. Do NOT derive pace zones from treadmill sessions —
+  # use their HR only.
 
 bike:
   ftp_w: null                # TODO: ramp or 20-min test on the trainer
