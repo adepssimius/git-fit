@@ -56,8 +56,14 @@ pace_review:
   next_review: "after the Big Day, 2026-09-05"
 
 hr:
-  # HRmax observed 187 during the 2026-08-02 30k, above the 186 the watch had stored.
-  max_observed: 187
+  # HRmax: athlete reports having seen 192 historically; highest in the pulled Suunto data is
+  # 187 (2026-08-02 30k). Using 192 — it is athlete-reported rather than captured in this
+  # dataset, but nothing in the plan is sensitive to it, because the zones below are anchored
+  # to MEASURED LTHR rather than a percentage of max.
+  # Sanity check: LTHR 169 / HRmax 192 = 88%, a normal ratio for a trained runner (85-92%).
+  # The two independent numbers corroborate rather than conflict.
+  max: 192                  # set this in the watch — it currently reads 186
+  max_observed_in_data: 187 # 2026-08-02
 
   # LTHR ~169, CONFIRMED from the 10k PR effort rather than estimated.
   # Source: 2026-06-12 treadmill session (key 9proj21747252eif), 71:27 / 11.43km, avg HR 157,
