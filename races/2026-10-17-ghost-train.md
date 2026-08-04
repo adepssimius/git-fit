@@ -109,8 +109,23 @@ recorded 5.8% above the anaerobic threshold.
 Zone 3 should not appear at any point in this race.
 
 Before race day: switch `Targets.ZoneSenseZones` on in the watch so it alarms rather than
-requiring you to read a field, and confirm the HR source gives clean RR data — DFA is
-artifact-sensitive, and a chest strap is materially more reliable than optical wrist HR.
+requiring you to read a field. (The chest strap is already standard — ZoneSense does not function
+on optical wrist HR at all.)
+
+### The metric's job is front-loaded — and that's fine
+
+There is no evidence DFA a1 behaves sensibly at hour 20, and there probably never will be; nobody
+is running lab-validated 100-milers. **Assume the reading is meaningless in the back half.**
+
+That costs less than it sounds, because of a useful symmetry. Laps 1–3 are when you feel fantastic
+and want to run faster than you should — and they are also when the metric is most reliable and
+when discipline compounds hardest. By hour 20 the instrument is both unvalidated and irrelevant,
+because whether you keep moving is a decision, not a number.
+
+So ZoneSense is not the back-half pacing tool. Its entire job is making the back half *survivable*,
+and it does that before noon on Saturday. From roughly lap 4 onward, the governing instruments are
+perceived effort and the crew-stop decision tree below — which is why that tree is written in terms
+of clock margin, GI, feet, sleepiness and gait rather than any number off the watch.
 
 ## Continue/stop decision tree — evaluate at every crew stop
 
