@@ -49,7 +49,15 @@ what the professionally designed plan says), never edit it, never treat it as cu
    The Runna seed's `50km at 5:35-5:55/km` is wrong and stays discarded.
 7. **Frontmatter `published.suunto` is the only idempotency mechanism.** Don't re-push a session
    whose body hasn't changed since it was last published. See `rules/publishing.md`.
-8. **`seed/*` files are frozen.** If something from Runna or the Champion Plan needs to change for
+8. **Anything pulled from the Suunto API is DRAFT until the athlete confirms it.** The numbers are
+   real, but the *interpretation* usually isn't obvious from the data alone — a fragmented night
+   might be a sick kid or a watch artifact; a low HRV reading might be alcohol, illness, or noise;
+   a "hard" session might have had a deliberate effort inside it. Present Suunto-derived findings
+   and their proposed reading to the athlete BEFORE committing them as fact, and record the context
+   they give alongside the number. Two corrections already came from exactly this: the 08-02 30k
+   initially read as chronic mis-pacing (it was a deliberate 10k plus 86F heat), and treadmill data
+   was briefly written off as unreliable (it reconciled perfectly once walking was separated out).
+9. **`seed/*` files are frozen.** If something from Runna or the Champion Plan needs to change for
    this athlete, make the adapted version in `training/`, `endurance/`, or `strength/` — don't edit
    the seed.
 
