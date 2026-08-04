@@ -13,16 +13,48 @@ fields and what to rehearse on which sessions.
 - **Sweat rate is low-average**, so sodium sits at the lower end of typical guidance rather than
   the high end — see the race protocol below.
 
-## What already works — proven at the 2024 Ghost Train 50k
+## The current system (2026) — and how it differs from 2024
 
-Do not reinvent this. From the athlete's own race (`races/2026-10-17-ghost-train.md`):
+**Current, and it's a good system:**
+- **High-carb gels on a watch timer, every 20–30 minutes.**
+- **Plain water**, deliberately — to wash the gel taste out.
 
-- **Tailwind rather than plain water** at aid stations, most of the way.
-- **A lot of candy, plus salty snacks.** Palatable and tolerated over 50km.
+**2024 Ghost Train 50k, for contrast:** Tailwind rather than water most of the way, plus a lot of
+candy and salty snacks. That also worked, over 50km.
 
-That's a working baseline with real evidence behind it. The job for this block is not to replace it
-but to **scale it up** — the same approach sustained for 15–26 hours instead of a long afternoon,
-at a higher hourly carb rate, and rehearsed under fatigue at the Big Day and both lap simulations.
+These are genuinely different strategies and the difference matters over 24 hours:
+
+| | 2026 (gels + water) | 2024 (Tailwind + food) |
+|---|---|---|
+| Carbs from | gels only | drink **and** food |
+| Sodium from | **nothing** — plain water | Tailwind + salty snacks |
+| Decision load | **none, it's a timer** | judgement at each aid station |
+| Palatability over 24h | **unproven; the main risk** | proven to 50km |
+
+### The timer is the best part — keep it, and formalise it
+
+Eating on a watch timer removes decision-making, and decision-making is precisely what fails at
+hour 15 when you're tired and nothing sounds good. Most people's fueling collapses because they
+stop *choosing* to eat, not because they can't. **Keep the timer for the entire race**, including
+the hours when you feel fine and think you don't need it.
+
+### Two gaps this system opens
+
+1. **Sodium is now zero from drink.** Gels carry little or none, and plain water carries none at
+   all. Low-average sweat rate (`athlete/profile.md`) means the requirement is at the lower end of
+   typical, but "lower end for 26 hours" is still a real number. **Carry salt tabs and put them on
+   the same timer**, or alternate — gel on the beep, salt tab every third beep. TODO: settle the
+   dose during the Big Day and both lap sims.
+2. **Gel-only will very likely fail somewhere in the back half.** Flavour fatigue over 24 hours is
+   near-universal, and the 2024 race already proved that candy and salty snacks work for this
+   athlete. **Plan the handover rather than discovering it at 2am**: gels while they're palatable,
+   then real food, with the timer unchanged — only what's on the beep changes.
+
+### Open question — needed to compute the actual rate
+
+**TODO: which gel, and what carb load per gel?** At 40g every 25min that's ~96 g/hr, right in the
+target band. At 30g every 30min it's ~60 g/hr, which is under-fuelled for this race. The interval
+is known; the gram figure isn't, and the whole plan turns on it.
 
 ## Gut training progression — the actual training variable
 

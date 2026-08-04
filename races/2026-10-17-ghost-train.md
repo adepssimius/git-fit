@@ -177,10 +177,15 @@ Two full laps plus extra. Slow, but **the limiter was not the athlete** — a fr
 debilitating muscle cramps and the day was run at his pace. Self-assessment: "I could have stayed
 jogging the entire time," and "I didn't have that much to complain about."
 
-**What worked, and should be repeated:**
+**What worked in 2024:**
 - **Tailwind rather than water** at aid stations, most of the way.
 - **A lot of candy, plus salty snacks.** Simple, palatable, and it held up over the distance.
 - Jogging remained available throughout — aerobic capacity was never the constraint.
+
+> **Note:** the 2026 fuelling approach is different — high-carb gels on a 20–30min watch timer with
+> plain water. See `rules/fueling.md`. The 2024 detail still matters because it proves candy and
+> salty snacks are tolerated by this athlete, which is the obvious fallback when gels stop being
+> palatable in the back half.
 
 ### ⚠️ THE ONE THING THAT ENDED THE DAY — do not repeat it
 
