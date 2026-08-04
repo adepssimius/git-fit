@@ -102,12 +102,31 @@ per `training/block.md` § "Unplanned sessions":
 
 ```yaml
 heat:
-  sessions_per_week: 2             # sauna or hot tub, 20-30 min, on Mon/Fri rest days
-  available: null                  # TODO: confirm sauna/hot tub access
-  note: "Aerobic/plasma-volume benefit only — race is mid-October in NH, no heat acclimation block needed"
+  sauna_available: true            # at the gym; athlete uses it ~20min after any gym session
+  hot_tub: false                   # planned purchase, but NOT before this race — don't rely on it
+  counts_toward_training_time: false   # post-session at a gym he's already at; costs nothing
+  note: >
+    Aerobic/plasma-volume benefit only — the race is mid-October in NH, so no heat-acclimation
+    block is needed. Athlete enjoys it and will do it anyway; no need to prescribe or budget it.
+  hot_weather_fallback: >
+    August/September heat sometimes makes outdoor intervals impractical. Treadmill intervals at
+    the gym are a legitimate substitute (and put the sauna on the way out). Prefer this over
+    running a quality session in dangerous heat — treadmill pace data reconciles fine, see the
+    2026-06-12 session in this file's history.
 core:
   daily: "1-2 x short core routine"
 ```
+
+## On the weight vest — deliberately dropped
+
+The Champion Plan calls for weight-vest uphill hiking. That prescription exists for **mountain**
+ultras with sustained steep climbing, where vest work builds the specific muscular endurance those
+races demand. **Ghost Train is a flat rail trail.** The vest would buy very little here while
+adding heat stress in an August/September build, altered gait, and spinal loading — for a course
+that asks for none of it. The athlete's instinct that "it sounds hot" is correct.
+
+**Recommendation: don't buy one.** The walking volume already does the durability work, and if
+more stimulus is ever wanted, a slight incline is a better lever than added load.
 
 ## Travel — 2026-08-22 to 2026-09-01
 
@@ -202,10 +221,11 @@ equipment:
   bike_trainer: true                # used during meetings
   emtb: true                        # unplanned, active-recovery only
   road_bike: true                   # unplanned group rides
-  incline_walking_pad: null         # TODO: confirm — needed for the meeting-walk/vest lever
-  weight_vest: null                 # TODO: confirm
+  incline_walking_pad: null         # unconfirmed — optional, not load-bearing for the plan
+  weight_vest: false                # NOT RECOMMENDED for this build — see note below
   gym_access: true                  # for strength/program.liftoscript
-  headlamp: null                    # TODO: confirm spare batteries for night sessions
+  headlamp: "4 available"           # no shortage; pick two for the race + spares in the crew bag
+  sweat_rate: "low-average"         # informs sodium at the lower end of typical — see rules/fueling.md
 ```
 
 ## Injuries / constraints

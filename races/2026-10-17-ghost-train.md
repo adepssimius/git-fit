@@ -22,7 +22,9 @@ pace is far too fast for a 24+ hour effort. Everything below is the real event.
   roughly every 75–90 minutes at ultra pace. Nothing needs to be carried far between stops.
 - 30-hour cutoff, laps run continuously (no mandated sleep/rest, but nothing stops you from taking
   it).
-- Prior result on this course: **50k finish, ~3 years ago.** Course and turnaround are known.
+- Prior result on this course: **50k, 2024-10-19.** Course and turnaround are known. See the
+  full report at the end of this file — it contains the single most important tactical
+  lesson available to this race.
 
 ## Goal tiers
 
@@ -169,8 +171,43 @@ simulations").
 TODO — caffeine timing strategy (see `rules/fueling.md`), whether a planned short sleep at a crew
 stop is part of the strategy for the 100mi stretch goal, and how that trades against clock margin.
 
-## Notes from the prior 50k on this course
+## Notes from the 2024-10-19 Ghost Train 50k
 
-TODO — capture what worked last time (pacing, fueling, footwear, what surprised you about the
-surface/turnaround) so it isn't lost. This is useful, hard-to-recreate information — fill it in
-early rather than trying to reconstruct it close to race day.
+Two full laps plus extra. Slow, but **the limiter was not the athlete** — a friend was suffering
+debilitating muscle cramps and the day was run at his pace. Self-assessment: "I could have stayed
+jogging the entire time," and "I didn't have that much to complain about."
+
+**What worked, and should be repeated:**
+- **Tailwind rather than water** at aid stations, most of the way.
+- **A lot of candy, plus salty snacks.** Simple, palatable, and it held up over the distance.
+- Jogging remained available throughout — aerobic capacity was never the constraint.
+
+### ⚠️ THE ONE THING THAT ENDED THE DAY — do not repeat it
+
+> After two full laps he **sat down in his tent to change**. On standing up, legs that had been
+> perfectly capable of jogging moments earlier were **in pain and stiff**. He crossed 50km and
+> stopped.
+
+The distance didn't end that race. **Sitting down did.** This is a well-known ultra failure mode —
+stopping lets blood pool, muscles cool and stiffen, and the body shifts out of "moving" mode — but
+it is much more persuasive coming from your own race than from a textbook, and it happened at
+almost exactly the point on the course where this year's decision to continue must be made.
+
+**Rules that follow directly, and they are not optional:**
+
+1. **Do not sit down.** Not at the turnaround, not at the start/finish, not "just for a minute to
+   change." Crew stops happen **standing**.
+2. If something genuinely requires sitting (a serious foot issue), **time-box it hard — 3 minutes
+   maximum — and stand up and walk immediately afterwards.** Do not stand still. Do not linger to
+   talk. Walk out of the aid station while eating.
+3. **Change kit standing up**, or lean rather than sit. Rehearse this at both lap simulations, where
+   the crew-stop practice already exists — practise it standing, with a watch running.
+4. Brief the crew explicitly: their job includes **not letting you sit down**, and getting you
+   moving again on a timer. Someone who doesn't know this will kindly offer you a chair.
+
+### What this changes about the 2026 goal
+
+He covered 50km with capacity in hand, at someone else's pace, and stopped for a reason that is
+entirely preventable. That materially strengthens the case for the 100km primary goal — it is not
+an extrapolation from an unknown, it is the same course with the specific failure removed and a
+real training block behind it.

@@ -145,7 +145,10 @@ watch_hr_zones_need_update: true
 # Baseline physiology — all measured from Suunto 24/7 wellness, not estimated
 # ---------------------------------------------------------------------------
 baseline:
-  resting_hr: 41            # 41-42 bpm across good nights. Strong aerobic marker.
+  # NOTE: two different fields, easy to confuse. An earlier version of this file quoted hrAvg
+  # and called it resting HR — wrong. The athlete's app reports the nightly MINIMUM.
+  resting_hr_min: 38-43     # nightly low; athlete reports 36-40, API shows 38-43. Consistent.
+  sleep_hr_avg: 41-47       # average across the whole sleep session — NOT resting HR
   hrv_rmssd_typical: 81-108 # nightly average; 108 on the best night in the window
   hrv_rmssd_suppressed: 49  # seen on the fragmented night of 08-01 — a usable red flag
   vo2max_estimate: 47.5     # watch-derived, 2026-08
@@ -154,8 +157,11 @@ baseline:
   source: "Suunto wellness API, pulled 2026-08-04"
 
 bike:
-  ftp_w: null                # TODO: ramp or 20-min test on the trainer
-  z2_w: null                 # ~56-75% FTP — the only zone meeting-time trainer sessions use
+  ftp_w: null                # UNKNOWN and not worth testing for this block.
+  z2_w: null
+  # Trainer sessions therefore prescribe HR or RPE, not %FTP: hold HR 137-151 (Z2) or an
+  # effort you could hold a work call at — which is literally the use case. See
+  # rules/endurance-authoring.md.
   cadence: "85-95rpm"
 
-bodyweight_lb: null          # TODO
+bodyweight_lb: 162           # confirmed 2026-08-04 (73.5 kg)

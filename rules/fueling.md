@@ -7,9 +7,22 @@ fields and what to rehearse on which sessions.
 ## Daily baseline
 
 - High-carb, supporting both the running volume and the strength program's recovery demands.
-- No specific macro targets set yet — TODO once the athlete supplies body weight
-  (`athlete/zones.yml` → `bodyweight_lb`) and any dietary constraints. Until then, direction over
-  precision: carbs are not the thing to restrict in this block.
+- **Bodyweight 162 lb / 73.5 kg** (confirmed 2026-08-04).
+- At this training load, **8–10 g carb/kg/day = roughly 590–735 g/day**. That is a lot of food and
+  it is deliberate; carbohydrate is not the thing to restrict in this block.
+- **Sweat rate is low-average**, so sodium sits at the lower end of typical guidance rather than
+  the high end — see the race protocol below.
+
+## What already works — proven at the 2024 Ghost Train 50k
+
+Do not reinvent this. From the athlete's own race (`races/2026-10-17-ghost-train.md`):
+
+- **Tailwind rather than plain water** at aid stations, most of the way.
+- **A lot of candy, plus salty snacks.** Palatable and tolerated over 50km.
+
+That's a working baseline with real evidence behind it. The job for this block is not to replace it
+but to **scale it up** — the same approach sustained for 15–26 hours instead of a long afternoon,
+at a higher hourly carb rate, and rehearsed under fatigue at the Big Day and both lap simulations.
 
 ## Gut training progression — the actual training variable
 
