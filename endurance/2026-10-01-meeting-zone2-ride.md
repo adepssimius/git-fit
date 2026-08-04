@@ -6,6 +6,8 @@ type: aerobic-base
 block_week: 17
 duration_s: 7200
 target_mode: power
+follow: >
+  Power — hold Z2. ZoneSense doesn't apply to the trainer.
 concurrent: meetings
 intent: >
   Gut training at full race intake — 90-120g/hr.

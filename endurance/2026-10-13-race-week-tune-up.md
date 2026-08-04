@@ -7,6 +7,8 @@ block_week: 19
 distance_km: 7.1
 duration_s: 2910
 target_mode: pace
+follow: >
+  Pace only. ~30s reps — ZoneSense's ~2min window cannot track efforts this short and will read meaninglessly.
 intent: >
   The same tune-up used before the Big Day, repeated (Champion week 16). Short, sharp,
   confidence-building. HR will be jumpy and that's fine.

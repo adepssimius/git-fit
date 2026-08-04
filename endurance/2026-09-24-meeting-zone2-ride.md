@@ -6,6 +6,8 @@ type: aerobic-base
 block_week: 16
 duration_s: 9000
 target_mode: power
+follow: >
+  Power — hold Z2. ZoneSense doesn't apply to the trainer.
 concurrent: meetings
 intent: >
   Longest trainer session of the block. Non-impact volume in the highest-running week —

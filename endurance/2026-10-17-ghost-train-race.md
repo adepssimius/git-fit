@@ -6,6 +6,8 @@ type: race
 block_week: 19
 duration_s: 85200
 target_mode: effort
+follow: >
+  ZoneSense Zone 1 (aerobic). Pace is a guide only — if holding Zone 1 means running slower, run slower.
 publish: False
 intent: >
   RACE DAY. 9:00 AM start, 30-hour cutoff Sunday 3:00 PM. Goal: 100km primary, 100 miles

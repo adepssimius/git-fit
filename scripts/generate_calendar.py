@@ -137,7 +137,8 @@ def load_endurance_events(root: Path) -> list[Event]:
             name=fm.get("name", f.stem),
             duration_min=dur_min,
             distance_km=dist_km,
-            detail=fm.get("intent", ""),
+            detail=(("FOLLOW: " + fm["follow"] + "\n\n" if fm.get("follow") else "")
+                    + fm.get("intent", "")),
             authored=True,
             excluded_from_budget=("concurrent" in fm),
             kind=fm.get("type", ""),

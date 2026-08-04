@@ -60,6 +60,15 @@ to the session length — a1 needs a rolling ~2min RR window, so it cannot track
 | `tempo` (continuous 15-20min blocks) | Pace, with ZoneSense as a cross-check |
 | `intervals`, strides, anything under ~3min | **Pace or HR only** — ZoneSense cannot respond fast enough |
 
+**Every session carries a `follow:` field stating this explicitly** — the athlete shouldn't have to
+consult a table mid-run. Derive it from the *binding* rep length, which is the SHORTEST work
+interval inside a repeat block, not the longest block in the file: an `8x2min` session is a
+2-minute-rep session even when a 20-minute steady block follows it. Standalone continuous efforts
+(a progression run with no repeats) use the longest work block instead.
+
+Thresholds: **≥9min** → pace with ZoneSense as a genuine cross-check. **3–9min** → pace; ZoneSense
+lags, glance between reps at most. **<3min** → pace only; a1's ~2min window cannot track it.
+
 See `athlete/zones.yml` → `zonesense` for the reasoning and caveats.
 
 ## Frontmatter schema
@@ -73,6 +82,8 @@ block_week: 9
 distance_km: 5.0             # omit or approximate for time-based sessions
 duration_s: 2100             # always present — the number the time-budget check sums
 target_mode: pace            # pace | hr | effort — long/ultra work (>~2h) must be hr or effort, never pace
+follow: >                    # REQUIRED. Which instrument the athlete actually follows on the day.
+  Pace only. ~2min reps ...  # Derived from the session's binding rep length — see the table above.
 intent: One sentence — why this session exists this week, and any placement constraint it's satisfying.
 origin: runna-seed           # runna-seed | authored | adapted
 concurrent: meetings         # only present for meeting-time Ride/Walk sessions; excludes from the running time budget

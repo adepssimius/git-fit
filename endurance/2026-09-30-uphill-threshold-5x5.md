@@ -6,6 +6,8 @@ type: tempo
 block_week: 17
 duration_s: 3270
 target_mode: effort
+follow: >
+  Pace. ZoneSense lags on ~5min reps; glance at it between reps if you like, but don't chase it.
 intent: >
   Champion week 14's big uphill session, trimmed to 5 reps. Last hard midweek workout
   before the taper.

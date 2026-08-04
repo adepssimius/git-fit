@@ -6,6 +6,8 @@ type: hike
 block_week: 12
 duration_s: 36000
 target_mode: effort
+follow: >
+  Effort only, no metric. Brisk and sustainable.
 concurrent: family
 publish: false
 anchor: true

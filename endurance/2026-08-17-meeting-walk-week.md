@@ -6,6 +6,8 @@ type: walk
 block_week: 11
 duration_s: 10200
 target_mode: effort
+follow: >
+  Effort only, no metric. Brisk and sustainable.
 concurrent: meetings
 publish: False
 intent: >

@@ -26,7 +26,8 @@ from collections import defaultdict
 from datetime import datetime
 from pathlib import Path
 
-REQUIRED_KEYS = ["date", "sport", "name", "type", "block_week", "duration_s", "target_mode"]
+REQUIRED_KEYS = ["date", "sport", "name", "type", "block_week", "duration_s",
+                 "target_mode", "follow"]
 # Types that must fit the weekday door-to-door cap. `night` is deliberately excluded —
 # it runs post-bedtime and has its own, larger cap (see athlete/profile.md).
 WEEKDAY_TYPES = {"easy", "tempo", "intervals", "recovery"}

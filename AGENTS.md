@@ -36,14 +36,20 @@ what the professionally designed plan says), never edit it, never treat it as cu
 3. **`m` in intervals.icu syntax means minutes, not meters.** Use `mtr` for meters or express as km.
    This is the single most common way to silently corrupt a workout — check every endurance file
    you write for a bare `m` that was meant to mean meters.
-4. **Long/ultra-effort sessions use `target_mode: hr` or `effort`, never `pace`.** Pace targets are
+4. **Every session states which instrument to follow.** The `follow:` field is required and is
+   what the athlete actually reads on the day. Derive it from the session's *binding* rep length —
+   the shortest work interval inside a repeat block — because ZoneSense (DFA a1) needs a rolling
+   ~2min window and simply cannot track shorter efforts. ≥9min → pace + ZoneSense cross-check;
+   3–9min → pace, ZoneSense lags; <3min → pace only. Easy/long/race work is always ZoneSense
+   Zone 1. See `rules/endurance-authoring.md`.
+5. **Long/ultra-effort sessions use `target_mode: hr` or `effort`, never `pace`.** Pace targets are
    for sessions under ~2h. This is the fix for Runna's core mistake (prescribing marathon pace for a
    multi-hour ultra effort).
-5. **Never invent a race distance or pace target that contradicts `races/2026-10-17-ghost-train.md`.**
+6. **Never invent a race distance or pace target that contradicts `races/2026-10-17-ghost-train.md`.**
    The Runna seed's `50km at 5:35-5:55/km` is wrong and stays discarded.
-6. **Frontmatter `published.suunto` is the only idempotency mechanism.** Don't re-push a session
+7. **Frontmatter `published.suunto` is the only idempotency mechanism.** Don't re-push a session
    whose body hasn't changed since it was last published. See `rules/publishing.md`.
-7. **`seed/*` files are frozen.** If something from Runna or the Champion Plan needs to change for
+8. **`seed/*` files are frozen.** If something from Runna or the Champion Plan needs to change for
    this athlete, make the adapted version in `training/`, `endurance/`, or `strength/` — don't edit
    the seed.
 

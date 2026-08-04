@@ -6,6 +6,8 @@ type: long
 block_week: 16
 duration_s: 14400
 target_mode: effort
+follow: >
+  ZoneSense Zone 1 (aerobic). Pace is a guide only — if holding Zone 1 means running slower, run slower.
 anchor: true
 intent: >
   NIGHT SESSION 3 of 4, and the peak long run, in one session. Start at 03:00 in full night

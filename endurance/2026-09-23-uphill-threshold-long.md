@@ -6,6 +6,8 @@ type: tempo
 block_week: 16
 duration_s: 3420
 target_mode: effort
+follow: >
+  Pace. ZoneSense lags on ~5min reps; glance at it between reps if you like, but don't chase it.
 intent: >
   Champion week 13's big uphill treadmill session, trimmed to fit the weekday cap. 8-10%
   grade; pace targets are effort-equivalents. Low impact, which matters in the peak week.

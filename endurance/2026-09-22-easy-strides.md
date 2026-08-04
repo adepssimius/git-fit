@@ -7,6 +7,8 @@ block_week: 16
 distance_km: 6.9
 duration_s: 2940
 target_mode: pace
+follow: >
+  ZoneSense Zone 1 (aerobic). Pace is a guide only — if holding Zone 1 means running slower, run slower.
 intent: >
   Keep it easy — Saturday is the big one.
 origin: authored

@@ -7,6 +7,8 @@ block_week: 17
 distance_km: 24.8
 duration_s: 12320
 target_mode: effort
+follow: >
+  ZoneSense Zone 1 (aerobic). Pace is a guide only — if holding Zone 1 means running slower, run slower.
 intent: >
   LAP SIM 2 of 2 — the complete dress rehearsal, and the last of the three on-course sessions.
   Same geometry as lap sim 1 (staging → real 7.5mi turnaround → staging, plus a 3.1km top-up to

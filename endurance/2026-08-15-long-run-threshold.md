@@ -6,6 +6,8 @@ type: long
 block_week: 10
 duration_s: 10620
 target_mode: effort
+follow: >
+  ZoneSense Zone 1 (aerobic). Pace is a guide only — if holding Zone 1 means running slower, run slower.
 intent: >
   Champion week 7's big threshold long run, trimmed to 4 reps to fit the long-run cap.
   Threshold blocks go early while fresh; run/walk carries the back half.

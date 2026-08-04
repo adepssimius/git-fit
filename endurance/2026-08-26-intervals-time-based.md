@@ -6,6 +6,8 @@ type: intervals
 block_week: 12
 duration_s: 2880
 target_mode: effort
+follow: >
+  Pace. ZoneSense lags on ~3min reps; glance at it between reps if you like, but don't chase it.
 intent: >
   TRAVEL WEEK (2026-08-22 to 09-01, out of state). Time-based rather than distance-based
   so it works on any unfamiliar route, and no course/trainer access — see athlete/profile.md.

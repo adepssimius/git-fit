@@ -6,6 +6,8 @@ type: tempo
 block_week: 11
 duration_s: 3480
 target_mode: effort
+follow: >
+  Pace. ZoneSense lags on ~4min reps; glance at it between reps if you like, but don't chase it.
 intent: >
   Champion week 8's uphill treadmill threshold session, trimmed from 8-12 reps to 6 to fit
   the 60-minute weekday cap. Treadmill at 8-10% grade if available; pace targets are

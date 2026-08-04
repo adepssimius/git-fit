@@ -7,6 +7,8 @@ block_week: 15
 distance_km: 24.1
 duration_s: 12420
 target_mode: effort
+follow: >
+  ZoneSense Zone 1 (aerobic). Pace is a guide only — if holding Zone 1 means running slower, run slower.
 intent: >
   LAP SIM 1 of 2, on the accessible northern 6.5mi of the real course. Run the full out-and-back
   from the staging point to the real 7.5mi turnaround and back (20.9km), then a 3.1km top-up so

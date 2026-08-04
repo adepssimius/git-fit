@@ -6,6 +6,8 @@ type: aerobic-base
 block_week: 14
 duration_s: 3600
 target_mode: power
+follow: >
+  Power — hold Z2. ZoneSense doesn't apply to the trainer.
 concurrent: meetings
 intent: >
   Champion week 11 adds short surges to the x-train. Lower B lifting after.

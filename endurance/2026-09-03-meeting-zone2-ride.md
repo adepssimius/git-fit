@@ -6,6 +6,8 @@ type: aerobic-base
 block_week: 13
 duration_s: 3600
 target_mode: power
+follow: >
+  Power — hold Z2. ZoneSense doesn't apply to the trainer.
 concurrent: meetings
 intent: >
   Deliberately short this week (Champion has Thursday as rest/recovery before the Big Day).

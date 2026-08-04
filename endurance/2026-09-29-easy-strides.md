@@ -7,6 +7,8 @@ block_week: 17
 distance_km: 6.2
 duration_s: 2650
 target_mode: pace
+follow: >
+  ZoneSense Zone 1 (aerobic). Pace is a guide only — if holding Zone 1 means running slower, run slower.
 intent: >
   Strides.
 origin: authored

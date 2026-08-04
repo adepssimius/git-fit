@@ -6,6 +6,8 @@ type: long
 block_week: 12
 duration_s: 5640
 target_mode: effort
+follow: >
+  ZoneSense Zone 1 (aerobic). Pace is a guide only — if holding Zone 1 means running slower, run slower.
 intent: >
   TRAVEL WEEK (2026-08-22 to 09-01, out of state). Time-based rather than distance-based
   so it works on any unfamiliar route, and no course/trainer access — see athlete/profile.md.

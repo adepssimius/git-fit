@@ -6,6 +6,8 @@ type: aerobic-base
 block_week: 11
 duration_s: 7200
 target_mode: power
+follow: >
+  Power — hold Z2. ZoneSense doesn't apply to the trainer.
 concurrent: meetings
 intent: >
   Thursday x-train, ridden through meetings. Gut training: ~80g carbs/hr.

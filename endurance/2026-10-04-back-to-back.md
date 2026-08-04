@@ -6,6 +6,8 @@ type: b2b
 block_week: 17
 duration_s: 4500
 target_mode: effort
+follow: >
+  ZoneSense Zone 1 (aerobic). Pace is a guide only — if holding Zone 1 means running slower, run slower.
 intent: >
   Last real back-to-back. Upper B after.
 origin: authored

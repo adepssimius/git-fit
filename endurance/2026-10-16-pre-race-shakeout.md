@@ -7,6 +7,8 @@ block_week: 19
 distance_km: 2.8
 duration_s: 1200
 target_mode: pace
+follow: >
+  ZoneSense Zone 1 (aerobic). Pace is a guide only — if holding Zone 1 means running slower, run slower.
 intent: >
   Friday shakeout with a few short pickups to keep the legs awake. Then: eat, hydrate,
   stage the crew bags and night kit, and sleep. Race is 9:00 AM tomorrow.

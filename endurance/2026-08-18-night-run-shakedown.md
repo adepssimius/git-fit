@@ -7,6 +7,8 @@ block_week: 11
 distance_km: 7.1
 duration_s: 3000
 target_mode: pace
+follow: >
+  ZoneSense Zone 1 (aerobic). Pace is a guide only — if holding Zone 1 means running slower, run slower.
 intent: >
   NIGHT SESSION 1 of 4. Start ~20:45, after the kids are down — genuinely free training time
   under this time budget. This one is a KIT check, not a skill session: run the exact headlamp,

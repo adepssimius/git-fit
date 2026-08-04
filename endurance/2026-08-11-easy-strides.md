@@ -7,6 +7,8 @@ block_week: 10
 distance_km: 6.3
 duration_s: 2710
 target_mode: pace
+follow: >
+  ZoneSense Zone 1 (aerobic). Pace is a guide only — if holding Zone 1 means running slower, run slower.
 intent: >
   Cheap speed stimulus on an easy day. Ease into each stride — the injury risk is higher
   than the work justifies if rushed.
