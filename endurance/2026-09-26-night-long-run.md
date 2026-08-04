@@ -8,6 +8,8 @@ duration_s: 14400
 target_mode: effort
 follow: >
   ZoneSense Zone 1 (aerobic). Pace is a guide only — if holding Zone 1 means running slower, run slower.
+time_critical: >
+  START 03:00. Four hours through darkness into sunrise (~06:40) — that dark-into-dawn transition is what race laps 6-7 will feel like. Any other start time loses it.
 anchor: true
 intent: >
   NIGHT SESSION 3 of 4, and the peak long run, in one session. Start at 03:00 in full night

@@ -71,6 +71,17 @@ lags, glance between reps at most. **<3min** → pace only; a1's ~2min window ca
 
 See `athlete/zones.yml` → `zonesense` for the reasoning and caveats.
 
+## Scheduling: opportunistic by default
+
+**Do not author sessions that assume a time of day.** The athlete fits most runs into the day as it
+allows and decides on the day — there is no fixed morning or evening slot, and any earlier
+references to "protected windows" were invented, not real.
+
+The exception is a short list of sessions where timing *is* the stimulus: night runs, the Big Day
+weekend pair, and the one bicarb session. Those carry a `time_critical: >` field in their
+frontmatter stating the required time and why. If a session doesn't carry that field, it can move
+freely within its day.
+
 ## Frontmatter schema
 
 ```yaml
@@ -84,6 +95,8 @@ duration_s: 2100             # always present — the number the time-budget che
 target_mode: pace            # pace | hr | effort — long/ultra work (>~2h) must be hr or effort, never pace
 follow: >                    # REQUIRED. Which instrument the athlete actually follows on the day.
   Pace only. ~2min reps ...  # Derived from the session's binding rep length — see the table above.
+time_critical: >             # ONLY on sessions whose time of day is load-bearing (night runs, the
+  START 03:00 because ...    # Big Day pair, the bicarb session). Omit it entirely otherwise.
 intent: One sentence — why this session exists this week, and any placement constraint it's satisfying.
 origin: runna-seed           # runna-seed | authored | adapted
 concurrent: meetings         # only present for meeting-time Ride/Walk sessions; excludes from the running time budget

@@ -109,17 +109,10 @@ turn a successful race into an injury.
 ### ⚠️ The binding constraint is timing, not supply
 
 Maurten's protocol needs roughly **1.5–2 hours of lead time** before the session (check the packet
-for exact guidance). That collides with the weekday morning window:
-
-- **05:00–06:30 slot** → dosing at ~03:30. Not realistic.
-- **20:30–22:00 slot** → dosing at ~18:45. Workable, but hard intervals that late carry a real
-  sleep cost, and sleep is already a tracked readiness signal.
-
-So each bicarb session needs to either move to the evening slot, move to a weekend morning, or
-accept a shorter-than-ideal pre-load and a smaller effect. **Decide this per session rather than
-assuming it'll work** — and if the scheduling never lines up, that is a perfectly good reason to
-use fewer than seven. The performance margin here is small; it improves session quality slightly,
-which improves fitness slightly. It is not a lever that decides this race.
+for exact guidance). With only one dose now allocated (2026-09-16) this is a single scheduling
+decision rather than a recurring problem: pick a start time that day, count back two hours, and
+dose then. Since scheduling is otherwise opportunistic, run that session whenever the pre-load
+window is convenient — mid-morning or evening both work.
 
 ## Gut training progression — the actual training variable
 

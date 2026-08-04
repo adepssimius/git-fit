@@ -4,8 +4,9 @@
 
 Sum `duration_s` across the week's `endurance/*.md` files, **excluding** any with
 `concurrent: meetings`. Compare against `athlete/profile.md` → `time_budget.weekly_total_max_min`.
-Also confirm no single session exceeds its per-session cap and every session falls inside a
-`protected_windows` slot.
+Also confirm no single session exceeds its per-session cap. **Do not check sessions against fixed
+time-of-day slots** — scheduling is opportunistic (`athlete/profile.md`), and only the handful of
+sessions carrying `time_critical:` have a real clock requirement.
 
 **If the week busts the budget, cut in this order — never reorder it:**
 

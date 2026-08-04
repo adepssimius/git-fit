@@ -8,6 +8,8 @@ duration_s: 5400
 target_mode: effort
 follow: >
   ZoneSense Zone 1 (aerobic). Pace is a guide only — if holding Zone 1 means running slower, run slower.
+time_critical: >
+  START ~22:00 and run past midnight. The target is the small hours when sleep pressure bites, not merely darkness. Earlier doesn't test the right thing.
 intent: >
   NIGHT SESSION 2 of 4, and the important one. Start ~22:00 and run past midnight — this is
   the only week in the block where sacrificing Friday's rest is cheap, because Saturday is

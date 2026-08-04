@@ -38,10 +38,30 @@ time_budget:
   doubles_ok: true                 # 40-50min easy, pre-dawn or post-bedtime
   lifting_session_min: 60          # 4x/week, 45-60min — see rules/strength-authoring.md
 
-  protected_windows:               # when training is actually possible
-    - "weekdays 05:00-06:30"
-    - "weekdays 20:30-22:00"       # post-bedtime — where night-running practice goes
-    - "sat 06:00-10:00"
+  # SCHEDULING IS OPPORTUNISTIC, NOT FIXED. An earlier version of this file invented
+  # "protected windows" including a 05:00 weekday start. That was never the athlete's constraint
+  # and is now removed — he is not getting up at 5am. Most runs get fitted into the day as it
+  # allows, decided on the day.
+  #
+  # What actually constrains scheduling:
+  #   - the weekly time budget above (hard)
+  #   - the blackouts below (hard)
+  #   - the strength placement rules in rules/strength-authoring.md (hard)
+  #   - a handful of genuinely time-critical sessions, listed below (hard, but only those)
+  # Everything else: run it whenever the day allows. Do NOT author sessions that assume a
+  # specific clock time unless they carry a `time_critical:` field.
+  scheduling: opportunistic
+
+  # The ONLY sessions whose time of day actually matters. Each carries `time_critical:` in its
+  # own frontmatter explaining why — see rules/endurance-authoring.md.
+  time_critical_sessions:
+    - 2026-08-18  # night run — needs full dark
+    - 2026-09-05  # BIG DAY — early start so it finishes by noon AND sets up the next morning
+    - 2026-09-06  # pre-dawn on 50k legs — 03:00, the whole point is sleep-deprived + dark
+    - 2026-09-11  # night run past midnight
+    - 2026-09-16  # bicarb session — needs a 1.5-2h pre-load window before the start
+    - 2026-09-26  # night long run — 03:00 start, dark into dawn
+    - 2026-10-06  # taper night run — needs dark
 
   blackout:
     # Friday morning is NO LONGER blacked out (lifted 2026-08-03). Friday is now available

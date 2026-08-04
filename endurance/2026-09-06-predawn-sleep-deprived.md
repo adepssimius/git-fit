@@ -9,6 +9,8 @@ duration_s: 5400
 target_mode: effort
 follow: >
   ZoneSense Zone 1 (aerobic). Pace is a guide only — if holding Zone 1 means running slower, run slower.
+time_critical: >
+  START 03:00, non-negotiable. On ~5h sleep, on legs that ran 50k fifteen hours earlier, in full dark. Sunrise is ~06:12 — start later and you lose the dark, sleep in and you lose the sleep deprivation. The timing IS the session.
 anchor: true
 intent: >
   The second half of the Big Day weekend, and the closest this block gets to rehearsing the thing

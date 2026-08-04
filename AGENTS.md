@@ -101,7 +101,8 @@ Then eyeball the two things a script can't judge:
 
 - [ ] No heavy lower-body lift precedes a long run or Wednesday's big workout, and Friday is still
       a true rest day (the placement rules in `rules/strength-authoring.md`)
-- [ ] The week's sessions actually fit inside `protected_windows` given real-life scheduling
+- [ ] Sessions carrying `time_critical:` still have their timing intact; everything else is
+      free to move within the day — do not impose clock times on ordinary runs
 
 ```bash
 python3 scripts/generate_calendar.py   # visual overview of the whole block

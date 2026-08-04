@@ -9,6 +9,8 @@ duration_s: 3000
 target_mode: pace
 follow: >
   ZoneSense Zone 1 (aerobic). Pace is a guide only — if holding Zone 1 means running slower, run slower.
+time_critical: >
+  Start after full dark (~20:45 or later). The point is a kit check in real night conditions — headlamp, batteries, layers — so daylight defeats it.
 intent: >
   NIGHT SESSION 1 of 4. Start ~20:45, after the kids are down — genuinely free training time
   under this time budget. This one is a KIT check, not a skill session: run the exact headlamp,
