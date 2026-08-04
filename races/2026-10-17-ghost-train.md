@@ -89,6 +89,29 @@ the start/finish crew bag, a warm layer available from lap 3 onward (temperature
 overnight are typical for mid-October NH), and caffeine timing planned around the 1am–6am low
 (`rules/fueling.md`).
 
+## Race-day pacing: use ZoneSense, not pace or HR
+
+The watch already runs ZoneSense (`athlete/zones.yml`). For a 30-hour effort it is a better
+pacing instrument than either pace or heart rate, because it reads current physiology and
+therefore self-corrects for heat, accumulated fatigue, dehydration and the overnight hours —
+all of which will move HR without reflecting real intensity. The 2026-08-02 run demonstrated
+the failure mode precisely: HR reported 77% of the run at threshold or above, while ZoneSense
+recorded 5.8% above the anaerobic threshold.
+
+**The instruction is simple enough to hold at hour 20: stay in ZoneSense Zone 1.**
+
+| Laps | Target | Meaning |
+|---|---|---|
+| 1-3 | **100% Zone 1** | If Zone 2 appears at all this early, you are going too fast. Walk the rise, take the break. |
+| 4-5 | Zone 1, brief Zone 2 tolerated | Occasional drift on climbs is fine; sustained Zone 2 is not |
+| 6+ | Zone 1 by whatever means | Run/walk ratio exists to keep you here |
+
+Zone 3 should not appear at any point in this race.
+
+Before race day: switch `Targets.ZoneSenseZones` on in the watch so it alarms rather than
+requiring you to read a field, and confirm the HR source gives clean RR data — DFA is
+artifact-sensitive, and a chest strap is materially more reliable than optical wrist HR.
+
 ## Continue/stop decision tree — evaluate at every crew stop
 
 1. **Clock check** — are you comfortably inside cutoff pace for the next tier? If no margin, stop at

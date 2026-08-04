@@ -91,6 +91,38 @@ hr:
   # session reconciles perfectly once the walking warmup/cooldown is separated out, so the
   # treadmill data is fine — it just needs the non-running portions removed before use.
 
+# ---------------------------------------------------------------------------
+# ZoneSense (Suunto's DFA a1 implementation) — ALREADY RUNNING on the watch
+# ---------------------------------------------------------------------------
+# Confirmed present in the SML: Zapps {Id: "zzaeroen", Name: "ZoneSense", Version: "e59"},
+# device "Rostock" (Orca_RevC1, SW 2.50.28). Zone splits are recorded on every run.
+#
+# DFA a1 is computed from beat-to-beat RR intervals, not from heart rate. It reads TODAY's
+# physiology, so unlike fixed HR zones it self-corrects for heat, fatigue, illness and night.
+# Suunto records ZoneSenseZones with Zone2LowerLimit 0.2 and Zone3LowerLimit 0.5 — note these
+# are NOT textbook a1 values (a1 1.0 = AeT, 0.5 = AnT), so Suunto is applying its own transform.
+# The zone SEMANTICS are what matter and are unambiguous:
+#     Zone 1 = below aerobic threshold   <- where ultra pacing lives
+#     Zone 2 = between AeT and AnT
+#     Zone 3 = above anaerobic threshold
+#
+# WHY THIS MATTERS MORE THAN LTHR FOR THIS RACE: LTHR (169) governs threshold work. A 100-miler
+# is paced off the AEROBIC threshold, which is a different and much lower intensity. ZoneSense
+# measures it directly and daily, instead of inferring it from a percentage table.
+zonesense:
+  available: true
+  used_as_live_target: false      # Targets.ZoneSenseZones = "None" — worth switching on
+  observed:
+    2026-08-02_30k:  { z1: "51.7%", z2: "42.6%", z3: "5.8%",  note: "86F, deliberate 10k inside" }
+    2026-08-03_easy: { z1: "94.9%", z2: "5.1%",  z3: "0%",    note: "correctly executed" }
+
+# ⚠️ THE WATCH'S OWN HR ZONES ARE MISCALIBRATED — fix these in the Suunto app.
+# Recorded limits (Hz -> bpm): Z2 135 | Z3 144 | Z4 153 | Z5 163.
+# Measured LTHR is 169, so the watch flags Z5 six beats before you actually reach threshold.
+# That, plus 86F heat, is why the 08-02 run logged 77% in Z4/Z5 while ZoneSense saw 5.8% above
+# AnT. Set the watch to the LTHR-based zones above.
+watch_hr_zones_need_update: true
+
 bike:
   ftp_w: null                # TODO: ramp or 20-min test on the trainer
   z2_w: null                 # ~56-75% FTP — the only zone meeting-time trainer sessions use
