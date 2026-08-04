@@ -65,20 +65,32 @@ benefit tapers as reps lengthen and disappears entirely at aerobic intensity.
 > the rate where buffering matters. On race day a dose would be zero benefit, a GI variable, and a
 > large sodium load you'd have to plan around. Spend them all in training.
 
-Seven doses, seven sessions that actually justify one — ranked by expected benefit:
+**Five sessions, not seven** — the trip (2026-08-22 to 09-01) rules out two otherwise-good
+candidates, and bicarb isn't going on vacation.
 
 | # | Date | Wk | Session | Why |
 |---|---|---|---|---|
-| 1 | **2026-09-16** | 15 | Track — 8x400m @5:18 | Shortest, fastest reps in the block. Best fit. |
-| 2 | **2026-08-12** | 10 | Threshold — 7x2min | Repeated short efforts, classic bicarb territory |
-| 3 | **2026-08-26** | 12 | Threshold — 4x3min | Same, on the road while travelling |
-| 4 | **2026-08-19** | 11 | Uphill Threshold — 6x4min | Moderate — reps getting long for the mechanism |
+| 1 | **2026-08-12** | 10 | Threshold — 7x2min | Repeated short efforts, classic bicarb territory. First use also doubles as a tolerance check. |
+| 2 | **2026-08-19** | 11 | Uphill Threshold — 6x4min | Moderate — reps getting long for the mechanism |
+| 3 | **2026-09-16** | 15 | Track — 8x400m @5:18 | Shortest, fastest reps in the block. **Best single fit.** |
+| 4 | **2026-09-23** | 16 | Uphill Threshold — 2x10min + 2x5min | Lower — 10min reps are past bicarb's window |
 | 5 | **2026-09-30** | 17 | Uphill Threshold — 5x5min | Moderate |
-| 6 | **2026-09-23** | 16 | Uphill Threshold — 2x10min + 2x5min | Lower — 10min reps are past bicarb's window |
-| 7 | **2026-09-01** | 13 | Pre-Big-Day Tune-Up | Lowest of the seven; use it here or bank it |
 
-**Deliberately excluded:** 2026-08-05 (continuous progression run — aerobic, no mechanism to help)
-and 2026-10-13 (race week — never introduce a GI variable seven days out).
+**Ruled out by travel:** 2026-08-26 (Threshold 4x3min) and 2026-09-01 (Pre-Big-Day Tune-Up) both
+fall inside the 08-22 → 09-01 trip.
+
+**Ruled out on merit:** 2026-08-05 (continuous progression run — aerobic, no mechanism to help) and
+2026-10-13 (race week — never introduce a GI variable seven days out).
+
+### The two leftover doses
+
+**Bank them.** Forcing a dose into an aerobic session to use up inventory wastes it — the mechanism
+simply isn't engaged below threshold. They keep (check the date on the packet), and a post-race
+block or any future speed-focused period is a better home than a long run where they do nothing.
+
+If they must be used this season, **2026-08-05** is the least-bad option: its 2.5km @5:55 block is
+~15 minutes continuous, past bicarb's best window but not entirely outside it. That is a
+consolation use, not a recommendation.
 
 **On bicarb days, do not add your usual sodium.** The dose carries a substantial load already —
 this is the athlete's existing practice and it's correct.
