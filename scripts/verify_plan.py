@@ -14,6 +14,9 @@ Checks, all derived from athlete/profile.md rather than hardcoded:
   6. Rest steps carry an explicit target (intervals.icu requires one)
   7. Long/ultra sessions (>~2h) use target_mode hr|effort, never pace
   8. Frontmatter is well-formed and required keys are present
+  9. log/ entries are well-formed, and the manual readiness signals they carry
+     (soreness, session-RPE) are in range and consistent with the day's session
+     — see rules/logging.md
 
 Usage:  python3 scripts/verify_plan.py [--root PATH]
 """
@@ -31,6 +34,136 @@ REQUIRED_KEYS = ["date", "sport", "name", "type", "block_week", "duration_s",
 # Types that must fit the weekday door-to-door cap. `night` is deliberately excluded —
 # it runs post-bedtime and has its own, larger cap (see athlete/profile.md).
 WEEKDAY_TYPES = {"easy", "tempo", "intervals", "recovery"}
+
+# ---- log/ (rules/logging.md) ----
+LOG_ENTRY_RE = re.compile(r"\d{4}-\d{2}-\d{2}\.md")   # everything else in log/ is not an entry
+READINESS_VALUES = {"green", "amber", "red"}
+# Expected session-RPE per session type. The ladder's "RPE trend" row asks whether a session came
+# in over plan; this table is what "plan" means. See rules/logging.md for the anchors.
+EXPECTED_RPE = {
+    "recovery": 2, "walk": 2,
+    "easy": 3, "aerobic-base": 3,
+    "night": 4,
+    "long": 5, "b2b": 5, "lap-sim": 5,
+    "tempo": 6,
+    "intervals": 7,
+}
+RPE_OVER_PLAN = 2          # the ladder's red condition: +2 or more over plan
+LOG_STALE_DAYS = 10        # warn only; a lapsed log degrades the ladder silently
+
+
+def scalar(fm: dict, key: str):
+    """Frontmatter value with trailing `# comment` and quotes stripped, or None for null/blank.
+
+    The shared parser keeps the rest of the line verbatim, and log entries carry inline
+    comments (`readiness: null   # green | amber | red`), so they have to come off here.
+    """
+    raw = fm.get(key)
+    if raw is None:
+        return None
+    val = raw.split("#", 1)[0].strip().strip("'\"")
+    return None if val in ("", "null", "~") else val
+
+
+def rating(fm: dict, key: str, rel, errors: list) -> int | None:
+    """A 0-10 manual rating, or None. Out-of-range or non-numeric is a data defect."""
+    val = scalar(fm, key)
+    if val is None:
+        return None
+    try:
+        n = int(float(val))
+    except ValueError:
+        errors.append(f"{rel}: {key}: '{val}' is not a number (rules/logging.md)")
+        return None
+    if not 0 <= n <= 10:
+        errors.append(f"{rel}: {key}: {n} is outside the 0-10 scale (rules/logging.md)")
+        return None
+    return n
+
+
+def check_logs(root: Path, sessions_by_date: dict, errors: list, warnings: list) -> None:
+    """Validate log/ entries and surface the two manual readiness signals.
+
+    Malformed data is an error; a missing rating is only ever a warning. Failing the build
+    because a field is blank would train the athlete to ignore this script, and a null is a
+    legitimate answer — see rules/logging.md.
+    """
+    log_dir = root / "log"
+    if not log_dir.is_dir():
+        return
+
+    entries: list[tuple[str, str | None, int | None, int | None]] = []
+    for f in sorted(log_dir.glob("*.md")):
+        if not LOG_ENTRY_RE.fullmatch(f.name):
+            continue                                   # TEMPLATE.md, notes, anything else
+        fm, _ = parse_file(f)
+        rel = f.relative_to(root)
+
+        date = scalar(fm, "date")
+        if date is None:
+            errors.append(f"{rel}: log entry has no `date:` (rules/logging.md)")
+            continue
+        if date != f.stem:
+            errors.append(f"{rel}: date '{date}' does not match the filename")
+            continue
+
+        readiness = scalar(fm, "readiness")
+        if readiness is not None and readiness not in READINESS_VALUES:
+            errors.append(
+                f"{rel}: readiness '{readiness}' is not one of "
+                f"{'/'.join(sorted(READINESS_VALUES))} (rules/progression.md)")
+            readiness = None
+
+        soreness = rating(fm, "soreness_0_10", rel, errors)
+        rpe = rating(fm, "rpe_0_10", rel, errors)
+        entries.append((date, readiness, soreness, rpe))
+
+        # The day's main session = its longest non-meeting session. Only that one is rated.
+        day = [s for s in sessions_by_date.get(date, []) if not s["concurrent"]]
+        main = max(day, key=lambda s: s["dur"]) if day else None
+
+        if main and soreness is None and readiness is None:
+            warnings.append(
+                f"{rel}: trained ({main['name']}) but neither soreness nor readiness recorded — "
+                f"the ladder in rules/progression.md is running on Suunto signals alone")
+
+        if rpe is not None and main:
+            expected = EXPECTED_RPE.get(main["type"])
+            if expected is not None and rpe - expected >= RPE_OVER_PLAN:
+                warnings.append(
+                    f"{rel}: RPE {rpe} on a `{main['type']}` session ({main['name']}) — "
+                    f"{rpe - expected} over the expected {expected}. "
+                    + ("Easy-day creep is this athlete's most likely training error "
+                       "(athlete/zones.yml)." if expected <= 3 else
+                       "Check fueling and sleep debt before reading it as fitness."))
+
+    if not entries:
+        warnings.append("log/ has no dated entries — see rules/logging.md and log/TEMPLATE.md")
+        return
+
+    # ---- log readout ----
+    print(f"\nlog/ — last {min(len(entries), 5)} of {len(entries)} entr"
+          f"{'y' if len(entries) == 1 else 'ies'}:")
+    print(f"  {'date':<12} {'readiness':<10} {'sore':>5} {'rpe':>5}")
+    for date, readiness, soreness, rpe in entries[-5:]:
+        print(f"  {date:<12} {readiness or '—':<10} "
+              f"{soreness if soreness is not None else '—':>5} "
+              f"{rpe if rpe is not None else '—':>5}")
+
+    # Two consecutive amber/red readiness calls is a re-author trigger, not just a note.
+    called = [(d, r) for d, r, _, _ in entries if r]
+    if len(called) >= 2 and all(r in ("amber", "red") for _, r in called[-2:]):
+        warnings.append(
+            f"readiness {called[-2][1]} then {called[-1][1]} ({called[-2][0]}, {called[-1][0]}) — "
+            f"if that pattern holds for two weeks, rules/progression.md § 'When log/ should "
+            f"trigger a re-author' says the next hard week becomes a down week and the "
+            f"Champion-week mapping shifts (race day does not)")
+
+    stale = (datetime.now() - datetime.strptime(entries[-1][0], "%Y-%m-%d")).days
+    if stale > LOG_STALE_DAYS:
+        warnings.append(
+            f"newest log entry is {stale} days old ({entries[-1][0]}) — soreness and RPE do not "
+            f"survive backfilling, so the ladder is down to five signals until logging resumes")
 
 
 def parse_file(path: Path) -> tuple[dict, str]:
@@ -80,6 +213,7 @@ def main() -> int:
         lambda: {"run": 0.0, "walk": 0.0, "ride": 0.0, "hike": 0.0, "longest": 0.0,
                  "longest_name": "", "longest_flagged": False}
     )
+    sessions_by_date: dict[str, list[dict]] = defaultdict(list)   # for the log/ RPE check
 
     for f in sorted((root / "endurance").glob("*.md")):
         fm, body = parse_file(f)
@@ -100,6 +234,8 @@ def main() -> int:
         sport, typ = fm["sport"], fm["type"]
         concurrent = "concurrent" in fm   # meetings | family — free time, still real load
         w = weeks[bw]
+        sessions_by_date[fm["date"]].append(
+            {"dur": dur, "type": typ, "name": fm["name"], "concurrent": concurrent})
 
         if concurrent:
             w["walk" if sport in ("Walk", "Hike") else "ride"] += dur
@@ -203,6 +339,9 @@ def main() -> int:
                 f"of {limit} (athlete/profile.md) — going long should stay special")
         print()
 
+    check_logs(root, sessions_by_date, errors, warnings)
+
+    print()
     for wmsg in warnings:
         print(f"WARN  {wmsg}")
     if errors:

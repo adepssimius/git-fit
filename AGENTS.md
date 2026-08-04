@@ -14,7 +14,8 @@ invariants you must never violate.
 5. `rules/endurance-authoring.md` and `rules/strength-authoring.md` — syntax references. Read these
    immediately before writing any endurance or strength file; the gotchas in them (especially the
    `m` = minutes trap) are easy to get wrong from memory.
-6. `rules/progression.md` and `rules/fueling.md` as needed for the specific decision at hand.
+6. `rules/progression.md`, `rules/fueling.md` and `rules/logging.md` as needed for the specific
+   decision at hand.
 
 `seed/` is historical input only — read it for context (what paces the athlete was already hitting,
 what the professionally designed plan says), never edit it, never treat it as current instruction.
@@ -76,6 +77,12 @@ what the professionally designed plan says), never edit it, never treat it as cu
    verification checks below.
 6. Run the invariant checks (time budget, lifting placement, `m`-for-meters).
 
+**Recording a day** (the athlete reports how a session went, or a Suunto pull needs interpreting):
+write or update `log/YYYY-MM-DD.md` per `rules/logging.md` — copy `log/TEMPLATE.md`, fill only what
+was actually reported, and **never backfill a rating the athlete didn't give you**. Soreness and
+session-RPE are the two readiness signals Suunto cannot supply; everything else the watch already
+knows and should not be retyped by hand.
+
 **Adjusting a week from `log/` feedback** (fatigue, missed session, illness, an unplanned group
 ride or eMTB spin): re-read `rules/progression.md` for the cut order and the unplanned-session
 handling rules in `training/block.md`, then edit the affected `endurance/*.md` files in place
@@ -96,6 +103,12 @@ non-zero on failure: weekly running-time budget, per-session and long-run caps, 
 cap, the walking ramp limit, the `m`-means-minutes trap, rest steps missing a target, long sessions
 wrongly using `target_mode: pace`, and malformed frontmatter. Run it after authoring or editing any
 week.
+
+It also validates `log/` (`rules/logging.md`) and prints the recent readiness/soreness/RPE readout.
+Malformed log data is an error; a *missing* rating is only ever a warning — a blank field is a
+legitimate answer, and failing the build over one would just teach the athlete to ignore the
+script. The warnings worth reading are RPE running over plan for the session type (easy-day creep)
+and two consecutive amber/red calls, which is a re-author trigger, not a note.
 
 Then eyeball the two things a script can't judge:
 

@@ -1,22 +1,28 @@
-# Lift training maxes, in lb. Nothing was supplied at seed time — placeholders below match the
-# working numbers used in strength/program.liftoscript Week 1 (block week 9) as a reasonable
-# starting point for an intermediate lifter; correct these on first read and let Liftoscript's
-# `progress: lp(...)` / `dp(...)` take over from there. Do not hand-edit these once the Liftosaur
-# MCP is live — the program file plus the app's own state become the source of truth then.
+# Lift starting weights, in lb. NOT measured maxes — the athlete's real lifting history
+# ("My Program 2" in Liftosaur) is on Smith Machine / Leverage Machine / dumbbell equipment,
+# which isn't a valid 1:1 substitute for the free-weight lifts this program uses. These are
+# deliberately conservative Week 1 starting points; strength/program.liftoscript hand-steps a
+# slow progression (~5lb/week on main lifts, 2.5lb/week on OHP/Pull Up) from here across the
+# 10-week program. See strength/notes.md for the full reasoning.
+#
+# The program is now LIVE in Liftosaur ("Ghost Train Block", id haqytaxt, pushed via the
+# Liftosaur MCP) — this file and strength/program.liftoscript are the source of truth; the app
+# is the execution surface. Update both together when real numbers come in from actual sessions.
 
 units: lb
 
 lifts:
-  squat: 185
-  bench_press: 155
-  romanian_deadlift: 155
-  weighted_pull_up: 25        # added load, bodyweight not included
-  incline_bench_press: 115
-  barbell_row: 115
-  overhead_press: 75
+  squat: 95                   # Week 1; hand-stepped to 120 by Week 9 in program.liftoscript
+  romanian_deadlift: 95
+  bench_press: 65
+  bent_over_row: 65
+  overhead_press: 45
+  pull_up: 10                 # added load via belt/band, bodyweight not included
+  incline_bench_press: 55
 
-bodyweight_lb: null            # TODO: fill in — see athlete/zones.yml
+bodyweight_lb: null            # TODO: fill in — needed for Pull Up's bodyweight+load display
 
 note: >
-  All figures are placeholders pending real numbers from the user. Update this file and the
-  matching Week 1 lines in strength/program.liftoscript together so they don't drift.
+  If a prescribed weight feels trivially easy in an early session, jump it by hand in the next
+  push (mcp__liftosaur__update_program) rather than waiting out the slow ramp — these numbers
+  exist to be safe on day one, not to be a ceiling.

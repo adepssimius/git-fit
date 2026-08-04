@@ -1,0 +1,160 @@
+{
+  "name": "Easy + Hill Strides",
+  "description": "ZoneSense Zone 1 (aerobic). Pace is a guide only - if holding Zone 1 means running slower, run slower.",
+  "shortDescription": "Easy + Hill Strides",
+  "localDate": "2026-08-04",
+  "type": "sequence",
+  "activities": [
+    1
+  ],
+  "usage": "workout",
+  "externalId": "git-fit-2026-08-04-easy-strides",
+  "steps": [
+    {
+      "type": "fields",
+      "trigger": {
+        "type": "or",
+        "triggers": [
+          {
+            "type": "stepDistance",
+            "value": 4000
+          },
+          {
+            "type": "manualLap"
+          }
+        ]
+      },
+      "title": "Warmup",
+      "createManualLap": true,
+      "fields": [
+        {
+          "type": "targetPace",
+          "value": 2.3,
+          "min": 2.22,
+          "max": 2.38
+        },
+        {
+          "type": "pace"
+        },
+        {
+          "type": "heartRate"
+        },
+        {
+          "type": "stepDistanceCountdown",
+          "value": 4000
+        }
+      ]
+    },
+    {
+      "type": "repeat",
+      "times": 6,
+      "steps": [
+        {
+          "type": "fields",
+          "trigger": {
+            "type": "or",
+            "triggers": [
+              {
+                "type": "stepDuration",
+                "value": 20
+              },
+              {
+                "type": "manualLap"
+              }
+            ]
+          },
+          "title": "Hill Strides",
+          "createManualLap": true,
+          "fields": [
+            {
+              "type": "targetPace",
+              "value": 3.46,
+              "min": 3.28,
+              "max": 3.64
+            },
+            {
+              "type": "pace"
+            },
+            {
+              "type": "heartRate"
+            },
+            {
+              "type": "stepDurationCountdown",
+              "value": 20
+            }
+          ]
+        },
+        {
+          "type": "fields",
+          "trigger": {
+            "type": "or",
+            "triggers": [
+              {
+                "type": "stepDuration",
+                "value": 90
+              },
+              {
+                "type": "manualLap"
+              }
+            ]
+          },
+          "title": "Recovery",
+          "createManualLap": true,
+          "fields": [
+            {
+              "type": "targetPace",
+              "value": 1.8,
+              "min": 1.75,
+              "max": 1.85
+            },
+            {
+              "type": "pace"
+            },
+            {
+              "type": "heartRate"
+            },
+            {
+              "type": "stepDurationCountdown",
+              "value": 90
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "fields",
+      "trigger": {
+        "type": "or",
+        "triggers": [
+          {
+            "type": "stepDistance",
+            "value": 1500
+          },
+          {
+            "type": "manualLap"
+          }
+        ]
+      },
+      "title": "Cooldown",
+      "createManualLap": true,
+      "fields": [
+        {
+          "type": "targetPace",
+          "value": 2.3,
+          "min": 2.22,
+          "max": 2.38
+        },
+        {
+          "type": "pace"
+        },
+        {
+          "type": "heartRate"
+        },
+        {
+          "type": "stepDistanceCountdown",
+          "value": 1500
+        }
+      ]
+    }
+  ]
+}

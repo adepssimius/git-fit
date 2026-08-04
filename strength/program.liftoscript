@@ -1,250 +1,294 @@
+/// Ghost Train block — Upper/Lower A/B split. See rules/strength-authoring.md for the spec
+/// this implements and strength/notes.md for the full design writeup, including why this
+/// file explicitly restates every exercise every week instead of relying on Liftoscript's
+/// documented carry-forward (empty `## Day`) mechanism.
+///
+/// TESTED AND REJECTED: leaving unchanged exercises out of later weeks so they "carry
+/// forward." Verified via run_playground with real chained execution (Week 1 completed for
+/// real via complete_set()+finish_workout(), then Week 2 simulated from the resulting
+/// updatedProgramText) — Week 2 still returned "Exercise not found." Reproduced across six
+/// separate test constructions, including one built directly from the tool's own
+/// documented example. Root cause unconfirmed (simulator limitation vs. real engine
+/// behavior), but the risk of a live 0lb/missing-exercise session isn't worth it.
+///
+/// So: every week below is fully self-contained, and was spot-verified via run_playground
+/// with real complete_set() commands against weeks 1, 5, 8, and 10 — all resolved the
+/// exact declared weight/scheme. Main-lift weights are a HAND-AUTHORED, deliberately
+/// conservative progression (not measured maxes — see athlete/zones.yml and the
+/// "My Program 2" equipment-mismatch note in strength/notes.md), stepping up ~5lb/week
+/// (2.5lb on OHP/Pull Up) and holding or dropping on the weeks training/block.md calls out
+/// as reduced (BIG DAY week 5, Lower A taper week 8, Lower B/Upper B taper week 10). This
+/// file should be re-pushed periodically as real numbers come in from actual sessions —
+/// consistent with how this repo already re-authors weeks from log/ feedback.
+
 # Week 1
+
 ## Lower A — primary strength
-// Farthest from the long run in the weekly template (Monday). Tier 1/2/3 = full/reduced/minimal,
-// selected each session by the readiness check in rules/progression.md.
-main: Squat / ! 3x5 / 2x5 / 1x5 / 185lb / 180s / progress: lp(5lb, 1, 0, 10%, 1)
-main: Romanian Deadlift / ! 3x6 / 2x6 / 1x6 / 155lb / 150s / progress: lp(5lb, 1, 0, 10%, 1)
-accessory: Bulgarian Split Squat / 3x8 / 30lb / 90s / progress: dp(5lb, 8, 12)
-core: Hanging Leg Raise / 3x10 / 60s
+main: Squat / ! 3x5 / 2x5 / 1x5 / 95lb / 180s
+main: Romanian Deadlift / ! 3x6 / 2x6 / 1x6 / 95lb / 150s
+accessory: Bulgarian Split Squat / 3x8 / 30lb / 90s
+core: Hanging Leg Raise / 3x10 / 0lb / 60s
 
 ## Upper A
-// Paired with Tuesday's easy run + hill strides to consolidate fatigue.
-main: Bench Press / ! 3x5 / 2x5 / 1x5 / 155lb / 180s / progress: lp(5lb, 1, 0, 10%, 1)
-main: Barbell Row / 3x8 / 115lb / 120s / progress: dp(5lb, 8, 12)
-accessory: Overhead Press / 3x8 / 75lb / 90s / progress: dp(5lb, 8, 12)
-core: Pallof Press / 3x10 / 60s
+main: Bench Press / ! 3x5 / 2x5 / 1x5 / 65lb / 180s
+main: Bent Over Row / 3x8 / 65lb / 120s
+accessory: Overhead Press / 3x8 / 45lb / 90s
+core: Pallof Press / 3x10 / 20lb / 60s
 
 ## Lower B — runner-specific, low fatigue
-// Unilateral/stability/calves/hamstrings/core, deliberately light. Thursday, non-impact day,
-// separated from Saturday's long run by Friday's full rest day.
-accessory: Single Leg Calf Raise / 4x15 / bodyweight / 60s / progress: dp(5lb, 12, 20)
-accessory: Nordic Hamstring Curl / 3x6 / bodyweight / 90s
-accessory: Single Leg Romanian Deadlift / 3x10 / 25lb / 60s
-accessory: Copenhagen Plank / 3x30s|30s
-core: Dead Bug / 3x12 / 45s
+/// Single Leg Calf Raise is the highest-value accessory in the whole program for
+/// ultra durability — protect this one when trimming volume, cut something else first.
+accessory: Single Leg Calf Raise / 4x12 / 0lb / 60s
+accessory: Nordic Curl / 3x6 / 0lb / 90s
+accessory: Single Leg Deadlift / 3x10 / 25lb / 60s
+accessory: Copenhagen Plank / 3x1 30s|30s
+core: Dead Bug / 3x12 / 0lb / 45s
 
 ## Upper B
-// Champion Plan's Sunday flex day; paired with the easy/mod run.
-main: Weighted Pull Up / ! 3x6 / 2x6 / 1x6 / 25lb / 150s / progress: lp(2.5lb, 1, 0, 10%, 1)
-main: Incline Bench Press / 3x8 / 115lb / 120s / progress: dp(5lb, 8, 12)
+/// Champion Plan's Sunday flex day; paired with the easy/mod run.
+main: Pull Up / ! 3x6 / 2x6 / 1x6 / 10lb / 150s / update: custom() {~
+  if (setIndex == 0) {
+    weights = bodyweight + originalWeights[ns]
+  }
+~}
+main: Incline Bench Press / 3x8 / 55lb / 120s
 accessory: Face Pull / 3x15 / 30lb / 60s
-core: Side Plank / 3x30s|30s
+core: Side Plank / 3x1 30s|30s
 
 # Week 2
-// block week 10 — build
 
-## Lower A — primary strength
-main: Squat / ! 3x5 / 2x5 / 1x5 / 185lb / 180s / progress: lp(5lb, 1, 0, 10%, 1)
-main: Romanian Deadlift / ! 3x6 / 2x6 / 1x6 / 155lb / 150s / progress: lp(5lb, 1, 0, 10%, 1)
-accessory: Bulgarian Split Squat / 3x8 / 30lb / 90s / progress: dp(5lb, 8, 12)
-core: Hanging Leg Raise / 3x10 / 60s
+## Lower A
+main: Squat / ! 3x5 / 2x5 / 1x5 / 100lb / 180s
+main: Romanian Deadlift / ! 3x6 / 2x6 / 1x6 / 100lb / 150s
+accessory: Bulgarian Split Squat / 3x8 / 30lb / 90s
+core: Hanging Leg Raise / 3x10 / 0lb / 60s
 
 ## Upper A
-main: Bench Press / ! 3x5 / 2x5 / 1x5 / 155lb / 180s / progress: lp(5lb, 1, 0, 10%, 1)
-main: Barbell Row / 3x8 / 115lb / 120s / progress: dp(5lb, 8, 12)
-accessory: Overhead Press / 3x8 / 75lb / 90s / progress: dp(5lb, 8, 12)
-core: Pallof Press / 3x10 / 60s
+main: Bench Press / ! 3x5 / 2x5 / 1x5 / 70lb / 180s
+main: Bent Over Row / 3x8 / 70lb / 120s
+accessory: Overhead Press / 3x8 / 47.5lb / 90s
+core: Pallof Press / 3x10 / 20lb / 60s
 
-## Lower B — runner-specific, low fatigue
-accessory: Single Leg Calf Raise / 4x15 / bodyweight / 60s / progress: dp(5lb, 12, 20)
-accessory: Nordic Hamstring Curl / 3x6 / bodyweight / 90s
-accessory: Single Leg Romanian Deadlift / 3x10 / 25lb / 60s
-accessory: Copenhagen Plank / 3x30s|30s
-core: Dead Bug / 3x12 / 45s
+## Lower B
+accessory: Single Leg Calf Raise / 4x12 / 0lb / 60s
+accessory: Nordic Curl / 3x6 / 0lb / 90s
+accessory: Single Leg Deadlift / 3x10 / 25lb / 60s
+accessory: Copenhagen Plank / 3x1 30s|30s
+core: Dead Bug / 3x12 / 0lb / 45s
 
 ## Upper B
-main: Weighted Pull Up / ! 3x6 / 2x6 / 1x6 / 25lb / 150s / progress: lp(2.5lb, 1, 0, 10%, 1)
-main: Incline Bench Press / 3x8 / 115lb / 120s / progress: dp(5lb, 8, 12)
+main: Pull Up / ! 3x6 / 2x6 / 1x6 / 12.5lb / 150s / update: custom() {~
+  if (setIndex == 0) {
+    weights = bodyweight + originalWeights[ns]
+  }
+~}
+main: Incline Bench Press / 3x8 / 57.5lb / 120s
 accessory: Face Pull / 3x15 / 30lb / 60s
-core: Side Plank / 3x30s|30s
+core: Side Plank / 3x1 30s|30s
 
 # Week 3
-// block week 11 — big week
 
-## Lower A — primary strength
-main: Squat / ! 3x5 / 2x5 / 1x5 / 185lb / 180s / progress: lp(5lb, 1, 0, 10%, 1)
-main: Romanian Deadlift / ! 3x6 / 2x6 / 1x6 / 155lb / 150s / progress: lp(5lb, 1, 0, 10%, 1)
-accessory: Bulgarian Split Squat / 3x8 / 30lb / 90s / progress: dp(5lb, 8, 12)
-core: Hanging Leg Raise / 3x10 / 60s
+## Lower A
+main: Squat / ! 3x5 / 2x5 / 1x5 / 105lb / 180s
+main: Romanian Deadlift / ! 3x6 / 2x6 / 1x6 / 105lb / 150s
+accessory: Bulgarian Split Squat / 3x8 / 32.5lb / 90s
+core: Hanging Leg Raise / 3x10 / 0lb / 60s
 
 ## Upper A
-main: Bench Press / ! 3x5 / 2x5 / 1x5 / 155lb / 180s / progress: lp(5lb, 1, 0, 10%, 1)
-main: Barbell Row / 3x8 / 115lb / 120s / progress: dp(5lb, 8, 12)
-accessory: Overhead Press / 3x8 / 75lb / 90s / progress: dp(5lb, 8, 12)
-core: Pallof Press / 3x10 / 60s
+main: Bench Press / ! 3x5 / 2x5 / 1x5 / 75lb / 180s
+main: Bent Over Row / 3x8 / 75lb / 120s
+accessory: Overhead Press / 3x8 / 50lb / 90s
+core: Pallof Press / 3x10 / 22.5lb / 60s
 
-## Lower B — runner-specific, low fatigue
-accessory: Single Leg Calf Raise / 4x15 / bodyweight / 60s / progress: dp(5lb, 12, 20)
-accessory: Nordic Hamstring Curl / 3x6 / bodyweight / 90s
-accessory: Single Leg Romanian Deadlift / 3x10 / 25lb / 60s
-accessory: Copenhagen Plank / 3x30s|30s
-core: Dead Bug / 3x12 / 45s
+## Lower B
+accessory: Single Leg Calf Raise / 4x12 / 5lb / 60s
+accessory: Nordic Curl / 3x6 / 0lb / 90s
+accessory: Single Leg Deadlift / 3x10 / 25lb / 60s
+accessory: Copenhagen Plank / 3x1 30s|30s
+core: Dead Bug / 3x12 / 0lb / 45s
 
 ## Upper B
-main: Weighted Pull Up / ! 3x6 / 2x6 / 1x6 / 25lb / 150s / progress: lp(2.5lb, 1, 0, 10%, 1)
-main: Incline Bench Press / 3x8 / 115lb / 120s / progress: dp(5lb, 8, 12)
-accessory: Face Pull / 3x15 / 30lb / 60s
-core: Side Plank / 3x30s|30s
+main: Pull Up / ! 3x6 / 2x6 / 1x6 / 15lb / 150s / update: custom() {~
+  if (setIndex == 0) {
+    weights = bodyweight + originalWeights[ns]
+  }
+~}
+main: Incline Bench Press / 3x8 / 60lb / 120s
+accessory: Face Pull / 3x15 / 32.5lb / 60s
+core: Side Plank / 3x1 30s|30s
 
 # Week 4
-// block week 12 — overreach
 
-## Lower A — primary strength
-main: Squat / ! 3x5 / 2x5 / 1x5 / 185lb / 180s / progress: lp(5lb, 1, 0, 10%, 1)
-main: Romanian Deadlift / ! 3x6 / 2x6 / 1x6 / 155lb / 150s / progress: lp(5lb, 1, 0, 10%, 1)
-accessory: Bulgarian Split Squat / 3x8 / 30lb / 90s / progress: dp(5lb, 8, 12)
-core: Hanging Leg Raise / 3x10 / 60s
+## Lower A
+main: Squat / ! 3x5 / 2x5 / 1x5 / 110lb / 180s
+main: Romanian Deadlift / ! 3x6 / 2x6 / 1x6 / 110lb / 150s
+accessory: Bulgarian Split Squat / 3x8 / 32.5lb / 90s
+core: Hanging Leg Raise / 3x10 / 0lb / 60s
 
 ## Upper A
-main: Bench Press / ! 3x5 / 2x5 / 1x5 / 155lb / 180s / progress: lp(5lb, 1, 0, 10%, 1)
-main: Barbell Row / 3x8 / 115lb / 120s / progress: dp(5lb, 8, 12)
-accessory: Overhead Press / 3x8 / 75lb / 90s / progress: dp(5lb, 8, 12)
-core: Pallof Press / 3x10 / 60s
+main: Bench Press / ! 3x5 / 2x5 / 1x5 / 80lb / 180s
+main: Bent Over Row / 3x8 / 80lb / 120s
+accessory: Overhead Press / 3x8 / 52.5lb / 90s
+core: Pallof Press / 3x10 / 22.5lb / 60s
 
-## Lower B — runner-specific, low fatigue
-accessory: Single Leg Calf Raise / 4x15 / bodyweight / 60s / progress: dp(5lb, 12, 20)
-accessory: Nordic Hamstring Curl / 3x6 / bodyweight / 90s
-accessory: Single Leg Romanian Deadlift / 3x10 / 25lb / 60s
-accessory: Copenhagen Plank / 3x30s|30s
-core: Dead Bug / 3x12 / 45s
+## Lower B
+accessory: Single Leg Calf Raise / 4x12 / 5lb / 60s
+accessory: Nordic Curl / 3x6 / 0lb / 90s
+accessory: Single Leg Deadlift / 3x10 / 27.5lb / 60s
+accessory: Copenhagen Plank / 3x1 30s|30s
+core: Dead Bug / 3x12 / 0lb / 45s
 
 ## Upper B
-main: Weighted Pull Up / ! 3x6 / 2x6 / 1x6 / 25lb / 150s / progress: lp(2.5lb, 1, 0, 10%, 1)
-main: Incline Bench Press / 3x8 / 115lb / 120s / progress: dp(5lb, 8, 12)
-accessory: Face Pull / 3x15 / 30lb / 60s
-core: Side Plank / 3x30s|30s
+main: Pull Up / ! 3x6 / 2x6 / 1x6 / 17.5lb / 150s / update: custom() {~
+  if (setIndex == 0) {
+    weights = bodyweight + originalWeights[ns]
+  }
+~}
+main: Incline Bench Press / 3x8 / 62.5lb / 120s
+accessory: Face Pull / 3x15 / 32.5lb / 60s
+core: Side Plank / 3x1 30s|30s
 
 # Week 5
-// block week 13 — BIG DAY week: Mon/Tue only, no lifting Wed-Sun (Champion wk 10)
 
-## Lower A — primary strength
-main: Squat / ! 3x5 / 2x5 / 1x5 / 185lb / 180s / progress: lp(5lb, 1, 0, 10%, 1)
-main: Romanian Deadlift / ! 3x6 / 2x6 / 1x6 / 155lb / 150s / progress: lp(5lb, 1, 0, 10%, 1)
-accessory: Bulgarian Split Squat / 3x8 / 30lb / 90s / progress: dp(5lb, 8, 12)
-core: Hanging Leg Raise / 3x10 / 60s
+## Lower A
+main: Squat / ! 3x5 / 2x5 / 1x5 / 110lb / 180s
+main: Romanian Deadlift / ! 3x6 / 2x6 / 1x6 / 110lb / 150s
+accessory: Bulgarian Split Squat / 3x8 / 35lb / 90s
+core: Hanging Leg Raise / 3x10 / 0lb / 60s
 
 ## Upper A
-main: Bench Press / ! 3x5 / 2x5 / 1x5 / 155lb / 180s / progress: lp(5lb, 1, 0, 10%, 1)
-main: Barbell Row / 3x8 / 115lb / 120s / progress: dp(5lb, 8, 12)
-accessory: Overhead Press / 3x8 / 75lb / 90s / progress: dp(5lb, 8, 12)
-core: Pallof Press / 3x10 / 60s
+main: Bench Press / ! 3x5 / 2x5 / 1x5 / 80lb / 180s
+main: Bent Over Row / 3x8 / 80lb / 120s
+accessory: Overhead Press / 3x8 / 52.5lb / 90s
+core: Pallof Press / 3x10 / 25lb / 60s
 
 # Week 6
-// block week 14 — mid-cycle rest: low-fatigue days only, no heavy lower
 
-## Lower B — runner-specific, low fatigue
-accessory: Single Leg Calf Raise / 4x15 / bodyweight / 60s / progress: dp(5lb, 12, 20)
-accessory: Nordic Hamstring Curl / 3x6 / bodyweight / 90s
-accessory: Single Leg Romanian Deadlift / 3x10 / 25lb / 60s
-accessory: Copenhagen Plank / 3x30s|30s
-core: Dead Bug / 3x12 / 45s
+## Lower B
+accessory: Single Leg Calf Raise / 4x12 / 5lb / 60s
+accessory: Nordic Curl / 3x6 / 0lb / 90s
+accessory: Single Leg Deadlift / 3x10 / 27.5lb / 60s
+accessory: Copenhagen Plank / 3x1 30s|30s
+core: Dead Bug / 3x12 / 0lb / 45s
 
 ## Upper B
-main: Weighted Pull Up / ! 3x6 / 2x6 / 1x6 / 25lb / 150s / progress: lp(2.5lb, 1, 0, 10%, 1)
-main: Incline Bench Press / 3x8 / 115lb / 120s / progress: dp(5lb, 8, 12)
-accessory: Face Pull / 3x15 / 30lb / 60s
-core: Side Plank / 3x30s|30s
+main: Pull Up / ! 3x6 / 2x6 / 1x6 / 17.5lb / 150s / update: custom() {~
+  if (setIndex == 0) {
+    weights = bodyweight + originalWeights[ns]
+  }
+~}
+main: Incline Bench Press / 3x8 / 62.5lb / 120s
+accessory: Face Pull / 3x15 / 32.5lb / 60s
+core: Side Plank / 3x1 30s|30s
 
 # Week 7
-// block week 15 — lap sim 1
 
-## Lower A — primary strength
-main: Squat / ! 3x5 / 2x5 / 1x5 / 185lb / 180s / progress: lp(5lb, 1, 0, 10%, 1)
-main: Romanian Deadlift / ! 3x6 / 2x6 / 1x6 / 155lb / 150s / progress: lp(5lb, 1, 0, 10%, 1)
-accessory: Bulgarian Split Squat / 3x8 / 30lb / 90s / progress: dp(5lb, 8, 12)
-core: Hanging Leg Raise / 3x10 / 60s
+## Lower A
+main: Squat / ! 3x5 / 2x5 / 1x5 / 115lb / 180s
+main: Romanian Deadlift / ! 3x6 / 2x6 / 1x6 / 115lb / 150s
+accessory: Bulgarian Split Squat / 3x8 / 35lb / 90s
+core: Hanging Leg Raise / 3x10 / 0lb / 60s
 
 ## Upper A
-main: Bench Press / ! 3x5 / 2x5 / 1x5 / 155lb / 180s / progress: lp(5lb, 1, 0, 10%, 1)
-main: Barbell Row / 3x8 / 115lb / 120s / progress: dp(5lb, 8, 12)
-accessory: Overhead Press / 3x8 / 75lb / 90s / progress: dp(5lb, 8, 12)
-core: Pallof Press / 3x10 / 60s
+main: Bench Press / ! 3x5 / 2x5 / 1x5 / 85lb / 180s
+main: Bent Over Row / 3x8 / 85lb / 120s
+accessory: Overhead Press / 3x8 / 55lb / 90s
+core: Pallof Press / 3x10 / 25lb / 60s
 
-## Lower B — runner-specific, low fatigue
-accessory: Single Leg Calf Raise / 4x15 / bodyweight / 60s / progress: dp(5lb, 12, 20)
-accessory: Nordic Hamstring Curl / 3x6 / bodyweight / 90s
-accessory: Single Leg Romanian Deadlift / 3x10 / 25lb / 60s
-accessory: Copenhagen Plank / 3x30s|30s
-core: Dead Bug / 3x12 / 45s
+## Lower B
+accessory: Single Leg Calf Raise / 4x12 / 10lb / 60s
+accessory: Nordic Curl / 3x6 / 0lb / 90s
+accessory: Single Leg Deadlift / 3x10 / 27.5lb / 60s
+accessory: Copenhagen Plank / 3x1 30s|30s
+core: Dead Bug / 3x12 / 0lb / 45s
 
 ## Upper B
-main: Weighted Pull Up / ! 3x6 / 2x6 / 1x6 / 25lb / 150s / progress: lp(2.5lb, 1, 0, 10%, 1)
-main: Incline Bench Press / 3x8 / 115lb / 120s / progress: dp(5lb, 8, 12)
-accessory: Face Pull / 3x15 / 30lb / 60s
-core: Side Plank / 3x30s|30s
+main: Pull Up / ! 3x6 / 2x6 / 1x6 / 20lb / 150s / update: custom() {~
+  if (setIndex == 0) {
+    weights = bodyweight + originalWeights[ns]
+  }
+~}
+main: Incline Bench Press / 3x8 / 65lb / 120s
+accessory: Face Pull / 3x15 / 35lb / 60s
+core: Side Plank / 3x1 30s|30s
 
 # Week 8
-// block week 16 — peak; Lower A shifts to taper character
 
-## Lower A — taper character, lighter
-// From block week 16 heavy bilateral work returns less than resilience work (training/block.md).
-// Same slot, lighter loads, tier 2 default.
-main: Squat / 3x5 / ! 2x5 / 1x5 / 155lb / 150s
-main: Romanian Deadlift / 3x6 / ! 2x6 / 1x6 / 135lb / 120s
-accessory: Bulgarian Split Squat / 2x8 / 25lb / 90s
-core: Hanging Leg Raise / 3x10 / 60s
+## Lower A
+/// Taper character: reduced sets, no autoregulation tiers this week, accessories skipped.
+main: Squat / 2x5 / 90lb / 150s
+main: Romanian Deadlift / 2x6 / 90lb / 120s
 
 ## Upper A
-main: Bench Press / ! 3x5 / 2x5 / 1x5 / 155lb / 180s / progress: lp(5lb, 1, 0, 10%, 1)
-main: Barbell Row / 3x8 / 115lb / 120s / progress: dp(5lb, 8, 12)
-accessory: Overhead Press / 3x8 / 75lb / 90s / progress: dp(5lb, 8, 12)
-core: Pallof Press / 3x10 / 60s
+main: Bench Press / ! 3x5 / 2x5 / 1x5 / 85lb / 180s
+main: Bent Over Row / 3x8 / 85lb / 120s
+accessory: Overhead Press / 3x8 / 55lb / 90s
 
-## Lower B — runner-specific, low fatigue
-accessory: Single Leg Calf Raise / 4x15 / bodyweight / 60s / progress: dp(5lb, 12, 20)
-accessory: Nordic Hamstring Curl / 3x6 / bodyweight / 90s
-accessory: Single Leg Romanian Deadlift / 3x10 / 25lb / 60s
-accessory: Copenhagen Plank / 3x30s|30s
-core: Dead Bug / 3x12 / 45s
+## Lower B
+accessory: Single Leg Calf Raise / 4x12 / 10lb / 60s
+accessory: Nordic Curl / 3x6 / 0lb / 90s
+accessory: Single Leg Deadlift / 3x10 / 27.5lb / 60s
+accessory: Copenhagen Plank / 3x1 30s|30s
+core: Dead Bug / 3x12 / 0lb / 45s
 
 ## Upper B
-main: Weighted Pull Up / ! 3x6 / 2x6 / 1x6 / 25lb / 150s / progress: lp(2.5lb, 1, 0, 10%, 1)
-main: Incline Bench Press / 3x8 / 115lb / 120s / progress: dp(5lb, 8, 12)
-accessory: Face Pull / 3x15 / 30lb / 60s
-core: Side Plank / 3x30s|30s
+main: Pull Up / ! 3x6 / 2x6 / 1x6 / 20lb / 150s / update: custom() {~
+  if (setIndex == 0) {
+    weights = bodyweight + originalWeights[ns]
+  }
+~}
+main: Incline Bench Press / 3x8 / 65lb / 120s
+accessory: Face Pull / 3x15 / 35lb / 60s
+core: Side Plank / 3x1 30s|30s
 
 # Week 9
-// block week 17 — LAST HEAVY SQUAT DAY of the block
 
-## Lower A — primary strength
-main: Squat / ! 3x5 / 2x5 / 1x5 / 185lb / 180s / progress: lp(5lb, 1, 0, 10%, 1)
-main: Romanian Deadlift / ! 3x6 / 2x6 / 1x6 / 155lb / 150s / progress: lp(5lb, 1, 0, 10%, 1)
-accessory: Bulgarian Split Squat / 3x8 / 30lb / 90s / progress: dp(5lb, 8, 12)
-core: Hanging Leg Raise / 3x10 / 60s
+## Lower A
+/// Last heavy squat day of the block.
+main: Squat / ! 3x5 / 2x5 / 1x5 / 120lb / 180s
+main: Romanian Deadlift / ! 3x6 / 2x6 / 1x6 / 120lb / 150s
+accessory: Bulgarian Split Squat / 3x8 / 35lb / 90s
+core: Hanging Leg Raise / 3x10 / 0lb / 60s
 
 ## Upper A
-main: Bench Press / ! 3x5 / 2x5 / 1x5 / 155lb / 180s / progress: lp(5lb, 1, 0, 10%, 1)
-main: Barbell Row / 3x8 / 115lb / 120s / progress: dp(5lb, 8, 12)
-accessory: Overhead Press / 3x8 / 75lb / 90s / progress: dp(5lb, 8, 12)
-core: Pallof Press / 3x10 / 60s
+main: Bench Press / ! 3x5 / 2x5 / 1x5 / 90lb / 180s
+main: Bent Over Row / 3x8 / 90lb / 120s
+accessory: Overhead Press / 3x8 / 57.5lb / 90s
+core: Pallof Press / 3x10 / 25lb / 60s
 
-## Lower B — runner-specific, low fatigue
-accessory: Single Leg Calf Raise / 4x15 / bodyweight / 60s / progress: dp(5lb, 12, 20)
-accessory: Nordic Hamstring Curl / 3x6 / bodyweight / 90s
-accessory: Single Leg Romanian Deadlift / 3x10 / 25lb / 60s
-accessory: Copenhagen Plank / 3x30s|30s
-core: Dead Bug / 3x12 / 45s
+## Lower B
+accessory: Single Leg Calf Raise / 4x12 / 10lb / 60s
+accessory: Nordic Curl / 3x6 / 0lb / 90s
+accessory: Single Leg Deadlift / 3x10 / 30lb / 60s
+accessory: Copenhagen Plank / 3x1 30s|30s
+core: Dead Bug / 3x12 / 0lb / 45s
 
 ## Upper B
-main: Weighted Pull Up / ! 3x6 / 2x6 / 1x6 / 25lb / 150s / progress: lp(2.5lb, 1, 0, 10%, 1)
-main: Incline Bench Press / 3x8 / 115lb / 120s / progress: dp(5lb, 8, 12)
-accessory: Face Pull / 3x15 / 30lb / 60s
-core: Side Plank / 3x30s|30s
+main: Pull Up / ! 3x6 / 2x6 / 1x6 / 22.5lb / 150s / update: custom() {~
+  if (setIndex == 0) {
+    weights = bodyweight + originalWeights[ns]
+  }
+~}
+main: Incline Bench Press / 3x8 / 67.5lb / 120s
+accessory: Face Pull / 3x15 / 35lb / 60s
+core: Side Plank / 3x1 30s|30s
 
 # Week 10
-// block week 18 — taper: maintenance only, no heavy lower
 
-## Lower B — taper, maintenance only
-accessory: Single Leg Calf Raise / 2x15 / bodyweight / 60s
-accessory: Single Leg Romanian Deadlift / 2x10 / bodyweight / 60s
-accessory: Copenhagen Plank / 2x30s|30s
-core: Dead Bug / 2x12 / 45s
+## Lower B
+accessory: Single Leg Calf Raise / 2x12 / 0lb / 60s
+accessory: Single Leg Deadlift / 2x10 / 0lb / 60s
+accessory: Copenhagen Plank / 2x1 30s|30s
+core: Dead Bug / 2x12 / 0lb / 45s
 
-## Upper B — taper, maintenance only
-main: Weighted Pull Up / 2x6 / bodyweight / 120s
-main: Incline Bench Press / 2x8 / 95lb / 120s
-accessory: Face Pull / 2x15 / 30lb / 60s
-core: Side Plank / 2x30s|30s
+## Upper B
+main: Pull Up / 2x6 / 15lb / 150s / update: custom() {~
+  if (setIndex == 0) {
+    weights = bodyweight + originalWeights[ns]
+  }
+~}
+main: Incline Bench Press / 2x8 / 57.5lb / 120s
+core: Side Plank / 2x1 30s|30s
 
-// Block week 19 (race week) has NO lifting, so there is no Week 11 here.
-// The program intentionally covers 10 weeks for an 11-week block.
+/// Block week 19 (race week) has NO lifting, so there is no Week 11 here. The program
+/// intentionally covers 10 weeks for an 11-week block.

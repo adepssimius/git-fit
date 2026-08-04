@@ -25,7 +25,10 @@ Check each morning against the day's plan, worst signal wins:
 
 **Three of these four signals are now pulled automatically from Suunto wellness** rather than
 hand-logged — sleep duration/quality, HRV, and resting HR all come from the nightly record, and
-body-resource "balance" is sampled through the day. Only soreness and RPE need entering by hand.
+body-resource "balance" is sampled through the day. Only soreness and RPE need entering by hand;
+**`rules/logging.md` is where they go**, along with the anchored 0–10 scales that keep them
+comparable across the block and the expected-RPE-by-session-type table that defines "over plan"
+in the row below.
 
 | Signal | Green | Amber | Red | Source |
 |---|---|---|---|---|

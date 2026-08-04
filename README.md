@@ -30,7 +30,7 @@ adjust a week.
 | `strength/` | The whole Liftosaur program, in Liftoscript. |
 | `rules/` | The instructions an LLM follows to author or adjust the plan — syntax references and house rules. |
 | `seed/` | Frozen one-time imports: the old Runna plan and the supplied "Champion Plan." Reference only, never edited. |
-| `log/` | Actuals — RPE, sleep, soreness, unplanned sessions (group rides, eMTB) — feeds autoregulation. |
+| `log/` | Actuals — soreness, RPE, how it felt, unplanned sessions (group rides, eMTB) — feeds autoregulation. Schema and scales in `rules/logging.md`; copy `log/TEMPLATE.md` for a new day. |
 | `scripts/` | `verify_plan.py` (checks the hard invariants) and `generate_calendar.py` (HTML overview). |
 
 ## Scripts
