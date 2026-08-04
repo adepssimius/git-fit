@@ -59,14 +59,18 @@ hr:
   # HRmax observed 187 during the 2026-08-02 30k, above the 186 the watch had stored.
   max_observed: 187
 
-  # LTHR is ESTIMATED, not measured — but bounded usefully from both directions:
-  #   FLOOR:  averaged 159 bpm for 3h31 on 2026-08-02. You cannot hold above threshold for
-  #           three and a half hours, so LTHR is comfortably ABOVE 159.
-  #   CEILING: treadmill efforts of 42-66min averaged 147-151 (max 177-181), and the athlete
-  #           reports having had 2-3 min in hand — so those weren't maximal.
-  # Best estimate ~170. Confirm with a real test before treating it as precise.
-  lthr_estimated: 170
-  lthr_measured: null        # TODO: 30min TT, average HR of the final 20min
+  # LTHR ~169, CONFIRMED from the 10k PR effort rather than estimated.
+  # Source: 2026-06-12 treadmill session (key 9proj21747252eif), 71:27 / 11.43km, avg HR 157,
+  # max 183. The 56:36 10k sits inside it, and the numbers reconcile exactly:
+  #     10k @ 56:36 = 3396s / 10000m -> 5:39/km
+  #     remainder   =  892s /  1426m -> 10:25/km  (walking warmup + cooldown)
+  # Backing the walking portion out of the 157 average puts the 10k itself at ~169 bpm for
+  # ~57 minutes. A near-maximal ~1 hour effort averages LTHR, so LTHR ~= 169.
+  # Caveat: athlete reports 2-3 min in hand, so this is a slight UNDER-estimate; and treadmill
+  # running flatters pace slightly (no air resistance), so outdoor threshold pace may be a touch
+  # slower than 5:39/km. Both effects are small and roughly cancel for zone purposes.
+  lthr: 169
+  lthr_source: "2026-06-12 10k PR effort, HR back-calculated"
 
   # Friel LTHR-based zones (more useful here than %max, given LTHR is the better-bounded number)
   zones:
@@ -82,10 +86,10 @@ hr:
   #                                especially with a deliberate 10k effort inside it and 86F heat.
   long_run_hr_ceiling: 155   # aim Z2, allow drift into low Z3 on hot days or with efforts inside
 
-  # ⚠️ TREADMILL DISTANCE IS UNRELIABLE. Every recorded treadmill session shows 6:11-6:46/km at
-  # avg HR 147-151, which cannot be reconciled with a 56:36 10k (5:39/km). Wrist-based distance
-  # on a treadmill is the likely culprit. Do NOT derive pace zones from treadmill sessions —
-  # use their HR only.
+  # Note on treadmill data: an earlier version of this file called it unreliable, because the
+  # July treadmill sessions all showed 6:11-6:46/km. Those were simply easy runs. The 06-12
+  # session reconciles perfectly once the walking warmup/cooldown is separated out, so the
+  # treadmill data is fine — it just needs the non-running portions removed before use.
 
 bike:
   ftp_w: null                # TODO: ramp or 20-min test on the trainer
