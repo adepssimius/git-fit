@@ -62,7 +62,13 @@ the seed's drop to 20km the following week lands exactly on its mid-cycle rest b
   one real session plus quality embedded in the Saturday long run, everything else genuinely
   aerobic.
 - **Thursday x-train, 1–2.5h easy Z2** — the Champion Plan and the meeting-time trainer land on the
-  same square. Free, and now structurally justified.
+  same square. Free, and now structurally justified. **But free means free: it does not consume the
+  Thursday session slot.** An earlier version of this template treated the ride as Thursday's
+  training and left the day with no run, in every week of the block — so all 11 weeks used 3 of the
+  4 weekday sessions `athlete/profile.md` allows, while weekly totals ran 212–531 against a 600 cap.
+  Corrected 2026-08-04: Thursday carries an easy run *and* the ride. The ride is `concurrent:
+  meetings` and excluded from `weekly_total_max_min`; anything excluded from the budget cannot also
+  be spending it.
 - **Hill strides on easy days** (5–6 × 20–30s fast, jog down). Near-zero time cost, serves the
   "get faster" goal directly.
 - **Uphill treadmill threshold sessions** (e.g. 8–12 × 4min at 1-hour effort, 8–10% grade) as several
@@ -127,7 +133,7 @@ course. Not optional for this race:
 Mon — Easy/recovery + heat        | Lower A     (farthest from the long run; Tue is easy, no conflict)
 Tue — Easy + 5-6x20-30s hill strides | Upper A  (cheap speed; upper paired with a run day)
 Wed — THE BIG WORKOUT             | —           (left clean deliberately)
-Thu — X-train 1-2.5h Z2 (meeting) | Lower B     (low-fatigue, runner-specific, non-impact day)
+Thu — Easy run + x-train Z2 (meeting) | Lower B  (the ride is FREE — it does not fill the slot)
 Fri — Optional easy 30-40min, or rest + heat | —   (Friday blackout lifted 2026-08-03; still
                                                     defaults easy so legs are fresh for Sat)
 Sat — Long run, quality embedded  | —

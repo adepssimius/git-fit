@@ -211,6 +211,7 @@ def load_budget(root: Path) -> dict:
         "long_run_exception_max_min": num("long_run_exception_max_min", 360),
         "long_run_exceptions_per_block": num("long_run_exceptions_per_block", 3),
         "weekday_session_max_min": num("weekday_session_max_min", 60),
+        "weekday_sessions_per_week": num("weekday_sessions_per_week", 4),
         "night_session_max_min": num("night_session_max_min", 90),
         "walk_ramp_pct": num("weekly_ramp_max_pct", 15),
     }
@@ -277,6 +278,10 @@ def main() -> int:
             if dur > w["longest"]:
                 w["longest"], w["longest_name"] = dur, fm["name"]
                 w["longest_flagged"] = "budget_exception" in fm
+            # Mon-Fri run days, for the weekday_sessions_per_week check below. Counted as
+            # distinct DAYS, not sessions, so a double doesn't consume two slots.
+            if datetime.strptime(fm["date"], "%Y-%m-%d").weekday() < 5:
+                w.setdefault("weekday_days", set()).add(fm["date"])
             if typ in WEEKDAY_TYPES and dur > budget["weekday_session_max_min"]:
                 errors.append(
                     f"{rel}: {dur:.0f}min exceeds weekday cap "
@@ -361,6 +366,19 @@ def main() -> int:
                                 f"Watch calves/achilles and quads (descents).")
             else:
                 flags.append(f"WALK RAMP >{budget['walk_ramp_pct']}% ({prev_walk:.0f}->{d['walk']:.0f})")
+        # An UNDER-use warning, deliberately not an error. athlete/profile.md allows
+        # weekday_sessions_per_week; for eleven weeks every single week used one fewer than
+        # allowed, because the weekly template handed Thursday to the meeting-time trainer ride —
+        # a session that is `concurrent:` and therefore excluded from the budget entirely.
+        # Something excluded from the budget cannot also be spending it. Caught 2026-08-04 by the
+        # athlete, not by this script, because the constraint was never wired up.
+        used = len(d.get("weekday_days", ()))
+        allowed = budget["weekday_sessions_per_week"]
+        if used < allowed and d["run"] < budget["weekly_total_max_min"] * 0.95:
+            warnings.append(
+                f"block week {wk}: {used} of {allowed} weekday run days used "
+                f"({d['run']:.0f}/{budget['weekly_total_max_min']}min) — spare capacity. "
+                f"Meeting-time rides/walks do NOT fill a slot (training/block.md weekly template)")
         status = "ok" if not flags else " | ".join(flags)
         longest_s = f"{d['longest']:.0f}" + ("*" if d["longest_flagged"] else "")
         print(f"{wk:>3} {d['run']:>6.0f} {budget['weekly_total_max_min']:>5} "
