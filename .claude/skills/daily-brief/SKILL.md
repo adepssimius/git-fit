@@ -32,8 +32,18 @@ python3 .claude/skills/daily-brief/scripts/brief_context.py
 ```
 
 ```
-mcp__suuntool__wellness_sleep   (limit ~8, order desc)
+mcp__suuntool__wellness_sleep    (limit ~8, order desc)
 mcp__suuntool__wellness_recovery (limit ~4, order desc)
+mcp__suuntool__workouts_list     (since_ms = 00:00 Monday of this block week)
+```
+
+`workouts_list` is for walking. Walks are logged as real activities — **`activityId: 0` is
+WALKING**, and `11` is HIKING, which counts as time on feet in the trip weeks. Sum the walk
+durations since Monday, then re-run the script with `--walked <minutes>` so it can do the
+per-day arithmetic exactly rather than you estimating it:
+
+```bash
+python3 .claude/skills/daily-brief/scripts/brief_context.py --walked 60
 ```
 
 The script gives you today's session with its full step list, today's lift parsed out of
@@ -69,7 +79,7 @@ tomorrow's entry, not backfilled into a past one.
 ## Shape of the brief
 
 Header: date, block week and what kind of week it is (down / build / peak / taper), days to race.
-Then five sections, in this order. The order matters — it runs data → judgement → what to do.
+Then six sections, in this order. The order matters — it runs data → judgement → what to do.
 
 ### 1. The data
 
@@ -122,7 +132,27 @@ If the script says there's no lift today, say whether that's the template (Wed/F
 design) or a deliberate gap in that Liftoscript week (taper, mid-cycle rest, Big Day week). "No lift"
 and "no lift, and that's intentional because it's peak running week" are different messages.
 
-### 5. Watching, and housekeeping
+### 5. Walking
+
+Walking is the third training modality here, not an afterthought — `training/block.md` calls
+meeting-time walking the primary answer to the time-on-feet problem, and it scales from 180 to 465
+min/week across the block.
+
+The target is stored weekly (one `meeting-walk-week.md` per block week) but executed daily, so the
+number he actually needs is **how many minutes today**. The script computes it: target, done so far,
+and the per-day rate required across the days left. Give him that rate plainly.
+
+Flag it when he's behind pace, and say why it matters rather than just noting the gap: the risk isn't
+missing the weekly total, it's making it up with two huge days at the end of the week.
+`rules/progression.md` names this ramp as the block's single most likely source of an overuse injury,
+so a spike is worse than a shortfall. If he's far enough behind that catching up would mean a spike,
+say the honest thing — miss the target.
+
+The ramp figure the script prints is **total time on feet, walking plus hiking**, matching
+`verify_plan.py`. Don't recompute it from the walk target alone; in weeks with family hiking that
+produces a large false alarm.
+
+### 6. Watching, and housekeeping
 
 Only genuinely new signals — not a recap of section 1. And only mention repo state when the script
 surfaced something. Silent on a clean repo.

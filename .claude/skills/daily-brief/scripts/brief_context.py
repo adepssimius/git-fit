@@ -134,6 +134,8 @@ def readable_exercise(line: str) -> str:
 def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--date", default=datetime.date.today().isoformat())
+    ap.add_argument("--walked", type=int, default=None,
+                    help="minutes of WALKING already logged this block week, from Suunto")
     args = ap.parse_args()
     date = args.date
     d = datetime.date.fromisoformat(date)
@@ -231,6 +233,71 @@ def main() -> int:
               f"{planned - done - todays_min}min | week total {planned}min")
         print(f"  today is {todays_min / planned * 100:.0f}% of the week's running"
               if planned else "")
+
+    # ---- walking ----------------------------------------------------------
+    # The walk target is a WEEKLY bucket (one meeting-walk-week.md per block week), but he
+    # executes it daily, so the useful number is "how much today". rules/progression.md calls this
+    # ramp the block's single most likely source of an overuse injury — it climbs 180 -> 465
+    # min/wk — which is why falling behind and then cramming it into two days is the failure mode
+    # worth naming, not just the weekly total.
+    print("\n## Walking")
+    def time_on_feet(bw: str) -> tuple[int, int]:
+        """(walk minutes, hike minutes) for a block week. Both count as time on feet.
+
+        verify_plan.py's ramp check sums them, so this has to as well — a ramp computed from the
+        walk target alone reports a false +61% into block week 14, because block week 13 carries
+        180min of family hiking that the meeting-walk file knows nothing about.
+        """
+        walk = hike = 0
+        for p3 in sorted(ENDURANCE.glob("*.md")):
+            f, _ = frontmatter(p3)
+            if f.get("block_week") != bw or not f.get("concurrent"):
+                continue
+            if f.get("sport") == "Walk":
+                walk += mins(f)
+            elif f.get("sport") == "Hike":
+                hike += mins(f)
+        return walk, hike
+
+    walk_target = None
+    for p2 in sorted(ENDURANCE.glob("*meeting-walk-week.md")):
+        fm, _ = frontmatter(p2)
+        if fm.get("block_week") == str(block_week):
+            walk_target = mins(fm)
+
+    if walk_target is None:
+        print(f"  no walk target for block week {block_week} — check whether this is a travel/"
+              f"hiking week where hiking replaces it (training/block.md § Travel weeks)")
+    else:
+        elapsed = d.weekday()              # full days already gone (Mon = 0)
+        left = 7 - d.weekday()             # days remaining INCLUDING today
+        print(f"  target      {walk_target}min this week ({walk_target / 7:.0f}min/day if spread evenly)")
+        if block_week:
+            w_now, h_now = time_on_feet(str(block_week))
+            w_prev, h_prev = time_on_feet(str(int(block_week) - 1))
+            tof_now, tof_prev = w_now + h_now, w_prev + h_prev
+            hike_note = f" (incl. {h_now}min hiking)" if h_now else ""
+            print(f"  time-on-feet {tof_now}min this week{hike_note}, {tof_prev}min last week")
+            if tof_prev:
+                delta = (tof_now - tof_prev) / tof_prev * 100
+                over = delta > 15
+                print(f"  ramp        {delta:+.0f}%"
+                      + ("   OVER the 15%/wk cap — check whether hiking drives it, which "
+                         "training/block.md treats as unavoidable rather than a failure" if over else ""))
+        print(f"  week so far {elapsed} full day(s) done, {left} day(s) left including today")
+        if args.walked is None:
+            print(f"  -> pull WALKING activities (activityId 0) for Mon {(d - datetime.timedelta(days=elapsed))}")
+            print(f"     onward, sum the minutes, then re-run with --walked <total> for exact numbers")
+        else:
+            done = args.walked
+            remaining = max(0, walk_target - done)
+            print(f"  done        {done}min | remaining {remaining}min")
+            print(f"  -> {remaining / left:.0f}min/day for the remaining {left} day(s)")
+            pace_target = walk_target * elapsed / 7
+            if elapsed and done < pace_target * 0.85:
+                print(f"     BEHIND pace ({done}min vs {pace_target:.0f}min expected by now) — flag it. "
+                      f"Catching up by cramming two big days is exactly the ramp spike "
+                      f"rules/progression.md warns about")
 
     # ---- recent log -------------------------------------------------------
     print("\n## Recent log (soreness/RPE are the ladder's only manual signals)")
