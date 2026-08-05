@@ -20,7 +20,12 @@ published:
   suunto: null
 ---
 
+Warmup
 - 10m 65-72% HR 85rpm
+
+Z2 base
 - 5m ZoneSense Z1 85rpm
 - 60m Z2 HR 85-95rpm
+
+Cooldown
 - 15m ZoneSense Z1 85rpm

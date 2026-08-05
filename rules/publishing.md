@@ -47,18 +47,18 @@ Then pass that base64 to `mcp__suuntool__guides_upload`. `suuntool` needs `--all
    requires the key to be present, set `OWNER` in `scripts/compile_guide.py` — it must then match in
    both files or the archive is rejected before upload.
 
-### Known blocker: the 9 trainer rides cannot be published
+### RESOLVED 2026-08-05: the trainer rides publish fine
 
-Every `sport: Ride` session targets a percentage (`- 40m 65% 85-95rpm`), i.e. %FTP. But
-`athlete/zones.yml` sets `ftp_w: null` — "UNKNOWN and not worth testing for this block" — and
-directs trainer sessions to prescribe HR or RPE instead. **The guide format has no representation
-for relative targets**; a percentage must resolve to an absolute number before it goes on the wire.
-So these nine files contradict the zones file and cannot be compiled at all.
+This section used to say the nine `sport: Ride` sessions could not be published, because they
+targeted `%FTP` and `bike.ftp_w` is null. That was fixed when the ride files were rewritten to
+HR bands (`- 70m Z2 HR 85-95rpm`, `- 10m 65-72% HR 85rpm`), which the compiler resolves from the
+LTHR-based zone table. All nine compile and the 08-06 ride is live (guide `vnsbcek5`).
 
-`compile_guide.py` refuses them rather than inventing an FTP. Fix by rewriting their targets in HR
-(`- 40m Z2 HR`, which the compiler resolves from the LTHR-based zone table) or by setting
-`bike.ftp_w`. Until then, 51 of 60 sessions are publishable and the rides stay watch-less — which
-costs little, since they're ridden through meetings at conversational effort anyway.
+**Give every block a section header.** The ride bodies originally had *no* headers at all — just
+bare `- ` steps — so every step compiled to the fallback title and the watch showed three steps
+all called `Step 1`. Headers added 2026-08-05 (`Warmup` / `Z2 base` / `Cooldown`, with `Z2 base`
+added to `TITLE_RULES` as `Z2 BASE`). A missing header is not a compile error, so nothing catches
+this but reading the compiled output before pushing — do that.
 
 ## Strength program → Liftosaur MCP
 

@@ -18,7 +18,7 @@ intent: >
   most for a lapped ultra.
 origin: adapted
 published:
-  suunto: null
+  suunto: 2026-08-05T02:32:44Z    # guide id 491c3e5b
 ---
 
 Warmup

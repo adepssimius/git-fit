@@ -18,9 +18,14 @@ intent: >
   step in the progression toward 90-120g/hr (see rules/fueling.md).
 origin: authored
 published:
-  suunto: null
+  suunto: 2026-08-05T02:32:44Z    # guide id vnsbcek5
 ---
 
+Warmup
 - 10m 65-72% HR 85rpm
+
+Z2 base
 - 70m Z2 HR 85-95rpm
+
+Cooldown
 - 10m ZoneSense Z1 85rpm

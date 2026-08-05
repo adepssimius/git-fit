@@ -283,6 +283,7 @@ TITLE_RULES: list[tuple[str, str]] = [
     (r"^easy",                          "EZ"),
     (r"^moderate",                      "MOD"),
     (r"^steady",                        "STEADY"),
+    (r"^z2\s*base",                     "Z2 BASE"),
     (r"^progression",                   "PROG"),
     # Must precede the strides rule — otherwise "Hill strides positioning" matches it and the
     # positioning step and the strides themselves both render as STRIDE.

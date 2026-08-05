@@ -22,11 +22,15 @@ published:
   suunto: null
 ---
 
+Warmup
 - 10m 65-72% HR 85rpm
+
+Settle in
 - 5m ZoneSense Z1 85rpm
 
 Surges 10x
 - 30s 95rpm
 - 2m ZoneSense Z1 85rpm
 
+Z2 base
 - 20m Z2 HR 85-90rpm
