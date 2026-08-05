@@ -6,6 +6,8 @@ type: aerobic-base
 block_week: 17
 duration_s: 5400
 target_mode: hr
+brief: >
+  90min trainer: 10 easy, 70 Z2, 10 easy. Race-rate fueling, 90-120g/hr.
 follow: >
   Warmup/cooldown: ZoneSense Zone 1. Main set: Z2 HR, 138-151bpm.
 concurrent: meetings

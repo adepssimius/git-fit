@@ -6,6 +6,8 @@ type: long
 block_week: 12
 duration_s: 5640
 target_mode: effort
+brief: >
+  15min in, 4x(16min run + 3min walk), 3min down. All aerobic — the hiking is doing the hard work this week.
 follow: >
   ZoneSense Zone 1 (aerobic). Pace is a guide only — if holding Zone 1 means running slower, run slower.
 intent: >
@@ -20,11 +22,11 @@ published:
 ---
 
 Warmup
-- 15m 7:10/km Pace
+- 15m ZoneSense Z1
 
 Run/Walk 4x
-- 16m 7:00/km Pace
+- 16m ZoneSense Z1
 - 3m 9:00/km Pace
 
 Cooldown
-- 3m 7:30/km Pace
+- 3m ZoneSense Z1

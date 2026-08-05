@@ -6,6 +6,8 @@ type: walk
 block_week: 18
 duration_s: 18000
 target_mode: effort
+brief: >
+  300min of walking — taper, deliberately down from 465.
 follow: >
   Effort only, no metric. Brisk and sustainable.
 concurrent: meetings

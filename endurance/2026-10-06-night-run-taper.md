@@ -6,7 +6,9 @@ type: night
 block_week: 18
 distance_km: 5.7
 duration_s: 2400
-target_mode: pace
+target_mode: effort
+brief: >
+  40min easy after dark: 12 in, 20 steady, 8 down. Final check of race headlamp, batteries, layers.
 follow: >
   ZoneSense Zone 1 (aerobic). Pace is a guide only — if holding Zone 1 means running slower, run slower.
 time_critical: >
@@ -21,10 +23,10 @@ published:
 ---
 
 Warmup
-- 12m 7:00/km Pace
+- 12m ZoneSense Z1
 
 Steady
-- 20m 7:00/km Pace
+- 20m ZoneSense Z1
 
 Cooldown
-- 8m 7:00/km Pace
+- 8m ZoneSense Z1

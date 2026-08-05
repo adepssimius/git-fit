@@ -6,6 +6,8 @@ type: night
 block_week: 14
 duration_s: 5400
 target_mode: effort
+brief: >
+  90min past midnight: 15 in, 4x(15min steady + 2min walk), 7 down. Full night kit.
 follow: >
   ZoneSense Zone 1 (aerobic). Pace is a guide only — if holding Zone 1 means running slower, run slower.
 time_critical: >
@@ -22,11 +24,11 @@ published:
 ---
 
 Warmup
-- 15m 7:00/km Pace
+- 15m ZoneSense Z1
 
 Night Steady 4x
-- 15m 7:00/km Pace
+- 15m ZoneSense Z1
 - 2m 9:00/km Pace
 
 Cooldown
-- 7m 7:30/km Pace
+- 7m ZoneSense Z1

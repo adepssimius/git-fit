@@ -6,6 +6,8 @@ type: tempo
 block_week: 17
 duration_s: 3270
 target_mode: effort
+brief: >
+  12min up, 5x(5min at 5:55 + 90s easy), 10min down. Last hard midweek session of the block.
 follow: >
   Pace. ZoneSense lags on ~5min reps; glance at it between reps if you like, but don't chase it.
 intent: >

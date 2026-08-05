@@ -16,8 +16,13 @@ actually meant as minutes.
 - **Nested repeats are not supported.** Flatten any nested structure — e.g. Runna's
   `3 reps of: [4 sub-reps]` becomes one flat repeat block with all steps listed in order, repeated
   the outer count.
-- **Every rest step needs an explicit target.** `- 90s` alone is invalid or ambiguous; write
-  `- 90s 9:00/km Pace` (walk pace, from `athlete/zones.yml` → `pace.walk_recovery`).
+- **Every rest step needs an explicit target, and there are two distinct recoveries — pick
+  deliberately, don't default to one.** `pace.jog_recovery` (7:30-8:15/km) for floats between
+  threshold/interval reps, where the point is lactate shuttling and standing would defeat it.
+  `pace.walk_recovery` (9:00/km) for genuine walk breaks: run/walk protocol, race walk breaks,
+  strides walk-backs, and rest after very short/fast reps (hill sprints, 400s) that a jog
+  wouldn't clear before the next one starts. `- 90s` alone is invalid or ambiguous; write
+  `- 90s 8:00/km Pace` or `- 90s 9:00/km Pace` depending on which of the two applies.
 - **Section headers are lines without a leading `-`.** `Warmup`, `Main Set 3x`, `Cooldown` are
   headers; every prescribed step is a `-` line under one. Repeat blocks (`Main Set Nx`) need a blank
   line before and after.

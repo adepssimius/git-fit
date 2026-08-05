@@ -6,6 +6,8 @@ type: intervals
 block_week: 12
 duration_s: 2880
 target_mode: effort
+brief: >
+  14min up, 4x(3min at 5:40 + 2min easy), 7min steady, 7min down. Any road works — no track needed.
 follow: >
   Pace. ZoneSense lags on ~3min reps; glance at it between reps if you like, but don't chase it.
 intent: >

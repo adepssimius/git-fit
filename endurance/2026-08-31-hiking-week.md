@@ -6,6 +6,8 @@ type: hike
 block_week: 13
 duration_s: 10800
 target_mode: effort
+brief: >
+  Last trip days; home 09-01. (~3h estimate.)
 follow: >
   Effort only, no metric. Brisk and sustainable.
 concurrent: family

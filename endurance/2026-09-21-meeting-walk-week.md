@@ -6,6 +6,8 @@ type: walk
 block_week: 16
 duration_s: 27900
 target_mode: effort
+brief: >
+  465min of brisk walking — peak week of the ramp.
 follow: >
   Effort only, no metric. Brisk and sustainable.
 concurrent: meetings

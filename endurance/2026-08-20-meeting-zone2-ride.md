@@ -6,6 +6,8 @@ type: aerobic-base
 block_week: 11
 duration_s: 5400
 target_mode: hr
+brief: >
+  90min trainer through meetings: 10 easy, 70 Z2, 10 easy. ~80g carbs/hr.
 follow: >
   Warmup/cooldown: ZoneSense Zone 1. Main set: Z2 HR, 138-151bpm.
 concurrent: meetings

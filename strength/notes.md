@@ -41,25 +41,37 @@ progression (~5lb/week on main lifts, 2.5lb/week on OHP and Pull Up) across the 
 these numbers with the athlete's actual felt output as real sessions happen** — if a prescribed
 weight is trivially easy, jump it by hand in the next push rather than waiting out the slow ramp.
 
-## Substitutions (fill in as constraints arise)
+## Substitutions
 
-None recorded yet beyond the travel fallback below. If an exercise is unavailable (equipment,
-injury, travel), record the swap here with the reasoning, e.g.:
+**2026-08-04 — no barbell at home, home is the primary training location.** Athlete has an
+adjustable Bowflex SelectTech 552 pair (5–52.5lb/hand, 2.5lb increments) and nothing else. Squat,
+Bench Press, Bent Over Row, Overhead Press, and Incline Bench Press converted to their `, Dumbbell`
+equipment variant. Romanian Deadlift has no Dumbbell variant in Liftosaur's exercise list — replaced
+with **Stiff Leg Deadlift, Dumbbell** (same hip-hinge pattern, same equipment). Bulgarian Split
+Squat was already dumbbell-equipment by default and needed no change.
+
+This was a full progression *redesign*, not a mechanical halving of the barbell numbers — halving
+would have exceeded the SelectTech's 52.5lb/hand ceiling by Week 4. The new progression peaks at
+32.5lb/hand (Squat/Stiff Leg Deadlift, Week 9), comfortably inside range for the whole block.
+
+Record further swaps here the same way:
 
 ```
-Bent Over Row -> Chest-Supported Row  (lower back irritation flagged in log/2026-XX-XX.md)
+Bent Over Row, Dumbbell -> Chest-Supported Row, Dumbbell  (reason, log/YYYY-MM-DD.md link)
 ```
 
 ## Equipment mapping
 
-Assumes standard barbell/dumbbell gym access (`athlete/profile.md` → `equipment.gym_access: true`).
-No specialized equipment required for the current program.
+Home gym: adjustable dumbbells (Bowflex SelectTech 552, 5–52.5lb/hand) only, **no barbell**. The
+travel fallback table below assumes gym/hotel access instead, which may have a barbell again —
+don't assume the home substitutions apply on the road, check what's actually available.
 
 ## Cues
 
-- **Squat / RDL (Lower A):** these are the two lifts most likely to interfere with running if pushed
-  too hard — this is exactly why Lower A sits as far from the long run as the weekly template
-  allows. Don't chase PRs here at the expense of Saturday.
+- **Squat, Dumbbell / Stiff Leg Deadlift, Dumbbell (Lower A):** these are the two lifts most likely
+  to interfere with running if pushed too hard — this is exactly why Lower A sits as far from the
+  long run as the weekly template allows. Don't chase PRs here at the expense of Saturday.
+  "Stiff Leg Deadlift" is the RDL substitute — see Substitutions above for why.
 - **Nordic Curl (Lower B):** notoriously produces significant DOMS even at low volume — keep it at
   3x6 bodyweight as programmed, don't add load even on a green readiness day, since the soreness
   cost is disproportionate to the stimulus for a runner.

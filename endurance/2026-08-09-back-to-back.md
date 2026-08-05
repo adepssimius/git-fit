@@ -6,7 +6,9 @@ type: b2b
 block_week: 9
 distance_km: 8.0
 duration_s: 3440
-target_mode: pace
+target_mode: effort
+brief: >
+  8km easy/moderate on yesterday's legs. Tired is the point; fast is not.
 follow: >
   ZoneSense Zone 1 (aerobic). Pace is a guide only — if holding Zone 1 means running slower, run slower.
 intent: >
@@ -19,4 +21,4 @@ published:
 ---
 
 Easy/Moderate
-- 8km 7:10/km Pace
+- 8km ZoneSense Z1

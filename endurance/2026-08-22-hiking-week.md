@@ -6,6 +6,8 @@ type: hike
 block_week: 11
 duration_s: 10800
 target_mode: effort
+brief: >
+  Arrival weekend — likely one solid hiking day (~3h estimate).
 follow: >
   Effort only, no metric. Brisk and sustainable.
 concurrent: family

@@ -7,6 +7,8 @@ block_week: 19
 distance_km: 7.1
 duration_s: 2910
 target_mode: pace
+brief: >
+  2km up, 3x5min at 5:55, 3x30s hills at 5:05, 1.5km down. Sharp, short, confidence.
 follow: >
   Pace only. ~30s reps — ZoneSense's ~2min window cannot track efforts this short and will read meaninglessly.
 intent: >

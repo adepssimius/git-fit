@@ -6,7 +6,7 @@ type: easy
 block_week: 9
 distance_km: 6.9
 duration_s: 2970
-target_mode: pace
+target_mode: effort
 brief: >
   Easy ~4km, then press lap at a hill to start six 20s strides, 90s walk back. 1.5km easy home.
   Build into the first one.

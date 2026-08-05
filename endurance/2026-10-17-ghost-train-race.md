@@ -6,6 +6,8 @@ type: race
 block_week: 19
 duration_s: 94800
 target_mode: effort
+brief: >
+  One instruction, lap after lap: stay in Zone 1. Decide only at crew stops, standing. Bands in races/ are guides, not targets.
 follow: >
   ZoneSense Zone 1 (aerobic). Pace is a guide only — if holding Zone 1 means running slower, run slower.
 publish: False
@@ -23,14 +25,14 @@ intent: >
 origin: authored
 ---
 
-Laps 1-2 — absurdly easy, bank nothing
-- 48.3km 8:15-8:30/km Pace
+Laps 1-2 — absurdly easy, bank nothing (guide 8:15-8:30/km)
+- 48.3km ZoneSense Z1
 
-Laps 3-4 — settle in; headlamp from partway through lap 3
-- 48.3km 8:54-9:24/km Pace
+Laps 3-4 — settle in; headlamp from partway through lap 3 (guide 8:54-9:24/km)
+- 48.3km ZoneSense Z1
 
-Laps 5-6 — run/walk, decide at each crew stop
-- 48.3km 10:00-10:42/km Pace
+Laps 5-6 — run/walk, decide at each crew stop (guide 10:00-10:42/km)
+- 48.3km ZoneSense Z1
 
-Lap 7 (10mi) — only if the crew-stop decision tree says go
-- 16.1km 11:12/km Pace
+Lap 7 (10mi) — only if the crew-stop decision tree says go (guide 11:12/km)
+- 16.1km ZoneSense Z1

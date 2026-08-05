@@ -6,6 +6,8 @@ type: b2b
 block_week: 16
 duration_s: 5400
 target_mode: effort
+brief: >
+  90min easy/moderate — the block's biggest b2b, on its most tired legs.
 follow: >
   ZoneSense Zone 1 (aerobic). Pace is a guide only — if holding Zone 1 means running slower, run slower.
 intent: >
@@ -17,4 +19,4 @@ published:
 ---
 
 Easy/Moderate
-- 90m 7:20/km Pace
+- 90m ZoneSense Z1

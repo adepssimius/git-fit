@@ -1,28 +1,36 @@
-# Lift starting weights, in lb. NOT measured maxes — the athlete's real lifting history
-# ("My Program 2" in Liftosaur) is on Smith Machine / Leverage Machine / dumbbell equipment,
-# which isn't a valid 1:1 substitute for the free-weight lifts this program uses. These are
-# deliberately conservative Week 1 starting points; strength/program.liftoscript hand-steps a
-# slow progression (~5lb/week on main lifts, 2.5lb/week on OHP/Pull Up) from here across the
-# 10-week program. See strength/notes.md for the full reasoning.
+# Lift starting weights, in lb. NOT measured maxes.
 #
-# The program is now LIVE in Liftosaur ("Ghost Train Block", id haqytaxt, pushed via the
-# Liftosaur MCP) — this file and strength/program.liftoscript are the source of truth; the app
-# is the execution surface. Update both together when real numbers come in from actual sessions.
+# Equipment: home gym has NO BARBELL, only an adjustable Bowflex SelectTech 552 pair
+# (5-52.5lb/hand, 2.5lb increments) — home is the primary training location for this block, so
+# the "main" lifts below are the Dumbbell equipment variant (weight is PER HAND, not combined).
+# Romanian Deadlift has no Dumbbell variant in Liftosaur's exercise list, replaced with
+# Stiff Leg Deadlift, Dumbbell (see strength/notes.md). Bulgarian Split Squat was already
+# dumbbell-equipment and needed no change.
+#
+# These are deliberately conservative Week 1 starting points, redesigned (not a mechanical
+# halving of the old barbell numbers) to stay inside the SelectTech's 52.5lb/hand ceiling for
+# the whole 10-week block — peaks at 32.5lb/hand by Week 9. See strength/notes.md for the
+# full reasoning and the substitution log.
+#
+# The program is LIVE in Liftosaur ("Ghost Train Block", id haqytaxt, pushed via the Liftosaur
+# MCP) — this file and strength/program.liftoscript are the source of truth; the app is the
+# execution surface. Update both together when real numbers come in from actual sessions.
 
 units: lb
 
 lifts:
-  squat: 95                   # Week 1; hand-stepped to 120 by Week 9 in program.liftoscript
-  romanian_deadlift: 95
-  bench_press: 65
-  bent_over_row: 65
-  overhead_press: 45
-  pull_up: 10                 # added load via belt/band, bodyweight not included
-  incline_bench_press: 55
+  squat_dumbbell: 20                    # per hand; Week 1. Hand-stepped to 32.5 by Week 9.
+  stiff_leg_deadlift_dumbbell: 20       # per hand; Romanian Deadlift substitute
+  bench_press_dumbbell: 15              # per hand
+  bent_over_row_dumbbell: 15            # per hand
+  overhead_press_dumbbell: 12.5         # per hand
+  incline_bench_press_dumbbell: 15      # per hand
+  pull_up: 10                           # added load via belt/band, bodyweight not included
 
 bodyweight_lb: 162              # confirmed 2026-08-04; recorded in Liftosaur measurements too
 
 note: >
   If a prescribed weight feels trivially easy in an early session, jump it by hand in the next
   push (mcp__liftosaur__update_program) rather than waiting out the slow ramp — these numbers
-  exist to be safe on day one, not to be a ceiling.
+  exist to be safe on day one, not to be a ceiling. Room to grow: SelectTech tops out at
+  52.5lb/hand, and the Week 9 peak (32.5lb) leaves real headroom if progress is faster than planned.

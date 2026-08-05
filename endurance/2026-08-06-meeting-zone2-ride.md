@@ -6,6 +6,8 @@ type: aerobic-base
 block_week: 9
 duration_s: 5400
 target_mode: hr
+brief: >
+  90min trainer through meetings: 10 easy, 70 Z2, 10 easy. Practice ~70g carbs/hr.
 follow: >
   Warmup/cooldown: ZoneSense Zone 1 (chest strap reads the same on the trainer as running).
   Main set: Z2 HR, 138-151bpm.

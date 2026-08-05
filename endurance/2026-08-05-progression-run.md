@@ -7,6 +7,8 @@ block_week: 9
 distance_km: 9.0
 duration_s: 3528
 target_mode: pace
+brief: >
+  2km up, 3km at 6:30, 2.5km at 5:55, 1.5km down. A progression, not a race — don't spend the last block early.
 follow: >
   Pace, with ZoneSense as a cross-check — a ~20min continuous block is long enough for a1 to settle. Sit mid-Zone 2, not at its ceiling.
 intent: >

@@ -41,7 +41,15 @@ pace:
   rep: "5:05"                # short reps (200-400m), ~3k effort
   stride: "4:35"             # 20-30s strides — fast but not sprinting form
 
-  walk_recovery: "9:00"      # all interval rest steps and race walk breaks
+  # Two distinct recoveries, not one — they serve different reps and shouldn't be collapsed:
+  jog_recovery: "7:30-8:15"  # float/jog between quality reps (threshold, uphill threshold,
+                              # time-based intervals) — keep moving, the point is lactate
+                              # shuttling, not standing rest. Faster end for flatter/shorter work
+                              # (7:30 on the 7x2min threshold), slower for uphill or longer reps
+                              # (8:15 on the uphill-threshold sessions).
+  walk_recovery: "9:00"      # genuine walk breaks: run/walk protocol, race walk breaks, strides
+                              # walk-backs, and rest after very short/fast reps (hill sprints,
+                              # 400s at rep pace) where a jog wouldn't clear before the next one.
 
   # Ultra targets. Deliberately far slower than anything above: at an 11:11/km cutoff average
   # for 100mi, the failure mode is starting anywhere near normal easy pace. Lap 1 should feel

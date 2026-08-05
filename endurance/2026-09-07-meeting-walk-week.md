@@ -6,6 +6,8 @@ type: walk
 block_week: 14
 duration_s: 21300
 target_mode: effort
+brief: >
+  355min of brisk walking spread across the week's calls.
 follow: >
   Effort only, no metric. Brisk and sustainable.
 concurrent: meetings

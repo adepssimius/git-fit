@@ -6,9 +6,11 @@ type: recovery
 block_week: 19
 distance_km: 2.8
 duration_s: 1200
-target_mode: pace
+target_mode: effort
+brief: >
+  14min easy plus 4x30s pickups. Then eat, stage bags, sleep.
 follow: >
-  ZoneSense Zone 1 (aerobic). Pace is a guide only — if holding Zone 1 means running slower, run slower.
+  ZoneSense Zone 1 for the easy running; the 30s pickups by feel.
 intent: >
   Friday shakeout with a few short pickups to keep the legs awake. Then: eat, hydrate,
   stage the crew bags and night kit, and sleep. Race is 9:00 AM tomorrow.
@@ -18,7 +20,7 @@ published:
 ---
 
 Easy
-- 14m 7:00/km Pace
+- 14m ZoneSense Z1
 
 Pickups 4x
 - 30s 5:10/km Pace

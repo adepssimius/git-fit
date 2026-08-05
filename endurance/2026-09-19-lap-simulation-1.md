@@ -7,6 +7,8 @@ block_week: 15
 distance_km: 24.1
 duration_s: 12420
 target_mode: effort
+brief: >
+  Race-lap dress run: car to turnaround and back (15km), south leg (6km), 3.1km top-up. Guide ~8:20/km. Crew stops standing.
 follow: >
   ZoneSense Zone 1 (aerobic). Pace is a guide only — if holding Zone 1 means running slower, run slower.
 intent: >
@@ -23,19 +25,19 @@ published:
 ---
 
 Car -> north terminus (drop bag passed at 5km)
-- 7.5km 8:20/km Pace
+- 7.5km ZoneSense Z1
 
 Turnaround — drop-bag check, refuel
 - 3m 9:00/km Pace
 
 North terminus -> car
-- 7.5km 8:20/km Pace
+- 7.5km ZoneSense Z1
 
 Car — crew stop, sock change, foot care
 - 3m 9:00/km Pace
 
 Car -> south end -> car
-- 6km 8:20/km Pace
+- 6km ZoneSense Z1
 
 Top-up to a full race-lap distance
-- 3.1km 8:30/km Pace
+- 3.1km ZoneSense Z1

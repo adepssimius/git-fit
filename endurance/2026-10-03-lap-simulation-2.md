@@ -7,6 +7,8 @@ block_week: 17
 distance_km: 24.8
 duration_s: 12320
 target_mode: effort
+brief: >
+  Same lap as sim 1 — 15km out-and-back, 6km south leg, 3.1km top-up — in final race kit. Time every crew stop, standing.
 follow: >
   ZoneSense Zone 1 (aerobic). Pace is a guide only — if holding Zone 1 means running slower, run slower.
 intent: >
@@ -22,19 +24,19 @@ published:
 ---
 
 Car -> north terminus (drop bag passed at 5km)
-- 7.5km 8:15/km Pace
+- 7.5km ZoneSense Z1
 
 Turnaround — drop-bag check, refuel
 - 3m 9:00/km Pace
 
 North terminus -> car
-- 7.5km 8:15/km Pace
+- 7.5km ZoneSense Z1
 
 Car — crew stop, sock change, foot care, timed
 - 3m 9:00/km Pace
 
 Car -> south end -> car
-- 6km 8:15/km Pace
+- 6km ZoneSense Z1
 
 Top-up to a full race-lap distance
-- 3.1km 8:25/km Pace
+- 3.1km ZoneSense Z1

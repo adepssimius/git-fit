@@ -6,7 +6,9 @@ type: night
 block_week: 11
 distance_km: 7.1
 duration_s: 3000
-target_mode: pace
+target_mode: effort
+brief: >
+  50min easy in the dark in full race night kit: 15 in, 25 steady, 10 down. A kit check, not a workout.
 follow: >
   ZoneSense Zone 1 (aerobic). Pace is a guide only — if holding Zone 1 means running slower, run slower.
 time_critical: >
@@ -22,10 +24,10 @@ published:
 ---
 
 Warmup
-- 15m 7:00/km Pace
+- 15m ZoneSense Z1
 
 Steady
-- 25m 7:00/km Pace
+- 25m ZoneSense Z1
 
 Cooldown
-- 10m 7:15/km Pace
+- 10m ZoneSense Z1

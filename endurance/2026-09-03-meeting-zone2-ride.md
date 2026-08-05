@@ -6,6 +6,8 @@ type: aerobic-base
 block_week: 13
 duration_s: 3600
 target_mode: hr
+brief: >
+  60min light spin through meetings. No load.
 follow: >
   ZoneSense Zone 1 throughout — deliberately lighter than the standard Z2 x-train.
 concurrent: meetings

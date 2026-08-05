@@ -6,6 +6,8 @@ type: tempo
 block_week: 11
 duration_s: 3480
 target_mode: effort
+brief: >
+  15min up, 6x(4min at 5:40 uphill + 90s easy), 10min down. Treadmill 8-10% if available.
 follow: >
   Pace. ZoneSense lags on ~4min reps; glance at it between reps if you like, but don't chase it.
 intent: >

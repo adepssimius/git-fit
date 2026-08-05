@@ -6,6 +6,8 @@ type: long
 block_week: 14
 duration_s: 6600
 target_mode: effort
+brief: >
+  15min in, 5x(15min run + 3min walk), 5min down. Easy, on last night's legs.
 follow: >
   ZoneSense Zone 1 (aerobic). Pace is a guide only — if holding Zone 1 means running slower, run slower.
 intent: >
@@ -17,11 +19,11 @@ published:
 ---
 
 Warmup
-- 15m 7:00/km Pace
+- 15m ZoneSense Z1
 
 Run/Walk 5x
-- 15m 7:00/km Pace
+- 15m ZoneSense Z1
 - 3m 9:00/km Pace
 
 Cooldown
-- 5m 7:30/km Pace
+- 5m ZoneSense Z1

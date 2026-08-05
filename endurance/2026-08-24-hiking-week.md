@@ -6,6 +6,8 @@ type: hike
 block_week: 12
 duration_s: 36000
 target_mode: effort
+brief: >
+  Core trip week — roughly 3-4 hiking days, ~10h total estimate.
 follow: >
   Effort only, no metric. Brisk and sustainable.
 concurrent: family

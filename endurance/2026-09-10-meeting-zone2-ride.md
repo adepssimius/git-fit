@@ -6,6 +6,8 @@ type: aerobic-base
 block_week: 14
 duration_s: 3600
 target_mode: hr
+brief: >
+  60min trainer: 15 easy, 10x(30s hard + 2min easy), 20min Z2.
 follow: >
   Warmup/recovery/main: ZoneSense Zone 1 early, Z2 HR (138-151bpm) on the closing block.
   Surges: RPE ~8, hard but controlled — 30s is too short for HR or ZoneSense to read, go by feel.

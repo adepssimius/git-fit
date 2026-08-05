@@ -7,6 +7,8 @@ block_week: 13
 distance_km: 11.3
 duration_s: 5400
 target_mode: effort
+brief: >
+  15min shuffle to wake up, 3x(20min run + 2min walk) at ultra rhythm, 9min down. It will feel awful; that's the data.
 follow: >
   ZoneSense Zone 1 (aerobic). Pace is a guide only — if holding Zone 1 means running slower, run slower.
 time_critical: >
@@ -31,11 +33,11 @@ Wake-up shuffle — expect this to feel awful
 - 15m 9:00/km Pace
 
 Settle in — run/walk, ultra pace
-- 20m 8:15/km Pace
+- 20m ZoneSense Z1
 - 2m 9:00/km Pace
-- 20m 8:15/km Pace
+- 20m ZoneSense Z1
 - 2m 9:00/km Pace
-- 20m 8:30/km Pace
+- 20m ZoneSense Z1
 - 2m 9:00/km Pace
 
 Cooldown

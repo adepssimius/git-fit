@@ -6,6 +6,8 @@ type: b2b
 block_week: 14
 duration_s: 3600
 target_mode: effort
+brief: >
+  60min easy. Finish the rest week fresh.
 follow: >
   ZoneSense Zone 1 (aerobic). Pace is a guide only — if holding Zone 1 means running slower, run slower.
 intent: >
@@ -17,4 +19,4 @@ published:
 ---
 
 Easy
-- 60m 7:10/km Pace
+- 60m ZoneSense Z1
