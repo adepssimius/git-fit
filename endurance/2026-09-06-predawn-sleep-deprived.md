@@ -8,7 +8,7 @@ distance_km: 11.3
 duration_s: 5400
 target_mode: effort
 brief: >
-  15min shuffle to wake up, 3x(20min run + 2min walk) at ultra rhythm, 9min down. It will feel awful; that's the data.
+  15min shuffle to wake up, then 66min continuous easy, 9min jog home. On 5h sleep and 15-hour-old 50k legs.
 follow: >
   ZoneSense Zone 1 (aerobic). Pace is a guide only — if holding Zone 1 means running slower, run slower.
 time_critical: >
@@ -22,7 +22,7 @@ intent: >
   laps 5-6 impose. Nothing else in an 11-week block gets near it.
   Run it on the course from the car if possible; local is acceptable. Expect to feel terrible for
   the first 20-30 minutes and note carefully whether it passes — that information is worth more
-  than the training stimulus. Ultra pace, run/walk, no heroics. Sunrise is ~06:12, so all of this
+  than the training stimulus. Ultra pace, continuous, no heroics. Sunrise is ~06:12, so all of this
   is in the dark. Sleep in afterwards; Sunday afternoon is a family blackout anyway.
 origin: authored
 published:
@@ -32,13 +32,8 @@ published:
 Wake-up shuffle — expect this to feel awful
 - 15m ZoneSense Z1
 
-Settle in — run/walk, ultra pace
-- 20m ZoneSense Z1
-- 2m 9:00/km Pace
-- 20m ZoneSense Z1
-- 2m 9:00/km Pace
-- 20m ZoneSense Z1
-- 2m 9:00/km Pace
+Settle in
+- 66m ZoneSense Z1
 
 Cooldown
-- 9m 9:00/km Pace
+- 9m 8:00/km Pace

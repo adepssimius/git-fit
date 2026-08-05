@@ -7,7 +7,7 @@ block_week: 16
 duration_s: 14400
 target_mode: effort
 brief: >
-  03:00 start: 20min in, 9x(20min run + 3min walk) through dark into dawn, 5min pickup at sunrise, 8min down. Full race fueling.
+  03:00 start. 20min in, 207min continuous through dark into dawn, 5min dawn finish, 8min home.
 follow: >
   ZoneSense Zone 1 all night; the 5min dawn pickup by pace. If Zone 1 means slower, run slower.
 time_critical: >
@@ -26,9 +26,8 @@ published:
 Easy aerobic — headlamp on, full night kit
 - 20m ZoneSense Z1
 
-Night Blocks 9x
-- 20m ZoneSense Z1
-- 3m 9:00/km Pace
+Night Blocks
+- 207m ZoneSense Z1
 
 Dawn Finish
 - 5m 6:15/km Pace

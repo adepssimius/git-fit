@@ -7,7 +7,7 @@ block_week: 12
 duration_s: 5640
 target_mode: effort
 brief: >
-  15min in, 4x(16min run + 3min walk), 3min down. All aerobic — the hiking is doing the hard work this week.
+  91min continuous easy between hiking days, short jog to finish.
 follow: >
   ZoneSense Zone 1 the whole way, and no target is set — the first ~10min has no reading, so run the opening by feel. Go slower whenever that's what it needs.
 intent: >
@@ -22,11 +22,7 @@ published:
 ---
 
 Easy aerobic
-- 15m ZoneSense Z1
-
-Run/Walk 4x
-- 16m ZoneSense Z1
-- 3m 9:00/km Pace
+- 91m ZoneSense Z1
 
 Cooldown
 - 3m ZoneSense Z1

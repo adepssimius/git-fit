@@ -19,9 +19,10 @@ actually meant as minutes.
 - **Every rest step needs an explicit target, and there are two distinct recoveries — pick
   deliberately, don't default to one.** `pace.jog_recovery` (7:30-8:15/km) for floats between
   threshold/interval reps, where the point is lactate shuttling and standing would defeat it.
-  `pace.walk_recovery` (9:00/km) for genuine walk breaks: run/walk protocol, race walk breaks,
-  strides walk-backs, and rest after very short/fast reps (hill sprints, 400s) that a jog
-  wouldn't clear before the next one starts. `- 90s` alone is invalid or ambiguous; write
+  `pace.walk_recovery` (9:00/km) for genuine walk breaks: strides walk-backs, rest after very
+  short/fast reps (hill sprints, 400s) that a jog wouldn't clear, and crew stops / turnarounds in
+  the Big Day and lap sims. **Never as a run/walk protocol inside a training run** — that is a
+  race-day tactic only (`training/block.md` rule 6). `- 90s` alone is invalid or ambiguous; write
   `- 90s 8:00/km Pace` or `- 90s 9:00/km Pace` depending on which of the two applies.
 - **Section headers are lines without a leading `-`.** `Warmup`, `Main Set 3x`, `Cooldown` are
   headers; every prescribed step is a `-` line under one. Repeat blocks (`Main Set Nx`) need a blank
@@ -53,7 +54,7 @@ readable artifact for the throwaway one.
 | `THR` | Threshold, incl. long/short | `NGT STEADY` | Night Steady |
 | `SURGE` / `PICKUP` | Surges / Pickups | `NGT BLOCK` | Night Blocks |
 | `REP` | Main Set | `HARD FIN` | Hard Finish |
-| `R/W` | Run/Walk | `DAWN FIN` | Dawn Finish |
+| `R/W` | Run/Walk — **race day only** | `DAWN FIN` | Dawn Finish |
 | `REC` | any rest step inside a repeat | | |
 
 Two properties to preserve when extending it:
@@ -316,9 +317,8 @@ Warmup
 - 10m 7:00/km Pace
 - 5m ZoneSense Z1
 
-Run/Walk 5x
-- 15m ZoneSense Z1
-- 3m 9:00/km Pace
+Easy aerobic
+- 90m ZoneSense Z1
 
 Cooldown
 - 5m ZoneSense Z1

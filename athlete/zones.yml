@@ -47,7 +47,7 @@ pace:
                               # shuttling, not standing rest. Faster end for flatter/shorter work
                               # (7:30 on the 7x2min threshold), slower for uphill or longer reps
                               # (8:15 on the uphill-threshold sessions).
-  walk_recovery: "9:00"      # genuine walk breaks: run/walk protocol, race walk breaks, strides
+  walk_recovery: "9:00"      # RACE walk breaks and recovery after short/fast reps: strides
                               # walk-backs, and rest after very short/fast reps (hill sprints,
                               # 400s at rep pace) where a jog wouldn't clear before the next one.
 

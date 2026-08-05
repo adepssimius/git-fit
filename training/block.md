@@ -14,7 +14,7 @@ Two problems with the inherited Runna plan drove the redesign:
 1. **The race was modeled wrong.** Runna prescribed `50km at 5:35-5:55/km` — road-marathon logic
    for an event that's actually a flat, crewed, lapped ultra. See `races/2026-10-17-ghost-train.md`.
 2. **The plan was a marathon plan.** It peaked at a 40km long run with no back-to-backs, no night
-   running, no run/walk protocol, and no fueling rehearsal — none of which are optional for a
+   running, no lap rehearsal, and no fueling rehearsal — none of which are optional for a
    100km-to-100mile attempt.
 
 Two athlete-specific facts then shaped everything else:
@@ -114,8 +114,8 @@ course. Not optional for this race:
   fully rehearse. The closest available approximation is the **Big Day weekend pair**: Saturday's
   50k finishes around noon, then Sunday's 03:00 run starts on ~5h sleep and 15-hour-old legs. It's
   the Sunday half that supplies the sleep-deprivation stimulus — the Saturday 50k runs in daylight.
-- **Run/walk protocol from session one**, rehearsed in every long run — never introduced for the
-  first time on race day.
+- **A run/walk protocol on race day** — the pace bands for laps 5+ in `athlete/zones.yml` assume
+  it. It is deliberately **NOT** rehearsed in training; see rule 6.
 - **Lap simulations** — staging point → real 7.5mi turnaround → staging (20.9km), plus a 3.1km
   top-up to cover a true race-lap distance. Crew contact every ~10.5km, close to race day's ~12.1km,
   so fueling and stop cadence transfer directly.
@@ -177,8 +177,23 @@ time-budget check fails repeatedly, drop Upper B before touching anything else.
 5. **Spend meeting time on walking first, trainer second** — see `athlete/profile.md`
    `meeting_budget`. This is the primary answer to the time-on-feet problem and should grow every
    week toward the peak, respecting `weekly_ramp_max_pct`.
-6. **Run/walk from session one.** Fix a ratio and use it in every long run so it's automatic under
-   fatigue — never introduced for the first time at mile 60.
+6. **Run/walk is a RACE tactic, not a training method — never program walk breaks into a training
+   session.** This rule previously said the opposite ("fix a ratio and use it in every long run so
+   it's automatic under fatigue"). **Reversed 2026-08-04 by the athlete**, and the reversal is the
+   more defensible position for three reasons:
+   - **It was never asked for and never sourced.** Not in `seed/` (zero mentions), and this file
+     itself filed it under "gaps the Champion Plan doesn't cover" — i.e. an authoring judgment that
+     got promoted to a constraint by being written down. Do not let that happen again.
+   - **It was applied backwards.** The nine sessions carrying run/walk were the 94–213min ones. The
+     Big Day (6h), both lap simulations, the 4h night long run and the race itself had none — so the
+     sessions that actually generate race-like fatigue were the ones NOT rehearsing it.
+   - **The evidence is for race execution, not training adaptation.** Walking in a 100-miler is
+     inevitable and worth pacing deliberately. There is no good evidence that inserting walk breaks
+     into a 2h training run beats running it continuously, and the walk minutes sit below aerobic
+     threshold — so it spends genuinely aerobic time to rehearse something that needs no rehearsal.
+   Walk-pace steps remain correct in exactly two places: **recovery after short/fast reps** (strides,
+   400s, hill sprints — see `pace.walk_recovery`) and **crew stops / turnarounds** in the Big Day and
+   lap simulations, which are logistics rather than a protocol.
 7. **Night running is free time, not skill acquisition.** The athlete already runs at night
    comfortably and enjoys it. Schedule these sessions because post-bedtime hours cost no family
    time and because kit needs validating — not as rehearsal for a feared unknown. The genuinely

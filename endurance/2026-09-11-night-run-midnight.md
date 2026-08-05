@@ -7,7 +7,7 @@ block_week: 14
 duration_s: 5400
 target_mode: effort
 brief: >
-  90min past midnight: 15 in, 4x(15min steady + 2min walk), 7 down. Full night kit.
+  15min in, 68min continuous through the dark, 7min home.
 follow: >
   ZoneSense Zone 1 the whole way, and no target is set — the first ~10min has no reading, so run the opening by feel. Go slower whenever that's what it needs.
 time_critical: >
@@ -26,9 +26,8 @@ published:
 Easy aerobic
 - 15m ZoneSense Z1
 
-Night Steady 4x
-- 15m ZoneSense Z1
-- 2m 9:00/km Pace
+Night Steady
+- 68m ZoneSense Z1
 
 Cooldown
 - 7m ZoneSense Z1
