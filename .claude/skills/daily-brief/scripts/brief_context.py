@@ -76,6 +76,61 @@ def sh(*args: str) -> str:
         return ""
 
 
+# Weekday -> strength day, from the weekly template in training/block.md. Wed/Fri/Sat carry no
+# lift by design: Wednesday is left clean for the big workout, Friday is the mandated leg-recovery
+# day before the long run, Saturday is the long run itself.
+LIFT_BY_WEEKDAY = {0: "Lower A", 1: "Upper A", 3: "Lower B", 6: "Upper B"}
+
+
+def liftoscript_week(week_no: int) -> dict[str, list[str]]:
+    """{day name: [exercise lines]} for one `# Week N` block of strength/program.liftoscript."""
+    src = ROOT / "strength" / "program.liftoscript"
+    if not src.exists():
+        return {}
+    days, cur, in_week = {}, None, False
+    for line in src.read_text().splitlines():
+        if line.startswith("# Week "):
+            in_week = line.strip() == f"# Week {week_no}"
+            cur = None
+            continue
+        if not in_week:
+            continue
+        if line.startswith("## "):
+            cur = line[3:].split("—")[0].strip()
+            days[cur] = []
+        elif cur and re.match(r"^(main|accessory|core):", line):
+            days[cur].append(line.strip())
+    return days
+
+
+def readable_exercise(line: str) -> str:
+    """`main: Squat, Dumbbell / ! 3x5 / 2x5 / 1x5 / 20lb / 180s` -> something briefable.
+
+    Tiers matter: a `!` marks which set-variation is active, and the readiness ladder in
+    rules/progression.md moves that marker down on amber/red. Surfacing the tiers lets the brief
+    say what dropping a tier would actually mean today.
+    """
+    line = line.split(" / update:")[0].strip()
+    label, _, rest = line.partition(":")
+    parts = [x.strip() for x in rest.split(" / ") if x.strip()]
+    if not parts:
+        return line
+    name, fields = parts[0], parts[1:]
+    weight = next((f for f in fields if re.fullmatch(r"[\d.]+lb", f)), None)
+    pause = next((f for f in fields if re.fullmatch(r"\d+s", f)), None)
+    sets = [f for f in fields if f not in (weight, pause)]
+    active = next((s for s in sets if s.startswith("!")), sets[0] if sets else "")
+    tiers = " | ".join(s.lstrip("! ").strip() for s in sets)
+    out = f"{label:<9} {name:<34} {active.lstrip('! ').strip():<10}"
+    if weight:
+        out += f" @ {weight:<8}"
+    if pause:
+        out += f" rest {pause}"
+    if len(sets) > 1:
+        out += f"   [tiers: {tiers}]"
+    return out.rstrip()
+
+
 def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--date", default=datetime.date.today().isoformat())
@@ -133,6 +188,49 @@ def main() -> int:
             print(f"  MISSING: {wf.relative_to(ROOT)}")
     else:
         print("  (no block_week — no session file today to read it from)")
+
+    # ---- strength ---------------------------------------------------------
+    print("\n## Today's strength")
+    if block_week:
+        lw = int(block_week) - 8
+        days = liftoscript_week(lw)
+        want = LIFT_BY_WEEKDAY.get(d.weekday())
+        if not want:
+            print(f"  none — {d.strftime('%A')} carries no lift in the weekly template")
+        elif want in days:
+            print(f"  {want}   (Liftoscript Week {lw})")
+            for line in days[want]:
+                print(f"    {readable_exercise(line)}")
+            print("    tier note: rules/progression.md drops the active tier on amber/red")
+        else:
+            have = ", ".join(days) if days else "nothing"
+            print(f"  none — Liftoscript Week {lw} has no {want}. That week contains: {have}.")
+            print(f"  (deliberate if this is a taper/rest/Big-Day week; check strength/notes.md)")
+    else:
+        print("  (unknown — no block week)")
+
+    # ---- week-to-date load ------------------------------------------------
+    if block_week:
+        monday = d - datetime.timedelta(days=d.weekday())
+        planned = done = todays_min = 0
+        for p2 in sorted(ENDURANCE.glob("*.md")):
+            fm, _ = frontmatter(p2)
+            if fm.get("block_week") != str(block_week) or fm.get("concurrent"):
+                continue
+            if fm.get("sport") != "Run":
+                continue
+            m = mins(fm)
+            planned += m
+            sd = fm.get("date", "")
+            if sd < date:
+                done += m
+            elif sd == date:
+                todays_min += m
+        print(f"\n## Week-to-date running load (block week {block_week})")
+        print(f"  before today {done}min | today {todays_min}min | rest of week "
+              f"{planned - done - todays_min}min | week total {planned}min")
+        print(f"  today is {todays_min / planned * 100:.0f}% of the week's running"
+              if planned else "")
 
     # ---- recent log -------------------------------------------------------
     print("\n## Recent log (soreness/RPE are the ladder's only manual signals)")

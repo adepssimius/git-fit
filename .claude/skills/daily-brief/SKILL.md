@@ -6,9 +6,12 @@ description: >
   prescribed session, and open the day's log entry. Use this whenever the user asks for a brief,
   a morning brief, a plan briefing, "what's on today", "what am I doing today", how their
   readiness or recovery looks, whether they should train today, or asks to pull their sleep data
-  — and also when they ask a question that can only be answered by combining last night's wellness
-  data with today's prescribed session. Prefer this over answering from memory or from a partial
-  file read; the numbers change every night and the readiness call depends on all of them.
+  — and also when they ask what they're lifting today, how today's cardio and strength fit together,
+  or any question that can only be answered by combining last night's wellness data with today's
+  prescribed load. Covers both cardio and strength: the brief reports the day's data, judges
+  readiness specifically against what today demands rather than in the abstract, and lays out the
+  planned run and the planned lift. Prefer this over answering from memory or from a partial file
+  read; the numbers change every night and the readiness call depends on all of them.
 ---
 
 # Daily brief
@@ -33,8 +36,13 @@ mcp__suuntool__wellness_sleep   (limit ~8, order desc)
 mcp__suuntool__wellness_recovery (limit ~4, order desc)
 ```
 
-The script gives you today's session with its full step list, the week's shape, recent log entries,
-and any repo problems worth mentioning. The MCP calls give you last night.
+The script gives you today's session with its full step list, today's lift parsed out of
+`strength/program.liftoscript` with weights and active tiers, week-to-date running load, the week's
+shape, recent log entries, and any repo problems worth mentioning. The MCP calls give you last night.
+
+You should not need to open `program.liftoscript`, the week file, or the session file by hand — if
+the script's output looks wrong or thin, that's a bug worth fixing in the script rather than working
+around, because every future morning pays the same cost.
 
 **Read `references/suunto-fields.md` before interpreting any wellness number.** Heart rate comes
 back in Hz from the wellness endpoints and bpm from the workout endpoints, sleep is in seconds,
@@ -60,24 +68,64 @@ tomorrow's entry, not backfilled into a past one.
 
 ## Shape of the brief
 
-Date, block week, days to race. Then:
+Header: date, block week and what kind of week it is (down / build / peak / taper), days to race.
+Then five sections, in this order. The order matters — it runs data → judgement → what to do.
 
-**Readiness** — a small table: signal, actual reading, colour. Then the call, and one sentence on
-what actually drove it. If a signal is amber for a reason that isn't fitness — a late run pushing
-sleep onset, a sick kid — say so, because the number alone will read as a warning it isn't.
+### 1. The data
 
-**Today** — session name, duration, distance, and the step list rendered so it can be run from the
-brief alone. Include the guide id if it's on the watch, and say plainly if it isn't. Note the lift
-(the week file's day row, and Liftoscript week = block week − 8) and any meeting-time session.
+Last night and where he stands. A compact table with the actual readings, not just colours: sleep
+duration and quality, HRV, resting HR, body resources, soreness. Add anything from the wellness pull
+that's genuinely unusual — a deep-sleep collapse, a fragmented night, an HRV outlier — and say
+whether it has an obvious cause.
 
-**The call** — does the ladder change the plan? Say so explicitly and give the reason. Amber usually
-means proceed; `rules/progression.md` spells out what each colour does to lifts and to the day's
-session. If you're recommending running it as written despite an amber, justify that rather than
-letting it pass silently.
+Then one line of training context from the script's week-to-date section: what he's already done this
+week, what today is, what's left. A 58min session reads differently as 17% of the week than it does
+as the last thing before a rest day.
 
-**Watching** — only genuinely new signals. Not a recap.
+### 2. Readiness for *today's* load
 
-**Housekeeping** — only when the script surfaced something. Silent on a clean repo.
+This is the section that earns the brief. **Don't score readiness in the abstract — score it against
+what today actually demands.** Amber before a 40min easy run and amber before a 4-hour night long run
+are the same word and completely different situations.
+
+State the ladder's call (worst signal wins, per `rules/progression.md`), then answer the question he's
+actually asking: *given this session, does that change anything?* Be concrete about which way it cuts:
+
+- Amber driven by sleep, before an easy day → proceed, the session is below the threshold where it matters.
+- Amber driven by soreness, before a session that loads the sore tissue → that's the one to act on.
+- Green before the block's biggest session → say so; it's permission, and he should know he has it.
+
+`rules/progression.md` spells out what each colour does to lifts and to the day's session. If you're
+recommending he run something as written despite an amber, justify it rather than letting it slide by.
+
+### 3. Cardio
+
+Session name, duration, distance, and the **full step list**, rendered so he can execute from the
+brief without opening the file. Include the guide id if it's on the watch, and say plainly if it
+isn't — an unpushed session is a problem he needs to know about before he's out the door.
+
+Name the target instrument for each block (see the zone rule below). Add any meeting-time session
+(trainer ride, walking) — it's free in time terms but real in recovery terms.
+
+### 4. Strength
+
+The script prints today's lift straight from `strength/program.liftoscript`, with exercises, active
+set-variation, weight and rest. Give it as a table he can train from.
+
+Two things worth surfacing rather than just listing: **the active tier**, because that's the dial the
+readiness ladder actually turns — on amber, main lifts drop a tier, so name what that would mean
+today; and **any interaction with the cardio**, since `rules/strength-authoring.md` cares a lot about
+what sits next to what. Lower B on the same day as a run stacks calf and achilles load, and that's
+worth a sentence when soreness is already amber.
+
+If the script says there's no lift today, say whether that's the template (Wed/Fri/Sat are clean by
+design) or a deliberate gap in that Liftoscript week (taper, mid-cycle rest, Big Day week). "No lift"
+and "no lift, and that's intentional because it's peak running week" are different messages.
+
+### 5. Watching, and housekeeping
+
+Only genuinely new signals — not a recap of section 1. And only mention repo state when the script
+surfaced something. Silent on a clean repo.
 
 ## Things that will make the brief wrong
 
