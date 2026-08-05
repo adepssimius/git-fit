@@ -22,9 +22,8 @@ published:
   suunto: null
 ---
 
-Warmup
-- 10m 7:10/km Pace
-- 10m ZoneSense Z1
+Easy aerobic
+- 20m ZoneSense Z1
 
 Run/Walk 4x
 - 20m ZoneSense Z1

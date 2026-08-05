@@ -1,6 +1,6 @@
 {
   "name": "Easy + Hill Strides",
-  "description": "Easy ~4km, then press lap at a hill to start six 20s strides, 90s walk back. 1.5km easy home. Build into the first one. ZoneSense Zone 1 for the running - pace is shown, not targeted, so descents cost nothing. Strides by feel at ~90-95%.",
+  "description": "Easy 4km, then find a hill - press lap at the bottom to start six 20s strides, 90s walk back. 1.5km easy home. Build into the first one. ZoneSense Zone 1 for the running - no target set, pace shown as data only. Strides by feel at ~90-95%.",
   "shortDescription": "Easy + Hill Strides",
   "localDate": "2026-08-04",
   "type": "sequence",
@@ -17,9 +17,18 @@
     {
       "type": "fields",
       "trigger": {
-        "type": "manualLap"
+        "type": "or",
+        "triggers": [
+          {
+            "type": "stepDistance",
+            "value": 4000
+          },
+          {
+            "type": "manualLap"
+          }
+        ]
       },
-      "title": "EZ>HILL",
+      "title": "EZ ZS Aerobic",
       "createManualLap": true,
       "fields": [
         {
@@ -31,6 +40,26 @@
         {
           "type": "stepDistanceCountdown",
           "value": 4000
+        }
+      ]
+    },
+    {
+      "type": "fields",
+      "trigger": {
+        "type": "manualLap"
+      },
+      "title": "FIND HILL",
+      "createManualLap": true,
+      "fields": [
+        {
+          "type": "pace"
+        },
+        {
+          "type": "heartRate"
+        },
+        {
+          "type": "stepDurationCountdown",
+          "value": 120
         }
       ]
     },

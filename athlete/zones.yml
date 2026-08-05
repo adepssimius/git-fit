@@ -53,9 +53,12 @@ pace:
 
   # Ultra targets. Deliberately far slower than anything above: at an 11:11/km cutoff average
   # for 100mi, the failure mode is starting anywhere near normal easy pace. Lap 1 should feel
-  # almost embarrassingly slow. These are MOVING paces, excluding crew stops.
-  ultra_lap_early: "8:15-8:45"    # laps 1-2
-  ultra_lap_late: "9:45-11:00"    # laps 4+, run/walk
+  # almost embarrassingly slow. These are MOVING paces, excluding crew stops, and match the
+  # per-lap splits in races/2026-10-17-ghost-train.md exactly (laps 1-7: 8:15, 8:30, 8:54, 9:24,
+  # 10:00, 10:42, 11:12) — update both together or verify_plan.py check 9 loses its anchor.
+  ultra_lap_early: "8:15-8:30"    # laps 1-2
+  ultra_lap_mid: "8:54-9:24"      # laps 3-4
+  ultra_lap_late: "10:00-11:12"   # laps 5+, run/walk
 
 # Re-test triggers: update this file when a new PR lands, or after the Big Day (block week 13)
 # and each lap simulation, which give real long-effort data at ultra pace.
@@ -70,7 +73,8 @@ hr:
   # to MEASURED LTHR rather than a percentage of max.
   # Sanity check: LTHR 169 / HRmax 192 = 88%, a normal ratio for a trained runner (85-92%).
   # The two independent numbers corroborate rather than conflict.
-  max: 192                  # set this in the watch — it currently reads 186
+  max: 192                  # CONFIRMED set in the watch 2026-08-04 (activity 25odolauandlvnk5
+                            # reports Personal.MaxHR 192; every prior activity reported 186)
   max_observed_in_data: 187 # 2026-08-02
 
   # LTHR ~169, CONFIRMED from the 10k PR effort rather than estimated.
@@ -94,8 +98,19 @@ hr:
     z4_threshold: "160-168"  # 94-99%
     z5: ">170"
 
-  # Re-reading the two known sessions against these:
+  # ⚠️ z2_aerobic SITS ABOVE THE MEASURED AEROBIC THRESHOLD — do not prescribe it for easy running.
+  # These bands are derived from LTHR by percentage, and LTHR governs the THRESHOLD end. Evidence
+  # (log/2026-08-04.md): on the 08-04 easy run he averaged HR 124-133 for the whole session and
+  # ZoneSense still flagged him above its Zone 1 at the fastest point — so his AeT sits somewhere
+  # around 133-145, BELOW this band's 138-151. Prescribing z2_aerobic on an easy day therefore asks
+  # for exactly the easy-day creep this file names as his most likely training error. Easy running
+  # is governed by ZoneSense with no compiled target at all; see rules/endurance-authoring.md
+  # § "The cold-start opener". Use these bands for the trainer (no ZoneSense on the bike) and for
+  # reading sessions after the fact — not as a live target for easy runs.
+
+  # Re-reading the known sessions against these:
   #   2026-08-03 easy, avg 131  -> Z1. Genuinely gentle; correct the day after a 30k.
+  #   2026-08-04 easy, avg 127  -> Z1. Correctly executed; see the AeT caveat above.
   #   2026-08-02 30k,  avg 159  -> Z3 steady, NOT threshold. Firm for a long run but defensible,
   #                                especially with a deliberate 10k effort inside it and 86F heat.
   long_run_hr_ceiling: 155   # aim Z2, allow drift into low Z3 on hot days or with efforts inside
@@ -155,13 +170,17 @@ zonesense:
   observed:
     2026-08-02_30k:  { z1: "51.7%", z2: "42.6%", z3: "5.8%",  note: "86F, deliberate 10k inside" }
     2026-08-03_easy: { z1: "94.9%", z2: "5.1%",  z3: "0%",    note: "correctly executed" }
+    # Percentages are of ZS-TRACKED time (2858s), not activity time (3460s) — the 602s difference
+    # is the cold start, and is the cleanest measurement of it the dataset has: 10min 02s.
+    2026-08-04_easy: { z1: "93.6%", z2: "6.4%",  z3: "0%",    note: "Z2 was the opening 7:03/km km before ZS came live; corrected mid-run" }
 
-# ⚠️ THE WATCH'S OWN HR ZONES ARE MISCALIBRATED — fix these in the Suunto app.
-# Recorded limits (Hz -> bpm): Z2 135 | Z3 144 | Z4 153 | Z5 163.
-# Measured LTHR is 169, so the watch flags Z5 six beats before you actually reach threshold.
-# That, plus 86F heat, is why the 08-02 run logged 77% in Z4/Z5 while ZoneSense saw 5.8% above
-# AnT. Set the watch to the LTHR-based zones above.
-watch_hr_zones_need_update: true
+# ✅ RESOLVED 2026-08-04 — the watch's HR zones now match the LTHR-based table above.
+# Activity 25odolauandlvnk5 records limits (Hz -> bpm): Z2 137 | Z3 152 | Z4 159 | Z5 169,
+# against this file's 138 | 153 | 160 | 170 — within a beat, i.e. the athlete reconfigured them.
+# Previously they read Z2 135 | Z3 144 | Z4 153 | Z5 163, which flagged Z5 six beats early; that
+# miscalibration, plus 86F heat, is why the 08-02 run logged 77% in Z4/Z5 while ZoneSense saw only
+# 5.8% above AnT. Historical zone splits from before this date are read against the OLD limits.
+watch_hr_zones_need_update: false
 
 # ---------------------------------------------------------------------------
 # Baseline physiology — all measured from Suunto 24/7 wellness, not estimated

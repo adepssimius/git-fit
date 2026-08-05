@@ -9,7 +9,7 @@ target_mode: effort
 brief: >
   15min in, 5x(15min run + 3min walk), 5min down. Easy, on last night's legs.
 follow: >
-  First 10min: hold the pace shown, ZoneSense has no reading yet. After: Zone 1 — go slower if that's what it needs.
+  ZoneSense Zone 1 the whole way, and no target is set — the first ~10min has no reading, so run the opening by feel. Go slower whenever that's what it needs.
 intent: >
   Short and easy by design. The mild fatigue carried over from last night's run is the
   point — it's tired-legs practice at low cost.
@@ -18,9 +18,8 @@ published:
   suunto: null
 ---
 
-Warmup
-- 10m 7:00/km Pace
-- 5m ZoneSense Z1
+Easy aerobic
+- 15m ZoneSense Z1
 
 Run/Walk 5x
 - 15m ZoneSense Z1

@@ -19,9 +19,8 @@ published:
   suunto: null
 ---
 
-Easy
-- 10m 7:45/km Pace
-- 4m ZoneSense Z1
+Easy aerobic
+- 14m ZoneSense Z1
 
 Pickups 4x
 - 30s 5:10/km Pace

@@ -10,7 +10,7 @@ target_mode: effort
 brief: >
   8km easy/moderate on yesterday's legs. Tired is the point; fast is not.
 follow: >
-  First 10min: hold the pace shown, ZoneSense has no reading yet. After: Zone 1 — go slower if that's what it needs.
+  ZoneSense Zone 1 the whole way, and no target is set — the first ~10min has no reading, so run the opening by feel. Go slower whenever that's what it needs.
 intent: >
   Medium-long on tired legs, the day after the long run — the closest available proxy for the back
   half of a 100-miler, and the centerpiece of this whole block per training/block.md. Paired with
@@ -20,6 +20,5 @@ published:
   suunto: null
 ---
 
-Easy/Moderate
-- 1.4km 7:10/km Pace
-- 6.6km ZoneSense Z1
+Easy aerobic
+- 8km ZoneSense Z1

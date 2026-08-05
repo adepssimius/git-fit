@@ -17,7 +17,7 @@ intent: >
   the session covers a true race-lap distance. Crew stops at both ends of the out-and-back, which
   puts crew contact every ~10.5km — close to race day's ~12.1km, so fueling and stop cadence
   transfer directly. Rehearse the fueling handoff, a sock change, and foot care at each stop.
-  Run at ultra_lap_early pace (8:15-8:45) — it should feel absurdly easy; that is the point. Because crew is available every
+  Run at ultra_lap_early pace (8:15-8:30) — it should feel absurdly easy; that is the point. Because crew is available every
   ~12km on race day, practise running LIGHT rather than practising a heavy carry.
 origin: authored
 published:

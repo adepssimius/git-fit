@@ -276,10 +276,17 @@ TITLE_RULES: list[tuple[str, str]] = [
     (r"^cool\s*down",                   "CD"),
     (r"^easy\s*(to|>)\s*hill",          "EZ>HILL"),
     (r"^easy\s*/\s*mod",                "EZ/MOD"),
+    # Athlete-directed, 2026-08-04: ZoneSense-governed easy running carries NO compiled target,
+    # including through the ~10min cold start. The label states the intent and the athlete paces
+    # the opening himself. See rules/endurance-authoring.md § "The cold-start opener".
+    (r"^easy\s+aerobic",                "EZ ZS Aerobic"),
     (r"^easy",                          "EZ"),
     (r"^moderate",                      "MOD"),
     (r"^steady",                        "STEADY"),
     (r"^progression",                   "PROG"),
+    # Must precede the strides rule — otherwise "Hill strides positioning" matches it and the
+    # positioning step and the strides themselves both render as STRIDE.
+    (r"^(hill\s+strides\s+)?positioning", "FIND HILL"),
     (r"^(hill\s+)?strides",             "STRIDE"),
     (r"^hills",                         "HILL"),
     (r"^(long|short)\s+threshold",      "THR"),

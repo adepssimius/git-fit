@@ -10,7 +10,7 @@ target_mode: effort
 brief: >
   30min easy.
 follow: >
-  First 10min: hold the pace shown, ZoneSense has no reading yet. After: Zone 1 — go slower if that's what it needs.
+  ZoneSense Zone 1 the whole way, and no target is set — the first ~10min has no reading, so run the opening by feel. Go slower whenever that's what it needs.
 intent: >
   Recovery. Lower A after.
   Reduced from the pre-travel plan: several hours of mountain hiking this week already supply the time on feet, so running volume comes down rather than stacking on top.
@@ -19,6 +19,5 @@ published:
   suunto: null
 ---
 
-Easy
-- 10m 7:00/km Pace
-- 20m ZoneSense Z1
+Easy aerobic
+- 30m ZoneSense Z1

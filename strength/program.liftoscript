@@ -158,10 +158,12 @@ core: Side Plank / 3x1 30s|30s
 # Week 5
 
 ## Lower A
-main: Squat, Dumbbell / ! 3x5 / 2x5 / 1x5 / 27.5lb / 180s
-main: Stiff Leg Deadlift, Dumbbell / ! 3x6 / 2x6 / 1x6 / 27.5lb / 150s
-accessory: Bulgarian Split Squat / 3x8 / 35lb / 90s
-core: Hanging Leg Raise / 3x10 / 0lb / 60s
+/// Falls the day before Tuesday's Big-Day tune-up (rules/strength-authoring.md: never heavy
+/// lower the day before a quality session, whenever avoidable). Locked to the tier-3 volume
+/// (present, not meaningfully loading) rather than left to the readiness ladder — this is a
+/// fixed calendar conflict, not a morning-of call. Accessories cut first, per the usual order.
+main: Squat, Dumbbell / 1x5 / 27.5lb / 180s
+main: Stiff Leg Deadlift, Dumbbell / 1x6 / 27.5lb / 150s
 
 ## Upper A
 main: Bench Press, Dumbbell / ! 3x5 / 2x5 / 1x5 / 42.5lb / 180s

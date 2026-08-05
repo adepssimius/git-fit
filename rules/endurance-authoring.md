@@ -83,12 +83,34 @@ encoding: the instruction lives in the guide description, and the watch's own Zo
 (`Targets.ZoneSenseZones`, see `athlete/zones.yml`) does the enforcing.
 
 **The first ~10 minutes of any activity get no ZoneSense reading at all** (athlete-confirmed cold
-start, distinct from the ~2min rolling-window lag discussed below). Never open a session with
-`ZoneSense Z1` — split the first step: an explicit pace target (running) or HR-band target
-(trainer) for the first 10min, then `ZoneSense Z1` for the rest. A step that's ≤10min entirely
-(most ride warmups/cooldowns) should be a pace/HR target throughout, never ZoneSense at all.
-Once one block in a session has passed the 10min mark, every later block is fine at `ZoneSense
-Z1` regardless of how it's split up — the clock is cumulative from session start, not per-step.
+start, distinct from the ~2min rolling-window lag discussed below). Once one block in a session has
+passed the 10min mark, every later block is fine at `ZoneSense Z1` regardless of how it's split up —
+the clock is cumulative from session start, not per-step.
+
+**The cold-start opener — athlete-directed, 2026-08-04.** An earlier version of this rule filled the
+cold-start window with an explicit pace target (running) or HR band (trainer). For **easy-effort
+running that is not chasing a pace, don't.** Open with `ZoneSense Z1` like the rest of the session —
+which compiles to no target at all — and title the step `Easy aerobic`, which the compiler renders
+to **`EZ ZS Aerobic`**. The label states the intent; the athlete paces the opening himself.
+
+Why the change: `log/2026-08-04.md`. That session was the one run authored with an HR-band opener
+(`Z2 HR`, i.e. 138–151 from `hr.zones.z2_aerobic`). He ran the whole thing at HR 124–133 and
+ZoneSense *still* flagged him above its Zone 1 at the fastest point — so the band derived from LTHR
+sits **above** his measured aerobic threshold, and prescribing it asks for exactly the easy-day creep
+`athlete/zones.yml` names as his most likely training error. A pace opener has the same defect in a
+quieter form. The athlete's call: no compiled constraint on easy running, just a label.
+
+Two carve-outs where the opener is **not** a cold-start crutch and stays exactly as written:
+
+- **Race and lap simulations** (`2026-10-17-ghost-train-race.md`, both `lap-simulation-*.md`) open at
+  `pace.ultra_lap_early` on purpose. Per `athlete/zones.yml`, lap 1 "should feel almost
+  embarrassingly slow" and the failure mode is starting anywhere near normal easy pace. That target
+  is the pacing strategy, not a stand-in for a missing reading.
+- **Trainer rides** keep `65-72% HR`. `bike.ftp_w` is null, ZoneSense is a running instrument here,
+  and an HR band is the only real target available.
+
+A ride step that's ≤10min entirely (most ride warmups/cooldowns) should still be an HR target
+throughout, never ZoneSense at all.
 
 Do **not** put a pace target on a ZoneSense-governed step as a stand-in. On rolling terrain it is
 wrong in both directions — it fires on descents, where speed is aerobically free, and under-reads
@@ -111,10 +133,12 @@ deadline.
 - HR: `Z2 HR`, `70% HR` (of max), `95% LTHR`, `90-95% LTHR`
 
 **Cycling targets** (meeting-time trainer sessions):
-- FTP percent: `65%`, `95-105%`
+- HR (what this repo actually uses): `Z2 HR`, `65-72% HR` — `bike.ftp_w` is null ("UNKNOWN and
+  not worth testing for this block"), and the compiler *refuses* `%FTP` targets rather than
+  inventing an FTP, so power targets below are documented syntax only until an FTP exists.
+- FTP percent: `65%`, `95-105%` (unusable while `ftp_w` is null)
 - Absolute watts: `220w`, `200-240w`
-- Zone: `Z2`
-- Cadence appended after the target: `- 40m 65% 85-95rpm`
+- Cadence appended after the target: `- 70m Z2 HR 85-95rpm`
 
 **Repeats:** a section header ending in `Nx` (`Main Set 4x`) followed by its steps, blank line
 before and after. A bare `Nx` on its own line also works as a repeat marker.
@@ -132,6 +156,15 @@ to the session length — a1 needs a rolling ~2min RR window, so it cannot track
 | `easy`, `recovery` | **ZoneSense Zone 1**, plus the `easy_ceiling` pace as an upper bound |
 | `tempo` (continuous 15-20min blocks) | Pace, with ZoneSense as a cross-check |
 | `intervals`, strides, anything under ~3min | **Pace or HR only** — ZoneSense cannot respond fast enough |
+
+**One deliberate exception to the first row: the Big Day** (`2026-09-05-big-day.md`). Champion week
+10 prescribes a genuinely hard 50k, and its closing block is faster than `easy_ceiling` on purpose
+— ZoneSense Zone 1 would cap the whole session at an easy aerobic day and lose the stimulus the
+week is built around. It is also the one long session HR cannot govern either: over 6h, cardiac
+drift rises as you accelerate, so an HR ceiling would force a slowdown exactly where the plan says
+speed up. So it is pace-governed, with `target_mode: effort` (the paces are guides for a by-feel
+progression, not a contract — AGENTS.md invariant 5 still holds). **Don't "fix" it back to
+ZoneSense.** Every other `long`/`b2b`/`lap-sim`/`race` session follows the table.
 
 **Every session carries two athlete-facing fields, `brief:` and `follow:`.** Together they are the
 only prose that reaches the watch — `compile_guide.py` joins them, in that order, into the guide's
@@ -204,7 +237,12 @@ published:
   suunto: null                # ISO timestamp, set by the publishing workflow — see rules/publishing.md
 ```
 
-## Translating Runna prose (for any remaining seed transcription)
+## Translating Runna prose (historical — seed transcription is complete)
+
+No `endurance/` file remains on `origin: runna-seed`; this table survives only as a reference for
+*reading* `seed/runna-plan.md`. The paces in the left column are Runna's own historical values —
+they were contradicted by the athlete's PRs and superseded by `athlete/zones.yml` (see that
+file's header). Never copy them into a session.
 
 - `1.4km warm up at a conversational pace (no faster than 6:10/km)` → `- 1.4km 6:10/km Pace`
 - `90s walking rest` → `- 90s 9:00/km Pace`
@@ -214,95 +252,127 @@ published:
 
 ## Worked examples
 
-A standard interval session:
+All paces below come from `athlete/zones.yml` — an example with a pace not in that table is a bug
+in this file. Every example carries `brief:` + `follow:`, both required.
+
+A standard quality session (pace-governed throughout, per the binding-rep rule; jog recovery from
+`pace.jog_recovery`):
 
 ```markdown
 ---
-date: 2026-08-04
+date: 2026-08-12
 sport: Run
-name: Broken Miles
-type: intervals
-block_week: 9
-distance_km: 5.0
-duration_s: 2100
+name: Threshold — 7x2min
+type: tempo
+block_week: 10
+distance_km: 8.4
+duration_s: 3315
 target_mode: pace
-intent: Threshold touch at low volume; keep legs fresh for Saturday's long run.
-origin: runna-seed
+brief: >
+  2km up, 7x(2min at 5:40 + 90s float), 1.5km steady, 1km down. Floats keep moving — no
+  standing rest.
+follow: >
+  Pace only. ~2min reps — ZoneSense's ~2min window cannot track efforts this short.
+intent: The week's single big workout. Float recoveries, not standing rest.
+origin: authored
 ---
 
 Warmup
-- 1km 6:05/km Pace
+- 2km 7:00/km Pace
 
-Main Set 2x
-- 1.2km 5:00/km Pace
-- 120s 9:00/km Pace
-- 400mtr 4:40/km Pace
-- 60s 9:00/km Pace
+Main Set 7x
+- 2m 5:40/km Pace
+- 90s 7:30/km Pace
+
+Steady
+- 1.5km 6:30/km Pace
 
 Cooldown
-- 800mtr 6:15/km Pace
+- 1km 7:00/km Pace
 ```
 
-An ultra-specific, time/HR-based session:
+A ZoneSense-governed long session (note the cold-start split: an explicit pace target for the
+first ~10min, ZoneSense Z1 after; walk breaks from `pace.walk_recovery`):
 
 ```markdown
 ---
-date: 2026-09-19
+date: 2026-09-12
 sport: Run
-name: Lap Simulation — full fueling rehearsal
-type: lap-sim
-duration_s: 13500
-target_mode: hr
-intent: Rehearse one 24.1km Ghost Train lap at goal effort with race fueling and race kit.
+name: Long Run — easy, on tired legs
+type: long
+block_week: 14
+duration_s: 6600
+target_mode: effort
+brief: >
+  15min in, 5x(15min run + 3min walk), 5min down. Easy, on last night's legs.
+follow: >
+  First 10min: hold the pace shown, ZoneSense has no reading yet. After: Zone 1 — go slower
+  if that's what it needs.
+intent: Short and easy by design; tired-legs practice at low cost.
 origin: authored
 ---
 
 Warmup
-- 10m Z1 HR
+- 10m 7:00/km Pace
+- 5m ZoneSense Z1
 
-Main Set 4x
-- 20m Z2 HR
-- 90s 9:00/km Pace
+Run/Walk 5x
+- 15m ZoneSense Z1
+- 3m 9:00/km Pace
 
 Cooldown
-- 10m Z1 HR
+- 5m ZoneSense Z1
 ```
 
-A meeting-time trainer session (Z2, unstructured enough to survive being ridden through a call):
+A meeting-time trainer session. HR-based, never %FTP — `bike.ftp_w` is null and the compiler
+refuses relative power targets (`rules/publishing.md`). The 10min warmup is a single HR-band
+step because ZoneSense has no reading yet (and never write `Z1 HR`: the zone table's `<138` has
+no lower bound, so the compiler degenerates it to a 138–138 point target — use an explicit
+`65-72% HR` band):
 
 ```markdown
 ---
-date: 2026-08-05
+date: 2026-08-13
 sport: Ride
-name: Meeting Z2 + fueling practice
+name: Meeting Z2 x-train
 type: aerobic-base
-duration_s: 3600
-target_mode: power
+block_week: 10
+duration_s: 5400
+target_mode: hr
+brief: >
+  90min trainer through meetings: 10 easy, 70 Z2, 10 easy. Hold ~75g carbs/hr.
+follow: >
+  Warmup/cooldown: ZoneSense Zone 1. Main set: Z2 HR, 138-151bpm.
 concurrent: meetings
-intent: Aerobic volume with zero family cost; practice 90g/hr carb intake.
+intent: Thursday x-train slot, ridden during meetings; gut-training rep.
 origin: authored
 ---
 
-- 10m 55% 85rpm
-- 40m 65% 85-95rpm
-- 10m 55% 85rpm
+- 10m 65-72% HR 85rpm
+- 70m Z2 HR 85-95rpm
+- 10m ZoneSense Z1 85rpm
 ```
 
-A meeting-time walk (tracked, not necessarily pushed to the watch):
+A meeting-time walk (tracked in-repo only, not pushed to the watch):
 
 ```markdown
 ---
-date: 2026-08-05
+date: 2026-08-10
 sport: Walk
-name: Meeting walk
+name: Meeting walks (weekly total)
 type: walk
-duration_s: 5400
+block_week: 10
+duration_s: 12300
 target_mode: effort
+brief: >
+  205min of brisk walking spread across the week's calls.
+follow: >
+  Effort only, no metric. Brisk and sustainable.
 concurrent: meetings
 publish: false
 intent: Time on feet — foot/calf/achilles durability at near-zero recovery cost.
 origin: authored
 ---
 
-- 90m brisk, slight incline
+Weekly target: **205 minutes** of brisk walking, distributed across call-heavy days.
 ```

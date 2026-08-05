@@ -65,16 +65,22 @@ Inherited from the Champion Plan mapping in `training/block.md`:
   deliberately run to accumulate real fatigue. Do not schedule Wednesday's workout at full intensity
   that same week; let the Saturday effort be the week's single hard stimulus alongside it.
 - Block weeks 18–19 are **taper** — volume drops (23km → 13km → race) but keep one short night run
-  in week 18 so the circadian rehearsal doesn't go stale, and drop strength to Lower B character only
-  from week 16 onward, last heavy squat day week 17, no lifting at all in race week (19).
+  in week 18 so the circadian rehearsal doesn't go stale. Strength recedes in a specific shape
+  (see `strength/notes.md` § Taper handling): week 16 — the peak *running* week — cuts Lower A to
+  reduced volume, because lifting is first in the cut order exactly when running stress peaks;
+  week 17 takes the one final full Lower A (the last squat day, ~2.5 weeks out); from week 18 it's
+  Lower B/Upper B character only at reduced sets; race week (19) no lifting at all.
 
 ## Pace progression
 
-Tighten `athlete/zones.yml` → `pace.easy_ceiling` on the schedule already implied by the seed
-(6:05 → 6:00 → 5:55 → 5:50, roughly every 3 weeks — see `easy_ceiling_history` in that file) as
-long as the readiness ladder is staying green/amber. If a block is running consistently amber/red,
-hold the current ceiling rather than tightening on schedule — the "get faster" goal is subordinate
-to the time-budget and injury constraints, not the other way around.
+`pace.easy_ceiling` (7:00) is anchored to the athlete's measured PRs, not to a plan schedule —
+`athlete/zones.yml` documents how the Runna-seeded values (6:05 tightening toward 5:50) were
+contradicted by his actual 5k/10k and rebuilt from them. **Never tighten the ceiling on a
+calendar.** It moves only on the `pace_review` triggers in that file: a new PR, or real
+long-effort data from the Big Day and the lap simulations. If those show easy pace has genuinely
+improved, update `athlete/zones.yml` deliberately (with the evidence noted in its header); and if
+the readiness ladder is running amber/red, don't tighten at all — the "get faster" goal is
+subordinate to the time-budget and injury constraints, not the other way around.
 
 Wednesday's session type should follow the Champion progression across the block: hills → track/
 speed intervals → uphill-treadmill threshold → pre-taper tune-up. Don't run the same Wednesday

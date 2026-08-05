@@ -10,7 +10,7 @@ target_mode: effort
 brief: >
   40min easy after dark: 12 in, 20 steady, 8 down. Final check of race headlamp, batteries, layers.
 follow: >
-  First 10min: hold the pace shown, ZoneSense has no reading yet. After: Zone 1 — go slower if that's what it needs.
+  ZoneSense Zone 1 the whole way, and no target is set — the first ~10min has no reading, so run the opening by feel. Go slower whenever that's what it needs.
 time_critical: >
   Start after dark. Final check that the exact headlamp, batteries and layers going in the crew bag all still work, with a taper week's slack to fix anything that doesn't.
 intent: >
@@ -22,9 +22,8 @@ published:
   suunto: null
 ---
 
-Warmup
-- 10m 7:00/km Pace
-- 2m ZoneSense Z1
+Easy aerobic
+- 12m ZoneSense Z1
 
 Steady
 - 20m ZoneSense Z1

@@ -18,9 +18,8 @@ published:
   suunto: null
 ---
 
-Warmup
-- 10m 7:00/km Pace
-- 30m ZoneSense Z1
+Easy aerobic
+- 40m ZoneSense Z1
 
 Threshold 4x
 - 6m 5:55/km Pace

@@ -9,7 +9,7 @@ target_mode: effort
 brief: >
   75min easy/moderate. Last real back-to-back.
 follow: >
-  First 10min: hold the pace shown, ZoneSense has no reading yet. After: Zone 1 — go slower if that's what it needs.
+  ZoneSense Zone 1 the whole way, and no target is set — the first ~10min has no reading, so run the opening by feel. Go slower whenever that's what it needs.
 intent: >
   Last real back-to-back. Upper B after.
 origin: authored
@@ -17,6 +17,5 @@ published:
   suunto: null
 ---
 
-Easy/Moderate
-- 10m 7:15/km Pace
-- 65m ZoneSense Z1
+Easy aerobic
+- 75m ZoneSense Z1

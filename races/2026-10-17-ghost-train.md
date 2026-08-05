@@ -5,9 +5,10 @@
 Confirmed against [UltraSignup](https://ultrasignup.com/register.aspx?did=133446) and the
 [UltraRunning calendar](https://ultrarunning.com/calendar/event/ghost-train-rail-trail-races).
 
-> **⚠️ Registration:** the 30-Hour Ultra is listed as **SOLD OUT**, with the waitlist capped at 175
-> and reportedly filled in early May 2026. Confirm you actually hold an entry (or a waitlist
-> position) before this block gets much further — everything downstream assumes a start line.
+> **Registration confirmed (2026-08-04):** the athlete holds an entry to the 30-Hour Ultra. The
+> event is listed as SOLD OUT with the waitlist capped at 175 (reportedly filled early May 2026),
+> which is why this was flagged — resolved, not a live risk. Everything downstream assumes a
+> start line, and that assumption now holds.
 
 This file replaces Runna's race model entirely. Runna prescribed `50km race at 5:35-5:55/km`
 (road-marathon logic) — **discarded**. 50km isn't how this event is structured or scored, and that
@@ -40,7 +41,7 @@ Not chasing a scored lap tier — laps here are a logistics unit, not the object
 ## Pacing and clock
 
 30h cutoff = **11:11/km (18:00/mi) average including every stop** for 100 miles. See
-`athlete/zones.yml` for the `ultra_lap_early` / `ultra_lap_late` moving-pace targets these splits
+`athlete/zones.yml` for the `ultra_lap_early` / `ultra_lap_mid` / `ultra_lap_late` moving-pace targets these splits
 use — those are derived from the athlete's 5k/10k PRs, not from prescribed targets.
 
 **Start 9:00 AM Saturday, cutoff 3:00 PM Sunday.** Splits include realistic crew stops
@@ -147,30 +148,41 @@ of clock margin, GI, feet, sleepiness and gait rather than any number off the wa
 
 ## Crew & drop bags
 
-**Deferred to taper** (block week 18, week of 2026-10-05) — deliberately not decided now. Suggested
-structure given crew access every ~12km, to be finalized then:
+**Decided during block week 16** (2026-09-21 to 09-27), using lap sim 1 (2026-09-19, block week
+15) as the data point — locked in before lap sim 2 (block week 17) rehearses it for real. Deciding
+any later leaves no on-course session left to test it against before race day. Suggested structure
+given crew access every ~12km:
 
 - **Start/finish bag**: full change of shoes/socks, headlamp + spare batteries, warm layer for
   overnight, full food resupply, phone charger.
 - **7.5mi turnaround bag**: lighter — fluid/gel resupply, blister kit, salt tabs.
 
+Physical packing happens race week (see `2026-10-16-pre-race-shakeout.md`); this is the plan those
+bags get packed to.
+
 ## Night kit
 
-**Deferred to taper** (block week 18, week of 2026-10-05). `athlete/profile.md` already confirms
-4 headlamps available, so this is picking two plus spares/backup light/reflective vest as required
-by race rules — not blocked on anything, just intentionally left until then.
+**Decided during block week 16**, same timing as the crew bags above. `athlete/profile.md` already
+confirms 4 headlamps available, so this is picking two plus spares/backup light/reflective vest as
+required by race rules — not blocked on anything, just sequenced so lap sim 2 can test the actual
+choice rather than a placeholder.
 
 ## Shoe/sock rotation
 
-**Deferred to taper** (block week 18, week of 2026-10-05), informed by what the lap simulations
-(`training/block.md` § "Two full lap simulations") show — plan a full shoe change (likely lap 3–4)
-and sock changes at any crew stop where feet feel off, rehearsed there first.
+**Decided during block week 16**, informed by lap sim 1 (block week 15) — plan a full shoe change
+(likely lap 3–4) and sock changes at any crew stop where feet feel off. **Lap sim 2 (block week
+17) is where this gets rehearsed, not where it gets decided** — the two lap sims are 2 weeks apart
+with no other on-course session between them, so deciding at week 18 (the original plan) would
+leave the rotation completely untested before race day.
 
 ## Sleep-deprivation plan
 
-**Deferred to taper** (block week 18, week of 2026-10-05) — needs caffeine timing from
-`rules/fueling.md` § "Caffeine and the overnight plan" and whether a planned short sleep at a crew
-stop is part of the 100mi stretch-goal strategy, designed together rather than decided now.
+**Decided during block week 16** — needs caffeine timing from `rules/fueling.md` § "Caffeine and
+the overnight plan" and whether a planned short sleep at a crew stop is part of the 100mi
+stretch-goal strategy, designed together rather than in isolation. Unlike the kit above, there's
+no on-course session left to rehearse this against directly — the plan itself is the deliverable,
+informed by the night sessions already in the block (kit shakedown wk11, past-midnight wk14, the
+night long run wk16).
 
 ## Notes from the 2024-10-19 Ghost Train 50k
 

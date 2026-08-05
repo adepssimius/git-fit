@@ -121,12 +121,28 @@ Lower B is nearly bodyweight already (calf raise, Nordic, single-leg RDL, Copenh
 it travels unchanged and is the session to protect if only one lift happens that week, since the
 calf/achilles work is the highest-value durability item in the whole program.
 
+## Big Day week — 2026-08-31 to 09-06 (block week 13, Liftoscript Week 5)
+
+Champion week 10 moves the block's workout to Tuesday (`training/weeks/w13.md`), which puts
+Monday's Lower A the day before a quality session — exactly what `rules/strength-authoring.md`
+says to avoid whenever avoidable. Since the Tuesday placement is fixed by the calendar rather than
+a morning-of readiness call, Lower A is locked to tier-3 volume (accessories cut, mains at a
+single set, same weight as the normal progression) rather than left at the tier-1 default for the
+readiness ladder to downgrade. Upper A (Tue) is unaffected — upper body doesn't interfere with a
+running quality session.
+
 ## Taper handling (from `training/block.md`)
 
-- From block week 16: Lower A shifts in character toward Lower B (lighter loads, less bilateral
-  work) even though it keeps the "Lower A" slot in the schedule.
-- Block week 17: last heavy squat day.
-- Block week 19 (race week): no lifting at all.
+The shape is a dip, then one last full session, then down for good — not a monotonic decline:
+
+- **Block week 16 (Liftoscript Week 8): Lower A at reduced volume** — mains 2x5/2x6 at reduced
+  load, no tiers, accessories cut. This is the peak *running* week (biggest Saturday, the 03:00
+  night long run), and lifting is first in the cut order exactly when running stress peaks.
+- **Block week 17 (Week 9): the one final full Lower A — last squat day of the block**, back at
+  full tiers and the progression's top weight, ~2.5 weeks out. Last chance for a complete
+  strength stimulus that still has time to be absorbed before race day.
+- **Block week 18 (Week 10): Lower B + Upper B only**, at reduced sets.
+- **Block week 19 (race week): no lifting at all** — the program deliberately has no Week 11.
 
 When editing the program for those weeks, don't just delete lines — replace main-lift entries with
 lighter-load or bodyweight equivalents so the file stays a complete, pushable program for every

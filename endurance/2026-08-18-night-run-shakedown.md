@@ -10,7 +10,7 @@ target_mode: effort
 brief: >
   50min easy in the dark in full race night kit: 15 in, 25 steady, 10 down. A kit check, not a workout.
 follow: >
-  First 10min: hold the pace shown, ZoneSense has no reading yet. After: Zone 1 — go slower if that's what it needs.
+  ZoneSense Zone 1 the whole way, and no target is set — the first ~10min has no reading, so run the opening by feel. Go slower whenever that's what it needs.
 time_critical: >
   Start after full dark (~20:45 or later). The point is a kit check in real night conditions — headlamp, batteries, layers — so daylight defeats it.
 intent: >
@@ -23,9 +23,8 @@ published:
   suunto: null
 ---
 
-Warmup
-- 10m 7:00/km Pace
-- 5m ZoneSense Z1
+Easy aerobic
+- 15m ZoneSense Z1
 
 Steady
 - 25m ZoneSense Z1

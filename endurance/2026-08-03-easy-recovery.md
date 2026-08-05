@@ -10,13 +10,12 @@ target_mode: effort
 brief: >
   5km easy, nothing more. Day after the 30k — slower is better.
 follow: >
-  First 10min: hold the pace shown, ZoneSense has no reading yet. After: Zone 1 — go slower if that's what it needs.
+  ZoneSense Zone 1 the whole way, and no target is set — the first ~10min has no reading, so run the opening by feel. Go slower whenever that's what it needs.
 intent: Down-week Monday recovery run, paired with Lower A lifting after. Nothing hard today.
 origin: authored
 published:
   suunto: null
 ---
 
-Easy
-- 1.4km 7:00/km Pace
-- 3.6km ZoneSense Z1
+Easy aerobic
+- 5km ZoneSense Z1

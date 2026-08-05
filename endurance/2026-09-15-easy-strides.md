@@ -10,7 +10,7 @@ target_mode: effort
 brief: >
   33min easy, 5x20s hill strides with walk-backs, jog home. Ease into each stride.
 follow: >
-  ZoneSense Zone 1 for the running — pace shown, not targeted. Strides by feel at ~90-95%.
+  ZoneSense Zone 1 for the running — no target set, pace shown as data only. Strides by feel at ~90-95%.
 intent: >
   Strides — smooth and quick, each one an opportunity to improve leg speed.
 origin: authored
@@ -18,9 +18,8 @@ published:
   suunto: null
 ---
 
-Warmup
-- 10m 7:00/km Pace
-- 23m ZoneSense Z1
+Easy aerobic
+- 33m ZoneSense Z1
 
 Hill Strides 5x
 - 20s 4:35/km Pace

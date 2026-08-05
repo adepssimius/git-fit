@@ -30,7 +30,7 @@ published:
 ---
 
 Wake-up shuffle — expect this to feel awful
-- 15m 9:00/km Pace
+- 15m ZoneSense Z1
 
 Settle in — run/walk, ultra pace
 - 20m ZoneSense Z1

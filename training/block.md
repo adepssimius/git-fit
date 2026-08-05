@@ -80,8 +80,10 @@ the seed's drop to 20km the following week lands exactly on its mid-cycle rest b
   and which nothing else in an 11-week block gets near. Week 14's mid-cycle rest exists to absorb
   the pair. The Saturday session carries an explicit budget exception (below).
 - **Strength recedes as running stress rises** — Champion drops midweek strength around its week 13
-  and ends squats at week 14. Applied here: taper Lower A toward Lower B in character from block
-  week 16, last heavy squat day block week 17, no strength race week.
+  and ends squats at week 14. Applied here: block week 16 (the peak running week) cuts Lower A to
+  reduced volume — lifting goes first exactly when running stress peaks; block week 17 takes the
+  one final full Lower A, the last squat day of the block; from week 18, Lower B/Upper B character
+  only; no strength race week.
 - **Fuel long runs at 75+ g carb/hr**, building toward 90–120 g/hr (`rules/fueling.md`).
 - **Core routine 1–2×/daily.**
 
