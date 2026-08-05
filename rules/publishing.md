@@ -13,15 +13,11 @@ carry-forward could not be made to work reliably, so every week is written out i
 
 ## Endurance sessions → suuntool MCP
 
-**Use `suuntool` only.** There is a second Suunto MCP (`suunto-mcp`) that also compiles workouts,
-but it reports `backend: "private"` and writes to a local store — guides created there never reach
-the watch. `suuntool` is authenticated against the real account. Don't mix them.
-
 **The body is not what gets pushed.** An earlier version of this file said to "push the body (the
-intervals.icu-syntax text)" directly. That was never true of this toolchain: `suuntool` is
-byte-transparent — `guides_upload` sends whatever zip bytes it is handed and never opens or
-validates the archive. The watch wants a `guide.json` step tree in absolute wire units, so the
-markdown has to be compiled and packed first, by scripts in this repo:
+intervals.icu-syntax text)" directly. That was never true: `suuntool` is byte-transparent —
+`guides_upload` sends whatever zip bytes it is handed and never opens or validates the archive.
+The watch wants a `guide.json` step tree in absolute wire units, so the markdown has to be compiled
+and packed first, by scripts in this repo:
 
 ```bash
 python3 scripts/compile_guide.py endurance/2026-08-04-easy-strides.md   # -> guide.json

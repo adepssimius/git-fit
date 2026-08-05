@@ -5,21 +5,25 @@ name: Meeting Z2 + surges
 type: aerobic-base
 block_week: 14
 duration_s: 3600
-target_mode: power
+target_mode: hr
 follow: >
-  Power — hold Z2. ZoneSense doesn't apply to the trainer.
+  Warmup/recovery/main: ZoneSense Zone 1 early, Z2 HR (138-151bpm) on the closing block.
+  Surges: RPE ~8, hard but controlled — 30s is too short for HR or ZoneSense to read, go by feel.
 concurrent: meetings
 intent: >
-  Champion week 11 adds short surges to the x-train. Lower B lifting after.
+  Champion week 11 adds short surges to the x-train. Lower B lifting after. Surges are RPE-only
+  and brief (30s x10, ~5min hard inside a 40min ride) — treated like hill strides on an easy run
+  day rather than a quality session, so they don't breach the trainer's Z2 intensity_ceiling in
+  any way the wire format can even represent: no numeric target is asserted on those steps.
 origin: authored
 published:
   suunto: null
 ---
 
-- 15m 55% 85rpm
+- 15m ZoneSense Z1 85rpm
 
 Surges 10x
-- 30s 85% 95rpm
-- 2m 55% 85rpm
+- 30s 95rpm
+- 2m ZoneSense Z1 85rpm
 
-- 20m 60% 85-90rpm
+- 20m Z2 HR 85-90rpm

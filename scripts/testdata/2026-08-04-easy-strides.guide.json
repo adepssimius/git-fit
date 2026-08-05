@@ -1,11 +1,13 @@
 {
   "name": "Easy + Hill Strides",
-  "description": "ZoneSense Zone 1 (aerobic). Pace is a guide only - if holding Zone 1 means running slower, run slower.",
+  "description": "Easy ~4km, then press lap at a hill to start six 20s strides, 90s walk back. 1.5km easy home. Build into the first one. ZoneSense Zone 1 for the running - pace is shown, not targeted, so descents cost nothing. Strides by feel at ~90-95%.",
   "shortDescription": "Easy + Hill Strides",
   "localDate": "2026-08-04",
   "type": "sequence",
   "activities": [
-    1
+    1,
+    22,
+    53
   ],
   "usage": "workout",
   "owner": "git-fit",
@@ -15,26 +17,11 @@
     {
       "type": "fields",
       "trigger": {
-        "type": "or",
-        "triggers": [
-          {
-            "type": "stepDistance",
-            "value": 4000
-          },
-          {
-            "type": "manualLap"
-          }
-        ]
+        "type": "manualLap"
       },
-      "title": "Warmup",
+      "title": "EZ>HILL",
       "createManualLap": true,
       "fields": [
-        {
-          "type": "targetPace",
-          "value": 2.3,
-          "min": 2.22,
-          "max": 2.38
-        },
         {
           "type": "pace"
         },
@@ -65,7 +52,7 @@
               }
             ]
           },
-          "title": "Hill Strides",
+          "title": "STRIDE",
           "createManualLap": true,
           "fields": [
             {
@@ -100,7 +87,7 @@
               }
             ]
           },
-          "title": "Recovery",
+          "title": "REC",
           "createManualLap": true,
           "fields": [
             {
@@ -137,15 +124,9 @@
           }
         ]
       },
-      "title": "Cooldown",
+      "title": "CD",
       "createManualLap": true,
       "fields": [
-        {
-          "type": "targetPace",
-          "value": 2.3,
-          "min": 2.22,
-          "max": 2.38
-        },
         {
           "type": "pace"
         },

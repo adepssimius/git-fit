@@ -23,6 +23,45 @@ actually meant as minutes.
   line before and after.
 - **Ramps display as flat averages on Suunto**, not a real ramp. Prefer stepped blocks for anything
   that needs to guide the athlete in real time on the watch.
+- **Step titles are capped at 13 characters on the watch.** Write the header for a human reading
+  the plan; the compiler renders it into a fixed token vocabulary — see below.
+
+## Step titles — write prose, ship tokens
+
+Thirteen characters is far shorter than a useful header. Write the header for a human reading the
+plan (`Car — crew stop, sock change, foot care`); `TITLE_RULES` in `scripts/compile_guide.py`
+renders it to the watch vocabulary. Don't cramp the source file to fit the watch — that trades the
+readable artifact for the throwaway one.
+
+| Token | From | Token | From |
+|---|---|---|---|
+| `WU` | Warmup | `CREW` | Crew stop / Car — crew stop |
+| `CD` | Cooldown | `TURN` | Turnaround |
+| `EZ` | Easy | `OUT>NORTH` | Car -> north terminus |
+| `EZ/MOD` | Easy/Moderate | `BACK>CAR` | North terminus -> car |
+| `EZ>HILL` | Easy to hill | `OUT>SOUTH` | Car -> south end |
+| `MOD` | Moderate | `O&B 1` | Out-and-back 1 |
+| `STEADY` | Steady | `TOP-UP` | Top-up to a race-lap distance |
+| `PROG` | Progression | `LAP 1-2` | Laps 1-2 |
+| `STRIDE` | (Hill) Strides | `SETTLE` | Settle in |
+| `HILL` | Hills | `WAKE UP` | Wake-up shuffle |
+| `THR` | Threshold, incl. long/short | `NGT STEADY` | Night Steady |
+| `SURGE` / `PICKUP` | Surges / Pickups | `NGT BLOCK` | Night Blocks |
+| `REP` | Main Set | `HARD FIN` | Hard Finish |
+| `R/W` | Run/Walk | `DAWN FIN` | Dawn Finish |
+| `REC` | any rest step inside a repeat | | |
+
+Two properties to preserve when extending it:
+
+- **It is a closed vocabulary.** A handful of tokens reused everywhere is learnable in a session or
+  two and readable at a glance at hour 20; ad-hoc abbreviations are not — `STR` could be strides,
+  steady or straight. Add a rule to the table rather than inventing a one-off.
+- **Rep counts are dropped** — `Hill Strides 5x` becomes `STRIDE`. The watch already displays rep
+  progress, so repeating it spends scarce characters on information that is on screen anyway.
+
+Anything after a dash is explanation and gets stripped — it belongs in `brief:`, not on the watch.
+An unmapped header over 13 chars **warns** rather than being silently clipped; that is how
+`Easy to a hill` once reached the watch as `Easy to a hil`.
 - **A workout needs a description or the Suunto push errors.** Frontmatter `intent:` is not enough
   by itself — make sure the body or a description line is non-empty.
 
@@ -30,6 +69,27 @@ actually meant as minutes.
 
 **Durations:** `1h`, `10m`, `30s`, `1h2m30s` (or short form `5'`, `30"`).
 **Distances:** `2km`, `500mtr`, `1mi`, `4.5mi`. Never bare `m` for meters.
+
+**`ZoneSense Z1` — the display-only target.** Write this wherever ZoneSense governs the step
+(easy, long, b2b, lap-sim, race). The wire format has **no ZoneSense target** — its target fields
+are pace, HR, power and cadence, and ZoneSense is a separate Zapp the guide cannot drive. So the
+compiled step shows pace and HR as *data* and asserts no target at all, which is the honest
+encoding: the instruction lives in the guide description, and the watch's own ZoneSense alarm
+(`Targets.ZoneSenseZones`, see `athlete/zones.yml`) does the enforcing.
+
+Do **not** put a pace target on a ZoneSense-governed step as a stand-in. On rolling terrain it is
+wrong in both directions — it fires on descents, where speed is aerobically free, and under-reads
+climbs — and with the ZoneSense alarm enabled it gives two alarm sources with different opinions
+on a session where the instrument has already been chosen. Keep pace targets for steps where pace
+genuinely is the instrument: strides, intervals, threshold reps, anything under ~9min.
+
+**`until-lap` — the step ends only on a lap press.** Append it when the *terrain*, not the clock,
+decides where a step ends: `- 4km ZoneSense Z1 until-lap` means "run easy for about 4km, and press
+lap when you reach a hill." Without it, a step ends on its own distance or duration and whatever
+follows begins wherever the athlete happens to be standing — which is wrong for hill strides,
+anything needing a specific surface, and any block that has to start at a known landmark. The
+distance still shows as a countdown, so the nominal figure is a progress cue rather than a
+deadline.
 
 **Running targets:**
 - Absolute pace: `5:00/km Pace`, range `7:00-6:30/km Pace` (faster number second)
@@ -60,14 +120,37 @@ to the session length — a1 needs a rolling ~2min RR window, so it cannot track
 | `tempo` (continuous 15-20min blocks) | Pace, with ZoneSense as a cross-check |
 | `intervals`, strides, anything under ~3min | **Pace or HR only** — ZoneSense cannot respond fast enough |
 
-**Every session carries a `follow:` field stating this explicitly** — the athlete shouldn't have to
-consult a table mid-run. Derive it from the *binding* rep length, which is the SHORTEST work
-interval inside a repeat block, not the longest block in the file: an `8x2min` session is a
-2-minute-rep session even when a 20-minute steady block follows it. Standalone continuous efforts
-(a progression run with no repeats) use the longest work block instead.
+**Every session carries two athlete-facing fields, `brief:` and `follow:`.** Together they are the
+only prose that reaches the watch — `compile_guide.py` joins them, in that order, into the guide's
+description in the Suunto app. So this is what gets read at the trailhead, and nothing else does.
 
-Thresholds: **≥9min** → pace with ZoneSense as a genuine cross-check. **3–9min** → pace; ZoneSense
-lags, glance between reps at most. **<3min** → pace only; a1's ~2min window cannot track it.
+| Field | Answers | Content |
+|---|---|---|
+| `brief:` | *What is going to happen?* | The blocks in order, in plain language, plus the one thing that would spoil the session — going out too fast, starting a stride cold, opening a long run at a pace that only works for an hour. One clause, not a lecture. |
+| `follow:` | *What do I obey while it happens?* | The instrument, **per phase**. |
+
+**They are joined, not duplicated.** `brief:` doesn't restate the instrument and `follow:` doesn't
+re-narrate the session — if each repeated the other, the two would drift the first time one was
+edited alone, and the athlete would read a contradiction on the start line.
+
+**Derive `follow:` per phase, not per session.** An easy run with strides at the end is *ZoneSense
+for the running, feel for the strides*; collapsing that into a single instrument makes it wrong for
+one half or the other. The binding-rep rule still governs sessions that are **quality throughout**,
+because the athlete moves between pieces continuously and needs one rule that holds across all of
+them: an `8x2min` session is a 2-minute-rep session even when a 20-minute steady block follows it.
+The test is whether the phases are interleaved (one instrument) or sequential (one each).
+
+Where a phase is too short for any instrument, say so plainly — **"by feel" is a complete answer**,
+and a better one than naming an instrument that cannot respond in the time available.
+
+**The two together must fit 256 characters**, which is tighter than it sounds: roughly 120 each.
+`compile_guide.py` warns rather than silently truncating, because a description cut mid-sentence
+ships a guide whose last instruction is a fragment. If it won't fit, the reasoning is what to cut —
+that belongs in `intent:`, which is written for the repo and never leaves it.
+
+Thresholds for picking the instrument within a phase: **≥9min** → pace with ZoneSense as a genuine
+cross-check. **3–9min** → pace; ZoneSense lags, glance between reps at most. **<3min** → pace or
+feel only; a1's ~2min window cannot track it.
 
 See `athlete/zones.yml` → `zonesense` for the reasoning and caveats.
 
@@ -93,8 +176,11 @@ block_week: 9
 distance_km: 5.0             # omit or approximate for time-based sessions
 duration_s: 2100             # always present — the number the time-budget check sums
 target_mode: pace            # pace | hr | effort — long/ultra work (>~2h) must be hr or effort, never pace
-follow: >                    # REQUIRED. Which instrument the athlete actually follows on the day.
-  Pace only. ~2min reps ...  # Derived from the session's binding rep length — see the table above.
+brief: >                     # REQUIRED. WHAT HAPPENS, in plain language, plus the one thing that
+  Easy 4km, six 20s hill     # would spoil it.
+  strides, 1.5km home...
+follow: >                    # REQUIRED. WHAT TO OBEY, per phase. Joined onto `brief:` to form the
+  Run it in ZoneSense Z1...  # guide description — the two together must fit 256 chars.
 time_critical: >             # ONLY on sessions whose time of day is load-bearing (night runs, the
   START 03:00 because ...    # Big Day pair, the bicarb session). Omit it entirely otherwise.
 intent: One sentence — why this session exists this week, and any placement constraint it's satisfying.

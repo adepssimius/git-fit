@@ -70,8 +70,9 @@ No specialized equipment required for the current program.
   breakdown that shows up in fatigued running form late in a race.
 - **Pull Up:** programmed as `Pull Up` with an `update:` script (`weights = bodyweight +
   originalWeights[ns]`) so the app displays total system weight, while `progress:`/the hand-authored
-  steps only move the added-load portion. Requires bodyweight to be set in the Liftosaur profile to
-  display correctly — currently unset (`athlete/zones.yml` → `bodyweight_lb: null`).
+  steps only move the added-load portion. Requires bodyweight to be set in Liftosaur to display
+  correctly — recorded 2026-08-04 (162lb, via `add_measurement`). Re-record when it changes; the
+  `update:` script reads the current value live, so it doesn't need re-pushing with the program.
 - **Custom exercises:** `Single Leg Calf Raise` and `Dead Bug` aren't in Liftosaur's built-in
   exercise list and were created as custom exercises (via `create_custom_exercise`) rather than
   substituted for something close-but-different. If either needs editing, update the existing

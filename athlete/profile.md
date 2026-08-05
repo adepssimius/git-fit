@@ -86,8 +86,10 @@ meeting_budget:
   default_allocation: walking      # durability is the limiter; aerobic base is already largely built
 
   trainer:
-    weekly_min: 180
-    session_max_min: 90
+    # No weekly floor — walking is the stated priority (default_allocation above) and takes as
+    # much of the pool as the ramp cap allows; the trainer fills whatever's left. A prior 180min
+    # floor was never once met across the block and fought the walking-first intent.
+    session_max_min: 90              # hard per-session cap
     intensity_ceiling: "Z2"        # never allowed to compete with a run quality session
 
   walking:
@@ -99,8 +101,7 @@ meeting_budget:
     weekly_min_start: 180          # block week 9
     weekly_min_peak: 465           # realistically reached at block weeks 16-17, then tapers
     weekly_ramp_max_pct: 15        # max week-over-week increase — check this every week
-    style: "brisk, sustained; incline pad + weight vest = the Champion Plan's uphill/vest work"
-    weight_vest_from_week: 12      # introduce gradually, after a walking base is established
+    style: "brisk, sustained; incline pad optional (unconfirmed) — no weight vest, see below"
     # Planned per-block-week totals (min), respecting the cap and tapering into race week:
     # wk9 180 | wk10 205 | wk11 235 | wk12 270 | wk13 310 | wk14 355
     # wk15 405 | wk16 465 | wk17 465 (hold) | wk18 300 (taper) | wk19 150 (race week)

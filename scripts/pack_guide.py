@@ -10,11 +10,15 @@ The archive is a plain zip with exactly three flat entries, no directories, no n
     guide.json      the workout (see compile_guide.py)
     icon.png        exactly 300x300
 
-Determinism is the point. Each JSON file is serialised the way `JSON.stringify(v, null, 2)`
-does it, and the zip uses a fixed fake mtime rather than the real clock, so identical guide
-content always produces byte-identical archive bytes. That is what makes "has this session
-changed since it was published" a plain diff instead of a fuzzy comparison — which is
-exactly what rules/publishing.md's `published.suunto` idempotency check assumes it can do.
+Determinism is the point. JSON is serialised with a stable two-space indent and the zip uses a
+fixed fake mtime rather than the real clock, so identical guide content always produces
+byte-identical archive bytes. That is what makes "has this session changed since it was
+published" a sha256 comparison instead of a fuzzy one — which is exactly what
+rules/publishing.md's `published.suunto` idempotency check assumes it can do.
+
+Determinism is for *our* diffing, not for the API: the server accepts any valid zip and does not
+care how it was produced. So don't chase byte-compatibility with some other packer — the only
+property worth preserving here is that the same input gives the same output.
 
 Usage:
     python3 scripts/pack_guide.py endurance/2026-08-04-easy-strides.md --out guide.zip
@@ -63,8 +67,8 @@ def solid_icon_png(size: int = ICON_SIZE, rgb: tuple[int, int, int] = ICON_RGB) 
 
 
 def dumps(value: dict) -> bytes:
-    """Match `JSON.stringify(value, null, 2)` byte-for-byte: two-space indent, no trailing
-    whitespace, unicode left raw rather than \\u-escaped."""
+    """Stable JSON bytes: two-space indent, no trailing whitespace, unicode left raw rather than
+    \\u-escaped. Fixed so the same guide always packs to the same archive."""
     return json.dumps(value, indent=2, ensure_ascii=False).encode("utf-8")
 
 

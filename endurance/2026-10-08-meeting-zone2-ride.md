@@ -5,9 +5,9 @@ name: Meeting Z2 — light
 type: aerobic-base
 block_week: 18
 duration_s: 3600
-target_mode: power
+target_mode: hr
 follow: >
-  Power — hold Z2. ZoneSense doesn't apply to the trainer.
+  ZoneSense Zone 1 throughout — deliberately lighter than the standard Z2 x-train.
 concurrent: meetings
 intent: >
   Short and purely aerobic through the taper.
@@ -16,6 +16,6 @@ published:
   suunto: null
 ---
 
-- 10m 55% 85rpm
-- 40m 62% 85-90rpm
-- 10m 55% 85rpm
+- 10m ZoneSense Z1 85rpm
+- 40m ZoneSense Z1 85-90rpm
+- 10m ZoneSense Z1 85rpm

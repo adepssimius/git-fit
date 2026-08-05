@@ -20,7 +20,7 @@ lifts:
   pull_up: 10                 # added load via belt/band, bodyweight not included
   incline_bench_press: 55
 
-bodyweight_lb: null            # TODO: fill in — needed for Pull Up's bodyweight+load display
+bodyweight_lb: 162              # confirmed 2026-08-04; recorded in Liftosaur measurements too
 
 note: >
   If a prescribed weight feels trivially easy in an early session, jump it by hand in the next

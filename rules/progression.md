@@ -89,6 +89,16 @@ day is exactly the kind of load spike that causes plantar fascia or achilles pro
 walking total would need to jump more than 15% to hit the target in `athlete/profile.md`, hold it at
 the capped increase instead and let the peak arrive a week or two later than planned.
 
+**During and just after a travel week with hiking** (`sport: Hike`, `concurrent: family`), check the
+cap against *combined time-on-feet* (`sport: Walk` + `sport: Hike` that week), not the walking pool
+in isolation. The injury mechanism the cap defends against is cumulative foot-time load, and hiking
+loads the same tissues. A week that resumes meeting-walking at a higher figure than the *walking*
+15%/week cap alone would allow is not a spike if a recent hiking week already delivered comparably
+high or higher combined foot-time — the tissue has already demonstrated tolerance. Concretely: block
+week 12's ~600min hiking week means block week 14's 355min pure-walking figure is a *drop* from
+recent load, not a violation, even though it is +61% over week 13's 220min walking-only total. Only
+throttle the walking figure in this situation if the combined-load read still shows a genuine spike.
+
 ## When `log/` should trigger a re-author, not just a note
 
 - A missed or shortened long run → don't try to "make it up" the following week; re-derive that

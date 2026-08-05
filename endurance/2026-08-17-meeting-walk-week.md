@@ -18,8 +18,7 @@ origin: authored
 ---
 
 Weekly target: **170 minutes** of brisk walking, distributed across call-heavy days
-rather than done in one block. Mon-Fri at home only; the trip starts Saturday, and hiking takes over from there. Flat to slight incline; add the weight vest per
-`athlete/profile.md` once past block week 12.
+rather than done in one block. Mon-Fri at home only; the trip starts Saturday, and hiking takes over from there. Flat to slight incline.
 
 Tracked in-repo only (`publish: false`) — this is a load-tracking record, not a
 pushable watch guide, so it deliberately isn't written in intervals.icu step syntax.

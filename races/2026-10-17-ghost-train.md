@@ -147,8 +147,8 @@ of clock margin, GI, feet, sleepiness and gait rather than any number off the wa
 
 ## Crew & drop bags
 
-TODO — fill in with the crew roster and per-stop contents once confirmed. Suggested structure given
-crew access every ~12km:
+**Deferred to taper** (block week 18, week of 2026-10-05) — deliberately not decided now. Suggested
+structure given crew access every ~12km, to be finalized then:
 
 - **Start/finish bag**: full change of shoes/socks, headlamp + spare batteries, warm layer for
   overnight, full food resupply, phone charger.
@@ -156,20 +156,21 @@ crew access every ~12km:
 
 ## Night kit
 
-TODO — headlamp model, spare batteries (confirm count — see `athlete/profile.md` equipment TODOs),
-backup handheld light, reflective vest if required by race rules, warm layer for the coldest overnight
-hours.
+**Deferred to taper** (block week 18, week of 2026-10-05). `athlete/profile.md` already confirms
+4 headlamps available, so this is picking two plus spares/backup light/reflective vest as required
+by race rules — not blocked on anything, just intentionally left until then.
 
 ## Shoe/sock rotation
 
-TODO — plan at least one full shoe change (likely lap 3–4) and sock changes at any crew stop where
-feet feel off. Rehearse the swap during lap simulations (`training/block.md` § "Two full lap
-simulations").
+**Deferred to taper** (block week 18, week of 2026-10-05), informed by what the lap simulations
+(`training/block.md` § "Two full lap simulations") show — plan a full shoe change (likely lap 3–4)
+and sock changes at any crew stop where feet feel off, rehearsed there first.
 
 ## Sleep-deprivation plan
 
-TODO — caffeine timing strategy (see `rules/fueling.md`), whether a planned short sleep at a crew
-stop is part of the strategy for the 100mi stretch goal, and how that trades against clock margin.
+**Deferred to taper** (block week 18, week of 2026-10-05) — needs caffeine timing from
+`rules/fueling.md` § "Caffeine and the overnight plan" and whether a planned short sleep at a crew
+stop is part of the 100mi stretch-goal strategy, designed together rather than decided now.
 
 ## Notes from the 2024-10-19 Ghost Train 50k
 

@@ -31,22 +31,43 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 
-# The server echoes `owner` back as "Suunto" regardless of what is uploaded (observed in
-# suuntool's round-trip test), so the VALUE is fiction. The key still has to be PRESENT:
-# omitting it returns HTTP 400 "Instantiation of ... Guide$Sequence value failed", because the
-# server's deserialiser treats it as a required creator property. Same for `url`. So these are
-# set to something honest and ignored, rather than left out.
+# `owner` and `url` must both be PRESENT: omitting them returns HTTP 400
+# "Instantiation of ... Guide$Sequence value failed", because the server's deserialiser treats
+# them as required creator properties.
+#
+# The VALUE of `owner` behaves differently on the two write paths, observed directly:
+#   create (POST) -> server overwrites it with "Suunto" no matter what was sent
+#   update (PUT)  -> server stores what was sent (a guide created here came back as "git-fit")
+# So a guide's owner changes the first time it is updated. Nothing depends on it, but don't be
+# surprised by the inconsistency in guides_list. `url` is stored as sent on both paths.
 OWNER = "git-fit"
 URL = "https://github.com/local/git-fit"
 
-MAX_STEP_TITLE = 13      # the watch's renderer truncates past these; enforce rather than discover
+# Text and structure limits. The first five are the watch renderer's own caps — enforce them here
+# rather than discovering them as a mangled screen mid-session.
+MAX_STEP_TITLE = 13
 MAX_FIELD_TITLE = 9
 MAX_STATIC_TEXT = 54
 MAX_STEPS = 1000
 MAX_REPEAT_TIMES = 100
+# The description cap is a CONSERVATIVE GUESS, not a measured limit. Descriptions of 237 and 249
+# chars have been accepted and round-tripped back intact through guides_list; the real ceiling has
+# never been probed. If a session genuinely needs more room, test it rather than trusting 256.
 MAX_DESCRIPTION = 256
 
-ACTIVITY_IDS = {"Run": 1, "Ride": 2}     # confirmed via suuntool activity_type_name
+# Activity ids confirmed via suuntool activity_type_name.
+RUNNING, TRAIL_RUNNING, TREADMILL, CYCLING = 1, 22, 53, 2
+
+# Sports each guide offers itself for. The FIRST entry drives pace-vs-speed display, so RUNNING
+# leads. Running sessions offer all three because the plan spans all three surfaces — uphill
+# treadmill threshold work, rail-trail sessions on the real course, ordinary road running — and a
+# guide restricted to RUNNING simply would not appear if the watch was started in Treadmill or
+# Trail running mode. Offering all three costs nothing and removes a whole class of "where did my
+# workout go" on the morning of a session.
+ACTIVITIES = {
+    "Run": [RUNNING, TRAIL_RUNNING, TREADMILL],
+    "Ride": [CYCLING],
+}
 # Walk is absent on purpose: every Walk session in this repo is `publish: False` (meeting
 # walks, tracked in-repo only), so no walk guide has ever needed an id. Add it when one does.
 
@@ -126,9 +147,21 @@ def parse_pace_clock(s: str) -> float:
     return int(mm) * 60 + int(ss)
 
 
-def parse_target(rest: str, zones: dict, rel: str) -> dict:
-    """The target portion of a step line -> a target field, in wire units."""
+def parse_target(rest: str, zones: dict, rel: str) -> dict | None:
+    """The target portion of a step line -> a target field in wire units, or None.
+
+    None means "display only": the step shows pace and HR as data and asserts no target. That is
+    the honest encoding for ZoneSense-governed running, because the wire format has no ZoneSense
+    target — its target fields are pace, HR, power and cadence, and ZoneSense is a separate Zapp
+    the guide cannot drive. Putting a pace target on such a step invents a second, contradictory
+    instrument: on rolling terrain it fires on descents, where speed is aerobically free.
+    """
     rest = rest.strip()
+
+    # `ZoneSense Z1` — governed by ZoneSense, which the format cannot express. The instruction
+    # lives in the guide description; the watch's own ZoneSense alarm does the enforcing.
+    if re.match(r"^ZoneSense\s+Z[1-3]$", rest, re.I):
+        return None
 
     # `7:00/km Pace` or `7:45-8:45/km Pace`
     m = re.match(r"^(\d+:\d+)(?:-(\d+:\d+))?/km\s+Pace$", rest, re.I)
@@ -209,16 +242,95 @@ def load_zones() -> dict:
 # --------------------------------------------------------------------------- compiling
 
 def ascii_fold(s: str) -> str:
-    """The watch renderer is not reliably unicode-safe, and suunto-mcp folded these too."""
+    """Fold typographic punctuation to ASCII before anything reaches the watch.
+
+    Defensive rather than proven: the markdown is full of em-dashes and curly quotes, and the
+    watch renderer's unicode handling is untested. Folding costs nothing and removes a whole
+    class of "why is there a box character in my workout name" — but if a session ever genuinely
+    needs a non-ASCII character, test it before assuming this is why it failed.
+    """
     for a, b in (("\u2014", "-"), ("\u2013", "-"), ("\u2019", "'"),
                  ("\u201c", '"'), ("\u201d", '"'), ("\u2192", "->"), ("\u00b0", "deg")):
         s = s.replace(a, b)
     return s
 
 
+# --------------------------------------------------------------------------- step titles
+#
+# The watch caps a step title at 13 characters, which is far too short for the descriptive
+# headers the markdown wants to carry ("Easy to a hill", "Car -> north terminus (drop bag passed
+# at 5km)"). Rather than force cryptic headers into the source files — which would make the plan
+# harder to read for the one reason that matters least — the repo keeps prose headers and this
+# table renders them into a fixed watch vocabulary.
+#
+# Two properties worth preserving if this is extended:
+#   * The tokens are a CLOSED vocabulary. A handful of short words, reused everywhere, is
+#     learnable in a session or two and readable at a glance at hour 20. Ad-hoc abbreviations
+#     are not — "STR" could be strides, steady or straight.
+#   * Rep counts are dropped ("Hill Strides 5x" -> STRIDE). The watch shows rep progress itself,
+#     so repeating it in the title spends scarce characters on information already on screen.
+#
+# First match wins, so specific patterns precede general ones. `\1` backreferences are expanded.
+TITLE_RULES: list[tuple[str, str]] = [
+    (r"^warm\s*up",                     "WU"),
+    (r"^cool\s*down",                   "CD"),
+    (r"^easy\s*(to|>)\s*hill",          "EZ>HILL"),
+    (r"^easy\s*/\s*mod",                "EZ/MOD"),
+    (r"^easy",                          "EZ"),
+    (r"^moderate",                      "MOD"),
+    (r"^steady",                        "STEADY"),
+    (r"^progression",                   "PROG"),
+    (r"^(hill\s+)?strides",             "STRIDE"),
+    (r"^hills",                         "HILL"),
+    (r"^(long|short)\s+threshold",      "THR"),
+    (r"^threshold",                     "THR"),
+    (r"^surges",                        "SURGE"),
+    (r"^pickups",                       "PICKUP"),
+    (r"^main\s+set",                    "REP"),
+    (r"^run\s*/\s*walk",                "R/W"),
+    (r"^night\s+steady",                "NGT STEADY"),
+    (r"^night\s+blocks",                "NGT BLOCK"),
+    (r"^wake-?\s*up",                   "WAKE UP"),
+    (r"^settle\s+in",                   "SETTLE"),
+    (r"^recovery",                      "REC"),
+    # Course geography — lap sims and the Big Day
+    (r"^(car\s*[-—>]*\s*)?crew\s+stop", "CREW"),
+    (r"^car\b.*crew",                   "CREW"),
+    (r"^turnaround",                    "TURN"),
+    (r"^car\s*->\s*north",              "OUT>NORTH"),
+    (r"^north\s+terminus\s*->\s*car",   "BACK>CAR"),
+    (r"^car\s*->\s*south",              "OUT>SOUTH"),
+    (r"^out-and-back\s*(\d+)",          r"O&B \1"),
+    (r"^top-?up",                       "TOP-UP"),
+    # Race day
+    (r"^laps?\s+([\d-]+)",              r"LAP \1"),
+    (r"^hard\s+finish",                 "HARD FIN"),
+    (r"^dawn\s+finish",                 "DAWN FIN"),
+]
+
+
 def step_title(raw: str, fallback: str) -> str:
-    title = ascii_fold(re.sub(r"\s*\d+x$", "", raw).strip()) or fallback
-    return title[:MAX_STEP_TITLE].strip()
+    """A markdown section header -> a watch-safe step title, via the closed vocabulary above."""
+    head = ascii_fold(re.sub(r"\s*\d+x$", "", raw)).strip()
+    if not head:
+        return fallback[:MAX_STEP_TITLE]
+
+    # Match against the WHOLE header — the distinguishing word often sits past a dash
+    # ("Car - crew stop, sock change" is a CREW stop, not a "Car"). The token replaces the
+    # header outright; only explicit \1 backreferences carry anything through.
+    for pattern, token in TITLE_RULES:
+        m = re.match(pattern, head, re.I)
+        if m:
+            return m.expand(token).strip()[:MAX_STEP_TITLE]
+
+    # Unmapped: headers explain themselves after a dash ("Turnaround - drop-bag check"), and
+    # that explanation belongs in the brief rather than on a 13-character watch screen.
+    head = head.split(" - ")[0].strip()
+    if len(head) > MAX_STEP_TITLE:
+        # A silently clipped title is how "Easy to a hill" reached the watch as "Easy to a hil".
+        print(f"warning: step title '{head}' has no TITLE_RULES entry and exceeds "
+              f"{MAX_STEP_TITLE} chars — add a token or shorten the header", file=sys.stderr)
+    return head[:MAX_STEP_TITLE].strip()
 
 
 def build_step(line: str, title: str, zones: dict, rel: str, hr_first: bool) -> dict:
@@ -228,13 +340,22 @@ def build_step(line: str, title: str, zones: dict, rel: str, hr_first: bool) -> 
         raise CompileError(f"{rel}: cannot parse step '{line.strip()}'")
     token, rest = m.group(1), m.group(2)
 
+    # `until-lap` — the step ends ONLY on a lap press, never on its own clock or distance.
+    # For a step whose end depends on the terrain rather than the numbers ("run easy until you
+    # reach a hill, then start the strides"), an automatic trigger fires in the wrong place, and
+    # the block that follows begins wherever the athlete happens to be standing.
+    until_lap = bool(re.search(r"\buntil-lap\b", rest))
+    rest = re.sub(r"\buntil-lap\b", "", rest).strip()
+
     dur = parse_distance(token) or parse_duration(token)
     if dur is None:
         raise CompileError(f"{rel}: '{token}' is neither a duration nor a distance")
 
     cadence = parse_cadence(rest)
-    target = parse_target(re.sub(r"\s*\d+(-\d+)?rpm", "", rest).strip(), zones, rel) \
-        if not (cadence and not re.sub(r"\s*\d+(-\d+)?rpm", "", rest).strip()) else None
+    rest_no_cadence = re.sub(r"\s*\d+(-\d+)?rpm", "", rest).strip()
+    # A cadence-only step (trainer work) carries no other target; anything else must resolve,
+    # and parse_target raises rather than guessing.
+    target = parse_target(rest_no_cadence, zones, rel) if rest_no_cadence else None
 
     if dur["kind"] == "time":
         trigger_inner = {"type": "stepDuration", "value": dur["seconds"]}
@@ -258,11 +379,17 @@ def build_step(line: str, title: str, zones: dict, rel: str, hr_first: bool) -> 
         if "title" in f and len(f["title"]) > MAX_FIELD_TITLE:
             raise CompileError(f"{rel}: field title '{f['title']}' exceeds {MAX_FIELD_TITLE}")
 
+    # Default: "press lap to skip early" — the standard pattern, and the only way a step that
+    # overruns its distance on a wrong turn doesn't strand the athlete mid-session. With
+    # `until-lap` the automatic half is dropped entirely and only the lap press ends the step;
+    # the countdown field stays, so the nominal distance is still visible as a progress cue
+    # rather than as a deadline.
+    trigger = ({"type": "manualLap"} if until_lap
+               else {"type": "or", "triggers": [trigger_inner, {"type": "manualLap"}]})
+
     return {
         "type": "fields",
-        # "press lap to skip early" — the standard pattern, and the only way a step that
-        # overruns its distance on a wrong turn doesn't strand the athlete mid-session.
-        "trigger": {"type": "or", "triggers": [trigger_inner, {"type": "manualLap"}]},
+        "trigger": trigger,
         "title": title,
         "createManualLap": True,
         "fields": fields,
@@ -279,7 +406,7 @@ def compile_session(path: Path, zones: dict | None = None) -> dict:
             raise CompileError(f"{rel}: missing frontmatter `{key}`")
     if fm.get("publish", "").lower() == "false":
         raise CompileError(f"{rel}: marked `publish: {fm['publish']}` — not a watch guide")
-    if fm["sport"] not in ACTIVITY_IDS:
+    if fm["sport"] not in ACTIVITIES:
         raise CompileError(f"{rel}: no activity id mapped for sport '{fm['sport']}'")
 
     hr_first = fm.get("target_mode") == "hr"
@@ -299,7 +426,7 @@ def compile_session(path: Path, zones: dict | None = None) -> dict:
             # Rest steps inside a repeat get their own title so the watch screen isn't
             # ambiguous about which half of the interval you're in.
             for s in built[1:]:
-                s["title"] = "Recovery"
+                s["title"] = "REC"
             steps.append({"type": "repeat", "times": repeat_times, "steps": built})
         else:
             steps.extend(built)
@@ -324,10 +451,20 @@ def compile_session(path: Path, zones: dict | None = None) -> dict:
     if total > MAX_STEPS:
         raise CompileError(f"{rel}: {total} steps exceeds the {MAX_STEPS} limit")
 
-    # The description is what the athlete reads in the app listing, so it leads with `follow:` —
-    # which instrument to actually obey. rules/endurance-authoring.md requires it to be non-empty
-    # or the push errors.
-    description = ascii_fold(fm.get("follow") or fm.get("intent") or fm["name"])[:MAX_DESCRIPTION]
+    # The guide description is the only prose that reaches the watch, and it is `brief:` followed
+    # by `follow:` — what is going to happen, then what to obey while it does. They are joined
+    # rather than duplicated: if each field restated the other's content, the two would drift the
+    # first time one was edited alone.
+    #
+    # `brief:` is still being rolled out, so a file with only `follow:` degrades to the old
+    # behaviour rather than failing. `intent:` is the last resort — it is written for the repo,
+    # not the athlete, but an empty description errors the push outright.
+    parts = [ascii_fold(fm.get(k, "")).strip() for k in ("brief", "follow")]
+    description = " ".join(p for p in parts if p) or ascii_fold(fm.get("intent") or fm["name"])
+    if len(description) > MAX_DESCRIPTION:
+        print(f"warning: {rel}: brief: + follow: is {len(description)} chars, truncated to "
+              f"{MAX_DESCRIPTION} — trim one, or move reasoning into intent:", file=sys.stderr)
+        description = description[:MAX_DESCRIPTION]
 
     # Key order mirrors a known-good compile of this format. Order doesn't affect parsing, but
     # it keeps a diff against a reference guide readable.
@@ -337,7 +474,7 @@ def compile_session(path: Path, zones: dict | None = None) -> dict:
         "shortDescription": ascii_fold(fm["name"])[:23],
         "localDate": fm["date"],
         "type": "sequence",
-        "activities": [ACTIVITY_IDS[fm["sport"]]],
+        "activities": ACTIVITIES[fm["sport"]],
         "usage": "workout",
         "owner": OWNER,
         "url": URL,
@@ -351,10 +488,15 @@ def compile_session(path: Path, zones: dict | None = None) -> dict:
 def selftest() -> int:
     """Compile against a golden fixture.
 
-    The fixture's STRUCTURE (trigger shape, field order, countdown types, repeat nesting, the
-    m/s inversion) is a verified suunto-mcp compile of this exact session, captured before that
-    backend was taken out of the publishing path. The target numbers follow this repo's own
-    slower-only band rule, so they are ours rather than inherited.
+    This is a REGRESSION test, not a correctness proof — the fixture was generated by this
+    compiler, so it can only tell you the output changed, never that the output is right. What
+    grounds it is that this exact guide was accepted by the Suunto server and rendered on the
+    watch, so the shapes it locks in (trigger structure, field order, countdown types, repeat
+    nesting, the m/s pace inversion) are known-good rather than merely self-consistent.
+
+    Regenerate deliberately, never reflexively: `compile_guide.py <session> > <fixture>` after a
+    change you meant to make. Regenerating to silence a failure discards the only thing here that
+    has actually been on a watch.
     """
     golden_path = ROOT / "scripts" / "testdata" / "2026-08-04-easy-strides.guide.json"
     if not golden_path.exists():
