@@ -32,10 +32,21 @@ HR 41–47. A converted value far outside that is a conversion error, not a phys
 | `maxSpo2` | 0–1 | `0.98` = 98% |
 | `balance` (wellness_recovery) | 0–1 | body resources. Ladder: ≥0.70 green, 0.40–0.70 amber |
 | `stressState` | enum | low integers = calm. Not in the ladder; ignore unless something else is odd |
-| `Temperature` (SML) | **Kelvin** | `295.7` = 22.5°C. The first few minutes read high — that's the watch warming on-wrist, not air temperature |
+| `Temperature` (SML) | **Kelvin, and USELESS** | see below — never report it as ambient |
 | `recoveryTime` | seconds | the watch's own prescription, e.g. `40380` = 11h13m |
 | `totalTime` | seconds | |
 | `totalDistance` | metres | |
+
+## Never use the temperature field
+
+**The sensor is inside the watch, against the wrist, so it largely reads body heat.** It is not an
+ambient thermometer and no amount of conversion makes it one. Two real errors from one week: an
+85°F outdoor run was recorded as ~72°F and written up as having "no heat confound", and a 72°F gym
+was reported as 79°F. Wrong in both directions, so there isn't even a usable bias to correct for.
+
+If temperature matters to the interpretation — and it often does, because ZoneSense self-corrects
+for heat and a hot day genuinely lowers the aerobic threshold — **ask the athlete**. He knows what
+it was. Never infer it from the file.
 
 ## Fragmentation
 
@@ -46,6 +57,28 @@ five separate items totalling ~8h.
 This matters because `rules/progression.md` scores fragmentation as its own signal and is explicit
 that **3+ fragments is red regardless of total hours**. Summing durations and reporting "8h, green"
 inverts the actual reading. Count the items before trusting the total.
+
+## Treadmill distance is unreliable, and the laps stay raw after calibration
+
+With no foot pod (`Settings.FootPodUsed: false`) the watch derives treadmill distance from wrist
+motion, which over-reads — and **not by a constant factor**. On the 2026-08-05 run it over-read
+~10% at 5.3mph but only ~2% at 6.3mph, because arm swing scales differently from speed.
+
+If the athlete calibrates against the treadmill afterwards, the watch stores **both** figures and
+they disagree:
+
+| where | 2026-08-05 | which |
+|---|---|---|
+| `Header.Distance`, `totalDistance`, Move `Distance` | 9060m | calibrated |
+| Move `DistanceMax`, Activity `Distance`, **sum of lap distances** | 9733m | raw |
+
+So the summary is corrected but **the per-lap distances are not**, and any per-lap speed computed
+from them is wrong. Derating laps by the summary ratio helps but can't fully fix it, since the
+error isn't uniform.
+
+**On a treadmill, the trustworthy per-block figure is the belt speed the athlete set × the lap
+duration.** He sets speed precisely and the clock is exact, so that beats both stored distances.
+Ask what speeds he ran rather than deriving them.
 
 ## Timestamps
 
