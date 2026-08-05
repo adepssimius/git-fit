@@ -10,7 +10,7 @@ target_mode: effort
 brief: >
   35min easy.
 follow: >
-  ZoneSense Zone 1 (aerobic). Pace is a guide only — if holding Zone 1 means running slower, run slower.
+  First 10min: hold the pace shown, ZoneSense has no reading yet. After: Zone 1 — go slower if that's what it needs.
 intent: >
   Short and easy. Lower A after — the last lower-body lifting before the Big Day.
 origin: authored
@@ -19,4 +19,5 @@ published:
 ---
 
 Easy
-- 35m ZoneSense Z1
+- 10m 7:00/km Pace
+- 25m ZoneSense Z1

@@ -109,7 +109,9 @@ course. Not optional for this race:
   enormously under this time budget; (b) kit validation — headlamp, battery life, layers — is worth
   doing regardless of comfort in the dark; (c) the **real** untested variable is not darkness but
   **sleep deprivation stacked on 15+ hours of accumulated fatigue**, which no 11-week block can
-  fully rehearse. The Big Day (finishing ~23:30 after 5h27) is the closest available approximation.
+  fully rehearse. The closest available approximation is the **Big Day weekend pair**: Saturday's
+  50k finishes around noon, then Sunday's 03:00 run starts on ~5h sleep and 15-hour-old legs. It's
+  the Sunday half that supplies the sleep-deprivation stimulus — the Saturday 50k runs in daylight.
 - **Run/walk protocol from session one**, rehearsed in every long run — never introduced for the
   first time on race day.
 - **Lap simulations** — staging point → real 7.5mi turnaround → staging (20.9km), plus a 3.1km

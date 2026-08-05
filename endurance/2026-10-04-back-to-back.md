@@ -9,7 +9,7 @@ target_mode: effort
 brief: >
   75min easy/moderate. Last real back-to-back.
 follow: >
-  ZoneSense Zone 1 (aerobic). Pace is a guide only — if holding Zone 1 means running slower, run slower.
+  First 10min: hold the pace shown, ZoneSense has no reading yet. After: Zone 1 — go slower if that's what it needs.
 intent: >
   Last real back-to-back. Upper B after.
 origin: authored
@@ -18,4 +18,5 @@ published:
 ---
 
 Easy/Moderate
-- 75m ZoneSense Z1
+- 10m 7:15/km Pace
+- 65m ZoneSense Z1

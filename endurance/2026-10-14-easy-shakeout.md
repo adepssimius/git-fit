@@ -10,7 +10,7 @@ target_mode: effort
 brief: >
   30min shakeout.
 follow: >
-  ZoneSense Zone 1 (aerobic). Pace is a guide only — if holding Zone 1 means running slower, run slower.
+  First 10min: hold the pace shown, ZoneSense has no reading yet. After: Zone 1 — go slower if that's what it needs.
 intent: >
   Pure aerobic. Add an extra rest day here instead if you feel better off more rest.
 origin: authored
@@ -19,4 +19,5 @@ published:
 ---
 
 Easy
-- 30m ZoneSense Z1
+- 10m 7:45/km Pace
+- 20m ZoneSense Z1

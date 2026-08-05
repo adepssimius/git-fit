@@ -20,7 +20,8 @@ published:
 ---
 
 Easy to hill — press lap at the bottom of one
-- 4km ZoneSense Z1 until-lap
+- 1.4km 7:00/km Pace
+- 2.6km ZoneSense Z1 until-lap
 
 Hill Strides 6x
 - 20s 4:35/km Pace

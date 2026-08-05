@@ -128,6 +128,14 @@ zonesense:
   chest_strap_required: true      # ZoneSense does not function on optical wrist HR
   used_as_live_target: true       # athlete's PRIMARY target; pace is secondary on effort-based runs
 
+  # COLD START — athlete-confirmed: the watch produces no ZoneSense reading for roughly the
+  # first 10 minutes of an activity, regardless of session length. Prescribing `ZoneSense Z1` for
+  # that opening window asserts a target with no signal behind it. Every ZoneSense-governed
+  # session in endurance/ therefore opens with an explicit pace (or, on the trainer, an HR-band)
+  # target for the first ~10min, THEN switches to `ZoneSense Z1` for the remainder — see
+  # rules/endurance-authoring.md. This is a real cold start, not the same thing as the ~2min
+  # rolling window below (that's about tracking a specific effort once the metric is live).
+  #
   # WHEN TO TRUST IT — a1 is computed over a rolling ~2min RR window, so its usefulness is a
   # direct function of how long the effort lasts. This is inherent to the method, not a Suunto flaw.
   use_for:

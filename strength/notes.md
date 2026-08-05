@@ -54,6 +54,15 @@ This was a full progression *redesign*, not a mechanical halving of the barbell 
 would have exceeded the SelectTech's 52.5lb/hand ceiling by Week 4. The new progression peaks at
 32.5lb/hand (Squat/Stiff Leg Deadlift, Week 9), comfortably inside range for the whole block.
 
+**2026-08-04 (same day) — Bench Press / Bent Over Row / Overhead Press start higher.** Athlete's own
+correction to the conservative initial estimate: Bench Press and Bent Over Row start at **35lb**
+(not 15lb), Overhead Press at **20lb** (not 12.5lb). Same weekly cadence as originally designed,
+just re-based — Bench/Row now peaks at **47.5lb/hand by Week 9**, only 5lb (2 increments) under the
+SelectTech's 52.5lb ceiling. **Watch this one**: if Bench/Row progress even one week ahead of
+schedule, it hits the equipment ceiling before the block ends — at that point either hold the
+weight and add reps/sets, or the athlete needs heavier dumbbells. Squat/Stiff Leg
+Deadlift/Incline Bench Press were unaffected by this correction.
+
 Record further swaps here the same way:
 
 ```

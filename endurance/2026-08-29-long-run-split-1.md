@@ -9,7 +9,7 @@ target_mode: effort
 brief: >
   15min in, 4x(16min run + 3min walk), 3min down. All aerobic — the hiking is doing the hard work this week.
 follow: >
-  ZoneSense Zone 1 (aerobic). Pace is a guide only — if holding Zone 1 means running slower, run slower.
+  First 10min: hold the pace shown, ZoneSense has no reading yet. After: Zone 1 — go slower if that's what it needs.
 intent: >
   TRAVEL WEEK (2026-08-22 to 09-01, out of state). Time-based rather than distance-based
   so it works on any unfamiliar route, and no course/trainer access — see athlete/profile.md.
@@ -22,7 +22,8 @@ published:
 ---
 
 Warmup
-- 15m ZoneSense Z1
+- 10m 7:10/km Pace
+- 5m ZoneSense Z1
 
 Run/Walk 4x
 - 16m ZoneSense Z1

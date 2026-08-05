@@ -7,10 +7,16 @@
 # Stiff Leg Deadlift, Dumbbell (see strength/notes.md). Bulgarian Split Squat was already
 # dumbbell-equipment and needed no change.
 #
-# These are deliberately conservative Week 1 starting points, redesigned (not a mechanical
-# halving of the old barbell numbers) to stay inside the SelectTech's 52.5lb/hand ceiling for
-# the whole 10-week block — peaks at 32.5lb/hand by Week 9. See strength/notes.md for the
-# full reasoning and the substitution log.
+# These are Week 1 starting points, redesigned (not a mechanical halving of the old barbell
+# numbers) to stay inside the SelectTech's 52.5lb/hand ceiling for the whole 10-week block.
+# See strength/notes.md for the full reasoning and the substitution log.
+#
+# Squat / Stiff Leg Deadlift / Incline Bench Press stayed at the original conservative estimate
+# (peak 32.5 / 32.5 / 27.5lb by Week 9 — plenty of headroom).
+# Bench Press / Bent Over Row / Overhead Press were raised per the athlete's own correction
+# (2026-08-04) — 35/35/20lb instead of the initial 15/15/12.5lb estimate. Bench/Row now peaks at
+# 47.5lb/hand by Week 9, only 5lb (2 increments) under the 52.5lb ceiling — watch this one; if
+# progress runs even one week ahead of schedule it hits the equipment limit.
 #
 # The program is LIVE in Liftosaur ("Ghost Train Block", id haqytaxt, pushed via the Liftosaur
 # MCP) — this file and strength/program.liftoscript are the source of truth; the app is the
@@ -21,16 +27,16 @@ units: lb
 lifts:
   squat_dumbbell: 20                    # per hand; Week 1. Hand-stepped to 32.5 by Week 9.
   stiff_leg_deadlift_dumbbell: 20       # per hand; Romanian Deadlift substitute
-  bench_press_dumbbell: 15              # per hand
-  bent_over_row_dumbbell: 15            # per hand
-  overhead_press_dumbbell: 12.5         # per hand
-  incline_bench_press_dumbbell: 15      # per hand
+  bench_press_dumbbell: 35              # per hand; peaks at 47.5 by Week 9 -- 5lb under ceiling
+  bent_over_row_dumbbell: 35            # per hand; peaks at 47.5 by Week 9 -- 5lb under ceiling
+  overhead_press_dumbbell: 20           # per hand; peaks at 30 by Week 9
+  incline_bench_press_dumbbell: 15      # per hand; unaffected by the Upper A correction
   pull_up: 10                           # added load via belt/band, bodyweight not included
 
 bodyweight_lb: 162              # confirmed 2026-08-04; recorded in Liftosaur measurements too
 
 note: >
   If a prescribed weight feels trivially easy in an early session, jump it by hand in the next
-  push (mcp__liftosaur__update_program) rather than waiting out the slow ramp — these numbers
-  exist to be safe on day one, not to be a ceiling. Room to grow: SelectTech tops out at
-  52.5lb/hand, and the Week 9 peak (32.5lb) leaves real headroom if progress is faster than planned.
+  push (mcp__liftosaur__update_program) rather than waiting out the slow ramp. Bench/Row have
+  little headroom left (5lb) by design's peak week -- if they need to go higher than 47.5lb/hand,
+  a second SelectTech pair or an actual barbell will be needed before Week 9.

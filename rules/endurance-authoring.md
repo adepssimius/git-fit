@@ -82,6 +82,14 @@ compiled step shows pace and HR as *data* and asserts no target at all, which is
 encoding: the instruction lives in the guide description, and the watch's own ZoneSense alarm
 (`Targets.ZoneSenseZones`, see `athlete/zones.yml`) does the enforcing.
 
+**The first ~10 minutes of any activity get no ZoneSense reading at all** (athlete-confirmed cold
+start, distinct from the ~2min rolling-window lag discussed below). Never open a session with
+`ZoneSense Z1` — split the first step: an explicit pace target (running) or HR-band target
+(trainer) for the first 10min, then `ZoneSense Z1` for the rest. A step that's ≤10min entirely
+(most ride warmups/cooldowns) should be a pace/HR target throughout, never ZoneSense at all.
+Once one block in a session has passed the 10min mark, every later block is fine at `ZoneSense
+Z1` regardless of how it's split up — the clock is cumulative from session start, not per-step.
+
 Do **not** put a pace target on a ZoneSense-governed step as a stand-in. On rolling terrain it is
 wrong in both directions — it fires on descents, where speed is aerobically free, and under-reads
 climbs — and with the ZoneSense alarm enabled it gives two alarm sources with different opinions

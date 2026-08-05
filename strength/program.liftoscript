@@ -6,16 +6,19 @@
 /// training location for this block, so Squat, Bench Press, Bent Over Row, Overhead Press, and
 /// Incline Bench Press are now the Dumbbell equipment variant. Romanian Deadlift has no Dumbbell
 /// variant in Liftosaur's exercise list, so it's replaced with Stiff Leg Deadlift, Dumbbell (same
-/// hip-hinge pattern, same equipment). The progression below is NOT a mechanical halving of the
-/// old barbell numbers — it's redesigned to stay inside the SelectTech's 52.5lb/hand ceiling for
-/// the whole block, since a naive halving would have exceeded it by Week 4 (peaks at 32.5lb/hand
-/// on Squat/Stiff Leg Deadlift by Week 9, well inside range). Bulgarian Split Squat was already
-/// dumbbell-equipment by default and is unchanged. Spot-verified via run_playground with real
-/// complete_set() commands against weeks 1 and 9 before pushing.
+/// hip-hinge pattern, same equipment). Bulgarian Split Squat was already dumbbell-equipment by
+/// default and is unchanged.
+///
+/// Bench Press / Bent Over Row / Overhead Press start higher than the initial conservative
+/// estimate, per the athlete's own correction (2026-08-04): 35/35/20lb instead of 15/15/12.5lb.
+/// Same weekly cadence as originally designed, just re-based — Bench/Row peaks at 47.5lb/hand by
+/// Week 9, only 5lb (2 increments) under the SelectTech's 52.5lb ceiling, flagged to the athlete.
+/// Squat/Stiff Leg Deadlift/Incline Bench Press are unaffected, still peaking at 32.5/32.5/27.5.
 ///
 /// Every week is fully self-contained (no reliance on Liftoscript's carry-forward mechanism —
-/// see strength/notes.md for why). Weights are hand-authored conservative estimates, not measured
-/// maxes; correct them from real sessions as they happen.
+/// see strength/notes.md for why). Spot-verified via run_playground with real complete_set()
+/// commands against weeks 1 and 9 (including the Bench/Row/OHP peak) before pushing.
+
 
 # Week 1
 
@@ -26,9 +29,9 @@ accessory: Bulgarian Split Squat / 3x8 / 30lb / 90s
 core: Hanging Leg Raise / 3x10 / 0lb / 60s
 
 ## Upper A
-main: Bench Press, Dumbbell / ! 3x5 / 2x5 / 1x5 / 15lb / 180s
-main: Bent Over Row, Dumbbell / 3x8 / 15lb / 120s
-accessory: Overhead Press, Dumbbell / 3x8 / 12.5lb / 90s
+main: Bench Press, Dumbbell / ! 3x5 / 2x5 / 1x5 / 35lb / 180s
+main: Bent Over Row, Dumbbell / 3x8 / 35lb / 120s
+accessory: Overhead Press, Dumbbell / 3x8 / 20lb / 90s
 core: Pallof Press / 3x10 / 20lb / 60s
 
 ## Lower B — runner-specific, low fatigue
@@ -51,6 +54,8 @@ main: Incline Bench Press, Dumbbell / 3x8 / 15lb / 120s
 accessory: Face Pull / 3x15 / 30lb / 60s
 core: Side Plank / 3x1 30s|30s
 
+
+
 # Week 2
 
 ## Lower A
@@ -60,9 +65,9 @@ accessory: Bulgarian Split Squat / 3x8 / 30lb / 90s
 core: Hanging Leg Raise / 3x10 / 0lb / 60s
 
 ## Upper A
-main: Bench Press, Dumbbell / ! 3x5 / 2x5 / 1x5 / 17.5lb / 180s
-main: Bent Over Row, Dumbbell / 3x8 / 17.5lb / 120s
-accessory: Overhead Press, Dumbbell / 3x8 / 15lb / 90s
+main: Bench Press, Dumbbell / ! 3x5 / 2x5 / 1x5 / 37.5lb / 180s
+main: Bent Over Row, Dumbbell / 3x8 / 37.5lb / 120s
+accessory: Overhead Press, Dumbbell / 3x8 / 22.5lb / 90s
 core: Pallof Press / 3x10 / 20lb / 60s
 
 ## Lower B
@@ -82,6 +87,8 @@ main: Incline Bench Press, Dumbbell / 3x8 / 17.5lb / 120s
 accessory: Face Pull / 3x15 / 30lb / 60s
 core: Side Plank / 3x1 30s|30s
 
+
+
 # Week 3
 
 ## Lower A
@@ -91,9 +98,9 @@ accessory: Bulgarian Split Squat / 3x8 / 32.5lb / 90s
 core: Hanging Leg Raise / 3x10 / 0lb / 60s
 
 ## Upper A
-main: Bench Press, Dumbbell / ! 3x5 / 2x5 / 1x5 / 20lb / 180s
-main: Bent Over Row, Dumbbell / 3x8 / 20lb / 120s
-accessory: Overhead Press, Dumbbell / 3x8 / 15lb / 90s
+main: Bench Press, Dumbbell / ! 3x5 / 2x5 / 1x5 / 40lb / 180s
+main: Bent Over Row, Dumbbell / 3x8 / 40lb / 120s
+accessory: Overhead Press, Dumbbell / 3x8 / 22.5lb / 90s
 core: Pallof Press / 3x10 / 22.5lb / 60s
 
 ## Lower B
@@ -113,6 +120,8 @@ main: Incline Bench Press, Dumbbell / 3x8 / 20lb / 120s
 accessory: Face Pull / 3x15 / 32.5lb / 60s
 core: Side Plank / 3x1 30s|30s
 
+
+
 # Week 4
 
 ## Lower A
@@ -122,9 +131,9 @@ accessory: Bulgarian Split Squat / 3x8 / 32.5lb / 90s
 core: Hanging Leg Raise / 3x10 / 0lb / 60s
 
 ## Upper A
-main: Bench Press, Dumbbell / ! 3x5 / 2x5 / 1x5 / 22.5lb / 180s
-main: Bent Over Row, Dumbbell / 3x8 / 22.5lb / 120s
-accessory: Overhead Press, Dumbbell / 3x8 / 17.5lb / 90s
+main: Bench Press, Dumbbell / ! 3x5 / 2x5 / 1x5 / 42.5lb / 180s
+main: Bent Over Row, Dumbbell / 3x8 / 42.5lb / 120s
+accessory: Overhead Press, Dumbbell / 3x8 / 25lb / 90s
 core: Pallof Press / 3x10 / 22.5lb / 60s
 
 ## Lower B
@@ -144,6 +153,8 @@ main: Incline Bench Press, Dumbbell / 3x8 / 22.5lb / 120s
 accessory: Face Pull / 3x15 / 32.5lb / 60s
 core: Side Plank / 3x1 30s|30s
 
+
+
 # Week 5
 
 ## Lower A
@@ -153,10 +164,12 @@ accessory: Bulgarian Split Squat / 3x8 / 35lb / 90s
 core: Hanging Leg Raise / 3x10 / 0lb / 60s
 
 ## Upper A
-main: Bench Press, Dumbbell / ! 3x5 / 2x5 / 1x5 / 22.5lb / 180s
-main: Bent Over Row, Dumbbell / 3x8 / 22.5lb / 120s
-accessory: Overhead Press, Dumbbell / 3x8 / 17.5lb / 90s
+main: Bench Press, Dumbbell / ! 3x5 / 2x5 / 1x5 / 42.5lb / 180s
+main: Bent Over Row, Dumbbell / 3x8 / 42.5lb / 120s
+accessory: Overhead Press, Dumbbell / 3x8 / 25lb / 90s
 core: Pallof Press / 3x10 / 25lb / 60s
+
+
 
 # Week 6
 
@@ -177,6 +190,8 @@ main: Incline Bench Press, Dumbbell / 3x8 / 22.5lb / 120s
 accessory: Face Pull / 3x15 / 32.5lb / 60s
 core: Side Plank / 3x1 30s|30s
 
+
+
 # Week 7
 
 ## Lower A
@@ -186,9 +201,9 @@ accessory: Bulgarian Split Squat / 3x8 / 35lb / 90s
 core: Hanging Leg Raise / 3x10 / 0lb / 60s
 
 ## Upper A
-main: Bench Press, Dumbbell / ! 3x5 / 2x5 / 1x5 / 25lb / 180s
-main: Bent Over Row, Dumbbell / 3x8 / 25lb / 120s
-accessory: Overhead Press, Dumbbell / 3x8 / 20lb / 90s
+main: Bench Press, Dumbbell / ! 3x5 / 2x5 / 1x5 / 45lb / 180s
+main: Bent Over Row, Dumbbell / 3x8 / 45lb / 120s
+accessory: Overhead Press, Dumbbell / 3x8 / 27.5lb / 90s
 core: Pallof Press / 3x10 / 25lb / 60s
 
 ## Lower B
@@ -208,6 +223,8 @@ main: Incline Bench Press, Dumbbell / 3x8 / 25lb / 120s
 accessory: Face Pull / 3x15 / 35lb / 60s
 core: Side Plank / 3x1 30s|30s
 
+
+
 # Week 8
 
 ## Lower A
@@ -216,9 +233,9 @@ main: Squat, Dumbbell / 2x5 / 20lb / 150s
 main: Stiff Leg Deadlift, Dumbbell / 2x6 / 20lb / 120s
 
 ## Upper A
-main: Bench Press, Dumbbell / ! 3x5 / 2x5 / 1x5 / 25lb / 180s
-main: Bent Over Row, Dumbbell / 3x8 / 25lb / 120s
-accessory: Overhead Press, Dumbbell / 3x8 / 20lb / 90s
+main: Bench Press, Dumbbell / ! 3x5 / 2x5 / 1x5 / 45lb / 180s
+main: Bent Over Row, Dumbbell / 3x8 / 45lb / 120s
+accessory: Overhead Press, Dumbbell / 3x8 / 27.5lb / 90s
 
 ## Lower B
 accessory: Single Leg Calf Raise / 4x12 / 10lb / 60s
@@ -237,6 +254,8 @@ main: Incline Bench Press, Dumbbell / 3x8 / 25lb / 120s
 accessory: Face Pull / 3x15 / 35lb / 60s
 core: Side Plank / 3x1 30s|30s
 
+
+
 # Week 9
 
 ## Lower A
@@ -247,9 +266,9 @@ accessory: Bulgarian Split Squat / 3x8 / 35lb / 90s
 core: Hanging Leg Raise / 3x10 / 0lb / 60s
 
 ## Upper A
-main: Bench Press, Dumbbell / ! 3x5 / 2x5 / 1x5 / 27.5lb / 180s
-main: Bent Over Row, Dumbbell / 3x8 / 27.5lb / 120s
-accessory: Overhead Press, Dumbbell / 3x8 / 22.5lb / 90s
+main: Bench Press, Dumbbell / ! 3x5 / 2x5 / 1x5 / 47.5lb / 180s
+main: Bent Over Row, Dumbbell / 3x8 / 47.5lb / 120s
+accessory: Overhead Press, Dumbbell / 3x8 / 30lb / 90s
 core: Pallof Press / 3x10 / 25lb / 60s
 
 ## Lower B
@@ -269,6 +288,8 @@ main: Incline Bench Press, Dumbbell / 3x8 / 27.5lb / 120s
 accessory: Face Pull / 3x15 / 35lb / 60s
 core: Side Plank / 3x1 30s|30s
 
+
+
 # Week 10
 
 ## Lower B
@@ -286,5 +307,8 @@ main: Pull Up / 2x6 / 15lb / 150s / update: custom() {~
 main: Incline Bench Press, Dumbbell / 2x8 / 17.5lb / 120s
 core: Side Plank / 2x1 30s|30s
 
+
+
 /// Block week 19 (race week) has NO lifting, so there is no Week 11 here. The program
+
 /// intentionally covers 10 weeks for an 11-week block.

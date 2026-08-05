@@ -10,7 +10,7 @@ target_mode: effort
 brief: >
   Same lap as sim 1 — 15km out-and-back, 6km south leg, 3.1km top-up — in final race kit. Time every crew stop, standing.
 follow: >
-  ZoneSense Zone 1 (aerobic). Pace is a guide only — if holding Zone 1 means running slower, run slower.
+  First 10min: hold the pace shown, ZoneSense has no reading yet. After: Zone 1 — go slower if that's what it needs.
 intent: >
   LAP SIM 2 of 2 — the complete dress rehearsal, and the last of the three on-course sessions.
   Same geometry as lap sim 1 (staging → real 7.5mi turnaround → staging, plus a 3.1km top-up to
@@ -24,7 +24,8 @@ published:
 ---
 
 Car -> north terminus (drop bag passed at 5km)
-- 7.5km ZoneSense Z1
+- 1.2km 8:15/km Pace
+- 6.3km ZoneSense Z1
 
 Turnaround — drop-bag check, refuel
 - 3m 9:00/km Pace

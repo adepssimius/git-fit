@@ -19,7 +19,8 @@ published:
 ---
 
 Warmup
-- 40m ZoneSense Z1
+- 10m 7:00/km Pace
+- 30m ZoneSense Z1
 
 Threshold 4x
 - 6m 5:55/km Pace

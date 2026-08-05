@@ -10,7 +10,7 @@ target_mode: effort
 brief: >
   50min easy in the dark in full race night kit: 15 in, 25 steady, 10 down. A kit check, not a workout.
 follow: >
-  ZoneSense Zone 1 (aerobic). Pace is a guide only — if holding Zone 1 means running slower, run slower.
+  First 10min: hold the pace shown, ZoneSense has no reading yet. After: Zone 1 — go slower if that's what it needs.
 time_critical: >
   Start after full dark (~20:45 or later). The point is a kit check in real night conditions — headlamp, batteries, layers — so daylight defeats it.
 intent: >
@@ -24,7 +24,8 @@ published:
 ---
 
 Warmup
-- 15m ZoneSense Z1
+- 10m 7:00/km Pace
+- 5m ZoneSense Z1
 
 Steady
 - 25m ZoneSense Z1

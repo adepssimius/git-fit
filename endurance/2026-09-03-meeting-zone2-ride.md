@@ -19,6 +19,6 @@ published:
   suunto: null
 ---
 
-- 10m ZoneSense Z1 85rpm
+- 10m 65-72% HR 85rpm
 - 40m ZoneSense Z1 85-90rpm
 - 10m ZoneSense Z1 85rpm

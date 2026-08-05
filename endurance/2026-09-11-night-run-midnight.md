@@ -9,7 +9,7 @@ target_mode: effort
 brief: >
   90min past midnight: 15 in, 4x(15min steady + 2min walk), 7 down. Full night kit.
 follow: >
-  ZoneSense Zone 1 (aerobic). Pace is a guide only — if holding Zone 1 means running slower, run slower.
+  First 10min: hold the pace shown, ZoneSense has no reading yet. After: Zone 1 — go slower if that's what it needs.
 time_critical: >
   START ~22:00 and run past midnight. The target is the small hours when sleep pressure bites, not merely darkness. Earlier doesn't test the right thing.
 intent: >
@@ -24,7 +24,8 @@ published:
 ---
 
 Warmup
-- 15m ZoneSense Z1
+- 10m 7:00/km Pace
+- 5m ZoneSense Z1
 
 Night Steady 4x
 - 15m ZoneSense Z1

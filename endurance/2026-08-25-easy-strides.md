@@ -20,7 +20,8 @@ published:
 ---
 
 Warmup
-- 25m ZoneSense Z1
+- 10m 7:00/km Pace
+- 15m ZoneSense Z1
 
 Hill Strides 5x
 - 20s 4:35/km Pace

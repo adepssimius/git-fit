@@ -10,7 +10,7 @@ target_mode: effort
 brief: >
   8km easy/moderate on yesterday's legs. Tired is the point; fast is not.
 follow: >
-  ZoneSense Zone 1 (aerobic). Pace is a guide only — if holding Zone 1 means running slower, run slower.
+  First 10min: hold the pace shown, ZoneSense has no reading yet. After: Zone 1 — go slower if that's what it needs.
 intent: >
   Medium-long on tired legs, the day after the long run — the closest available proxy for the back
   half of a 100-miler, and the centerpiece of this whole block per training/block.md. Paired with
@@ -21,4 +21,5 @@ published:
 ---
 
 Easy/Moderate
-- 8km ZoneSense Z1
+- 1.4km 7:10/km Pace
+- 6.6km ZoneSense Z1

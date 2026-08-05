@@ -24,7 +24,8 @@ published:
 ---
 
 Warmup — headlamp on, full night kit
-- 20m ZoneSense Z1
+- 10m 7:00/km Pace
+- 10m ZoneSense Z1
 
 Night Blocks 9x
 - 20m ZoneSense Z1

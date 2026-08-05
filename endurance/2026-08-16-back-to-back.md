@@ -9,7 +9,7 @@ target_mode: effort
 brief: >
   60min easy/moderate on long-run legs.
 follow: >
-  ZoneSense Zone 1 (aerobic). Pace is a guide only — if holding Zone 1 means running slower, run slower.
+  First 10min: hold the pace shown, ZoneSense has no reading yet. After: Zone 1 — go slower if that's what it needs.
 intent: >
   Medium-long on tired legs — the block's centerpiece. Upper B lifting after.
 origin: authored
@@ -18,4 +18,5 @@ published:
 ---
 
 Easy/Moderate
-- 60m ZoneSense Z1
+- 10m 7:10/km Pace
+- 50m ZoneSense Z1

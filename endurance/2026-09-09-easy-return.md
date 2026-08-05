@@ -10,7 +10,7 @@ target_mode: effort
 brief: >
   40min easy — first run after two days off.
 follow: >
-  ZoneSense Zone 1 (aerobic). Pace is a guide only — if holding Zone 1 means running slower, run slower.
+  First 10min: hold the pace shown, ZoneSense has no reading yet. After: Zone 1 — go slower if that's what it needs.
 intent: >
   First run back after two rest days. Really ease into it (Champion week 11).
 origin: authored
@@ -19,4 +19,5 @@ published:
 ---
 
 Easy
-- 40m ZoneSense Z1
+- 10m 7:00/km Pace
+- 30m ZoneSense Z1

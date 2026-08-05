@@ -9,7 +9,7 @@ target_mode: effort
 brief: >
   One instruction, lap after lap: stay in Zone 1. Decide only at crew stops, standing. Bands in races/ are guides, not targets.
 follow: >
-  ZoneSense Zone 1 (aerobic). Pace is a guide only — if holding Zone 1 means running slower, run slower.
+  First 10min: hold the pace shown, ZoneSense has no reading yet. After: Zone 1 — go slower if that's what it needs.
 publish: False
 stale_pace_correction: >
   2026-08-04: every pace band in this file was ~1:00-1:15/km too fast — leftovers from before
@@ -26,7 +26,8 @@ origin: authored
 ---
 
 Laps 1-2 — absurdly easy, bank nothing (guide 8:15-8:30/km)
-- 48.3km ZoneSense Z1
+- 1.2km 8:15/km Pace
+- 47.1km ZoneSense Z1
 
 Laps 3-4 — settle in; headlamp from partway through lap 3 (guide 8:54-9:24/km)
 - 48.3km ZoneSense Z1

@@ -9,7 +9,7 @@ target_mode: effort
 brief: >
   85min easy/moderate on lap-sim legs.
 follow: >
-  ZoneSense Zone 1 (aerobic). Pace is a guide only — if holding Zone 1 means running slower, run slower.
+  First 10min: hold the pace shown, ZoneSense has no reading yet. After: Zone 1 — go slower if that's what it needs.
 intent: >
   On lap-sim legs. Upper B after.
 origin: authored
@@ -18,4 +18,5 @@ published:
 ---
 
 Easy/Moderate
-- 85m ZoneSense Z1
+- 10m 7:15/km Pace
+- 75m ZoneSense Z1

@@ -10,7 +10,7 @@ target_mode: effort
 brief: >
   Race-lap dress run: car to turnaround and back (15km), south leg (6km), 3.1km top-up. Guide ~8:20/km. Crew stops standing.
 follow: >
-  ZoneSense Zone 1 (aerobic). Pace is a guide only — if holding Zone 1 means running slower, run slower.
+  First 10min: hold the pace shown, ZoneSense has no reading yet. After: Zone 1 — go slower if that's what it needs.
 intent: >
   LAP SIM 1 of 2, on the accessible northern 6.5mi of the real course. Run the full out-and-back
   from the staging point to the real 7.5mi turnaround and back (20.9km), then a 3.1km top-up so
@@ -25,7 +25,8 @@ published:
 ---
 
 Car -> north terminus (drop bag passed at 5km)
-- 7.5km ZoneSense Z1
+- 1.2km 8:20/km Pace
+- 6.3km ZoneSense Z1
 
 Turnaround — drop-bag check, refuel
 - 3m 9:00/km Pace

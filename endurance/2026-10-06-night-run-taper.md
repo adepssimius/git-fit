@@ -10,7 +10,7 @@ target_mode: effort
 brief: >
   40min easy after dark: 12 in, 20 steady, 8 down. Final check of race headlamp, batteries, layers.
 follow: >
-  ZoneSense Zone 1 (aerobic). Pace is a guide only — if holding Zone 1 means running slower, run slower.
+  First 10min: hold the pace shown, ZoneSense has no reading yet. After: Zone 1 — go slower if that's what it needs.
 time_critical: >
   Start after dark. Final check that the exact headlamp, batteries and layers going in the crew bag all still work, with a taper week's slack to fix anything that doesn't.
 intent: >
@@ -23,7 +23,8 @@ published:
 ---
 
 Warmup
-- 12m ZoneSense Z1
+- 10m 7:00/km Pace
+- 2m ZoneSense Z1
 
 Steady
 - 20m ZoneSense Z1
