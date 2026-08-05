@@ -76,6 +76,68 @@ def sh(*args: str) -> str:
         return ""
 
 
+def _easter(year: int) -> datetime.date:
+    """Anonymous Gregorian computus. Needed only for Good Friday, which is movable."""
+    a, b, c = year % 19, year // 100, year % 100
+    d, e, f = b // 4, b % 4, (b + 8) // 25
+    g = (b - f + 1) // 3
+    h = (19 * a + b - d - g + 15) % 30
+    i, k = c // 4, c % 4
+    l = (32 + 2 * e + 2 * i - h - k) % 7
+    m = (a + 11 * h + 22 * l) // 451
+    return datetime.date(year, (h + l - 7 * m + 114) // 31, ((h + l - 7 * m + 114) % 31) + 1)
+
+
+def _nth_weekday(year: int, month: int, weekday: int, n: int) -> datetime.date:
+    d = datetime.date(year, month, 1)
+    return d + datetime.timedelta(days=(weekday - d.weekday()) % 7, weeks=n - 1)
+
+
+def _last_weekday(year: int, month: int, weekday: int) -> datetime.date:
+    last = 31 if month in (1, 3, 5, 7, 8, 10, 12) else 30
+    d = datetime.date(year, month, last)
+    return d - datetime.timedelta(days=(d.weekday() - weekday) % 7)
+
+
+def observed_holidays(year: int) -> dict[datetime.date, str]:
+    """The athlete's paid holidays, as OBSERVED (see athlete/profile.md).
+
+    House rule, athlete-supplied: a holiday landing on a weekend is observed on the Friday
+    preceding that weekend. Note this differs from the US federal convention, which moves a
+    Sunday holiday FORWARD to the Monday — so don't "fix" it to match federal.
+    """
+    tg = _nth_weekday(year, 11, 3, 4)
+    raw = {
+        "New Year's Day": datetime.date(year, 1, 1),
+        "MLK Day": _nth_weekday(year, 1, 0, 3),
+        "Presidents' Day": _nth_weekday(year, 2, 0, 3),
+        "Good Friday": _easter(year) - datetime.timedelta(days=2),
+        "Memorial Day": _last_weekday(year, 5, 0),
+        "Independence Day": datetime.date(year, 7, 4),
+        "Labor Day": _nth_weekday(year, 9, 0, 1),
+        "Thanksgiving": tg,
+        "Day after Thanksgiving": tg + datetime.timedelta(days=1),
+        "Christmas": datetime.date(year, 12, 25),
+    }
+    out = {}
+    for name, d in raw.items():
+        if d.weekday() >= 5:
+            d -= datetime.timedelta(days=d.weekday() - 4)
+        out[d] = name
+    return out
+
+
+def working_days(start: datetime.date, end_inclusive: datetime.date) -> list[datetime.date]:
+    """Mon-Fri minus observed holidays. Walking is meeting-time, so it only happens on these."""
+    hol = observed_holidays(start.year) | observed_holidays(end_inclusive.year)
+    days, cur = [], start
+    while cur <= end_inclusive:
+        if cur.weekday() < 5 and cur not in hol:
+            days.append(cur)
+        cur += datetime.timedelta(days=1)
+    return days
+
+
 # Weekday -> strength day, from the weekly template in training/block.md. Wed/Fri/Sat carry no
 # lift by design: Wednesday is left clean for the big workout, Friday is the mandated leg-recovery
 # day before the long run, Saturday is the long run itself.
@@ -269,9 +331,21 @@ def main() -> int:
         print(f"  no walk target for block week {block_week} — check whether this is a travel/"
               f"hiking week where hiking replaces it (training/block.md § Travel weeks)")
     else:
-        elapsed = d.weekday()              # full days already gone (Mon = 0)
-        left = 7 - d.weekday()             # days remaining INCLUDING today
-        print(f"  target      {walk_target}min this week ({walk_target / 7:.0f}min/day if spread evenly)")
+        monday = d - datetime.timedelta(days=d.weekday())
+        sunday = monday + datetime.timedelta(days=6)
+        all_wd = working_days(monday, sunday)
+        left_wd = [x for x in all_wd if x >= d]
+        done_wd = [x for x in all_wd if x < d]
+        hol = observed_holidays(d.year)
+        offdays = [x for x in (monday + datetime.timedelta(days=i) for i in range(7))
+                   if x.weekday() < 5 and x in hol]
+
+        print(f"  target      {walk_target}min this week")
+        print(f"  working days {len(all_wd)} this week ({', '.join(x.strftime('%a') for x in all_wd)})"
+              + (f"   [{', '.join(hol[x] + ' ' + x.strftime('%a') for x in offdays)} off]" if offdays else ""))
+        print(f"              -> {walk_target / len(all_wd):.0f}min per working day if spread evenly"
+              if all_wd else "              -> NO working days this week")
+
         if block_week:
             w_now, h_now = time_on_feet(str(block_week))
             w_prev, h_prev = time_on_feet(str(int(block_week) - 1))
@@ -280,24 +354,36 @@ def main() -> int:
             print(f"  time-on-feet {tof_now}min this week{hike_note}, {tof_prev}min last week")
             if tof_prev:
                 delta = (tof_now - tof_prev) / tof_prev * 100
-                over = delta > 15
                 print(f"  ramp        {delta:+.0f}%"
                       + ("   OVER the 15%/wk cap — check whether hiking drives it, which "
-                         "training/block.md treats as unavoidable rather than a failure" if over else ""))
-        print(f"  week so far {elapsed} full day(s) done, {left} day(s) left including today")
+                         "training/block.md treats as unavoidable rather than a failure"
+                         if delta > 15 else ""))
+
+        today_is_workday = d in all_wd
+        print(f"  today       {d.strftime('%a')} — "
+              + ("a walking day" if today_is_workday
+                 else f"NOT a walking day ({hol.get(d, 'weekend')})"))
+
         if args.walked is None:
-            print(f"  -> pull WALKING activities (activityId 0) for Mon {(d - datetime.timedelta(days=elapsed))}")
-            print(f"     onward, sum the minutes, then re-run with --walked <total> for exact numbers")
+            print(f"  -> pull WALKING activities (activityId 0) since Mon {monday}, sum the minutes,")
+            print(f"     then re-run with --walked <total> for the exact per-day number")
         else:
-            done = args.walked
-            remaining = max(0, walk_target - done)
+            done, remaining = args.walked, max(0, walk_target - args.walked)
             print(f"  done        {done}min | remaining {remaining}min")
-            print(f"  -> {remaining / left:.0f}min/day for the remaining {left} day(s)")
-            pace_target = walk_target * elapsed / 7
-            if elapsed and done < pace_target * 0.85:
-                print(f"     BEHIND pace ({done}min vs {pace_target:.0f}min expected by now) — flag it. "
-                      f"Catching up by cramming two big days is exactly the ramp spike "
-                      f"rules/progression.md warns about")
+            if left_wd:
+                print(f"  -> {remaining / len(left_wd):.0f}min/day across the "
+                      f"{len(left_wd)} working day(s) left ({', '.join(x.strftime('%a') for x in left_wd)})")
+            else:
+                print(f"  -> no working days left this week; {remaining}min will not be made up")
+            # Pace is measured in working days, not calendar days — a Wednesday check-in with
+            # Mon+Tue behind it should compare against 2/5 of the target, not 2/7.
+            if done_wd:
+                expected = walk_target * len(done_wd) / len(all_wd)
+                if done < expected * 0.85:
+                    print(f"     BEHIND pace ({done}min vs {expected:.0f}min expected after "
+                          f"{len(done_wd)} working day(s)) — say so. Cramming the gap into two big "
+                          f"days is the ramp spike rules/progression.md warns about; if catching up "
+                          f"means spiking, recommend missing the target instead")
 
     # ---- recent log -------------------------------------------------------
     print("\n## Recent log (soreness/RPE are the ladder's only manual signals)")

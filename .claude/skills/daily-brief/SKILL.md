@@ -142,6 +142,16 @@ The target is stored weekly (one `meeting-walk-week.md` per block week) but exec
 number he actually needs is **how many minutes today**. The script computes it: target, done so far,
 and the per-day rate required across the days left. Give him that rate plainly.
 
+**Walking happens on working days only** — it's done during work calls. So the target divides across
+Mon–Fri minus holidays, not across seven days, and the script handles that (see `athlete/profile.md`
+§ Working days for the holiday list and the athlete's own observance rule). This is not a rounding
+detail: block week 14 contains Labor Day, so its 355min target falls on four days at 89min/day
+rather than the 51min/day a naive 7-day split would report. Quote the working-day figure; a 7-day
+number is wrong in a way that reads as reassuring.
+
+Pace is measured in working days too. Mid-week, compare against the working days elapsed — on a
+Wednesday that's 2 of 5, not 2 of 7.
+
 Flag it when he's behind pace, and say why it matters rather than just noting the gap: the risk isn't
 missing the weekly total, it's making it up with two huge days at the end of the week.
 `rules/progression.md` names this ramp as the block's single most likely source of an overuse injury,

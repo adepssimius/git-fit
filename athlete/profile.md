@@ -249,6 +249,24 @@ equipment:
   sweat_rate: "low-average"         # informs sodium at the lower end of typical — see rules/fueling.md
 ```
 
+## Working days — walking only happens on these
+
+Meeting-time walking is done during work calls, so it lands on **working days only**: Mon–Fri,
+minus paid holidays. The weekly target in each `endurance/*-meeting-walk-week.md` therefore divides
+across ~5 days, not 7 — and across 4 in a week containing a holiday, which raises the per-day
+requirement sharply. Block week 14 (Sep 7–13) contains **Labor Day, Mon 2026-09-07**: its 355min
+target lands on four days, i.e. 89min/day rather than the 51min/day a 7-day split implies.
+
+Paid holidays: New Year's Day, MLK Day, Presidents' Day, Good Friday, Memorial Day, Independence
+Day, Labor Day, Thanksgiving, the Friday after Thanksgiving, Christmas.
+
+**Observance rule (athlete-supplied):** a holiday falling on a weekend is observed on the **Friday
+preceding that weekend**. This deliberately differs from the US federal convention, which shifts a
+Sunday holiday forward to the Monday — don't "correct" it.
+
+Implemented in `.claude/skills/daily-brief/scripts/brief_context.py` (`observed_holidays`,
+`working_days`), including the movable-date computation for Good Friday.
+
 ## Injuries / constraints
 
 None recorded yet. Log anything that affects session selection here, and reference it from
