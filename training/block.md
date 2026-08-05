@@ -101,8 +101,13 @@ mileage. Ghost Train is flat, so:
 - Keep uphill treadmill and incline-walk work as a low-impact aerobic tool, not race specificity.
 - Keep some downhill/eccentric work for muscle-damage resistance, but don't build weeks around it —
   100 flat miles still does real quad damage, it just isn't the primary limiter here.
-- **Replace vert specificity with flat rhythm specificity**: sustained Z2/Z3 flow running on flat
-  terrain — exactly what 15-mile rail-trail laps demand.
+- **Replace vert specificity with flat rhythm specificity**: sustained moderate running on flat
+  terrain at **HR Z2–Z3 (138–158bpm)** — the Wednesday progression and the steady segments embedded
+  in long runs. Note the distinction this sentence used to blur: what 15-mile rail-trail laps demand
+  is the *rhythm* — one cadence and effort held for hours with nothing in the terrain to break it up
+  — not this intensity. Race pacing itself is far easier, **ZS Z1** throughout
+  (`races/2026-10-17-ghost-train.md`). The training stimulus and the race demand are different
+  intensities that this bullet originally ran together as a bare "Z2/Z3".
 - **Skip the heat-suit block** — mid-October NH won't be hot; keep passive sauna/hot tub only.
 - **Drop hiking specificity** — a flat rail trail is run and walked, not power-hiked.
 

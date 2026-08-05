@@ -109,11 +109,13 @@ hr:
   # reading sessions after the fact — not as a live target for easy runs.
 
   # Re-reading the known sessions against these:
-  #   2026-08-03 easy, avg 131  -> Z1. Genuinely gentle; correct the day after a 30k.
-  #   2026-08-04 easy, avg 127  -> Z1. Correctly executed; see the AeT caveat above.
-  #   2026-08-02 30k,  avg 159  -> Z3 steady, NOT threshold. Firm for a long run but defensible,
+  #   2026-08-03 easy, avg 131  -> HR Z1. Genuinely gentle; correct the day after a 30k.
+  #   2026-08-04 easy, avg 127  -> HR Z1. Correctly executed; see the AeT caveat above.
+  #   2026-08-02 30k,  avg 159  -> HR Z3 steady, NOT threshold. Firm for a long run but defensible,
   #                                especially with a deliberate 10k effort inside it and 86F heat.
-  long_run_hr_ceiling: 155   # aim Z2, allow drift into low Z3 on hot days or with efforts inside
+  long_run_hr_ceiling: 155   # aim HR Z2, allow drift into low HR Z3 on hot days or with efforts
+                             # inside. (HR zones — long runs are GOVERNED by ZS Z1; this is the
+                             # cross-check ceiling, not the target.)
 
   # Note on treadmill data: an earlier version of this file called it unreliable, because the
   # July treadmill sessions all showed 6:11-6:46/km. Those were simply easy runs. The 06-12

@@ -127,6 +127,11 @@ anything needing a specific surface, and any block that has to start at a known 
 distance still shows as a countdown, so the nominal figure is a progress cue rather than a
 deadline.
 
+**Never write a bare zone — qualify every mention, not just the first.** `ZS Z2`, `HR Z2`,
+`Pace Z2`. Not `Z2`, not `Zone 2`. Three systems share the numbering and mean different
+intensities, and the athlete reads these on a watch mid-run where there is no earlier sentence to
+refer back to.
+
 **Always name the instrument when you write a zone.** "Zone 2" is ambiguous in this repo and the
 ambiguity is not cosmetic: **ZoneSense Zone 2** is everything between the aerobic and anaerobic
 thresholds (its ceiling is LT2 — hard), while **HR Zone 2** is 138-151bpm (`hr.zones.z2_aerobic` —

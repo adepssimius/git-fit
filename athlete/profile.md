@@ -90,7 +90,9 @@ meeting_budget:
     # much of the pool as the ramp cap allows; the trainer fills whatever's left. A prior 180min
     # floor was never once met across the block and fought the walking-first intent.
     session_max_min: 90              # hard per-session cap
-    intensity_ceiling: "Z2"        # never allowed to compete with a run quality session
+    intensity_ceiling: "HR Z2"     # 138-151bpm. Never allowed to compete with a run quality
+                                   # session. HR, not ZS: bike.ftp_w is null and ZoneSense is a
+                                   # running instrument, so HR is the only real target here.
 
   walking:
     # Ramp deliberately — jumping straight to 10h/wk invites plantar fascia / achilles injury.
