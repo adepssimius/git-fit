@@ -75,7 +75,13 @@ the seed's drop to 20km the following week lands exactly on its mid-cycle rest b
   weeks' Wednesday workout — big aerobic stimulus, low impact, low injury risk.
 - **Weight-vest incline walking** during meeting time — this *is* the Champion Plan's uphill/vest
   work, at zero time cost. Ramp under the same walking rules; see `athlete/profile.md`.
-- **Heat training** — sauna/hot tub 20–30min on rest days. Low stress, real plasma-volume return.
+- **Heat training** — sauna, **immediately post-session**, not on rest days. This bullet originally
+  said "20–30min on rest days", which contradicted `athlete/profile.md` (where the athlete's actual
+  habit is recorded as post-gym-session) and is also the weaker protocol: the plasma-volume
+  literature this is borrowed from uses heat exposure *after* exercise, while core temperature is
+  already elevated. He does it post-run anyway — 13min at 170°F on 2026-08-05 — so the plan should
+  describe what happens rather than prescribe something else. Duration is his call; nothing in the
+  block depends on it, and mid-October NH needs no acclimation block (see below).
 - **The Big Day weekend** (block wk 13) — the most important 30 hours of the block, deliberately
   built as **two sessions, not one**:
   - **Sat Sep 5, ~06:00: a true 50k on course** (three out-and-backs from the car: 20.9 + 20.9 +
