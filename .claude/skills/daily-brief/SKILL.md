@@ -172,11 +172,24 @@ surfaced something. Silent on a clean repo.
 These are all real failures from real mornings. They share a shape: the brief sounded authoritative
 while quietly not matching the underlying files.
 
-**Name the instrument whenever you say a zone.** "Zone 2" is ambiguous in this repo and the two
-meanings are far apart: **ZoneSense Zone 2** runs from the aerobic to the anaerobic threshold — its
-ceiling *is* threshold, it is hard — while **HR Zone 2** is 138–151 bpm, easy aerobic. They share a
-number and nothing else. Always write `ZoneSense Z2` or `HR Z2`. This applies to the brief and to
-anything you write into a session file.
+**Never write a bare zone. Ever. Qualify every single one.** Write `ZS Z2`, `HR Z2`, `Pace Z2` —
+never `Z2`, never `Zone 2`, never `zone 2`. This repo runs three zone systems that share numbering
+and mean completely different intensities:
+
+| | what it is |
+|---|---|
+| `ZS Z1/Z2/Z3` | ZoneSense (DFA a1). Z1 below aerobic threshold, Z2 between AeT and AnT, Z3 above AnT |
+| `HR Z1–Z5` | Friel LTHR bands in `athlete/zones.yml`. HR Z2 is 138–151bpm, easy aerobic |
+| `Pace Z2` | the `Z2 Pace` step syntax in `rules/endurance-authoring.md` |
+
+**ZS Z2 is hard — its ceiling is threshold. HR Z2 is easy aerobic.** Same numeral, opposite
+sessions. That's the whole reason this rule exists.
+
+This is not satisfied by qualifying the first mention and abbreviating afterwards. The failure mode
+in practice is exactly that: writing "ZoneSense Zone 2" once and then "Z2", "mid-zone", "high-Z2",
+"drifting into Z3" for the rest of the message. Every one of those needs its prefix, because the
+athlete reads them mid-run on a watch screen where there is no earlier sentence to refer back to.
+Applies to the brief, to chat, and to anything written into a session file's `follow:`.
 
 **Describe blocks the way the session file describes them.** If the body says `3km 6:30/km Pace`,
 call it "the 3km at 6:30", not "the 20-minute block" — he'd have to do arithmetic to find out which
