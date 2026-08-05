@@ -1,0 +1,26 @@
+{
+  "skill_name": "daily-brief",
+  "evals": [
+    {
+      "id": 0,
+      "name": "standard-training-day",
+      "prompt": "give me my morning brief",
+      "expected_output": "Readiness table with real Suunto numbers correctly converted (RHR ~39bpm not 0.65), a call, today's session with its step list, and log/2026-08-05.md created with rpe null.",
+      "files": []
+    },
+    {
+      "id": 1,
+      "name": "rest-day-and-zone-naming",
+      "prompt": "what's the brief for friday? and remind me what zone I'm supposed to be in for saturday's long run",
+      "expected_output": "Recognises Fri 08-07 as a prescribed rest day (not a gap), and answers the zone question naming ZoneSense Zone 1 explicitly rather than a bare 'Zone 1'.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "name": "no-soreness-reported",
+      "prompt": "pull my sleep data and tell me if I should do today's workout",
+      "expected_output": "Scores the ladder, leaves soreness_0_10 null rather than inventing it, asks for it, and gives an explicit train/modify recommendation tied to rules/progression.md.",
+      "files": []
+    }
+  ]
+}
