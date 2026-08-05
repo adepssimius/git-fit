@@ -13,13 +13,18 @@ follow: >
   Pace throughout. On the 6:30 and 5:55 blocks, cross-check ZoneSense Zone 2 (not HR Z2) — sit
   mid-zone, not at its top.
 intent: >
-  Champion week 6 consolidates Runna's two midweek quality days into one moderate progression.
-  ZoneSense caveat, spelled out because `follow:` has only ~150 chars before the watch truncates:
-  the two work blocks are 3km at 6:30 (~19min) and 2.5km at 5:55 (~15min), both long enough for
-  a1 to settle. Aim mid-ZoneSense-Zone-2 on them, NOT its top — the top of ZoneSense Z2 is the
-  anaerobic threshold, and this is a progression, not a threshold session. ZoneSense Z2 and HR Z2
-  are different intensities that share a number: HR Z2 is 138-151bpm, much easier. See
-  athlete/zones.yml, which warns that holding the top of ZS Zone 2 means sitting essentially at LT2.
+  DEVELOPS: (1) sustainable aerobic ceiling — 15 unbroken min at tempo (5:55) raises the pace
+  holdable aerobically, which athlete/profile.md names as a direct lever on hours-on-course;
+  (2) flat rhythm specificity, per training/block.md — sustained flow on flat terrain is what
+  15-mile rail-trail laps demand, and there are no hills to break the rhythm for you;
+  (3) pacing discipline — the easy->steady->tempo shape rehearses finishing faster than you
+  started, the inverse of the go-out-too-hard failure athlete/zones.yml flags.
+  STRUCTURE: Champion week 6 consolidates Runna's two midweek quality days into one moderate
+  progression. Not a threshold session — it sits below that deliberately.
+  ZS caveat (here because `follow:` truncates at ~150 chars on the watch): work blocks are 3km
+  at 6:30 (~19min) and 2.5km at 5:55 (~15min), both long enough for a1 to settle. Aim mid ZS Z2,
+  not its top — the top of ZS Z2 is the anaerobic threshold. ZS Z2 and HR Z2 are different
+  intensities sharing a number; HR Z2 is 138-151bpm, much easier.
 origin: adapted
 published:
   suunto: 2026-08-05T02:32:44Z    # guide id 491c3e5b

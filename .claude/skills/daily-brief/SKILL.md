@@ -110,14 +110,32 @@ recommending he run something as written despite an amber, justify it rather tha
 
 ### 3. Cardio
 
-Session name, duration, distance, and the **full step list**, rendered so he can execute from the
-brief without opening the file. Include the guide id if it's on the watch, and say plainly if it
+**Lead with what the session develops, in one or two sentences, before the step list.** A brief that
+says what to run but not what it's for reduces him to executing instructions, and an athlete who
+knows the purpose makes better decisions mid-session than one following a step list — he can tell
+the difference between backing off because the session is wrong for today and backing off because
+he's avoiding the hard part.
+
+Take the purpose from the session's `intent:` field, `training/block.md`, and `athlete/profile.md`.
+Do not invent physiology: if `intent:` only records provenance ("Champion week 7's version of..."),
+say what the block-level reasoning supports and no more. Good sources for the *why*: block.md's
+"flat rhythm specificity" argument, profile.md's "getting faster is a lever on hours-on-course",
+and the session-type notes in `rules/endurance-authoring.md`.
+
+Then session name, duration, distance, and the **full step list**, rendered so he can execute from
+the brief without opening the file. Include the guide id if it's on the watch, and say plainly if it
 isn't — an unpushed session is a problem he needs to know about before he's out the door.
 
 Name the target instrument for each block (see the zone rule below). Add any meeting-time session
 (trainer ride, walking) — it's free in time terms but real in recovery terms.
 
 ### 4. Strength
+
+Same principle: say what the session is for before listing it. `rules/strength-authoring.md` and
+`strength/notes.md` carry the reasoning — Lower B is runner-specific durability rather than
+strength, the single-leg calf raise is called the highest-value accessory in the program for
+ultra durability, Nordics produce outsized DOMS for the stimulus. That context is what makes the
+difference between him cutting the right exercise and the wrong one on a bad day.
 
 The script prints today's lift straight from `strength/program.liftoscript`, with exercises, active
 set-variation, weight and rest. Give it as a table he can train from.
