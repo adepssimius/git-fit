@@ -253,3 +253,10 @@ equipment:
 
 None recorded yet. Log anything that affects session selection here, and reference it from
 `rules/progression.md`'s readiness ladder.
+
+**Baseline characteristic (2026-08-05):** gastroc/soleus soreness in the 1-3 (green) range is
+routine for this athlete — "par for the course," his words, not a signal of anything going wrong.
+`rules/logging.md`'s soreness scale is generic; read a green-band calf reading alone as noise, not
+an early-warning sign. What would actually be new information: calf soreness reaching amber (4-6)
+or higher, soreness anywhere else that isn't normally sore for him (arches/plantar in particular,
+per the walking-ramp overuse risk below), or a sharp/one-sided reading per the scale's own anchors.

@@ -127,6 +127,19 @@ anything needing a specific surface, and any block that has to start at a known 
 distance still shows as a countdown, so the nominal figure is a progress cue rather than a
 deadline.
 
+**Always name the instrument when you write a zone.** "Zone 2" is ambiguous in this repo and the
+ambiguity is not cosmetic: **ZoneSense Zone 2** is everything between the aerobic and anaerobic
+thresholds (its ceiling is LT2 — hard), while **HR Zone 2** is 138-151bpm (`hr.zones.z2_aerobic` —
+easy aerobic). They are wildly different intensities that happen to share a number. Write
+`ZoneSense Z2` or `HR Z2`, never a bare "Zone 2", especially in `follow:` — that field is what the
+athlete reads on the day. Caught 2026-08-05 on the progression run, whose `follow:` said "sit
+mid-Zone 2, not at its ceiling" and meant ZoneSense.
+
+**Give block durations in `follow:` when the body is written in distance.** The same session
+referred to "a ~20min continuous block" while the body prescribed 2km/3km/2.5km/1.5km — the athlete
+had no way to tell which block that was without doing the arithmetic. If `follow:` singles out a
+block, identify it the way the body writes it, plus the time.
+
 **Running targets:**
 - Absolute pace: `5:00/km Pace`, range `7:00-6:30/km Pace` (faster number second)
 - Zone: `Z2 Pace`, `Z2-Z3 Pace`
