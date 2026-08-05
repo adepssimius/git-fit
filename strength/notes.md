@@ -57,11 +57,30 @@ would have exceeded the SelectTech's 52.5lb/hand ceiling by Week 4. The new prog
 **2026-08-04 (same day) — Bench Press / Bent Over Row / Overhead Press start higher.** Athlete's own
 correction to the conservative initial estimate: Bench Press and Bent Over Row start at **35lb**
 (not 15lb), Overhead Press at **20lb** (not 12.5lb). Same weekly cadence as originally designed,
-just re-based — Bench/Row now peaks at **47.5lb/hand by Week 9**, only 5lb (2 increments) under the
-SelectTech's 52.5lb ceiling. **Watch this one**: if Bench/Row progress even one week ahead of
-schedule, it hits the equipment ceiling before the block ends — at that point either hold the
-weight and add reps/sets, or the athlete needs heavier dumbbells. Squat/Stiff Leg
-Deadlift/Incline Bench Press were unaffected by this correction.
+just re-based. Squat/Stiff Leg Deadlift/Incline Bench Press were unaffected by this correction.
+
+**2026-08-04 (evening) — re-based again, this time from real data.** The first actual session
+(Week 1 Upper A, logged in Liftosaur 21:11, 24.7min) is the first evidence this program has ever
+had, and it corrected the morning's guess in both directions:
+
+| Exercise | Prescribed | Actual | Action |
+|---|---|---|---|
+| Bench Press, DB | 3x5 35lb | 3x5 35lb | correct — ladder unchanged |
+| Bent Over Row, DB | 3x8 35lb | 3x8 **25lb** | **decoupled from Bench**, own ladder 25 → 37.5lb by Wk 9 |
+| Overhead Press, DB | 3x8 20lb | 3x8 **25lb** | re-based +5: 25 → 35lb by Wk 9 |
+| Pallof Press | 3x10 20lb | 3x10 **27.5lb** | re-based +7.5: 27.5 → 32.5lb |
+
+He also took the **full 3x5 tier** on bench rather than dropping down the readiness ladder.
+
+Bench and Row had been locked to identical numbers in all ten weeks, which was never justified —
+they're different lifts with different strength. Tonight separated them, and the athlete confirmed
+35 was genuinely too heavy for the row rather than a form or scheduling artifact.
+
+**The ceiling watch now applies to BENCH ONLY.** Bench still peaks at **47.5lb/hand by Week 9**,
+5lb (2 increments) under the SelectTech's 52.5lb ceiling — if it progresses even one week ahead of
+schedule it runs out of dumbbell before the block ends, and at that point either hold the weight
+and add reps/sets, or buy heavier dumbbells. Row now peaks at 37.5lb and is no longer near the
+ceiling; that risk is retired.
 
 Record further swaps here the same way:
 

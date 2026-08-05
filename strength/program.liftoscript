@@ -11,8 +11,18 @@
 ///
 /// Bench Press / Bent Over Row / Overhead Press start higher than the initial conservative
 /// estimate, per the athlete's own correction (2026-08-04): 35/35/20lb instead of 15/15/12.5lb.
-/// Same weekly cadence as originally designed, just re-based — Bench/Row peaks at 47.5lb/hand by
-/// Week 9, only 5lb (2 increments) under the SelectTech's 52.5lb ceiling, flagged to the athlete.
+///
+/// RE-BASED AGAIN (2026-08-04, evening) from the FIRST REAL SESSION — Week 1 Upper A, logged in
+/// Liftosaur. Prescription vs. actual: Bench 35 -> 35 (correct), Row 35 -> 25, OHP 20 -> 25,
+/// Pallof 20 -> 27.5. So the morning's correction overshot the row and undershot the other two.
+///   * Bent Over Row is now DECOUPLED from Bench and runs its own ladder, 25 -> 37.5lb by Week 9.
+///     Locking the two to identical numbers was always arbitrary. Side effect: row no longer
+///     approaches the SelectTech ceiling, so that watch item now applies to BENCH ONLY.
+///   * Overhead Press re-based +5: 25 -> 35lb by Week 9.
+///   * Pallof Press re-based +7.5: 27.5 -> 32.5lb.
+/// Bench Press keeps its ladder and still peaks at 47.5lb/hand by Week 9 — only 5lb (2 increments)
+/// under the SelectTech's 52.5lb ceiling. STILL THE ONE TO WATCH: if bench moves even one week
+/// ahead of schedule it runs out of dumbbell before the block ends.
 /// Squat/Stiff Leg Deadlift/Incline Bench Press are unaffected, still peaking at 32.5/32.5/27.5.
 ///
 /// Every week is fully self-contained (no reliance on Liftoscript's carry-forward mechanism —
@@ -30,9 +40,9 @@ core: Hanging Leg Raise / 3x10 / 0lb / 60s
 
 ## Upper A
 main: Bench Press, Dumbbell / ! 3x5 / 2x5 / 1x5 / 35lb / 180s
-main: Bent Over Row, Dumbbell / 3x8 / 35lb / 120s
-accessory: Overhead Press, Dumbbell / 3x8 / 20lb / 90s
-core: Pallof Press / 3x10 / 20lb / 60s
+main: Bent Over Row, Dumbbell / 3x8 / 25lb / 120s
+accessory: Overhead Press, Dumbbell / 3x8 / 25lb / 90s
+core: Pallof Press / 3x10 / 27.5lb / 60s
 
 ## Lower B — runner-specific, low fatigue
 /// Single Leg Calf Raise is the highest-value accessory in the whole program for
@@ -66,9 +76,9 @@ core: Hanging Leg Raise / 3x10 / 0lb / 60s
 
 ## Upper A
 main: Bench Press, Dumbbell / ! 3x5 / 2x5 / 1x5 / 37.5lb / 180s
-main: Bent Over Row, Dumbbell / 3x8 / 37.5lb / 120s
-accessory: Overhead Press, Dumbbell / 3x8 / 22.5lb / 90s
-core: Pallof Press / 3x10 / 20lb / 60s
+main: Bent Over Row, Dumbbell / 3x8 / 27.5lb / 120s
+accessory: Overhead Press, Dumbbell / 3x8 / 27.5lb / 90s
+core: Pallof Press / 3x10 / 27.5lb / 60s
 
 ## Lower B
 accessory: Single Leg Calf Raise / 4x12 / 0lb / 60s
@@ -99,9 +109,9 @@ core: Hanging Leg Raise / 3x10 / 0lb / 60s
 
 ## Upper A
 main: Bench Press, Dumbbell / ! 3x5 / 2x5 / 1x5 / 40lb / 180s
-main: Bent Over Row, Dumbbell / 3x8 / 40lb / 120s
-accessory: Overhead Press, Dumbbell / 3x8 / 22.5lb / 90s
-core: Pallof Press / 3x10 / 22.5lb / 60s
+main: Bent Over Row, Dumbbell / 3x8 / 30lb / 120s
+accessory: Overhead Press, Dumbbell / 3x8 / 27.5lb / 90s
+core: Pallof Press / 3x10 / 30lb / 60s
 
 ## Lower B
 accessory: Single Leg Calf Raise / 4x12 / 5lb / 60s
@@ -132,9 +142,9 @@ core: Hanging Leg Raise / 3x10 / 0lb / 60s
 
 ## Upper A
 main: Bench Press, Dumbbell / ! 3x5 / 2x5 / 1x5 / 42.5lb / 180s
-main: Bent Over Row, Dumbbell / 3x8 / 42.5lb / 120s
-accessory: Overhead Press, Dumbbell / 3x8 / 25lb / 90s
-core: Pallof Press / 3x10 / 22.5lb / 60s
+main: Bent Over Row, Dumbbell / 3x8 / 32.5lb / 120s
+accessory: Overhead Press, Dumbbell / 3x8 / 30lb / 90s
+core: Pallof Press / 3x10 / 30lb / 60s
 
 ## Lower B
 accessory: Single Leg Calf Raise / 4x12 / 5lb / 60s
@@ -167,9 +177,9 @@ main: Stiff Leg Deadlift, Dumbbell / 1x6 / 27.5lb / 150s
 
 ## Upper A
 main: Bench Press, Dumbbell / ! 3x5 / 2x5 / 1x5 / 42.5lb / 180s
-main: Bent Over Row, Dumbbell / 3x8 / 42.5lb / 120s
-accessory: Overhead Press, Dumbbell / 3x8 / 25lb / 90s
-core: Pallof Press / 3x10 / 25lb / 60s
+main: Bent Over Row, Dumbbell / 3x8 / 32.5lb / 120s
+accessory: Overhead Press, Dumbbell / 3x8 / 30lb / 90s
+core: Pallof Press / 3x10 / 32.5lb / 60s
 
 
 
@@ -204,9 +214,9 @@ core: Hanging Leg Raise / 3x10 / 0lb / 60s
 
 ## Upper A
 main: Bench Press, Dumbbell / ! 3x5 / 2x5 / 1x5 / 45lb / 180s
-main: Bent Over Row, Dumbbell / 3x8 / 45lb / 120s
-accessory: Overhead Press, Dumbbell / 3x8 / 27.5lb / 90s
-core: Pallof Press / 3x10 / 25lb / 60s
+main: Bent Over Row, Dumbbell / 3x8 / 35lb / 120s
+accessory: Overhead Press, Dumbbell / 3x8 / 32.5lb / 90s
+core: Pallof Press / 3x10 / 32.5lb / 60s
 
 ## Lower B
 accessory: Single Leg Calf Raise / 4x12 / 10lb / 60s
@@ -236,8 +246,8 @@ main: Stiff Leg Deadlift, Dumbbell / 2x6 / 20lb / 120s
 
 ## Upper A
 main: Bench Press, Dumbbell / ! 3x5 / 2x5 / 1x5 / 45lb / 180s
-main: Bent Over Row, Dumbbell / 3x8 / 45lb / 120s
-accessory: Overhead Press, Dumbbell / 3x8 / 27.5lb / 90s
+main: Bent Over Row, Dumbbell / 3x8 / 35lb / 120s
+accessory: Overhead Press, Dumbbell / 3x8 / 32.5lb / 90s
 
 ## Lower B
 accessory: Single Leg Calf Raise / 4x12 / 10lb / 60s
@@ -269,9 +279,9 @@ core: Hanging Leg Raise / 3x10 / 0lb / 60s
 
 ## Upper A
 main: Bench Press, Dumbbell / ! 3x5 / 2x5 / 1x5 / 47.5lb / 180s
-main: Bent Over Row, Dumbbell / 3x8 / 47.5lb / 120s
-accessory: Overhead Press, Dumbbell / 3x8 / 30lb / 90s
-core: Pallof Press / 3x10 / 25lb / 60s
+main: Bent Over Row, Dumbbell / 3x8 / 37.5lb / 120s
+accessory: Overhead Press, Dumbbell / 3x8 / 35lb / 90s
+core: Pallof Press / 3x10 / 32.5lb / 60s
 
 ## Lower B
 accessory: Single Leg Calf Raise / 4x12 / 10lb / 60s
