@@ -17,7 +17,7 @@ intent: >
   Upper B lifting after. Down week, so kept short; grows through the block as volume builds.
 origin: authored
 published:
-  suunto: 2026-08-05T02:32:44Z    # guide id e8bkn22j
+  suunto: 2026-08-06T19:50:00Z    # guide id e8bkn22j
 ---
 
 Easy aerobic

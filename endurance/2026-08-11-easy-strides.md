@@ -16,7 +16,7 @@ intent: >
   than the work justifies if rushed.
 origin: authored
 published:
-  suunto: 2026-08-05T02:32:44Z    # guide id 7cam4h0m
+  suunto: 2026-08-06T19:50:00Z    # guide id 7cam4h0m
 ---
 
 Easy aerobic
