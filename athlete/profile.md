@@ -251,6 +251,27 @@ equipment:
   sweat_rate: "low-average"         # informs sodium at the lower end of typical — see rules/fueling.md
 ```
 
+## Footwear — the Mont Blanc runs small
+
+**Altra Lone Peak 9, size 9.5 — correct fit.** The reference shoe.
+
+**Altra Mont Blanc Carbon, size 9.5 — TOO SMALL.** Same nominal size, tighter last. The 2026-08-02
+30k in these produced **symmetrical blisters on both 2nd toes**, where they meet the tip of the 3rd
+toes, still present four days later, plus toe-joint soreness. Bilateral damage in one specific spot
+is a fit problem — technique and mileage don't pick a single matching pair of toes.
+
+**Sizing up to 10 in the Mont Blanc**, first tested on the 2026-08-08 long run.
+
+Why this matters beyond comfort: the Mont Blanc is the carbon-plated shoe, i.e. the likely race-day
+or fast-lap candidate, and `races/2026-10-17-ghost-train.md` § Shoe/sock rotation is decided in
+block week 16 off lap sim 1 data. A shoe that blisters at 30k is disqualifying at 100km, and feet
+are listed there as one of the four things that actually end this race. **Do not carry an unresolved
+sizing question into that decision** — the size 10 needs enough long-run mileage before block week
+16 to be trusted, not just tried once.
+
+Standing rule: log blistering by **location and symmetry**, not just presence. Bilateral and
+specific points at fit; unilateral points at gait, camber, or a lacing/sock issue.
+
 ## Working days — walking only happens on these
 
 Meeting-time walking is done during work calls, so it lands on **working days only**: Mon–Fri,
