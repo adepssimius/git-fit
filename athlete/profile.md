@@ -255,12 +255,35 @@ equipment:
 
 **Altra Lone Peak 9, size 9.5 — correct fit.** The reference shoe.
 
-**Altra Mont Blanc Carbon, size 9.5 — TOO SMALL.** Same nominal size, tighter last. The 2026-08-02
-30k in these produced **symmetrical blisters on both 2nd toes**, where they meet the tip of the 3rd
-toes, still present four days later, plus toe-joint soreness. Bilateral damage in one specific spot
-is a fit problem — technique and mileage don't pick a single matching pair of toes.
+**Altra Mont Blanc Carbon, size 9.5 — TOO SMALL, and it produced a joint symptom.** Same nominal
+size, tighter last. The 2026-08-02 30k in these produced two things, and **the second matters more
+than the first**:
 
-**Sizing up to 10 in the Mont Blanc**, first tested on the 2026-08-08 long run.
+1. **Blisters** on both 2nd toes where they meet the tip of the 3rd toes, still present four days
+   later. Bilateral damage at one specific point is a fit problem — technique and mileage don't
+   select a matching pair of toes.
+2. **Bilateral toe-joint pain the following day, in the joints nearest the ankle** — and the athlete
+   has **never experienced this in any other shoe**. That combination (new, bilateral, symmetrical,
+   shoe-specific, load-related) is the profile of a mechanical cause, and it is a joint signal
+   rather than a soft-tissue one. `rules/logging.md`'s scale treats sharp or localized symptoms as
+   an injury signal rather than soreness, and this belongs in that category even though it resolved.
+
+Blisters are a nuisance you can tape. A novel bilateral joint symptom is not, and it should drive
+the shoe decision — not the blisters.
+
+**Sizing up to 10 in the Mont Blanc.** That is the right first move — a too-short toe box explains
+the blisters directly, and jammed toes plausibly explain joint loading too.
+
+**But do not assume sizing fixes the joint symptom.** The Mont Blanc is carbon-plated, and a stiff
+forefoot plate changes where load concentrates through the foot regardless of length. If the joint
+pain returns in the 10, the mechanism is the shoe rather than the size, and the shoe is out for long
+runs in this build — that is a different conclusion from "needs more break-in", and the plan should
+not spend weeks discovering it slowly.
+
+**If the joint symptom recurs, get it looked at rather than iterating on shoes.** Bilateral
+load-related midfoot/forefoot joint pain in a build with rising volume is worth a professional
+opinion; nothing in this repo is qualified to distinguish an irritated joint from an early stress
+response, and the difference matters a great deal at this point in the block.
 
 Why this matters beyond comfort: the Mont Blanc is the carbon-plated shoe, i.e. the likely race-day
 or fast-lap candidate, and `races/2026-10-17-ghost-train.md` § Shoe/sock rotation is decided in
@@ -271,6 +294,12 @@ sizing question into that decision** — the size 10 needs enough long-run milea
 
 Standing rule: log blistering by **location and symmetry**, not just presence. Bilateral and
 specific points at fit; unilateral points at gait, camber, or a lacing/sock issue.
+
+**Foot/toe joints — OPEN, 2026-08-02.** Bilateral toe-joint pain in the joints nearest the ankle,
+the day after a 30k in Altra Mont Blanc Carbon 9.5. Novel — never in any other shoe. Resolved since
+(soreness 2 on 2026-08-06, no arch or joint complaint). Cause is presumed mechanical and
+shoe-specific; see § Footwear. **Not closed:** the size-10 test is the experiment, and recurrence
+means stop testing and seek an opinion rather than continuing to iterate.
 
 ## Working days — walking only happens on these
 
