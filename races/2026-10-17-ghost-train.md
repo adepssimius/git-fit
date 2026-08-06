@@ -169,10 +169,10 @@ choice rather than a placeholder.
 
 ## Shoe/sock rotation
 
-> **Open question as of 2026-08-06:** the Altra Mont Blanc Carbon (the carbon-plated candidate)
-> blistered both 2nd toes over a 30k at size 9.5. Sizing up to 10 from 2026-08-08. This has to be
-> settled — with real long-run mileage, not one test — before the rotation is decided in block
-> week 16. See `athlete/profile.md` § Footwear.
+> **Open question as of 2026-08-06:** the Altra Mont Blanc Carbon has a narrow last and at size 9.5
+> compressed the foot over a 30k — blisters plus toe-joint soreness, not an injury but enough to
+> rule it out at that size for long distance. Sizing up to 10. Needs real long-run mileage, not one
+> test, before the rotation is decided in block week 16. See `athlete/profile.md` § Footwear.
 
 **Decided during block week 16**, informed by lap sim 1 (block week 15) — plan a full shoe change
 (likely lap 3–4) and sock changes at any crew stop where feet feel off. **Lap sim 2 (block week
