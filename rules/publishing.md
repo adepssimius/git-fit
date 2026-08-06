@@ -47,6 +47,43 @@ Then pass that base64 to `mcp__suuntool__guides_upload`. `suuntool` needs `--all
    requires the key to be present, set `OWNER` in `scripts/compile_guide.py` — it must then match in
    both files or the archive is rejected before upload.
 
+### The reference implementation — match it, don't invent
+
+**2026-08-06.** After a guide rendered as a blank screen on the watch, the athlete rebuilt the same
+two workouts in **Suunto's own Workout Planner** and they were downloaded with `guides_download`
+for comparison. Those archives are the ground truth for this format. What the comparison showed:
+
+**There is no `manifest.json`.** Suunto ships `guide.json` + `icon.png`, nothing else. This file
+previously claimed a manifest was required and that its `owner` had to match guide.json's or the
+upload would 400. All of that was invented and is now removed from `pack_guide.py`.
+
+**The hand-rolled step shape was missing most of what the watch renders.** Every one of these came
+from the reference and is now emitted:
+
+| | |
+|---|---|
+| `lap: {type:"manual", hidden:true}` | replaces an invented `createManualLap: true` |
+| `phase` | `warmUp` / `interval` / `rest` / `coolDown` / `finished`, at step level AND in `extensions` |
+| `alerts` | `condition` + `countdown: {type:"standard"}` — this drives the on-screen prompt |
+| `"title": "target"` | on target fields |
+| `notification` steps | a preview screen before each PHASE CHANGE, not before each step |
+| `notification: {type:"default"}` | on interval and rest steps |
+| `options: {repeatNumberPreferred: true}` | on the WORK step inside a repeat only — this is what makes the watch count reps |
+| trailing `finished` step | triggerless, closes the guide |
+| `extensions["com.suunto"]` | phase, isCustomNameSet, uuid |
+
+A 5-block workout therefore compiles to **8 steps**, not 5. If a future change makes that number
+match the block count again, notifications have been dropped and the guide will render poorly.
+
+**UUIDs are deterministic here** (`uuid5` over a fixed namespace + session stem + index) even
+though Suunto emits random v4s. The idempotency check in this file is a sha256 of the archive, and
+random uuids would make every session look changed on every compile.
+
+**Honest caveat:** matching the reference did not *prove* which missing field caused the blank
+screen — the 2026-08-04 guide displayed correctly while missing all of them. Matching a known-good
+implementation is the fix regardless, but if a blank screen recurs after this, the cause is
+environmental and this section is a red herring.
+
 ### RESOLVED 2026-08-05: the trainer rides publish fine
 
 This section used to say the nine `sport: Ride` sessions could not be published, because they

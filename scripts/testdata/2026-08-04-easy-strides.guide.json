@@ -15,7 +15,21 @@
   "externalId": "git-fit-2026-08-04-easy-strides",
   "steps": [
     {
+      "type": "notification",
+      "title": "EZ ZS Aerobic",
+      "fields": [
+        {
+          "type": "text",
+          "value": "4.00 km"
+        }
+      ]
+    },
+    {
       "type": "fields",
+      "lap": {
+        "type": "manual",
+        "hidden": true
+      },
       "trigger": {
         "type": "or",
         "triggers": [
@@ -29,7 +43,6 @@
         ]
       },
       "title": "EZ ZS Aerobic",
-      "createManualLap": true,
       "fields": [
         {
           "type": "pace"
@@ -41,15 +54,48 @@
           "type": "stepDistanceCountdown",
           "value": 4000
         }
+      ],
+      "extensions": {
+        "com.suunto": {
+          "phase": "warmUp",
+          "isCustomNameSet": false,
+          "uuid": "f987ee4c-af41-595f-a728-5400a555a871"
+        }
+      },
+      "phase": "warmUp",
+      "alerts": [
+        {
+          "type": "default",
+          "condition": {
+            "type": "stepDistance",
+            "value": 4000
+          },
+          "countdown": {
+            "type": "standard"
+          }
+        }
+      ]
+    },
+    {
+      "type": "notification",
+      "title": "FIND HILL",
+      "fields": [
+        {
+          "type": "text",
+          "value": "2'00"
+        }
       ]
     },
     {
       "type": "fields",
+      "lap": {
+        "type": "manual",
+        "hidden": true
+      },
       "trigger": {
         "type": "manualLap"
       },
       "title": "FIND HILL",
-      "createManualLap": true,
       "fields": [
         {
           "type": "pace"
@@ -61,6 +107,27 @@
           "type": "stepDurationCountdown",
           "value": 120
         }
+      ],
+      "notification": {
+        "type": "default"
+      },
+      "extensions": {
+        "com.suunto": {
+          "phase": "interval",
+          "isCustomNameSet": false,
+          "uuid": "f12626be-48d8-5c54-825e-e47ac403ab96"
+        }
+      },
+      "phase": "interval"
+    },
+    {
+      "type": "notification",
+      "title": "STRIDE",
+      "fields": [
+        {
+          "type": "text",
+          "value": "6 x 0'20\n 1'30 4'35 - 5'05 /km"
+        }
       ]
     },
     {
@@ -69,6 +136,10 @@
       "steps": [
         {
           "type": "fields",
+          "lap": {
+            "type": "manual",
+            "hidden": true
+          },
           "trigger": {
             "type": "or",
             "triggers": [
@@ -82,13 +153,13 @@
             ]
           },
           "title": "STRIDE",
-          "createManualLap": true,
           "fields": [
             {
               "type": "targetPace",
               "value": 3.46,
               "min": 3.28,
-              "max": 3.64
+              "max": 3.64,
+              "title": "target"
             },
             {
               "type": "pace"
@@ -100,10 +171,40 @@
               "type": "stepDurationCountdown",
               "value": 20
             }
-          ]
+          ],
+          "notification": {
+            "type": "default"
+          },
+          "extensions": {
+            "com.suunto": {
+              "phase": "interval",
+              "isCustomNameSet": false,
+              "uuid": "cdf1ea5f-b046-54c7-a58a-784bb2171f60"
+            }
+          },
+          "phase": "interval",
+          "alerts": [
+            {
+              "type": "default",
+              "condition": {
+                "type": "stepDuration",
+                "value": 20
+              },
+              "countdown": {
+                "type": "standard"
+              }
+            }
+          ],
+          "options": {
+            "repeatNumberPreferred": true
+          }
         },
         {
           "type": "fields",
+          "lap": {
+            "type": "manual",
+            "hidden": true
+          },
           "trigger": {
             "type": "or",
             "triggers": [
@@ -117,13 +218,13 @@
             ]
           },
           "title": "REC",
-          "createManualLap": true,
           "fields": [
             {
               "type": "targetPace",
               "value": 1.8,
               "min": 1.75,
-              "max": 1.85
+              "max": 1.85,
+              "title": "target"
             },
             {
               "type": "pace"
@@ -135,12 +236,54 @@
               "type": "stepDurationCountdown",
               "value": 90
             }
+          ],
+          "notification": {
+            "type": "default"
+          },
+          "extensions": {
+            "com.suunto": {
+              "phase": "rest",
+              "isCustomNameSet": false,
+              "uuid": "0763feac-fc6a-553c-a5b4-110c51173b96"
+            }
+          },
+          "phase": "rest",
+          "alerts": [
+            {
+              "type": "default",
+              "condition": {
+                "type": "stepDuration",
+                "value": 90
+              },
+              "countdown": {
+                "type": "standard"
+              }
+            }
           ]
+        }
+      ],
+      "extensions": {
+        "com.suunto": {
+          "uuid": "5bfc759c-b042-5a4e-aefd-a52328e73aaf"
+        }
+      }
+    },
+    {
+      "type": "notification",
+      "title": "CD",
+      "fields": [
+        {
+          "type": "text",
+          "value": "1.50 km"
         }
       ]
     },
     {
       "type": "fields",
+      "lap": {
+        "type": "manual",
+        "hidden": true
+      },
       "trigger": {
         "type": "or",
         "triggers": [
@@ -154,7 +297,6 @@
         ]
       },
       "title": "CD",
-      "createManualLap": true,
       "fields": [
         {
           "type": "pace"
@@ -166,7 +308,50 @@
           "type": "stepDistanceCountdown",
           "value": 1500
         }
+      ],
+      "extensions": {
+        "com.suunto": {
+          "phase": "coolDown",
+          "isCustomNameSet": false,
+          "uuid": "62a4a765-7d5f-5978-9473-48da0f81db6b"
+        }
+      },
+      "phase": "coolDown",
+      "alerts": [
+        {
+          "type": "default",
+          "condition": {
+            "type": "stepDistance",
+            "value": 1500
+          },
+          "countdown": {
+            "type": "standard"
+          }
+        }
       ]
+    },
+    {
+      "type": "fields",
+      "lap": {
+        "type": "manual",
+        "hidden": true
+      },
+      "title": "Finished",
+      "fields": [
+        {
+          "type": "text",
+          "value": "SuuntoPlus\u2122 guide ended"
+        }
+      ],
+      "notification": {
+        "type": "default"
+      },
+      "extensions": {
+        "com.suunto": {
+          "phase": "finished"
+        }
+      },
+      "phase": "finished"
     }
   ]
 }

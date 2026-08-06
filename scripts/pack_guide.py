@@ -6,7 +6,6 @@ never opens or validates the archive. So everything the format requires has to b
 before it gets there, and this script is the last place that can be true.
 
 The archive is a plain zip with exactly three flat entries, no directories, no nesting:
-    manifest.json   small metadata block
     guide.json      the workout (see compile_guide.py)
     icon.png        exactly 300x300
 
@@ -72,26 +71,16 @@ def dumps(value: dict) -> bytes:
     return json.dumps(value, indent=2, ensure_ascii=False).encode("utf-8")
 
 
-def build_manifest(guide: dict) -> dict:
-    # `owner` must be identical here and in guide.json — a mismatch is rejected. The value
-    # itself is ignored (the server rewrites it to "Suunto"), but the key must be present:
-    # omitting it fails deserialisation server-side with an opaque HTTP 400.
-    return {
-        "name": guide["name"],
-        "type": "sequence",
-        "owner": OWNER,
-        "description": guide["description"],
-    }
-
-
 def pack(guide: dict) -> bytes:
-    if guide.get("owner") != OWNER:
-        raise CompileError(
-            f"manifest/guide owner mismatch ({guide.get('owner')!r} vs {OWNER!r}) — "
-            f"rejected before upload")
+    """Archive is guide.json + icon.png. NO manifest.json.
 
+    An earlier version of this packer wrote a manifest.json and asserted that its `owner` had to
+    match guide.json's or the upload would be rejected with an opaque HTTP 400. That was never
+    verified against Suunto's own output. Downloading two guides built in the Suunto Workout
+    Planner (2026-08-06) settled it: they contain **guide.json and icon.png only**. The manifest,
+    and the whole owner-matching rule built on top of it, were invented.
+    """
     entries = [
-        ("manifest.json", dumps(build_manifest(guide))),
         ("guide.json", dumps(guide)),
         ("icon.png", solid_icon_png()),
     ]

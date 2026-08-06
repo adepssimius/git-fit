@@ -27,6 +27,7 @@ import argparse
 import json
 import re
 import sys
+import uuid
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -341,7 +342,72 @@ def step_title(raw: str, fallback: str) -> str:
     return head[:MAX_STEP_TITLE].strip()
 
 
-def build_step(line: str, title: str, zones: dict, rel: str, hr_first: bool) -> dict:
+# Suunto's phase vocabulary, taken from Workout Planner output. The watch keys its display and
+# its notification screens off these, so a step without one renders as nothing useful.
+PHASE_WARMUP, PHASE_INTERVAL, PHASE_REST, PHASE_COOLDOWN = "warmUp", "interval", "rest", "coolDown"
+
+# Deterministic UUIDs. Suunto emits random v4s, but this packer must be byte-stable — the whole
+# idempotency mechanism in rules/publishing.md is a sha256 of the archive, and a fresh uuid per
+# compile would make every session look changed on every run.
+_UUID_NS = uuid.UUID("6b1f4a2e-1c3d-4e5f-8a9b-0c1d2e3f4a5b")
+
+
+def step_uuid(seed: str) -> str:
+    return str(uuid.uuid5(_UUID_NS, seed))
+
+
+def phase_for(header: str, is_rest: bool) -> str:
+    """Map a section header to a Suunto phase. Rest steps inside a repeat are `rest`."""
+    if is_rest:
+        return PHASE_REST
+    h = header.lower()
+    if h.startswith(("warm", "easy aerobic")) or "warmup" in h:
+        return PHASE_WARMUP
+    if h.startswith("cool"):
+        return PHASE_COOLDOWN
+    return PHASE_INTERVAL
+
+
+def _fmt_pace(target: dict | None) -> str:
+    """{'min': m/s, 'max': m/s} -> "7'00 - 7'30 /km", matching Suunto's notification text."""
+    if not target or target.get("type") != "targetPace":
+        return ""
+    def clock(mps):
+        s = round(1000 / mps)
+        return f"{s // 60}'{s % 60:02d}"
+    return f"{clock(target['max'])} - {clock(target['min'])} /km"
+
+
+def _fmt_amount(step: dict) -> str:
+    """The distance or duration of a compiled step, as Suunto writes it in a notification."""
+    for f in step["fields"]:
+        if f["type"] == "stepDistanceCountdown":
+            return f"{f['value'] / 1000:.2f} km"
+        if f["type"] == "stepDurationCountdown":
+            s = int(f["value"])
+            return f"{s // 60}'{s % 60:02d}"
+    return ""
+
+
+def notification_step(title: str, text: str) -> dict:
+    return {"type": "notification", "title": title,
+            "fields": [{"type": "text", "value": text}]}
+
+
+def describe(entry: dict) -> str:
+    """Preview text for the notification that precedes a block."""
+    if entry["type"] == "repeat":
+        inner = entry["steps"]
+        work = f"{entry['times']} x {_fmt_amount(inner[0])}"
+        tgt = next((f for f in inner[0]["fields"] if f["type"].startswith("target")), None)
+        rest = f"\n {_fmt_amount(inner[1])}" if len(inner) > 1 else ""
+        return f"{work}{rest} {_fmt_pace(tgt)}".rstrip()
+    tgt = next((f for f in entry["fields"] if f["type"].startswith("target")), None)
+    return f"{_fmt_amount(entry)} {_fmt_pace(tgt)}".rstrip()
+
+
+def build_step(line: str, title: str, zones: dict, rel: str, hr_first: bool,
+               phase: str = "interval", uid_seed: str = "") -> dict:
     """One `- <duration|distance> <target>` line -> one `fields` screen."""
     m = re.match(r"^-\s+(\S+)\s+(.*)$", line.strip())
     if not m:
@@ -374,6 +440,8 @@ def build_step(line: str, title: str, zones: dict, rel: str, hr_first: bool) -> 
 
     fields: list[dict] = []
     if target:
+        # Suunto labels the target field "target". Mine had no title at all.
+        target = {**target, "title": "target"}
         fields.append(target)
     if cadence:
         fields.append(cadence)
@@ -395,13 +463,32 @@ def build_step(line: str, title: str, zones: dict, rel: str, hr_first: bool) -> 
     trigger = ({"type": "manualLap"} if until_lap
                else {"type": "or", "triggers": [trigger_inner, {"type": "manualLap"}]})
 
-    return {
+    # Key order and key names below mirror a guide built in Suunto's own Workout Planner and
+    # downloaded on 2026-08-06 (see rules/publishing.md § "The reference implementation").
+    # Everything here was absent from the hand-rolled version this replaced, which is why the
+    # watch could run a guide — laps fired, titles logged — while rendering nothing on screen.
+    step = {
         "type": "fields",
+        # NOT `createManualLap: True`. That key does not appear anywhere in Suunto's output; it
+        # was invented. The real shape is a `lap` object.
+        "lap": {"type": "manual", "hidden": True},
         "trigger": trigger,
         "title": title,
-        "createManualLap": True,
         "fields": fields,
     }
+    if phase in ("interval", "rest"):
+        step["notification"] = {"type": "default"}
+    step["extensions"] = {"com.suunto": {"phase": phase,
+                                         "isCustomNameSet": False,
+                                         "uuid": step_uuid(uid_seed)}}
+    step["phase"] = phase
+    # `alerts` is what drives the on-screen prompt and countdown. An `until-lap` step has no
+    # automatic condition to alert on, so it gets none.
+    if not until_lap:
+        step["alerts"] = [{"type": "default",
+                           "condition": dict(trigger_inner),
+                           "countdown": {"type": "standard"}}]
+    return step
 
 
 def compile_session(path: Path, zones: dict | None = None) -> dict:
@@ -421,23 +508,42 @@ def compile_session(path: Path, zones: dict | None = None) -> dict:
     steps: list[dict] = []
     pending: list[str] = []
     header, repeat_times = "", 0
+    last_phase = None
 
     def flush():
-        nonlocal pending, repeat_times
+        nonlocal pending, repeat_times, last_phase
         if not pending:
             return
-        built = [build_step(ln, step_title(header, f"Step {len(steps) + 1}"), zones, rel, hr_first)
-                 for ln in pending]
-        if repeat_times > 1:
-            if repeat_times > MAX_REPEAT_TIMES:
-                raise CompileError(f"{rel}: repeat x{repeat_times} exceeds {MAX_REPEAT_TIMES}")
-            # Rest steps inside a repeat get their own title so the watch screen isn't
-            # ambiguous about which half of the interval you're in.
-            for s in built[1:]:
-                s["title"] = "REC"
-            steps.append({"type": "repeat", "times": repeat_times, "steps": built})
+        if repeat_times > MAX_REPEAT_TIMES:
+            raise CompileError(f"{rel}: repeat x{repeat_times} exceeds {MAX_REPEAT_TIMES}")
+        repeating = repeat_times > 1
+        title = step_title(header, f"Step {len(steps) + 1}")
+        built = []
+        for i, ln in enumerate(pending):
+            # Inside a repeat the second step is the recovery — Suunto phases it `rest`.
+            is_rest = repeating and i > 0
+            built.append(build_step(ln, "REC" if is_rest else title, zones, rel, hr_first,
+                                    phase=phase_for(header, is_rest),
+                                    uid_seed=f"{path.stem}:{len(steps)}:{i}"))
+        if repeating:
+            # `repeatNumberPreferred` is what makes the watch count reps ("3/7") instead of
+            # showing an anonymous step. Suunto sets it on the WORK step only, not the recovery.
+            built[0]["options"] = {"repeatNumberPreferred": True}
+            entry = {"type": "repeat", "times": repeat_times, "steps": built,
+                     "extensions": {"com.suunto": {"uuid": step_uuid(f"{path.stem}:rep:{len(steps)}")}}}
         else:
-            steps.extend(built)
+            entry = None
+
+        # A notification screen precedes each PHASE CHANGE, not each step — that is how Suunto
+        # does it, and it is why a 5-block workout compiles to 8 steps. A repeat gets one
+        # notification summarising the whole set.
+        phase = phase_for(header, False)
+        if phase != last_phase or repeating:
+            preview = describe(entry or built[0])
+            steps.append(notification_step(title, preview))
+        last_phase = phase
+
+        steps.append(entry) if entry else steps.extend(built)
         pending, repeat_times = [], 0
 
     for line in body.splitlines():
@@ -455,7 +561,21 @@ def compile_session(path: Path, zones: dict | None = None) -> dict:
 
     if not steps:
         raise CompileError(f"{rel}: no steps found in the body")
-    total = sum(s["times"] * len(s["steps"]) if s["type"] == "repeat" else 1 for s in steps)
+
+    # Suunto closes every guide with a triggerless `finished` step. The watch already writes
+    # "SuuntoPlus(tm) guide ended" into the lap notes without it, but the step is what puts a
+    # closing screen on the display rather than leaving the last interval up.
+    steps.append({
+        "type": "fields",
+        "lap": {"type": "manual", "hidden": True},
+        "title": "Finished",
+        "fields": [{"type": "text", "value": "SuuntoPlus\u2122 guide ended"}],
+        "notification": {"type": "default"},
+        "extensions": {"com.suunto": {"phase": "finished"}},
+        "phase": "finished",
+    })
+    total = sum(s["times"] * len(s["steps"]) if s["type"] == "repeat" else 1
+                for s in steps if s["type"] != "notification")
     if total > MAX_STEPS:
         raise CompileError(f"{rel}: {total} steps exceeds the {MAX_STEPS} limit")
 
