@@ -138,6 +138,29 @@ def working_days(start: datetime.date, end_inclusive: datetime.date) -> list[dat
     return days
 
 
+def trainer_days(start: datetime.date, end_inclusive: datetime.date) -> set[datetime.date]:
+    """Dates in range carrying a same-day meeting-time trainer ride.
+
+    Athlete-confirmed 2026-08-06: walking and the bike trainer are NOT two things he can do in
+    the same day's meeting block — he has ~90-120min of meetings total, full stop. A day with a
+    ride scheduled contributes ZERO walking minutes, not a reduced share. An earlier version of
+    this script divided the weekly walk target across every working day including trainer days,
+    which understated the real per-day requirement on every other day of the week.
+    """
+    out = set()
+    for p in ENDURANCE.glob("*.md"):
+        fm, _ = frontmatter(p)
+        if fm.get("sport") != "Ride" or not fm.get("concurrent"):
+            continue
+        try:
+            dt = datetime.datetime.strptime(fm.get("date", ""), "%Y-%m-%d").date()
+        except ValueError:
+            continue
+        if start <= dt <= end_inclusive:
+            out.add(dt)
+    return out
+
+
 # Weekday -> strength day, from the weekly template in training/block.md. Wed/Fri/Sat carry no
 # lift by design: Wednesday is left clean for the big workout, Friday is the mandated leg-recovery
 # day before the long run, Saturday is the long run itself.
@@ -333,7 +356,9 @@ def main() -> int:
     else:
         monday = d - datetime.timedelta(days=d.weekday())
         sunday = monday + datetime.timedelta(days=6)
-        all_wd = working_days(monday, sunday)
+        raw_wd = working_days(monday, sunday)
+        trainer = trainer_days(monday, sunday)
+        all_wd = [x for x in raw_wd if x not in trainer]
         left_wd = [x for x in all_wd if x >= d]
         done_wd = [x for x in all_wd if x < d]
         hol = observed_holidays(d.year)
@@ -341,10 +366,12 @@ def main() -> int:
                    if x.weekday() < 5 and x in hol]
 
         print(f"  target      {walk_target}min this week")
-        print(f"  working days {len(all_wd)} this week ({', '.join(x.strftime('%a') for x in all_wd)})"
-              + (f"   [{', '.join(hol[x] + ' ' + x.strftime('%a') for x in offdays)} off]" if offdays else ""))
-        print(f"              -> {walk_target / len(all_wd):.0f}min per working day if spread evenly"
-              if all_wd else "              -> NO working days this week")
+        excl = [f"{x.strftime('%a')} trainer" for x in sorted(trainer)]
+        print(f"  walking days {len(all_wd)} this week ({', '.join(x.strftime('%a') for x in all_wd)})"
+              + (f"   [{', '.join(hol[x] + ' ' + x.strftime('%a') for x in offdays)} off]" if offdays else "")
+              + (f"   [{', '.join(excl)} — can't walk and trainer same day]" if excl else ""))
+        print(f"              -> {walk_target / len(all_wd):.0f}min per walking day if spread evenly"
+              if all_wd else "              -> NO walking days this week")
 
         if block_week:
             w_now, h_now = time_on_feet(str(block_week))
@@ -360,9 +387,9 @@ def main() -> int:
                          if delta > 15 else ""))
 
         today_is_workday = d in all_wd
+        why_not = hol.get(d) or ("trainer ride scheduled" if d in trainer else "weekend")
         print(f"  today       {d.strftime('%a')} — "
-              + ("a walking day" if today_is_workday
-                 else f"NOT a walking day ({hol.get(d, 'weekend')})"))
+              + ("a walking day" if today_is_workday else f"NOT a walking day ({why_not})"))
 
         if args.walked is None:
             print(f"  -> pull WALKING activities (activityId 0) since Mon {monday}, sum the minutes,")

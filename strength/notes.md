@@ -43,6 +43,38 @@ weight is trivially easy, jump it by hand in the next push rather than waiting o
 
 ## Substitutions
 
+**2026-08-06 — Nordic Curl has no anchor at home.** No bench and no partner to hold the feet.
+Kept as **Nordic Curl** (the exercise name and prescription are unchanged, 3x6 bodyweight) but
+**couch-anchored**: hook feet under a couch or other heavy, stable furniture instead of a bench.
+Same movement, same stimulus — this is a standard home substitute, not a different exercise.
+Noted in the program as a `//` description on the Week 1 line, which carries forward to every
+later week automatically.
+
+**2026-08-06 — Single Leg Calf Raise and Copenhagen Plank had no way to record both sides.**
+Athlete reported the app gave him one field for each, when both are unilateral. Root cause,
+confirmed by comparing to Single Leg Deadlift (which DOES auto-split into left/right in the
+logged history despite being authored identically, `3x10` with no `|`):
+
+- **Per-side rep tracking (`completedRepsLeft[n]`) only applies to certain BUILT-IN exercises.**
+  Single Leg Deadlift is one; the custom "Single Leg Calf Raise" (`hgctmizg`, created because no
+  built-in single-leg calf variant exists) is not, and `create_custom_exercise` has no field to
+  request it — this isn't a config we missed, the API has no such option.
+- **Timed holds have no per-side tracking at all, regardless of built-in status.** Copenhagen
+  Plank is built-in but the reference confirms there's no `completedSetTimeLeft` or equivalent.
+  The `30s|30s` we'd written is `setTimer|restTimer` (hold 30s, rest 30s) — not a left/right
+  split. There was never a per-side option here to miss.
+
+**Fix: double the set count, keep the reps/hold-time and total per-side volume unchanged.**
+`Single Leg Calf Raise / 4x12` → `8x12` (4 sets/leg, matching how the stats tool already counted
+the old prescription — this is a recording-granularity fix, not a volume increase).
+`Copenhagen Plank / 3x1 30s|30s` → `6x1 30s|30s` (3 holds/side, same as before). Description
+comments on each Week 1 line tell the athlete which sets are which side; they carry forward.
+Verified via `run_playground` with real `complete_set()`/`change_set_time()` calls before pushing.
+
+**Session-length cost, worth knowing:** `get_program_stats` puts Lower B at ~50min now, up from
+~36min, purely from the extra rest-timer transitions (14 more total sets, same total work).
+Still under `time_budget.lifting_session_min`'s 60min cap but with less room than before.
+
 **2026-08-04 — no barbell at home, home is the primary training location.** Athlete has an
 adjustable Bowflex SelectTech 552 pair (5–52.5lb/hand, 2.5lb increments) and nothing else. Squat,
 Bench Press, Bent Over Row, Overhead Press, and Incline Bench Press converted to their `, Dumbbell`

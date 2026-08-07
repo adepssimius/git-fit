@@ -162,13 +162,21 @@ and the per-day rate required across the days left. Give him that rate plainly.
 
 **Walking happens on working days only** — it's done during work calls. So the target divides across
 Mon–Fri minus holidays, not across seven days, and the script handles that (see `athlete/profile.md`
-§ Working days for the holiday list and the athlete's own observance rule). This is not a rounding
-detail: block week 14 contains Labor Day, so its 355min target falls on four days at 89min/day
-rather than the 51min/day a naive 7-day split would report. Quote the working-day figure; a 7-day
-number is wrong in a way that reads as reassuring.
+§ Working days for the holiday list and the athlete's own observance rule). Quote the working-day
+figure; a 7-day number is wrong in a way that reads as reassuring.
 
-Pace is measured in working days too. Mid-week, compare against the working days elapsed — on a
-Wednesday that's 2 of 5, not 2 of 7.
+**And walking/trainer are mutually exclusive per day — athlete-confirmed 2026-08-06.** He has
+~90-120min of meetings total on a given day; a day that carries the fixed Thursday trainer ride
+contributes zero walking minutes, not a reduced share. So the real denominator most weeks is
+**4 days** (Mon/Tue/Wed/Fri), not 5. The script's `trainer_days()` handles this — don't recompute
+the rate from `working_days()` alone. Compounding holidays and the Thursday exclusion can bite
+together: block week 14 contains Labor Day (Monday), leaving only **3** walking days
+(Tue/Wed/Fri) for its 355min target — 118min/day, right at the top of the stated range with
+essentially no slack. Flag weeks like this explicitly rather than quoting a number that happens to
+still be technically feasible.
+
+Pace is measured in the real walking days too. Mid-week, compare against those days elapsed, not
+calendar Mon-Fri — on a Wednesday in a normal week that's 2 of 4, not 2 of 5 or 2 of 7.
 
 Flag it when he's behind pace, and say why it matters rather than just noting the gap: the risk isn't
 missing the weekly total, it's making it up with two huge days at the end of the week.

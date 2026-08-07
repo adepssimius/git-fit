@@ -80,6 +80,15 @@ Meeting time (work calls) can be spent on the bike trainer (aerobic base, non-im
 count against recovery — see `training/block.md` § "Three training currencies" for the full
 reasoning on why walking is prioritized.
 
+**Walking and the trainer are mutually exclusive PER DAY — athlete-confirmed 2026-08-06.** He has
+~90-120min of meetings total on a given day, full stop, and can't be walking and on the bike in the
+same block. This is stronger than "the pool is shared" — a day that carries the trainer ride
+contributes **zero** walking minutes, not a reduced share. The weekly template
+(`training/block.md`) fixes the meeting-time ride on **Thursday** every week of the block (see
+`endurance/*-meeting-zone2-ride.md`, always a Thursday), so **only 4 days/week carry walking**
+(Mon/Tue/Wed/Fri), not 5. `.claude/skills/daily-brief/scripts/brief_context.py` computes the
+per-day walking rate against this real 4-day set — don't divide the weekly target by 5.
+
 ```yaml
 meeting_budget:
   weekly_available_min: 600
@@ -93,6 +102,7 @@ meeting_budget:
     intensity_ceiling: "HR Z2"     # 138-151bpm. Never allowed to compete with a run quality
                                    # session. HR, not ZS: bike.ftp_w is null and ZoneSense is a
                                    # running instrument, so HR is the only real target here.
+    fixed_day: Thursday              # every week of the block — see mutual-exclusivity note above
 
   walking:
     # Ramp deliberately — jumping straight to 10h/wk invites plantar fascia / achilles injury.
@@ -104,9 +114,15 @@ meeting_budget:
     weekly_min_peak: 465           # realistically reached at block weeks 16-17, then tapers
     weekly_ramp_max_pct: 15        # max week-over-week increase — check this every week
     style: "brisk, sustained; incline pad optional (unconfirmed) — no weight vest, see below"
-    # Planned per-block-week totals (min), respecting the cap and tapering into race week:
-    # wk9 180 | wk10 205 | wk11 235 | wk12 270 | wk13 310 | wk14 355
-    # wk15 405 | wk16 465 | wk17 465 (hold) | wk18 300 (taper) | wk19 150 (race week)
+    # ACTUAL per-block-week totals (min), from the endurance/*-meeting-walk-week.md files —
+    # corrected 2026-08-06, the previous version of this comment had drifted from the real files:
+    # wk9 180 | wk10 205 | wk11 170 | wk12 — (hiking week, no walk target, see Travel weeks below)
+    # wk13 220 | wk14 355 | wk15 405 | wk16 465 | wk17 465 | wk18 300 (taper) | wk19 150 (race week)
+    #
+    # wk16/wk17 are TIGHT under the 4-day rule above: 465min / 4 days = 116min/day, right at the
+    # top of the stated 90-120min/day meeting budget with no slack. If a real week falls short,
+    # rules/progression.md's guidance applies (miss the weekly total rather than spike to catch up)
+    # — do not quietly redistribute the shortfall onto Thursday, which has zero capacity for it.
 
   counts_toward_weekly_total: false
 ```

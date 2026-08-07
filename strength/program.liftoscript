@@ -47,10 +47,18 @@ core: Pallof Press / 3x10 / 27.5lb / 60s
 ## Lower B — runner-specific, low fatigue
 /// Single Leg Calf Raise is the highest-value accessory in the whole program for
 /// ultra durability — protect this one when trimming volume, cut something else first.
-accessory: Single Leg Calf Raise / 4x12 / 0lb / 60s
+// Liftosaur has no per-side tracking for custom exercises (only certain built-ins like
+// Single Leg Deadlift get that automatically). 8 sets = 4 per leg, same volume as before —
+// just split so each leg gets its own field. Alternate: odd sets right, even sets left.
+accessory: Single Leg Calf Raise / 8x12 / 0lb / 60s
+// Couch-anchored: hook feet under a couch or other heavy, stable furniture instead of a
+// bench — no bench at home. Same exercise, same stimulus.
 accessory: Nordic Curl / 3x6 / 0lb / 90s
 accessory: Single Leg Deadlift / 3x10 / 25lb / 60s
-accessory: Copenhagen Plank / 3x1 30s|30s
+// Timed holds have no per-side tracking at all (even built-in exercises) — the `|` here is
+// hold-time|rest-time, not left|right. 6 sets = 3 holds per side, same as before. Alternate:
+// odd sets right, even sets left.
+accessory: Copenhagen Plank / 6x1 30s|30s
 core: Dead Bug / 3x12 / 0lb / 45s
 
 ## Upper B
@@ -81,10 +89,10 @@ accessory: Overhead Press, Dumbbell / 3x8 / 27.5lb / 90s
 core: Pallof Press / 3x10 / 27.5lb / 60s
 
 ## Lower B
-accessory: Single Leg Calf Raise / 4x12 / 0lb / 60s
+accessory: Single Leg Calf Raise / 8x12 / 0lb / 60s
 accessory: Nordic Curl / 3x6 / 0lb / 90s
 accessory: Single Leg Deadlift / 3x10 / 25lb / 60s
-accessory: Copenhagen Plank / 3x1 30s|30s
+accessory: Copenhagen Plank / 6x1 30s|30s
 core: Dead Bug / 3x12 / 0lb / 45s
 
 ## Upper B
@@ -114,10 +122,10 @@ accessory: Overhead Press, Dumbbell / 3x8 / 27.5lb / 90s
 core: Pallof Press / 3x10 / 30lb / 60s
 
 ## Lower B
-accessory: Single Leg Calf Raise / 4x12 / 5lb / 60s
+accessory: Single Leg Calf Raise / 8x12 / 5lb / 60s
 accessory: Nordic Curl / 3x6 / 0lb / 90s
 accessory: Single Leg Deadlift / 3x10 / 25lb / 60s
-accessory: Copenhagen Plank / 3x1 30s|30s
+accessory: Copenhagen Plank / 6x1 30s|30s
 core: Dead Bug / 3x12 / 0lb / 45s
 
 ## Upper B
@@ -147,10 +155,10 @@ accessory: Overhead Press, Dumbbell / 3x8 / 30lb / 90s
 core: Pallof Press / 3x10 / 30lb / 60s
 
 ## Lower B
-accessory: Single Leg Calf Raise / 4x12 / 5lb / 60s
+accessory: Single Leg Calf Raise / 8x12 / 5lb / 60s
 accessory: Nordic Curl / 3x6 / 0lb / 90s
 accessory: Single Leg Deadlift / 3x10 / 27.5lb / 60s
-accessory: Copenhagen Plank / 3x1 30s|30s
+accessory: Copenhagen Plank / 6x1 30s|30s
 core: Dead Bug / 3x12 / 0lb / 45s
 
 ## Upper B
@@ -186,10 +194,10 @@ core: Pallof Press / 3x10 / 32.5lb / 60s
 # Week 6
 
 ## Lower B
-accessory: Single Leg Calf Raise / 4x12 / 5lb / 60s
+accessory: Single Leg Calf Raise / 8x12 / 5lb / 60s
 accessory: Nordic Curl / 3x6 / 0lb / 90s
 accessory: Single Leg Deadlift / 3x10 / 27.5lb / 60s
-accessory: Copenhagen Plank / 3x1 30s|30s
+accessory: Copenhagen Plank / 6x1 30s|30s
 core: Dead Bug / 3x12 / 0lb / 45s
 
 ## Upper B
@@ -219,10 +227,10 @@ accessory: Overhead Press, Dumbbell / 3x8 / 32.5lb / 90s
 core: Pallof Press / 3x10 / 32.5lb / 60s
 
 ## Lower B
-accessory: Single Leg Calf Raise / 4x12 / 10lb / 60s
+accessory: Single Leg Calf Raise / 8x12 / 10lb / 60s
 accessory: Nordic Curl / 3x6 / 0lb / 90s
 accessory: Single Leg Deadlift / 3x10 / 27.5lb / 60s
-accessory: Copenhagen Plank / 3x1 30s|30s
+accessory: Copenhagen Plank / 6x1 30s|30s
 core: Dead Bug / 3x12 / 0lb / 45s
 
 ## Upper B
@@ -250,10 +258,10 @@ main: Bent Over Row, Dumbbell / 3x8 / 35lb / 120s
 accessory: Overhead Press, Dumbbell / 3x8 / 32.5lb / 90s
 
 ## Lower B
-accessory: Single Leg Calf Raise / 4x12 / 10lb / 60s
+accessory: Single Leg Calf Raise / 8x12 / 10lb / 60s
 accessory: Nordic Curl / 3x6 / 0lb / 90s
 accessory: Single Leg Deadlift / 3x10 / 27.5lb / 60s
-accessory: Copenhagen Plank / 3x1 30s|30s
+accessory: Copenhagen Plank / 6x1 30s|30s
 core: Dead Bug / 3x12 / 0lb / 45s
 
 ## Upper B
@@ -284,10 +292,10 @@ accessory: Overhead Press, Dumbbell / 3x8 / 35lb / 90s
 core: Pallof Press / 3x10 / 32.5lb / 60s
 
 ## Lower B
-accessory: Single Leg Calf Raise / 4x12 / 10lb / 60s
+accessory: Single Leg Calf Raise / 8x12 / 10lb / 60s
 accessory: Nordic Curl / 3x6 / 0lb / 90s
 accessory: Single Leg Deadlift / 3x10 / 30lb / 60s
-accessory: Copenhagen Plank / 3x1 30s|30s
+accessory: Copenhagen Plank / 6x1 30s|30s
 core: Dead Bug / 3x12 / 0lb / 45s
 
 ## Upper B
@@ -305,9 +313,9 @@ core: Side Plank / 3x1 30s|30s
 # Week 10
 
 ## Lower B
-accessory: Single Leg Calf Raise / 2x12 / 0lb / 60s
+accessory: Single Leg Calf Raise / 4x12 / 0lb / 60s
 accessory: Single Leg Deadlift / 2x10 / 0lb / 60s
-accessory: Copenhagen Plank / 2x1 30s|30s
+accessory: Copenhagen Plank / 4x1 30s|30s
 core: Dead Bug / 2x12 / 0lb / 45s
 
 ## Upper B
