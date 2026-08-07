@@ -77,8 +77,10 @@ time_budget:
 
 Meeting time (work calls) can be spent on the bike trainer (aerobic base, non-impact) or walking
 (time on feet, race-specific durability). Neither counts against `weekly_total_max_min`, but both
-count against recovery — see `training/block.md` § "Three training currencies" for the full
-reasoning on why walking is prioritized.
+count against recovery — see `training/block.md` § "Why this block looks the way it does" and
+rule 5 in § "Reshaping rules" for the full reasoning on why walking is prioritized. (Corrected
+2026-08-06 — this pointed at a "Three training currencies" section that doesn't exist in that
+file; either a stale rename or a section that was planned and never written.)
 
 **Walking and the trainer are mutually exclusive PER DAY — athlete-confirmed 2026-08-06.** He has
 ~90-120min of meetings total on a given day, full stop, and can't be walking and on the bike in the
