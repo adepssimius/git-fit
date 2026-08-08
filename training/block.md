@@ -44,7 +44,7 @@ the seed's drop to 20km the following week lands exactly on its mid-cycle rest b
 
 | Block wk | Dates | Champion wk | Sat long (seed) | Champion prescribes | Fit |
 |---|---|---|---|---|---|
-| 9 | Aug 3–9 | 6 — down week | 15km | 10–16mi (16–26km) | ✓ |
+| 9 | Aug 3–9 | 6 — down week† | 15km | 10–16mi (16–26km) | ✓ |
 | 10 | Aug 10–16 | 7 | 34km | 16–20mi (26–32km) | ✓ |
 | 11 | Aug 17–23 | 8 — big | 38km | 20–25mi (32–40km) | ✓ |
 | 12 | Aug 24–30 | 9 — overreach | 30km | 12–20mi (19–32km) | ✓ |
@@ -55,6 +55,14 @@ the seed's drop to 20km the following week lands exactly on its mid-cycle rest b
 | 17 | Sep 28–Oct 4 | 14 | 23km | 14–18mi (22–29km) | ✓✓ |
 | 18 | Oct 5–11 | 15 — taper | 13km | 10–14mi (16–22km) | ✓ |
 | 19 | Oct 12–18 | 16 — race | **RACE (10-17)** | race | ✓ |
+
+† **Week 9's "down week" character was not adopted — athlete correction, 2026-08-08.** Block week 9
+follows a zero-running vacation week (~07-23 to 07-30), so Champion week 6's deload purpose was
+already served before the week began. Week 9 is a re-entry week: conservative volume because of the
+return from detraining, not because adaptation demanded a deload. The calendar mapping stands (it
+is what pins the Big Day and the week-14 mid-cycle rest); only the character transfer was wrong.
+Lesson for future mapping decisions: **a Champion week's character only transfers when the
+athlete's preceding weeks resemble the Champion plan's preceding weeks.**
 
 ## What's adopted from the Champion Plan
 

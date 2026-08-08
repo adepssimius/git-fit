@@ -56,9 +56,12 @@ scored that night green.
 
 Inherited from the Champion Plan mapping in `training/block.md`:
 
-- Block weeks 9 and 14 are **down/rest weeks** by design (Champion weeks 6 and 11) — don't add
-  volume back in during these weeks even if the athlete feels strong; the adaptation happens on the
-  down week, not despite it.
+- Block week 14 is the block's **down/rest week** by design (Champion week 11, mid-cycle rest) —
+  don't add volume back in during it even if the athlete feels strong; the adaptation happens on
+  the down week, not despite it. **Week 9 was removed from this rule 2026-08-08**: it had been
+  labeled a down week via the Champion mapping, but it directly follows a zero-running vacation
+  week, so the label prescribed redundant rest — it is a re-entry week (`training/weeks/w09.md`),
+  and the don't-add-volume prohibition never applied to it.
 - Block week 11 is a **big-volume week** (Champion week 8) — the time-budget check matters most
   here; if it's tight, this is the week most likely to need a strength cut.
 - Block week 13 is the **Big Day** — a moderately hard ~50k-effort long run with full race fueling,
