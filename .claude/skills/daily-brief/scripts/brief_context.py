@@ -454,10 +454,18 @@ def main() -> int:
                          if delta > 15 else ""))
             # These figures come from the authored week files, so they say what was PRESCRIBED,
             # both weeks. The cap in rules/progression.md is about tissue load, which only actual
-            # minutes measure. Week 9 was authored at 180min and executed at 97 — quoting the
-            # planned ramp there gave "+14%, inside the cap" when the real figure was +111%.
+            # minutes measure — so re-derive from workouts_list before quoting a percentage.
             print("  -> the cap is on ACTUAL load: sum last week's WALKING (+HIKING) from "
                   "workouts_list and re-derive the ramp before quoting a percentage")
+            # ...but a low actual is only a baseline if the week was fully TRACKED. Block week 9
+            # records 97min because walk tracking started mid-week, not because it was a light
+            # week; ramping week 10 against it gives +111% and would cut a comfortable 205min
+            # target to 112 on a number that never measured the right period. Athlete-confirmed
+            # 2026-08-10. Block week 10 is the first complete week of tracking.
+            if int(block_week) - 1 < 10:
+                print("     NOTE block week 9 is NOT a valid baseline — walk tracking started "
+                      "mid-week, so its 97min actual is a partial window, not a low week. "
+                      "Do not ramp-check against it; week 10 is the first full week tracked")
 
         today_is_workday = d in all_wd
         why_not = hol.get(d) or ("trainer ride scheduled" if d in trainer else "weekend")
