@@ -6,8 +6,11 @@
     },
     "suuntool-guides": {
       "type": "stdio",
-      "command": "/usr/local/bin/suuntool-guides-preview",
-      "args": ["mcp", "--allow-write"]
+      "command": "bash",
+      "args": [
+        "-c",
+        "bash \"${CLAUDE_PROJECT_DIR:-.}/.claude/scripts/suuntool-session.sh\" || true; exec /usr/local/bin/suuntool-guides-preview mcp --allow-write"
+      ]
     }
   }
 }
