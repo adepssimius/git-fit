@@ -48,6 +48,21 @@ None of them write back into the plan. `pack_guide.py` is deterministic — the 
 produces byte-identical archive bytes, which is what makes "has this changed since it was
 published" a `sha256` comparison rather than a guess.
 
+## MCP credentials
+
+Both MCP servers in `.mcp.json` authenticate from environment variables, so no secret lives in the
+repo. Set these in your cloud environment's variable config (Settings → Claude Code → Environments)
+or export them locally; a Claude Code on the web container is ephemeral, so a browser OAuth flow
+can't be completed there and a static credential is the only thing that survives.
+
+| Variable | Server | Where to get it |
+| --- | --- | --- |
+| `LIFTOSAUR_API_KEY` | `liftosaur` | Liftosaur account settings → API Keys → create a key. Starts with `lftsk_`. Sent as `Authorization: Bearer …`; the same key works for Liftosaur's REST API. |
+| `SUUNTOOL_SESSION_KEY` | `suuntool-guides` | The Suunto bearer key. `.claude/scripts/suuntool-session.sh` materializes it into `~/.config/suuntool/session.json` at session start, along with the optional `SUUNTOOL_EMAIL` / `SUUNTOOL_USERNAME` / `SUUNTOOL_USER_KEY` / `SUUNTOOL_COUNTRY` / `SUUNTOOL_OFFSET_MS` values documented in that script. |
+
+Without `LIFTOSAUR_API_KEY` set, the `liftosaur` server falls back to nothing usable and every tool
+call returns `unauthorized` — `claude mcp list` flags the unexpanded variable.
+
 ## Published calendar
 
 `.github/workflows/pages.yml` builds the calendar on every push and deploys it to GitHub Pages.
