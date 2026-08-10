@@ -3,6 +3,11 @@
     "liftosaur": {
       "type": "http",
       "url": "https://www.liftosaur.com/mcp"
+    },
+    "suuntool-guides": {
+      "type": "stdio",
+      "command": "/usr/local/bin/suuntool-guides-preview",
+      "args": ["mcp", "--allow-write"]
     }
   }
 }
