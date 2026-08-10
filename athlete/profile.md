@@ -285,7 +285,13 @@ exactly that reason.
 
 **The actionable constraint: don't run 30K+ in the Mont Blanc at 9.5.** Shorter runs are fine.
 
-**Sizing up to 10** to see whether that removes the limit. If compression is the whole story — and
+**Sizing up to 10** to see whether that removes the limit.
+
+**First test of the 10s — 2026-08-09, 14.2km: mixed, verdict pending.** Running feel: great,
+athlete's word. But hotspots developed, and the still-healing 08-02 blisters (both 2nd toes) felt
+"like they might become a problem" by the end. Next-morning foot state decides. If the blisters
+reopen at 14km in the bigger size, the fit hypothesis weakens and the shoe — not the size — becomes
+the suspect for long distance. If compression is the whole story — and
 it fits the evidence cleanly — a size up should fix both symptoms.
 
 Standing rule: log blistering by **location and symmetry**, not just presence. Bilateral and
