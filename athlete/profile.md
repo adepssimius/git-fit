@@ -287,7 +287,12 @@ exactly that reason.
 
 **Sizing up to 10** to see whether that removes the limit.
 
-**First test of the 10s — 2026-08-09, 14.2km: mixed, verdict pending.** Running feel: great,
+**Checkpoint 1 PASSED — morning-after verdict, 2026-08-10.** Blisters not worse, and zero
+toe-joint pain after 14.2km — the joint symptom the 9.5s produced reliably is absent in the 10s.
+The compression hypothesis holds. Next checkpoint: a ~30km run (Saturday 08-15 is the natural
+slot), the distance class that broke the 9.5s. Until then the 10s are cleared to ~15km.
+
+**First test of the 10s — 2026-08-09, 14.2km: mixed at the time, resolved by the morning.** Running feel: great,
 athlete's word. But hotspots developed, and the still-healing 08-02 blisters (both 2nd toes) felt
 "like they might become a problem" by the end. Next-morning foot state decides. If the blisters
 reopen at 14km in the bigger size, the fit hypothesis weakens and the shoe — not the size — becomes
