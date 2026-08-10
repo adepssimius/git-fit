@@ -25,6 +25,7 @@ ROOT = Path(__file__).resolve().parents[4]
 ENDURANCE = ROOT / "endurance"
 WEEKS = ROOT / "training" / "weeks"
 LOGS = ROOT / "log"
+WATERMARKS = ROOT / "state" / "pull-watermarks.yml"
 
 
 def frontmatter(path: Path) -> tuple[dict, str]:
@@ -54,6 +55,63 @@ def frontmatter(path: Path) -> tuple[dict, str]:
             else:
                 out[key] = (out[key] + " " + line.strip()).strip()
     return out, body.strip()
+
+
+def watermarks() -> dict[str, dict]:
+    """Parse state/pull-watermarks.yml — one flat block of `key: value` per source."""
+    out: dict[str, dict] = {}
+    if not WATERMARKS.exists():
+        return out
+    src = None
+    for line in WATERMARKS.read_text().splitlines():
+        if not line.strip() or line.lstrip().startswith("#"):
+            continue
+        top = re.match(r"^(\w+):\s*$", line)
+        if top:
+            src = top.group(1)
+            out[src] = {}
+        elif src:
+            kv = re.match(r"^\s+(\w+):\s*(.*)$", line)
+            if kv:
+                out[src][kv.group(1)] = kv.group(2).strip()
+    return out
+
+
+def print_pull_windows() -> None:
+    """Tell the model exactly how far back to pull, so it can't re-pick a convenient window.
+
+    The failure this guards against isn't forgetting to pull — it's pulling a window sized
+    for one question (walking-since-Monday) and then answering every other question from it.
+    """
+    print("## Data pulls — use these since_ms values, do NOT choose your own window")
+    wm = watermarks()
+    if not wm:
+        print(f"  MISSING: {WATERMARKS.relative_to(ROOT)} — pull all history and recreate it")
+        return
+    for src, vals in wm.items():
+        try:
+            last = int(vals.get("last_pull_ms", "0"))
+            look = int(vals.get("lookback_hours", "48"))
+        except ValueError:
+            print(f"  {src}: unparseable watermark — pull all history")
+            continue
+        since = max(0, last - look * 3600 * 1000)
+        stamp = datetime.datetime.fromtimestamp(since / 1000).astimezone()
+        print(f"  {src:<10} since_ms={since}   ({stamp:%a %Y-%m-%d %H:%M %Z}, "
+              f"= last pull {vals.get('last_pull_at','?')} minus {look}h sync lookback)")
+    print("  -> after the pull succeeds: brief_context.py --record-pull")
+
+
+def record_pull(now: datetime.datetime) -> None:
+    """Stamp every source with `now`, preserving the file's comments."""
+    text = WATERMARKS.read_text()
+    text = re.sub(r"^(\s+last_pull_at:\s*).*$", rf"\g<1>{now.isoformat(timespec='seconds')}",
+                  text, flags=re.M)
+    text = re.sub(r"^(\s+last_pull_ms:\s*).*$", rf"\g<1>{int(now.timestamp() * 1000)}",
+                  text, flags=re.M)
+    WATERMARKS.write_text(text)
+    print(f"recorded pull at {now.isoformat(timespec='seconds')} "
+          f"in {WATERMARKS.relative_to(ROOT)}")
 
 
 def mins(fm: dict) -> int:
@@ -221,11 +279,19 @@ def main() -> int:
     ap.add_argument("--date", default=datetime.date.today().isoformat())
     ap.add_argument("--walked", type=int, default=None,
                     help="minutes of WALKING already logged this block week, from Suunto")
+    ap.add_argument("--record-pull", action="store_true",
+                    help="stamp state/pull-watermarks.yml with now(), after a successful pull")
     args = ap.parse_args()
     date = args.date
     d = datetime.date.fromisoformat(date)
 
+    if args.record_pull:
+        record_pull(datetime.datetime.now().astimezone())
+        return 0
+
     print(f"# BRIEF CONTEXT — {d.strftime('%A %-d %B %Y')} ({date})\n")
+    print_pull_windows()
+    print()
 
     # ---- today's sessions -------------------------------------------------
     todays = sessions_on(date)
@@ -378,13 +444,20 @@ def main() -> int:
             w_prev, h_prev = time_on_feet(str(int(block_week) - 1))
             tof_now, tof_prev = w_now + h_now, w_prev + h_prev
             hike_note = f" (incl. {h_now}min hiking)" if h_now else ""
-            print(f"  time-on-feet {tof_now}min this week{hike_note}, {tof_prev}min last week")
+            print(f"  time-on-feet {tof_now}min this week{hike_note}, {tof_prev}min last week"
+                  f"   [PLANNED, both sides]")
             if tof_prev:
                 delta = (tof_now - tof_prev) / tof_prev * 100
-                print(f"  ramp        {delta:+.0f}%"
+                print(f"  ramp        {delta:+.0f}%   PLANNED vs PLANNED — not the real ramp"
                       + ("   OVER the 15%/wk cap — check whether hiking drives it, which "
                          "training/block.md treats as unavoidable rather than a failure"
                          if delta > 15 else ""))
+            # These figures come from the authored week files, so they say what was PRESCRIBED,
+            # both weeks. The cap in rules/progression.md is about tissue load, which only actual
+            # minutes measure. Week 9 was authored at 180min and executed at 97 — quoting the
+            # planned ramp there gave "+14%, inside the cap" when the real figure was +111%.
+            print("  -> the cap is on ACTUAL load: sum last week's WALKING (+HIKING) from "
+                  "workouts_list and re-derive the ramp before quoting a percentage")
 
         today_is_workday = d in all_wd
         why_not = hol.get(d) or ("trainer ride scheduled" if d in trainer else "weekend")

@@ -25,22 +25,45 @@ has to be honest about what it doesn't know.
 
 ## What to do
 
-**1. Gather.** Run these together — the script and the two MCP calls are independent:
+**1. Gather.** Run the script first — it prints the `since_ms` for every pull:
 
 ```bash
 python3 .claude/skills/daily-brief/scripts/brief_context.py
 ```
 
+Then pull, using **the script's `since_ms`, not a window of your own choosing**:
+
 ```
 mcp__suuntool__wellness_sleep    (limit ~8, order desc)
 mcp__suuntool__wellness_recovery (limit ~4, order desc)
-mcp__suuntool__workouts_list     (since_ms = 00:00 Monday of this block week)
+mcp__suuntool__workouts_list     (since_ms from the script's "Data pulls" section)
+mcp__liftosaur__get_history      (startDate from the same section)
 ```
 
-`workouts_list` is for walking. Walks are logged as real activities — **`activityId: 0` is
-WALKING**, and `11` is HIKING, which counts as time on feet in the trip weeks. Sum the walk
-durations since Monday, then re-run the script with `--walked <minutes>` so it can do the
-per-day arithmetic exactly rather than you estimating it:
+**Never narrow a pull to the window that suits one question.** This rule was written the
+morning it failed: the 2026-08-10 brief scoped `workouts_list` to "since Monday" because that
+was all the walking count needed, and missed a **110min eMTB ride from the previous Saturday**
+that no file in the repo recorded — plus the fact that the prior week's walking had come in at
+97min against a planned 180. Both were sitting one day outside the window. The watermarks in
+`state/pull-watermarks.yml` exist so the window is chosen by what has already been read, not
+by today's question; over-pulling is free, under-pulling loses sessions permanently.
+
+**After the pulls succeed**, stamp the watermark:
+
+```bash
+python3 .claude/skills/daily-brief/scripts/brief_context.py --record-pull
+```
+
+**Reconcile what came back against `log/`.** Anything the watch has that the repo doesn't is a
+real session that never got recorded — an unplanned ride, a walk, a lift. Say so in the brief
+and write it into the right day's log entry. `rules/progression.md` requires an unplanned ride
+to adjust the *rest of that week* immediately, so a late discovery is worth flagging as late.
+
+`workouts_list` is also how walking is counted. Walks are logged as real activities —
+**`activityId: 0` is WALKING**, `11` is HIKING (time on feet in trip weeks), and `105` is
+E_BIKING (not time on feet, but real load). Sum the walk durations since Monday, then re-run
+the script with `--walked <minutes>` so it can do the per-day arithmetic exactly rather than
+you estimating it:
 
 ```bash
 python3 .claude/skills/daily-brief/scripts/brief_context.py --walked 60

@@ -13,6 +13,28 @@ is the source of truth, the app is the execution surface.
 Liftoscript `# Week 1` = block week 9 (2026-08-03). To find the Liftoscript week for any block
 week: `liftoscript_week = block_week - 8`.
 
+## Pointer drift — the app's "next workout" is not the calendar's
+
+**Liftosaur advances by completion; this plan advances by date.** The app's next-workout pointer
+moves only when a workout is finished, so every skipped lift leaves it one session further behind
+the block calendar — permanently, and it never catches up on its own.
+
+This is expected, not a bug to fix. It is the direct consequence of the split already stated
+above: **`strength/program.liftoscript` is the source of truth, the app is the execution surface.**
+
+Two things follow, and both matter in practice:
+
+- **Open the day the calendar says, not the day the app offers.** Tap through to the right week
+  and day in the program screen. As of 2026-08-10 the app offers `Week 1 — Upper B` (last
+  completed session was Week 1 Lower B on 08-06) while the calendar is on `Week 2 — Lower A`.
+- **The pointer cannot be moved through the MCP.** No tool reads or sets the current week/day —
+  `get_program` returns only id, name, text, and isCurrent. The only things that would move it
+  are completing a workout or fabricating one, and fabricating a workout to fix a pointer puts
+  invented sets into the training history to paper over a cosmetic mismatch. Don't.
+
+So: don't try to realign the app. Reconcile the *records* instead — check `get_history` against
+`log/` each morning, write down what actually happened, and navigate by hand.
+
 **Every week is fully self-contained — do not rely on Liftoscript's carry-forward mechanism
 (leaving a `## Day` header empty to inherit the previous week's exercise).** Tested extensively via
 `run_playground` with real chained execution — Week 1 completed for real

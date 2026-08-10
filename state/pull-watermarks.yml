@@ -1,0 +1,35 @@
+# Watermarks for external data pulls (Suunto, Liftosaur).
+#
+# WHY THIS EXISTS: on 2026-08-10 the brief scoped its Suunto pull to "since Monday 00:00",
+# because that was the window the walking count needed. A 110min eMTB ride from Sat 08-08 —
+# unlogged anywhere in the repo — fell outside it and was missed, and so did the fact that
+# week 9's walking came in at 97min rather than the planned 180min. A window chosen for one
+# question had silently become the window for every question.
+#
+# THE RULE: pull from the watermark, never from a window that suits today's question.
+# Over-pulling is free. Under-pulling loses sessions permanently, because nothing else in
+# the repo goes back to look.
+#
+# `lookback_hours` is subtracted from the watermark before every pull. Activities sync from
+# the watch late — a Saturday ride can land in the API on Tuesday — so a watermark set at
+# pull time would step straight over anything that hadn't uploaded yet. The overlap re-reads
+# a couple of days each time and costs nothing; duplicates are obvious, gaps are not.
+#
+# Read and updated by .claude/skills/daily-brief/scripts/brief_context.py:
+#   brief_context.py                 # prints the exact since_ms to pass to each MCP call
+#   brief_context.py --record-pull   # stamps now(), AFTER a pull actually succeeded
+#
+# Never advance a watermark by hand past data you have not actually read. A watermark ahead
+# of reality makes the gap permanent and invisible — the opposite of what this file is for.
+
+suunto:
+  last_pull_at: 2026-08-10T11:41:00-04:00
+  last_pull_ms: 1786376460000
+  lookback_hours: 48
+  covers: wellness_sleep, wellness_recovery, workouts_list
+
+liftosaur:
+  last_pull_at: 2026-08-10T11:41:00-04:00
+  last_pull_ms: 1786376460000
+  lookback_hours: 48
+  covers: get_history. Program text is read fresh every brief, so it is not watermarked.
