@@ -61,6 +61,30 @@ sleep_context: null       # WHY the night was what it was — never the hours. S
 | `soreness_0_10` | on training days | Anchored scale below — 0–10, whole numbers |
 | `rpe_0_10` | when a session happened | Session-RPE, rated ~30min after finishing, not during |
 | `sleep_context` | only when there is one | Free text: "sick kid, up 3×", "flight", "watch strap loose" |
+| `conditions` | outdoor sessions | Written by `scripts/heat_load.py`, not by hand — see below |
+
+## Conditions — the one block you don't type
+
+Ambient temperature, humidity and sun are the clearest case of "what the watch cannot see": the
+Suunto sensor reads body heat off the wrist and has already produced two wrong log entries. So
+they are neither retyped nor asked about — `scripts/heat_load.py` takes the session's own GPS
+track, pulls the weather that was over that ground, and writes the block:
+
+```bash
+python3 scripts/heat_load.py --workout-json workout.json --shade-pct 60 --write
+```
+
+**It adds exactly one manual field: `shade_pct`.** Solar radiation is the largest term in outdoor
+heat stress and shade is the only thing that removes it — worth 5–8°F of WBGT on a clear August
+afternoon here, which is more than most day-to-day temperature swings. The script reports the
+session both ways, fully exposed and fully shaded, and `shade_pct` is what places it between them.
+Rough is fine: 0, 50, 85. Presence beats precision, and it is never asked at all when there was no
+sun to block. Everything else in the block is derived.
+
+Treat `shade_pct` exactly like soreness and RPE — **never fill it in on the athlete's behalf.** It
+propagates into `wbgt_f` and into the `--history` slope, so a guess does more damage here than a
+guessed rating does, and it does it silently. Full guidance, the model, and its soft spots:
+`rules/conditions.md`.
 
 **Why one RPE and not one per session.** The frontmatter stays flat and one-glance fillable. Almost
 every day has exactly one session that carries real load; doubles, meeting walks and trainer rides

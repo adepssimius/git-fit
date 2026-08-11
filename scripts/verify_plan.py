@@ -19,6 +19,8 @@ Checks, all derived from athlete/profile.md rather than hardcoded:
   9. log/ entries are well-formed, and the manual readiness signals they carry
      (soreness, session-RPE) are in range and consistent with the day's session
      — see rules/logging.md
+ 10. log/ `conditions:` blocks are internally consistent, and an over-plan RPE on a
+     hot day is flagged as heat before fitness — see rules/conditions.md
 
 Usage:  python3 scripts/verify_plan.py [--root PATH]
 """
@@ -53,6 +55,20 @@ EXPECTED_RPE = {
 RPE_OVER_PLAN = 2          # the ladder's red condition: +2 or more over plan
 LOG_STALE_DAYS = 10        # warn only; a lapsed log degrades the ladder silently
 
+# ---- conditions: (rules/conditions.md), written by scripts/heat_load.py ----
+# WBGT flag boundaries in F, matching heat_load.py's FLAGS (18/23/28C).
+WBGT_YELLOW_F, WBGT_RED_F, WBGT_BLACK_F = 64.4, 73.4, 82.4
+# Below this sun/shade spread, heat_load.py stops asking for shade_pct, so neither should this.
+SHADE_MATTERS_F = 0.9
+CONDITIONS_NUMERIC = {          # field -> (low, high) sanity bounds, generously wide
+    "temp_f": (-40.0, 130.0),
+    "rh_pct": (0.0, 100.0),
+    "solar_w_m2": (0.0, 1400.0),   # 1361 W/m2 is the solar constant; anything above is a bug
+    "wbgt_sun_f": (-40.0, 130.0),
+    "wbgt_shade_f": (-40.0, 130.0),
+    "wbgt_f": (-40.0, 130.0),
+}
+
 
 def scalar(fm: dict, key: str):
     """Frontmatter value with trailing `# comment` and quotes stripped, or None for null/blank.
@@ -81,6 +97,104 @@ def rating(fm: dict, key: str, rel, errors: list) -> int | None:
         errors.append(f"{rel}: {key}: {n} is outside the 0-10 scale (rules/logging.md)")
         return None
     return n
+
+
+def parse_conditions(path: Path, rel, errors: list) -> dict | None:
+    """The nested `conditions:` block from a log entry, or None if it has none.
+
+    parse_file() only sees top-level `key: value` lines, so the block is invisible to it and to
+    every other check — this reads the indented rows itself. Values keep the repo convention:
+    `null` and `n/a` both mean "no number", but they mean different things and only `n/a` says
+    the question was asked and settled (a night session has no shade to estimate).
+    """
+    text = path.read_text()
+    if not text.startswith("---"):
+        return None
+    fm_text = text.split("---\n")[1] if "---\n" in text else ""
+    m = re.search(r"^conditions:.*?(?=^\w|\Z)", fm_text, re.M | re.S)
+    if not m:
+        return None
+    out: dict = {}
+    for line in m.group(0).splitlines()[1:]:
+        kv = re.match(r"^\s+(\w+):\s*(.*)$", line)
+        if not kv:
+            continue
+        val = kv.group(2).split("#", 1)[0].strip()
+        out[kv.group(1)] = None if val in ("", "null", "~") else val
+
+    for field, (lo, hi) in CONDITIONS_NUMERIC.items():
+        raw = out.get(field)
+        if raw is None:
+            continue
+        try:
+            num = float(raw)
+        except ValueError:
+            errors.append(f"{rel}: conditions.{field}: '{raw}' is not a number "
+                          f"(rules/conditions.md)")
+            out[field] = None
+            continue
+        if not lo <= num <= hi:
+            errors.append(f"{rel}: conditions.{field}: {num} is outside {lo}–{hi} — "
+                          f"that is a unit or data error, not weather (rules/conditions.md)")
+        out[field] = num
+
+    shade = out.get("shade_pct")
+    if shade is not None and shade != "n/a":
+        try:
+            shade = float(shade)
+            if not 0.0 <= shade <= 100.0:
+                errors.append(f"{rel}: conditions.shade_pct: {shade} is not 0–100")
+                shade = None
+        except ValueError:
+            errors.append(f"{rel}: conditions.shade_pct: '{shade}' is not a percentage or 'n/a' "
+                          f"(rules/conditions.md)")
+            shade = None
+        out["shade_pct"] = shade
+    return out
+
+
+def check_conditions(rel, cond: dict, main: dict | None, rpe: int | None,
+                     errors: list, warnings: list) -> None:
+    """Cross-check one log entry's conditions block. See rules/conditions.md.
+
+    The point of this check is a specific, twice-repeated failure in this repo's own history:
+    a hot session read as mis-pacing or as fitness decay because nobody had the ambient number
+    (the 08-02 30k, the 08-04 run logged from the wrist sensor at 72F when it was 85F). Once
+    the number is in the file, an over-plan RPE on a hot day should say so out loud.
+    """
+    sun, shade_wbgt = cond.get("wbgt_sun_f"), cond.get("wbgt_shade_f")
+    shade_pct, eff = cond.get("shade_pct"), cond.get("wbgt_f")
+
+    if sun is not None and shade_wbgt is not None:
+        spread = sun - shade_wbgt
+        if spread > SHADE_MATTERS_F and shade_pct is None:
+            warnings.append(
+                f"{rel}: shade was worth {spread:.1f}F of WBGT here but shade_pct is null — "
+                f"without it the session cannot be placed in the bracket, and it is the one "
+                f"field in the block the athlete has to supply (rules/conditions.md)")
+        # A hand-edited shade_pct that no longer agrees with wbgt_f is worse than either alone.
+        if isinstance(shade_pct, float) and eff is not None:
+            want = sun + (shade_wbgt - sun) * shade_pct / 100.0
+            if abs(want - eff) > 0.3:
+                errors.append(
+                    f"{rel}: conditions.wbgt_f is {eff}F but {shade_pct:.0f}% shade between "
+                    f"{sun}F and {shade_wbgt}F is {want:.1f}F — re-run scripts/heat_load.py "
+                    f"rather than editing the derived field by hand")
+
+    if eff is None:
+        return
+    if eff >= WBGT_BLACK_F:
+        warnings.append(
+            f"{rel}: WBGT {eff:.1f}F — black-flag conditions. Whatever the session was, it was "
+            f"not the session that was prescribed; read the week against that")
+    if rpe is not None and main:
+        expected = EXPECTED_RPE.get(main["type"])
+        if expected is not None and rpe - expected >= RPE_OVER_PLAN and eff >= WBGT_RED_F:
+            warnings.append(
+                f"{rel}: RPE {rpe} ran {rpe - expected} over plan AND WBGT was {eff:.1f}F — "
+                f"heat is the first explanation here, not fitness. This repo has twice "
+                f"re-read a hot session as mis-pacing (AGENTS.md invariant 8); do not "
+                f"re-author the week off this data point alone")
 
 
 def check_logs(root: Path, sessions_by_date: dict, errors: list, warnings: list) -> None:
@@ -118,11 +232,15 @@ def check_logs(root: Path, sessions_by_date: dict, errors: list, warnings: list)
 
         soreness = rating(fm, "soreness_0_10", rel, errors)
         rpe = rating(fm, "rpe_0_10", rel, errors)
-        entries.append((date, readiness, soreness, rpe))
 
         # The day's main session = its longest non-meeting session. Only that one is rated.
         day = [s for s in sessions_by_date.get(date, []) if not s["concurrent"]]
         main = max(day, key=lambda s: s["dur"]) if day else None
+
+        cond = parse_conditions(f, rel, errors)
+        if cond is not None:
+            check_conditions(rel, cond, main, rpe, errors, warnings)
+        entries.append((date, readiness, soreness, rpe, cond))
 
         if main and soreness is None and readiness is None:
             warnings.append(
@@ -146,14 +264,27 @@ def check_logs(root: Path, sessions_by_date: dict, errors: list, warnings: list)
     # ---- log readout ----
     print(f"\nlog/ — last {min(len(entries), 5)} of {len(entries)} entr"
           f"{'y' if len(entries) == 1 else 'ies'}:")
-    print(f"  {'date':<12} {'readiness':<10} {'sore':>5} {'rpe':>5}")
-    for date, readiness, soreness, rpe in entries[-5:]:
+    print(f"  {'date':<12} {'readiness':<10} {'sore':>5} {'rpe':>5} {'WBGT':>7}  conditions")
+    for date, readiness, soreness, rpe, cond in entries[-5:]:
+        wbgt = (cond or {}).get("wbgt_f")
+        note = "—"
+        if cond is not None and cond.get("temp_f") is not None:
+            parts = [f"{cond['temp_f']:.0f}F"]
+            if cond.get("rh_pct") is not None:
+                parts.append(f"{cond['rh_pct']:.0f}% RH")
+            if cond.get("solar_w_m2") is not None:
+                parts.append(f"{cond['solar_w_m2']:.0f} W/m2 sun")
+            note = ", ".join(parts)
+        elif cond is not None:
+            note = "(conditions block present but empty)"
+        wbgt_cell = f"{wbgt:.1f}F" if wbgt is not None else "—"
         print(f"  {date:<12} {readiness or '—':<10} "
               f"{soreness if soreness is not None else '—':>5} "
-              f"{rpe if rpe is not None else '—':>5}")
+              f"{rpe if rpe is not None else '—':>5} "
+              f"{wbgt_cell:>7}  {note}")
 
     # Two consecutive amber/red readiness calls is a re-author trigger, not just a note.
-    called = [(d, r) for d, r, _, _ in entries if r]
+    called = [(d, r) for d, r, _, _, _ in entries if r]
     if len(called) >= 2 and all(r in ("amber", "red") for _, r in called[-2:]):
         warnings.append(
             f"readiness {called[-2][1]} then {called[-1][1]} ({called[-2][0]}, {called[-1][0]}) — "

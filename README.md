@@ -33,7 +33,7 @@ adjust a week.
 | `rules/` | The instructions an LLM follows to author or adjust the plan — syntax references and house rules. |
 | `seed/` | Frozen one-time imports: the old Runna plan and the supplied "Champion Plan." Reference only, never edited. |
 | `log/` | Actuals — soreness, RPE, how it felt, unplanned sessions (group rides, eMTB) — feeds autoregulation. Schema and scales in `rules/logging.md`; copy `log/TEMPLATE.md` for a new day. |
-| `scripts/` | `verify_plan.py` (checks the hard invariants) and `generate_calendar.py` (HTML overview). |
+| `scripts/` | `verify_plan.py` (checks the hard invariants), `generate_calendar.py` (HTML overview), `heat_load.py` (ambient conditions and sun/shade heat load for outdoor sessions). |
 
 ## Scripts
 
@@ -42,9 +42,15 @@ python3 scripts/verify_plan.py        # check every week against athlete/profile
 python3 scripts/generate_calendar.py  # write calendar.html, a month-by-month overview
 python3 scripts/compile_guide.py --all    # compile every session to guide.json; reports what can't
 python3 scripts/pack_guide.py --all       # pack each into a guide archive, with sha256s
+python3 scripts/heat_load.py --workout-json w.json   # what the weather actually was, sun vs shade
+python3 scripts/heat_load.py --history    # what heat and shade have cost this athlete so far
 ```
 
-None of them write back into the plan. `pack_guide.py` is deterministic — the same session always
+`heat_load.py` is the exception to the rule below: with `--write` it fills the `conditions:` block
+in a day's log entry (never a plan file, and never for an indoor session). See
+`rules/conditions.md`.
+
+The others don't write back into the plan. `pack_guide.py` is deterministic — the same session always
 produces byte-identical archive bytes, which is what makes "has this changed since it was
 published" a `sha256` comparison rather than a guess.
 

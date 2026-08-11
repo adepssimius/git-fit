@@ -14,8 +14,8 @@ invariants you must never violate.
 5. `rules/endurance-authoring.md` and `rules/strength-authoring.md` — syntax references. Read these
    immediately before writing any endurance or strength file; the gotchas in them (especially the
    `m` = minutes trap) are easy to get wrong from memory.
-6. `rules/progression.md`, `rules/fueling.md` and `rules/logging.md` as needed for the specific
-   decision at hand.
+6. `rules/progression.md`, `rules/fueling.md`, `rules/logging.md` and `rules/conditions.md` as
+   needed for the specific decision at hand.
 
 `seed/` is historical input only — read it for context (what paces the athlete was already hitting,
 what the professionally designed plan says), never edit it, never treat it as current instruction.
@@ -58,6 +58,10 @@ what the professionally designed plan says), never edit it, never treat it as cu
    they give alongside the number. Two corrections already came from exactly this: the 08-02 30k
    initially read as chronic mis-pacing (it was a deliberate 10k plus 86F heat), and treadmill data
    was briefly written off as unreliable (it reconciled perfectly once walking was separated out).
+   **Ambient conditions are the one piece of that context now available without asking** — run
+   `scripts/heat_load.py` on any outdoor session before interpreting how hard it was
+   (`rules/conditions.md`). The watch's own temperature field is body heat off the wrist and is
+   never ambient; believing it is what produced the second correction above.
 9. **`seed/*` files are frozen.** If something from Runna or the Champion Plan needs to change for
    this athlete, make the adapted version in `training/`, `endurance/`, or `strength/` — don't edit
    the seed.
@@ -79,9 +83,14 @@ what the professionally designed plan says), never edit it, never treat it as cu
 
 **Recording a day** (the athlete reports how a session went, or a Suunto pull needs interpreting):
 write or update `log/YYYY-MM-DD.md` per `rules/logging.md` — copy `log/TEMPLATE.md`, fill only what
-was actually reported, and **never backfill a rating the athlete didn't give you**. Soreness and
-session-RPE are the two readiness signals Suunto cannot supply; everything else the watch already
-knows and should not be retyped by hand.
+was actually reported, and **never backfill a rating the athlete didn't give you**. Soreness,
+session-RPE and `shade_pct` are the three signals nothing else can supply; everything else the
+watch already knows and should not be retyped by hand. If the session was outdoors, fill the
+`conditions:` block with the script rather than by hand or by asking:
+
+```bash
+python3 scripts/heat_load.py --workout-json <workout.json> --write   # rules/conditions.md
+```
 
 **Adjusting a week from `log/` feedback** (fatigue, missed session, illness, an unplanned group
 ride or eMTB spin): re-read `rules/progression.md` for the cut order and the unplanned-session
@@ -110,6 +119,10 @@ legitimate answer, and failing the build over one would just teach the athlete t
 script. The warnings worth reading are RPE running over plan for the session type (easy-day creep)
 and two consecutive amber/red calls, which is a re-author trigger, not a note.
 
+It checks the `conditions:` blocks too (`rules/conditions.md`). The one to take seriously is **an
+over-plan RPE on a day whose WBGT was red or black** — that reads as heat, not fitness, and is the
+exact mistake this repo has already made twice. Don't re-author a week off a hot session alone.
+
 Then eyeball the two things a script can't judge:
 
 - [ ] No heavy lower-body lift precedes a long run or Wednesday's big workout, and Friday is still
@@ -119,4 +132,5 @@ Then eyeball the two things a script can't judge:
 
 ```bash
 python3 scripts/generate_calendar.py   # visual overview of the whole block
+python3 scripts/heat_load.py --history # what heat and shade have actually cost this athlete
 ```
