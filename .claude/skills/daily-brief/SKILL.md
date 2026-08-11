@@ -82,6 +82,21 @@ back in Hz from the wellness endpoints and bpm from the workout endpoints, sleep
 temperature is in Kelvin, and a fragmented night arrives as several separate items rather than one.
 Getting this wrong produces a brief that is confidently wrong, which is worse than no brief.
 
+**If yesterday's session was outdoors, get the conditions before judging how hard it was.** The
+watch's temperature field is body heat off the wrist, not ambient — save the workout JSON and run
+it through the tool, which decodes the GPS track and returns the real temperature, humidity and
+solar load, in full sun and in full shade:
+
+```bash
+python3 scripts/heat_load.py --workout-json <workout.json> --write   # rules/conditions.md
+```
+
+This matters for the brief specifically because **ZoneSense self-corrects for heat**, so a
+depressed aerobic threshold or an HR that looks high for the pace is the expected reading on a hot
+day rather than a fitness signal. Reporting yesterday's session as harder-than-planned without the
+ambient number is how the 08-02 30k got read as chronic mis-pacing. If it prompts for `shade_pct`,
+ask the athlete in the brief — it is a one-word answer and the only field he owes it.
+
 **2. Score the readiness ladder** in `rules/progression.md`. Seven signals, worst one wins. Five come
 from Suunto; soreness and RPE trend come from `log/`. Report each with its actual number, not just a
 colour — "sleep 7h18, amber" tells him what to do differently tonight; "amber" doesn't.

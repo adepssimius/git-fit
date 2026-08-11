@@ -45,8 +45,18 @@ ambient thermometer and no amount of conversion makes it one. Two real errors fr
 was reported as 79°F. Wrong in both directions, so there isn't even a usable bias to correct for.
 
 If temperature matters to the interpretation — and it often does, because ZoneSense self-corrects
-for heat and a hot day genuinely lowers the aerobic threshold — **ask the athlete**. He knows what
-it was. Never infer it from the file.
+for heat and a hot day genuinely lowers the aerobic threshold — **run
+`scripts/heat_load.py --workout-json <the workout>`**. It decodes the workout's own GPS track and
+pulls the real ambient temperature, humidity and solar radiation for that place and that hour,
+plus the heat load in full sun and in full shade. Never infer temperature from the file, and no
+longer ask the athlete for it — the one thing he still has to supply is `shade_pct`, how much of
+the session was under canopy. See `rules/conditions.md`.
+
+**`startPosition`, `stopPosition` and `centerPosition` are all `{0, 0}`** on every workout
+checked — the position fields are not populated. The `polyline` field is the only real location
+data in the payload; it is a standard Google-encoded polyline, and `heat_load.py` decodes it. A
+workout with no polyline was indoors, which is also how the script decides whether outdoor
+weather applies at all.
 
 ## Fragmentation
 
