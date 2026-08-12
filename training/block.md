@@ -93,7 +93,10 @@ athlete's preceding weeks resemble the Champion plan's preceding weeks.**
 - **The Big Day weekend** (block wk 13) — the most important 30 hours of the block, deliberately
   built as **two sessions, not one**:
   - **Sat Sep 5, ~06:00: a true 50k on course** (three out-and-backs from the car: 20.9 + 20.9 +
-    8.2km, ~6h). Finishing around noon protects the Saturday-afternoon family blackout.
+    8.2km, ~6h). Finishing around noon keeps the Saturday afternoon free — a preference, not a
+    blackout (`athlete/profile.md` § time_budget, corrected 2026-08-12). The 06:00 start is still
+    the right call here, but because a 50k finishing mid-afternoon is a worse family trade, not
+    because the afternoon is unavailable.
   - **Sun Sep 6, 03:00: 90min pre-dawn, on ~5h sleep and 15-hour-old 50k legs, in the dark.**
   Separately, neither session tests the thing that actually decides a 100-miler. Together they
   stack **fatigue + sleep pressure + darkness**, which is precisely the state race laps 5-6 impose

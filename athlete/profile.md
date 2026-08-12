@@ -69,8 +69,18 @@ time_budget:
     # a complete leg-recovery day immediately before the Saturday long run — but that's a
     # training choice now, not a hard constraint, and Friday can absorb an easy session or an
     # upper-body lift when a week needs the room.
-    - "sat afternoon"
-    - "sun afternoon"
+    []                      # no hard blackouts
+
+  # CORRECTED 2026-08-12 (athlete): weekend afternoons were listed above as hard blackouts.
+  # They are not — they are a PREFERENCE. Weekend afternoons are available training time; they
+  # are simply not the first choice, and a session placed there costs family goodwill rather
+  # than being forbidden. Schedule mornings by default and say so when a plan spends an
+  # afternoon, but do not treat an afternoon session as an impossibility or reshape a week to
+  # avoid one. The distinction matters for long runs specifically: a 213-240min session no
+  # longer has to finish by noon, so it does not need a pre-dawn start to fit.
+  soft_preference:
+    - "sat morning preferred over sat afternoon"
+    - "sun morning preferred over sun afternoon"
 ```
 
 ## Priority when time is short — running wins (athlete-confirmed 2026-08-12)
