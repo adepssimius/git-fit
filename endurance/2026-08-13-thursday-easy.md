@@ -21,7 +21,7 @@ intent: >
   gets cut, not the lift.
 origin: authored
 published:
-  suunto: null
+  suunto: 2026-08-12T15:10:00Z    # guide id kyclzoto
 ---
 
 Easy aerobic

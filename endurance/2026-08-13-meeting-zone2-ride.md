@@ -15,7 +15,7 @@ intent: >
   Thursday x-train slot, ridden during meetings. Gut training: hold ~75g carbs/hr.
 origin: authored
 published:
-  suunto: null
+  suunto: 2026-08-12T15:10:00Z    # guide id 2ym48ulz
 ---
 
 Warmup
