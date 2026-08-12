@@ -6,11 +6,11 @@ type: easy
 block_week: 10
 distance_km: 10.0
 duration_s: 4500
-target_mode: pace
+target_mode: effort
 brief: >
-  75min easy with company at 7:30/km. Her pace, not yours — sit in it and let the day be easy.
+  75min easy with company. Her pace, not yours — sit in it and let the day be easy.
 follow: >
-  Pace, a companion sets it. 7:30/km is BELOW your easy ceiling, so this is a genuine easy day.
+  No target set — she sets the pace, yours is shown as data only. It's an easy day; let it be one.
 intent: >
   Rewritten 2026-08-13-eve (authored 2026-08-12): the athlete's wife moved her run from Friday
   to Thursday, so this slot takes it instead of the solo 45min time-on-feet session it held.
@@ -19,8 +19,12 @@ intent: >
   PACE IS FINE THIS TIME, which is the difference from the Friday version of this run. She asked
   for 7:30/km. `easy_ceiling` in athlete/zones.yml is 7:00/km and `recovery` is 7:45/km, so
   7:30 sits BELOW the ceiling, between easy and recovery. No overspend, nothing to hold back.
-  It is target_mode: pace only because a companion is setting it, not because pace is the
-  stimulus — a lower-than-ceiling pace needs no defending.
+  NO PACE TARGET IS PUSHED, athlete-directed 2026-08-12: "I'm going to be going her pace."
+  Briefly authored as target_mode: pace at 7:30/km, which was the wrong encoding even though the
+  number was safe — a companion-paced run has no pace to prescribe, and a target the athlete has
+  already decided to ignore is noise on the watch face. Now `ZoneSense Z1`, which per
+  rules/endurance-authoring.md compiles to NO TARGET AT ALL and shows pace and HR as data. The
+  7:30/km figure stays in this file as the expectation it was, not as an instruction.
 
   DURATION NEEDED A CAP EXCEPTION. She asked for ~75min and `weekday_session_max_min` is 60.
   This was briefly authored at 60 because the weekday cap had no exception mechanism at all —
@@ -37,11 +41,11 @@ budget_exception: >
   Athlete's wife is running this one with him and asked for ~75min. The 60min weekday cap
   exists to protect family time — a run WITH his wife does not spend family time the way a
   solo session does, which is the specific reason this overspend is affordable rather than
-  merely tolerated. 15min over cap, at 7:30/km, which is below his easy ceiling.
+  merely tolerated. 15min over cap, at an expected ~7:30/km, which is below his easy ceiling.
 origin: authored
 published:
   suunto: 2026-08-12T15:25:00Z    # guide id kyclzoto (updated in place — was the solo 45min)
 ---
 
 Easy with company
-- 75m 7:30/km Pace
+- 75m ZoneSense Z1

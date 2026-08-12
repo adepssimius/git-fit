@@ -15,7 +15,7 @@ intent: >
   Recovery from Sunday. Lower A after.
 origin: authored
 published:
-  suunto: null
+  suunto: 2026-08-12T15:35:00Z    # guide id ond3jduh
 ---
 
 Easy aerobic
