@@ -8,7 +8,7 @@ distance_km: 7.1
 duration_s: 3000
 target_mode: effort
 brief: >
-  50min easy in the dark in full race night kit: 15 in, 25 steady, 10 down. A kit check, not a workout.
+  50min easy, dark, full race-night kit: 15 in, 25 steady, 10 down. A kit check, not a workout.
 follow: >
   ZoneSense Zone 1 the whole way, and no target is set — the first ~10min has no reading, so run the opening by feel. Go slower whenever that's what it needs.
 time_critical: >
@@ -20,7 +20,7 @@ intent: >
   it's still cheap to fix.
 origin: authored
 published:
-  suunto: null
+  suunto: 2026-08-12T21:29:00Z    # guide id 6gjpjpuq
 ---
 
 Easy aerobic
