@@ -13,6 +13,17 @@ is the source of truth, the app is the execution surface.
 Liftoscript `# Week 1` = block week 9 (2026-08-03). To find the Liftoscript week for any block
 week: `liftoscript_week = block_week - 8`.
 
+## Strength is best-effort — running has priority (athlete-confirmed 2026-08-12)
+
+The athlete is time constrained and lifting is the first modality cut when the day compresses.
+See `athlete/profile.md` § "Priority when time is short". Two consequences for this file:
+
+- **The 4-day split stays as authored.** Best-effort means aim high, not lower the target.
+- **Missed lifts are recorded, not escalated.** They are the expected cost of the constraint.
+  Do not read a run of them as an adherence problem or a signal to re-author the program.
+
+This is also the standing reason the pointer drift below never resolves.
+
 ## Pointer drift — the app's "next workout" is not the calendar's
 
 **Liftosaur advances by completion; this plan advances by date.** The app's next-workout pointer

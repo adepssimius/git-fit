@@ -188,6 +188,14 @@ If the script says there's no lift today, say whether that's the template (Wed/F
 design) or a deliberate gap in that Liftoscript week (taper, mid-cycle rest, Big Day week). "No lift"
 and "no lift, and that's intentional because it's peak running week" are different messages.
 
+**Strength is best-effort and running has priority** (`athlete/profile.md` § "Priority when time is
+short", athlete-confirmed 2026-08-12). The athlete is time constrained; lifting is the first thing
+cut when a day compresses. So **a missed lift is an expected outcome, not an adherence failure.**
+Reconcile it against Liftosaur as always and write it into `log/`, but do not open the brief with a
+tally of missed lifts, do not escalate a run of them into a re-author question, and do not propose
+shrinking the program to what will reliably get done. The 08-12 brief did all three and had to be
+corrected. Note the miss in one line, then spend the section on what today's lift actually is.
+
 ### 5. Walking
 
 Walking is the third training modality here, not an afterthought — `training/block.md` calls

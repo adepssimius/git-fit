@@ -73,6 +73,40 @@ time_budget:
     - "sun afternoon"
 ```
 
+## Priority when time is short — running wins (athlete-confirmed 2026-08-12)
+
+**This is a best-effort plan with an emphasis on running.** The athlete is time constrained. The
+plan is written as an aspiration, not a contract, and the modality that gets protected when the
+day compresses is running.
+
+Order of precedence when there isn't room for everything:
+
+1. **Running** — the prescribed session, at the prescribed intensity.
+2. **Meeting-time walking / trainer** — nearly free in family terms, so it survives most squeezes.
+3. **Lifting** — first to be cut. See below.
+
+What follows from this, and it matters most for how `log/` and the daily brief are written:
+
+- **A missed lift is an expected outcome of the constraint, not an adherence failure.** Record it
+  and move on. Do not escalate a run of missed lifts into a re-author question, do not propose
+  cutting the program to "what will actually get done," and do not open each morning by tallying
+  them. Week 10 lost three lifts and the 08-12 brief framed that as needing a decision — that was
+  the wrong read, and it is the specific thing this section exists to prevent recurring.
+- **The 4-day split stays authored as written.** Best-effort means aim high and take what lands,
+  not lower the target to guarantee a hit. `strength/program.liftoscript` is unchanged by this.
+- **Do not manufacture make-up sessions.** A lift that misses its slot is gone; the placement rules
+  in `rules/strength-authoring.md` exist precisely so lifts don't get stacked into whatever gap is
+  left. The same applies to a skipped run — see the 08-11 entry, where skipping an easy run to
+  sleep was the correct trade and explicitly not something to recover.
+- **Liftosaur pointer drift is a permanent consequence of this**, not a bug to chase. The app
+  advances by completion and this plan advances by date, so under a best-effort strength policy the
+  two will never reconcile on their own. `strength/notes.md` § Pointer drift already says navigate
+  by hand; this is why that will keep being true.
+
+Where the emphasis on running does bind: it is an argument for protecting session *quality*, not
+just presence. When the week compresses, the threshold and long sessions are the ones to keep
+whole — easy volume is the cheapest thing on the calendar and the right thing to spend.
+
 ## Meeting time — a separate, mostly-free budget
 
 Meeting time (work calls) can be spent on the bike trainer (aerobic base, non-impact) or walking
