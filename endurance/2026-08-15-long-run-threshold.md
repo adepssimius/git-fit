@@ -1,5 +1,5 @@
 ---
-date: 2026-08-16
+date: 2026-08-15
 sport: Run
 name: Long Run — threshold embedded
 type: long
@@ -18,20 +18,14 @@ intent: >
   The 2min float between threshold reps is a jog (8:00/km), not a walk — per
   rules/endurance-authoring.md, jog_recovery is what belongs between threshold reps.
 
-  MOVED Sat 08-15 -> Sun 08-16 on 2026-08-12, at the athlete's request, to make room for a
-  Friday social run with his wife. The move is what keeps the mandated leg-recovery day: it
-  relocates from Friday to Saturday rather than disappearing, so Friday's 45min sits two days
-  out and Thursday's easy run survives as well. The back-to-back structure is preserved intact
-  — it shifts to Sun long + Mon medium-long, which is the same consecutive-day stimulus
-  `training/block.md` rule 2 asks for. Weekend afternoons are a preference and not a blackout
-  (athlete/profile.md, corrected the same day), so this does not need a pre-dawn start.
+  Briefly moved to Sun 08-16 on 2026-08-12 to make room for a Friday social run, then moved
+  BACK the same day when that run was rescheduled to Thursday. Saturday is the session's home:
+  Friday is the mandated leg-recovery day and nothing now competes for it. Recording the
+  round trip rather than silently reverting, so the guide id churn below has a reason attached.
 
-  The cost is carried by block week 11, not here: its Wednesday uphill threshold now sits two
-  days off this run instead of three. Week 11 runs only 268min because the trip cuts it, so
-  there is slack — but that is the session to watch.
 origin: authored
 published:
-  suunto: 2026-08-12T15:07:00Z    # guide id 9j7cdxce
+  suunto: 2026-08-12T15:25:00Z    # guide id 9j7cdxce (updated in place, back to 08-15)
 ---
 
 Easy aerobic
