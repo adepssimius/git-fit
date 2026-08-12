@@ -12,7 +12,7 @@
       "command": "bash",
       "args": [
         "-c",
-        "bash \"${CLAUDE_PROJECT_DIR:-.}/.claude/scripts/suuntool-session.sh\" || true; exec /usr/local/bin/suuntool-guides-preview mcp --allow-write"
+        "bash \"${CLAUDE_PROJECT_DIR:-.}/.claude/scripts/suuntool-session.sh\" || true; exec /usr/local/bin/suuntool-guides-preview mcp --allow-write --allow-destructive"
       ]
     }
   }
