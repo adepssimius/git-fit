@@ -8,7 +8,8 @@ Checks, all derived from athlete/profile.md rather than hardcoded:
   1. Weekly running-time total <= time_budget.weekly_total_max_min
      (excludes concurrent: meetings sessions, and excludes type: race)
   2. Longest single session <= time_budget.long_run_max_min
-  3. Weekday sessions <= time_budget.weekday_session_max_min
+  3. Weekday sessions <= time_budget.weekday_session_max_min, unless flagged with
+     `budget_exception:` and within weekday_session_exception_max_min
   4. Walking week-over-week increase <= meeting_budget.walking.weekly_ramp_max_pct
   5. The `m`-means-minutes trap: a distance-looking value written as minutes
   6. Rest steps carry an explicit target (intervals.icu requires one)
@@ -342,6 +343,8 @@ def load_budget(root: Path) -> dict:
         "long_run_exception_max_min": num("long_run_exception_max_min", 360),
         "long_run_exceptions_per_block": num("long_run_exceptions_per_block", 3),
         "weekday_session_max_min": num("weekday_session_max_min", 60),
+        "weekday_session_exception_max_min": num("weekday_session_exception_max_min", 90),
+        "weekday_exceptions_per_block": num("weekday_exceptions_per_block", 4),
         "weekday_sessions_per_week": num("weekday_sessions_per_week", 4),
         "night_session_max_min": num("night_session_max_min", 90),
         "walk_ramp_pct": num("weekly_ramp_max_pct", 15),
@@ -357,6 +360,7 @@ def main() -> int:
     errors: list[str] = []
     warnings: list[str] = []
     exceptions: list[tuple] = []
+    weekday_exceptions: list[tuple] = []
     weeks: dict[int, dict] = defaultdict(
         lambda: {"run": 0.0, "walk": 0.0, "ride": 0.0, "hike": 0.0, "longest": 0.0,
                  "longest_name": "", "longest_flagged": False}
@@ -413,10 +417,25 @@ def main() -> int:
             # distinct DAYS, not sessions, so a double doesn't consume two slots.
             if datetime.strptime(fm["date"], "%Y-%m-%d").weekday() < 5:
                 w.setdefault("weekday_days", set()).add(fm["date"])
+            # The weekday cap takes the same escape hatch as the long-run cap: an over-cap
+            # weekday session is allowed when it carries an explicit `budget_exception:`
+            # reason, and only up to a hard ceiling. Added 2026-08-12 — before this, the
+            # weekday cap had NO exception mechanism at all, so a one-off longer weekday
+            # session could not be expressed in the plan even when the athlete wanted it,
+            # and the only options were to lie about the duration or raise the cap for
+            # every week. Both are worse than a flagged, visible, counted exception.
             if typ in WEEKDAY_TYPES and dur > budget["weekday_session_max_min"]:
-                errors.append(
-                    f"{rel}: {dur:.0f}min exceeds weekday cap "
-                    f"({budget['weekday_session_max_min']}min)")
+                if "budget_exception" not in fm:
+                    errors.append(
+                        f"{rel}: {dur:.0f}min exceeds weekday cap "
+                        f"({budget['weekday_session_max_min']}min) with no "
+                        f"`budget_exception:` reason")
+                else:
+                    weekday_exceptions.append((rel, dur))
+                    if dur > budget["weekday_session_exception_max_min"]:
+                        errors.append(
+                            f"{rel}: {dur:.0f}min exceeds even the flagged weekday ceiling "
+                            f"({budget['weekday_session_exception_max_min']}min)")
             if typ == "night" and dur > budget["night_session_max_min"]:
                 errors.append(
                     f"{rel}: {dur:.0f}min exceeds night-session cap "
@@ -527,6 +546,18 @@ def main() -> int:
             errors.append(
                 f"{len(exceptions)} flagged long-run exceptions exceeds the per-block limit "
                 f"of {limit} (athlete/profile.md) — going long should stay special")
+        print()
+
+    if weekday_exceptions:
+        limit = budget["weekday_exceptions_per_block"]
+        print(f"Flagged weekday-cap exceptions ({len(weekday_exceptions)}/{limit} allowed per block):")
+        for rel, dur in weekday_exceptions:
+            print(f"  \u2022 {rel}  {dur:.0f}min")
+        if len(weekday_exceptions) > limit:
+            errors.append(
+                f"{len(weekday_exceptions)} flagged weekday-cap exceptions exceeds the per-block "
+                f"limit of {limit} (athlete/profile.md) — the weekday cap protects family time, "
+                f"and routine exceptions mean the cap is wrong rather than the session")
         print()
 
     check_logs(root, sessions_by_date, errors, warnings)

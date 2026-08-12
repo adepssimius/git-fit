@@ -18,6 +18,16 @@ them without an explicit override in `log/`.
 ```yaml
 time_budget:
   weekday_session_max_min: 60      # door-to-door, incl. changing
+  # The weekday cap takes the same escape hatch as the long-run cap, added 2026-08-12: a session
+  # over 60min is allowed when its frontmatter carries an explicit `budget_exception: <reason>`,
+  # up to the ceiling below and no more than `weekday_exceptions_per_block` times.
+  # Before this the weekday cap had NO exception mechanism, so a one-off longer weekday session
+  # could not be expressed at all — the only ways out were to understate the duration in the
+  # plan or to raise the cap for every week. A flagged, counted, visible exception is better
+  # than either. The cap exists to protect family time, so if exceptions stop being rare the
+  # honest reading is that the cap is wrong, not that the sessions are.
+  weekday_session_exception_max_min: 90
+  weekday_exceptions_per_block: 4
   weekday_sessions_per_week: 4
   # Night sessions sit outside the weekday cap on purpose: they run post-bedtime, which is
   # the whole reason training/block.md calls night running "free" in family terms. They still

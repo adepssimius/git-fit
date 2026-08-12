@@ -4,11 +4,11 @@ sport: Run
 name: Thursday Easy — social run
 type: easy
 block_week: 10
-distance_km: 8.0
-duration_s: 3600
+distance_km: 10.0
+duration_s: 4500
 target_mode: pace
 brief: >
-  60min easy with company at 7:30/km. Her pace, not yours — sit in it and let the day be easy.
+  75min easy with company at 7:30/km. Her pace, not yours — sit in it and let the day be easy.
 follow: >
   Pace, a companion sets it. 7:30/km is BELOW your easy ceiling, so this is a genuine easy day.
 intent: >
@@ -22,21 +22,26 @@ intent: >
   It is target_mode: pace only because a companion is setting it, not because pace is the
   stimulus — a lower-than-ceiling pace needs no defending.
 
-  DURATION IS THE CONSTRAINT INSTEAD. She asked for ~75min; this is authored at 60 because
-  `weekday_session_max_min` is 60 and scripts/verify_plan.py errors on any weekday easy/tempo/
-  intervals/recovery session over it. Unlike the long-run cap there is NO `budget_exception`
-  escape for the weekday cap. Per the precedent set for 08-10 (see log/2026-08-09.md), the plan
-  file stays at the cap and the log records what was actually run — the plan is not the record.
-  If the athlete waives the cap for the day, this becomes 75min/10.0km and the guide re-pushes.
+  DURATION NEEDED A CAP EXCEPTION. She asked for ~75min and `weekday_session_max_min` is 60.
+  This was briefly authored at 60 because the weekday cap had no exception mechanism at all —
+  unlike the long-run cap, which has taken a flagged `budget_exception` since the block began.
+  Athlete waived it the same day, so rather than quietly raising the cap for every week (which
+  would weaken it everywhere to serve one run) the escape hatch was added to match the long-run
+  one: flagged, ceilinged at 90min, and counted per block. See athlete/profile.md time_budget.
 
   Thursday also carries Lower B and the 90min meeting-time trainer ride, so this is the week's
   biggest non-long-run day. Friday's full rest absorbs it, and Lower B is low-fatigue by design
   — but per this file's earlier note, if calves or achilles are talking, THIS RUN is still the
   thing that gets cut, not the lift.
+budget_exception: >
+  Athlete's wife is running this one with him and asked for ~75min. The 60min weekday cap
+  exists to protect family time — a run WITH his wife does not spend family time the way a
+  solo session does, which is the specific reason this overspend is affordable rather than
+  merely tolerated. 15min over cap, at 7:30/km, which is below his easy ceiling.
 origin: authored
 published:
   suunto: 2026-08-12T15:25:00Z    # guide id kyclzoto (updated in place — was the solo 45min)
 ---
 
 Easy with company
-- 60m 7:30/km Pace
+- 75m 7:30/km Pace
