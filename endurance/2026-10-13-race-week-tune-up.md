@@ -24,11 +24,11 @@ Warmup
 
 Threshold 3x
 - 5m 5:55/km Pace
-- 60s 9:00/km Pace
+- 60s 9:30/km Pace
 
 Hills 3x
 - 30s 5:05/km Pace
-- 90s 9:00/km Pace
+- 90s 9:30/km Pace
 
 Cooldown
 - 1.5km 7:00/km Pace

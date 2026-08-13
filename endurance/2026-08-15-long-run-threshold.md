@@ -15,8 +15,20 @@ intent: >
   Threshold blocks go early while fresh; easy aerobic carries the back half.
   Extended 2026-08-04 from 177 to 213min: the seed skeleton wants 34km here and 177min was
   only ~25km. The added volume is all easy aerobic at the back, not more threshold.
-  The 2min float between threshold reps is a jog (8:00/km), not a walk — per
-  rules/endurance-authoring.md, jog_recovery is what belongs between threshold reps.
+  The 2min float between threshold reps is a jog — per rules/endurance-authoring.md,
+  jog_recovery is what belongs between threshold reps. Float corrected 8:00 -> 7:30/km on
+  2026-08-12: 8:00 sits inside the dead band between the athlete's jog floor (7:30) and his
+  max walk pace (9:30), so it was a shuffle, not a jog. See athlete/zones.yml locomotion_floors.
+
+  THIS IS ALSO THE BLOCK'S NEXT THRESHOLD PROBE, added 2026-08-12. The 08-12 session came in
+  at RPE 3 against an expected 6 with the reps run 6s/km FASTER than prescribed and heart rate
+  never reaching LTHR — see log/2026-08-12.md. 2min reps are too short to settle HR, so they
+  could not answer whether the 5:40 threshold anchor is stale. SIX-minute reps can.
+  Instruction, and it costs nothing: run rep 1 at 5:55 as written and look at HR at the end of
+  it. If it is under ~160 (LTHR is 169), take reps 2-4 to 5:40 and log the HR for each. If rep
+  1 lands at 165+, 5:55 is honest and the table is fine. Either way this converts a session the
+  plan already contains into the data zones.yml pace_review is waiting for, with no extra
+  session and no extra time.
 
   Briefly moved to Sun 08-16 on 2026-08-12 to make room for a Friday social run, then moved
   BACK the same day when that run was rescheduled to Thursday. Saturday is the session's home:
@@ -25,7 +37,7 @@ intent: >
 
 origin: authored
 published:
-  suunto: 2026-08-12T15:25:00Z    # guide id 9j7cdxce (updated in place, back to 08-15)
+  suunto: 2026-08-12T22:00:00Z    # guide id 9j7cdxce (float 8:00 -> 7:30)
 ---
 
 Easy aerobic
@@ -33,7 +45,7 @@ Easy aerobic
 
 Threshold 4x
 - 6m 5:55/km Pace
-- 2m 8:00/km Pace
+- 2m 7:30/km Pace
 
 Easy aerobic
 - 141m ZoneSense Z1
