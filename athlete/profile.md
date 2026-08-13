@@ -353,6 +353,28 @@ reopen at 14km in the bigger size, the fit hypothesis weakens and the shoe — n
 the suspect for long distance. If compression is the whole story — and
 it fits the evidence cleanly — a size up should fix both symptoms.
 
+**Healing rate is its own data point — added 2026-08-12.** The 08-02 blisters were still present
+at **day 10-11**: tiny, painless, improving slowly. A normal blister closes in 3-7 days. The
+likeliest explanation is not slow healing but **continuous re-irritation** — since 08-02 they have
+absorbed 14.2km, 10.1km and a 7x2min threshold session, and have never had more than a single rest
+day in a row. Two things follow:
+
+- **Read a persistent blister as a load signal, not a skin signal**, unless it is painful,
+  spreading, or discoloured. The question to ask is "what has it been asked to absorb since," not
+  "why won't it heal."
+- **Checkpoint 2 lands on tissue that never recovered from checkpoint 0.** Saturday 08-15 is the
+  ~30km test, 13 days after the 30k that created these. That does not disqualify the test — it
+  makes the result harder to attribute cleanly. If the blisters worsen on Saturday, the honest
+  reading is "30km on a 13-day-old unhealed blister," which is NOT the same finding as "the
+  Mont Blanc 10 fails at 30km." Note that distinction in the log rather than collapsing it.
+
+**Run the Saturday test anyway, and pre-tape.** Deferring costs more than it saves: block week 11
+and 12 are travel weeks with no 30km+ slot, so the next real opportunity after 08-15 is the Big
+Day itself (09-05, a 50k on course) — which is the single most important session of the block and
+the worst possible place to discover a shoe fails. **Saturday is the cheap place to find out.**
+Tape or lubricate both 2nd toes prophylactically before the start; the failure point is known to
+the millimetre, which is exactly the situation where prophylaxis is worth it.
+
 Standing rule: log blistering by **location and symmetry**, not just presence. Bilateral and
 specific points at fit; unilateral points at gait, camber, or a lacing/sock issue.
 
