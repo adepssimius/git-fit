@@ -418,6 +418,52 @@ Implemented in `.claude/skills/daily-brief/scripts/brief_context.py` (`observed_
 None recorded yet. Log anything that affects session selection here, and reference it from
 `rules/progression.md`'s readiness ladder.
 
+### If something actually hurts — DRAFT, needs athlete confirmation (raised 2026-08-13)
+
+**The cut order does not govern pain.** `rules/strength-authoring.md`'s lifting-first rule answers
+"what do I drop when time or recovery is short." That is a scarcity question. Pain is a different
+category and the repo had no branch for it at all until the athlete asked — this section is the
+gap he found, drafted for his confirmation rather than assumed.
+
+**First, separate soreness from pain.** `rules/logging.md`'s scale already does this: 1-3 green
+(and per the baseline note below, gastroc/soleus in that band is routine for him and means
+nothing), 7+ red, 9-10 "sharp, localized, or getting worse day over day — this is an injury
+signal, not soreness."
+
+**If it is tendon pain — achilles being the realistic one here — the athlete's instinct is right
+and it inverts the usual cut.** Cut the RUNNING and keep loading the tendon:
+
+- Tendons remodel in response to load. Complete rest de-loads them, and pain typically returns on
+  the return to running because nothing got stronger in the interim.
+- Running is the provocation — impact plus the stretch-shortening cycle. Controlled calf work is
+  not.
+- So: drop or shorten the runs, keep the calf raises, and if anything bias them heavier and
+  slower. Isometric holds are frequently useful early. **Lower B's single-leg calf raise stops
+  being the thing to cut and becomes the thing to keep** — which is the one case where lifting
+  outranks running, and it is a rehab decision, not a training-priority one.
+
+**The exception that matters more than the rule: DO NOT load through suspected bone stress.**
+This is the failure mode where "keep loading it" is actively dangerous, and this block is exposed
+to it — `rules/progression.md` already names the walking ramp (180 -> 465 min/wk over nine weeks)
+as the single most likely source of an overuse injury here. Rough triage, and it is triage, not
+diagnosis:
+
+| | tendon-like | bone-stress-like |
+|---|---|---|
+| morning | stiff, worst on first steps | not especially |
+| during activity | **warms up and eases** | **worsens as you go** |
+| location | along the tendon, diffuse | pinpoint on bone, tender to press |
+| single-leg hop | uncomfortable | **sharply painful** |
+| at rest / at night | quiet | aches |
+
+Anything in the right-hand column: **stop, do not load, and get it imaged.** Running through a
+bone stress reaction is how a season ends.
+
+**This is training-practice guidance, not medical advice, and it is written by an LLM.** Pain that
+is sharp, one-sided, worsening day over day, or still present after ~2 weeks of sensible
+management belongs with a physio or sports doctor, not with this file. Record what they say here
+and it becomes the constraint everything else is authored against.
+
 **Baseline characteristic (2026-08-05):** gastroc/soleus soreness in the 1-3 (green) range is
 routine for this athlete — "par for the course," his words, not a signal of anything going wrong.
 `rules/logging.md`'s soreness scale is generic; read a green-band calf reading alone as noise, not
