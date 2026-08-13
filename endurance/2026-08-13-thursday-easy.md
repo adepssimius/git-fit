@@ -18,8 +18,10 @@ intent: >
   `concurrent: meetings` and costs zero training time, so the slot was never actually spent.
   athlete/profile.md allows weekday_sessions_per_week: 4 and every week was using 3.
   Runs alongside Lower B. Lower B is deliberately low-fatigue, but it does carry 4x12 single-leg
-  calf raises and Nordic curls — if calves or achilles are talking, this run is the thing that
-  gets cut, not the lift.
+  calf raises and Nordic curls — if calves or achilles are talking, cut the LIFT (or at least its
+  calf and Nordic work), not this run. CORRECTED 2026-08-13: this note said the exact reverse
+  until then, which contradicted the athlete's own verbatim spec in rules/strength-authoring.md
+  § House rules. It entered eight session files in a single commit with no rationale given.
 
   REVERTED TO THE SOLO 45min, 2026-08-13: the social run with the athlete's wife did not happen
   this morning. It had been authored at 75min under a flagged weekday-cap exception, and that
