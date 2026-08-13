@@ -353,27 +353,44 @@ reopen at 14km in the bigger size, the fit hypothesis weakens and the shoe — n
 the suspect for long distance. If compression is the whole story — and
 it fits the evidence cleanly — a size up should fix both symptoms.
 
-**Healing rate is its own data point — added 2026-08-12.** The 08-02 blisters were still present
-at **day 10-11**: tiny, painless, improving slowly. A normal blister closes in 3-7 days. The
-likeliest explanation is not slow healing but **continuous re-irritation** — since 08-02 they have
-absorbed 14.2km, 10.1km and a 7x2min threshold session, and have never had more than a single rest
-day in a row. Two things follow:
+**ONE INCIDENT, NOT A RECURRING PROBLEM — athlete correction 2026-08-12.** This matters enough to
+state before any of the detail below. The blisters are a **single event on 2026-08-02, in the
+9.5s, that has not finished resolving.** They are not a pattern, not a chronic issue, and — most
+importantly — **the size 10s have never produced a blister.** An earlier version of this section
+was drifting toward treating friction as a standing characteristic of this athlete and toward
+prescribing sock and taping interventions off n=1. That is the same over-generalisation the
+run/walk rule got corrected for: an observation promoted to a constraint by being written down.
+Do not do it here. Until a SECOND blistering event occurs, in the 10s, there is no pattern to
+manage and no kit change to justify.
 
-- **Read a persistent blister as a load signal, not a skin signal**, unless it is painful,
-  spreading, or discoloured. The question to ask is "what has it been asked to absorb since," not
-  "why won't it heal."
-- **Checkpoint 2 lands on tissue that never recovered from checkpoint 0.** Saturday 08-15 is the
-  ~30km test, 13 days after the 30k that created these. That does not disqualify the test — it
-  makes the result harder to attribute cleanly. If the blisters worsen on Saturday, the honest
-  reading is "30km on a 13-day-old unhealed blister," which is NOT the same finding as "the
-  Mont Blanc 10 fails at 30km." Note that distinction in the log rather than collapsing it.
+**Healing rate — added 2026-08-12.** Still present at **day 10-11**: tiny, painless, improving
+slowly. A normal blister closes in 3-7 days. The likeliest explanation is not slow healing but
+**continuous re-irritation** — since 08-02 they have absorbed 14.2km, 10.1km and a 7x2min
+threshold session, with never more than a single rest day in a row. Read a lingering blister as a
+question about what it has been asked to absorb since, not about the skin. This is an observation
+about *this* blister, not a standing rule.
 
-**Run the Saturday test anyway, and pre-tape.** Deferring costs more than it saves: block week 11
-and 12 are travel weeks with no 30km+ slot, so the next real opportunity after 08-15 is the Big
-Day itself (09-05, a 50k on course) — which is the single most important session of the block and
-the worst possible place to discover a shoe fails. **Saturday is the cheap place to find out.**
-Tape or lubricate both 2nd toes prophylactically before the start; the failure point is known to
-the millimetre, which is exactly the situation where prophylaxis is worth it.
+**What Saturday actually tests.** Checkpoint 2, the ~30km class that broke the 9.5s. The residual
+blister is a leftover from a **retired shoe**, so it is a confound to note rather than the subject
+of the test:
+
+- The clean question is "does the Mont Blanc 10 carry 30km" — and the 10s have a perfect record
+  so far (checkpoint 1 passed, zero toe-joint pain, no new blistering).
+- If the old blisters worsen, that reads as "30km on a 13-day-old unhealed spot," which is NOT
+  the same finding as "the Mont Blanc 10 fails at 30km." Keep the two separate in the log.
+- A NEW blister, in a new location, would be the real signal.
+
+**Run Saturday in the 10s with nothing new.** Deferring costs more than it saves — block weeks 11
+and 12 are travel weeks whose longest runs are 120min and 94min, so the next 30km+ opportunity
+after 08-15 is the Big Day itself (09-05, a 50k on course), the worst possible place to discover a
+shoe fails. Lubricant between the toes is fine if wanted: it adds no bulk and costs nothing to be
+wrong about. **Do not add toe socks, tape or any other kit change for this run** — tape in
+particular adds bulk to a toe box whose failure mode was compression, and changing two variables
+at once on the one 30km slot available would waste the test. Kit changes belong to the block-week-16
+decision, informed by data, not ahead of it.
+
+**The fallback is already in hand:** the Lone Peak 9.5 is the reference shoe with correct fit, so
+a Saturday failure costs a shoe choice, not the block.
 
 Standing rule: log blistering by **location and symmetry**, not just presence. Bilateral and
 specific points at fit; unilateral points at gait, camber, or a lacing/sock issue.
