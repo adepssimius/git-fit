@@ -123,6 +123,35 @@ what most rolling trail sessions actually are. Treat `mode` on any session near 
 ask the athlete" rather than as a measurement, and note that this leaves the mode half of the
 method validated on three points, not four.
 
+## 4b. What the whole trail-run history says about the gates
+
+The method was later run over every `TRAIL_RUNNING` activity in the account with at least 120 m of
+recorded ascent — 34 activities, 2024-04 to 2026-08, after the 25 with too little gain to reach the
+relief gate were skipped as arithmetically impossible. (That prefilter is safe here: relief cannot
+exceed a route's own vertical range, and no skipped activity had 120 m of *descent* either, so none
+could be the net-descent case of failure mode 6.1.)
+
+It found **6 peak ascents**, and — this is the point — both terrain gates landed in genuinely empty
+space rather than mid-cluster:
+
+```
+concentration  0.20 .. 0.41  |  0.56  |  0.72 0.72 0.80 0.84 0.90 0.94
+relief (m)       34 ..   71  |   103  |  160  163  166  176  186  193  216
+                             ^ the 0.60 / 120m gates sit in this gap
+```
+
+27 activities cluster at 0.20–0.41 concentration and 34–71 m relief; 6 sit at 0.72–0.94 and
+160–216 m. One activity falls in the gap on both axes (`2qob8g14t2o4d95i`, 0.56 / 103 m) and is
+rejected. So the split this method claims to find is real in this athlete's data and is not an
+artifact of thresholds fitted to four points — but note the gates were still *chosen* on those four
+points and merely survived the other 30. This is a held-out check, not a fit.
+
+**The cadence cut got the opposite result.** `run_fraction` over the same 34 activities runs
+0.20 → 0.85 continuously with no gap anywhere, and **13 of 34 sit within 10 points of the 0.50
+cut**. There is no natural boundary for the threshold to find, because most rolling trail sessions
+genuinely are part run and part walked. Treat `mode` as a continuous number to be reported, not a
+label to be trusted — §4's unresolved row is the rule, not the exception.
+
 ## 5. Assumptions
 
 Every one of these is a place the method can break on data unlike the validation set. They are
