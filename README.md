@@ -33,7 +33,7 @@ adjust a week.
 | `rules/` | The instructions an LLM follows to author or adjust the plan — syntax references and house rules. |
 | `seed/` | Frozen one-time imports: the old Runna plan and the supplied "Champion Plan." Reference only, never edited. |
 | `log/` | Actuals — soreness, RPE, how it felt, unplanned sessions (group rides, eMTB) — feeds autoregulation. Schema and scales in `rules/logging.md`; copy `log/TEMPLATE.md` for a new day. |
-| `scripts/` | `verify_plan.py` (checks the hard invariants), `generate_calendar.py` (HTML overview), `heat_load.py` (ambient conditions and sun/shade heat load for outdoor sessions). |
+| `scripts/` | `verify_plan.py` (checks the hard invariants), `generate_calendar.py` (HTML overview), `heat_load.py` (ambient conditions and sun/shade heat load for outdoor sessions), `classify_activity.py` (peak-ascent vs. rolling-trail, and hiked vs. run). |
 
 ## Scripts
 
@@ -44,6 +44,7 @@ python3 scripts/compile_guide.py --all    # compile every session to guide.json;
 python3 scripts/pack_guide.py --all       # pack each into a guide archive, with sha256s
 python3 scripts/heat_load.py --workout-json w.json   # what the weather actually was, sun vs shade
 python3 scripts/heat_load.py --history    # what heat and shade have cost this athlete so far
+python3 scripts/classify_activity.py --workout-json w.json --explain  # peak ascent? hiked or run?
 ```
 
 `heat_load.py` is the exception to the rule below: with `--write` it fills the `conditions:` block

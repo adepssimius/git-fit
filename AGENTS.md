@@ -14,8 +14,8 @@ invariants you must never violate.
 5. `rules/endurance-authoring.md` and `rules/strength-authoring.md` — syntax references. Read these
    immediately before writing any endurance or strength file; the gotchas in them (especially the
    `m` = minutes trap) are easy to get wrong from memory.
-6. `rules/progression.md`, `rules/fueling.md`, `rules/logging.md` and `rules/conditions.md` as
-   needed for the specific decision at hand.
+6. `rules/progression.md`, `rules/fueling.md`, `rules/logging.md`, `rules/conditions.md` and
+   `rules/trail-classification.md` as needed for the specific decision at hand.
 
 `seed/` is historical input only — read it for context (what paces the athlete was already hitting,
 what the professionally designed plan says), never edit it, never treat it as current instruction.
@@ -90,6 +90,16 @@ watch already knows and should not be retyped by hand. If the session was outdoo
 
 ```bash
 python3 scripts/heat_load.py --workout-json <workout.json> --write   # rules/conditions.md
+```
+
+If the session was on trails, the activity type on the watch is not evidence of what the legs did —
+a `TRAIL_RUNNING` file can be a summit hiked at walking cadence. `scripts/classify_activity.py`
+separates the two questions (was it one sustained climb; was it run or walked) from the elevation
+and cadence streams. Its labels are draft like any other Suunto-derived reading — see
+`rules/trail-classification.md`, which is candid about being fitted to four activities.
+
+```bash
+python3 scripts/classify_activity.py --workout-json <workout.json> --explain
 ```
 
 **Adjusting a week from `log/` feedback** (fatigue, missed session, illness, an unplanned group
