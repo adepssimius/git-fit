@@ -152,6 +152,34 @@ cut**. There is no natural boundary for the threshold to find, because most roll
 genuinely are part run and part walked. Treat `mode` as a continuous number to be reported, not a
 label to be trusted — §4's unresolved row is the rule, not the exception.
 
+## 4c. Athlete-confirmed labels
+
+Per AGENTS.md invariant 8, the method's output is draft until the athlete confirms it. What has
+been confirmed so far, and what each point buys:
+
+- **`6eps9t4hu0et99p3` (2025-10-04, White County GA) — peak ascent, hiked.** Confirmed by the
+  athlete. Two things ride on this one point. First, its high point is 789 m on the flank of Rocky
+  Mountain, 1.4 km from and 435 m below that summit, and no named peak lies within 2.8 km — the
+  athlete's verdict was "still a hike even if I didn't summit," which is direct confirmation that
+  **assumption 5's semantics are the wanted ones**: this method should detect one sustained climb,
+  and reaching a named summit is a different question deliberately not asked here. Second, its
+  `run_fraction` is **0.49**, a hair under the cut, and the athlete calls it a hike — so the one
+  labeled point nearest the 0.50 threshold agrees with it.
+- **`3uk1c4poj0sgnkjr` (2025-11-22, Mount Watatic) — peak ascent, hiked.** From the original
+  validation set; `run_fraction` 0.20 makes it unambiguous.
+
+The five `peak_ascent` calls not yet confirmed are `8ite3259dhs0dp8u` (Jacumba Peak),
+`32qndpp3mt68p2kh` and `8htbn1u4589csjql` (both Mount Watatic), and `82933k1kmdus493v`
+(South Uncanoonuc). `27qmp60jqv6tdp3n` (Pack Monadnock) is a **known false negative** — the
+high point is 40 m from the summit node but sits at 0% of the track, so the whole activity was a
+descent-first outing and concentration fell to 0.41. It is failure mode 6.1 caught in the wild.
+
+Summit identification, where it is wanted, is a separate OSM lookup and not part of the rule: query
+Overpass for `node(around:2000,<lat>,<lon>)[natural=peak]` around the track's max-altitude sample.
+Five of the six positives above matched a named peak node to within 54 m that way. Note the watch
+reads 8-13 m high against OSM elevations on every New England summit — a consistent baro offset,
+not a positional error.
+
 ## 5. Assumptions
 
 Every one of these is a place the method can break on data unlike the validation set. They are
