@@ -30,7 +30,37 @@ pace:
   # easy days too fast is this athlete's most likely training error, and the one that would
   # quietly wreck an ultra build. If 7:00 feels like work, go slower.
   easy_ceiling: "7:00"
-  recovery: "7:45"           # day-after-long-run and shakeout pace
+  recovery: "7:15"           # day-after-long-run and shakeout pace
+                             # WAS 7:45 — corrected 2026-08-12, see locomotion_floors below.
+
+  # ATHLETE-REPORTED LOCOMOTION FLOORS, 2026-08-12. These are not training zones, they are
+  # physical facts about how this athlete moves, and every recovery/float/walk pace in the plan
+  # has to sit on the correct side of them. They were violated repeatedly before he said so:
+  #
+  #   jog_floor_min:  "7:30"   slowest he can actually JOG. Below this it is not a jog.
+  #   jog_floor_real: "7:15"   the realistic slow-jog pace — what "easy shuffle" means for him.
+  #   walk_max:       "9:30"   about as FAST as he can walk.
+  #
+  # The dead band between 7:30 and 9:30 is the important part: it is too slow to jog and too
+  # fast to walk. Nothing should ever be prescribed inside it. Two classes of error came out
+  # of not knowing this:
+  #   * walk_recovery was 9:00 — FASTER than he can walk, so ~14 sessions prescribed a
+  #     "walk-back" he physically could not walk.
+  #   * jog_recovery ran to 8:15 and recovery sat at 7:45 — both inside the dead band, so the
+  #     floats between threshold reps were shuffles rather than the lactate-shuttling jog
+  #     rules/endurance-authoring.md says they are for.
+  #
+  # OPEN QUESTION for the lap simulations, and it is a big one: the race plan opens at
+  # 8:15-8:30/km (ultra_lap_early below, and the 1.2km opener in the lap-sim and race files).
+  # That is INSIDE the dead band. It means lap 1 cannot be run as a steady jog — it is a
+  # run/walk or a deliberate shuffle from the gun. Not changed here, because that is exactly
+  # what races/2026-10-17-ghost-train.md's pacing is for and what the lap sims exist to test,
+  # but do not let the lap sims pass without answering it.
+  locomotion_floors:
+    jog_floor_min: "7:30"
+    jog_floor_real: "7:15"
+    walk_max: "9:30"
+    source: "athlete-reported 2026-08-12"
 
   long_run: "6:50-7:10"      # long-run cruising, easy effort
   long_steady: "6:30"         # the "steady" segments inside progressive long runs
@@ -42,14 +72,23 @@ pace:
   stride: "4:35"             # 20-30s strides — fast but not sprinting form
 
   # Two distinct recoveries, not one — they serve different reps and shouldn't be collapsed:
-  jog_recovery: "7:30-8:15"  # float/jog between quality reps (threshold, uphill threshold,
+  jog_recovery: "7:15-7:30"  # float/jog between quality reps (threshold, uphill threshold,
                               # time-based intervals) — keep moving, the point is lactate
-                              # shuttling, not standing rest. Faster end for flatter/shorter work
-                              # (7:30 on the 7x2min threshold), slower for uphill or longer reps
-                              # (8:15 on the uphill-threshold sessions).
-  walk_recovery: "9:00"      # RACE walk breaks and recovery after short/fast reps: strides
+                              # shuttling, not standing rest.
+                              # WAS "7:30-8:15", corrected 2026-08-12. The old slow end was
+                              # below jog_floor_min, so floats that were meant to be jogs were
+                              # prescribed as shuffles. 7:30 is now the SLOW end of this band,
+                              # not the fast end. The uphill/flat distinction the old comment
+                              # drew is gone: both collapse onto the same floor, because the
+                              # constraint is his gait, not the terrain.
+                              # NOTE this makes threshold sessions HARDER — less recovery
+                              # between reps — which is the intended direction given the
+                              # 08-12 session came in at RPE 3 against an expected 6.
+  walk_recovery: "9:30"      # RACE walk breaks and recovery after short/fast reps: strides
                               # walk-backs, and rest after very short/fast reps (hill sprints,
                               # 400s at rep pace) where a jog wouldn't clear before the next one.
+                              # WAS "9:00", which is FASTER than walk_max — i.e. every
+                              # "walk-back" in the plan was unwalkable. Corrected 2026-08-12.
 
   # Ultra targets. Deliberately far slower than anything above: at an 11:11/km cutoff average
   # for 100mi, the failure mode is starting anywhere near normal easy pace. Lap 1 should feel

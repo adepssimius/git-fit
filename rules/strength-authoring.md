@@ -22,6 +22,27 @@ MCP. This is the syntax reference plus the athlete's own scheduling spec, which 
 - **On unavoidable conflicts, the running plan wins.**
 - **On doubled days, lifting is always placed after the run.**
 
+**The cut order has ONE direction, and it does not flip on the trigger — clarified 2026-08-13
+after the athlete caught a session file saying the opposite.** Lifting is cut before running,
+whatever prompted the decision:
+
+| trigger | what gets cut |
+|---|---|
+| time is short | the lift (`athlete/profile.md` § "Priority when time is short") |
+| recovery is a concern | the lift ("reduce lifting volume before reducing running quality") |
+| readiness amber/red | lift tiers drop first (`rules/progression.md`) |
+| **a tissue is talking** — calves, achilles, arches | **the lift, or at least the exercise loading that tissue** |
+
+The last row is the one that had drifted. Eight Thursday session files carried a note saying that
+if calves or achilles were talking, the *run* should be cut and the lift kept — introduced in one
+commit with no rationale, never traced to the spec above, and flatly contradicting two of its
+verbatim lines. Corrected in all eight.
+
+If a reason ever emerges to protect a lift over a run — a rehab protocol, say, where controlled
+loading is the treatment and impact is the provocation — that is a decision for the athlete to
+make explicitly and for this file to record. **It is not something a session file gets to assert
+on its own.**
+
 See `training/block.md` § "The weekly template" for how this resolves against the Champion Plan's
 day pattern and the Friday blackout — Mon=Lower A, Tue=Upper A, Thu=Lower B, Sun=Upper B, Wed/Fri/Sat
 carry no lifting.

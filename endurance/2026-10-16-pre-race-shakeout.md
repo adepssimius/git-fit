@@ -24,4 +24,4 @@ Easy aerobic
 
 Pickups 4x
 - 30s 5:10/km Pace
-- 60s 9:00/km Pace
+- 60s 9:30/km Pace

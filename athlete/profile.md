@@ -353,6 +353,45 @@ reopen at 14km in the bigger size, the fit hypothesis weakens and the shoe — n
 the suspect for long distance. If compression is the whole story — and
 it fits the evidence cleanly — a size up should fix both symptoms.
 
+**ONE INCIDENT, NOT A RECURRING PROBLEM — athlete correction 2026-08-12.** This matters enough to
+state before any of the detail below. The blisters are a **single event on 2026-08-02, in the
+9.5s, that has not finished resolving.** They are not a pattern, not a chronic issue, and — most
+importantly — **the size 10s have never produced a blister.** An earlier version of this section
+was drifting toward treating friction as a standing characteristic of this athlete and toward
+prescribing sock and taping interventions off n=1. That is the same over-generalisation the
+run/walk rule got corrected for: an observation promoted to a constraint by being written down.
+Do not do it here. Until a SECOND blistering event occurs, in the 10s, there is no pattern to
+manage and no kit change to justify.
+
+**Healing rate — added 2026-08-12.** Still present at **day 10-11**: tiny, painless, improving
+slowly. A normal blister closes in 3-7 days. The likeliest explanation is not slow healing but
+**continuous re-irritation** — since 08-02 they have absorbed 14.2km, 10.1km and a 7x2min
+threshold session, with never more than a single rest day in a row. Read a lingering blister as a
+question about what it has been asked to absorb since, not about the skin. This is an observation
+about *this* blister, not a standing rule.
+
+**What Saturday actually tests.** Checkpoint 2, the ~30km class that broke the 9.5s. The residual
+blister is a leftover from a **retired shoe**, so it is a confound to note rather than the subject
+of the test:
+
+- The clean question is "does the Mont Blanc 10 carry 30km" — and the 10s have a perfect record
+  so far (checkpoint 1 passed, zero toe-joint pain, no new blistering).
+- If the old blisters worsen, that reads as "30km on a 13-day-old unhealed spot," which is NOT
+  the same finding as "the Mont Blanc 10 fails at 30km." Keep the two separate in the log.
+- A NEW blister, in a new location, would be the real signal.
+
+**Run Saturday in the 10s with nothing new.** Deferring costs more than it saves — block weeks 11
+and 12 are travel weeks whose longest runs are 120min and 94min, so the next 30km+ opportunity
+after 08-15 is the Big Day itself (09-05, a 50k on course), the worst possible place to discover a
+shoe fails. Lubricant between the toes is fine if wanted: it adds no bulk and costs nothing to be
+wrong about. **Do not add toe socks, tape or any other kit change for this run** — tape in
+particular adds bulk to a toe box whose failure mode was compression, and changing two variables
+at once on the one 30km slot available would waste the test. Kit changes belong to the block-week-16
+decision, informed by data, not ahead of it.
+
+**The fallback is already in hand:** the Lone Peak 9.5 is the reference shoe with correct fit, so
+a Saturday failure costs a shoe choice, not the block.
+
 Standing rule: log blistering by **location and symmetry**, not just presence. Bilateral and
 specific points at fit; unilateral points at gait, camber, or a lacing/sock issue.
 
@@ -378,6 +417,52 @@ Implemented in `.claude/skills/daily-brief/scripts/brief_context.py` (`observed_
 
 None recorded yet. Log anything that affects session selection here, and reference it from
 `rules/progression.md`'s readiness ladder.
+
+### If something actually hurts — DRAFT, needs athlete confirmation (raised 2026-08-13)
+
+**The cut order does not govern pain.** `rules/strength-authoring.md`'s lifting-first rule answers
+"what do I drop when time or recovery is short." That is a scarcity question. Pain is a different
+category and the repo had no branch for it at all until the athlete asked — this section is the
+gap he found, drafted for his confirmation rather than assumed.
+
+**First, separate soreness from pain.** `rules/logging.md`'s scale already does this: 1-3 green
+(and per the baseline note below, gastroc/soleus in that band is routine for him and means
+nothing), 7+ red, 9-10 "sharp, localized, or getting worse day over day — this is an injury
+signal, not soreness."
+
+**If it is tendon pain — achilles being the realistic one here — the athlete's instinct is right
+and it inverts the usual cut.** Cut the RUNNING and keep loading the tendon:
+
+- Tendons remodel in response to load. Complete rest de-loads them, and pain typically returns on
+  the return to running because nothing got stronger in the interim.
+- Running is the provocation — impact plus the stretch-shortening cycle. Controlled calf work is
+  not.
+- So: drop or shorten the runs, keep the calf raises, and if anything bias them heavier and
+  slower. Isometric holds are frequently useful early. **Lower B's single-leg calf raise stops
+  being the thing to cut and becomes the thing to keep** — which is the one case where lifting
+  outranks running, and it is a rehab decision, not a training-priority one.
+
+**The exception that matters more than the rule: DO NOT load through suspected bone stress.**
+This is the failure mode where "keep loading it" is actively dangerous, and this block is exposed
+to it — `rules/progression.md` already names the walking ramp (180 -> 465 min/wk over nine weeks)
+as the single most likely source of an overuse injury here. Rough triage, and it is triage, not
+diagnosis:
+
+| | tendon-like | bone-stress-like |
+|---|---|---|
+| morning | stiff, worst on first steps | not especially |
+| during activity | **warms up and eases** | **worsens as you go** |
+| location | along the tendon, diffuse | pinpoint on bone, tender to press |
+| single-leg hop | uncomfortable | **sharply painful** |
+| at rest / at night | quiet | aches |
+
+Anything in the right-hand column: **stop, do not load, and get it imaged.** Running through a
+bone stress reaction is how a season ends.
+
+**This is training-practice guidance, not medical advice, and it is written by an LLM.** Pain that
+is sharp, one-sided, worsening day over day, or still present after ~2 weeks of sensible
+management belongs with a physio or sports doctor, not with this file. Record what they say here
+and it becomes the constraint everything else is authored against.
 
 **Baseline characteristic (2026-08-05):** gastroc/soleus soreness in the 1-3 (green) range is
 routine for this athlete — "par for the course," his words, not a signal of anything going wrong.

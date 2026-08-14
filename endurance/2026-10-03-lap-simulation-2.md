@@ -28,13 +28,13 @@ Car -> north terminus (drop bag passed at 5km)
 - 6.3km ZoneSense Z1
 
 Turnaround — drop-bag check, refuel
-- 3m 9:00/km Pace
+- 3m 9:30/km Pace
 
 North terminus -> car
 - 7.5km ZoneSense Z1
 
 Car — crew stop, sock change, foot care, timed
-- 3m 9:00/km Pace
+- 3m 9:30/km Pace
 
 Car -> south end -> car
 - 6km ZoneSense Z1
