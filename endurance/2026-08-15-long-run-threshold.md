@@ -4,17 +4,29 @@ sport: Run
 name: Long Run — threshold embedded
 type: long
 block_week: 10
-duration_s: 12780
+duration_s: 14400
 target_mode: effort
 brief: >
-  40min in, 4x(6min at 5:55 + 2min jog), then 141min continuous. Threshold early while fresh; nothing hard after.
+  20min in, 4x(6min at 5:55 + 2min jog), then 188min continuous. Threshold early while fresh; nothing hard after.
 follow: >
   ZoneSense Zone 1 for all the running; the 6min threshold reps by pace. If Zone 1 means slower, run slower.
 intent: >
   Champion week 7's big threshold long run, trimmed to 4 reps to fit the long-run cap.
   Threshold blocks go early while fresh; easy aerobic carries the back half.
-  Extended 2026-08-04 from 177 to 213min: the seed skeleton wants 34km here and 177min was
-  only ~25km. The added volume is all easy aerobic at the back, not more threshold.
+  Extended 2026-08-04 from 177 to 213min, and again 2026-08-14 from 213 to 240min at the
+  athlete's request ("I'm fine doing a 4 hour run. I enjoy the solitude"). The added volume is
+  all easy aerobic at the back, not more threshold. 240min sits EXACTLY at
+  `long_run_max_min` — legal without a budget_exception, but at the ceiling, so it is not a
+  precedent for drifting past it. At ~7:05/km this finally reaches the ~34km the seed skeleton
+  wanted for this session; 177min was ~25km and 213min ~30km.
+
+  Warmup shortened 40 -> 20min the same day, also athlete-requested. Consistent with this
+  session's own stated design ("threshold early while fresh") and it buys 20 more minutes for
+  the continuous back half, which is what the block actually wants and what the Mont Blanc 10
+  checkpoint needs. One caution attached: the reps double as the threshold probe, and HR is
+  the readout. 20min is an adequate warmup for 5:55/km work, but it is the short end — if rep 1
+  reads oddly low, treat an under-warmed cardiovascular system as a candidate explanation
+  before concluding the pace table is soft.
   The 2min float between threshold reps is a jog — per rules/endurance-authoring.md,
   jog_recovery is what belongs between threshold reps. Float corrected 8:00 -> 7:30/km on
   2026-08-12: 8:00 sits inside the dead band between the athlete's jog floor (7:30) and his
@@ -41,11 +53,11 @@ published:
 ---
 
 Easy aerobic
-- 40m ZoneSense Z1
+- 20m ZoneSense Z1
 
 Threshold 4x
 - 6m 5:55/km Pace
 - 2m 7:30/km Pace
 
 Easy aerobic
-- 141m ZoneSense Z1
+- 188m ZoneSense Z1
