@@ -4,6 +4,31 @@ This repo has no compiler and no CI. You (an LLM, in a future session) are the o
 turns intent into files. This document is the entry point: what to read, in what order, and the
 invariants you must never violate.
 
+## Standing instruction from the athlete — DO THE THING, DON'T SHIP IT (2026-08-15)
+
+**Make the edit and stop.** Do not `git commit`, do not `git push`, and do not upload a guide to
+the watch unless the athlete asks for that specific action in that message. "Update the plan",
+"fix the float", "rename the steps" are requests to change files — nothing more.
+
+This is a correction, not a preference to weigh against convenience: sessions had been ending
+every request with a commit, a push and a guide upload the athlete never asked for.
+
+**The working shape is: edit -> discuss -> he decides.** He wants room to argue with a change
+before it is final, and several of this repo's best corrections came from exactly that gap.
+Committing at the end of every turn closes it.
+
+- **He will ask.** "Load it on my watch", "push it", "get this into master" are explicit and
+  unambiguous. Wait for them.
+- **Offering is welcome; doing is not.** End a message with a concrete suggestion — "want me to
+  commit this and load the guide?" — and he will say yes or no. That is the intended flow, not
+  an imposition on him.
+- **When an edit leaves the watch stale, say so in one line** — he needs to know the guide no
+  longer matches the file, especially before a session. Tell him; do not fix it unilaterally.
+- Running `scripts/verify_plan.py` is fine and expected — it only reads.
+- A stop hook (`~/.claude/stop-hook-git-check.sh`, global to all his repos) will complain about
+  uncommitted changes at the end of such a turn. **That is the expected state here, not a
+  problem to fix** — surface it if useful, but never let it override the instruction above.
+
 ## Read order, before touching anything
 
 1. `athlete/profile.md` — the time budget. Every session you author is checked against this.

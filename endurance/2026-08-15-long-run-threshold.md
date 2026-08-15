@@ -57,7 +57,7 @@ Easy aerobic
 
 Threshold 4x
 - 6m 5:55/km Pace
-- 2m 7:15-7:30/km Pace
+- 2m 7:10-7:40/km Pace
 
 Easy aerobic
 - 168m ZoneSense Z1

@@ -23,11 +23,11 @@ Warmup
 
 Long Threshold 2x
 - 10m 5:55/km Pace
-- 2m 7:15-7:30/km Pace
+- 2m 7:10-7:40/km Pace
 
 Short Threshold 2x
 - 5m 6:00/km Pace
-- 90s 7:15-7:30/km Pace
+- 90s 7:10-7:40/km Pace
 
 Cooldown
 - 8m 7:00/km Pace

@@ -72,7 +72,7 @@ pace:
   stride: "4:35"             # 20-30s strides — fast but not sprinting form
 
   # Two distinct recoveries, not one — they serve different reps and shouldn't be collapsed:
-  jog_recovery: "7:15-7:30"  # float/jog between quality reps (threshold, uphill threshold,
+  jog_recovery: "7:10-7:40"  # float/jog between quality reps (threshold, uphill threshold,
                               # time-based intervals) — keep moving, the point is lactate
                               # shuttling, not standing rest.
                               # WAS "7:30-8:15", corrected 2026-08-12. The old slow end was
@@ -84,6 +84,14 @@ pace:
                               # NOTE this makes threshold sessions HARDER — less recovery
                               # between reps — which is the intended direction given the
                               # 08-12 session came in at RPE 3 against an expected 6.
+                              #
+                              # WIDENED to 7:10-7:40 on 2026-08-15, athlete-chosen, and the
+                              # slow edge is now 10s BELOW jog_floor_min (7:30). That is
+                              # deliberate: a 15-second band is fussy to hold on a 2min float,
+                              # and a target band is tolerance, not a prescription to run at
+                              # its slow edge. The floor still describes his gait; this band
+                              # describes what the watch should accept without nagging. Do not
+                              # "correct" it back by appealing to locomotion_floors.
   walk_recovery: "9:30"      # RACE walk breaks and recovery after short/fast reps: strides
                               # walk-backs, and rest after very short/fast reps (hill sprints,
                               # 400s at rep pace) where a jog wouldn't clear before the next one.
