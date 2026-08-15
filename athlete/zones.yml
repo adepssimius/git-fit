@@ -67,6 +67,32 @@ pace:
   steady: "6:15"              # marathon-ish effort
   tempo: "5:55"               # sustained ~40-60min effort
   threshold: "5:40"          # = 10k PR pace; his 10k takes ~57min so this IS ~1-hour pace
+                             #
+                             # ⚠ EVIDENCE THIS IS STALE — 2026-08-15, and it is strong. NOT
+                             # changed here, because pace_review's trigger is a new PR or the
+                             # Big Day, and guessing a number is how this file got wrong the
+                             # first time. But do not read 5:40 as settled.
+                             #
+                             # 4x6min inside a long run: 5:19 / 5:15 / 5:26 / 5:32, HR avg
+                             # 169 / 172 / 169 / 168 against an LTHR of 169. No fade, and the
+                             # athlete reports he was not out of gas at the end of any rep.
+                             #
+                             # The CLINCHING evidence is the RPE, not the paces. He rated the
+                             # reps 6 against an expected 6 for tempo — the first session in the
+                             # whole log to come in AT plan rather than under:
+                             #     08-05 tempo, plan-set     -1
+                             #     08-09 long,  plan-set     -2
+                             #     08-12 threshold, plan-set -3
+                             #     08-15 threshold, HE set    0
+                             # When the plan prescribes he comes in under; when he runs by feel
+                             # he lands on target. That is the argument.
+                             #
+                             # Best estimate: threshold ~5:25-5:35. NOT 5:15 — 6min reps with
+                             # 2min floats let HR accumulate, so true 1-hour pace sits slower
+                             # than what he held. The implication is bigger than one row: the
+                             # 10k PR of 56:36 anchoring this ENTIRE table is stale, so a real
+                             # 10k or 30min TT re-anchors everything at once. That is the
+                             # cheapest way to fix the table and it has not been scheduled.
   vo2: "5:18"                # = 5k PR pace
   rep: "5:05"                # short reps (200-400m), ~3k effort
   stride: "4:35"             # 20-30s strides — fast but not sprinting form

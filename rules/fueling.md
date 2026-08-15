@@ -114,6 +114,23 @@ decision rather than a recurring problem: pick a start time that day, count back
 dose then. Since scheduling is otherwise opportunistic, run that session whenever the pre-load
 window is convenient — mid-morning or evening both work.
 
+## ⚠ THIS PROGRESSION IS BEHIND REALITY — 2026-08-15
+
+**He hit ~83-95 g/hr in block week 10 with no GI distress at all**, on a 3h05 effort:
+7 gels at ~30min intervals (alternating Maurten 160 / Enervit mango) plus 3 scoops of Skratch
+Super High-Carb front-loaded (100g per 7-scoop serving = 43g). Total ~255-295g.
+
+That is the **weeks 12-15** number, reached five weeks early, and comfortably past the 60-75 g/hr
+this file prescribes for weeks 9-11. The schedule below is pacing him toward a level he has
+already cleared, so do not use it to hold him back.
+
+**The open question is no longer "can he reach 90 g/hr."** It is whether he can hold 90-100 g/hr
+at hour 12 and hour 20, when gut motility drops and palatability collapses — which is exactly
+what this file already names as the main risk of the gels-only system. The Big Day and both lap
+simulations are the right places to test that; a 3-hour run is not.
+
+Rewrite the progression against real data at the next review rather than editing it piecemeal.
+
 ## Gut training progression — the actual training variable
 
 Target **90–120g carbs/hour** sustained, which is what ultra performance at this distance requires

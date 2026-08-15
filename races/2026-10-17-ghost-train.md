@@ -14,9 +14,53 @@ This file replaces Runna's race model entirely. Runna prescribed `50km race at 5
 (road-marathon logic) — **discarded**. 50km isn't how this event is structured or scored, and that
 pace is far too fast for a 24+ hour effort. Everything below is the real event.
 
+## ⚠ THE LAP PACES BELOW PRESCRIBE SOMETHING HE CANNOT RUN — raised 2026-08-15
+
+`ultra_lap_early` is **8:15-8:30/km**. The athlete's `locomotion_floors` in `athlete/zones.yml`
+put his slowest sustainable JOG at **7:30/km** and his fastest WALK at **9:30/km**. 8:15-8:30
+sits inside that dead band: too slow to jog, too fast to walk.
+
+**It only reconciles with roughly half of lap 1 walked** (running 7:15 / walking 9:30, a 5min-run
+5min-walk cycle averages 8:13/km). That is not conservative pacing, it is a fundamentally
+different race, and far more walking than a 30-hour attempt needs in its opening hours.
+
+**Why it is wrong:** these paces were derived backwards from the 30-hour cutoff (11:11/km),
+never forwards from what he can produce, and they were set before the locomotion floors existed.
+
+**What the athlete actually has:** he jogged a continuous 50k on this course in 2024 without
+issue, and reports 7:20-7:30/km on this terrain as "pretty easy" — consistent with an easy
+ceiling of 7:00 and today's ZS Z1 portions rated RPE 2. At 7:20/km a 24.1km lap is 2h57; seven
+laps is ~20.6h moving, ~21-22h with crew stops, against a 30-hour cutoff.
+
+**The structural fact this file has to absorb:** for THIS athlete, "start conservatively" cannot
+mean "run slower" — below 7:30/km the only mechanism available is walking. So the opening is a
+binary: ~7:30 continuous, or walk breaks from the gun.
+
+**Direction to re-derive in (not yet done — needs the athlete's sign-off):** anchor laps 1-2 at
+~7:30/km and keep the existing fade SHAPE, which is sound. Walking then enters where the targets
+already imply it — laps 5+ at 10:00-11:12/km is run/walk territory whether or not it is labelled
+as such, and it should be labelled, so the transition is a plan rather than a capitulation.
+`training/block.md` rule 6 already sanctions run/walk as a race tactic.
+
+**What the lap sims are therefore for.** NOT testing the pace — he has answered that. They are
+for the crew choreography, the fuelling handoffs, the Mont Blanc -> Lone Peak shoe swap, and the
+night piece. That is a better use of two long sessions than confirming what he already knows.
+
 ## Course & format
 
-- Out-and-back rail trail, **flat, one hill**, well-maintained, no technical terrain.
+- Out-and-back rail trail, **flat, one hill**, well-maintained.
+- **SURFACE — athlete-corrected 2026-08-15, and this file was misleading before.** It previously
+  said "no technical terrain", which alongside "rail trail" reads as smooth crushed stone. It is
+  not. **Most of it is grassy with singletrack or packed dirt**, with the short hill section
+  **semi-technical** — an easy trail bridging the rail-trail sections. That error caused an LLM
+  session to seriously propose a road shoe for the race. Three things follow that the plan did
+  not previously account for:
+  - **Night footing.** ~13 of the ~24 hours are dark, on grass and singletrack, at hour 15+ of
+    accumulated fatigue. That is a headlamp-brightness and pace question, not merely "he enjoys
+    night running."
+  - **Pace.** The lap targets below were set without the surface being specified; grass and
+    singletrack are slower than the implied surface for the same effort.
+  - **Fall risk late**, which nothing in this plan currently mentions.
 - One **lap = 24.1km (15mi) = two 7.5mi (12.1km) out-and-backs** from a central start/finish.
 - **Aid station** roughly every 3.75mi (6km) — i.e. at each quarter of a lap.
 - **Crew access at the start/finish and at the 7.5mi turnaround** — crew contact every ~12km,

@@ -179,6 +179,39 @@ than the Champion Plan's own lighter post-run routine. The user's strength spec 
 disagreement, but lifting stays first in the cut order (see `rules/progression.md`) — if the weekly
 time-budget check fails repeatedly, drop Upper B before touching anything else.
 
+## ⚠ THE BINDING CONSTRAINT MAY NOT BE AEROBIC — raised 2026-08-15
+
+This block is built as an aerobic progression: Champion-plan structure, threshold work, pace
+targets. **Every limiter the athlete has actually hit has been tissue, not fitness.**
+
+| session | what ended it |
+|---|---|
+| 08-02, 30k | blisters |
+| 08-09, long run | short sleep, RPE 3 vs expected 5 |
+| 08-12, threshold | RPE 3 vs expected 6 |
+| 08-15, 240min long run | **ITB at 20km — aerobically rated a 2** |
+
+Four rated sessions, all at or under plan, and not one report of being aerobically cooked.
+Against that: two blister events, foot soreness in the Lone Peaks by 20km, and now a recurring
+IT band (`athlete/profile.md` § Injuries).
+
+**What it changes, if it holds:**
+
+- **Lower B stops being the optional lift.** Unilateral work and glute/hip stability are the
+  direct prehab for the ITB. This does NOT override `athlete/profile.md` § "Priority when time is
+  short" — running still wins a time squeeze — but it does change what Lower B is worth.
+- **Callus management outranks the shoe decision** (`profile.md` § Footwear).
+- **The walking ramp turns out to be right for the right reason** — time on feet builds the
+  durability that actually fails, not the engine.
+- **The conservative pace table is a symptom of the same misdiagnosis** — see
+  `races/2026-10-17-ghost-train.md` and `athlete/zones.yml`.
+
+**Honest caveat, and it matters:** easy at 23.5km is the EXPECTED state, not proof — that is 15%
+of the race. This does not establish that the engine holds for 160km. It establishes that what
+interrupts him is tissue, which has now happened often enough to be a pattern rather than an
+anecdote. Do not re-author the block on it yet; do weight tissue work accordingly, and revisit
+after the Big Day.
+
 ## Reshaping rules, ordered by impact on the 100-mile outcome
 
 1. **Every week is authored against `athlete/profile.md` time_budget — hard constraint.** Sum

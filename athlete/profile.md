@@ -325,6 +325,47 @@ equipment:
 
 ## Footwear — the Mont Blanc runs small
 
+### The rotation (recorded 2026-08-15 — none of this was in the repo before)
+
+| shoe | size | use |
+|---|---|---|
+| Altra **Lone Peak 9** | 9.5 | trail. Correct fit; the fit reference |
+| Altra **Mont Blanc Carbon** | 9.5 | RETIRED for distance — too narrow |
+| Altra **Mont Blanc Carbon** | **10** | trail, race candidate |
+| Altra **Experience Flow 2** | **10** | road, medium-high cushion |
+| Altra **Escalante** | 9.5 | road |
+
+Note he runs **9.5 in the Lone Peak and Escalante but 10 in the Experience Flow** — size varies
+by model, so "size 10" was never inherently too big. That mattered on 2026-08-15 when a size-up
+hypothesis for a blister was raised and then ruled out: the 08-12 threshold session was 14min of
+fast running in the size 10 Experience Flow with normal Balega socks and produced nothing.
+
+### WHY the Mont Blanc — the thing this section never recorded
+
+Everything below documents what has gone WRONG with this shoe. It never stated what it is FOR,
+and on 2026-08-15 that gap caused an LLM session to twice recommend abandoning it. **Record the
+purpose of kit next to its problems, or the next reader sees only cost.**
+
+**The carbon plate and thicker foam are a deliberate play for less trail feel and less soreness
+after distance**, and measured against that it is working:
+
+- **Zero general foot soreness after 23.5km** on 2026-08-15. Athlete: *"that would be unthinkable
+  in the Lone Peak."*
+- **Zero toe-joint pain** — the 9.5's reliable signature, absent in the 10.
+- Less general leg soreness than the Lone Peak produces by 20km.
+
+Feet are the primary attrition mechanism in a 30-hour race — `races/2026-10-17-ghost-train.md`
+makes "feet: hot spots vs actual damage" one of six go/no-go criteria at every crew stop. A shoe
+that eliminates foot soreness at 23.5km is winning the axis that decides the race, and losing one
+that tape and sock choice can fix. **"Correct fit" (Lone Peak) and "right for the job" are
+different axes and this file used to conflate them.**
+
+The Lone Peak's role is therefore the **backup in the start/finish crew bag** — the shoe to
+switch into if the Mont Blanc's toe box goes wrong, or late when feet swell — not the standard
+the Mont Blanc must justify itself against. Race-day swap logic: stay in the Mont Blancs while
+the feet are quiet, swap on the toe box talking or visible swelling, NOT at a scheduled lap.
+Rehearse the swap at the Big Day, which already has three crew stops.
+
 **Altra Lone Peak 9, size 9.5 — correct fit.** The reference shoe.
 
 **Altra Mont Blanc Carbon, size 9.5 — TOO SMALL for long distance.** Same nominal size, noticeably
@@ -392,6 +433,39 @@ decision, informed by data, not ahead of it.
 **The fallback is already in hand:** the Lone Peak 9.5 is the reference shoe with correct fit, so
 a Saturday failure costs a shoe choice, not the block.
 
+### TWO blister mechanisms, not one — separated 2026-08-15
+
+These had been getting conflated. They are different problems with different fixes:
+
+| | location | skin | mechanism |
+|---|---|---|---|
+| **08-02**, Mont Blanc **9.5** | both 2nd toes, at 3rd toe contact | clean | **compression** — narrow last, toe-on-toe |
+| **08-15**, Mont Blanc **10** | outer edge, both big toes | **at a callus margin** | **shear at a stiffness discontinuity** |
+
+**The compression problem was actually fixed by sizing up.** 23.5km including 24min at
+5:15-5:32/km in the 10s and the 2nd-toe blisters did not recur.
+
+**CALLUSES ARE THE UNDERLYING SUBSTRATE, and they are not armour.** The 08-15 blisters formed
+directly above well-developed calluses extending up from the underside of the big toes. Blisters
+form at the MARGIN of a callus, never on it: the callus is stiff and inelastic, the skin beside
+it is not, and shear concentrates at the boundary. The 08-02 blisters were on clean skin —
+athlete-confirmed — which is what separates the two mechanisms.
+
+So the 08-15 blister is a **skin** problem that any shoe would eventually find, not a shoe
+problem. Toe socks and 5:15/km pace supplied the shear; the callus decided it blistered rather
+than merely complained. Every callus edge on his feet is a blister waiting for enough shear, and
+a 160km race supplies plenty.
+
+**Highest-value foot work available, and it is free:** reduce the calluses gradually — light
+filing or pumice after showers, a little at a time over weeks, never one aggressive session
+(freshly thinned skin is worse than the callus). Keep the skin pliable with a urea-based cream so
+it deforms with the surrounding tissue instead of tearing at the seam. Start now; stop aggressive
+work ~2 weeks out from the race. This outranks the shoe decision.
+
+**Do not wear toe socks in the Mont Blancs.** Toe socks add width between every toe, and in a last
+whose known defect is narrowness that pushes the outer toes into the shoe walls. Secondary to the
+callus work now, but free to obey.
+
 Standing rule: log blistering by **location and symmetry**, not just presence. Bilateral and
 specific points at fit; unilateral points at gait, camber, or a lacing/sock issue.
 
@@ -415,7 +489,31 @@ Implemented in `.claude/skills/daily-brief/scripts/brief_context.py` (`observed_
 
 ## Injuries / constraints
 
-None recorded yet. Log anything that affects session selection here, and reference it from
+### ITB, left — recurring, distance-dependent (first recorded 2026-08-15)
+
+**Lateral left knee, side of the kneecap, "feels like tight IT band."** NOT patellofemoral —
+the athlete was asked to distinguish and this is the ITB answer. Onset around 20-25km.
+
+**It is recurring and it is not the shoes.** He has had the same thing in the Lone Peaks at
+~25km in a 30k. On 2026-08-15 it arrived at ~20km — five kilometres early — and the likeliest
+candidate is the 14 minutes at or above LTHR banked in the first 72 minutes of that run.
+n >= 2, in two different shoes, so this meets the bar for a pattern that the 08-02 blisters
+did not.
+
+**It is UNILATERAL, which is the most informative thing about it.** This file's own standing
+rule for blistering applies: bilateral points at equipment, unilateral points at gait, camber or
+asymmetry. Left only, on flat trail, means something about him is asymmetric.
+
+**The direct prehab lives in Lower B** — unilateral work, glute and hip stability; hip abductor
+weakness is the classic ITBS driver. That does not override "Priority when time is short", but
+it does change what Lower B is worth: it is no longer just accessory volume, it is the specific
+countermeasure to the block's one recorded injury.
+
+**Mid-run management** (established 2026-08-15, and it worked): raise cadence 5-10%, walk every
+descent, stay off camber. Stop running the moment gait changes — compensation is how one sore
+knee becomes a hip and an achilles.
+
+None other recorded. Log anything that affects session selection here, and reference it from
 `rules/progression.md`'s readiness ladder.
 
 ### If something actually hurts — DRAFT, needs athlete confirmation (raised 2026-08-13)
