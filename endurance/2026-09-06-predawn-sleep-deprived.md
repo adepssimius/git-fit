@@ -36,4 +36,4 @@ Settle in
 - 66m ZoneSense Z1
 
 Cooldown
-- 9m 7:30/km Pace
+- 9m 7:15-7:30/km Pace

@@ -30,7 +30,7 @@ Easy aerobic
 
 Hill Strides 3x
 - 20s 4:35/km Pace
-- 90s 9:00/km Pace
+- 90s 9:30/km Pace
 
 Cooldown
 - 6m ZoneSense Z1

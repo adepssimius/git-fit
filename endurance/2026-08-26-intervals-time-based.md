@@ -25,7 +25,7 @@ Warmup
 
 Main Set 4x
 - 3m 5:40/km Pace
-- 2m 7:30/km Pace
+- 2m 7:15-7:30/km Pace
 
 Steady
 - 7m 6:30/km Pace

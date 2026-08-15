@@ -76,6 +76,23 @@ An unmapped header over 13 chars **warns** rather than being silently clipped; t
 **Durations:** `1h`, `10m`, `30s`, `1h2m30s` (or short form `5'`, `30"`).
 **Distances:** `2km`, `500mtr`, `1mi`, `4.5mi`. Never bare `m` for meters.
 
+**A BARE PACE TARGET IS THE FAST EDGE OF A 30-SECOND BAND, NOT A POINT.** `compile_guide.py`
+turns `7:30/km Pace` into a target of **7:30 to 8:00** (`PACE_BAND_SLOWER_S = 30`) — the number
+you write becomes the FAST end and the watch will happily sit you 30s/km slower than you meant.
+This is the single least intuitive thing in the syntax and it caused a real error:
+
+- Every threshold float in the plan was written `7:30/km Pace`, intending the athlete's jog floor.
+  It compiled to 7:30-8:00, which is **entirely inside the dead band** between his jog floor
+  (7:30) and his max walk pace (9:30) — see `athlete/zones.yml` § locomotion_floors. The watch was
+  asking for a pace he cannot produce by either gait.
+- Corrected 2026-08-15 (athlete-spotted) to the explicit range `7:15-7:30/km Pace`, which puts
+  7:30 at the SLOW edge where it was always meant to be.
+
+**So: whenever the slow edge matters, write the range explicitly.** Bare targets are fine for
+quality work, where being 30s/km slower than target is just a rep you did not quite hit. They are
+wrong wherever the number IS a floor — floats, recoveries, walk-backs, anything anchored to
+`locomotion_floors`. Check `written + 30s` against those floors before leaving a target bare.
+
 **`ZoneSense Z1` — the display-only target.** Write this wherever ZoneSense governs the step
 (easy, long, b2b, lap-sim, race). The wire format has **no ZoneSense target** — its target fields
 are pace, HR, power and cadence, and ZoneSense is a separate Zapp the guide cannot drive. So the
