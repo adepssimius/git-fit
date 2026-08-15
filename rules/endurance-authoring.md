@@ -93,6 +93,22 @@ quality work, where being 30s/km slower than target is just a rep you did not qu
 wrong wherever the number IS a floor — floats, recoveries, walk-backs, anything anchored to
 `locomotion_floors`. Check `written + 30s` against those floors before leaving a target bare.
 
+**Nothing enforces a ZS Z1 step — confirmed against real workout data, 2026-08-15.** The athlete
+asked whether the ZS Z1 portions carry a pace zone. They do not, at three separate layers, and it
+is worth being blunt about all three because this file previously implied the watch was enforcing
+it:
+
+1. `parse_target` returns None for `ZoneSense Z1`, so the compiled step asserts NO target.
+2. The wire format has no ZoneSense target field at all — only pace, HR, power, cadence.
+3. The watch's own zone alarm was NOT set either. The 2026-08-12 SML header reads
+   `Targets.ZoneSenseZones: "None"` (alongside HeartRateZone / PowerZone / SpeedZone, all "None").
+
+So a ZS Z1 block is **a label plus the athlete's judgement**, with the live ZoneSense Zapp screen
+(`Zapps {Id: "zzaeroen"}`, confirmed running) as the only readout — and that screen has no reading
+for the first ~10min. The cross-check available after the fact is `hr.long_run_hr_ceiling` (155) in
+`athlete/zones.yml`. If live enforcement is ever wanted, it is a watch-side setting
+(`Targets.ZoneSenseZones`), not something the guide can carry.
+
 **`ZoneSense Z1` — the display-only target.** Write this wherever ZoneSense governs the step
 (easy, long, b2b, lap-sim, race). The wire format has **no ZoneSense target** — its target fields
 are pace, HR, power and cadence, and ZoneSense is a separate Zapp the guide cannot drive. So the

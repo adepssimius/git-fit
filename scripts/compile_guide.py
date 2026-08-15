@@ -273,17 +273,17 @@ def ascii_fold(s: str) -> str:
 #
 # First match wins, so specific patterns precede general ones. `\1` backreferences are expanded.
 TITLE_RULES: list[tuple[str, str]] = [
-    (r"^warm\s*up",                     "WU"),
-    (r"^cool\s*down",                   "CD"),
+    (r"^warm\s*up",                     "Warm up"),
+    (r"^cool\s*down",                   "Cool down"),
     (r"^easy\s*(to|>)\s*hill",          "EZ>HILL"),
     (r"^easy\s*/\s*mod",                "EZ/MOD"),
     # Athlete-directed, 2026-08-04: ZoneSense-governed easy running carries NO compiled target,
     # including through the ~10min cold start. The label states the intent and the athlete paces
     # the opening himself. See rules/endurance-authoring.md § "The cold-start opener".
-    (r"^easy\s+aerobic",                "EZ ZS Aerobic"),
-    (r"^easy",                          "EZ"),
+    (r"^easy\s+aerobic",                "Easy aerobic"),
+    (r"^easy",                          "Easy"),
     (r"^moderate",                      "MOD"),
-    (r"^steady",                        "STEADY"),
+    (r"^steady",                        "Steady"),
     (r"^z2\s*base",                     "Z2 BASE"),
     (r"^progression",                   "PROG"),
     # Must precede the strides rule — otherwise "Hill strides positioning" matches it and the
@@ -291,8 +291,8 @@ TITLE_RULES: list[tuple[str, str]] = [
     (r"^(hill\s+strides\s+)?positioning", "FIND HILL"),
     (r"^(hill\s+)?strides",             "STRIDE"),
     (r"^hills",                         "HILL"),
-    (r"^(long|short)\s+threshold",      "THR"),
-    (r"^threshold",                     "THR"),
+    (r"^(long|short)\s+threshold",      "Threshold"),
+    (r"^threshold",                     "Threshold"),
     (r"^surges",                        "SURGE"),
     (r"^pickups",                       "PICKUP"),
     (r"^main\s+set",                    "REP"),
@@ -301,7 +301,7 @@ TITLE_RULES: list[tuple[str, str]] = [
     (r"^night\s+blocks",                "NGT BLOCK"),
     (r"^wake-?\s*up",                   "WAKE UP"),
     (r"^settle\s+in",                   "SETTLE"),
-    (r"^recovery",                      "REC"),
+    (r"^recovery",                      "Recovery jog"),
     # Course geography — lap sims and the Big Day
     (r"^(car\s*[-—>]*\s*)?crew\s+stop", "CREW"),
     (r"^car\b.*crew",                   "CREW"),
@@ -522,7 +522,7 @@ def compile_session(path: Path, zones: dict | None = None) -> dict:
         for i, ln in enumerate(pending):
             # Inside a repeat the second step is the recovery — Suunto phases it `rest`.
             is_rest = repeating and i > 0
-            built.append(build_step(ln, "REC" if is_rest else title, zones, rel, hr_first,
+            built.append(build_step(ln, "Recovery jog" if is_rest else title, zones, rel, hr_first,
                                     phase=phase_for(header, is_rest),
                                     uid_seed=f"{path.stem}:{len(steps)}:{i}"))
         if repeating:
