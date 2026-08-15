@@ -65,34 +65,56 @@ pace:
   long_run: "6:50-7:10"      # long-run cruising, easy effort
   long_steady: "6:30"         # the "steady" segments inside progressive long runs
   steady: "6:15"              # marathon-ish effort
-  tempo: "5:55"               # sustained ~40-60min effort
-  threshold: "5:40"          # = 10k PR pace; his 10k takes ~57min so this IS ~1-hour pace
+  threshold: "5:25"          # APPLIED 2026-08-15 from 5:40, on athlete instruction.
                              #
-                             # ⚠ EVIDENCE THIS IS STALE — 2026-08-15, and it is strong. NOT
-                             # changed here, because pace_review's trigger is a new PR or the
-                             # Big Day, and guessing a number is how this file got wrong the
-                             # first time. But do not read 5:40 as settled.
+                             # Evidence: 4x6min inside a 240min long run at 5:19 / 5:15 / 5:26 /
+                             # 5:32, HR avg 169 / 172 / 169 / 168 against an LTHR of 169. No
+                             # fade, athlete not out of gas at the end of any rep, ZS Z2 held
+                             # throughout. The clinching argument is the RPE ledger, not the
+                             # paces: he rated the reps 6 against an expected 6 for tempo — the
+                             # first session in the whole log to come in AT plan rather than
+                             # under. Plan-set sessions read -1, -2, -3; the one he paced
+                             # himself read 0.
                              #
-                             # 4x6min inside a long run: 5:19 / 5:15 / 5:26 / 5:32, HR avg
-                             # 169 / 172 / 169 / 168 against an LTHR of 169. No fade, and the
-                             # athlete reports he was not out of gas at the end of any rep.
+                             # 5:25 CHOSEN BY THE ATHLETE over the cautious 5:30 first drafted:
+                             # "5:25. I want to be pushed." That is the aggressive end of a
+                             # defensible range and it is deliberate. The cautious argument was
+                             # that 6min reps with 2min floats let HR accumulate, so continuous
+                             # threshold should sit slower than his 5:23 mean rep pace. The
+                             # argument for 5:25 is that HR was AT LTHR (168-172 vs 169) rather
+                             # than above it, which is what threshold pace is defined as.
                              #
-                             # The CLINCHING evidence is the RPE, not the paces. He rated the
-                             # reps 6 against an expected 6 for tempo — the first session in the
-                             # whole log to come in AT plan rather than under:
-                             #     08-05 tempo, plan-set     -1
-                             #     08-09 long,  plan-set     -2
-                             #     08-12 threshold, plan-set -3
-                             #     08-15 threshold, HE set    0
-                             # When the plan prescribes he comes in under; when he runs by feel
-                             # he lands on target. That is the argument.
+                             # THE FEEDBACK LOOP NOW RUNS THE OTHER WAY, and this is the check
+                             # that matters: every rated session in this block has come in AT or
+                             # UNDER expected RPE. If threshold sessions start reading 7-8
+                             # against an expected 6, 5:25 is too fast and should come back
+                             # toward 5:30. That would be the first over-plan RPE on record, so
+                             # it will be unmistakable. Watch for it rather than assuming.
                              #
-                             # Best estimate: threshold ~5:25-5:35. NOT 5:15 — 6min reps with
-                             # 2min floats let HR accumulate, so true 1-hour pace sits slower
-                             # than what he held. The implication is bigger than one row: the
-                             # 10k PR of 56:36 anchoring this ENTIRE table is stale, so a real
-                             # 10k or 30min TT re-anchors everything at once. That is the
-                             # cheapest way to fix the table and it has not been scheduled.
+                             # THIS OVERRODE pace_review's stated trigger (a new PR, or the Big
+                             # Day). Athlete-directed, evidence-backed, and recorded as such
+                             # rather than done quietly.
+  tempo: "5:40"              # sustained ~40-60min effort. Moved with threshold 2026-08-15,
+                             # preserving the 15s gap this table has always had between them.
+                             # Note the sanity check: the NEW tempo is exactly the OLD threshold,
+                             # i.e. this revision shifts him one zone-step across the board at
+                             # the quality end. Today's 4x6min were prescribed at the old tempo
+                             # (5:55) and run at 5:23 — the prescription was ~30s/km slow.
+  # NOT MOVED 2026-08-15, and the restraint is deliberate. Today's evidence is about
+  # THRESHOLD. Nothing was learned about the speed end or the endurance end, and inventing
+  # numbers is how this table went wrong the first time.
+  #   * vo2 / rep / stride are anchored on the 5k PR. If threshold improved the 5k probably
+  #     did too, but "probably" is not a measurement.
+  #   * steady / long_steady have no new data. On 08-12 he ran the 6:30 long_steady block at
+  #     6:38 — after seven reps — so nothing suggests it is soft.
+  #   * easy_ceiling / long_run / recovery are the MOST dangerous to move and the least
+  #     supported. This file's standing warning is that running easy days too fast is his
+  #     most likely training error, and the endurance end is the extrapolated half that
+  #     "flatters runners whose long-run volume is limited". Today's ZS Z1 at RPE 2 is not
+  #     evidence to speed up easy running; ZS Z1 is governed by ZoneSense, not by pace.
+  #
+  # The cheap fix for all of it is one real test. A 10k or a 30min TT re-anchors the entire
+  # table at once, and it is still unscheduled.
   vo2: "5:18"                # = 5k PR pace
   rep: "5:05"                # short reps (200-400m), ~3k effort
   stride: "4:35"             # 20-30s strides — fast but not sprinting form
@@ -136,8 +158,10 @@ pace:
 # Re-test triggers: update this file when a new PR lands, or after the Big Day (block week 13)
 # and each lap simulation, which give real long-effort data at ultra pace.
 pace_review:
-  last_updated: "2026-08-03"
-  next_review: "after the Big Day, 2026-09-05"
+  last_updated: "2026-08-15"   # threshold 5:40 -> 5:25, tempo 5:55 -> 5:40. Athlete-directed
+                               # on the 08-15 long-run evidence; see the threshold comment above.
+  next_review: "after the Big Day, 2026-09-05 — and sooner if a 10k or 30min TT is run, which
+    is the cheapest way to re-anchor the speed and endurance ends that were left untouched"
 
 hr:
   # HRmax: athlete reports having seen 192 historically; highest in the pulled Suunto data is

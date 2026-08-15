@@ -17,6 +17,11 @@ intent: >
   Continuous easy, then 5min genuinely hard on tired legs — that last block is
   the point and survives the split intact. Fuel at 75g/hr minimum.
   Travel day, so likely a lot of sitting either side. Get this in before or after the drive/flight; from here the trip's hiking takes over as the primary time-on-feet stimulus.
+
+  PACE ANCHOR MOVED 2026-08-15: threshold 5:40 -> 5:25, tempo 5:55 -> 5:40 in
+  athlete/zones.yml, athlete-directed on the 08-15 long-run evidence. This session's quality
+  target moved with it. The steps here are unchanged in structure and duration — only the
+  number the effort is anchored to.
 origin: adapted
 published:
   suunto: null
@@ -26,7 +31,7 @@ Easy aerobic
 - 112m ZoneSense Z1
 
 Hard Finish
-- 5m 5:55/km Pace
+- 5m 5:40/km Pace
 
 Cooldown
 - 3m ZoneSense Z1
