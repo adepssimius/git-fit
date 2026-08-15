@@ -7,7 +7,7 @@ block_week: 10
 duration_s: 14400
 target_mode: effort
 brief: >
-  20min in, 4x(6min at 5:55 + 2min jog), then 188min continuous. Threshold early while fresh; nothing hard after.
+  40min in, 4x(6min at 5:55 + 2min jog), then 168min continuous. Threshold early while fresh; nothing hard after.
 follow: >
   ZoneSense Zone 1 for all the running; the 6min threshold reps by pace. If Zone 1 means slower, run slower.
 intent: >
@@ -53,11 +53,11 @@ published:
 ---
 
 Easy aerobic
-- 20m ZoneSense Z1
+- 40m ZoneSense Z1
 
 Threshold 4x
 - 6m 5:55/km Pace
 - 2m 7:30/km Pace
 
 Easy aerobic
-- 188m ZoneSense Z1
+- 168m ZoneSense Z1
