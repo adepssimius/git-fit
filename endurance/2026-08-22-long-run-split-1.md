@@ -31,7 +31,7 @@ Easy aerobic
 - 112m ZoneSense Z1
 
 Hard Finish
-- 5m 5:40/km Pace
+- 5m 5:25-5:55/km Pace
 
 Cooldown
 - 3m ZoneSense Z1

@@ -29,11 +29,11 @@ Warmup
 - 14m 7:00/km Pace
 
 Main Set 4x
-- 3m 5:25/km Pace
+- 3m 5:10-5:40/km Pace
 - 2m 7:10-7:40/km Pace
 
 Steady
-- 7m 6:30/km Pace
+- 7m 6:15-6:45/km Pace
 
 Cooldown
 - 7m 7:00/km Pace

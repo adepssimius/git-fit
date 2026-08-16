@@ -23,5 +23,5 @@ Easy aerobic
 - 14m ZoneSense Z1
 
 Pickups 4x
-- 30s 5:10/km Pace
+- 30s 4:55-5:25/km Pace
 - 60s 9:30/km Pace

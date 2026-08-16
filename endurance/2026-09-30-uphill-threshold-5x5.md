@@ -27,7 +27,7 @@ Warmup
 - 12m 7:00/km Pace
 
 Main Set 5x
-- 5m 5:40/km Pace
+- 5m 5:25-5:55/km Pace
 - 90s 7:10-7:40/km Pace
 
 Cooldown

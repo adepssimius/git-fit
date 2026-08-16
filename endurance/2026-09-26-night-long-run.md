@@ -30,7 +30,7 @@ Night Blocks
 - 207m ZoneSense Z1
 
 Dawn Finish
-- 5m 6:15/km Pace
+- 5m 6:00-6:30/km Pace
 
 Cooldown
 - 8m ZoneSense Z1

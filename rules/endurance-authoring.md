@@ -88,10 +88,39 @@ This is the single least intuitive thing in the syntax and it caused a real erro
 - Corrected 2026-08-15 (athlete-spotted) to the explicit range `7:15-7:30/km Pace`, which puts
   7:30 at the SLOW edge where it was always meant to be.
 
-**So: whenever the slow edge matters, write the range explicitly.** Bare targets are fine for
-quality work, where being 30s/km slower than target is just a rep you did not quite hit. They are
-wrong wherever the number IS a floor — floats, recoveries, walk-backs, anything anchored to
-`locomotion_floors`. Check `written + 30s` against those floors before leaving a target bare.
+**CORRECTED 2026-08-15 — the sentence that used to sit here was wrong.** It said bare targets
+were "fine for quality work, where being 30s/km slower than target is just a rep you did not
+quite hit." They are not. 5:25 versus 5:55 is threshold versus steady — two different sessions,
+not a near miss. The 08-15 long run proved it: the reps were prescribed 5:55, the band ran to
+6:25, and the athlete ignored the target entirely and ran 5:23. The band did no work at all.
+
+**THE RULE: 30-second bands throughout, positioned by what the number MEANS.**
+
+The width is fixed at ~30s because that is what the athlete can hold without nuisance alerts —
+GPS pace fluctuates enough that a 10s band flickers in and out constantly (athlete-reported
+2026-08-15). So the fix is never to narrow the band. It is to put the number in the right place
+inside it.
+
+| the number is a... | write | band | examples |
+|---|---|---|---|
+| **TARGET** — hit this | explicit centred range | `5:10-5:40` centres 5:25 | threshold, tempo, vo2, reps, strides, steady, long_steady |
+| **CEILING** — go no faster | bare target (default is correct) | `7:00` -> 7:00-7:30 | easy, warmup, cooldown, long-run cruise |
+| **FLOOR** — go no slower | explicit range, number at the slow edge | `7:10-7:40` | floats, jog recoveries |
+| **SPEED CEILING** | bare target (default is correct) | `9:30` -> 9:30-10:00 | walk-backs, walk recoveries |
+
+This is why the bare default has been quietly right in most of the plan and wrong only on the
+quality steps: easy paces and walk paces ARE ceilings, so downward-only expansion encodes them
+correctly. Quality paces are targets, and downward-only expansion turns the target into the
+fastest acceptable pace — which is backwards.
+
+**Before leaving any target bare, ask which of the four rows it is**, and check `written + 30s`
+against `athlete/zones.yml` § locomotion_floors so the slow half of the band is not a gait he
+cannot produce.
+
+**Nothing in the guide enforces a pace band anyway.** The compiled step's `alerts` array carries
+only a step-duration countdown — there is no pace alert. The band is a display. Live enforcement
+is a watch-side setting (`Targets.SpeedZone`), which read "None" on the 08-15 workout. Same
+situation as ZoneSense: the guide shows, the watch governs, and neither is armed by default.
 
 **Nothing enforces a ZS Z1 step — confirmed against real workout data, 2026-08-15.** The athlete
 asked whether the ZS Z1 portions carry a pace zone. They do not, at three separate layers, and it
