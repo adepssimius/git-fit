@@ -200,6 +200,11 @@ IT band (`athlete/profile.md` § Injuries).
 - **Lower B stops being the optional lift.** Unilateral work and glute/hip stability are the
   direct prehab for the ITB. This does NOT override `athlete/profile.md` § "Priority when time is
   short" — running still wins a time squeeze — but it does change what Lower B is worth.
+  **Follow-up 2026-08-16:** that bullet was the repo's entire ITB answer, and it does not survive
+  contact with the fact that Lower B has happened once since the block began. The long-term plan
+  is now written out in `athlete/profile.md` § "ITB, left — the long-term plan"; the part of it
+  that lands on *this* file is that **long-run quality belongs in the back half**, not the first
+  hour, which is the leading candidate for why 08-15's onset came 5km early.
 - **Callus management outranks the shoe decision** (`profile.md` § Footwear).
 - **The walking ramp turns out to be right for the right reason** — time on feet builds the
   durability that actually fails, not the engine.

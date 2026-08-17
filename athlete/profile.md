@@ -516,6 +516,155 @@ knee becomes a hip and an achilles.
 None other recorded. Log anything that affects session selection here, and reference it from
 `rules/progression.md`'s readiness ladder.
 
+### ITB, left — the long-term plan (drafted 2026-08-16, in answer to "what's the plan?")
+
+**Nine weeks to race day, so the goal is not "cured."** It is (a) to push the onset distance past
+what race day actually asks of it before Oct 17, and (b) to have a protocol for the lap where it
+shows up anyway. A recurring ITB responds to consistent hip work on a 6-12 week timescale, which
+is almost exactly the block's remaining window. That is the good news and the entire problem: it
+only works if the dose lands.
+
+**Today the repo's whole answer is one line — "the direct prehab lives in Lower B" — and that is
+not a plan, because Lower B is the modality this repo is designed to cut first.** The evidence is
+unambiguous: Liftosaur has no history records since 2026-08-08, week 10 lost four lifts, and Lower
+B has happened exactly once (08-06) since the block began. Nothing about that is an adherence
+failure — § "Priority when time is short" says so explicitly and that section is right. But it
+means the one named countermeasure to the block's one recorded injury is parked in the first thing
+that gets cut, and a countermeasure that does not happen is not a countermeasure. **Closing that
+gap is what the six steps below are for.**
+
+#### 1. Measure the asymmetry before training around it
+
+Unilateral, on flat trail, in two different shoes. Something is asymmetric and it is currently
+unmeasured — which means every prescription here is inference. Four cheap tests, both sides, one
+sitting, numbers written into this file:
+
+| test | what it reads |
+|---|---|
+| single-leg glute bridge to failure | hip-extension endurance, L vs R |
+| side-lying hip abduction to failure | the classic ITBS driver, directly |
+| single-leg step-down from ~20cm, filmed from the front | knee crossing midline, contralateral pelvic drop |
+| single-leg calf raise to failure | nearly free — Lower B already runs 4 sets/leg |
+
+**A 15-20%+ left-right gap is the finding.** If the left side is the weak one, the story is
+coherent and everything below is aimed correctly. If it *isn't*, the asymmetry lives somewhere
+else — leg length, foot strike, hip rotation, an old injury nobody wrote down — and the plan
+changes rather than being pushed harder.
+
+**No physio — athlete's call, 2026-08-16.** This section originally said a single gait assessment
+outranked everything in it. He declined: ITBS is common, well-characterised, and he can identify it
+himself. **On the diagnosis he is right** — lateral knee, repeatable onset distance, unilateral,
+warms up then arrives, is textbook, and nothing about it is uncertain enough to need confirming.
+
+**What that changes: the four tests above stop being optional.** They were the redundant path while
+a clinician was in the picture; they are now the *only* thing standing between "hip weakness" as a
+hypothesis and hip weakness as a measured fact. Same for the front-on video — filmed step-downs and
+a filmed treadmill minute are what a gait analysis actually is, and a phone on the floor does it.
+Do not let this section run on inference now that inference is all it has.
+
+**The falsification list matters more too.** It is ITBS *unless* one of these shows up, and any of
+them means stop self-managing: swelling, locking or catching, the knee giving way, pain that is
+present at rest or at night, pain that no longer warms up, or pinpoint tenderness on bone rather
+than on the soft tissue above the joint line.
+
+#### 2. Protect a dose small enough to survive the cut order — DRAFT, needs athlete confirmation
+
+The dose problem has two halves and both need solving:
+
+- **Frequency.** Once-weekly Lower B was never a therapeutic dose for hip-abductor endurance even
+  in the weeks it happened. The dose that changes tissue is **3-4x/week**.
+- **Survivability.** A 50-minute session competes with running for a slot. An 8-minute one does
+  not.
+
+**Proposal: carve an "ITB minimum" out of Lower B** — three exercises, ~8 minutes, no equipment,
+doable on any day including a run day, on the floor, after the run per the doubled-day rule:
+
+1. Side-lying hip abduction — to near-failure, slow, no hip rotation
+2. Copenhagen plank — already programmed in Lower B, already 3 holds/side
+3. Single-leg step-down or single-leg glute bridge — whichever step 1 shows is worse
+
+**Why this needs his explicit sign-off:** `rules/strength-authoring.md` says a rehab exception that
+protects loading over running "is a decision for the athlete to make explicitly and for this file
+to record. It is not something a session file gets to assert on its own." The same bar applies
+here. What is being asked for is much narrower than flipping the cut order — eight minutes on the
+floor is not a lift, it does not consume a training slot, and it rides on days that already exist
+— but it is still a standing commitment and it is still his call.
+
+**What this does NOT do:** it does not touch `strength/program.liftoscript`, the 4-day split, or
+the cut order. Lower B stays exactly as authored, and when it happens it supersedes the minimum
+for that day. The minimum is a floor under the prehab, not a replacement for it.
+
+#### 3. Strength and gait are the treatment; rolling and stretching are not
+
+Worth stating plainly, because it decides where scarce minutes go. The ITB is not a contractile
+tissue and does not meaningfully lengthen — the current understanding of ITBS is compression of
+the fat pad between the band and the lateral femoral condyle, driven by hip adduction and internal
+rotation as the stabilisers fatigue. **It is a hip-control problem that reports at the knee.**
+
+So: hip abductor and external-rotator **endurance** is the target, more than max strength — it
+fails at 20km, not at rep one. Foam rolling and ITB stretches are fine for symptom relief and he
+should use them if they help, but they are not the plan and should not be budgeted as if they were.
+
+#### 4. Gait — promote the mid-run rescue to standing practice
+
+The +5-10% cadence bump worked on 08-15 as a rescue. It works because it shortens stride and cuts
+hip adduction at footstrike, which is the mechanism in step 3 — so it should be **practised on easy
+runs until it is automatic**, not first reached for at km 20 with a hot knee. Two additions:
+
+- **Watch step width.** A crossover gait raises hip adduction; running slightly wider is free.
+- **Camber matters and the race course has some.** Alternate which side of the trail he runs, and
+  on the wk 15 / wk 17 lap simulations note which way the Ghost Train crown falls. The course is
+  an out-and-back lapped loop, so alternating direction costs nothing.
+
+#### 5. Exposure — build the onset distance deliberately
+
+**The onset distance is repeatable, which makes it a metric rather than a complaint.** Treat
+20-25km as the current tissue ceiling and move it:
+
+- **Back-to-backs are already the right tool and now have a second reason to exist.** 2x20km
+  stresses the ITB materially less than 1x40km at the same weekly volume, and `training/block.md`
+  reshaping rule 2 already builds the block that way.
+- **Do not bank early intensity in a long run.** 14 minutes at or above LTHR inside the first 72
+  minutes is the best candidate for why 08-15 came 5km early. Where quality is embedded in a long
+  run, **put it in the back half** — on already-fatigued legs, which is more race-specific anyway.
+  This one is actionable now and affects sessions already on the calendar.
+- **Watch the descending.** Eccentric downhill load is a known ITBS aggravator. The rail trail is
+  flat, which helps, but block week 12 is ten days of mountain hiking with the kids, and
+  `training/block.md` § Travel weeks already says to keep the last days descent-light. That note
+  now has a second beneficiary.
+
+#### 6. Race day — assume it shows up, and plan the lap
+
+At 100km, an onset at 20-25km means it arrives during lap 2 of 8. Planning for it is not
+pessimism, it is the only honest read of n>=2:
+
+- **Cadence discipline from lap 1**, not from the moment it hurts.
+- **A "left knee?" line in the crew-stop tree**, every lap — the crew asking beats him noticing.
+- **The stop rule stands and is the important one:** gait changes -> walk that lap. Against a 30h
+  cutoff described as generous in `races/2026-10-17-ghost-train.md`, a walked lap costs perhaps
+  30-40 minutes. A compensation injury costs the race, and the hip and achilles are what it costs.
+
+Not yet written into `races/2026-10-17-ghost-train.md` — flagged here first, per the working shape.
+
+#### 7. How we know it worked, and when to stop believing it
+
+**Log onset km on every run over 20km, including the negatives** — "no ITB at 30km" is the data
+point this plan lives or dies on. It goes in the Legs line of `log/YYYY-MM-DD.md`; no new
+frontmatter field, nothing for `verify_plan.py` to learn.
+
+Checkpoints already on the calendar: **Aug 22 (38km)**, **the Big Day Sep 5 (50k)**, and the two
+lap simulations (wk 15, wk 17).
+
+- **Working** = onset moves out — 20 -> 25 -> 30km+ — or does not arrive at all. Then keep doing
+  exactly this and add nothing.
+- **Not working** = the Big Day produces ITB at 25km or under, after three weeks of a landed dose.
+  At that point the answer stops being "more prehab" — it becomes race-day management plus a real
+  clinician, and the block should stop spending time on a treatment that has been given its window
+  and missed it. **Decide that explicitly on Sep 6, don't let it drift.**
+
+**This is training-practice guidance written by an LLM, not medical advice.** Steps 1 and 2 are the
+ones with a decision in them; the rest is directly implied by what is already in this repo.
+
 ### If something actually hurts — DRAFT, needs athlete confirmation (raised 2026-08-13)
 
 **The cut order does not govern pain.** `rules/strength-authoring.md`'s lifting-first rule answers
