@@ -6,7 +6,12 @@
 # runnable prescription. Everything below is rebuilt from measured performance instead.
 #
 # Source PRs (all within the 2026 block):
-#   5k   26:30   = 5:18/km   <- anchors VO2/speed end
+#   5k   25:44   = 5:09/km   <- anchors VO2/speed end. 2026-08-23 evening TT (workout
+#                               32ou1jmh8bicdnkm), splits 5:11/5:07/5:10/5:15/5:01, max HR 186.
+#                               PB'd the 26:30 below by 46s off 9 days of accidental taper.
+#                               Time interpolated from 5s samples — treat as ±2s; the watch's
+#                               own lap screen is authoritative if it differs.
+#   5k   26:30   = 5:18/km   <- superseded 2026-08-23; kept for the trend
 #   10k  56:36   = 5:39/km   <- ~57min effort, so 10k pace ~= threshold (LT2)
 #   HM   2:29:51 = 7:06/km   } NOT time trials. Athlete confirms these are the byproduct of
 #   30k  3:41:24 = 7:22/km   } block sessions and progressive long runs with slow segments at
@@ -113,11 +118,20 @@ pace:
   #     "flatters runners whose long-run volume is limited". Today's ZS Z1 at RPE 2 is not
   #     evidence to speed up easy running; ZS Z1 is governed by ZoneSense, not by pace.
   #
-  # The cheap fix for all of it is one real test. A 10k or a 30min TT re-anchors the entire
-  # table at once, and it is still unscheduled.
-  vo2: "5:18"                # = 5k PR pace
-  rep: "5:05"                # short reps (200-400m), ~3k effort
-  stride: "4:35"             # 20-30s strides — fast but not sprinting form
+  # The real test arrived 2026-08-23: a 5k TT at 25:44 (5:09/km). The speed end below is
+  # re-anchored on it, preserving the table's existing gaps (rep = vo2 - ~13s, stride =
+  # vo2 - ~43s). What it says about the rest of the table, and why nothing else moved:
+  #   * threshold 5:25 is now CORROBORATED, not just athlete-chosen: 5:25/5:09 = 1.052,
+  #     slightly tighter than the textbook 1.068 5k->10k ratio — meaning threshold is at the
+  #     aggressive-but-plausible edge, exactly where the 08-15 note placed it. If anything the
+  #     5k says there is more room, but the RPE-feedback rule in the threshold comment stands.
+  #   * the endurance end still has NO new data. A 25:4x 5k off nine rested days says nothing
+  #     about easy/long paces, and the standing warning about easy-day creep gets STRONGER
+  #     with a shiny new PR in the legs, not weaker. Do not touch them until the Big Day.
+  vo2: "5:09"                # = 5k PR pace. WAS 5:18, moved 2026-08-23 on the TT.
+  rep: "4:55"                # short reps (200-400m), ~3k effort. WAS 5:05, moved with vo2.
+  stride: "4:25"             # 20-30s strides — fast but not sprinting form. WAS 4:35, moved
+                             # with vo2.
 
   # Two distinct recoveries, not one — they serve different reps and shouldn't be collapsed:
   jog_recovery: "7:10-7:40"  # float/jog between quality reps (threshold, uphill threshold,
@@ -158,10 +172,12 @@ pace:
 # Re-test triggers: update this file when a new PR lands, or after the Big Day (block week 13)
 # and each lap simulation, which give real long-effort data at ultra pace.
 pace_review:
-  last_updated: "2026-08-15"   # threshold 5:40 -> 5:25, tempo 5:55 -> 5:40. Athlete-directed
-                               # on the 08-15 long-run evidence; see the threshold comment above.
-  next_review: "after the Big Day, 2026-09-05 — and sooner if a 10k or 30min TT is run, which
-    is the cheapest way to re-anchor the speed and endurance ends that were left untouched"
+  last_updated: "2026-08-23"   # 5k TT 25:44: vo2 5:18 -> 5:09, rep 5:05 -> 4:55, stride
+                               # 4:35 -> 4:25. Threshold/tempo corroborated and left alone;
+                               # endurance end untouched (no new data, see comment above).
+                               # Prior: 2026-08-15, threshold 5:40 -> 5:25, tempo 5:55 -> 5:40.
+  next_review: "after the Big Day, 2026-09-05 — the endurance end is now the ONLY half of this
+    table still running on extrapolation; the Big Day and lap sims are what re-anchor it"
 
 hr:
   # HRmax: athlete reports having seen 192 historically; highest in the pulled Suunto data is
