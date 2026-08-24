@@ -298,7 +298,7 @@ freely within its day.
 date: 2026-08-04            # ISO date, also the filename prefix
 sport: Run                  # Run | Ride | Walk
 name: Broken Miles           # short human name
-type: intervals              # easy | long | b2b | tempo | intervals | night | lap-sim | aerobic-base | walk | race
+type: intervals              # easy | long | b2b | tempo | intervals | night | lap-sim | aerobic-base | walk | time-trial | race
 block_week: 9
 distance_km: 5.0             # omit or approximate for time-based sessions
 duration_s: 2100             # always present — the number the time-budget check sums

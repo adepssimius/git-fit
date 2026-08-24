@@ -136,7 +136,17 @@ quads after a long run.
 | `long`, `b2b`, `lap-sim` | 5 | Fueling first, then pace, then fatigue |
 | `tempo` | 6 | Normal on a hot day; not normal twice |
 | `intervals` | 7 | Trim volume, keep intensity (`rules/progression.md`) |
+| `time-trial` | — | Not rated — see below |
 | `race` | — | Not rated |
+
+**Why `time-trial` is unrated, and why it exists at all.** Added 2026-08-23, when the 5k TT had
+nowhere to live: `race` in this repo means *the Ghost Train*, and `verify_plan.py` check 9 holds
+any `type: race` session to the ultra pacing model, so a 5k at 5:09/km is rejected as a race pace
+faster than the athlete can hold for 100 miles. The TT was therefore filed as `tempo` — which
+would have scored a maximal effort against a tempo expectation of 6 and reported a PB as a fault.
+A maximal effort has no expected RPE to exceed. **Rate a TT anyway** — the number is real data for
+the trend, it is simply not compared to a plan. Log the per-phase ladder in the body too, which is
+where the useful part lives.
 
 `verify_plan.py` resolves the day's main session from `endurance/` by date and warns when logged
 RPE runs ≥2 over the expected value for its type. Given the athlete's stated goal of getting

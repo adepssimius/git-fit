@@ -38,7 +38,7 @@ REQUIRED_KEYS = ["date", "sport", "name", "type", "block_week", "duration_s",
                  "target_mode", "follow"]
 # Types that must fit the weekday door-to-door cap. `night` is deliberately excluded —
 # it runs post-bedtime and has its own, larger cap (see athlete/profile.md).
-WEEKDAY_TYPES = {"easy", "tempo", "intervals", "recovery"}
+WEEKDAY_TYPES = {"easy", "tempo", "intervals", "recovery", "time-trial"}
 
 # ---- log/ (rules/logging.md) ----
 LOG_ENTRY_RE = re.compile(r"\d{4}-\d{2}-\d{2}\.md")   # everything else in log/ is not an entry
@@ -52,6 +52,10 @@ EXPECTED_RPE = {
     "long": 5, "b2b": 5, "lap-sim": 5,
     "tempo": 6,
     "intervals": 7,
+    # `race` and `time-trial` are deliberately ABSENT, which makes them unrated (the lookup
+    # returns None and the check is skipped) — matching rules/logging.md's table. A maximal
+    # effort has no "expected" RPE to run over: it is supposed to hurt, and scoring a 5k TT
+    # against a plan number would feed the ladder's RPE-trend row a fault that isn't one.
 }
 RPE_OVER_PLAN = 2          # the ladder's red condition: +2 or more over plan
 LOG_STALE_DAYS = 10        # warn only; a lapsed log degrades the ladder silently
