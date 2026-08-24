@@ -81,20 +81,26 @@ pace:
                              # under. Plan-set sessions read -1, -2, -3; the one he paced
                              # himself read 0.
                              #
-                             # ⚠ THAT LEDGER ARGUMENT IS INVALID — found 2026-08-23. It compares
-                             # two different quantities: the "0" is the RPE of the 6-MINUTE REPS,
-                             # while the -1/-2/-3 are WHOLE-SESSION figures, at least one of them
-                             # (08-15) computed as a duration-weighted mean, which systematically
-                             # under-rates any session whose hard part is a minority of its
-                             # minutes. Session-RPE is a gestalt rating; see rules/logging.md and
-                             # log/2026-08-23.md § METHOD CORRECTION.
+                             # THE LEDGER IS SOUND, and 2026-08-23 CONFIRMED IT. Checked when a
+                             # session-RPE method error was found elsewhere (see rules/logging.md
+                             # and log/2026-08-23.md): only 08-15's own whole-session number was
+                             # computed as a duration-weighted mean. 08-05, 08-09 and 08-12 are
+                             # genuine gestalt readings — 08-12 was logged 3 against a weighted
+                             # mean of 4.11, i.e. BELOW what the generous method gives, which no
+                             # rating convention can explain away. Those sessions really were too
+                             # easy, and the reason really was that the paces were too slow.
                              #
-                             # THE CONCLUSION STANDS ANYWAY, on the pace evidence above and on
-                             # the 2026-08-23 5k TT (25:44 = 5:09/km, which puts 5:25 at a
-                             # defensible 1.052 ratio). So this is NOT a reason to revert
-                             # threshold — it is a reason not to cite the ledger again. The
-                             # RPE-feedback rule below is unaffected: it watches actual threshold
-                             # sessions, and is now unambiguous that those readings are gestalt.
+                             # One narrow caveat on the wording above: the "0" is the RPE of the
+                             # 6-MINUTE REPS while the -1/-2/-3 are WHOLE-SESSION figures, so do
+                             # not read the ledger as four like-for-like measurements. It is the
+                             # DIRECTION that carries the argument, and the direction is right.
+                             #
+                             # Independent confirmation, 2026-08-23: a 25:44 5k (5:09/km). Riegel
+                             # puts his 10k at ~5:22/km and his own historical 5k->10k ratio
+                             # (1.066, from the stale June 10k) puts it at ~5:29. Threshold 5:25
+                             # sits between the two. No further change indicated at this end of
+                             # the table; a fresh 10k or 30min TT would settle which estimate is
+                             # right, and that is still the cheapest test available.
                              #
                              # 5:25 CHOSEN BY THE ATHLETE over the cautious 5:30 first drafted:
                              # "5:25. I want to be pushed." That is the aggressive end of a
