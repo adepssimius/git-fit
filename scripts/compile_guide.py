@@ -313,6 +313,9 @@ TITLE_RULES: list[tuple[str, str]] = [
     (r"^top-?up",                       "TOP-UP"),
     # Race day
     (r"^laps?\s+([\d-]+)",              r"LAP \1"),
+    # Time trials — per-km splits written as explicit steps ("Km 2" etc), so each split is a
+    # named step on the wrist rather than an anonymous "rep 2 of 3".
+    (r"^km\s+([\d-]+)",                 r"KM \1"),
     (r"^hard\s+finish",                 "HARD FIN"),
     (r"^dawn\s+finish",                 "DAWN FIN"),
 ]

@@ -84,6 +84,28 @@ screen — the 2026-08-04 guide displayed correctly while missing all of them. M
 implementation is the fix regardless, but if a blank screen recurs after this, the cause is
 environmental and this section is a red herring.
 
+### 500 "General error" on upload — bisect before blaming the archive (2026-08-24)
+
+A structurally valid archive can still draw `{"code":"500","description":"General error"}` from
+the upload endpoint, and the error carries zero information. It happened to the 5k TT guide, and
+the bisection that found it is worth keeping because every intuitive suspect was innocent:
+
+1. **Prove the POST path first.** Re-upload an archive the server already holds — a healthy path
+   answers **409 Conflict** (a real error code, from the externalId collision) and creates
+   nothing. If the known-good archive also 500s, the server is down; stop debugging the archive.
+2. **Bisect with scratch stems, then delete.** Variants uploaded under throwaway stems get
+   distinct externalIds, so successes don't squat the real one. Delete them with `guides_delete`
+   when done. The 5k TT bisection cleared, in order: the full step body (repeat-free km splits,
+   20s strides), a digit-leading `name:`, the description's apostrophes and truncated
+   shortDescription.
+3. **What was actually poisoned: the externalId/uuid family derived from the file stem.** The
+   byte-identical session under stem `2026-08-24-5k-tt` uploaded first try; under
+   `2026-08-24-5k-time-trial` it 500'd every time, including the very first attempt on a fresh
+   externalId — so this is not a tombstone from a failed create, and the true mechanism is
+   unknown. The fix is prosaic: **rename the file stem and re-pack** (externalId and the
+   deterministic uuids both reseed), and leave a note in the session's `intent:` so nobody
+   renames it back.
+
 ### RESOLVED 2026-08-05: the trainer rides publish fine
 
 This section used to say the nine `sport: Ride` sessions could not be published, because they
