@@ -115,7 +115,30 @@ written down. Use these.
 Sharp or one-sided beats high-and-symmetrical: 4 in one achilles matters more than 7 across both
 quads after a long run.
 
-**RPE (0–10)**, session-RPE for the whole session, rated after it settles:
+**RPE (0–10)**, session-RPE for the whole session, rated after it settles.
+
+**It is a GESTALT rating, not a time-weighted average — corrected 2026-08-23.** One number
+answering "how hard was that session," given ~30min after finishing. Do **not** rate the segments
+and average them by duration. The sentence above used to stop at "rated after it settles", which
+was ambiguous enough that `log/2026-08-15.md` computed a duration-weighted mean and said so in
+its own frontmatter ("3 is the time-weighted session figure"). That is the wrong instrument, and
+it is wrong in a specific, one-directional way: **it systematically under-rates every session
+whose hard part is a minority of its minutes** — which is every interval session, every tempo,
+every long run with quality embedded, and every time trial.
+
+Two reasons the gestalt reading is the correct one here, not merely the conventional one:
+
+- **The expected-RPE table above is calibrated in gestalt units and is unreachable otherwise.**
+  An `intervals` session expects 7. No interval session can time-average to 7 once its warmup,
+  its recoveries and its cooldown are in the mean — the arithmetic tops out around 4–5. A rating
+  method that cannot produce the expected value is the wrong method, not a run of easy days.
+- **Session-RPE's whole job is to be multiplied by duration** (`RPE × minutes` = session load).
+  Time-weighting the RPE first and then multiplying by duration double-counts duration, and
+  quietly turns the one number that is supposed to capture *intensity* into a second, worse
+  measure of *volume*.
+
+Perceived effort is not linear in time and is not supposed to be. Twenty-six minutes that end at
+RPE 10 dominate the memory of a session, and that is the signal, not a bias to be averaged out.
 
 | Score | Anchor |
 |---|---|

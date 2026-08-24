@@ -81,6 +81,21 @@ pace:
                              # under. Plan-set sessions read -1, -2, -3; the one he paced
                              # himself read 0.
                              #
+                             # ⚠ THAT LEDGER ARGUMENT IS INVALID — found 2026-08-23. It compares
+                             # two different quantities: the "0" is the RPE of the 6-MINUTE REPS,
+                             # while the -1/-2/-3 are WHOLE-SESSION figures, at least one of them
+                             # (08-15) computed as a duration-weighted mean, which systematically
+                             # under-rates any session whose hard part is a minority of its
+                             # minutes. Session-RPE is a gestalt rating; see rules/logging.md and
+                             # log/2026-08-23.md § METHOD CORRECTION.
+                             #
+                             # THE CONCLUSION STANDS ANYWAY, on the pace evidence above and on
+                             # the 2026-08-23 5k TT (25:44 = 5:09/km, which puts 5:25 at a
+                             # defensible 1.052 ratio). So this is NOT a reason to revert
+                             # threshold — it is a reason not to cite the ledger again. The
+                             # RPE-feedback rule below is unaffected: it watches actual threshold
+                             # sessions, and is now unambiguous that those readings are gestalt.
+                             #
                              # 5:25 CHOSEN BY THE ATHLETE over the cautious 5:30 first drafted:
                              # "5:25. I want to be pushed." That is the aggressive end of a
                              # defensible range and it is deliberate. The cautious argument was
