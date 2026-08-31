@@ -52,6 +52,15 @@ scored that night green.
   Wednesday's workout to easy aerobic; a long run under red should shorten, not intensify. Log the
   reason in `log/YYYY-MM-DD.md` so the pattern is visible later.
 
+**Injuries are a separate gate, checked before the ladder — see `athlete/profile.md` § Injuries.**
+The seven signals above score *fatigue*. None of them can see a tissue that is talking, so a green
+morning does not clear a session the injury plan says to change, and an amber one does not excuse
+skipping prehab. The one live entry is the **left ITB** (recurring, onset 20-25km): its long-term
+plan lives in that file, and the two things it asks of this one are that long-run quality goes in
+the **back half** rather than the first hour, and that onset km — including "no onset" — gets
+logged for every run over 20km. `rules/strength-authoring.md`'s cut-order table already carries the
+matching row: when a tissue is talking, what gets cut is the lift or the exercise loading it.
+
 ## Weekly build / deload / mid-cycle-rest policy
 
 Inherited from the Champion Plan mapping in `training/block.md`:
