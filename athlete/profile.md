@@ -291,8 +291,12 @@ Spend it accordingly:
   the pacer adds nothing but company; laps 5-6 are the *"fatigue plus sleep pressure plus
   darkness"* state the whole block has been built around, and that is when a second opinion on
   feet, cognition and the stop decision is worth most. Full darkness runs **18:30 to 06:35**.
-- **Check the race's pacer rules early** — many ultras allow pacers only after a set distance or
-  hour. This is a cheap thing to confirm and an expensive thing to assume.
+- **The rule is confirmed and it does not bind.** Athlete, 2026-09-07: pacers are allowed
+  **from lap 2 onward** (*"not before the second lap, but it's a relaxed race and nobody is going
+  to care"*). Lap 2 begins around 24.1km, roughly 3-4 hours in — early Saturday afternoon —
+  while full darkness does not start until **18:30**. **Every lap worth pacing is already legal**,
+  so the recommendation above needs no latitude from anyone and no exception to rely on. Rule and
+  plan agree; enforcement is moot.
 - **The decision tree needs rewriting as a self-check regardless.** One paced lap out of five-plus
   does not cover the other four. It should become something fixed and carried — a card in the drop
   bag — not a paragraph to be evaluated by judgement at the exact hour judgement has degraded.
