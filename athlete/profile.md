@@ -657,6 +657,49 @@ distance. Once I go above 20k I get some nail pain."*
   (raise 5-10%), which shortens stride without rebuilding anything. The gait project is a good
   off-season question.
 
+### Blister kit (recorded 2026-09-08)
+
+**Leukotape P ordered 2026-09-08.** Rigid zinc-oxide strapping tape — the right class for this,
+because a blister is a shear injury and the tape's job is to take the shear instead of the skin.
+Elastic tape (kinesiology tape, RockTape) is the wrong tool: it stretches with the skin and
+transmits the shear straight through, and its adhesive lifts once a foot is properly wet.
+
+**Tape alone is not a kit.** Four things complete it, and one of them is not optional for him:
+
+| item | why |
+|---|---|
+| **Alcohol wipes** | **The critical one.** He lubes between every toe with Aquaphor, and tape will not stick to a lubed foot. Skipping the degrease is the usual reason tape fails |
+| Sterile needle or safety pin | Draining |
+| Small scissors | Cut to shape — pre-cut strips at home, for cold hands at 03:00 |
+| Non-stick gauze + antiseptic | For one already torn |
+
+*(Tincture of benzoin is optional — a tackifier for skin that won't cooperate.)*
+
+**Use, in one decision with four branches:**
+
+1. **Hot spot, no fluid** — dry, wipe with alcohol, tape smooth, change the sock if wet. **This is
+   the branch that matters**; a two-minute fix at 40km is a blister at 55km.
+2. **Blister, roof intact, small, painless** — leave it, tape over to stop it spreading. Intact
+   skin is the best dressing available.
+3. **Blister, painful or large or still being loaded** — drain but **keep the roof on**: alcohol,
+   pierce at the *edge*, press out, leave the flap, tape over. The roof is sterile cover and hurts
+   far less than raw dermis.
+4. **Already torn** — clean, antiseptic, non-stick gauze, tape. This is the race-ending one, which
+   is the whole argument for fixing branch 1 promptly.
+
+**Technique that decides whether any of it works:** clean, dry, degreased skin, **no wrinkles**. A
+wrinkle in the tape is a new pressure point — it makes things worse, not better.
+
+**Caveat specific to this athlete, and it is in tension with the rest of this section:** the note
+above warns that *"tape in particular adds bulk to a toe box whose failure mode was compression."*
+His blister sites are the toes, inside a known-narrow last, and 08-02 failed by compression. **If
+he intends to tape toes on race day, test it on a long run first** rather than discovering the
+trade-off at hour 6.
+
+**And the kit is the fallback, not the plan.** The callus reduction described above is the
+prevention, it is free, and its window closes ~2 weeks out from the race (10-03). As of 2026-09-08
+there is no record of it having started.
+
 Standing rule: log blistering by **location and symmetry**, not just presence. Bilateral and
 specific points at fit; unilateral points at gait, camber, or a lacing/sock issue.
 
