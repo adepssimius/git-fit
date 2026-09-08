@@ -670,7 +670,7 @@ transmits the shear straight through, and its adhesive lifts once a foot is prop
 
 | item | why |
 |---|---|
-| **Alcohol wipes** | **The critical one.** He lubes between every toe with Aquaphor, and tape will not stick to a lubed foot. Skipping the degrease is the usual reason tape fails |
+| **Alcohol wipes** | **The critical one.** He lubes between every toe with Aquaphor, and tape will not stick to a lubed foot. Skipping the degrease is the usual reason tape fails. **Ordered 2026-09-08: MagiCare 75% alcohol sanitizing wipes** — see the caveat below |
 | Sterile needle or safety pin | Draining |
 | Small scissors | Cut to shape — pre-cut strips at home, for cold hands at 03:00 |
 | Non-stick gauze + antiseptic | For one already torn |
@@ -692,6 +692,24 @@ transmits the shear straight through, and its adhesive lifts once a foot is prop
 **Technique that decides whether any of it works:** clean, dry, degreased skin, **no wrinkles**. A
 wrinkle in the tape is a new pressure point — it makes things worse, not better.
 
+**Degreasing Aquaphor is harder than it looks, and worth testing rather than assuming.** Aquaphor
+is petrolatum-based — a nonpolar hydrocarbon — and alcohol is a polar solvent, so it lifts
+petrolatum only moderately well. 75% alcohol is a quarter water, which cuts the solvent action
+further. Two things follow:
+
+1. **Dry-wipe the bulk off first**, then alcohol, then **let it flash off completely**. Tape on
+   damp skin does not stick. The two-step is what makes one wipe plausible; alcohol alone on a
+   greasy toe is not.
+2. **Check the wipes for emollients.** Hand-sanitiser wipes commonly carry glycerin or aloe as
+   skin conditioners, which leave their own film and defeat the purpose — degreasing and
+   re-greasing in one motion. If the ingredient list has them, **plain 70% isopropyl prep pads**
+   (the medical kind, alcohol and nothing else) are the purpose-built tool and cost almost
+   nothing. *Not verified for the specific product ordered — the ingredient list is the check.*
+
+**The five-minute test that settles it:** put Aquaphor on a toe, wipe it with one, tape over it,
+and see whether the tape holds. That is worth more than any reasoning here, and it can happen in
+the kitchen tonight rather than at 03:00 on the course.
+
 **Caveat specific to this athlete, and it is in tension with the rest of this section:** the note
 above warns that *"tape in particular adds bulk to a toe box whose failure mode was compression."*
 His blister sites are the toes, inside a known-narrow last, and 08-02 failed by compression. **If
@@ -699,8 +717,10 @@ he intends to tape toes on race day, test it on a long run first** rather than d
 trade-off at hour 6.
 
 **And the kit is the fallback, not the plan.** The callus reduction described above is the
-prevention, it is free, and its window closes ~2 weeks out from the race (10-03). As of 2026-09-08
-there is no record of it having started.
+prevention. **Athlete-confirmed 2026-09-08: it started a while back and is ongoing.** It had never
+been written into `log/`, and a 2026-09-08 note here wrongly read that absence as the work not
+happening — corrected. Nothing in the log is evidence about anything the log was never asked to
+record. Aggressive work stops ~2 weeks out (**10-03**); light maintenance can continue past that.
 
 Standing rule: log blistering by **location and symmetry**, not just presence. Bilateral and
 specific points at fit; unilateral points at gait, camber, or a lacing/sock issue.
