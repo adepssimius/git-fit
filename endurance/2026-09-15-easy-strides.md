@@ -7,15 +7,13 @@ block_week: 15
 distance_km: 6.9
 duration_s: 2950
 target_mode: effort
-brief: >
-  33min easy, 5x20s hill strides with walk-backs, jog home. Ease into each stride.
-follow: >
-  ZoneSense Zone 1 for the running — no target set, pace shown as data only. Strides by feel at ~90-95%.
+brief: Easy + 5x20s hill strides
+follow: ZS Z1; strides by feel
 intent: >
   Strides — smooth and quick, each one an opportunity to improve leg speed.
 origin: authored
 published:
-  suunto: null
+  suunto: 2026-09-08T02:58:30Z    # guide id 9vkmqtqo
 ---
 
 Easy aerobic

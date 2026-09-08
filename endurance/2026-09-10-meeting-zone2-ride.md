@@ -6,11 +6,8 @@ type: aerobic-base
 block_week: 14
 duration_s: 3600
 target_mode: hr
-brief: >
-  60min trainer: 15 easy, 10x(30s hard + 2min easy), 20min Z2.
-follow: >
-  Warmup/recovery/main: ZoneSense Zone 1 early, Z2 HR (138-151bpm) on the closing block.
-  Surges: RPE ~8, hard but controlled — 30s is too short for HR or ZoneSense to read, go by feel.
+brief: Trainer: 10x30s surges
+follow: Z2 HR 138-151
 concurrent: meetings
 intent: >
   Champion week 11 adds short surges to the x-train. Lower B lifting after. Surges are RPE-only
@@ -19,7 +16,7 @@ intent: >
   any way the wire format can even represent: no numeric target is asserted on those steps.
 origin: authored
 published:
-  suunto: null
+  suunto: 2026-09-08T02:58:30Z    # guide id q7g18jb0
 ---
 
 Warmup

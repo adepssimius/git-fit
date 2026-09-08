@@ -6,11 +6,8 @@ type: easy
 block_week: 14
 duration_s: 2400
 target_mode: effort
-brief: >
-  40min easy. Pure time on feet — no target, no pace to hit.
-follow: >
-  ZoneSense Zone 1 the whole way, and no target is set — the first ~10min has no reading, so run
-  the opening by feel. Go slower whenever that's what it needs.
+brief: 40min easy
+follow: ZS Z1
 intent: >
   Added 2026-08-04 at the athlete's direction. Thursday was empty in every week of the block
   because the weekly template gave the slot to the meeting-time trainer ride — but that ride is
@@ -23,7 +20,7 @@ intent: >
   § House rules. It entered eight session files in a single commit with no rationale given.
 origin: authored
 published:
-  suunto: null
+  suunto: 2026-09-08T02:58:30Z    # guide id 2t70uswa
 ---
 
 Easy aerobic

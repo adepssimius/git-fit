@@ -6,10 +6,8 @@ type: aerobic-base
 block_week: 15
 duration_s: 5400
 target_mode: hr
-brief: >
-  90min trainer: 10 easy, 70 Z2, 10 easy. Push toward 90g carbs/hr.
-follow: >
-  Warmup/cooldown: ZoneSense Zone 1. Main set: Z2 HR, 138-151bpm.
+brief: 90min Z2 trainer
+follow: Z2 HR 138-151
 concurrent: meetings
 intent: >
   Gut training: push toward 90g carbs/hr now — the trainer is the cheapest place to fail
@@ -17,7 +15,7 @@ intent: >
   meeting_budget.trainer.
 origin: authored
 published:
-  suunto: null
+  suunto: 2026-09-08T02:58:30Z    # guide id wgo3cvdd
 ---
 
 Warmup

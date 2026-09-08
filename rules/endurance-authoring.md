@@ -456,3 +456,31 @@ origin: authored
 
 Weekly target: **205 minutes** of brisk walking, distributed across call-heavy days.
 ```
+
+## `brief:` and `follow:` are WATCH TEXT — keep them to a few words
+
+**Changed 2026-09-07, athlete-directed.** These two fields exist for exactly one purpose: the
+compiler joins them into the guide description, which is the only prose that reaches the watch.
+Nothing else in the repo reads them.
+
+`compile_guide.py` caps the joined string at 256 characters, but **the watch display truncates far
+earlier than that**, so the cap is not the constraint that matters. The athlete's instruction:
+
+> *"even though the hard limit is 256 it still gets truncated on the watch display well before
+> that. Think 2 or 3 words, otherwise include it in a pre-run brief that I get from this session.
+> The watch should just remind me of what the brief told me."*
+
+So:
+
+- **`brief:` — a few words naming the session.** `10km easy`. `8x400m @ 5:18`.
+  `50k — 15/15/10/10 from the car`.
+- **`follow:` — the instrument, abbreviated.** **`ZS Z1`**, not "ZoneSense Zone 1" — that is the
+  athlete's own shorthand and what he wants to see. `Pace only`. `Z2 HR 138-151`.
+  This still satisfies AGENTS.md invariant 4, which requires the field to state which instrument
+  to follow; it does not require a paragraph.
+- **Everything else goes in `intent:`**, which never reaches the watch — the reasoning, the
+  session's purpose, abort rules, kit notes, fuelling.
+- **The real briefing is delivered in conversation before the session**, not on the wrist. The
+  watch reminds; it does not explain.
+
+A session whose description needs more than a few words has its explanation in the wrong field.
