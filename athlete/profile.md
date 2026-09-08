@@ -459,16 +459,15 @@ cell-charging is a nice-to-have for dwell time rather than something to plan aro
 **Weight:** cells are ~48g each, so the bank probably lives in the start/finish bag until dusk
 rather than riding from 09:00.
 
-**THE OPEN ITEM, AND IT IS THE HIGHEST-STAKES ONE IN THE POWER SYSTEM: watch runtime over 30
-hours.** GPS plus ZoneSense running continuously is demanding — DFA a1 needs uninterrupted HR and
-constant computation. If the watch dies at hour 24 he loses both the recording of the entire race
-and the instrument he paces by (`races/2026-10-17-ghost-train.md` § "Race-day pacing: use
-ZoneSense"). Two things to establish:
+**~~Watch runtime over 30 hours~~ — answered 2026-09-08.** Athlete: *"my watch will be fine over
+30 hours if I remember to charge it beforehand."* Runtime is not the constraint; no mid-race
+charging is planned for it.
 
-- Realistic runtime in the GPS mode he will actually use.
-- **Whether it can be charged while moving.** Suunto's magnetic charging clip is not very secure
-  and detaches easily — that is the one connection a right-angle cable cannot help with. **Worth
-  testing on 2026-09-12**, which is long enough to try it even though 7h will not test a 30h drain.
+**The residual risk is in his own sentence: remembering.** That makes it a race-week checklist
+item rather than a gear question — **charge to full the night before, and do not run with it on the
+Friday**, since starting a 30-hour race at 85% is the realistic failure mode rather than the watch
+being incapable. Belongs on the packing list in
+`endurance/2026-10-16-pre-race-shakeout.md`.
 
 **The emergency light being on a different cell format is deliberate and correct.** It is the
 backstop against a *systemic* failure — every 18650 flat, or the bag holding them lost — which a
