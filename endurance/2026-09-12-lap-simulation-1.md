@@ -52,7 +52,7 @@ published:
   suunto: null
 ---
 
-Drop bag point -> north terminus (bag passed at 5km)
+Car (drop bag 1) -> north terminus (drop bag 2 passed at 5km)
 - 1.2km 8:20/km Pace
 - 6.3km ZoneSense Z1
 
