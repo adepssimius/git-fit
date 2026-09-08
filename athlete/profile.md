@@ -475,9 +475,19 @@ same-format backup would not survive. A primary cell (CR123) is the right chemis
 it holds charge for years sitting unused.
 
 **Open, and both are checks rather than purchases:**
-- **Nothing is on his head.** Chest flood plus handheld leaves no light where he turns to look,
-  and the Convoy is only in his hand some of the time. **Wearing one NU25 on low solves it** and
-  still leaves the second banked — better use than holding both in bags.
+- **~~Nothing is on his head~~ — DECIDED 2026-09-08, no headlamp.** Athlete: *"I'm not going to
+  run with a headlamp. I'm going to run with the zebralight and my flashlight will be readily
+  accessible if I need light in a given direction."* Raised twice and answered decisively; it is
+  a choice, not a gap. **And it suits the actual task better than a headlamp would** — a headlamp
+  points where the face points, so spotting something in side brush means turning the whole head,
+  while a handheld is simply aimed. The one job the light exists for is the job the handheld does
+  best.
+  **What makes or breaks it is "readily accessible."** A wildlife moment is a two-second thing; a
+  flashlight in a zipped pocket may as well be in the car. It wants a front stretch pocket or a
+  wrist lanyard — one-handed, without looking. **Settle it on 2026-09-12**, the session where he
+  will actually reach for it.
+  **Failure path is still covered:** the NU25s are banked, so a dead chest light means a head
+  option at the next bag.
 - **Charge both NU25s before race day and verify the Foursevens' cell.** The NU25 battery is built
   in, so its runtime is fixed and it self-discharges in storage; a Foursevens that has sat on a
   rechargeable may be flat exactly when it is the last light working.
