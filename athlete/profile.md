@@ -40,7 +40,17 @@ time_budget:
   # over-cap session without one, and errors again if more than `long_run_exceptions_per_block`
   # carry it. That keeps "a few exceptions are fine" honest instead of quietly becoming "every
   # long run drifts long."
-  long_run_exception_max_min: 400  # absolute ceiling even for flagged sessions
+  long_run_exception_max_min: 430  # absolute ceiling even for flagged sessions
+  # RAISED 400 -> 430 on 2026-09-07, athlete-approved, and recorded as a PACING-MODEL CORRECTION
+  # rather than a cap relaxation. AGENTS.md invariant 1b forbids raising the cap to make a
+  # session fit, and that is not what this is. The 400 was set when a 50k was modelled at the
+  # Big Day's planned pace — 363min for 50km, i.e. ~7:16/km on a negative split. The athlete has
+  # since replaced that pacing model with run/walk from the gun at ~8:20/km, walking the hills
+  # and the steep descents for damage control (log/2026-09-06.md). Same 50km, 417min moving.
+  # The cap did not change; the pace assumption underneath it did, and the ceiling was left
+  # describing a race he has decided not to run. 430 is 50km at his real pace plus stops, and
+  # nothing more — it does not create room for a longer session than the one it was derived for.
+  # If the pacing model changes again, this number is downstream of it and moves with it.
                                    # (a genuine 50k at this athlete's moderate effort is ~6h)
   long_run_exceptions_per_block: 3
   sunday_b2b_max_min: 150
@@ -68,7 +78,9 @@ time_budget:
     - 2026-08-18  # night run — needs full dark
     - 2026-09-05  # BIG DAY — early start so it finishes by noon AND sets up the next morning
     - 2026-09-06  # pre-dawn on 50k legs — 03:00, the whole point is sleep-deprived + dark
-    - 2026-09-11  # night run past midnight
+    - 2026-09-12  # lap sim 1 — dusk start (~19:00); rehearses the daylight->headlamp
+                  # transition and puts ~3h of the session in the dark. Moved here from
+                  # 09-19 on 2026-09-07 (possible work travel); absorbs the 09-11 night run
     - 2026-09-16  # bicarb session — needs a 1.5-2h pre-load window before the start
     - 2026-09-26  # night long run — 03:00 start, dark into dawn
     - 2026-10-06  # taper night run — needs dark
@@ -252,6 +264,55 @@ travel:
     long_runs: split_across_two_days
 ```
 
+## Crewing — UNCREWED (athlete decision, 2026-09-07)
+
+**He is running this race uncrewed.** Directive, not an inference: *"Assume uncrewed. I might have
+a pacer for one lap."*
+
+**This file and `races/2026-10-17-ghost-train.md` were written throughout on an assumption of crew
+contact every ~12km.** `grep -l crew` returns 19 files. Everywhere "crew stop" or "crew bag"
+appears, read **self-serve drop bag**, at the start/finish and at the 7.5mi turnaround — both of
+which take drop bags (athlete-confirmed) and both of which are full-service aid stations.
+
+**The logistics are covered by the race itself**, which on a looped, well-stocked course is close
+to the best case for running solo:
+
+| station | position | stock |
+|---|---|---|
+| **Start/finish** | 0 / 15mi | full — *"all kinds of good food"*, candy, soda, Tailwind; **drop bag** |
+| mid-out | 3.75mi | snacks and drinks, candy/soda/Tailwind |
+| **7.5mi turnaround** | 7.5mi | full — *"all kinds of good food"*, candy, soda, Tailwind; **drop bag** |
+| mid-back | 11.25mi | snacks and drinks, candy/soda/Tailwind |
+
+Consequences already established: warm savoury food needs no crew capability because the end
+stations serve it (`log/2026-09-06.md` § Fueling); the carry drops to one inter-station gap plus
+reserve rather than thirty hours of gels; and battery restock happens at every drop-bag pass,
+~12.1km apart, which is what his run-to-empty light policy assumes.
+
+### What uncrewed actually costs is judgement, and there is one dose of it available
+
+Logistics are solved. What crew also supplies in a 30-hour race is a second brain at the hour the
+first one stops working, and the race file leans on that harder than it looks — its continue/stop
+decision tree is written to be *"evaluated at every crew stop"* and includes a cognition check for
+slurring and poor coordination. **Those are the symptoms the sufferer cannot self-assess.**
+
+**A pacer for one lap is possible and is the single dose of external judgement he will have.**
+Spend it accordingly:
+
+- **Put the pacer on a deep-night or late lap, not an early one.** Laps 1-3 he will be lucid and
+  the pacer adds nothing but company; laps 5-6 are the *"fatigue plus sleep pressure plus
+  darkness"* state the whole block has been built around, and that is when a second opinion on
+  feet, cognition and the stop decision is worth most. Full darkness runs **18:30 to 06:35**.
+- **The rule is confirmed and it does not bind.** Athlete, 2026-09-07: pacers are allowed
+  **from lap 2 onward** (*"not before the second lap, but it's a relaxed race and nobody is going
+  to care"*). Lap 2 begins around 24.1km, roughly 3-4 hours in — early Saturday afternoon —
+  while full darkness does not start until **18:30**. **Every lap worth pacing is already legal**,
+  so the recommendation above needs no latitude from anyone and no exception to rely on. Rule and
+  plan agree; enforcement is moot.
+- **The decision tree needs rewriting as a self-check regardless.** One paced lap out of five-plus
+  does not cover the other four. It should become something fixed and carried — a card in the drop
+  bag — not a paragraph to be evaluated by judgement at the exact hour judgement has degraded.
+
 ## Course access — a major asset
 
 **Has training access to the northern 6.5 miles of the actual Ghost Train course.** Only the first
@@ -276,6 +337,14 @@ training              STAGE(1mi) --------- TURNAROUND(7.5mi) --------- STAGE
   on race day. Close enough that fueling and crew-stop cadence transfer directly.
 - The closed first mile is the one section that will be fresh on race day. It's also the section
   already run in the prior 50k here, so it's familiar rather than unknown.
+
+**Heavy tree canopy over essentially the whole accessible section** (athlete-confirmed
+2026-09-07: heavy shade for all but ~1000ft of a 22.6km session). Two standing consequences:
+**heat is largely neutralised here** — measured at `shade_pct: 98` on 2026-09-07, WBGT 65.7F
+against 70.1F for the same hours fully exposed, so a sunny 76F day on this ground is not the
+session that number implies elsewhere; and **it is very dark at night**, admitting no sky glow or
+moonlight, which sets the lighting requirement for night sessions and race night higher than
+generic night running would (`log/2026-09-06.md` § lighting).
 
 **The course is 10 minutes away**, so travel is not a meaningful constraint — it's effectively
 the home training ground, and long runs should default to it rather than treating each trip as a
@@ -323,13 +392,33 @@ equipment:
   sweat_rate: "low-average"         # informs sodium at the lower end of typical — see rules/fueling.md
 ```
 
+### Chafing — no history of it; shields are cheap insurance (recorded 2026-09-07)
+
+**He has had no failures or near-failures with nipple shields.** Athlete's own words, correcting
+an earlier draft of this section: *"It's just cheap insurance if I do start having problems to
+have a pair where I might need them."*
+
+**Recorded so it is not misread later.** He stages two spare pairs in each drop bag, and a first
+version of this section read four staged pairs as evidence of a recurring problem. It is not.
+**Provisioning is not history** — a cheap, weightless item staged redundantly says something about
+the cost of carrying it, not about how often it has been needed. Chafing is currently a
+**non-issue** for this athlete and there is no data suggesting otherwise.
+
+Two notes that survive anyway, both cheap:
+
+- **Adhesive fails when wet**, and mid-October in NH across 30 hours makes rain or heavy dew live.
+  If shields are ever going to be needed it is on a wet night, on skin that has been sweating for
+  hours — not on a fresh application.
+- **The Aquaphor already staged in both bags is the fallback**, with tape behind it. Nothing extra
+  needs staging.
+
 ## Footwear — the Mont Blanc runs small
 
 ### The rotation (recorded 2026-08-15 — none of this was in the repo before)
 
 | shoe | size | use |
 |---|---|---|
-| Altra **Lone Peak 9** | 9.5 | trail. Correct fit; the fit reference |
+| Altra **Lone Peak 9** ×3 | 9.5 | trail. Correct fit; the fit reference. **Three pairs** (athlete-confirmed 2026-09-07) — enough to stage one in each drop bag with a spare at home |
 | Altra **Mont Blanc Carbon** | 9.5 | RETIRED for distance — too narrow |
 | Altra **Mont Blanc Carbon** | **10** | trail, race candidate |
 | Altra **Experience Flow 2** | **10** | road, medium-high cushion |
@@ -364,7 +453,11 @@ The Lone Peak's role is therefore the **backup in the start/finish crew bag** �
 switch into if the Mont Blanc's toe box goes wrong, or late when feet swell — not the standard
 the Mont Blanc must justify itself against. Race-day swap logic: stay in the Mont Blancs while
 the feet are quiet, swap on the toe box talking or visible swelling, NOT at a scheduled lap.
-Rehearse the swap at the Big Day, which already has three crew stops.
+~~Rehearse the swap at the Big Day, which already has three crew stops.~~ **Superseded
+2026-09-07.** The Big Day was never run (`log/2026-09-05.md`); the swap is unrehearsed, and the
+next opportunity is lap sim 1 on 2026-09-19. The race is now **uncrewed** — see § Crewing above —
+so "crew stops" here means a self-serve drop bag; three pairs of Lone Peak 9.5 make staging one
+at each bag straightforward.
 
 **Altra Lone Peak 9, size 9.5 — correct fit.** The reference shoe.
 
@@ -411,6 +504,29 @@ threshold session, with never more than a single rest day in a row. Read a linge
 question about what it has been asked to absorb since, not about the skin. This is an observation
 about *this* blister, not a standing rule.
 
+> ## ✅ RESOLVED 2026-09-06 — checkpoint 2 passed. Read this box before the section below.
+>
+> The test specified below was **not** delivered by 08-15, which was run in toe socks — the one
+> kit change this protocol forbids — and blistered at the callus margins. It was delivered
+> instead by an unplanned **30.08km on 2026-09-06** (`log/2026-09-06.md`), which met every
+> condition set out here: Mont Blanc **10**, ~30km, **Balega Hidden Comfort rather than toe
+> socks**, no tape, Aquaphor between the toes, run to race strategy on the race course.
+>
+> **Result: no blisters, no hotspots — neither mechanism recurred.** The "new blister in a new
+> location" signal named below did not fire.
+>
+> **The 10s now have one clean pass in the ~30km class**, at race-representative pace. This
+> establishes checkpoint 2, not the race: 30km is 19% of 160km, feet swell over 20+ hours, and
+> the callus-margin mechanism needs accumulated shear. **Lap sim 1 (2026-09-19) is the next
+> session long enough to move it.**
+>
+> Two variables separate 08-15 from 09-06 — toe socks out, lubricant in — alongside far less fast
+> running, so which change did the work is not isolated. It does not need to be: the working
+> combination is known and free to repeat.
+>
+> The section below is kept as written because it is the protocol that was finally followed, and
+> the reason the result is trustworthy.
+
 **What Saturday actually tests.** Checkpoint 2, the ~30km class that broke the 9.5s. The residual
 blister is a leftover from a **retired shoe**, so it is a confound to note rather than the subject
 of the test:
@@ -441,6 +557,7 @@ These had been getting conflated. They are different problems with different fix
 |---|---|---|---|
 | **08-02**, Mont Blanc **9.5** | both 2nd toes, at 3rd toe contact | clean | **compression** — narrow last, toe-on-toe |
 | **08-15**, Mont Blanc **10** | outer edge, both big toes | **at a callus margin** | **shear at a stiffness discontinuity** |
+| **09-06**, Mont Blanc **10**, 30.08km | **none** | — | **neither mechanism fired.** Balega Hidden Comfort + Aquaphor between the toes, no toe socks, race-strategy pace |
 
 **The compression problem was actually fixed by sizing up.** 23.5km including 24min at
 5:15-5:32/km in the 10s and the 2nd-toe blisters did not recur.
@@ -465,6 +582,36 @@ work ~2 weeks out from the race. This outranks the shoe decision.
 **Do not wear toe socks in the Mont Blancs.** Toe socks add width between every toe, and in a last
 whose known defect is narrowness that pushes the outer toes into the shoe walls. Secondary to the
 callus work now, but free to obey.
+
+### Toenails — a standing baseline, NOT a fit signal (recorded 2026-09-07)
+
+**His big-toe nails are sore past ~20km, in any shoe, and always have been.** Athlete's own
+words: *"the nail pain is something that I have always experienced. It's not my toenails hitting
+shoe ... my big toe always feels sore in the toenail no matter what,"* and *"the only variable is
+distance. Once I go above 20k I get some nail pain."*
+
+- **The nail is not striking the toe box.** He has investigated that specifically and ruled it
+  out. The pressure is on the nail bed **from beneath**.
+- **It varies with distance, not with footwear**, so it carries **no information about fit** and
+  must not be read as one. Every long run in this file is over 20km, so nail soreness is expected
+  on all of them — a signal that fires on every row cannot separate the rows. A session in
+  2026-09 read it as a too-small-shoe signal and had to withdraw that.
+- **His nails are already bruised** from previous Lone Peak runs, and he regards losing toenails
+  as routine for him. He starts the race with damaged nails; that is the baseline, not a change.
+- **NOT a go/no-go criterion.** `races/2026-10-17-ghost-train.md` makes "feet: hot spots vs actual
+  damage" a stop check. **Big-toe nail soreness is neither** — he crosses 20km inside lap 1 of 7
+  and spends ~80km above onset at the A-goal, so treating it as a stop signal would burn time and
+  possibly a needless shoe change on something that was always going to appear.
+- **Unknown and worth more than anything else here:** whether it plateaus past 20km or scales
+  with distance. At 30km he called it *"a little."* The unasked data point is his 50k on this
+  course three years ago, and whether he lost the nail then.
+- **Do not attempt a large stride change before this race.** He has proposed one, and the
+  mechanism reasoning is sound — plantar loading through the hallux is what stride governs. The
+  objection is timing: six weeks out, with an active ITB and a history of tissue limiters, a gait
+  overhaul redistributes load onto achilles, plantar fascia and calf during taper, with the payoff
+  arriving long after October. **The small, already-proven version is the cadence lever below**
+  (raise 5-10%), which shortens stride without rebuilding anything. The gait project is a good
+  off-season question.
 
 Standing rule: log blistering by **location and symmetry**, not just presence. Bilateral and
 specific points at fit; unilateral points at gait, camber, or a lacing/sock issue.
