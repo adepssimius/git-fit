@@ -392,6 +392,29 @@ equipment:
   sweat_rate: "low-average"         # informs sodium at the lower end of typical — see rules/fueling.md
 ```
 
+### Race carry — Naked band, one flask, and a cup that must not be lost (recorded 2026-09-08)
+
+| item | notes |
+|---|---|
+| **Naked Running Band** | Waist belt, minimal carry. Matches the lap-sim instruction to *"practise running LIGHT rather than practising a heavy carry"* — correct given aid every ~6km |
+| **700ml Sportiva soft flask** | Single flask. ~50min between aid stations at lap 1-2 pace, ~100min between drop bags — ample in October |
+| **Collapsible cup** | **Required: the race provides no cups.** See below |
+| **Spork** | For aid-station real food and broth. Ties to the 09-07 finding that solid food, not savoury flavour, is what relieves the hunger |
+
+**THE CUP IS A SINGLE POINT OF FAILURE.** In a cupless race, losing it means he cannot drink
+*anything* at an aid station — not water, not soda, not broth — except by decanting into the
+flask. **Spare cup in each drop bag**, and attach the primary so it cannot be dropped; a silicone
+cup bouncing off into a closed-canopy trail at 03:00 is a plausible way to lose it.
+
+**One flask forces a choice about what is in it.** Tailwind is at all four stations, so the clean
+split is **Tailwind in the flask, everything else from the cup while standing at the station** —
+water, soda, broth. That only works if the cup is on him.
+
+**Neither the cup nor the spork gets tested on 2026-09-12.** That session is self-supported from
+drop bags: no aid stations, no Tailwind, no broth, no volunteers. Saturday's carry problem (stage
+every calorie and every millilitre himself, refill at the car and the north bag) is a different
+problem from race day's. Do not count it as having rehearsed the aid-station routine.
+
 ### Night lighting — rebuilt after the 2026-09-06 failure (recorded 2026-09-08)
 
 The old setup died mid-session: two of three lights flat inside **4h26** of darkness, against
