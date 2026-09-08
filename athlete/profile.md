@@ -326,6 +326,14 @@ training              STAGE(1mi) --------- TURNAROUND(7.5mi) --------- STAGE
 - The closed first mile is the one section that will be fresh on race day. It's also the section
   already run in the prior 50k here, so it's familiar rather than unknown.
 
+**Heavy tree canopy over essentially the whole accessible section** (athlete-confirmed
+2026-09-07: heavy shade for all but ~1000ft of a 22.6km session). Two standing consequences:
+**heat is largely neutralised here** — measured at `shade_pct: 98` on 2026-09-07, WBGT 65.7F
+against 70.1F for the same hours fully exposed, so a sunny 76F day on this ground is not the
+session that number implies elsewhere; and **it is very dark at night**, admitting no sky glow or
+moonlight, which sets the lighting requirement for night sessions and race night higher than
+generic night running would (`log/2026-09-06.md` § lighting).
+
 **The course is 10 minutes away**, so travel is not a meaningful constraint — it's effectively
 the home training ground, and long runs should default to it rather than treating each trip as a
 budgeted expense.
