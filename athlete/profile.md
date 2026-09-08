@@ -252,6 +252,51 @@ travel:
     long_runs: split_across_two_days
 ```
 
+## Crewing — UNCREWED (athlete decision, 2026-09-07)
+
+**He is running this race uncrewed.** Directive, not an inference: *"Assume uncrewed. I might have
+a pacer for one lap."*
+
+**This file and `races/2026-10-17-ghost-train.md` were written throughout on an assumption of crew
+contact every ~12km.** `grep -l crew` returns 19 files. Everywhere "crew stop" or "crew bag"
+appears, read **self-serve drop bag**, at the start/finish and at the 7.5mi turnaround — both of
+which take drop bags (athlete-confirmed) and both of which are full-service aid stations.
+
+**The logistics are covered by the race itself**, which on a looped, well-stocked course is close
+to the best case for running solo:
+
+| station | position | stock |
+|---|---|---|
+| **Start/finish** | 0 / 15mi | full — *"all kinds of good food"*, candy, soda, Tailwind; **drop bag** |
+| mid-out | 3.75mi | snacks and drinks, candy/soda/Tailwind |
+| **7.5mi turnaround** | 7.5mi | full — *"all kinds of good food"*, candy, soda, Tailwind; **drop bag** |
+| mid-back | 11.25mi | snacks and drinks, candy/soda/Tailwind |
+
+Consequences already established: warm savoury food needs no crew capability because the end
+stations serve it (`log/2026-09-06.md` § Fueling); the carry drops to one inter-station gap plus
+reserve rather than thirty hours of gels; and battery restock happens at every drop-bag pass,
+~12.1km apart, which is what his run-to-empty light policy assumes.
+
+### What uncrewed actually costs is judgement, and there is one dose of it available
+
+Logistics are solved. What crew also supplies in a 30-hour race is a second brain at the hour the
+first one stops working, and the race file leans on that harder than it looks — its continue/stop
+decision tree is written to be *"evaluated at every crew stop"* and includes a cognition check for
+slurring and poor coordination. **Those are the symptoms the sufferer cannot self-assess.**
+
+**A pacer for one lap is possible and is the single dose of external judgement he will have.**
+Spend it accordingly:
+
+- **Put the pacer on a deep-night or late lap, not an early one.** Laps 1-3 he will be lucid and
+  the pacer adds nothing but company; laps 5-6 are the *"fatigue plus sleep pressure plus
+  darkness"* state the whole block has been built around, and that is when a second opinion on
+  feet, cognition and the stop decision is worth most. Full darkness runs **18:30 to 06:35**.
+- **Check the race's pacer rules early** — many ultras allow pacers only after a set distance or
+  hour. This is a cheap thing to confirm and an expensive thing to assume.
+- **The decision tree needs rewriting as a self-check regardless.** One paced lap out of five-plus
+  does not cover the other four. It should become something fixed and carried — a card in the drop
+  bag — not a paragraph to be evaluated by judgement at the exact hour judgement has degraded.
+
 ## Course access — a major asset
 
 **Has training access to the northern 6.5 miles of the actual Ghost Train course.** Only the first
@@ -323,20 +368,25 @@ equipment:
   sweat_rate: "low-average"         # informs sodium at the lower end of typical — see rules/fueling.md
 ```
 
-### Chafing — nipple shields are a known recurring failure (recorded 2026-09-07)
+### Chafing — no history of it; shields are cheap insurance (recorded 2026-09-07)
 
-Absent from this repo until now, and it should not have been: the only prior mention anywhere was
-the abstract phrase *"find out what chafes, dies or annoys you"* in the 08-18 kit shakedown, a
-session that was skipped and never reached his watch.
+**He has had no failures or near-failures with nipple shields.** Athlete's own words, correcting
+an earlier draft of this section: *"It's just cheap insurance if I do start having problems to
+have a pair where I might need them."*
 
-**He plans two spare pairs of nipple shields in each drop bag — four pairs staged.** That is the
-provisioning of a known recurring problem, not a precaution, and should be read that way.
+**Recorded so it is not misread later.** He stages two spare pairs in each drop bag, and a first
+version of this section read four staged pairs as evidence of a recurring problem. It is not.
+**Provisioning is not history** — a cheap, weightless item staged redundantly says something about
+the cost of carrying it, not about how often it has been needed. Chafing is currently a
+**non-issue** for this athlete and there is no data suggesting otherwise.
+
+Two notes that survive anyway, both cheap:
 
 - **Adhesive fails when wet**, and mid-October in NH across 30 hours makes rain or heavy dew live.
-  Worth confirming they adhere to skin that has been sweating for fifteen hours, which is the
-  condition they must survive — not a fresh application.
-- **The Aquaphor already staged in both bags is the fallback** if shields will not stick, with
-  tape behind it. Nothing extra needs staging.
+  If shields are ever going to be needed it is on a wet night, on skin that has been sweating for
+  hours — not on a fresh application.
+- **The Aquaphor already staged in both bags is the fallback**, with tape behind it. Nothing extra
+  needs staging.
 
 ## Footwear — the Mont Blanc runs small
 
@@ -381,10 +431,9 @@ the Mont Blanc must justify itself against. Race-day swap logic: stay in the Mon
 the feet are quiet, swap on the toe box talking or visible swelling, NOT at a scheduled lap.
 ~~Rehearse the swap at the Big Day, which already has three crew stops.~~ **Superseded
 2026-09-07.** The Big Day was never run (`log/2026-09-05.md`); the swap is unrehearsed, and the
-next opportunity is lap sim 1 on 2026-09-19. Separately, the athlete now expects to run the race
-**uncrewed** — see `log/2026-09-06.md` — so "crew stops" throughout this file and
-`races/2026-10-17-ghost-train.md` means self-serve drop bags at the start/finish and the 7.5mi
-turnaround. That rewrite is pending and deliberately not done here.
+next opportunity is lap sim 1 on 2026-09-19. The race is now **uncrewed** — see § Crewing above —
+so "crew stops" here means a self-serve drop bag; three pairs of Lone Peak 9.5 make staging one
+at each bag straightforward.
 
 **Altra Lone Peak 9, size 9.5 — correct fit.** The reference shoe.
 
