@@ -659,7 +659,9 @@ distance. Once I go above 20k I get some nail pain."*
 
 ### Blister kit (recorded 2026-09-08)
 
-**Leukotape P ordered 2026-09-08.** Rigid zinc-oxide strapping tape — the right class for this,
+**Leukotape P ordered 2026-09-08 — one roll per drop bag**, start/finish and the 7.5mi
+turnaround, so a foot problem can be dealt with at whichever stop it surfaces at rather than
+carried to the next one. Rigid zinc-oxide strapping tape — the right class for this,
 because a blister is a shear injury and the tape's job is to take the shear instead of the skin.
 Elastic tape (kinesiology tape, RockTape) is the wrong tool: it stretches with the skin and
 transmits the shear straight through, and its adhesive lifts once a foot is properly wet.
