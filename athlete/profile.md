@@ -682,7 +682,7 @@ transmits the shear straight through, and its adhesive lifts once a foot is prop
 | item | why |
 |---|---|
 | **Alcohol wipes** | **The critical one.** He lubes between every toe with Aquaphor, and tape will not stick to a lubed foot. Skipping the degrease is the usual reason tape fails. **Ordered 2026-09-08: MagiCare 75% alcohol sanitizing wipes** — see the caveat below |
-| Sterile needle or safety pin | Draining |
+| **25G × 1" beveled needles, luer hub, sterile, individually wrapped** (athlete, 2026-09-08) | Draining. 4-5 per bag out of a 100-pack. Athlete-confirmed **sterile and beveled** — the two things that matter, since industrial dispensing needles are often neither. The luer hub is a better grip than a bare lancet when wearing gloves. **Lancets considered and declined — athlete preference.** Only 1-2mm of the inch is used |
 | Small scissors | Cut to shape — pre-cut strips at home, for cold hands at 03:00 |
 | **Non-adherent pads** (Telfa-type), 2 per bag | **Only for a deroofed blister** — they exist so the dressing does not bond to raw dermis and tear it off on removal. Ordinary gauze sticks to a weeping wound. Unused in branches 1-3, where tape goes straight on skin. Second job: the dry-wipe for bulk grease |
 | **Skin-Tac wipes** | Tackifier — makes tape grab skin that is not perfectly clean. See the degreasing note below |
@@ -700,6 +700,19 @@ workable with cold hands at 03:00.
    the branch that matters**; a two-minute fix at 40km is a blister at 55km.
 2. **Blister, roof intact, small, painless** — leave it, tape over to stop it spreading. Intact
    skin is the best dressing available.
+
+**Needle handling, and it matters more because the needles do not self-retract.** Puncture at the
+**base/edge**, never the centre; **two or three small holes rather than one**, since a single hole
+reseals and refills; press the fluid out with a non-adherent pad; **do not deroof it**. One needle
+per blister — reusing across sites is how an infection moves from one toe to another.
+
+**Re-cap before it goes in the ziplock, and re-cap ONE-HANDED.** Lay the cap on a flat surface,
+slide the needle in horizontally, tip up to seat it. **Never hold the cap in the other hand and
+push the needle into it** — that is the classic needlestick, and he will be doing this tired, in
+the dark, uncrewed.
+
+**Do not drain anything that looks infected** — spreading redness, red streaking, pus, heat. That
+is a stop-and-get-help situation, not a tape-over-it one.
 3. **Blister, painful or large or still being loaded** — drain but **keep the roof on**: alcohol,
    pierce at the *edge*, press out, leave the flap, tape over. The roof is sterile cover and hurts
    far less than raw dermis.
