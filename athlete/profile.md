@@ -398,13 +398,13 @@ equipment:
 |---|---|
 | **Naked Running Band** | Waist belt, minimal carry. Matches the lap-sim instruction to *"practise running LIGHT rather than practising a heavy carry"* — correct given aid every ~6km |
 | **700ml Sportiva soft flask** | Single flask. ~50min between aid stations at lap 1-2 pace, ~100min between drop bags — ample in October |
-| **Collapsible cup** | **Required: the race provides no cups.** See below |
+| **Collapsible cups ×4** | **Required: the race provides no cups.** **Two carried, one spare in each drop bag** (athlete, 2026-09-08). Two on the body is the point — drop one in the dark and he still has one in hand, restocking at the next bag rather than going 12km cupless |
 | **Spork** | For aid-station real food and broth. Ties to the 09-07 finding that solid food, not savoury flavour, is what relieves the hunger |
 
-**THE CUP IS A SINGLE POINT OF FAILURE.** In a cupless race, losing it means he cannot drink
-*anything* at an aid station — not water, not soda, not broth — except by decanting into the
-flask. **Spare cup in each drop bag**, and attach the primary so it cannot be dropped; a silicone
-cup bouncing off into a closed-canopy trail at 03:00 is a plausible way to lose it.
+**~~THE CUP IS A SINGLE POINT OF FAILURE~~ — resolved 2026-09-08.** It was: in a cupless race,
+losing the only cup means he cannot drink *anything* at an aid station except by decanting into
+the flask. Now four cups, two of them on his body. Still worth attaching the carried pair so they
+are not dropped in the first place.
 
 **One flask forces a choice about what is in it.** Tailwind is at all four stations, so the clean
 split is **Tailwind in the flask, everything else from the cup while standing at the station** —
@@ -416,6 +416,30 @@ every calorie and every millilitre himself, refill at the car and the north bag)
 problem from race day's. Do not count it as having rehearsed the aid-station routine.
 
 ### Night lighting — rebuilt after the 2026-09-06 failure (recorded 2026-09-08)
+
+**Full inventory as of 2026-09-08:**
+
+| light | role | cell | status |
+|---|---|---|---|
+| **Zebralight H600Fc Mk IV**, 4000K high CRI, frosted | Chest — running light | 18650 | **NOT IN HAND** |
+| **Convoy S3**, 4000K high CRI (719A) | Handheld — wildlife spotting | 18650 | ordered |
+| **Foursevens**, small high-output | **Emergency**, carried | *different format* | owned |
+| **Nitecore NU25 ×2** | Backup, one per drop bag | built-in Li-ion, **not swappable** | owned |
+| 4 legacy headlamps | spare stock | — | owned |
+| **Panasonic NCR18650GA ×10** | feeds both 18650 lights | — | ordered |
+
+**The emergency light being on a different cell format is deliberate and correct.** It is the
+backstop against a *systemic* failure — every 18650 flat, or the bag holding them lost — which a
+same-format backup would not survive. A primary cell (CR123) is the right chemistry for that role:
+it holds charge for years sitting unused.
+
+**Open, and both are checks rather than purchases:**
+- **Nothing is on his head.** Chest flood plus handheld leaves no light where he turns to look,
+  and the Convoy is only in his hand some of the time. **Wearing one NU25 on low solves it** and
+  still leaves the second banked — better use than holding both in bags.
+- **Charge both NU25s before race day and verify the Foursevens' cell.** The NU25 battery is built
+  in, so its runtime is fixed and it self-discharges in storage; a Foursevens that has sat on a
+  rechargeable may be flat exactly when it is the last light working.
 
 The old setup died mid-session: two of three lights flat inside **4h26** of darkness, against
 **~12.1 hours** on race night (`log/2026-09-06.md`). Replaced with a two-light, one-cell system.
