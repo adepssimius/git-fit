@@ -40,7 +40,17 @@ time_budget:
   # over-cap session without one, and errors again if more than `long_run_exceptions_per_block`
   # carry it. That keeps "a few exceptions are fine" honest instead of quietly becoming "every
   # long run drifts long."
-  long_run_exception_max_min: 400  # absolute ceiling even for flagged sessions
+  long_run_exception_max_min: 430  # absolute ceiling even for flagged sessions
+  # RAISED 400 -> 430 on 2026-09-07, athlete-approved, and recorded as a PACING-MODEL CORRECTION
+  # rather than a cap relaxation. AGENTS.md invariant 1b forbids raising the cap to make a
+  # session fit, and that is not what this is. The 400 was set when a 50k was modelled at the
+  # Big Day's planned pace — 363min for 50km, i.e. ~7:16/km on a negative split. The athlete has
+  # since replaced that pacing model with run/walk from the gun at ~8:20/km, walking the hills
+  # and the steep descents for damage control (log/2026-09-06.md). Same 50km, 417min moving.
+  # The cap did not change; the pace assumption underneath it did, and the ceiling was left
+  # describing a race he has decided not to run. 430 is 50km at his real pace plus stops, and
+  # nothing more — it does not create room for a longer session than the one it was derived for.
+  # If the pacing model changes again, this number is downstream of it and moves with it.
                                    # (a genuine 50k at this athlete's moderate effort is ~6h)
   long_run_exceptions_per_block: 3
   sunday_b2b_max_min: 150
