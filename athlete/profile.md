@@ -617,6 +617,17 @@ problem. Toe socks and 5:15/km pace supplied the shear; the callus decided it bl
 than merely complained. Every callus edge on his feet is a blister waiting for enough shear, and
 a 160km race supplies plenty.
 
+**CURRENT ROUTINE (athlete-confirmed 2026-09-08):** light sanding of the calluses, plus **Dr
+Scholl's Ultra Exfoliating Foot Lotion** — a urea product, which is keratolytic at high
+concentration and a humectant at low, so it does callus reduction and pliability together. This
+matches the prescription below.
+
+**One caution: that is two mechanisms at once**, mechanical and chemical, against a prescription
+whose whole point is *gradual*. Doubling up is the easy way to overshoot without noticing. If the
+skin turns tender or pink rather than simply thinner, back off the sanding and let the lotion work
+alone. **The two halves separate on 10-03:** stop the aggressive work two weeks out, keep
+moisturising through race week. Pliable skin on race day, not recently-sanded skin.
+
 **Highest-value foot work available, and it is free:** reduce the calluses gradually — light
 filing or pumice after showers, a little at a time over weeks, never one aggressive session
 (freshly thinned skin is worse than the callus). Keep the skin pliable with a urea-based cream so
@@ -673,9 +684,13 @@ transmits the shear straight through, and its adhesive lifts once a foot is prop
 | **Alcohol wipes** | **The critical one.** He lubes between every toe with Aquaphor, and tape will not stick to a lubed foot. Skipping the degrease is the usual reason tape fails. **Ordered 2026-09-08: MagiCare 75% alcohol sanitizing wipes** — see the caveat below |
 | Sterile needle or safety pin | Draining |
 | Small scissors | Cut to shape — pre-cut strips at home, for cold hands at 03:00 |
-| Non-stick gauze + antiseptic | For one already torn |
+| **Non-adherent pads** (Telfa-type), 2 per bag | **Only for a deroofed blister** — they exist so the dressing does not bond to raw dermis and tear it off on removal. Ordinary gauze sticks to a weeping wound. Unused in branches 1-3, where tape goes straight on skin. Second job: the dry-wipe for bulk grease |
+| **Skin-Tac wipes** | Tackifier — makes tape grab skin that is not perfectly clean. See the degreasing note below |
 
-*(Tincture of benzoin is optional — a tackifier for skin that won't cooperate.)*
+**Skin-Tac chosen over tincture of benzoin (2026-09-08), on format.** Both are tackifiers. Benzoin
+is slightly stickier under extreme sweat but is more irritating, smells, and is a mess in a bag
+being rummaged in the dark. Skin-Tac comes in individually foil-wrapped wipes: no leak, single-use,
+workable with cold hands at 03:00.
 
 **Use, in one decision with four branches:**
 
@@ -706,9 +721,32 @@ further. Two things follow:
    (the medical kind, alcohol and nothing else) are the purpose-built tool and cost almost
    nothing. *Not verified for the specific product ordered — the ingredient list is the check.*
 
-**The five-minute test that settles it:** put Aquaphor on a toe, wipe it with one, tape over it,
-and see whether the tape holds. That is worth more than any reasoning here, and it can happen in
-the kitchen tonight rather than at 03:00 on the course.
+3. **Carry a tackifier and stop fighting for a clean foot.** Chemically, surfactant lifts
+   petrolatum better than alcohol does and 91% IPA beats 75% — but none of it produces a properly
+   clean foot in a parking lot at 03:00. **Skin-Tac makes the tape grab anyway**, which solves the
+   real problem rather than the chemistry problem.
+
+**Sequence: dry wipe → alcohol pad → Skin-Tac → tape.** The tackifier is an addition to the
+degrease, never a replacement — Skin-Tac over Aquaphor still fails.
+
+**Removal caution:** more adhesion means more force coming off, and feet after a hundred-miler are
+macerated. Pull slowly, wet the tape if stubborn, do not rip. Well-stuck Leukotape can take soft
+skin with it.
+
+### The better move: pre-tape the known sites before the start
+
+**This sidesteps the degreasing problem entirely for everything predictable.** Tape the two sites
+he has actually blistered — big-toe callus margins and 2nd toes — at home, on clean dry skin,
+unhurried, before the race. Then lube *around* the tape rather than under it. The mid-race kit
+becomes a surprises-only kit.
+
+**It needs testing first**, because this section's own warning cuts against it: tape adds bulk to a
+toe box whose failure mode was compression, and 08-02 failed by compression. **2026-09-12 is the
+slot** — test the whole stack at once (wipe, Skin-Tac, tape, pre-taped sites) rather than one
+variable at a time, since the question is "does it hold," not which layer did the work.
+
+**The five-minute test that settles the degreasing question:** Aquaphor on a toe, one wipe, tape
+over it, see whether it holds. Kitchen, tonight — worth more than any reasoning here.
 
 **Caveat specific to this athlete, and it is in tension with the rest of this section:** the note
 above warns that *"tape in particular adds bulk to a toe box whose failure mode was compression."*
