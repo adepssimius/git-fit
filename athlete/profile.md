@@ -441,6 +441,35 @@ problem from race day's. Do not count it as having rehearsed the aid-station rou
 | 4 legacy headlamps | spare stock | — | owned |
 | **Panasonic NCR18650GA ×10** | feeds both 18650 lights | — | ordered |
 
+### Power — one cell format, three roles (recorded 2026-09-08)
+
+| item | notes |
+|---|---|
+| **Yanii PD2 power bank** | Takes **18650 cells**, USB-PD in and out — charges cells *or* discharges to USB |
+| **USB-C cables, right-angle both ends, 0.5m ×n** | Short enough not to flap; the right angle removes the lever arm that snaps USB-C ports when something tugs in a waistband |
+
+**This is the payoff of standardising on 18650, and it went further than the original goal.** The
+same NCR18650GA cells now feed the Zebralight, the Convoy **and**, through the bank, everything
+USB — watch, phone, the NU25s. One chemistry, one format, one spares pile.
+
+**With ten cells he will almost certainly never recharge one mid-race** — he will swap. An 18650
+does not meaningfully charge in a 30-second stop. **So the bank's real job is USB output**, and
+cell-charging is a nice-to-have for dwell time rather than something to plan around.
+
+**Weight:** cells are ~48g each, so the bank probably lives in the start/finish bag until dusk
+rather than riding from 09:00.
+
+**THE OPEN ITEM, AND IT IS THE HIGHEST-STAKES ONE IN THE POWER SYSTEM: watch runtime over 30
+hours.** GPS plus ZoneSense running continuously is demanding — DFA a1 needs uninterrupted HR and
+constant computation. If the watch dies at hour 24 he loses both the recording of the entire race
+and the instrument he paces by (`races/2026-10-17-ghost-train.md` § "Race-day pacing: use
+ZoneSense"). Two things to establish:
+
+- Realistic runtime in the GPS mode he will actually use.
+- **Whether it can be charged while moving.** Suunto's magnetic charging clip is not very secure
+  and detaches easily — that is the one connection a right-angle cable cannot help with. **Worth
+  testing on 2026-09-12**, which is long enough to try it even though 7h will not test a 30h drain.
+
 **The emergency light being on a different cell format is deliberate and correct.** It is the
 backstop against a *systemic* failure — every 18650 flat, or the bag holding them lost — which a
 same-format backup would not survive. A primary cell (CR123) is the right chemistry for that role:
