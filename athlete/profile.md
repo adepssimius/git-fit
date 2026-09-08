@@ -397,7 +397,7 @@ equipment:
 | item | notes |
 |---|---|
 | **Naked Running Band** | Waist belt, minimal carry. Matches the lap-sim instruction to *"practise running LIGHT rather than practising a heavy carry"* — correct given aid every ~6km |
-| **700ml Sportiva soft flask** | Single flask. ~50min between aid stations at lap 1-2 pace, ~100min between drop bags — ample in October |
+| **700ml Sportiva soft flask ×2** | One filled, **one carried empty** (athlete, 2026-09-08). ~50min between aid stations at lap 1-2 pace, ~100min between drop bags — one flask is ample on capacity in October; the second is for the three reasons below |
 | **Collapsible cups ×4** | **Required: the race provides no cups.** **Two carried, one spare in each drop bag** (athlete, 2026-09-08). Two on the body is the point — drop one in the dark and he still has one in hand, restocking at the next bag rather than going 12km cupless |
 | **Spork** | For aid-station real food and broth. Ties to the 09-07 finding that solid food, not savoury flavour, is what relieves the hunger |
 
@@ -406,9 +406,22 @@ losing the only cup means he cannot drink *anything* at an aid station except by
 the flask. Now four cups, two of them on his body. Still worth attaching the carried pair so they
 are not dropped in the first place.
 
-**One flask forces a choice about what is in it.** Tailwind is at all four stations, so the clean
-split is **Tailwind in the flask, everything else from the cup while standing at the station** —
-water, soda, broth. That only works if the cup is on him.
+**~~One flask forces a choice about what is in it~~ — resolved by the second flask.** Three
+things the empty one buys, for ~35g:
+
+1. **Fluid separation.** Tailwind in one, water in the other, rather than picking one and drinking
+   the rest standing.
+2. **Backup.** Soft flasks split and bite valves fail.
+3. **Broth, and this is the one that matters.** `log/2026-09-06.md` established he wants savoury
+   food at night, and broth is the standard 03:00 answer — salt, calories, warmth and fluid at
+   once. **A cup means drinking it standing; a flask means taking it with him.** That is the
+   difference between a 30-second stop and a five-minute one, repeated across several laps.
+
+Dedicate one flask to Tailwind and let the second carry the variable stuff — it will taste of
+whatever went in it.
+
+**Race-day kit only.** On 2026-09-12 every gap between the car and the north bag is 5km, so one
+flask covers it and the second is redundant there.
 
 **Neither the cup nor the spork gets tested on 2026-09-12.** That session is self-supported from
 drop bags: no aid stations, no Tailwind, no broth, no volunteers. Saturday's carry problem (stage
