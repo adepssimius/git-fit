@@ -323,13 +323,28 @@ equipment:
   sweat_rate: "low-average"         # informs sodium at the lower end of typical — see rules/fueling.md
 ```
 
+### Chafing — nipple shields are a known recurring failure (recorded 2026-09-07)
+
+Absent from this repo until now, and it should not have been: the only prior mention anywhere was
+the abstract phrase *"find out what chafes, dies or annoys you"* in the 08-18 kit shakedown, a
+session that was skipped and never reached his watch.
+
+**He plans two spare pairs of nipple shields in each drop bag — four pairs staged.** That is the
+provisioning of a known recurring problem, not a precaution, and should be read that way.
+
+- **Adhesive fails when wet**, and mid-October in NH across 30 hours makes rain or heavy dew live.
+  Worth confirming they adhere to skin that has been sweating for fifteen hours, which is the
+  condition they must survive — not a fresh application.
+- **The Aquaphor already staged in both bags is the fallback** if shields will not stick, with
+  tape behind it. Nothing extra needs staging.
+
 ## Footwear — the Mont Blanc runs small
 
 ### The rotation (recorded 2026-08-15 — none of this was in the repo before)
 
 | shoe | size | use |
 |---|---|---|
-| Altra **Lone Peak 9** | 9.5 | trail. Correct fit; the fit reference |
+| Altra **Lone Peak 9** ×3 | 9.5 | trail. Correct fit; the fit reference. **Three pairs** (athlete-confirmed 2026-09-07) — enough to stage one in each drop bag with a spare at home |
 | Altra **Mont Blanc Carbon** | 9.5 | RETIRED for distance — too narrow |
 | Altra **Mont Blanc Carbon** | **10** | trail, race candidate |
 | Altra **Experience Flow 2** | **10** | road, medium-high cushion |
@@ -364,7 +379,12 @@ The Lone Peak's role is therefore the **backup in the start/finish crew bag** �
 switch into if the Mont Blanc's toe box goes wrong, or late when feet swell — not the standard
 the Mont Blanc must justify itself against. Race-day swap logic: stay in the Mont Blancs while
 the feet are quiet, swap on the toe box talking or visible swelling, NOT at a scheduled lap.
-Rehearse the swap at the Big Day, which already has three crew stops.
+~~Rehearse the swap at the Big Day, which already has three crew stops.~~ **Superseded
+2026-09-07.** The Big Day was never run (`log/2026-09-05.md`); the swap is unrehearsed, and the
+next opportunity is lap sim 1 on 2026-09-19. Separately, the athlete now expects to run the race
+**uncrewed** — see `log/2026-09-06.md` — so "crew stops" throughout this file and
+`races/2026-10-17-ghost-train.md` means self-serve drop bags at the start/finish and the 7.5mi
+turnaround. That rewrite is pending and deliberately not done here.
 
 **Altra Lone Peak 9, size 9.5 — correct fit.** The reference shoe.
 
@@ -411,6 +431,29 @@ threshold session, with never more than a single rest day in a row. Read a linge
 question about what it has been asked to absorb since, not about the skin. This is an observation
 about *this* blister, not a standing rule.
 
+> ## ✅ RESOLVED 2026-09-06 — checkpoint 2 passed. Read this box before the section below.
+>
+> The test specified below was **not** delivered by 08-15, which was run in toe socks — the one
+> kit change this protocol forbids — and blistered at the callus margins. It was delivered
+> instead by an unplanned **30.08km on 2026-09-06** (`log/2026-09-06.md`), which met every
+> condition set out here: Mont Blanc **10**, ~30km, **Balega Hidden Comfort rather than toe
+> socks**, no tape, Aquaphor between the toes, run to race strategy on the race course.
+>
+> **Result: no blisters, no hotspots — neither mechanism recurred.** The "new blister in a new
+> location" signal named below did not fire.
+>
+> **The 10s now have one clean pass in the ~30km class**, at race-representative pace. This
+> establishes checkpoint 2, not the race: 30km is 19% of 160km, feet swell over 20+ hours, and
+> the callus-margin mechanism needs accumulated shear. **Lap sim 1 (2026-09-19) is the next
+> session long enough to move it.**
+>
+> Two variables separate 08-15 from 09-06 — toe socks out, lubricant in — alongside far less fast
+> running, so which change did the work is not isolated. It does not need to be: the working
+> combination is known and free to repeat.
+>
+> The section below is kept as written because it is the protocol that was finally followed, and
+> the reason the result is trustworthy.
+
 **What Saturday actually tests.** Checkpoint 2, the ~30km class that broke the 9.5s. The residual
 blister is a leftover from a **retired shoe**, so it is a confound to note rather than the subject
 of the test:
@@ -441,6 +484,7 @@ These had been getting conflated. They are different problems with different fix
 |---|---|---|---|
 | **08-02**, Mont Blanc **9.5** | both 2nd toes, at 3rd toe contact | clean | **compression** — narrow last, toe-on-toe |
 | **08-15**, Mont Blanc **10** | outer edge, both big toes | **at a callus margin** | **shear at a stiffness discontinuity** |
+| **09-06**, Mont Blanc **10**, 30.08km | **none** | — | **neither mechanism fired.** Balega Hidden Comfort + Aquaphor between the toes, no toe socks, race-strategy pace |
 
 **The compression problem was actually fixed by sizing up.** 23.5km including 24min at
 5:15-5:32/km in the 10s and the 2nd-toe blisters did not recur.
@@ -465,6 +509,36 @@ work ~2 weeks out from the race. This outranks the shoe decision.
 **Do not wear toe socks in the Mont Blancs.** Toe socks add width between every toe, and in a last
 whose known defect is narrowness that pushes the outer toes into the shoe walls. Secondary to the
 callus work now, but free to obey.
+
+### Toenails — a standing baseline, NOT a fit signal (recorded 2026-09-07)
+
+**His big-toe nails are sore past ~20km, in any shoe, and always have been.** Athlete's own
+words: *"the nail pain is something that I have always experienced. It's not my toenails hitting
+shoe ... my big toe always feels sore in the toenail no matter what,"* and *"the only variable is
+distance. Once I go above 20k I get some nail pain."*
+
+- **The nail is not striking the toe box.** He has investigated that specifically and ruled it
+  out. The pressure is on the nail bed **from beneath**.
+- **It varies with distance, not with footwear**, so it carries **no information about fit** and
+  must not be read as one. Every long run in this file is over 20km, so nail soreness is expected
+  on all of them — a signal that fires on every row cannot separate the rows. A session in
+  2026-09 read it as a too-small-shoe signal and had to withdraw that.
+- **His nails are already bruised** from previous Lone Peak runs, and he regards losing toenails
+  as routine for him. He starts the race with damaged nails; that is the baseline, not a change.
+- **NOT a go/no-go criterion.** `races/2026-10-17-ghost-train.md` makes "feet: hot spots vs actual
+  damage" a stop check. **Big-toe nail soreness is neither** — he crosses 20km inside lap 1 of 7
+  and spends ~80km above onset at the A-goal, so treating it as a stop signal would burn time and
+  possibly a needless shoe change on something that was always going to appear.
+- **Unknown and worth more than anything else here:** whether it plateaus past 20km or scales
+  with distance. At 30km he called it *"a little."* The unasked data point is his 50k on this
+  course three years ago, and whether he lost the nail then.
+- **Do not attempt a large stride change before this race.** He has proposed one, and the
+  mechanism reasoning is sound — plantar loading through the hallux is what stride governs. The
+  objection is timing: six weeks out, with an active ITB and a history of tissue limiters, a gait
+  overhaul redistributes load onto achilles, plantar fascia and calf during taper, with the payoff
+  arriving long after October. **The small, already-proven version is the cadence lever below**
+  (raise 5-10%), which shortens stride without rebuilding anything. The gait project is a good
+  off-season question.
 
 Standing rule: log blistering by **location and symmetry**, not just presence. Bilateral and
 specific points at fit; unilateral points at gait, camber, or a lacing/sock issue.
