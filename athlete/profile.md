@@ -686,6 +686,8 @@ transmits the shear straight through, and its adhesive lifts once a foot is prop
 | Small scissors | Cut to shape — pre-cut strips at home, for cold hands at 03:00 |
 | **Non-adherent pads** (Telfa-type), 2 per bag | **Only for a deroofed blister** — they exist so the dressing does not bond to raw dermis and tear it off on removal. Ordinary gauze sticks to a weeping wound. Unused in branches 1-3, where tape goes straight on skin. Second job: the dry-wipe for bulk grease |
 | **Skin-Tac wipes** | Tackifier — makes tape grab skin that is not perfectly clean. See the degreasing note below |
+| **Gloves, individually wrapped** (athlete, 2026-09-08) | **Use nitrile, not latex — petrolatum degrades latex.** Their real job is not hygiene but breaking the re-contamination loop: bare fingers carrying Aquaphor will re-grease a toe that was just degreased, defeating the whole sequence. Also correct for anything involving a needle and broken skin when uncrewed with nowhere to wash. Slightly oversized goes on far easier over damp hands at 03:00 |
+| **Small ziplock** | Trash pocket for used gloves and wipes — he is standing at his own drop bag, not an aid-station table |
 
 **Skin-Tac chosen over tincture of benzoin (2026-09-08), on format.** Both are tackifiers. Benzoin
 is slightly stickier under extreme sweat but is more irritating, smells, and is a mess in a bag
