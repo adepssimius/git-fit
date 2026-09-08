@@ -388,9 +388,53 @@ equipment:
   incline_walking_pad: null         # unconfirmed — optional, not load-bearing for the plan
   weight_vest: false                # NOT RECOMMENDED for this build — see note below
   gym_access: true                  # for strength/program.liftoscript
-  headlamp: "4 available"           # no shortage; pick two for the race + spares in the crew bag
+  headlamp: "4 available"           # legacy stock; the race setup is the two lights below
   sweat_rate: "low-average"         # informs sodium at the lower end of typical — see rules/fueling.md
 ```
+
+### Night lighting — rebuilt after the 2026-09-06 failure (recorded 2026-09-08)
+
+The old setup died mid-session: two of three lights flat inside **4h26** of darkness, against
+**~12.1 hours** on race night (`log/2026-09-06.md`). Replaced with a two-light, one-cell system.
+
+| role | light | notes |
+|---|---|---|
+| **Handheld — wildlife spotting** | **Convoy S3**, 18650, **4000K high-CRI** (719A emitter, Nichia-519A class) | Throw. Used intermittently |
+| **Chest — running light** | **Zebralight H600Fc Mk IV**, 4000K high CRI | Frosted = pure flood, no hotspot. Chest mount gives ground texture that head-height light flattens. **NOT YET IN HAND** as of 09-08 |
+| **Cells** | **Panasonic NCR18650GA ×10** | ~3500mAh, flat-top unprotected. Chosen specifically so one cell type feeds both lights |
+
+**WHY HIGH CRI OVER BRIGHTNESS — the athlete's reasoning, and it is better than the generic
+argument.** 2026-09-08: *"high CRI is more important than brightness since the porcupines hide in
+the brush to the side of the trail so I have to pick them out by color."*
+
+**That is a colour-discrimination task, not an illumination one.** Picking a brown animal out of
+brown brush at the trail edge is not solved by more lumens — it is solved by rendering the colour
+difference between animal and vegetation, which is exactly what CRI measures. He has had several
+night-time porcupine encounters on this course; on 09-06 one of them forced him to slow enough to
+contaminate the session's pace average. **Accept the 10-20% output penalty high-CRI neutral emitters
+carry. It buys the thing the light is actually for.**
+
+**Cell standardisation is the point of the whole system.** One cell type means every spare is
+fungible in either light — no sorting in the dark with cold hands, which is what a mixed-format kit
+costs at 03:00. Two spares carried on the body; the night's full supply in the drop bag, restocked
+at every pass (~12.1km apart, ~7 passes across the night).
+
+**Policy: run cells to empty, swap reactively** (athlete decision 2026-09-07 — see
+`log/2026-09-06.md` for why scheduled swapping was rejected: it wastes partial charge and needs
+*more* cells, and redundancy already means a dead light is never darkness). **One exception —
+start the dark section on fresh cells.** Beginning 12 hours of night on a part-used cell is the one
+avoidable failure here, and dusk is a drop-bag point in daylight.
+
+**Open items:**
+- **Low-voltage protection, and it interacts with run-to-empty.** The GA is an *unprotected* cell,
+  so nothing in the battery stops an over-discharge — the light has to. Zebralight has LVP built
+  in; whether the Convoy's driver does depends on the driver. **Worth confirming before running a
+  cell flat in the Convoy on purpose**, or the cost of the test is a damaged cell that is then
+  unsafe to recharge.
+- **What goes on his head.** The H600Fc is pure flood on the chest; a chest light alone leaves
+  nothing where he turns to look. A dim headlamp alongside solves it and he already owns four.
+- **Measured runtime at working brightness**, which is what the 09-12 session exists to produce.
+  Rated figures are not the number.
 
 ### Chafing — no history of it; shields are cheap insurance (recorded 2026-09-07)
 
