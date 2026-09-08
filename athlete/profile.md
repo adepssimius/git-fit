@@ -535,8 +535,18 @@ avoidable failure here, and dusk is a drop-bag point in daylight.
   unsafe to recharge.
 - **What goes on his head.** The H600Fc is pure flood on the chest; a chest light alone leaves
   nothing where he turns to look. A dim headlamp alongside solves it and he already owns four.
-- **Measured runtime at working brightness**, which is what the 09-12 session exists to produce.
-  Rated figures are not the number.
+- **Measured runtime at working brightness — and it is an INDOOR test, not a field one**
+  (athlete's correction, 2026-09-08). Controlled, one output level, no variables; the field would
+  give a muddier number because levels change. **"Runtime" is also not one number for a
+  Zebralight** — it regulates, then steps down. The figure that matters is **time to first
+  meaningful step-down** at his working level, which is when the light stops being the light he
+  planned for. Time-to-zero is much less useful.
+- **What 09-12 uniquely tests is everything runtime is not:** beam pattern at speed on real trail,
+  chest-mount stability over hours, mode changes with gloves on while tired, the daylight-to-dark
+  handover, a cell swap with cold hands, Convoy retrieval from the side pocket at pace.
+- **Zebralight ordered 2026-09-08, arrival uncertain.** If it misses 09-12 the loss is the
+  chest-light ergonomics only — runtime is recoverable indoors any evening, and the Convoy can
+  still be field-tested.
 
 ### Chafing — no history of it; shields are cheap insurance (recorded 2026-09-07)
 
