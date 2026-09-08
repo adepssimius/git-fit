@@ -482,10 +482,14 @@ it holds charge for years sitting unused.
   points where the face points, so spotting something in side brush means turning the whole head,
   while a handheld is simply aimed. The one job the light exists for is the job the handheld does
   best.
-  **What makes or breaks it is "readily accessible."** A wildlife moment is a two-second thing; a
-  flashlight in a zipped pocket may as well be in the car. It wants a front stretch pocket or a
-  wrist lanyard — one-handed, without looking. **Settle it on 2026-09-12**, the session where he
-  will actually reach for it.
+  **Carried in a side stretch pocket on the Naked band** (athlete, 2026-09-08) — reachable
+  one-handed without breaking stride, which is the requirement.
+  **Consider tethering it.** The Convoy is the *only throw light on his body*: the Zebralight is
+  flood, the Foursevens is emergency, the NU25s are in bags. A metal light can work its way out of
+  a stretch pocket over hours of bouncing, and losing it means no wildlife spotting until the next
+  drop bag ~12km away. A wrist lanyard or a short tether to the band removes that for nothing.
+  **Check on 2026-09-12 whether it stays put over seven hours** — same failure mode, shorter
+  timescale.
   **Failure path is still covered:** the NU25s are banked, so a dead chest light means a head
   option at the next bag.
 - **Charge both NU25s before race day and verify the Foursevens' cell.** The NU25 battery is built
