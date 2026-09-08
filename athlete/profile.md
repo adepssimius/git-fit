@@ -68,7 +68,9 @@ time_budget:
     - 2026-08-18  # night run — needs full dark
     - 2026-09-05  # BIG DAY — early start so it finishes by noon AND sets up the next morning
     - 2026-09-06  # pre-dawn on 50k legs — 03:00, the whole point is sleep-deprived + dark
-    - 2026-09-11  # night run past midnight
+    - 2026-09-12  # lap sim 1 — dusk start (~19:00); rehearses the daylight->headlamp
+                  # transition and puts ~3h of the session in the dark. Moved here from
+                  # 09-19 on 2026-09-07 (possible work travel); absorbs the 09-11 night run
     - 2026-09-16  # bicarb session — needs a 1.5-2h pre-load window before the start
     - 2026-09-26  # night long run — 03:00 start, dark into dawn
     - 2026-10-06  # taper night run — needs dark
