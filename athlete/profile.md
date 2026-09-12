@@ -384,6 +384,7 @@ equipment:
   suunto_watch: true
   bike_trainer: true                # used during meetings
   emtb: true                        # unplanned, active-recovery only
+  ebike_commute: true               # TRANSPORT, not training — see the note below
   road_bike: true                   # unplanned group rides
   incline_walking_pad: null         # unconfirmed — optional, not load-bearing for the plan
   weight_vest: false                # NOT RECOMMENDED for this build — see note below
@@ -391,6 +392,27 @@ equipment:
   headlamp: "4 available"           # legacy stock; the race setup is the two lights below
   sweat_rate: "low-average"         # informs sodium at the lower end of typical — see rules/fueling.md
 ```
+
+### E-bike activities: the athlete's own labels separate transport from training (2026-09-12)
+
+**Recording convention, athlete-proposed and adopted.** He rides an e-bike to collect his kid from
+school; that appears in `workouts_list` as a real activity and is indistinguishable from training
+by the numbers alone. **The feed cannot tell a school run from a ride, so the label does it:**
+
+| recorded as | meaning | counts as load |
+|---|---|---|
+| **e-MTB** | a ride — unplanned, active-recovery only | **yes**, per `training/block.md` § Unplanned sessions |
+| **e-bike + commute type** | **transport** | **no.** Not a session; triggers no week adjustment |
+
+Athlete, 2026-09-12: *"picking my kid up from school, 3.2 miles round trip on what is mostly an
+electric moped with pedals. I don't have to work hard and I don't leave HR Z1."*
+
+**Why this is written down rather than left to judgement.** On 2026-09-12 a daily brief found a
+1h42 e-bike activity inside what `log/2026-09-11.md` had recorded as a full rest day, and treated
+it as unplanned training load requiring a week adjustment — the day before the block's largest
+session. It was the school run. **The heart rate said so and the reading still went the wrong way**
+(avg HR 74, 3.5 km/h), which is exactly why a label beats an inference. **Do not adjust a week for
+a commute.**
 
 ### Race carry — Naked band, one flask, and a cup that must not be lost (recorded 2026-09-08)
 
