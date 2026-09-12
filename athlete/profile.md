@@ -460,8 +460,20 @@ problem from race day's. Do not count it as having rehearsed the aid-station rou
 | **Convoy S3**, 4000K high CRI (719A) | Handheld — wildlife spotting | 18650 | ordered |
 | **Foursevens**, small high-output | **Emergency**, carried | *different format* | owned |
 | **Nitecore NU25 ×2** | Backup, one per drop bag | built-in Li-ion, **not swappable** | owned |
-| 4 legacy headlamps | spare stock | — | owned |
+| **Nitecore NU21 ×2** | Backup | built-in Li-ion, **not swappable** | owned |
 | **Panasonic NCR18650GA ×10** | feeds both 18650 lights | — | ordered |
+
+**~~"4 legacy headlamps" as a separate line~~ — CORRECTED 2026-09-12.** There is no legacy stock
+behind these. Athlete: *"The 2x NU25 lamps are included in the 4 'legacy' count. The other 2 are
+NU21 headlamps."* **The headlamp inventory is four lamps total — 2x NU25 and 2x NU21 — not four
+plus two.** Counting them twice inflated the on-hand total from 5 sources to 7.
+
+**The consequence is bigger than the count.** All four headlamps carry **built-in, non-swappable
+Li-ion**. Only the two 18650 lights and the Foursevens take cells at all, and the 18650 pair is not
+yet in hand. **So for any session before the Zebralight and Convoy arrive there is no
+battery-swapping strategy available** — every headlamp is a fixed budget of runtime that must
+start full, and carrying "spare batteries for the legacy lamps" is not a thing that exists. Charge
+all four, and treat the count of lamps as the entire reserve.
 
 ### Power — one cell format, three roles (recorded 2026-09-08)
 
