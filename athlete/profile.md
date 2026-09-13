@@ -657,6 +657,12 @@ Two notes that survive anyway, both cheap:
 | Altra **Experience Flow 2** | **10** | road, medium-high cushion |
 | Altra **Escalante** | 9.5 | road |
 
+**The toe-sock experiment, recorded 2026-09-13 — it is referenced elsewhere in this file and its
+outcome was never written down.** *"Toe socks are right out. The increased volume made my good
+fitting shoes cause blisters on my big toes."* **Toe socks are ruled out for this athlete**, and
+the reason generalises: **volume in the toe box is his constraint**, so anything that adds material
+between the toes makes a correctly-sized shoe behave like an undersized one.
+
 Note he runs **9.5 in the Lone Peak and Escalante but 10 in the Experience Flow** — size varies
 by model, so "size 10" was never inherently too big. That mattered on 2026-08-15 when a size-up
 hypothesis for a blister was raised and then ruled out: the 08-12 threshold session was 14min of
@@ -1020,17 +1026,35 @@ generic warning above becomes specific and sharp here.**
 toe sock run"* in the size-10 Mont Blanc. They put fabric between the toes by design rather than
 relying on lube, and they distribute material rather than concentrating it on one taped digit.
 
-**Three candidates, in order of cost:**
+### The candidates collapse to one, and the logic is clean
 
-1. **Swap to the Lone Peak earlier** — free, already in the plan, addresses swelling directly.
-2. **Toe socks** — owned, already run in (§ Footwear, *"the toe sock run"*), purpose-built for
-   interdigital shear, and they distribute material rather than concentrating it on one taped toe.
-3. **Tape**, via the manufactured test above — **and note the warning is sharpest here**: between
-   the big and second toe is the tightest space in the shoe, so tape adds bulk exactly where a
-   swelling foot has least room.
+**~~Toe socks — owned, already run in, purpose-built for interdigital shear.~~ — RULED OUT BY TEST,
+athlete 2026-09-13:** *"Toe socks are right out. The increased volume made my good fitting shoes
+cause blisters on my big toes."*
 
-**Two long sessions remain (09-26, 10-03) and they must not be combined.** A session carrying two
-changes cannot say which one worked.
+**That is a direct test of the volume hypothesis, and it failed.** Fabric between the toes made
+shoes that FIT produce blisters. **Volume in the toe box is the constraint**, and the toe sock is
+the cleanest possible demonstration of it.
+
+| candidate | how it works | verdict |
+|---|---|---|
+| Toe socks | **adds volume** | **tested — caused blisters in well-fitting shoes** |
+| Tape at the medial 2nd toe | **adds volume** | same mechanism, worse odds, and into the tightest space in the shoe |
+| **Lone Peak at end of lap 2** | **gives more room** | **the only candidate that subtracts** |
+
+**Two of the three fixes attacked the problem by putting more material into the space that IS the
+problem.** Only the shoe swap works by enlarging the space — and it is also the only one that is
+free and already in the plan.
+
+> **STANDING RULE: on a swelling foot, the fix comes from more room, never more material.**
+
+**The tape kit is not obsolete** — it remains the right answer for a hot spot that has already
+appeared somewhere it can be taped without crowding, and for the four-branch blister protocol
+above. **It is specifically the medial-2nd-toe site where taping is contraindicated**, because
+that is where a swelling foot has least room.
+
+**10-03 is the test of the shoe swap**, and it is now a single-variable session rather than one
+carrying two changes.
 
 **The five-minute test that settles the degreasing question:** Aquaphor on a toe, one wipe, tape
 over it, see whether it holds. Kitchen, tonight — worth more than any reasoning here.
