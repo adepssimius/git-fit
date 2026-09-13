@@ -317,17 +317,40 @@ Melendy sits **8.24 km** from the race start/finish (`log/2026-09-12.md` § rout
 ~2.3 km / 19 min outbound, ~3.7 km / 31 min inbound. **The walk does the emptying and a refill
 point follows.**
 
-**Each crossing is an up AND a down, both of which he walks.** That makes it a walk *cluster*
-rather than a short break, and **the longest uninterrupted low-intensity window on the lap.**
-Its actual duration is unmeasured — worth noting on 10-03.
+**~~Each crossing is a walk cluster and the longest uninterrupted low-intensity window on the
+lap.~~ — MEASURED 2026-09-13 FROM HIS OWN GPX, AND IT IS MUCH SMALLER THAN THAT.**
+
+| | |
+|---|---|
+| climb starts | 1.15 km north of Melendy (91 m) |
+| summit | 1.40 km (**113.6 m**) |
+| back to flat | 1.73 km (86 m) |
+| **climb** | **250 m long, +23 m — ~9% grade** |
+| **descent** | **330 m long, -27 m — ~8%** |
+| **whole hill** | **~580 m of trail** |
+
+**At walking pace on those grades, roughly 6-8 minutes per crossing.** He crossed it four times on
+09-12 — **~25 minutes of hill walking out of 7h14, about 6% of the session.**
+
+**The conclusion flips: the hill is too small to carry the gastric strategy.** Two gels per lap can
+sync to it and that is genuinely free, but it does not give the gut anything like the clearing time
+the struck sentence implied.
+
+**So the deliberate pre-aid walk is part of the plan, not an exception.** It is additive, it costs
+~40 s per station, and **there is no terrain on this course that will do the job instead** — the
+hill accounts for ~100 m of 09-12's 234 m of total ascent and the rest of the course is genuinely
+flat. Nothing else exists to hang a walk break on.
 
 **He does not need to time the rest, and said so:** *"gels don't have to be timed perfectly."*
 Correct. At ~5 gels per lap, **two sync to the hill and three stay on the timer.** The gut does not
 need every gel walked; it needs periodic clearing windows, and two per lap is roughly one every
 100 minutes.
 
-**So the practical rule is small: take a gel just before each hill crossing, and leave the timer
-alone otherwise.**
+**So the practical rule has two halves, and the second one is the load-bearing half:**
+
+1. **Take a gel just before each hill crossing** — free, two per lap, no timer change.
+2. **Walk the last 3-5 minutes into each aid station** — additive, ~40 s each, and the only
+   clearing window this course actually offers in quantity.
 
 ### Where this gets tested
 
