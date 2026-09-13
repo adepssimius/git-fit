@@ -455,12 +455,36 @@ fallback when gels stop being palatable in the back half, and it is stocked at e
 | | |
 |---|---|
 | **Start in** | **Altra Mont Blanc Carbon, size 10** |
-| **Change to** | **Altra Lone Peak 9, 9.5** — planned around lap 3-4, at whichever bag it falls to |
+| **Change to** | **Altra Lone Peak 9, 9.5 — at the END OF LAP 2 (~48 km)**, at the start/finish bag |
 | **Socks** | Balega Hidden Comfort, changed at any bag where feet feel off or wet |
 | **Lube** | Aquaphor between the toes |
 
 **This combination carried 52.7km across 09-06 and 09-07 with zero hot spots.** That is the
 strongest footwear evidence in the block and it is why the Mont Blanc starts.
+
+### ~~Lap 3-4~~ → END OF LAP 2, moved 2026-09-13, and the reason is a measured onset
+
+**On 09-12 he ran 50.31 km in the Mont Blanc 10 and a hot spot arrived at ~45.8 km** — the side of
+the second toe facing the big toe, **bilateral**, right worse than left. It did not become a
+blister; he pushed through the last 4 km to finish.
+
+**It is a NEW site, not the old one.** Athlete, 2026-09-13: *"This is a different place than the
+previous 2nd toe issue. The previous 2nd toe issue was due to the too-small Mont Blancs."* **The
+size 10 fits. Something appears past 45 km that does not exist at 30.**
+
+**The mechanism is almost certainly foot swelling.** Feet swell substantially over seven hours, so
+a shoe that fits at 0 km is tighter at 46 km — which explains the late onset, the bilaterality, and
+the interdigital location, since swelling presses the toes together.
+
+**Lap 3-4 is ~48-72 km. Onset is ~46 km. The old plan swapped at or after the problem started.**
+
+**The Lone Peak is his correct-fit reference and has a wider toe box than the Mont Blanc.** Swapping
+at the end of lap 2 puts a wider shoe on a swelling foot at the moment the swelling begins to
+matter — **free, already planned, and it addresses the mechanism rather than taping over it.**
+
+**This is the first fix to try, ahead of tape or toe socks**, because it needs no new kit and no new
+technique. See `athlete/profile.md` § Blister kit for the two fallbacks and the note that taping
+*this particular site* adds bulk exactly where a swelling foot has least room.
 
 **The size-10 question is closed** and the earlier confusion is worth stating plainly: the shoe
 that failed a 30k with blisters and toe-joint soreness was the **9.5**. The 10 has now passed 30km
