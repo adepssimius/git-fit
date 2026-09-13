@@ -966,8 +966,39 @@ long session on the result. **That tests four things a mid-run application never
    to a toe box whose failure mode was compression, and **that can only be answered by running on
    it.**
 
-**Tape the site that actually declared itself at ~45.8 km on 09-12.** He knows where it is now, and
-it is the one most likely to matter on race day.
+**The site, located 2026-09-13: the side of the SECOND TOE facing the big toe. Right more
+pronounced, left also present — BILATERAL.**
+
+**By this file's own standing rule that points at fit:** *"bilateral and specific points at fit;
+unilateral points at gait, camber, or a lacing/sock issue."*
+
+**And it is a known site, not a new one.** The pre-tape paragraph above already names *"big-toe
+callus margins and 2nd toes"* as the two places he has actually blistered. **What 09-12 adds is a
+distance: it starts at ~45.8 km / ~6h30.**
+
+**The mechanism is interdigital compression and it is this shoe's documented weakness.** The medial
+face of the 2nd toe is where the big toe presses into it; the Mont Blanc has a narrow last and the
+**9.5 failed by compression**. **Sizing up to 10 pushed the threshold past 30 km. It did not push
+it past 46.** That is not an argument against the shoe — 103 km with one hot spot is a good record
+— it is that a known weakness reappears at a distance the block had never reached. **On race day he
+passes 46 km inside lap 2.**
+
+**Aquaphor alone is not enough past that distance.** He already lubes between every toe, that site
+included, and it still went at 45.8 km.
+
+### ⚠ The tape plan's own warning bites hardest at exactly this site
+
+**Between the big and second toe is the tightest real estate in the shoe**, and taping there adds
+bulk at the one place with least room — in a toe box whose failure mode is compression. **The
+generic warning above becomes specific and sharp here.**
+
+**Toe socks are the purpose-built alternative and he already owns them.** § Footwear records *"the
+toe sock run"* in the size-10 Mont Blanc. They put fabric between the toes by design rather than
+relying on lube, and they distribute material rather than concentrating it on one taped digit.
+
+**Test both, not one:** the manufactured tape test above, and a long run in toe socks. **Two
+candidate fixes for one known site, five weeks, and two long sessions (09-26, 10-03) to separate
+them.** Do not run them on the same session — a combined test cannot say which worked.
 
 **The five-minute test that settles the degreasing question:** Aquaphor on a toe, one wipe, tape
 over it, see whether it holds. Kitchen, tonight — worth more than any reasoning here.
