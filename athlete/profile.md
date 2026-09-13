@@ -972,19 +972,43 @@ pronounced, left also present — BILATERAL.**
 **By this file's own standing rule that points at fit:** *"bilateral and specific points at fit;
 unilateral points at gait, camber, or a lacing/sock issue."*
 
-**And it is a known site, not a new one.** The pre-tape paragraph above already names *"big-toe
-callus margins and 2nd toes"* as the two places he has actually blistered. **What 09-12 adds is a
-distance: it starts at ~45.8 km / ~6h30.**
+**~~And it is a known site, not a new one — the 2nd toe is already on the pre-tape list, and this is
+the Mont Blanc's narrow last reappearing at distance.~~ — WRONG, corrected by the athlete
+2026-09-13.** *"This is a different place than the previous 2nd toe issue. The previous 2nd toe
+issue was due to the too-small Mont Blancs."*
 
-**The mechanism is interdigital compression and it is this shoe's documented weakness.** The medial
-face of the 2nd toe is where the big toe presses into it; the Mont Blanc has a narrow last and the
-**9.5 failed by compression**. **Sizing up to 10 pushed the threshold past 30 km. It did not push
-it past 46.** That is not an argument against the shoe — 103 km with one hot spot is a good record
-— it is that a known weakness reappears at a distance the block had never reached. **On race day he
-passes 46 km inside lap 2.**
+**Two different problems on the same toe were conflated.** The old one was the **9.5 being too
+small**, at a different location, and it is why that size is retired. **This is a NEW site, in a
+shoe that fits**, appearing only past 45 km.
+
+**That makes foot swelling the leading explanation, and it should have been the first one.** Feet
+swell substantially over seven hours; **a shoe that fits at 0 km is tighter at 46 km.** It accounts
+for everything the narrow-last story did not:
+
+- **why it appears only past 45 km** — swelling is cumulative
+- **why it is bilateral** — both feet swell
+- **why it is interdigital** — swelling presses the toes together
+- **why 30 km never produced it**
+
+**Bilateral still points at fit rather than gait**, but "fit" here does not mean *too small*. It
+means **fit changes with distance**, which is a different problem with a different set of fixes.
 
 **Aquaphor alone is not enough past that distance.** He already lubes between every toe, that site
 included, and it still went at 45.8 km.
+
+### The planned shoe change may already be the fix — and should probably move earlier
+
+**`races/2026-10-17-ghost-train.md` already schedules Mont Blanc Carbon 10 → Lone Peak 9.5 around
+lap 3-4.** The Lone Peak is this athlete's **correct-fit reference** and has a **wider toe box** than
+the Mont Blanc.
+
+**Lap 3-4 is ~48-72 km. Onset is ~46 km.** The swap currently lands at or just after the problem
+starts. **Moving it to the end of lap 2 (~48 km) puts a wider toe box on a swelling foot at the
+moment the swelling starts to matter** — a change to a plan that already exists, costing nothing,
+addressing the mechanism rather than taping over it.
+
+**This is the first candidate to try, ahead of both tape and toe socks**, because it requires no new
+kit and no new technique.
 
 ### ⚠ The tape plan's own warning bites hardest at exactly this site
 
@@ -996,9 +1020,17 @@ generic warning above becomes specific and sharp here.**
 toe sock run"* in the size-10 Mont Blanc. They put fabric between the toes by design rather than
 relying on lube, and they distribute material rather than concentrating it on one taped digit.
 
-**Test both, not one:** the manufactured tape test above, and a long run in toe socks. **Two
-candidate fixes for one known site, five weeks, and two long sessions (09-26, 10-03) to separate
-them.** Do not run them on the same session — a combined test cannot say which worked.
+**Three candidates, in order of cost:**
+
+1. **Swap to the Lone Peak earlier** — free, already in the plan, addresses swelling directly.
+2. **Toe socks** — owned, already run in (§ Footwear, *"the toe sock run"*), purpose-built for
+   interdigital shear, and they distribute material rather than concentrating it on one taped toe.
+3. **Tape**, via the manufactured test above — **and note the warning is sharpest here**: between
+   the big and second toe is the tightest space in the shoe, so tape adds bulk exactly where a
+   swelling foot has least room.
+
+**Two long sessions remain (09-26, 10-03) and they must not be combined.** A session carrying two
+changes cannot say which one worked.
 
 **The five-minute test that settles the degreasing question:** Aquaphor on a toe, one wipe, tape
 over it, see whether it holds. Kitchen, tonight — worth more than any reasoning here.
