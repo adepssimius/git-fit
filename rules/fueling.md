@@ -296,10 +296,38 @@ hour 4.5, but it should be called a cost rather than dressed up as free.
 he has been dry for the last stretch, and a moderately full stomach empties faster than an empty
 one. The target is *cleared enough*.
 
-**Practical next step: map the walk segments against the lap.** Where the hill and the
-semi-technical section actually fall on a 24.1 km lap determines how many gels can be synced to
-terrain for free and how many need the additive walk. **That is a 10-03 observation to make on the
-ground**, not something to derive from a map.
+### Where the hill actually is (athlete, 2026-09-13) — and it lands well
+
+*"There is really just one hill to speak of in this course, and I hit it once on the way north and
+once on the way south. It starts about 1.5 km north of Melendy."*
+
+Melendy sits **8.24 km** from the race start/finish (`log/2026-09-12.md` § route), so:
+
+| | position on the 24.14 km lap |
+|---|---|
+| start/finish aid | 0 |
+| mid-out aid | 6.04 |
+| **hill starts, outbound** | **~9.74** |
+| turnaround aid (DPW) | 12.07 |
+| **hill, inbound** | **~14.40** |
+| mid-back aid | 18.11 |
+| start/finish aid | 24.14 |
+
+**Both crossings sit between aid stations and both leave him arriving at one shortly after** —
+~2.3 km / 19 min outbound, ~3.7 km / 31 min inbound. **The walk does the emptying and a refill
+point follows.**
+
+**Each crossing is an up AND a down, both of which he walks.** That makes it a walk *cluster*
+rather than a short break, and **the longest uninterrupted low-intensity window on the lap.**
+Its actual duration is unmeasured — worth noting on 10-03.
+
+**He does not need to time the rest, and said so:** *"gels don't have to be timed perfectly."*
+Correct. At ~5 gels per lap, **two sync to the hill and three stay on the timer.** The gut does not
+need every gel walked; it needs periodic clearing windows, and two per lap is roughly one every
+100 minutes.
+
+**So the practical rule is small: take a gel just before each hill crossing, and leave the timer
+alone otherwise.**
 
 ### Where this gets tested
 
