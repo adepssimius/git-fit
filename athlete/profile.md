@@ -451,6 +451,10 @@ opposite fixes, which is why the distinction matters.
   one part of 09-12 that was wholly self-inflicted.
 - **`rules/fueling.md`'s "the rate question is closed" is true to 4h19 and open beyond it.**
 
+**Recovery was clean: urine output normal by the next day, asymptomatic, BP 102/65 against a
+112/72 baseline.** He recovers well from it — that is not the same as avoiding it, and the standing
+rules above are unaffected.
+
 Full account: `log/2026-09-12.md` § THE REAL FINDING.
 
 ### Race carry — Naked band, one flask, and a cup that must not be lost (recorded 2026-09-08)
