@@ -124,10 +124,14 @@ That is the **weeks 12-15** number, reached five weeks early, and comfortably pa
 this file prescribes for weeks 9-11. The schedule below is pacing him toward a level he has
 already cleared, so do not use it to hold him back.
 
-**The open question is no longer "can he reach 90 g/hr."** It is whether he can hold 90-100 g/hr
-at hour 12 and hour 20, when gut motility drops and palatability collapses — which is exactly
-what this file already names as the main risk of the gels-only system. The Big Day and both lap
-simulations are the right places to test that; a 3-hour run is not.
+**~~The open question is no longer "can he reach 90 g/hr."~~ — PARTIALLY REOPENED 2026-09-13.**
+It was closed on efforts of 4h19 and shorter. **On 2026-09-12 his stomach stopped emptying at
+~32 km / 4h20 of a 7h14 run, and he could not take fluid on for the last ~18 km.** See § THE
+GASTRIC LIMIT below.
+
+**The corrected statement: the rate question is closed to ~4h19 and open beyond it.** Everything
+in this section describing what he can absorb is true of efforts shorter than the ones that
+matter. Do not quote the 90-118 g/hr figures as settled for a 30-hour race.
 
 Rewrite the progression against real data at the next review rather than editing it piecemeal.
 
@@ -146,11 +150,129 @@ assuming it'll work on race day:
 - **Meeting-time trainer rides are a free, low-stakes place to practice this** — no impact,
   seated, easy to sip/chew consistently. Use them for repetition, not just the long runs.
 
+## ⚠ THE GASTRIC LIMIT — the block's top fuelling finding (2026-09-12)
+
+**On the 50.31 km / 7h14 Big Day his stomach stopped emptying at ~32 km (~4h20).** He could not
+take fluid on for the last ~18 km, urine output collapsed from roughly every 30 minutes to four
+low-output stops across a whole lap, and two hours after finishing — after a hot bath — he came
+close to passing out on the stairs at **BP 88/55** against a ~112/72 baseline. Full account in
+`log/2026-09-12.md` § THE REAL FINDING; standing rules in `athlete/profile.md` § GUT.
+
+**The same session's "getting sick of gels" at 4h37 was almost certainly this, not palate
+fatigue.** It sits within a kilometre of the emptying failure. **A gut that has stopped clearing
+does not want another gel.** The distinction matters because the two readings prescribe opposite
+fixes — vary the flavours, versus cut the concentration.
+
+### What was different that day: concentration
+
+**Tailwind High Carb at 90 g per 700 ml is ~129 g/L**, and he was taking ~90 g/hr of gel on top of
+it. Drinks formulated to empty quickly sit nearer **60-80 g/L**. Every prior long run was
+gels-plus-water and none produced this, including ~90 g/hr for 4h19 (`log/2026-09-06.md`) and
+~118 g/hr for 3h16 (`log/2026-09-07.md`). **Duration is the confound — 7h14 against a previous
+maximum of 4h19 — and it is not separable from one observation.**
+
+### The architecture — three dials, decoupled (athlete decision 2026-09-13)
+
+**This is not a new system. It is the one this file already documented, and 09-12 was the
+departure from it.** § The current system (2026) describes *"high-carb gels on a watch timer"* plus
+*"plain water, deliberately"*, and records that **"sodium is supplemented separately and
+generously."** Gels + water + independent electrolytes is what he was already doing. **The Tailwind
+carrier was the one-off**, adopted on 09-12 only because he had run short of preferred gels — and
+the entry in `log/2026-09-12.md` praised it as a race-day upgrade before the consequence was known.
+
+So the instruction is **return to the established system**, with one thing added that was never
+stated: **how much water a gel actually needs.**
+
+He does not want a carbohydrate drink and prefers gels. **That is fine, and separating the
+functions is better than what failed:**
+
+| function | vehicle |
+|---|---|
+| **Carbohydrate** | **gels only** — preferred, known, and works to at least 4h19 |
+| **Fluid** | **water** |
+| **Sodium** | **a zero/low-carb electrolyte tab** — LMNT, SaltStick, Precision, Nuun |
+
+**Last night two of those dials were welded together.** Decoupled, the flask sits at ~0-2% carb
+instead of 13% and empties fast, while the sodium still does its job.
+
+**Sodium is not optional just because the drink is gone.** Plain water is *harder* to retain than
+lightly salted water — less absorbed, more urinated out — which is the opposite of what a 30-hour
+effort needs, and it carries a real hyponatremia risk at these volumes.
+
+### Water is part of the gel dose, not a separate task
+
+**What the stomach has to empty is the gel plus whatever was drunk with it.**
+
+| water per 40 g gel | resulting concentration |
+|---|---|
+| 150 ml | ~21% — too thick |
+| 250 ml | ~14% — about what failed on 09-12 |
+| **400 ml** | **~9% — the target** |
+
+**One gel per 40 min at 400 ml is ~600 ml/hr.** That is the fluid target, and it is not a separate
+discipline — it is what the gels require in order to work.
+
+**Capacity was never the problem.** One 700 ml flask against aid every ~6 km (50-62 min at lap
+pace) is ~680-840 ml/hr available. On 09-12 the resupply gaps were the same ~65 min. **He had the
+capacity and could not use it.**
+
+**The rule: arrive at every station empty, leave full.** And the flask is a live gauge — **if he
+arrives with fluid still in it, the gut is not clearing.** That is a readout every 50 minutes, all
+race, and it is earlier than any feeling.
+
+**Carry the gels; eat the difference at the stations.** At 400 ml per gel, one flask per leg funds
+only ~60-80 g/hr. Reaching 90+ from carried gels alone needs ~900 ml/hr, which one flask does not
+deliver. **The balance comes off the aid table — candy, soda, real food — where the carbohydrate
+arrives with its own fluid and is not carried a single metre.**
+
+### ⚠ PLACE THE WALKING TO BUY EMPTYING — athlete's idea, 2026-09-13, and it is the best one here
+
+Athlete: *"part of my strategy needs to be strategic about slowing down for parts of the laps to
+allow the emptying to happen. Ideally I would be primed to empty just in time as I approach an aid
+station."*
+
+**Gastric emptying is intensity-dependent** — it slows sharply as effort rises and runs near
+resting rates at walking pace, because blood going to the legs is not going to the gut.
+
+**The strong version is that this adds no walking. It places it.** He already walks the ups and the
+steep downs by strategy; right now that walking lands wherever the terrain puts it. **Scheduling
+some of it to land before aid makes the same total walking do a second job.**
+
+**Shape:** station → gel + a real slug of water → run the leg → **walk the last 3-5 minutes in** →
+arrive cleared → reload.
+
+**Two reasons this beats the theoretically optimal placement:**
+
+1. **He is going to walk into the aid station anyway.** Making that walk five minutes instead of
+   thirty seconds needs no new discipline — it is the version he will still do at hour 18, which
+   matters more than being right.
+2. **It is nearly free.** Walking 5 min rather than running it costs ~40 s per station; sixteen
+   stations across four laps is ~10 minutes. Against a gut that shut down at hour 4.5 that is not
+   a trade.
+
+**Aim to arrive able to take the next load without stacking — not empty.** An empty stomach means
+he has been dry for the last stretch, and a moderately full stomach empties faster than an empty
+one. The target is *cleared enough*.
+
+### Where this gets tested
+
+- **09-26** (night long run, 4h capped) — **too short to stress the gut**; his stomach lasted 4h20.
+  Free place to rehearse the choreography, not a test of the fix.
+- **10-03** (lap simulation 2) — **the real retest.** Long, self-supported, on the course, and the
+  last long session before the taper. **The fix has to be proven here or it goes to race day
+  untested.**
+
+**Track urine output as a live signal, not a post-hoc one.** It fell before anything else did on
+09-12 and it was the earliest warning available.
+
 ## Sodium and fluids
 
-TODO — set specific sodium (mg/hr) and fluid (mL/hr) targets once sweat rate / prior race data is
-available. Rehearse whatever is set on every long run over ~90min, same as carbs — don't leave this
-to be solved in real time on race day.
+**Fluid: ~600 ml/hr, set by the gel dose** — see § THE GASTRIC LIMIT above. Sodium via a
+zero-carb electrolyte tab in the flask, independent of the carbohydrate.
+
+TODO — a specific mg/hr sodium figure still needs setting against sweat rate. `athlete/profile.md`
+records `sweat_rate: low-average`, which argues for the lower end of typical, but nothing here is
+measured. Rehearse whatever is set on every long run over ~90 min, same as carbs.
 
 ## Caffeine and the overnight plan
 
