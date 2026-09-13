@@ -414,6 +414,45 @@ session. It was the school run. **The heart rate said so and the reading still w
 (avg HR 74, 3.5 km/h), which is exactly why a label beats an inference. **Do not adjust a week for
 a commute.**
 
+### ⚠ GUT: gastric emptying stopped at ~32 km / 4h20 on 2026-09-12 — the block's top risk
+
+**The single most important physiological finding of this block, and it was found at hour 4.5 of a
+7h14 session — past where any previous run had reached.**
+
+Athlete: *"I was having trouble hydrating starting about halfway through the front half of lap 2.
+My stomach was not emptying so I could not get more fluid in."* Urine output collapsed over the
+same window — from roughly every 30 minutes to four low-output stops across a whole lap. **Two
+hours after finishing, after a hot bath, he came close to passing out on the stairs: BP 88/55
+against a normal of ~112/72**, recovering to 105/65 over an hour on ~1400 ml of oral rehydration.
+Read on the scene by his wife, an RN, as vaso-vagal.
+
+**What makes this outrank the ITB, the feet and the lighting: all three of those were clean on the
+same session.** The gut is the only system that failed, and it is the one that cannot be worked
+around — a stomach that stops at hour 4-5 cannot fuel or hydrate the remaining 20+ hours of a
+30-hour race.
+
+**Leading hypothesis — carbohydrate concentration, and it is the variable that changed that day.**
+Tailwind High Carb at 90 g per 700 ml is **~129 g/L**; drinks formulated to empty quickly sit
+nearer 60-80 g/L. He ran ~90 g/hr of gel on top of it. Every prior long run was gels-plus-water and
+none produced this — including ~90 g/hr for 4h19 (09-06) and ~118 g/hr for 3h16 (09-07), both
+clean. **Duration is the confound: 7h14 against a previous maximum of 4h19.**
+
+**A correction this forces:** the same session's *"getting sick of gels"* at 4h37 was written up as
+palate fatigue. It sits within a kilometre of the emptying failure and is far more likely the same
+event — **a gut that has stopped clearing does not want another gel.** The two readings imply
+opposite fixes, which is why the distinction matters.
+
+**Standing rules until it is retested:**
+
+- **Dilute the drink.** Target 60-80 g/L, not 129.
+- **Urine output is a live signal**, not a post-hoc one. It fell before anything else did.
+- **No hot bath after a long effort until drinking normally and urinating normally.** Vasodilation
+  on a reduced plasma volume is what turned a fuelling problem into a near-syncope, and it is the
+  one part of 09-12 that was wholly self-inflicted.
+- **`rules/fueling.md`'s "the rate question is closed" is true to 4h19 and open beyond it.**
+
+Full account: `log/2026-09-12.md` § THE REAL FINDING.
+
 ### Race carry — Naked band, one flask, and a cup that must not be lost (recorded 2026-09-08)
 
 | item | notes |
