@@ -168,8 +168,36 @@ fixes — vary the flavours, versus cut the concentration.
 **Tailwind High Carb at 90 g per 700 ml is ~129 g/L**, and he was taking ~90 g/hr of gel on top of
 it. Drinks formulated to empty quickly sit nearer **60-80 g/L**. Every prior long run was
 gels-plus-water and none produced this, including ~90 g/hr for 4h19 (`log/2026-09-06.md`) and
-~118 g/hr for 3h16 (`log/2026-09-07.md`). **Duration is the confound — 7h14 against a previous
-maximum of 4h19 — and it is not separable from one observation.**
+~118 g/hr for 3h16 (`log/2026-09-07.md`).
+
+### The athlete's argument for concentration over duration — and it is a good one
+
+Athlete, 2026-09-13: *"The thing that makes me think it was the Tailwind in the flask was the fact
+that I was still hungry and hydrating fine at the end of my 30k. I went home and ate like crazy."*
+
+**The comparison is at nearly the same time point, which is what makes it worth something.**
+
+| | 09-06, gels + water | 09-12, gels + Tailwind |
+|---|---|---|
+| at ~4h20 | **hydrating fine** | **stomach stopped emptying** |
+| appetite at the end | **hungry** | nauseated |
+| eating afterwards | *"ate like crazy"* | 2 bites of dry chicken, could not continue |
+
+**Appetite is a gut-function signal and should be treated as one.** Hunger at the end of 4h19 says
+the stomach was clearing; nausea and food aversion say it was not. **These are opposite readings of
+the same organ at the same point in a run**, and the variable that differed was the carrier.
+
+**What it does NOT settle, and this is the honest limit:** 09-06 *ended* at 4h19 — essentially the
+moment 09-12 failed. **No session has ever run gels-plus-water past ~4h30.** So the comparison
+establishes that at 4h20 the two carriers produced different gut states; it cannot say whether
+gels-plus-water would still be working at hour 6.
+
+**Net: concentration is now the leading hypothesis rather than one of three.** Duration is not
+eliminated, and it cannot be until the missing experiment is run.
+
+**THE MISSING EXPERIMENT IS THE POINT OF 10-03: gels + water + electrolyte, past 4h30.** It has
+never been done. That is the whole job of that session's fuelling, and it is why 09-26 at a 4h cap
+cannot substitute — it stops at exactly the point where the question begins.
 
 ### The architecture — three dials, decoupled (athlete decision 2026-09-13)
 
