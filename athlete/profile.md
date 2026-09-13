@@ -1053,8 +1053,41 @@ appeared somewhere it can be taped without crowding, and for the four-branch bli
 above. **It is specifically the medial-2nd-toe site where taping is contraindicated**, because
 that is where a swelling foot has least room.
 
-**10-03 is the test of the shoe swap**, and it is now a single-variable session rather than one
-carrying two changes.
+### If tape at all: tape it INTO the Lone Peak at the swap, never into the Mont Blanc before it
+
+Athlete asked (2026-09-13) about taping the 2nd toes **at the start of lap 2 or at the lap-2
+turnaround** — i.e. pre-emptively, before the ~45.8 km onset.
+
+**Pre-emptive taping into the Mont Blanc fights the mechanism.** It adds volume to a toe box that
+is already tightening, during the swelling phase, at the exact site where swelling is the problem.
+**The toe-sock result predicts that brings onset forward, not back.**
+
+| when | what it costs |
+|---|---|
+| lap 2 start, ~24 km | 22 km of added volume before the problem even exists |
+| lap 2 turnaround, ~36 km | 10 km of the same, still in the tight shoe |
+| **end of lap 2, ~48 km — the swap** | **shoe is off anyway, foot accessible, and a WIDER shoe is going on** |
+
+**The swap is the one moment in the race when taping that site does not cost room.** The Lone Peak
+can accommodate ~0.3 mm of Leukotape in a way the Mont Blanc at 46 km cannot.
+
+### 10-03: run it as a bilateral A/B — the problem is symmetric, so the test is free
+
+**10-03 is the last long session. There is no second chance**, and the block cannot afford a
+session that answers only one question.
+
+**Tape the RIGHT at the swap. Leave the LEFT bare.** Same shoe change, same socks, same lube, same
+everything — one variable, two feet.
+
+| outcome | reading |
+|---|---|
+| both clean | the swap did it; tape is unnecessary |
+| taped right clean, left not | tape helps |
+| **left clean, taped right not** | **tape hurt — the volume prediction, confirmed** |
+| both bad | the swap is insufficient and tape did not rescue it |
+
+**Tape the worse side deliberately.** Right was more pronounced on 09-12, so if tape can hold the
+bad foot while the untaped good foot stays clean anyway, it is adding nothing.
 
 **The five-minute test that settles the degreasing question:** Aquaphor on a toe, one wipe, tape
 over it, see whether it holds. Kitchen, tonight — worth more than any reasoning here.
