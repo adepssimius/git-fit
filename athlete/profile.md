@@ -944,10 +944,30 @@ he has actually blistered — big-toe callus margins and 2nd toes — at home, o
 unhurried, before the race. Then lube *around* the tape rather than under it. The mid-race kit
 becomes a surprises-only kit.
 
-**It needs testing first**, because this section's own warning cuts against it: tape adds bulk to a
-toe box whose failure mode was compression, and 08-02 failed by compression. **2026-09-12 is the
-slot** — test the whole stack at once (wipe, Skin-Tac, tape, pre-taped sites) rather than one
-variable at a time, since the question is "does it hold," not which layer did the work.
+**~~2026-09-12 is the slot.~~ — THE SLOT CAME AND WENT WITH NOTHING TO TAPE (2026-09-13).** He ran
+50.31 km with zero foot checks, zero sock changes and no blister; the one hot spot arrived at
+~45.8 km and he pushed through it to finish. **A field test of the tape stack cannot be scheduled,
+because it depends on a hot spot appearing.**
+
+**His replacement is better than the test it replaces (athlete, 2026-09-13):** *"I'm probably
+better off taping that spot by using Aquaphor then using my field kit to clean and tape before I
+start a long run just to try the kit and my taping job."*
+
+**Manufacture the conditions instead of waiting for them.** Deliberately lube the site, then run
+the full field sequence on it — dry wipe, alcohol, flash off, Skin-Tac, Leukotape — and then run a
+long session on the result. **That tests four things a mid-run application never could:**
+
+1. **Whether the degreasing actually works** on a genuinely Aquaphor'd foot — the open question.
+2. **Whether his taping technique is any good**, judged unhurried and in daylight rather than at
+   03:00.
+3. **Whether it HOLDS for hours under load.** A field application at 40 km only proves it stuck at
+   40 km.
+4. **Whether the tape causes its own problem** — this section's own warning is that tape adds bulk
+   to a toe box whose failure mode was compression, and **that can only be answered by running on
+   it.**
+
+**Tape the site that actually declared itself at ~45.8 km on 09-12.** He knows where it is now, and
+it is the one most likely to matter on race day.
 
 **The five-minute test that settles the degreasing question:** Aquaphor on a toe, one wipe, tape
 over it, see whether it holds. Kitchen, tonight — worth more than any reasoning here.
