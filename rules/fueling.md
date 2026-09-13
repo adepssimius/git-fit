@@ -346,11 +346,35 @@ Correct. At ~5 gels per lap, **two sync to the hill and three stay on the timer.
 need every gel walked; it needs periodic clearing windows, and two per lap is roughly one every
 100 minutes.
 
-**So the practical rule has two halves, and the second one is the load-bearing half:**
+### EXTEND the walks he is already taking — do not invent new ones (athlete, 2026-09-13)
 
-1. **Take a gel just before each hill crossing** — free, two per lap, no timer change.
-2. **Walk the last 3-5 minutes into each aid station** — additive, ~40 s each, and the only
-   clearing window this course actually offers in quantity.
+*"I still think I should be taking advantage of the fact that I'm going to be walking anyway,
+that's sunk cost. I should just extend it."*
+
+**This is the right construction and it is cheaper than either earlier version, for a reason the
+earlier versions underweighted: the expensive part of a walk break is not the walking, it is the
+transition.** Slowing down, spinning back up, and the willpower to *choose* a walk on flat ground
+at km 20 when running feels fine.
+
+**On the hill that cost is already paid.** He is in walk mode, the decision is made, and continuing
+a few minutes past the crest is nearly free. **A fresh mid-leg walk break is a second transition per
+lap plus a decision he has to keep making at hour 18** — and decisions are exactly what fails late,
+which is the argument this file already makes for the gel timer.
+
+**The same logic covers the aid stations**, where he is also already slowing to a stop. **Two places
+per lap where the transition is sunk: the hill and the station.**
+
+**The cost is small.** Five extra minutes of walking covers ~530 m, which he would have run in
+~4.4 min at 8:20/km — **~36 s per extension.** Two hill extensions per lap across four laps is
+about 5 minutes.
+
+**The sequence:**
+
+> **gel at the base of the hill → walk up, over, and a few minutes past the crest → run to the aid
+> station → arrive cleared → reload.**
+
+**And the practical rule reduces to one sentence: take a gel before each hill crossing, and let the
+walks he already takes run a few minutes longer than the terrain requires.**
 
 ### Where this gets tested
 
