@@ -234,25 +234,44 @@ station."*
 **Gastric emptying is intensity-dependent** — it slows sharply as effort rises and runs near
 resting rates at walking pace, because blood going to the legs is not going to the gut.
 
-**The strong version is that this adds no walking. It places it.** He already walks the ups and the
-steep downs by strategy; right now that walking lands wherever the terrain puts it. **Scheduling
-some of it to land before aid makes the same total walking do a second job.**
+**~~The strong version is that this adds no walking, it just places it — schedule some of the
+existing walking to land before aid.~~ — WRONG, corrected by the athlete 2026-09-13. The walking is
+TERRAIN-LOCKED and it is already doing a job.**
 
-**Shape:** station → gel + a real slug of water → run the leg → **walk the last 3-5 minutes in** →
-arrive cleared → reload.
+Athlete: *"I still have to walk the uphills and downhills. That's a longevity strategy. Running a
+downhill wrecks your muscles. Running the uphill pushes my cardio way too much."*
 
-**Two reasons this beats the theoretically optimal placement:**
+**That is correct and it is already this repo's own finding** — `log/2026-09-06.md` records
+*"walking the uphills and walking the steep downhills since the downhills are what cause the real
+damage."* **The walk cannot be relocated to an aid station without losing it where it is needed**,
+which would trade eccentric muscle damage for gut time. Bad trade, and the proposal above made it
+without noticing.
 
-1. **He is going to walk into the aid station anyway.** Making that walk five minutes instead of
-   thirty seconds needs no new discipline — it is the version he will still do at hour 18, which
-   matters more than being right.
-2. **It is nearly free.** Walking 5 min rather than running it costs ~40 s per station; sixteen
-   stations across four laps is ~10 minutes. Against a gut that shut down at hour 4.5 that is not
-   a trade.
+### The inverse, and it is better: move the GEL to the walk
+
+**Do not move the walk to the gel. Move the gel to the walk.**
+
+He has walk segments at known points on every out-and-back, fixed by the terrain. **Take the gel
+just before a climb or a steep descent** and the walking he was always going to do covers the
+emptying. **Nothing moves, nothing is added, and the gel timer is a 40-minute cycle — shifting one
+by a few minutes to land before a known hill costs nothing.**
+
+Aid stations then become purely refill points, and he arrives cleared because the terrain already
+did the work.
+
+**Where terrain provides no walk near a gel, a short deliberate walk is the EXCEPTION, not the
+plan — and it is additive, not free.** Walking 5 min rather than running it costs ~40 s per
+station; sixteen stations across four laps is ~10 minutes. Cheap against a gut that shut down at
+hour 4.5, but it should be called a cost rather than dressed up as free.
 
 **Aim to arrive able to take the next load without stacking — not empty.** An empty stomach means
 he has been dry for the last stretch, and a moderately full stomach empties faster than an empty
 one. The target is *cleared enough*.
+
+**Practical next step: map the walk segments against the lap.** Where the hill and the
+semi-technical section actually fall on a 24.1 km lap determines how many gels can be synced to
+terrain for free and how many need the additive walk. **That is a 10-03 observation to make on the
+ground**, not something to derive from a map.
 
 ### Where this gets tested
 
