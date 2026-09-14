@@ -91,6 +91,19 @@ what the professionally designed plan says), never edit it, never treat it as cu
    this athlete, make the adapted version in `training/`, `endurance/`, or `strength/` — don't edit
    the seed.
 
+10. **Write plainly. No jargon dressed up as precision.** Added 2026-09-14 after the athlete
+   called out "*Amber, and it does not bind on a 45-minute recovery run*" — which was econ-speak
+   for "it doesn't change today's plan." Say the plain thing. Specifically:
+   - Don't use **"bind" / "binding" / "does not bind"** to mean a rule or flag matters or doesn't.
+     Say *it doesn't change the plan*, *it costs you nothing*, *that's the limit here*.
+     (The one exception already in the repo: "time is the binding constraint" in `README.md` and
+     `athlete/profile.md`. That one is idiomatic and stays.)
+   - Same for other borrowed-sounding hedges: *obtains*, *is dispositive*, *non-trivial*,
+     *orthogonal*, *load-bearing*, *the operative question*. Pick the everyday word.
+   - The test: would you say it out loud to him at a trailhead? If not, rewrite it.
+   This is about **word choice, not tone.** Keep being direct, keep leading with the conclusion,
+   keep the bold. Just use plain words to do it.
+
 ## Typical workflows
 
 **Authoring a new week** (`training/weeks/wNN.md` doesn't exist yet):
