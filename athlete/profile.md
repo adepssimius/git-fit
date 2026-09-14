@@ -499,7 +499,7 @@ problem from race day's. Do not count it as having rehearsed the aid-station rou
 
 | light | role | cell | status |
 |---|---|---|---|
-| **Zebralight H600Fc Mk IV**, 4000K high CRI, frosted | Chest — running light | 18650 | **NOT IN HAND** |
+| **Zebralight H600Fc Mk IV**, 4000K high CRI, frosted | Chest — running light | 18650 | **IN HAND 2026-09-14, works** |
 | **Convoy S3**, 4000K high CRI (719A) | Handheld — wildlife spotting | 18650 | ordered |
 | **Foursevens**, small high-output | **Emergency**, carried | *different format* | owned |
 | **Nitecore NU25 ×2** | Backup, one per drop bag | built-in Li-ion, **not swappable** | owned |
@@ -512,11 +512,16 @@ NU21 headlamps."* **The headlamp inventory is four lamps total — 2x NU25 and 2
 plus two.** Counting them twice inflated the on-hand total from 5 sources to 7.
 
 **The consequence is bigger than the count.** All four headlamps carry **built-in, non-swappable
-Li-ion**. Only the two 18650 lights and the Foursevens take cells at all, and the 18650 pair is not
-yet in hand. **So for any session before the Zebralight and Convoy arrive there is no
-battery-swapping strategy available** — every headlamp is a fixed budget of runtime that must
-start full, and carrying "spare batteries for the legacy lamps" is not a thing that exists. Charge
-all four, and treat the count of lamps as the entire reserve.
+Li-ion**. Only the two 18650 lights and the Foursevens take cells at all. **So for any session
+where the 18650 lights are not carried there is no battery-swapping strategy available** — every
+headlamp is a fixed budget of runtime that must start full, and carrying "spare batteries for the
+legacy lamps" is not a thing that exists. Charge all four, and treat the count of lamps as the
+entire reserve.
+
+**Updated 2026-09-14 — the Zebralight arrived and works.** Athlete: *"I got my zebra light in today
+and it works great."* That is the first swappable-cell light on his body, so the paragraph above
+now only describes the backup lamps. It also means it missed 09-12 and has **never been run on
+trail**. See below for what is still untested.
 
 ### Power — one cell format, three roles (recorded 2026-09-08)
 
@@ -621,9 +626,16 @@ avoidable failure here, and dusk is a drop-bag point in daylight.
 - **What 09-12 uniquely tests is everything runtime is not:** beam pattern at speed on real trail,
   chest-mount stability over hours, mode changes with gloves on while tired, the daylight-to-dark
   handover, a cell swap with cold hands, Convoy retrieval from the side pocket at pace.
-- **Zebralight ordered 2026-09-08, arrival uncertain.** If it misses 09-12 the loss is the
-  chest-light ergonomics only — runtime is recoverable indoors any evening, and the Convoy can
-  still be field-tested.
+- **~~Zebralight ordered 2026-09-08, arrival uncertain.~~ — RESOLVED 2026-09-14.** It arrived and
+  works. It did miss 09-12, so the predicted cost was paid exactly as written: **runtime is still
+  testable indoors any evening, but the chest-light ergonomics have not been tested at all.**
+  Nothing about beam pattern at speed, chest-mount stability over hours, glove-on mode changes, or
+  the daylight-to-dark handover has been checked on this light. **`endurance/2026-09-26-night-long-run.md`
+  is now the first and only session before the taper that can test any of it.**
+- **Open, 2026-09-14 — what else is in hand?** He confirmed the Zebralight only. The **Convoy S3**
+  and the **NCR18650GA x10** were ordered at the same time and their status is unrecorded. The
+  light ran, so at least one 18650 cell is on site, but "at least one" is not the ten-cell swap
+  plan. Ask before writing the 09-26 kit list.
 
 ### Chafing — no history of it; shields are cheap insurance (recorded 2026-09-07)
 

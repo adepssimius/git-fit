@@ -384,6 +384,10 @@ against **12h05 required**. Full inventory in `athlete/profile.md` § Night ligh
 | **Foursevens**, small high-output | emergency, carried | other |
 | **Nitecore NU25** ×2 | backup, one per bag | built-in |
 
+**Zebralight in hand 2026-09-14** — athlete confirmed it works. It missed the 09-12 lap sim, so it
+has **never been run on trail**. `endurance/2026-09-26-night-long-run.md` is the last real chance to
+test the chest mount before the taper. Convoy and cell delivery status not confirmed.
+
 **Standardising on 18650 is the decision that fixes 09-06.** One cell type, either light, no
 sorting in the dark with cold hands. The same NCR18650GA cells feed both lights and, through the
 Yanii bank, everything USB.
