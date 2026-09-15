@@ -212,6 +212,47 @@ interrupts him is tissue, which has now happened often enough to be a pattern ra
 anecdote. Do not re-author the block on it yet; do weight tissue work accordingly, and revisit
 after the Big Day.
 
+## Meeting walking, 2026-09-15 — cut from 465 to 120min/week, and not replaced
+
+**Athlete, 2026-09-15:** *"The number of meetings I can walk during has just decreased. Can't be
+helped, it was a play to make the most of what I had during the workday and I just haven't had it."*
+
+**Sustainable supply is 120min/week**, and there is no way around it: the walking pad is
+meeting-bound as well, because he cannot type well while using it. So walkable meeting time is the
+only source and it is now the whole budget.
+
+| week | was | is |
+|---|---|---|
+| w15 | 405 | **120** |
+| w16 | 465 | **120** |
+| w17 | 465 | **120** |
+| w18 (taper) | 300 | **120** |
+| w19 (race week) | 150 | **60** |
+
+**Nothing backfills the ~1,600 lost minutes, and that is the deliberate choice.** Three reasons,
+in order of weight:
+
+1. **The tissue this was insurance for has now been tested under load and held.** The stated job
+   was "foot, calf, and achilles durability over 24+ hours." On 09-12 he covered 50.31 km in 7h14
+   and reported *"My feet are fine with zero checks and zero sock changes"* — one hot spot at
+   45.8 km that never became a blister. That is a better durability read than any amount of
+   1 km/h pacing during calls would have produced.
+2. **The plan was already ahead of reality, so the cut is smaller than it looks.** 97min against
+   a planned 180 on 08-10; no walking recorded at all 09-10 through 09-13. The target has been
+   aspirational for weeks. What changed on 09-15 is that the cause is now known and structural.
+3. **Losing the ramp removes a named risk.** `rules/progression.md` calls the walking ramp the
+   block's single most likely source of an overuse injury. A ramp from 405 to 465 that does not
+   happen cannot hurt him. Flat 120 is the safest walking line in the block.
+
+**What this does NOT change.** The remaining open questions are the gut and the feet, and both are
+answered by running, not walking — the gut retest and the bilateral tape A/B both land on the
+10-03 lap sim. Do not respond to this cut by adding running volume to compensate: the time budget
+in `athlete/profile.md` is unchanged, and 32 days out the durability work that matters is already
+on the calendar.
+
+**Open:** the Thursday trainer ride (90min, also meeting time) is assumed intact. If the meeting
+squeeze hit that pool too, w15-w19 need a second pass.
+
 ## Reshaping rules, ordered by impact on the 100-mile outcome
 
 1. **Every week is authored against `athlete/profile.md` time_budget — hard constraint.** Sum
@@ -235,9 +276,10 @@ after the Big Day.
 3. **Convert long runs to time-on-feet at HR/effort**, never a pace target, for anything over ~2h.
 4. **Use doubles** (40–50min easy, pre-dawn or post-bedtime) to add volume without a second
    family-disruption block.
-5. **Spend meeting time on walking first, trainer second** — see `athlete/profile.md`
-   `meeting_budget`. This is the primary answer to the time-on-feet problem and should grow every
-   week toward the peak, respecting `weekly_ramp_max_pct`.
+5. **~~Spend meeting time on walking first, trainer second. This is the primary answer to the
+   time-on-feet problem and should grow every week toward the peak.~~ — REVISED 2026-09-15.**
+   The supply it assumed is gone. See § "Meeting walking, 2026-09-15" below. Walking is now a
+   flat 120min/week through 10-05 and the trainer keeps its Thursday slot.
 6. **Run/walk is a RACE tactic, not a training method — never program walk breaks into a training
    session.** This rule previously said the opposite ("fix a ratio and use it in every long run so
    it's automatic under fatigue"). **Reversed 2026-08-04 by the athlete**, and the reversal is the

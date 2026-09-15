@@ -159,7 +159,8 @@ per-day walking rate against this real 4-day set — don't divide the weekly tar
 
 ```yaml
 meeting_budget:
-  weekly_available_min: 600
+  weekly_available_min: 600        # NOMINAL. The walkable share collapsed 2026-09-15 — see below.
+  walkable_min: 120                # athlete-stated 2026-09-15: the meetings he can walk during
   default_allocation: walking      # durability is the limiter; aerobic base is already largely built
 
   trainer:
@@ -173,6 +174,12 @@ meeting_budget:
     fixed_day: Thursday              # every week of the block — see mutual-exclusivity note above
 
   walking:
+    # ⚠ SUPPLY-LIMITED since 2026-09-15 at 120 min/week. The ramp below is history, not a plan:
+    # the peak it describes was never reached and is no longer reachable. Flat 120 through 10-05,
+    # 60 in race week. Do NOT re-ramp toward 465. training/block.md § "Meeting walking, 2026-09-15"
+    # carries the reasoning and the decision not to backfill the loss.
+    #
+    # Original ramp logic, kept because the injury argument still holds at any target:
     # Ramp deliberately — jumping straight to 10h/wk invites plantar fascia / achilles injury.
     # NOTE: the ramp cap is the binding constraint, not the peak target. Starting at 180 and
     # capped at +15%/wk, the reachable peak is ~465-480 min at block weeks 16-17, NOT 600 by
@@ -386,7 +393,10 @@ equipment:
   emtb: true                        # unplanned, active-recovery only
   ebike_commute: true               # TRANSPORT, not training — see the note below
   road_bike: true                   # unplanned group rides
-  incline_walking_pad: null         # unconfirmed — optional, not load-bearing for the plan
+  incline_walking_pad: true         # CONFIRMED 2026-09-15 — and it adds no minutes. Athlete:
+                                    # "I can basically only take meetings on it. I can't type well
+                                    # while on it." So the pad is meeting-bound like everything
+                                    # else; it does not decouple walking from the call schedule.
   weight_vest: false                # NOT RECOMMENDED for this build — see note below
   gym_access: true                  # for strength/program.liftoscript
   headlamp: "4 available"           # legacy stock; the race setup is the two lights below
