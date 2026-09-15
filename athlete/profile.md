@@ -514,7 +514,7 @@ problem from race day's. Do not count it as having rehearsed the aid-station rou
 | **Foursevens**, small high-output | **Emergency**, carried | *different format* | owned |
 | **Nitecore NU25 ×2** | Backup, one per drop bag | built-in Li-ion, **not swappable** | owned |
 | **Nitecore NU21 ×2** | Backup | built-in Li-ion, **not swappable** | owned |
-| **Panasonic NCR18650GA ×10** | feeds both 18650 lights | — | ordered |
+| **Panasonic NCR18650GA ×10** | feeds both 18650 lights | — | **IN HAND, in use 2026-09-15** |
 
 **~~"4 legacy headlamps" as a separate line~~ — CORRECTED 2026-09-12.** There is no legacy stock
 behind these. Athlete: *"The 2x NU25 lamps are included in the 4 'legacy' count. The other 2 are
@@ -642,10 +642,15 @@ avoidable failure here, and dusk is a drop-bag point in daylight.
   Nothing about beam pattern at speed, chest-mount stability over hours, glove-on mode changes, or
   the daylight-to-dark handover has been checked on this light. **`endurance/2026-09-26-night-long-run.md`
   is now the first and only session before the taper that can test any of it.**
-- **Open, 2026-09-14 — what else is in hand?** He confirmed the Zebralight only. The **Convoy S3**
-  and the **NCR18650GA x10** were ordered at the same time and their status is unrecorded. The
-  light ran, so at least one 18650 cell is on site, but "at least one" is not the ten-cell swap
-  plan. Ask before writing the 09-26 kit list.
+- **~~Open, 2026-09-14 — what else is in hand?~~ — CELLS RESOLVED 2026-09-15.** The
+  **NCR18650GA cells are delivered and in use.** He swapped one cell out for the trail run and
+  put the original back to resume the runtime trial, and he tracks them in an inventory system
+  with printed tags: *"I have an inventory control system for these. I print tags to identify
+  them."* **So cell identity in the field — which one is fresh, which one came out at the DPW —
+  is already solved and needs nothing from the race plan.**
+- **Still open: the Convoy S3.** Never mentioned as arrived. It is the only throw light on his
+  body and the wildlife-spotting tool, so its absence is a real gap rather than a spare.
+  Confirm before writing the 09-26 kit list.
 
 ### Chafing — no history of it; shields are cheap insurance (recorded 2026-09-07)
 
