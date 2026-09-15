@@ -186,9 +186,9 @@ meeting_budget:
     # week 15. The cap wins; the peak arrives later and lower. Per rules/progression.md, never
     # bust the ramp to hit a target number.
     weekly_min_start: 180          # block week 9
-    weekly_min_peak: 465           # realistically reached at block weeks 16-17, then tapers
+    weekly_min_peak: 120           # VOID as a peak — 120 is the supply, flat. See the ⚠ below.
     weekly_ramp_max_pct: 15        # max week-over-week increase — check this every week
-    style: "brisk, sustained; incline pad optional (unconfirmed) — no weight vest, see below"
+    style: "brisk, sustained; incline pad confirmed but meeting-bound — no weight vest, see below"
     # ACTUAL per-block-week totals (min), from the endurance/*-meeting-walk-week.md files —
     # corrected 2026-08-06, the previous version of this comment had drifted from the real files:
     # wk9 180 | wk10 205 | wk11 170 | wk12 — (hiking week, no walk target, see Travel weeks below)
