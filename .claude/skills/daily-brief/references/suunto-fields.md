@@ -107,3 +107,37 @@ post-bedtime, so a UTC render silently shifts sessions to the wrong calendar day
 These sum to **less than** the activity duration — the difference is the ~10min ZoneSense cold
 start, during which there is no reading at all. Report ZoneSense percentages as a share of
 **tracked** time and say so, or the numbers won't reconcile.
+
+## SML: use `Altitude` deltas for grade, never `VerticalSpeed` (found 2026-09-15)
+
+**`VerticalSpeed` in the SML sample stream under-reports by roughly 4x** and will tell you a climb
+is flat. On the 2026-09-15 hill strides it averaged +0.077 m/s over a rep that actually climbed
+5.8 m in 19 s — a true mean of ~0.31 m/s. Reading it at face value produced a brief that told the
+athlete his hill strides were "flat to slightly downhill" and built two further conclusions on top
+of that. He corrected it: *"They were definitely on a hill, your data is wrong. That's a 12-15%
+grade."*
+
+**Do this instead.** Pull `Altitude` and `Distance` together and difference them across the window:
+
+```python
+climb = last["Altitude"] - first["Altitude"]
+grade = 100 * climb / (last["Distance"] - first["Distance"])
+```
+
+`Altitude` is barometric, quantised to 0.2 m, and reliable for elevation *change* over tens of
+metres. `GPSAltitude` arrives in separate samples and is noisier — prefer `Altitude`.
+
+**Barometric altitude still smooths short features downward.** Averaged across a whole 20 s rep
+the 09-15 strides read 7.1-9.7%; the athlete puts the pitch itself at 12-15%, and the 5-second
+windows inside each rep run 8.6-11.4%. **A watch-averaged grade is a floor, not the grade of the
+steep part** — say so rather than presenting it as the measurement.
+
+## Repeat blocks: detect reps from the data, don't assume the prescribed window
+
+Same session, same failure. Anchoring fixed 20 s windows on each rep (because the file said
+`20s`) produced a clean monotonic pace ramp that **did not exist** — real rep durations were
+17-23 s, and the apparent trend was an artefact of the windows.
+
+**Find the reps by thresholding `Speed`** (e.g. contiguous runs above 2.5 m/s) and measure each
+one over its own actual start and end. A `<name> Nx` header tells you how many to expect, which
+is a check, not a window.
