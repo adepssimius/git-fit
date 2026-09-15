@@ -510,7 +510,7 @@ problem from race day's. Do not count it as having rehearsed the aid-station rou
 | light | role | cell | status |
 |---|---|---|---|
 | **Zebralight H600Fc Mk IV**, 4000K high CRI, frosted | Chest — running light | 18650 | **IN HAND 2026-09-14, works** |
-| **Convoy S3**, 4000K high CRI (719A) | Handheld — wildlife spotting | 18650 | ordered |
+| **Convoy S3**, 4000K high CRI (719A) | Handheld — wildlife spotting | 18650 | **ordered 09-08, NOT ARRIVED as of 09-15** |
 | **Foursevens**, small high-output | **Emergency**, carried | *different format* | owned |
 | **Nitecore NU25 ×2** | Backup, one per drop bag | built-in Li-ion, **not swappable** | owned |
 | **Nitecore NU21 ×2** | Backup | built-in Li-ion, **not swappable** | owned |
@@ -580,8 +580,8 @@ it holds charge for years sitting unused.
   flood, the Foursevens is emergency, the NU25s are in bags. A metal light can work its way out of
   a stretch pocket over hours of bouncing, and losing it means no wildlife spotting until the next
   drop bag ~12km away. A wrist lanyard or a short tether to the band removes that for nothing.
-  **Check on 2026-09-12 whether it stays put over seven hours** — same failure mode, shorter
-  timescale.
+  **~~Check on 2026-09-12 whether it stays put over seven hours.~~ — DID NOT HAPPEN.** The light
+  was not here. Moves to 09-26 along with everything else it was going to test.
   **Failure path is still covered:** the NU25s are banked, so a dead chest light means a head
   option at the next bag.
 - **Charge both NU25s before race day and verify the Foursevens' cell.** The NU25 battery is built
@@ -594,8 +594,29 @@ The old setup died mid-session: two of three lights flat inside **4h26** of dark
 | role | light | notes |
 |---|---|---|
 | **Handheld — wildlife spotting** | **Convoy S3**, 18650, **4000K high-CRI** (719A emitter, Nichia-519A class) | Throw. Used intermittently |
-| **Chest — running light** | **Zebralight H600Fc Mk IV**, 4000K high CRI | Frosted = pure flood, no hotspot. Chest mount gives ground texture that head-height light flattens. **NOT YET IN HAND** as of 09-08 |
+| **Chest — running light** | **Zebralight H600Fc Mk IV**, 4000K high CRI | Frosted = pure flood, no hotspot. Chest mount gives ground texture that head-height light flattens. **In hand 2026-09-14.** Untested on trail — see § Night lighting |
 | **Cells** | **Panasonic NCR18650GA ×10** | ~3500mAh, flat-top unprotected. Chosen specifically so one cell type feeds both lights |
+
+### ⚠ The Convoy has not arrived, and it is the only throw light on his body (2026-09-15)
+
+**Ordered 2026-09-08, still not delivered a week later.** Athlete, 2026-09-15: *"nope not here
+yet."*
+
+**Nothing else in the kit does its job.** The Zebralight is frosted — pure flood, deliberately no
+hotspot. The Foursevens is the emergency light on a different cell format and is not a high-CRI
+colour-discrimination tool. The NU25s sit in drop bags. **So no Convoy means no directional light
+on his body at all**, and the one task it exists for — picking a porcupine out of brown brush at
+the trail edge by colour — has no substitute. On 09-06 exactly that encounter forced him to slow
+enough to contaminate a session.
+
+**The deadline is 2026-09-26, not race day.** `endurance/2026-09-26-night-long-run.md` is the last
+session before the taper that can field-test it: the beam on real trail, retention in the Naked
+band's side stretch pocket over hours, and one-handed retrieval at pace. It has already missed
+09-12, which is why the seven-hour retention check above never happened. **If it is not here by
+09-26 it goes into a 30-hour race untested, and the tether question goes with it.**
+
+**Worth chasing the order now rather than at 09-26.** A week of no movement on a small flashlight
+usually means the order has a problem, and a week is most of the remaining runway.
 
 **WHY HIGH CRI OVER BRIGHTNESS — the athlete's reasoning, and it is better than the generic
 argument.** 2026-09-08: *"high CRI is more important than brightness since the porcupines hide in
