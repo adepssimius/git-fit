@@ -602,21 +602,21 @@ The old setup died mid-session: two of three lights flat inside **4h26** of dark
 **Ordered 2026-09-08, still not delivered a week later.** Athlete, 2026-09-15: *"nope not here
 yet."*
 
-**Nothing else in the kit does its job.** The Zebralight is frosted — pure flood, deliberately no
-hotspot. The Foursevens is the emergency light on a different cell format and is not a high-CRI
-colour-discrimination tool. The NU25s sit in drop bags. **So no Convoy means no directional light
-on his body at all**, and the one task it exists for — picking a porcupine out of brown brush at
-the trail edge by colour — has no substitute. On 09-06 exactly that encounter forced him to slow
-enough to contaminate a session.
+**This file already states what its absence costs**, in the tethering note above: *"The Convoy is
+the only throw light on his body: the Zebralight is flood, the Foursevens is emergency, the NU25s
+are in bags."* The task it exists for is the colour-discrimination one — picking a porcupine out
+of brown brush at the trail edge — and on 09-06 that encounter forced him to slow enough to
+contaminate the session's pace average.
+
+**Whether the Foursevens could stand in for it is not recorded.** This file logs it only as
+"small high-output, emergency, different format" — no CRI, no beam profile, no runtime. That is a
+gap in the record, not a judgement about the light.
 
 **The deadline is 2026-09-26, not race day.** `endurance/2026-09-26-night-long-run.md` is the last
 session before the taper that can field-test it: the beam on real trail, retention in the Naked
 band's side stretch pocket over hours, and one-handed retrieval at pace. It has already missed
 09-12, which is why the seven-hour retention check above never happened. **If it is not here by
 09-26 it goes into a 30-hour race untested, and the tether question goes with it.**
-
-**Worth chasing the order now rather than at 09-26.** A week of no movement on a small flashlight
-usually means the order has a problem, and a week is most of the remaining runway.
 
 **WHY HIGH CRI OVER BRIGHTNESS — the athlete's reasoning, and it is better than the generic
 argument.** 2026-09-08: *"high CRI is more important than brightness since the porcupines hide in
