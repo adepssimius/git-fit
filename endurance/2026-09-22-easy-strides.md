@@ -8,7 +8,7 @@ distance_km: 6.9
 duration_s: 2940
 target_mode: effort
 brief: >
-  33min easy, 6x20s hill strides with walk-backs, jog home.
+  31min easy, press lap at the hill, 6x20s strides with walk-backs, jog home.
 follow: >
   ZoneSense Zone 1 for the running — no target set, pace shown as data only. Strides by feel at ~90-95%.
 intent: >
@@ -19,7 +19,10 @@ published:
 ---
 
 Easy aerobic
-- 33m ZoneSense Z1
+- 31m ZoneSense Z1
+
+Hill strides positioning — find the hill, PRESS LAP at the bottom
+- 2m ZoneSense Z1 until-lap
 
 Hill Strides 6x
 - 20s 4:20-4:50/km Pace

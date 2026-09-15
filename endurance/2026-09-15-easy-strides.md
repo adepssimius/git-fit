@@ -7,7 +7,7 @@ block_week: 15
 distance_km: 6.9
 duration_s: 2950
 target_mode: effort
-brief: Easy + 5x20s hill strides
+brief: Easy, press lap at the hill, then 5x20s strides
 follow: ZS Z1; strides by feel
 intent: >
   Strides — smooth and quick, each one an opportunity to improve leg speed.
@@ -17,7 +17,10 @@ published:
 ---
 
 Easy aerobic
-- 33m ZoneSense Z1
+- 31m ZoneSense Z1
+
+Hill strides positioning — find the hill, PRESS LAP at the bottom
+- 2m ZoneSense Z1 until-lap
 
 Hill Strides 5x
 - 20s 4:20-4:50/km Pace

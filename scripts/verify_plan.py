@@ -316,6 +316,49 @@ def parse_file(path: Path) -> tuple[dict, str]:
     return fm, body
 
 
+# A repeat block of short fast reps has to start where the athlete chooses, not where the
+# previous step happens to run out. rules/endurance-authoring.md § until-lap says so in prose,
+# and four sessions were authored without it anyway between 2026-08-11 and 2026-09-29 before the
+# athlete caught it on the morning of a session:
+#   "Never build a plan with strides that does not have a manual button push to start.
+#    I need to position myself."  — 2026-09-15
+# So it is checked, not just documented.
+TODAY = datetime.now().strftime("%Y-%m-%d")
+
+REPEAT_HEADER = re.compile(r"^(.*?)\s+(\d+)\s*x\s*$", re.I)
+
+
+def check_lap_before_repeats(rel, fm: dict, body: str, today: str,
+                             errors: list, warnings: list) -> None:
+    """Any repeat block of sub-3min reps must be preceded by an `until-lap` step.
+
+    Skipped for indoor/trainer work, where there is no terrain to position against.
+    Past-dated sessions warn rather than error — they are records now, and a permanent
+    red mark on a session already run just trains the athlete to ignore this script.
+    """
+    if fm.get("sport") == "Ride" or "concurrent" in fm:
+        return
+    sink = errors if fm.get("date", "") >= today else warnings
+    lines = [ln.rstrip() for ln in body.splitlines()]
+    for i, ln in enumerate(lines):
+        m = REPEAT_HEADER.match(ln.strip())
+        if not m:
+            continue
+        # Only reps short enough that where they start actually matters.
+        nxt = next((l for l in lines[i + 1:i + 3] if l.strip().startswith("-")), "")
+        secs = re.match(r"-\s*(\d+)s\s", nxt.strip())
+        if not secs or int(secs.group(1)) >= 180:
+            continue
+        prev = [l.strip() for l in lines[:i] if l.strip().startswith("-")]
+        if not prev or "until-lap" not in prev[-1]:
+            sink.append(
+                f"{rel}: '{ln.strip()}' has no positioning step before it — the step above it is "
+                f"'{prev[-1] if prev else '(nothing)'}'. A block of {secs.group(1)}s reps must be "
+                f"preceded by a step ending in `until-lap` so the athlete can position himself and "
+                f"press lap. See rules/endurance-authoring.md."
+            )
+
+
 def load_budget(root: Path) -> dict:
     text = (root / "athlete" / "profile.md").read_text()
 
@@ -382,6 +425,8 @@ def main() -> int:
         except ValueError:
             errors.append(f"{rel}: block_week/duration_s not numeric")
             continue
+
+        check_lap_before_repeats(rel, fm, body, TODAY, errors, warnings)
 
         sport, typ = fm["sport"], fm["type"]
         concurrent = "concurrent" in fm   # meetings | family — free time, still real load

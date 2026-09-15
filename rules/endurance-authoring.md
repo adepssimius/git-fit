@@ -181,8 +181,18 @@ climbs — and with the ZoneSense alarm enabled it gives two alarm sources with 
 on a session where the instrument has already been chosen. Keep pace targets for steps where pace
 genuinely is the instrument: strides, intervals, threshold reps, anything under ~9min.
 
-**`until-lap` — the step ends only on a lap press.** Append it when the *terrain*, not the clock,
-decides where a step ends: `- 4km ZoneSense Z1 until-lap` means "run easy for about 4km, and press
+**`until-lap` — the step ends only on a lap press. ENFORCED by `scripts/verify_plan.py`
+since 2026-09-15.** Any repeat block of reps shorter than 3 minutes must be preceded by a step
+ending in `until-lap`, or the session is an error. Outdoor sessions only — trainer work has no
+terrain to position against — and past-dated sessions warn instead, since they are records now.
+
+Athlete, 2026-09-15, catching this on the morning of a session whose guide was already on the
+watch: *"Never build a plan with strides that does not have a manual button push to start. I need
+to position myself."* **This rule was already written below, in prose, and four sessions were
+authored without it anyway between 08-11 and 09-29.** That is why it is now a check. Prose in this
+file is not load-bearing unless something runs it.
+
+Append it when the *terrain*, not the clock, decides where a step ends: `- 4km ZoneSense Z1 until-lap` means "run easy for about 4km, and press
 lap when you reach a hill." Without it, a step ends on its own distance or duration and whatever
 follows begins wherever the athlete happens to be standing — which is wrong for hill strides,
 anything needing a specific surface, and any block that has to start at a known landmark. The

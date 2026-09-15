@@ -5,7 +5,7 @@ name: Race Week Tune-Up
 type: tempo
 block_week: 19
 distance_km: 7.1
-duration_s: 2910
+duration_s: 3030
 target_mode: pace
 brief: >
   2km up, 3x5min at 5:40, 3x30s hills at 5:05, 1.5km down. Sharp, short, confidence.
@@ -30,6 +30,9 @@ Warmup
 Threshold 3x
 - 5m 5:25-5:55/km Pace
 - 60s 9:30/km Pace
+
+Hill positioning — get to the hill, PRESS LAP at the bottom
+- 2m 9:30/km Pace until-lap
 
 Hills 3x
 - 30s 4:50-5:20/km Pace
