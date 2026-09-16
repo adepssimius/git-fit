@@ -92,8 +92,17 @@ them up" would trade a real effect later for a negligible one now.
 - **1 dose: 2026-09-16**, Track 8x400m. The only session in the block at genuinely VO2 pace.
 - **6 doses: banked for the post-race VO2max block** — roughly one per week for a six-week block,
   on the hardest session of each week.
-- Optionally add a second here (Aug 12) *only* if it has been long enough since the last use that a
-  tolerance re-check is worth a dose. Otherwise don't.
+- **~~Optionally add a second here (Aug 12) only if it has been long enough since the last use that
+  a tolerance re-check is worth a dose.~~ — MOOT 2026-09-16. Tolerance is known and fine.**
+  Athlete: *"I can tell you it's fine right now. I have used it before."* **Do not spend a dose on
+  a tolerance re-check**, and do not write GI tolerance into a session's purpose — it is settled.
+
+**What the 09-16 dose actually produces: nothing measurable, and that is fine.** One dose, one
+session, no control, and no prior 8x400 @ 5:18 to compare against — a bicarb effect is small enough
+that ordinary session-to-session variation would swamp it. **The allocation above is a treatment
+decision, not an experiment**, and it should not be argued for as though a measurement were at
+stake. Raised 2026-09-16 when a session brief claimed the dose was a measurement worth protecting;
+the athlete asked what measurement, and there wasn't one.
 
 > Check the date on the packet before banking. If they expire before a realistic VO2 block starts,
 > that changes the arithmetic — spend them in September instead.
