@@ -667,12 +667,13 @@ of three dead inside 4h26 — is closed at this level.**
 preferred level 5 (high 1)**, so the measured number belongs to a setting he does not intend to
 use. A retest at level 5 is planned and is his own call.
 
-**Level 5 pessimistic estimate: 2h45** (athlete, 2026-09-16). **This is an estimate, not the
-lux-logged measurement** that produced the level-4 figure — the level-5 test has not been run.
+**Level 5 MEASURED: 2h45** (athlete, 2026-09-16) — his pessimistic reading of the logged result,
+so treat 2h45 as a floor rather than a midpoint. **Level 5 is the level he actually intends to
+run**, having found level 4 workable but preferring 5 on trail.
 
 **It changes the cell budget from trivial to real, and it still works.**
 
-| | level 4 (measured) | level 5 (pessimistic estimate) |
+| | level 4 (measured) | level 5 (measured, pessimistic reading) |
 |---|---|---|
 | per cell | 7h20 | **2h45** |
 | vs the ~100min bag-to-bag interval | 4.4x | **1.65x** — 65 min of margin |
@@ -688,9 +689,27 @@ budget. Two consequences:
 - **Cold eats into this.** `log/2026-09-06.md` notes October degrades battery capacity, and 2h45
   being the *pessimistic* number is doing useful work there. Do not plan against a rosier figure.
 
-**Run the level-5 lux test anyway** — the same hallway method, no run needed — but now it is
-checking a number rather than discovering one. **If it comes back below ~1h40 the reactive-swap
-policy needs revisiting; anything above that changes nothing.**
+**Both levels are now measured and the runtime question is closed.**
+
+### Spares live in the power bank (athlete plan, 2026-09-16)
+
+Athlete: *"I'll probably just use the cells carried in my power bank as the spares. I don't plan on
+needing the power bank except for one top up mid-race."*
+
+**This is the right shape and it follows from what this file already says**: the bank's real job is
+USB output, cell-charging mid-race was already dismissed as a nice-to-have, and the same
+NCR18650GA feeds the light and the bank. So the bank stops being a separate item to carry and
+becomes **the spares carrier that also does one phone top-up.** It rides from dusk, which is when
+the lights start to matter anyway.
+
+**The number this turns on is not recorded: how many 18650s does the Yanii PD2 hold?** The chest
+light needs five cells across the night and the existing policy carries two spares on the body. If
+the bank holds two, the plan lands exactly on that policy. If it holds one, it does not.
+
+**One thing to get right regardless: the top-up must come from a designated cell**, not from
+whichever one he would otherwise pull for the light. A cell that has just charged a phone is a
+part-used cell, and this file's standing rule is to start the dark section fresh. His tagged
+inventory makes that trivial to enforce — pick the top-up cell in advance and mark it.
 
 **7h20 is cumulative ON-TIME, +/- 5 minutes** (athlete, 2026-09-16) — the mid-test pause is
 already subtracted. The number is usable directly in a drop-bag calculation.
