@@ -667,10 +667,30 @@ of three dead inside 4h26 — is closed at this level.**
 preferred level 5 (high 1)**, so the measured number belongs to a setting he does not intend to
 use. A retest at level 5 is planned and is his own call.
 
-**That retest is for the record, not for the risk.** Level 5 draws more and will run shorter, by an
-amount this file has no basis to estimate. What it would take to matter: falling below roughly
-1h40, the bag-to-bag interval. That is a very large drop from 7h20, and the two-spares-on-the-body
-policy above absorbs it either way. **Do not treat the level-5 test as a gate on anything.**
+**Level 5 pessimistic estimate: 2h45** (athlete, 2026-09-16). **This is an estimate, not the
+lux-logged measurement** that produced the level-4 figure — the level-5 test has not been run.
+
+**It changes the cell budget from trivial to real, and it still works.**
+
+| | level 4 (measured) | level 5 (pessimistic estimate) |
+|---|---|---|
+| per cell | 7h20 | **2h45** |
+| vs the ~100min bag-to-bag interval | 4.4x | **1.65x** — 65 min of margin |
+| cells to cover 12h05 of darkness | 2 | **5** (4 cells = 11h00, short by 65 min) |
+
+**Five of ten cells go to the chest light**, leaving five for the Convoy and the power bank. That
+is workable and it is no longer a joke — at level 4 runtime was a non-issue, at level 5 it is a
+budget. Two consequences:
+
+- **The run-to-empty policy still holds** because a cell outlasts a bag-to-bag leg by 65 minutes
+  and he carries two spares on his body. A cell dying mid-leg is expected roughly every other leg
+  and is exactly what that policy is for.
+- **Cold eats into this.** `log/2026-09-06.md` notes October degrades battery capacity, and 2h45
+  being the *pessimistic* number is doing useful work there. Do not plan against a rosier figure.
+
+**Run the level-5 lux test anyway** — the same hallway method, no run needed — but now it is
+checking a number rather than discovering one. **If it comes back below ~1h40 the reactive-swap
+policy needs revisiting; anything above that changes nothing.**
 
 **7h20 is cumulative ON-TIME, +/- 5 minutes** (athlete, 2026-09-16) — the mid-test pause is
 already subtracted. The number is usable directly in a drop-bag calculation.
