@@ -26,7 +26,7 @@ Hill strides positioning — find the hill, PRESS LAP at the bottom
 
 Hill Strides 6x
 - 20s 4:20-4:50/km Pace
-- 90s 9:30/km Pace
+- 90s 10:30/km Pace
 
 Cooldown
 - 5m ZoneSense Z1

@@ -29,14 +29,14 @@ Warmup
 
 Threshold 3x
 - 5m 5:25-5:55/km Pace
-- 60s 9:30/km Pace
+- 60s 10:30/km Pace
 
 Hill positioning — get to the hill, PRESS LAP at the bottom
-- 2m 9:30/km Pace until-lap
+- 2m 10:30/km Pace until-lap
 
 Hills 3x
 - 30s 4:50-5:20/km Pace
-- 90s 9:30/km Pace
+- 90s 10:30/km Pace
 
 Cooldown
 - 1.5km 7:00/km Pace

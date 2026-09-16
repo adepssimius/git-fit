@@ -154,7 +154,25 @@ pace:
                               # its slow edge. The floor still describes his gait; this band
                               # describes what the watch should accept without nagging. Do not
                               # "correct" it back by appealing to locomotion_floors.
-  walk_recovery: "9:30"      # RACE walk breaks and recovery after short/fast reps: strides
+  walk_recovery: "10:30"     # RACE walk breaks and recovery after short/fast reps: strides
+                             # CORRECTED 2026-09-16 from "9:30", which sat EXACTLY ON walk_max
+                             # below — i.e. every "walk recovery" in the plan prescribed the
+                             # fastest he can physically walk. That is a max-effort walk, not a
+                             # recovery. The 08-12 fix moved it from 9:00 (literally unwalkable)
+                             # to 9:30 and stopped one step short.
+                             #
+                             # Evidence, two independent sources:
+                             #   * MEASURED 2026-09-15 — his own walk-backs between hill strides
+                             #     ran 10:34-13:17/km. He was already ignoring the 9:30.
+                             #   * ATHLETE 2026-09-16, mid-session on a treadmill: "3.9 is too
+                             #     fast, 3.5 is doable for walking." 3.5 mph = 10:39/km.
+                             #
+                             # Stored as a single number on purpose: rules/endurance-authoring.md
+                             # classes walk-backs as a SPEED CEILING, so it is written BARE in a
+                             # step and the watch's downward-only expansion gives 10:30-11:00.
+                             # Recoveries drifting slower as a set accumulates is correct, not
+                             # slacking. Do not tighten it back toward walk_max.
+                             #
                               # walk-backs, and rest after very short/fast reps (hill sprints,
                               # 400s at rep pace) where a jog wouldn't clear before the next one.
                               # WAS "9:00", which is FASTER than walk_max — i.e. every

@@ -106,7 +106,7 @@ inside it.
 | **TARGET** — hit this | explicit centred range | `5:10-5:40` centres 5:25 | threshold, tempo, vo2, reps, strides, steady, long_steady |
 | **CEILING** — go no faster | bare target (default is correct) | `7:00` -> 7:00-7:30 | easy, warmup, cooldown, long-run cruise |
 | **FLOOR** — go no slower | explicit range, number at the slow edge | `7:10-7:40` | floats, jog recoveries |
-| **SPEED CEILING** | bare target (default is correct) | `9:30` -> 9:30-10:00 | walk-backs, walk recoveries |
+| **SPEED CEILING** | bare target (default is correct) | `10:30` -> 10:30-11:00 | walk-backs, walk recoveries |
 
 This is why the bare default has been quietly right in most of the plan and wrong only on the
 quality steps: easy paces and walk paces ARE ceilings, so downward-only expansion encodes them

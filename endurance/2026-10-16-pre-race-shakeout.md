@@ -27,4 +27,4 @@ Pickup positioning — pick your stretch, PRESS LAP to start
 
 Pickups 4x
 - 30s 4:55-5:25/km Pace
-- 60s 9:30/km Pace
+- 60s 10:30/km Pace
