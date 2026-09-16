@@ -729,14 +729,19 @@ Assumes ~85% buck/boost efficiency; 80-90% moves the answer by a few percent and
 | 75% | 29% | 0h47 |
 | 100% | 5% | **0h08** |
 
-**~40% is the line, because ~1h40 is the bag-to-bag leg.** At or under it, each spare still covers
-a full leg alone — which is the property the reactive-swap policy rests on. Past it the plan still
-works (a 50% top-up leaves 2h52 across the pair) but he is swapping mid-leg instead of holding
-margin. **A full charge is the one thing to avoid: it leaves 8 minutes of light in each cell.**
+**~~~40% is the line and a full charge is the thing to avoid.~~ — struck 2026-09-16. There is no
+line.** Athlete: *"don't matter. I still have the battery in the convoy plus an entire spare
+light."*
 
-The athlete's own read stands at every level in the table — *"a partial charge would be enough for
-me to be able to get back to the bag for more cells"* — since a partial goes in mid-leg and the
-restock is ~12.1km away at most. What the table adds is where it stops being comfortable.
+**The table above treats the two bank cells as the whole reserve, and they are not.** On his body
+at any moment: the Zebralight's running cell, two in the bank, **the Convoy's own cell**, and the
+Foursevens on a different chemistry — with an NU25 waiting in every drop bag. Drain both bank cells
+to 8 minutes and the Convoy's cell is still a full 2h45 for the chest light, the Convoy is still a
+light, and the next bag is at most ~12.1km away. **That is this file's own standing argument:
+redundancy already means a dead light is never darkness.**
+
+**So top up the phone to whatever is useful and do not budget against it.** The table stays as
+reference for what a top-up costs in light, not as a rule to follow.
 
 **Not in the table and both eat into it:** October cold, and the fact that 2h45 is already his
 pessimistic reading.
