@@ -705,17 +705,41 @@ the lights start to matter anyway.
 **The bank holds 2 cells** (athlete, 2026-09-16), which lands exactly on the existing
 two-spares-on-the-body policy. **The bank IS the spares carrier. Nothing else needs to ride.**
 
-**The part-used-cell worry does not survive contact with the numbers.** Athlete: *"a partial charge
-would be enough for me to be able to get back to the bag for more cells."* Two reasons that holds:
+**~~Only one of the two can ever be partial.~~ — WRONG, corrected by the athlete 2026-09-16.**
+*"The top up drains both simultaneously."* So a top-up leaves **two partials**, not a fresh cell
+and a partial. No designated-top-up-cell rule can fix that, and none is needed — see below.
 
-- **Only one of the two can ever be partial** — the top-up spends one cell, so the other is
-  untouched. There is always at least one fresh 2h45 cell on his body, which covers a full
-  ~100min leg with 65 minutes to spare.
-- **A partial only has to reach the next bag, not span a leg.** When it goes in he is already
-  somewhere mid-leg, and the restock is ~12.1km away at most.
+**The pack holds roughly one full phone charge and nothing else.** Pixel 10 Pro XL, 5200 mAh.
 
-**So no designated top-up cell is needed and no sequencing rule is needed.** Put two cells in the
-bank at dusk, use it for the one phone top-up whenever it is convenient, and swap reactively.
+| | |
+|---|---|
+| 2 x NCR18650GA | 6,900 mAh @ 3.6V = **24.8 Wh** |
+| Phone, empty to full | 5,200 mAh @ ~3.85V = **20.0 Wh** |
+| Delivered at ~85% conversion | **~21 Wh — about one full charge** |
+
+Assumes ~85% buck/boost efficiency; 80-90% moves the answer by a few percent and changes nothing.
+
+**What a top-up costs in light, with 2h45 as a full cell:**
+
+| top-up | each cell left | light per cell |
+|---|---|---|
+| 25% | 76% | **2h05** |
+| **40%** | **62%** | **1h42** |
+| 50% | 53% | 1h26 |
+| 75% | 29% | 0h47 |
+| 100% | 5% | **0h08** |
+
+**~40% is the line, because ~1h40 is the bag-to-bag leg.** At or under it, each spare still covers
+a full leg alone — which is the property the reactive-swap policy rests on. Past it the plan still
+works (a 50% top-up leaves 2h52 across the pair) but he is swapping mid-leg instead of holding
+margin. **A full charge is the one thing to avoid: it leaves 8 minutes of light in each cell.**
+
+The athlete's own read stands at every level in the table — *"a partial charge would be enough for
+me to be able to get back to the bag for more cells"* — since a partial goes in mid-leg and the
+restock is ~12.1km away at most. What the table adds is where it stops being comfortable.
+
+**Not in the table and both eat into it:** October cold, and the fact that 2h45 is already his
+pessimistic reading.
 
 **7h20 is cumulative ON-TIME, +/- 5 minutes** (athlete, 2026-09-16) — the mid-test pause is
 already subtracted. The number is usable directly in a drop-bag calculation.
