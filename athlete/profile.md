@@ -702,14 +702,20 @@ NCR18650GA feeds the light and the bank. So the bank stops being a separate item
 becomes **the spares carrier that also does one phone top-up.** It rides from dusk, which is when
 the lights start to matter anyway.
 
-**The number this turns on is not recorded: how many 18650s does the Yanii PD2 hold?** The chest
-light needs five cells across the night and the existing policy carries two spares on the body. If
-the bank holds two, the plan lands exactly on that policy. If it holds one, it does not.
+**The bank holds 2 cells** (athlete, 2026-09-16), which lands exactly on the existing
+two-spares-on-the-body policy. **The bank IS the spares carrier. Nothing else needs to ride.**
 
-**One thing to get right regardless: the top-up must come from a designated cell**, not from
-whichever one he would otherwise pull for the light. A cell that has just charged a phone is a
-part-used cell, and this file's standing rule is to start the dark section fresh. His tagged
-inventory makes that trivial to enforce — pick the top-up cell in advance and mark it.
+**The part-used-cell worry does not survive contact with the numbers.** Athlete: *"a partial charge
+would be enough for me to be able to get back to the bag for more cells."* Two reasons that holds:
+
+- **Only one of the two can ever be partial** — the top-up spends one cell, so the other is
+  untouched. There is always at least one fresh 2h45 cell on his body, which covers a full
+  ~100min leg with 65 minutes to spare.
+- **A partial only has to reach the next bag, not span a leg.** When it goes in he is already
+  somewhere mid-leg, and the restock is ~12.1km away at most.
+
+**So no designated top-up cell is needed and no sequencing rule is needed.** Put two cells in the
+bank at dusk, use it for the one phone top-up whenever it is convenient, and swap reactively.
 
 **7h20 is cumulative ON-TIME, +/- 5 minutes** (athlete, 2026-09-16) — the mid-test pause is
 already subtracted. The number is usable directly in a drop-bag calculation.
