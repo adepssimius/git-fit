@@ -510,7 +510,7 @@ problem from race day's. Do not count it as having rehearsed the aid-station rou
 | light | role | cell | status |
 |---|---|---|---|
 | **Zebralight H600Fc Mk IV**, 4000K high CRI, frosted | Chest — running light | 18650 | **IN HAND 2026-09-14, works** |
-| **Convoy S3**, 4000K high CRI (719A) | Handheld — wildlife spotting | 18650 | **ordered 09-08, NOT ARRIVED as of 09-15** |
+| **Convoy S3**, 4000K high CRI (719A) | Handheld — wildlife spotting | 18650 | **IN HAND 2026-09-16, works** |
 | **Foursevens**, small high-output | **Emergency**, carried | *different format* | owned |
 | **Nitecore NU25 ×2** | Backup, one per drop bag | built-in Li-ion, **not swappable** | owned |
 | **Nitecore NU21 ×2** | Backup | built-in Li-ion, **not swappable** | owned |
@@ -597,7 +597,25 @@ The old setup died mid-session: two of three lights flat inside **4h26** of dark
 | **Chest — running light** | **Zebralight H600Fc Mk IV**, 4000K high CRI | Frosted = pure flood, no hotspot. Chest mount gives ground texture that head-height light flattens. **In hand 2026-09-14.** Untested on trail — see § Night lighting |
 | **Cells** | **Panasonic NCR18650GA ×10** | ~3500mAh, flat-top unprotected. Chosen specifically so one cell type feeds both lights |
 
-### ⚠ The Convoy has not arrived, and it is the only throw light on his body (2026-09-15)
+### ✅ Convoy arrived 2026-09-16 — the lighting kit is complete
+
+**Athlete, 2026-09-16:** *"convoy came in. it works great."* Ordered 09-08. **Every light in the
+race setup is now in hand**, and the gap described below is closed.
+
+**What it still owes: a field test.** Beam on real trail, retention in the Naked band's side
+stretch pocket over hours, one-handed retrieval at pace, and the tether decision. It missed
+09-12, so `endurance/2026-09-26-night-long-run.md` is the last session before the taper that can
+test any of it. **That deadline is unchanged by its arrival.**
+
+**⚠ Before the planned high-mode runtime test, read the LVP bullet below.** The athlete intends to
+run it on high to measure output. This file already flags that the GA is an *unprotected* cell and
+that whether the Convoy's driver has low-voltage protection **depends on the driver** — so running
+one flat in it on purpose risks a damaged cell that is then unsafe to recharge. **The Zebralight
+tests answered the useful question without going to zero: time to first meaningful drop, not time
+to empty.** The lux sensor shows a decline the moment it starts; stop there. A number for "how long
+until it dims" is what the drop-bag plan needs, and it costs no cell to get.
+
+**Original entry, kept for the record:**
 
 **Ordered 2026-09-08, still not delivered a week later.** Athlete, 2026-09-15: *"nope not here
 yet."*

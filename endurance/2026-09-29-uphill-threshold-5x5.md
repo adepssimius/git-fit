@@ -1,5 +1,5 @@
 ---
-date: 2026-09-30
+date: 2026-09-29
 sport: Run
 name: Uphill Threshold — 5x5min
 type: tempo
@@ -13,6 +13,15 @@ follow: >
 intent: >
   Champion week 14's big uphill session, trimmed to 5 reps. Last hard midweek workout
   before the taper.
+
+  MOVED from 2026-09-30 to 2026-09-29 on 2026-09-16. Work travel runs evening 09-28 to evening
+  09-30, so Wednesday is gone and Tuesday evening is the only slot. This session travels and the
+  hill strides it replaces do not: despite the name, nothing here prescribes a grade — the steps
+  are pure pace, so a hotel treadmill or flat road both work. The athlete expects a treadmill.
+  The 09-29 hill strides are dropped rather than moved; five strides in the final full week is a
+  negligible loss and 09-22 already carries a set.
+
+  Moving it forward also buys the 10-03 lap simulation a fourth clear day instead of three.
 
   PACE ANCHOR MOVED 2026-08-15: threshold 5:40 -> 5:25, tempo 5:55 -> 5:40 in
   athlete/zones.yml, athlete-directed on the 08-15 long-run evidence. This session's quality
