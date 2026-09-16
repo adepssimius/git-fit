@@ -740,8 +740,13 @@ to 8 minutes and the Convoy's cell is still a full 2h45 for the chest light, the
 light, and the next bag is at most ~12.1km away. **That is this file's own standing argument:
 redundancy already means a dead light is never darkness.**
 
-**So top up the phone to whatever is useful and do not budget against it.** The table stays as
-reference for what a top-up costs in light, not as a rule to follow.
+**And the simplest fix retires the question entirely** (athlete, 2026-09-16): *"if my phone needs a
+top off then I just take one extra cell in addition to the bank."* **A third cell costs ~48g** and
+covers the whole top-up out of pocket, so the two bank cells stay untouched as light spares.
+
+**So: two cells in the bank from dusk, plus a third if the phone looks like it will need feeding.
+Top up to whatever is useful and do not budget against it.** The table stays as reference for what
+a top-up costs in light, not as a rule to follow.
 
 **Not in the table and both eat into it:** October cold, and the fact that 2h45 is already his
 pessimistic reading.
