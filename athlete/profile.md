@@ -655,7 +655,7 @@ shelf with a timestamp rather than an impression. Started on a fresh NCR18650GA 
 
 | | |
 |---|---|
-| Measured, level 4 | **7h20 to first step-down** |
+| Measured, level 4 | **7h20 on-time to first step-down** (+/- 5 min) |
 | Continuous darkness on race night | **12h05** |
 | **Between drop bags** | **~100 min** |
 
@@ -672,9 +672,8 @@ amount this file has no basis to estimate. What it would take to matter: falling
 1h40, the bag-to-bag interval. That is a very large drop from 7h20, and the two-spares-on-the-body
 policy above absorbs it either way. **Do not treat the level-5 test as a gate on anything.**
 
-**Open on this test:** whether 7h20 is cumulative on-time or wall clock from start. The cell was
-out of the light for the duration of the 09-14 trail run, and the Home Assistant history shows that
-gap directly. Ask before the number goes into a drop-bag calculation.
+**7h20 is cumulative ON-TIME, +/- 5 minutes** (athlete, 2026-09-16) — the mid-test pause is
+already subtracted. The number is usable directly in a drop-bag calculation.
 
 **Open items:**
 - **Low-voltage protection, and it interacts with run-to-empty.** The GA is an *unprotected* cell,
