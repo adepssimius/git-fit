@@ -640,6 +640,42 @@ at every pass (~12.1km apart, ~7 passes across the night).
 start the dark section on fresh cells.** Beginning 12 hours of night on a part-used cell is the one
 avoidable failure here, and dusk is a drop-bag point in daylight.
 
+### ✅ RUNTIME MEASURED — 7h20 to first step-down on level 4 (2026-09-16)
+
+**Athlete, 2026-09-16:** *"The zebra light has finally dimmed, 7 hours and 20 minutes after test
+start."*
+
+Hallway test against a Zigbee lux sensor logging to Home Assistant, so the step-down is a logged
+shelf with a timestamp rather than an impression. Started on a fresh NCR18650GA at 9,663 lux,
+**paused mid-test** while the cell came out for the 09-14 trail run and went back in afterwards.
+
+**The light has six levels — low 1/2, medium 1/2, high 1/2. This test ran level 4 (medium 2).**
+
+**Runtime has stopped being the constraint, and that is the headline.**
+
+| | |
+|---|---|
+| Measured, level 4 | **7h20 to first step-down** |
+| Continuous darkness on race night | **12h05** |
+| **Between drop bags** | **~100 min** |
+
+**7h20 is 4.4x the interval between chances to swap a cell.** Two cells cover the whole night with
+2h35 to spare, and he has ten. **The 2026-09-06 failure mode — lights going flat mid-session, two
+of three dead inside 4h26 — is closed at this level.**
+
+**But level 4 is not his working level.** Running with it on 09-14 he found **medium 2 workable but
+preferred level 5 (high 1)**, so the measured number belongs to a setting he does not intend to
+use. A retest at level 5 is planned and is his own call.
+
+**That retest is for the record, not for the risk.** Level 5 draws more and will run shorter, by an
+amount this file has no basis to estimate. What it would take to matter: falling below roughly
+1h40, the bag-to-bag interval. That is a very large drop from 7h20, and the two-spares-on-the-body
+policy above absorbs it either way. **Do not treat the level-5 test as a gate on anything.**
+
+**Open on this test:** whether 7h20 is cumulative on-time or wall clock from start. The cell was
+out of the light for the duration of the 09-14 trail run, and the Home Assistant history shows that
+gap directly. Ask before the number goes into a drop-bag calculation.
+
 **Open items:**
 - **Low-voltage protection, and it interacts with run-to-empty.** The GA is an *unprotected* cell,
   so nothing in the battery stops an over-discharge — the light has to. Zebralight has LVP built
@@ -648,6 +684,10 @@ avoidable failure here, and dusk is a drop-bag point in daylight.
   unsafe to recharge.
 - **What goes on his head.** The H600Fc is pure flood on the chest; a chest light alone leaves
   nothing where he turns to look. A dim headlamp alongside solves it and he already owns four.
+- **~~Measured runtime at working brightness.~~ — DONE 2026-09-16 at level 4: 7h20 to first
+  step-down.** See the section above. Still open only for **level 5 (high 1)**, which is the
+  level he actually prefers. Original note kept below because its reasoning is what made the
+  test give a usable number:
 - **Measured runtime at working brightness — and it is an INDOOR test, not a field one**
   (athlete's correction, 2026-09-08). Controlled, one output level, no variables; the field would
   give a muddier number because levels change. **"Runtime" is also not one number for a
