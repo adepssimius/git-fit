@@ -29,7 +29,7 @@ intent: >
   number the effort is anchored to.
 origin: authored
 published:
-  suunto: null
+  suunto: 2026-09-17T12:29:49Z    # guide id l66abrc9
 ---
 
 Warmup

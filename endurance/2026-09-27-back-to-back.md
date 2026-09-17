@@ -18,7 +18,7 @@ intent: >
   Follows the 03:00 night long run, so this runs on ~20h-old 4-hour legs.
 origin: authored
 published:
-  suunto: null
+  suunto: 2026-09-17T12:29:49Z    # guide id 5v8aa5wx
 ---
 
 Easy aerobic

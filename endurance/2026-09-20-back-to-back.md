@@ -18,7 +18,7 @@ intent: >
   Continuous: run/walk is race-day only (training/block.md rule 6, reversed 2026-08-04).
 origin: authored
 published:
-  suunto: null
+  suunto: 2026-09-17T12:29:49Z    # guide id 4sm659rw
 ---
 
 Easy aerobic

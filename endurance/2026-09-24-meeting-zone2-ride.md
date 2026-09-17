@@ -17,7 +17,7 @@ intent: >
   meeting_budget.trainer.
 origin: authored
 published:
-  suunto: null
+  suunto: 2026-09-17T12:29:49Z    # guide id weqtqtip
 ---
 
 Warmup

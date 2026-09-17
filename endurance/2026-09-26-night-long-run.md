@@ -20,7 +20,7 @@ intent: >
   90-120g carbs/hr. At the 4h cap — do not extend.
 origin: authored
 published:
-  suunto: null
+  suunto: 2026-09-17T12:29:49Z    # guide id j7iuqrlx
 ---
 
 Easy aerobic — headlamp on, full night kit

@@ -15,7 +15,7 @@ intent: >
   Lower A after — last heavy lower-body session of the block.
 origin: authored
 published:
-  suunto: null
+  suunto: 2026-09-17T12:29:49Z    # guide id djeftptr
 ---
 
 Easy aerobic

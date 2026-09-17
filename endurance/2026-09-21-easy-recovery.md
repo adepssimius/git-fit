@@ -13,7 +13,7 @@ intent: >
   Lower A (taper character) after.
 origin: authored
 published:
-  suunto: null
+  suunto: 2026-09-17T12:29:49Z    # guide id hs4sy78z
 ---
 
 Easy aerobic

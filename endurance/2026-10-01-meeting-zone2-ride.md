@@ -26,7 +26,7 @@ intent: >
   something new sits well at all. Not a test of intake rate, and not a test of the gut.
 origin: authored
 published:
-  suunto: null
+  suunto: 2026-09-17T12:29:49Z    # guide id ay2loj43
 ---
 
 Warmup

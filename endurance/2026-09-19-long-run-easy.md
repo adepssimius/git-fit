@@ -23,7 +23,7 @@ intent: >
   (that is 09-26), but it is the first session long enough to say anything.
 origin: authored
 published:
-  suunto: null
+  suunto: 2026-09-17T12:29:49Z    # guide id drakv46s
 ---
 
 Easy aerobic

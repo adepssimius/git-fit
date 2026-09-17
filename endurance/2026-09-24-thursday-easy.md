@@ -23,7 +23,7 @@ intent: >
   § House rules. It entered eight session files in a single commit with no rationale given.
 origin: authored
 published:
-  suunto: null
+  suunto: 2026-09-17T12:29:49Z    # guide id q4wdvtri
 ---
 
 Easy aerobic
