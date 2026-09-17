@@ -424,7 +424,12 @@ session. It was the school run. **The heart rate said so and the reading still w
 (avg HR 74, 3.5 km/h), which is exactly why a label beats an inference. **Do not adjust a week for
 a commute.**
 
-### ⚠ GUT: gastric emptying stopped at ~32 km / 4h20 on 2026-09-12 — the block's top risk
+### ⚠ GUT: trouble drinking from ~3h30, emptying stopped by ~32 km / 4h20 on 2026-09-12 — the block's top risk
+
+**ONSET ~3h30, STOPPAGE ~4h20** (athlete, 2026-09-17: *"I was having trouble taking the water at
+about the 3.5 hour mark"*). This section originally recorded only the 4h20 figure. **Use 3h30 when
+deciding whether a session is long enough to test the gut** — see `rules/fueling.md` § Where this
+gets tested for why that distinction changed a scheduling decision.
 
 **The single most important physiological finding of this block, and it was found at hour 4.5 of a
 7h14 session — past where any previous run had reached.**

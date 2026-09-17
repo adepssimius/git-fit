@@ -18,6 +18,15 @@ intent: >
   actual crew bags, the actual night kit staged even if you run this one in daylight. Time the
   crew stops with a watch — on race day you'll make 12+ of them, so a sloppy 8-minute stop
   compounds into hours. Whatever fails here, you still have two weeks to fix.
+
+  THE GUT RETEST, and its success criterion is the athlete's own (2026-09-17): "If I can get to the
+  end of that session and still feel like I can get water down fine then the question is answered."
+  On 09-12 the trouble taking water started at ~3h30 and emptying had stopped by ~4h20. This
+  session is 3h25 — right at that onset. So the endpoint is not a clock time, it is whether fluid
+  still goes down easily at the finish. Log it in exactly those terms.
+
+  A 2026-09-16 reading called this session an hour too short to test the gut. That was anchored on
+  4h20, the stoppage, because 4h20 was the only figure the repo had recorded. Wrong anchor.
 origin: authored
 published:
   suunto: null

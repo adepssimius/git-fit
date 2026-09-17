@@ -387,11 +387,29 @@ walks he already takes run a few minutes longer than the terrain requires.**
 
 ### Where this gets tested
 
-- **09-26** (night long run, 4h capped) — **too short to stress the gut**; his stomach lasted 4h20.
-  Free place to rehearse the choreography, not a test of the fix.
-- **10-03** (lap simulation 2) — **the real retest.** Long, self-supported, on the course, and the
-  last long session before the taper. **The fix has to be proven here or it goes to race day
-  untested.**
+**⚠ 4h20 IS THE WRONG ANCHOR FOR DESIGNING THESE TESTS — corrected 2026-09-17.** Everything above
+records 4h20 / ~32 km, which is when emptying **stopped**. The athlete supplied the number that
+actually matters:
+
+> *"My problem was that I was having trouble taking the water at about the 3.5 hour mark."*
+
+**Onset ~3h30. Full stoppage ~4h20.** The difficulty built over roughly fifty minutes; it did not
+appear at 4h20. **Design every gut test against 3h30, not 4h20** — a session that reaches 3h30 is
+already past the point where the old protocol started failing, and a session that has to reach
+4h20 is a much harder thing to schedule. Reasoning anchored on 4h20 produced a claim on 2026-09-16
+that no remaining session could test the gut at all, which is false.
+
+- **09-26** (night long run, 4h capped) — **~~too short to stress the gut~~ — WRONG on the corrected
+  anchor.** 4h00 clears the 3h30 onset by half an hour. It is a genuine second look at the gut,
+  not just choreography, and it comes with full race fuelling already prescribed.
+- **10-03** (lap simulation 2) — **the real retest, and it is long enough as authored.** 3h25 lands
+  right at the onset window. **The athlete's own success criterion, 2026-09-17:** *"If I can get to
+  the end of that session and still feel like I can get water down fine then the question is
+  answered."* That is the endpoint — not a time on the clock, but whether fluid still goes down at
+  the finish. Record it in `log/` in those terms.
+
+**~~Extend 09-26 to 4h30 on the block's last long-run exception.~~ — PROPOSED AND WITHDRAWN
+2026-09-17.** It was built on the 4h20 anchor. The exception stays unspent.
 
 **Track urine output as a live signal, not a post-hoc one.** It fell before anything else did on
 09-12 and it was the earliest warning available.
