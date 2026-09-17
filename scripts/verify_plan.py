@@ -328,6 +328,29 @@ TODAY = datetime.now().strftime("%Y-%m-%d")
 REPEAT_HEADER = re.compile(r"^(.*?)\s+(\d+)\s*x\s*$", re.I)
 
 
+
+# The compiler refuses an `until-lap` step whose title gives the athlete no cue to press. This
+# catches the other half: a session where a manual start was ASKED FOR and the `until-lap` step
+# is simply absent. The ask has to be declarable, so it lives in frontmatter:
+#
+#     manual_start: true
+#
+# Athlete, 2026-09-17, after a practice 5k went out without one: "You need to figure out a way to
+# validate that there is a manual button press when I have asked for one."
+def check_manual_start(rel, fm: dict, body: str, errors: list) -> None:
+    # parse_file keeps any trailing `# comment` on the value, so strip it before comparing —
+    # the first version of this check compared the whole string and silently never fired.
+    val = str(fm.get("manual_start", "")).split("#")[0].strip().lower()
+    if val not in ("true", "yes"):
+        return
+    if "until-lap" not in body:
+        errors.append(
+            f"{rel}: frontmatter says `manual_start: true` but no step carries `until-lap`. "
+            f"The session would advance on its own clock and never wait for him. Add a "
+            f"positioning step — a header containing 'positioning' or 'press lap', so the title "
+            f"compiles to a cue — with `until-lap` on its step line.")
+
+
 def check_lap_before_repeats(rel, fm: dict, body: str, today: str,
                              errors: list, warnings: list) -> None:
     """Any repeat block of sub-3min reps must be preceded by an `until-lap` step.
@@ -426,6 +449,7 @@ def main() -> int:
             errors.append(f"{rel}: block_week/duration_s not numeric")
             continue
 
+        check_manual_start(rel, fm, body, errors)
         check_lap_before_repeats(rel, fm, body, TODAY, errors, warnings)
 
         sport, typ = fm["sport"], fm["type"]

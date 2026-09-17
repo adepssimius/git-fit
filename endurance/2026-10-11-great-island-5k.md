@@ -6,6 +6,7 @@ type: easy
 block_week: 18
 distance_km: 7.9
 duration_s: 3000
+manual_start: true        # the 5k starts on a lap press — verify_plan.py enforces it
 target_mode: pace
 brief: >
   Great Island 5k, New Castle NH. Pacing his wife to just under 30min. 10min warmup, the 5k
@@ -40,8 +41,23 @@ published:
 Warmup
 - 10m ZoneSense Z1
 
-Great Island 5k — beside her
-- 5km 5:48-6:08/km Pace
+Positioning — in the corral together, PRESS LAP on the gun
+- 1m ZoneSense Z1 until-lap
+
+km 1 - 6:00
+- 1km 5:52-6:08/km Pace
+
+km 2 - 5:56
+- 1km 5:48-6:04/km Pace
+
+km 3 - 5:53
+- 1km 5:45-6:01/km Pace
+
+km 4 - 5:52
+- 1km 5:44-6:00/km Pace
+
+km 5 - 5:48
+- 1km 5:41-5:57/km Pace
 
 Cooldown
 - 10m ZoneSense Z1

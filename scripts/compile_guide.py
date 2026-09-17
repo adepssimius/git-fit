@@ -288,7 +288,14 @@ TITLE_RULES: list[tuple[str, str]] = [
     (r"^progression",                   "PROG"),
     # Must precede the strides rule — otherwise "Hill strides positioning" matches it and the
     # positioning step and the strides themselves both render as STRIDE.
-    (r"^(hill\s+strides\s+)?positioning", "FIND HILL"),
+    # Matched ANYWHERE in the header, not just at the start: "Hill positioning - get to the
+    # hill" and "Pickup positioning - ..." both silently clipped to "Hill position" / "Pickup
+    # positi" while the earlier anchored version was in place.
+    (r".*\bpositioning\b.*\bhill\b", "FIND HILL"),
+    # Generic manual-start cue, added 2026-09-17. A step the athlete has to START himself needs
+    # a title that SAYS so — "Warm up" does not. See LAP_TITLES and the check in build_step:
+    # a 5k built with a lap-press start rendered as "Warm up" and he had no cue on the wrist.
+    (r".*\b(press\s*lap|positioning|lap\s+to\s+start|manual\s+start)\b", "PRESS LAP"),
     (r"^(hill\s+)?strides",             "STRIDE"),
     (r"^hills",                         "HILL"),
     (r"^(long|short)\s+threshold",      "Threshold"),
@@ -316,9 +323,16 @@ TITLE_RULES: list[tuple[str, str]] = [
     # Time trials — per-km splits written as explicit steps ("Km 2" etc), so each split is a
     # named step on the wrist rather than an anonymous "rep 2 of 3".
     (r"^km\s+([\d-]+)",                 r"KM \1"),
+    (r"^great\s+island",                "5K RACE"),
     (r"^hard\s+finish",                 "HARD FIN"),
     (r"^dawn\s+finish",                 "DAWN FIN"),
 ]
+
+
+# Titles that visibly tell the athlete a lap press is required. A step that ends only on a lap
+# press MUST compile to one of these, or he is standing there waiting for a watch that is waiting
+# for him. Added 2026-09-17 after exactly that happened on a practice 5k.
+LAP_TITLES = {"FIND HILL", "PRESS LAP", "TURN"}
 
 
 def step_title(raw: str, fallback: str) -> str:
@@ -423,6 +437,19 @@ def build_step(line: str, title: str, zones: dict, rel: str, hr_first: bool,
     # the block that follows begins wherever the athlete happens to be standing.
     until_lap = bool(re.search(r"\buntil-lap\b", rest))
     rest = re.sub(r"\buntil-lap\b", "", rest).strip()
+
+    # A step that ends ONLY on a lap press has no countdown and no automatic advance, so the
+    # title is the only thing on the wrist telling him to act. If the title does not say so, the
+    # watch sits there looking like an ordinary step and he waits for it while it waits for him.
+    # 2026-09-17: a practice 5k was built with `until-lap` on a step headed "Warmup - PRESS LAP
+    # when you are ready to start the 5k". TITLE_RULES rendered that "Warm up". The lap press
+    # worked; the instruction to make it was gone. He found out on the start line.
+    if until_lap and title not in LAP_TITLES:
+        raise CompileError(
+            f"{rel}: step '{title}' ends only on a lap press but its title does not say so. "
+            f"Compiled titles that do: {', '.join(sorted(LAP_TITLES))}. Give the markdown header "
+            f"a form that maps to one of them — 'Positioning - ...', 'Press lap - ...' — so the "
+            f"cue reaches the wrist.")
 
     dur = parse_distance(token) or parse_duration(token)
     if dur is None:

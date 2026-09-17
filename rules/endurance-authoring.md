@@ -181,6 +181,36 @@ climbs — and with the ZoneSense alarm enabled it gives two alarm sources with 
 on a session where the instrument has already been chosen. Keep pace targets for steps where pace
 genuinely is the instrument: strides, intervals, threshold reps, anything under ~9min.
 
+### A manual start is validated in two places, and both were added after it failed
+
+**2026-09-17.** A practice 5k was authored with a lap-press start. The step carried `until-lap`,
+so the press genuinely worked — but the markdown header *"Warmup — PRESS LAP when you are ready to
+start the 5k"* went through `TITLE_RULES` and reached the watch as **"Warm up"**. The instruction
+was gone. The athlete found out on the start line. Two hours later the same authoring produced
+`Hill position` and `Pickup positi` on 10-13 and 10-16 — silently clipped, no cue, neither caught.
+
+Athlete: *"You need to figure out a way to validate that there is a manual button press when I
+have asked for one."*
+
+**Check 1 — `compile_guide.py` refuses a cue-less `until-lap` step.** Any step ending only on a lap
+press must compile to a title in `LAP_TITLES` (`FIND HILL`, `PRESS LAP`, `TURN`). A step with no
+countdown and no automatic advance is invisible: the watch looks like it is running and is in fact
+waiting for him. Headers containing **"positioning"**, **"press lap"**, **"lap to start"** or
+**"manual start"** map to a cue — matched anywhere in the header, not just at the start, which is
+what "Hill positioning" needed.
+
+**Check 2 — `verify_plan.py` enforces a declared manual start.** Check 1 cannot catch a session
+where the `until-lap` step is simply missing, because there is nothing to inspect. So the ask is
+declarable:
+
+```yaml
+manual_start: true
+```
+
+With that set, a session with no `until-lap` step anywhere is an error. **Set it on any session the
+athlete has said he wants to start himself** — it costs one line and it is the only thing standing
+between his request and a session that advances without him.
+
 **`until-lap` — the step ends only on a lap press. ENFORCED by `scripts/verify_plan.py`
 since 2026-09-15.** Any repeat block of reps shorter than 3 minutes must be preceded by a step
 ending in `until-lap`, or the session is an error. Outdoor sessions only — trainer work has no
