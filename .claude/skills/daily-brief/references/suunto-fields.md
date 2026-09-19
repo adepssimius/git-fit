@@ -30,12 +30,36 @@ HR 41–47. A converted value far outside that is a conversion error, not a phys
 | `avgHrvSampleCount` | count | a low count means a short or fragmented night; the HRV figure is less trustworthy |
 | `quality` | 0–1 | `0.85` = 85%. The ladder's thresholds are 0.75 / 0.55 |
 | `maxSpo2` | 0–1 | `0.98` = 98% |
-| `balance` (wellness_recovery) | 0–1 | body resources. Ladder: ≥0.70 green, 0.40–0.70 amber |
+| `balance` (wellness_recovery) | 0–1 | body resources. Ladder: ≥0.70 green, 0.40–0.70 amber. **Worthless when sleep tracking is off — see below** |
 | `stressState` | enum | low integers = calm. Not in the ladder; ignore unless something else is odd |
 | `Temperature` (SML) | **Kelvin, and USELESS** | see below — never report it as ambient |
 | `recoveryTime` | seconds | the watch's own prescription, e.g. `40380` = 11h13m |
 | `totalTime` | seconds | |
 | `totalDistance` | metres | |
+
+## Body resources is worthless when sleep tracking is off — and it does not tell you
+
+**`balance` is derived from the overnight record. Turn sleep tracking off and it keeps reporting
+numbers anyway.** They look like ordinary readings — a curve, a morning peak, a plausible decline —
+and they are garbage.
+
+**Check `wellness_sleep` first, every morning.** If the newest sleep record is not last night, the
+day's `balance` numbers are unusable and **must not be scored on the ladder at all**. Not scored
+low, not scored cautiously — not scored.
+
+Real failure, 2026-09-17 to 2026-09-19. Sleep tracking was disabled on the watch for two nights.
+`wellness_sleep` simply stopped returning new records, which was visible. `wellness_recovery` kept
+streaming samples on schedule, which was not visible as a failure — and produced:
+
+| night | what `balance` said | what actually happened |
+|---|---|---|
+| 09-17 → 09-18 | peak 0.81, a ~4h30 "calm" window | unknown; inferred as a ~5h night |
+| 09-18 → 09-19 | **peak 0.34 — red on the ladder** | **the athlete slept well** |
+
+The 09-19 brief scored that 0.34 as red, called the whole day red off it, and recommended cutting a
+110min long run to 85min. **Both nights' readings were retracted.** The tell was there the whole
+time: no sleep record for two nights running, while recovery samples arrived normally. Two symptoms,
+one cause.
 
 ## Never use the temperature field
 

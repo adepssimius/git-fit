@@ -274,6 +274,30 @@ pattern trains him to ignore the brief. Arch and plantar soreness is the opposit
 warning for the walking ramp (`rules/progression.md` calls that the block's most likely overuse
 injury) and is worth naming every time it appears, including which foot.
 
+**When a ladder signal is missing, ask him. Do not score the ones that are left and call it a
+readiness call.** Added 2026-09-19 after the brief did exactly that. Four of seven signals were
+missing — no sleep record for the second night running, so duration, quality, HRV and resting HR
+were all absent. The brief scored the one remaining Suunto number (body resources, 0.34) as red,
+opened on **"Readiness: RED"**, wrote `readiness: red` into the log's frontmatter, and recommended
+cutting the 110min long run to 85. He had slept well. His answer: *"I'm not cutting anything. I had
+a great night of sleep. You need to ask instead of making assumptions when there is data missing."*
+
+The brief did label the inference DRAFT in the body — and that changed nothing, because the
+frontmatter and the recommendation had already committed to it. **A draft reading that drives a
+recommendation is not a draft.** So:
+
+- **Missing signals are a question, not a gap to reason across.** "No sleep record came through —
+  how did you actually sleep?" is one line and it settles the whole ladder. Ask it *before* the
+  readiness call, not after the recommendation.
+- **One surviving signal is not a ladder.** Worst-signal-wins assumes the signals are there. With
+  most of them missing, a single number is a data point, not a verdict — report it and say what it
+  would mean if confirmed.
+- **A signal whose source is known to be broken should not be scored at all.** The same watch was
+  failing to write sleep records; the overnight resources curve comes from the same data and was
+  failing the same way. Two failures with one cause.
+- **Never recommend cutting a session on inferred data.** If the inference is worth acting on, it
+  is worth one question first. He reads this before coffee and acts on it.
+
 **Suunto data is DRAFT until he confirms it** (`AGENTS.md` invariant 8). The numbers are real, the
 interpretation usually isn't obvious. A fragmented night could be a sick kid or a loose strap; a
 hard-looking session could contain a deliberate effort. Present the reading and your interpretation
