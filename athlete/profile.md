@@ -1403,10 +1403,21 @@ so roughly **1,180 mg sodium** — a normal single serving, about one LMNT stick
 | `sweat_rate: low-average` | **how much he NEEDS** — argues for the lower end of typical |
 | `sodium_tolerance: high` | **how much he can TAKE without cost** — the ceiling, and it is high |
 
-**So erring high on sodium is cheap for him and erring low is not obviously safe.** `rules/fueling.md`
-already records that electrolytes are dosed high deliberately and that it works. Good tolerance is
-not a reason to dose above need — it is a reason the unset mg/hr figure can be set without hedging
-against GI cost.
+**But this is a RESTING tolerance, and it does not transfer to running** — athlete, 2026-09-20:
+*"Granted I'm not exercising directly after that dose."* The bolus is taken sitting down, after the
+session is over. Prolonged running cuts splanchnic blood flow and slows gastric emptying, which is
+the mechanism behind the 09-12 failure in the first place, so a couch test at ~2,950 mg/L says
+nothing about hour four.
+
+| established | NOT established |
+|---|---|
+| sodium as such does not upset him | that he can take **~2,950 mg/L while running** |
+| a large bolus at rest empties fine | anything about concentration under exercise |
+
+**What it does buy is a narrowing: sodium sensitivity is unlikely to be what failed at 32 km.**
+That is worth having — it removes one candidate — but during exercise the concentration guidance in
+`rules/fueling.md` stands unchanged: a zero-carb electrolyte tab at normal dilution in the flask,
+not a bolus.
 
 **Why the protocol is worth knowing rather than worth changing:** he runs this regularly and tolerates it,
 which makes it a standing, free read on the system that has the block's open question against it —

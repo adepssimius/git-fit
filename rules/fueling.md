@@ -423,12 +423,20 @@ TODO — a specific mg/hr sodium figure still needs setting against sweat rate. 
 records `sweat_rate: low-average`, which argues for the lower end of typical, but nothing here is
 measured. Rehearse whatever is set on every long run over ~90 min, same as carbs.
 
-**One hedge is already removed: GI cost is not a constraint on this figure.** `athlete/profile.md`
-records `sodium_tolerance: high` (athlete-confirmed 2026-09-20 — *"I tolerate sodium well in
-general"*), evidenced by a standing sauna protocol whose saline bolus runs ~2,950 mg/L, near 3x WHO
-oral-rehydration solution, taken routinely without trouble. **Tolerance sets the ceiling; sweat rate
-sets the need — do not confuse the two.** High tolerance is not an argument to dose above need. It
-means the figure can be set on need alone, and that erring a little high costs him nothing.
+**Sodium sensitivity is unlikely to be the constraint here.** `athlete/profile.md` records
+`sodium_tolerance: high` (athlete-confirmed 2026-09-20 — *"I tolerate sodium well in general"*),
+evidenced by a standing sauna protocol whose saline bolus runs ~2,950 mg/L, near 3x WHO
+oral-rehydration solution, taken routinely without trouble.
+
+**That tolerance is measured AT REST and does not transfer to running** — athlete, same day:
+*"Granted I'm not exercising directly after that dose."* Prolonged running cuts splanchnic blood
+flow and slows gastric emptying, which is the mechanism behind the 09-12 failure. **So it sets no
+ceiling for in-session concentration.** What it does is remove sodium sensitivity as a likely cause
+of that failure, which narrows the search.
+
+**Tolerance sets a ceiling; sweat rate sets the need — do not confuse the two**, and do not let
+either argue for dosing above need. In-session guidance is unchanged: a zero-carb electrolyte tab
+at normal dilution in the flask, never a bolus.
 
 ## Caffeine and the overnight plan
 
