@@ -399,6 +399,8 @@ course_access:
 ```yaml
 equipment:
   suunto_watch: true
+  hr_strap_polar: true              # RETIRED 2026-09-12 — faulty, do not wear. See note below
+  hr_strap_garmin: true             # THE strap. ZoneSense runs on it (athlete-confirmed 09-10)
   bike_trainer: true                # used during meetings
   emtb: true                        # unplanned, active-recovery only
   ebike_commute: true               # TRANSPORT, not training — see the note below
@@ -411,6 +413,8 @@ equipment:
   gym_access: true                  # for strength/program.liftoscript
   headlamp: "4 available"           # legacy stock; the race setup is the two lights below
   sweat_rate: "low-average"         # informs sodium at the lower end of typical — see rules/fueling.md
+  sodium_tolerance: "high"          # athlete-confirmed 2026-09-20: "I tolerate sodium well in
+                                    # general." A SEPARATE axis from sweat_rate — see below
 ```
 
 ### E-bike activities: the athlete's own labels separate transport from training (2026-09-12)
@@ -843,6 +847,72 @@ Two notes that survive anyway, both cheap:
   hours — not on a fresh application.
 - **The Aquaphor already staged in both bags is the fallback**, with tape behind it. Nothing extra
   needs staging.
+
+## Chest straps — the Polar was retired on 2026-09-12, and it is still in rotation
+
+`athlete/zones.yml` requires a chest strap: ZoneSense does not run on optical wrist HR, so the
+strap is the instrument the primary live target depends on.
+
+**Settled, and not open:**
+
+- **The Garmin is the working strap and ZoneSense runs on it.** Athlete, 2026-09-10: *"I have
+  historically used the Garmin for exactly this type of training. ZoneSense works fine."*
+  `log/2026-09-10.md` carries a struck line asking him to confirm this, with the note that it
+  should never have been written. **Do not raise it again** — and if it somehow comes up, the
+  answer is in `workouts_list`: a `DYNAMIC_DFA` entry in a session's `tssList` means ZoneSense was
+  running. The 09-20 Garmin session has one.
+- **The Polar is the fault, and the verdict is RETIRE.** `log/2026-09-12.md` § "THE HR STRAP
+  QUESTION IS ANSWERED": seven hours on the Garmin during the 50k, clean, against a Polar that
+  failed at 1h27 of an easy 2h run. A $20 replacement strap ends the thread.
+
+**The live problem is that the retired strap is still being worn.** He ran 09-19's 110min long run
+on the Polar and it produced the same failure a third time — 66-67 bpm steps inside 20 seconds, a
+~24 minute dropout, and long stretches reading out of `ZS Z1` on a run he rated RPE 3. That session's
+HR and ZoneSense are void (`log/2026-09-19.md`).
+
+**Race-day: the Garmin is the strap.** ~~The Polar is not a spare.~~
+
+**No backup strap is wanted — athlete decision, 2026-09-20.** *"I don't need a backup strap. My
+backup is running by feel."* He has run this course before and paces off effort; a dead strap on
+race day costs him the ZoneSense target and nothing else. **Do not propose buying a second strap
+again.**
+
+**He will wear the Polar on non-critical runs to troubleshoot it, and that is deliberate.** *"My
+general plan is to troubleshoot with the polar on non-critical runs, so don't complain if I decide
+to wear it."* **A Polar session is a test, not a mistake** — log its data as void and move on
+without flagging the choice.
+
+### Troubleshooting order, and why the test length is the hard part
+
+**The failures are late-onset**: 1h27 into an easy 2h run on 09-10, and around the 55min mark on
+09-19. **A short run cannot clear this strap.** A clean 45min would be a false all-clear, which is
+worse than no test because it would earn trust the strap has not.
+
+**So a valid test is 90+ minutes on a run that does not matter.** In block week 16 that rules out
+Mon-Thu (45/49/57/40min) and Saturday's 240min night run, which is ZoneSense-governed and gets the
+Garmin. **First valid slot: Sunday 2026-09-27, the 140min back-to-back.**
+
+**Battery AND elastic band together, in one go — athlete decision, 2026-09-20.** *"I'll just do
+both. They are both cheap troubleshooting steps and I just want a functional strap."*
+
+**This is the right call, and not only because both are cheap.** Testing one variable at a time
+needs a 90+ minute non-critical run per variable, and there is only one before lap sim 2 (Sunday
+09-27); the next would land in taper, when the runs are too short to reach the failure onset.
+**Sequential testing runs out of slots before it runs out of variables.** Changing both at once is
+the only version that finishes before race day — and if it still fails, both are eliminated in a
+single test and the answer is retirement.
+
+| step | change | why |
+|---|---|---|
+| **1** | **new battery + new elastic band, together** | the battery is the one variable that can be eliminated outright, and a sagging cell produces exactly this late-onset dropout-and-oscillate pattern; the band is the consumable on a Polar (the pod is not), and stretched elastic loses contact pressure as he gets sweaty, which fits late onset just as well |
+| 2 | retire it | `log/2026-09-12.md` already reached this verdict once. With both variables gone, a third failure is the pod, and the pod is not worth chasing 4 weeks out |
+
+**He is not buying diagnostic information here and does not want any** — the goal is a functional
+strap, not a root cause.
+
+**Scoring a test run needs no judgement from him.** Pull the session and check two things:
+`DYNAMIC_DFA` present in `tssList` (ZoneSense ran), and no HR step larger than ~30 bpm inside 30
+seconds. Clean on both **past the 90-minute mark** and that step was the fix.
 
 ## Footwear — the Mont Blanc runs small
 
@@ -1305,6 +1375,45 @@ record. Aggressive work stops ~2 weeks out (**10-03**); light maintenance can co
 
 Standing rule: log blistering by **location and symmetry**, not just presence. Bilateral and
 specific points at fit; unilateral points at gait, camber, or a lacing/sock issue.
+
+## Sauna — standard protocol (athlete-confirmed 2026-09-20)
+
+**This is his established routine, not an experiment.** Recorded so sessions stop being read as
+one-offs and so the dehydration window is never flagged as an error.
+
+| order | | 2026-09-20's numbers |
+|---|---|---|
+| 1 | snack after exercise | 180 kcal |
+| 2 | **sauna — no water during** | 25 min |
+| 3 | **no water for 30 min after** | 30 min |
+| 4 | saline water | **1/2 tsp table salt in 400 ml** |
+
+**The fluid gap through the sauna and for 30 minutes after is deliberate.** Do not read it as a
+missed drink or write it up as a hydration lapse.
+
+**The salt dose is ordinary, the concentration is not.** Half a level teaspoon is about 3 g NaCl,
+so roughly **1,180 mg sodium** — a normal single serving, about one LMNT stick. In 400 ml that is
+**~2,950 mg/L**, close to 3x WHO oral-rehydration solution and about 6x a sports drink.
+
+**Sodium tolerance is high, and it is a different axis from sweat rate** — athlete-confirmed
+2026-09-20: *"I tolerate sodium well in general."* The two get conflated and should not be:
+
+| | what it sets |
+|---|---|
+| `sweat_rate: low-average` | **how much he NEEDS** — argues for the lower end of typical |
+| `sodium_tolerance: high` | **how much he can TAKE without cost** — the ceiling, and it is high |
+
+**So erring high on sodium is cheap for him and erring low is not obviously safe.** `rules/fueling.md`
+already records that electrolytes are dosed high deliberately and that it works. Good tolerance is
+not a reason to dose above need — it is a reason the unset mg/hr figure can be set without hedging
+against GI cost.
+
+**Why the protocol is worth knowing rather than worth changing:** he runs this regularly and tolerates it,
+which makes it a standing, free read on the system that has the block's open question against it —
+the gut stopped emptying at ~32 km on 09-12, and taking water got hard from about 3h30.
+`rules/fueling.md` § "Sodium and fluids" still carries a TODO for a specific mg/hr figure with
+nothing measured behind it. **A repeated, tolerated, high-concentration sodium bolus is evidence
+toward that TODO.** Nothing about the protocol needs adjusting.
 
 ## Working days — walking only happens on these
 

@@ -61,6 +61,21 @@ The 09-19 brief scored that 0.34 as red, called the whole day red off it, and re
 time: no sleep record for two nights running, while recovery samples arrived normally. Two symptoms,
 one cause.
 
+## `DYNAMIC_DFA` in `tssList` is the receipt that ZoneSense ran
+
+`workouts_list` returns a `tssList` with one entry per calculation method — `HR`, `PACE`, `POWER`,
+`MET`, and sometimes **`DYNAMIC_DFA`**. That last one is computed from DFA a1, so **its presence
+means ZoneSense was live for that session.** No extra call needed; it is in the listing already.
+
+**Check it before asking the athlete whether ZoneSense worked.** On 2026-09-20 the brief asked him
+to go verify ZoneSense on the Garmin strap, in the same turn as a pull whose payload carried
+`{"trainingStressScore":63.24167,"calculationMethod":"DYNAMIC_DFA"}` for exactly that session. He
+had already answered the question twice, and the data answered it a third time.
+
+Absence is weaker evidence than presence — a short or fragmented session can lack it for reasons
+that have nothing to do with the strap (2026-09-17's 5k has no `DYNAMIC_DFA`, and that run's
+problem was the guide, not the sensor). **Read presence as proof, absence as a question.**
+
 ## A misbehaving chest strap wrecks ZoneSense far worse than it wrecks HR
 
 **ZoneSense (DFA a1) is computed from beat-to-beat interval variability, not from heart rate.** A
