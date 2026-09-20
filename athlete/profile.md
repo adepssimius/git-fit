@@ -10,6 +10,16 @@ them without an explicit override in `log/`.
   Family disruption must be minimized; this outranks training-optimality when the two conflict.
 - Wants to get **faster**, not just more durable — a higher aerobic ceiling and tighter easy pace
   both reduce hours-on-course for a fixed distance, which is the time-efficient thing to chase here.
+- **Timezone: `America/New_York`.** Recorded 2026-09-19 because the scripts had been using the
+  container clock, which runs UTC — so from 20:00 local onward every script believed it was
+  already tomorrow. A brief written Saturday evening was dated Sunday and reported a missing
+  sleep record for a night that had not happened yet. `scripts/verify_plan.py` and
+  `.claude/skills/daily-brief/scripts/brief_context.py` both read this value.
+
+```yaml
+timezone: America/New_York
+```
+
 - Prior 50k finish on the Ghost Train course (~3 years ago) — course and ultra distance are both
   known quantities, not a leap into the unknown.
 

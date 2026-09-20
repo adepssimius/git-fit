@@ -61,6 +61,32 @@ The 09-19 brief scored that 0.34 as red, called the whole day red off it, and re
 time: no sleep record for two nights running, while recovery samples arrived normally. Two symptoms,
 one cause.
 
+## A misbehaving chest strap wrecks ZoneSense far worse than it wrecks HR
+
+**ZoneSense (DFA a1) is computed from beat-to-beat interval variability, not from heart rate.** A
+few dropped or doubled beats barely move the average HR and completely destroy a1. So the
+signature of a bad strap is **long stretches reading out of `ZS Z1` on a run that felt easy**,
+with an HR trace that still looks broadly plausible.
+
+`athlete/zones.yml` → `zonesense.chest_strap_required: true`, and it is the athlete's PRIMARY live
+target. When he says the strap misbehaved, **discard the ZoneSense reading and the HR-derived
+numbers together** — including `tss` where `calculationMethod` is `HR`, which runs high because
+the artifact spikes look like work. Score the session off **pace and distance** instead, and
+prefer the `PACE` or `DYNAMIC_DFA` entries in `tssList`.
+
+**What the artifacts look like in the samples** (real, 2026-09-19, Polar strap):
+
+| time | HR | |
+|---|---|---|
+| 19:57:54 | **67 bpm** | while running easy |
+| 19:58:11 | **134 bpm** | +67 bpm in 17 seconds |
+| 20:29:56 | **177 bpm** | at unchanged pace |
+| 20:30:33 | **111 bpm** | -66 bpm in 24 seconds |
+| 20:30 → 20:55 | **no samples** | a ~24 minute dropout mid-run |
+
+Steps that size at steady easy pace are not physiology. **Look for them before reporting a max HR
+as real** — the workout summary's `hrdata.max` happily reports the artifact.
+
 ## Never use the temperature field
 
 **The sensor is inside the watch, against the wrist, so it largely reads body heat.** It is not an

@@ -20,12 +20,32 @@ import re
 import subprocess
 import sys
 from pathlib import Path
+from zoneinfo import ZoneInfo
 
 ROOT = Path(__file__).resolve().parents[4]
 ENDURANCE = ROOT / "endurance"
 WEEKS = ROOT / "training" / "weeks"
 LOGS = ROOT / "log"
 WATERMARKS = ROOT / "state" / "pull-watermarks.yml"
+
+# ---- the athlete's clock, not the container's ----
+# The container runs UTC. From 20:00 Eastern onward a naive date() is already tomorrow, which on
+# 2026-09-19 produced a brief dated Sunday that reported a missing sleep record for a night the
+# athlete had not had yet. Read the zone from athlete/profile.md rather than hardcoding it.
+def athlete_tz() -> ZoneInfo:
+    try:
+        text = (ROOT / "athlete" / "profile.md").read_text(encoding="utf-8")
+        m = re.search(r"^\s*timezone:\s*(\S+)\s*$", text, re.M)
+        if m:
+            return ZoneInfo(m.group(1))
+    except Exception:
+        pass
+    return ZoneInfo("America/New_York")
+
+
+def athlete_today() -> str:
+    return datetime.datetime.now(athlete_tz()).strftime("%Y-%m-%d")
+
 
 
 def frontmatter(path: Path) -> tuple[dict, str]:
@@ -276,7 +296,7 @@ def readable_exercise(line: str) -> str:
 
 def main() -> int:
     ap = argparse.ArgumentParser()
-    ap.add_argument("--date", default=datetime.date.today().isoformat())
+    ap.add_argument("--date", default=athlete_today())
     ap.add_argument("--walked", type=int, default=None,
                     help="minutes of WALKING already logged this block week, from Suunto")
     ap.add_argument("--record-pull", action="store_true",
@@ -286,10 +306,19 @@ def main() -> int:
     d = datetime.date.fromisoformat(date)
 
     if args.record_pull:
-        record_pull(datetime.datetime.now().astimezone())
+        record_pull(datetime.datetime.now(athlete_tz()))
         return 0
 
     print(f"# BRIEF CONTEXT — {d.strftime('%A %-d %B %Y')} ({date})\n")
+    # The container runs UTC. After 20:00 Eastern its date is already tomorrow, so say so loudly
+    # rather than letting a brief get written for a day that has not started. See the 2026-09-19
+    # note in athlete/profile.md.
+    container_today = datetime.date.today().isoformat()
+    if container_today != athlete_today():
+        print(f"!! THE SESSION CLOCK IS WRONG FOR THIS ATHLETE: it says {container_today} (UTC), "
+              f"it is {athlete_today()} where he is.")
+        print("!! Use the date on the line above. Do NOT open a log entry for "
+              f"{container_today} — that day has not started yet.\n")
     print_pull_windows()
     print()
 

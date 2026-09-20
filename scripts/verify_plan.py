@@ -33,9 +33,30 @@ import sys
 from collections import defaultdict
 from datetime import datetime
 from pathlib import Path
+from zoneinfo import ZoneInfo
 
 REQUIRED_KEYS = ["date", "sport", "name", "type", "block_week", "duration_s",
                  "target_mode", "follow"]
+
+# ---- the athlete's clock, not the container's ----
+# The container runs UTC. From 20:00 Eastern onward a naive date() is already tomorrow, which on
+# 2026-09-19 produced a brief dated Sunday that reported a missing sleep record for a night the
+# athlete had not had yet. Read the zone from athlete/profile.md rather than hardcoding it.
+def athlete_tz() -> ZoneInfo:
+    try:
+        root = Path(__file__).resolve().parent.parent
+        text = (root / "athlete" / "profile.md").read_text(encoding="utf-8")
+        m = re.search(r"^\s*timezone:\s*(\S+)\s*$", text, re.M)
+        if m:
+            return ZoneInfo(m.group(1))
+    except Exception:
+        pass
+    return ZoneInfo("America/New_York")
+
+
+def athlete_today() -> str:
+    return datetime.now(athlete_tz()).strftime("%Y-%m-%d")
+
 # Types that must fit the weekday door-to-door cap. `night` is deliberately excluded —
 # it runs post-bedtime and has its own, larger cap (see athlete/profile.md).
 WEEKDAY_TYPES = {"easy", "tempo", "intervals", "recovery"}
@@ -223,6 +244,18 @@ def check_logs(root: Path, sessions_by_date: dict, errors: list, warnings: list)
         if date != f.stem:
             errors.append(f"{rel}: date '{date}' does not match the filename")
             continue
+        # A log entry for a day that has not happened yet in the ATHLETE's timezone is almost
+        # always the UTC-clock bug: after 20:00 Eastern the container is already on tomorrow's
+        # date. On 2026-09-19 that produced a log/2026-09-20.md written Saturday evening which
+        # reported a missing sleep record for a night he had not had yet. Hard error, because
+        # the entry looks completely normal and nothing else catches it.
+        if date > TODAY:
+            errors.append(
+                f"{rel}: dated {date}, but it is {TODAY} for the athlete "
+                f"(athlete/profile.md -> timezone). A log entry cannot be in the future. "
+                f"If this came from the session clock, that clock is UTC — use the date "
+                f"brief_context.py prints.")
+            continue
 
         readiness = scalar(fm, "readiness")
         if readiness is not None and readiness not in READINESS_VALUES:
@@ -293,7 +326,8 @@ def check_logs(root: Path, sessions_by_date: dict, errors: list, warnings: list)
             f"trigger a re-author' says the next hard week becomes a down week and the "
             f"Champion-week mapping shifts (race day does not)")
 
-    stale = (datetime.now() - datetime.strptime(entries[-1][0], "%Y-%m-%d")).days
+    stale = (datetime.strptime(athlete_today(), "%Y-%m-%d")
+             - datetime.strptime(entries[-1][0], "%Y-%m-%d")).days
     if stale > LOG_STALE_DAYS:
         warnings.append(
             f"newest log entry is {stale} days old ({entries[-1][0]}) — soreness and RPE do not "
@@ -323,7 +357,7 @@ def parse_file(path: Path) -> tuple[dict, str]:
 #   "Never build a plan with strides that does not have a manual button push to start.
 #    I need to position myself."  — 2026-09-15
 # So it is checked, not just documented.
-TODAY = datetime.now().strftime("%Y-%m-%d")
+TODAY = athlete_today()
 
 REPEAT_HEADER = re.compile(r"^(.*?)\s+(\d+)\s*x\s*$", re.I)
 

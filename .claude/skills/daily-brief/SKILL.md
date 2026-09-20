@@ -274,6 +274,23 @@ pattern trains him to ignore the brief. Arch and plantar soreness is the opposit
 warning for the walking ramp (`rules/progression.md` calls that the block's most likely overuse
 injury) and is worth naming every time it appears, including which foot.
 
+**The session clock is UTC. It is not the athlete's date, and after 20:00 Eastern it is not even
+the right day.** Added 2026-09-19 after a brief written on Saturday evening was dated Sunday,
+opened `log/2026-09-20.md`, and reported a missing sleep record for a night he had not had yet.
+His answer: *"It's not the next day yet so there's no sleep. It's still Saturday."*
+
+**The date on `brief_context.py`'s first line is the only date that counts.** It reads
+`timezone:` from `athlete/profile.md` and it is what the log entry, the session lookup and the
+readiness call all key off. The harness's own "today's date" notice, `date`, and anything else
+reading the container clock are five hours ahead of him half the day.
+
+The script prints a loud `!!` banner whenever the two disagree, and `verify_plan.py` hard-errors
+on a `log/` entry dated past the athlete's today. **If either fires, the date is the bug** —
+do not reason about the data until it is right.
+
+**A related trap: the newest sleep record is supposed to be missing in the evening.** He has not
+slept yet. "No sleep record for last night" only means something in the morning.
+
 **When a ladder signal is missing, ask him. Do not score the ones that are left and call it a
 readiness call.** Added 2026-09-19 after the brief did exactly that. Four of seven signals were
 missing — no sleep record for the second night running, so duration, quality, HRV and resting HR

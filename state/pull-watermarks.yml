@@ -23,13 +23,13 @@
 # of reality makes the gap permanent and invisible — the opposite of what this file is for.
 
 suunto:
-  last_pull_at: 2026-09-19T12:16:11+00:00
-  last_pull_ms: 1789820171320
+  last_pull_at: 2026-09-20T02:22:36+00:00
+  last_pull_ms: 1789870956580
   lookback_hours: 48
   covers: wellness_sleep, wellness_recovery, workouts_list
 
 liftosaur:
-  last_pull_at: 2026-09-19T12:16:11+00:00
-  last_pull_ms: 1789820171320
+  last_pull_at: 2026-09-20T02:22:36+00:00
+  last_pull_ms: 1789870956580
   lookback_hours: 48
   covers: get_history. Program text is read fresh every brief, so it is not watermarked.
