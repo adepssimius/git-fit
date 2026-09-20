@@ -425,8 +425,10 @@ measured. Rehearse whatever is set on every long run over ~90 min, same as carbs
 
 **Sodium sensitivity is unlikely to be the constraint here.** `athlete/profile.md` records
 `sodium_tolerance: high` (athlete-confirmed 2026-09-20 — *"I tolerate sodium well in general"*),
-evidenced by a standing sauna protocol whose saline bolus runs ~2,950 mg/L, near 3x WHO
-oral-rehydration solution, taken routinely without trouble.
+evidenced by a standing sauna protocol that puts **~1,180 mg of sodium** down in one sitting,
+routinely and without trouble. Note the concentration across the whole protocol is **~1,310 mg/L**,
+only 1.3x WHO oral-rehydration solution — the 400 ml bolus is chased with ~500 ml of plain water to
+thirst. **It is a normal dose, not an unusual concentration.**
 
 **That tolerance is measured AT REST and does not transfer to running** — athlete, same day:
 *"Granted I'm not exercising directly after that dose."* Prolonged running cuts splanchnic blood

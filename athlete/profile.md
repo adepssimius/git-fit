@@ -1387,13 +1387,23 @@ one-offs and so the dehydration window is never flagged as an error.
 | 2 | **sauna — no water during** | 25 min |
 | 3 | **no water for 30 min after** | 30 min |
 | 4 | saline water | **1/2 tsp table salt in 400 ml** |
+| 5 | **plain water to thirst** | **~500 ml** |
 
 **The fluid gap through the sauna and for 30 minutes after is deliberate.** Do not read it as a
 missed drink or write it up as a hydration lapse.
 
-**The salt dose is ordinary, the concentration is not.** Half a level teaspoon is about 3 g NaCl,
-so roughly **1,180 mg sodium** — a normal single serving, about one LMNT stick. In 400 ml that is
-**~2,950 mg/L**, close to 3x WHO oral-rehydration solution and about 6x a sports drink.
+**Both the dose and the whole-protocol concentration are ordinary.** Half a level teaspoon is
+about 3 g NaCl, so roughly **1,180 mg sodium** — a normal single serving, about one LMNT stick.
+
+| over | concentration | vs WHO ORS (~1,020 mg/L) |
+|---|---|---|
+| the 400 ml bolus alone | ~2,950 mg/L | 2.9x |
+| **including the ~500 ml to thirst after it** | **~1,310 mg/L** | **1.3x** |
+
+**Read the second row, not the first.** The salt goes down concentrated and is chased with plain
+water inside the same window, so what the gut actually handles is close to an oral-rehydration
+solution rather than triple one. An earlier version of this note quoted the 2,950 figure as if it
+described the protocol; it describes one step of five.
 
 **Sodium tolerance is high, and it is a different axis from sweat rate** — athlete-confirmed
 2026-09-20: *"I tolerate sodium well in general."* The two get conflated and should not be:
@@ -1411,8 +1421,8 @@ nothing about hour four.
 
 | established | NOT established |
 |---|---|
-| sodium as such does not upset him | that he can take **~2,950 mg/L while running** |
-| a large bolus at rest empties fine | anything about concentration under exercise |
+| sodium as such does not upset him | anything about concentration **under exercise** |
+| ~1,180 mg in one sitting empties fine at rest | that he tolerates unusual concentrations — he does not hold one |
 
 **What it does buy is a narrowing: sodium sensitivity is unlikely to be what failed at 32 km.**
 That is worth having — it removes one candidate — but during exercise the concentration guidance in
