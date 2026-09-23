@@ -1,5 +1,5 @@
 ---
-date: 2026-09-26
+date: 2026-09-25
 sport: Run
 name: Night Long Run — 03:00 start
 type: long
@@ -18,6 +18,20 @@ intent: >
   kit and run through the dark into sunrise. Race night has ~13 hours of darkness and laps
   6-7 finish in exactly this dark-into-dawn transition (races/). Full race fueling,
   90-120g carbs/hr. At the 4h cap — do not extend.
+
+  MOVED Sat 09-26 -> FRI 09-25, same 03:00 start, on 2026-09-22. Athlete: "The weather on
+  Saturday afternoon on is going to be trash, so my long run session needs to move up to Friday
+  morning at 3 AM." The 03:00 start is the session and it survives the move intact; only the
+  date changed.
+
+  TWO CONSEQUENCES, both handled in training/weeks/w16.md:
+  Friday was the rest day, so the day before this is now Thursday — which carries Lower B.
+  rules/strength-authoring.md forbids heavy lower-body lifting the day before a long run, so
+  LOWER B IS DROPPED this week. The Sunday back-to-back moved to Saturday to stay a genuine
+  back-to-back on ~20h-old legs.
+
+  THE WATCH IS STALE. Guide j7iuqrlx is published under the 09-26 date; this file is now 09-25
+  and needs a re-push before Friday.
 origin: authored
 published:
   suunto: 2026-09-17T12:29:49Z    # guide id j7iuqrlx

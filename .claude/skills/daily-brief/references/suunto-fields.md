@@ -61,6 +61,39 @@ The 09-19 brief scored that 0.34 as red, called the whole day red off it, and re
 time: no sleep record for two nights running, while recovery samples arrived normally. Two symptoms,
 one cause.
 
+## Laps and guide steps ARE in the SML — in the Summary, not the samples
+
+**Call `workouts_sml` with `include_summary: true`.** The laps come back as `Windows` entries under
+`summary.Samples[].Attributes["suunto/sml"]`, each with a `Type` and a `TimeISO8601` that is the
+**END** of that window:
+
+| `Type` | what it is |
+|---|---|
+| `Lap` | a manual lap press |
+| `Interval` | a guide step, with **`IntervalNotes`** carrying the step's own name and `IntervalType` its role (`Warmup`/`Interval`/`Cooldown`/`Finished`) |
+| `Autolap` | the watch's automatic lap (check `Header.Settings.AutoLap`) |
+| `Activity` / `Move` | whole-session rollups |
+
+Each window also carries Duration, Distance, and Avg/Max/Min for HR, Speed, Cadence, Power,
+Altitude and Temperature — so a rep's real duration and peak speed can be read straight off
+instead of being reconstructed from a thresholded speed stream.
+
+**The `Header` window is the richest single object in the file:** `EPOC`, `PeakTrainingEffect`,
+`Feeling`, `MAXVO2`, `StepCount`, `PauseDuration`, per-zone durations for HR, speed, power **and
+ZoneSense**, and `Settings.AutoLap` — which is how you tell a manual press from an automatic one.
+It also names the **SuuntoPlus guide that actually ran**, under `Zapps` (`Id` and `ExternalId`).
+
+### ⚠ This corrects a wrong conclusion recorded on 2026-09-17
+
+That session's entry states the SML "carries no lap field" and that the athlete's presses "are not
+recoverable." **Both are false.** The check behind them filtered the request by `streams`, and the
+tool drops every sample that lacks the requested fields — so the lap windows were discarded by the
+query itself before anything was inspected. The athlete: *"I am able to see the lap presses in the
+suunto app."*
+
+**A filtered `streams` request can never prove something is absent.** To ask whether a thing is in
+the file, pull with `include_summary: true`, or with no `streams` filter at all.
+
 ## `DYNAMIC_DFA` in `tssList` is the receipt that ZoneSense ran
 
 `workouts_list` returns a `tssList` with one entry per calculation method — `HR`, `PACE`, `POWER`,

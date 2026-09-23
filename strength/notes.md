@@ -215,6 +215,103 @@ single set, same weight as the normal progression) rather than left at the tier-
 readiness ladder to downgrade. Upper A (Tue) is unaffected — upper body doesn't interfere with a
 running quality session.
 
+## Hip flexor eccentrics — the loaded leg-drop (2026-09-22)
+
+**Designed by the athlete's mother, a Pilates instructor.** It is better targeted than the reverse
+Nordic curl this session proposed, and the reason is specificity: the failure mode is swing-phase
+leg drive, and this is a loaded, exaggerated swing-phase deceleration. A reverse Nordic is a
+kneeling lean-back, which shares the muscle but not the movement.
+
+**The movement**, as he described it:
+
+1. Lie supine, **hips elevated ~6 inches on a foam roller**, ankle weights on.
+2. Raise the knee to the chest.
+3. Extend the leg straight up.
+4. **Throw the leg toward the ground and stop it before it lands.**
+5. 12 reps.
+
+**Why each part is doing work:**
+
+| element | what it buys |
+|---|---|
+| **hips elevated 6"** | lets the leg travel *past horizontal* into real hip extension — the lengthened position where eccentric adaptation happens. On the floor you stop at neutral and get nothing |
+| **straight leg** | long lever, so high hip torque for a small ankle weight |
+| **ankle weight** | distal mass, and the dose dial |
+| **"throw" then stop** | accelerating into the eccentric raises peak force — the same trick the downhill session uses |
+
+**Which muscle it hits.** Decelerating hip extension loads **iliopsoas and rectus femoris**
+together. With the knee straight, RF is lengthened at the hip but short at the knee, so the bias is
+toward iliopsoas. His soreness is **front of thigh (RF)**, so a reverse Nordic is the more
+RF-specific option — but it is far less like running, and specificity wins here.
+
+### Dosing — the throw is the risk, not the reps
+
+**A maximal lengthened eccentric is the exact mechanism of a hip flexor strain**, and the race is
+close. So:
+
+**~~primer Sun 09-27, real bout Mon 10-05.~~ — OVERTAKEN 2026-09-22. He did it the same day**, and
+at three times the dose: **3 sets of 12 weighted throws per side**, first exposure. *"I'll be fine
+by Friday."* The graded plan below is kept only to show what was proposed.
+
+**He wants three bouts total** (athlete, 2026-09-22: *"I need 2 more bouts of hip flexor"*).
+
+| bout | when | dose | DOMS lands on |
+|---|---|---|---|
+| ~~primer~~ | ~~Sun 09-27~~ | ~~unweighted, half range~~ | — |
+| **1 — done** | **Tue 09-22** | **3x12/side, weighted, thrown** | Wed 09-23, Thu 09-24 |
+| **2** | **Mon 10-05** | same | Tue 10-06 night run 40min, Wed 10-07 easy 47min |
+| **3** | **Wed 10-07** | same | Thu 10-08 easy 30min, Fri 10-09 rest |
+
+### Why both remaining bouts land in week 18, and nothing earlier works
+
+Every date between 09-23 and 10-03 puts DOMS on something that cannot absorb it:
+
+| date | DOMS lands on | blocked by |
+|---|---|---|
+| 09-26 | Sun rest, **Mon 09-28** | **Lower A, the block's last heavy squat day** — squats load hip flexors deep in the hole |
+| **09-27** | **Mon 09-28**, **Tue 09-29** | **same heavy squat, then the threshold session.** This slot was proposed on 09-22 and is WRONG — it was scheduled before the w17 squat day was checked |
+| 09-28 | Tue 09-29 | last hard midweek session of the block |
+| 09-29, 09-30 | — | **travel.** Foam roller and ankle weights are at home |
+| 10-01, 10-02 | Sat 10-03 | **lap simulation 2, the full dress rehearsal** |
+| 10-04 | Mon 10-05 easy | workable, but it stacks eccentrics onto legs fresh off a 105min b2b — higher strain risk for no gain |
+| **10-05, 10-07** | easy runs and rest only | **clear** |
+| 10-08 | Sat 10-10 | final GI long run, then the 5k on 10-11 |
+| 10-12 | race week | available, and the fallback if he wants wider spacing |
+
+**10-05 and 10-07 are three days apart, which is fine** — bouts days apart still stack protection,
+and bout 2's soreness should already be low. **Mon 10-12 is the alternative for bout 3** if he wants
+the spacing instead; DOMS by then is minimal, but it is race week and the benefit is small.
+
+**Bout 1 alone was probably enough.** A 3x12 weighted first exposure is a substantial bout, so 2
+and 3 are reinforcement rather than the mechanism. **Nothing is lost by moving or skipping either
+one** if a session needs protecting.
+
+**What the 09-22 timing actually costs.** DOMS peaks 24-48h, so Wed 09-23 and Thu 09-24 — and
+Friday's 240min night run is 3 days out, past peak. His read is probably right.
+
+**The exposure that matters is not DOMS, it is stride.** Sore hip flexors change how the leg swings,
+and Friday is four hours of swinging it. Quad DOMS makes a run uncomfortable; hip flexor DOMS
+changes the movement.
+
+**It confounds nothing worth having.** Friday's 240min reaches ~28.8 km and his onset is ~50 km
+(`log/2026-09-12.md`), so it was never going to read the hip flexors anyway.
+
+**Two things to watch on the day:**
+
+- **The low back.** Hips elevated plus a weighted straight leg dropping wants to tip the pelvis
+  into anterior tilt, and iliopsoas attaches to the lumbar spine. Keep the other knee bent with the
+  foot planted, and brace so the pelvis does not tip. If it is felt in the low back, the load has
+  gone to the wrong place.
+- **Range before weight.** Stop the leg higher than feels necessary on the first bout. Peak force
+  happens at the deceleration point, so a shorter range is a genuinely lower dose.
+- **Strain vs soreness, and this is the one to act on.** A maximal lengthened eccentric is the
+  mechanism of a hip flexor strain. **Diffuse ache across the front of the thigh is the intended
+  outcome. Sharp or localised pain in the hip crease is not** — that is a different thing and it
+  changes what Friday should be.
+
+**This is reasoning from mechanism, not a validated protocol.** Nothing left in the block reaches
+50 km (`log/2026-09-12.md`), so there is no way to test whether it worked before race day.
+
 ## Taper handling (from `training/block.md`)
 
 The shape is a dip, then one last full session, then down for good — not a monotonic decline:
