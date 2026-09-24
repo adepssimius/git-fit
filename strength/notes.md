@@ -302,6 +302,11 @@ changes the movement.
   into anterior tilt, and iliopsoas attaches to the lumbar spine. Keep the other knee bent with the
   foot planted, and brace so the pelvis does not tip. If it is felt in the low back, the load has
   gone to the wrong place.
+  **VALIDATED 2026-09-23.** After bout 1 he reported DOMS in the **front of the thigh and the lower
+  abs**, and no low back. That is the correct signature: rectus femoris took the eccentric load, and
+  the anterior core held the pelvis instead of the lumbar spine absorbing it. **Lower abs is the
+  marker that the brace worked** — treat its absence, or low back soreness in its place, as a cue to
+  fix position before adding load.
 - **Range before weight.** Stop the leg higher than feels necessary on the first bout. Peak force
   happens at the deceleration point, so a shorter range is a genuinely lower dose.
 - **Strain vs soreness, and this is the one to act on.** A maximal lengthened eccentric is the
