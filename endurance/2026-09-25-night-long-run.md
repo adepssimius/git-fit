@@ -33,7 +33,11 @@ intent: >
   THE WATCH GUIDE IS DATED 09-26, AND IT CANNOT BE FIXED. Guide j7iuqrlx carries exactly the right
   content but is filed under 09-26. A re-push on 2026-09-24 was refused twice with a bare 500,
   because the Suunto server runs UTC and was already on 09-25 — see rules/publishing.md § A guide
-  cannot be uploaded for today or the past. ON FRIDAY, SELECT THE GUIDE LABELLED 09-26 MANUALLY.
+  cannot be uploaded for today or the past. guides_update hits the same validation.
+  SOLVED A DIFFERENT WAY: j7iuqrlx IS PINNED (guides_pin, 2026-09-24), so it is the first guide on
+  the watch regardless of its date. The stale 08-23 5k TT pin was removed, so it is the only pinned
+  guide. Pinning does not care about localDate, which makes the date irrelevant rather than
+  something to work around at 02:45.
 
   LIGHTING PLAN — athlete decision 2026-09-24: ZEBRALIGHT LEVEL 5 WITH A PLANNED CELL SWAP.
   Level 5 measured 2h45 and darkness runs 03:00 to sunrise ~06:40, so one cell does not cover the

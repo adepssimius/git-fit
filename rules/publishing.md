@@ -40,7 +40,13 @@ session. **Publish guides at least a day ahead**, and check `mcp__suuntool__doct
 `servertime` before concluding an upload failure is something else.
 
 **The error says nothing useful.** If an upload 500s, compare `localDate` against the server clock
-before touching the step tree.
+before touching the step tree. **`guides_update` hits the same validation**, so replacing an
+existing guide's content is not a way around it.
+
+**When the date cannot be fixed, PIN the guide instead.** `guides_pin` is independent of
+`localDate`, so a guide filed under the wrong day still comes up first on the watch. That turns a
+wrong date from something the athlete has to work around at 02:45 into nothing at all. Unpin
+whatever was pinned before, or he gets two candidates.
 
 1. **Push a rolling ~2-week window**, not the whole plan at once. The plan is meant to adapt to how
    training actually goes (see `rules/progression.md`), and pushing far-future sessions that will
