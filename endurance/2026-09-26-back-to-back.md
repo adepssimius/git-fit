@@ -28,7 +28,8 @@ intent: >
   Also the Polar strap test slot (athlete/profile.md § Chest straps) — 140min is long enough to
   outlast the 1h27 failure onset. Battery and band replaced first, or it tests nothing.
 
-  THE WATCH IS STALE: this file's guide is published under the 09-27 date.
+  REPUBLISHED 2026-09-24 as guide 8plkrz3e, correctly dated 09-26. The stale 09-27 guide
+  (5v8aa5wx) was deleted.
 origin: authored
 published:
   suunto: 2026-09-17T12:29:49Z    # guide id 5v8aa5wx

@@ -244,6 +244,28 @@ together. With the knee straight, RF is lengthened at the hip but short at the k
 toward iliopsoas. His soreness is **front of thigh (RF)**, so a reverse Nordic is the more
 RF-specific option — but it is far less like running, and specificity wins here.
 
+### Bout 1 landed too laterally — the fix, 2026-09-24
+
+Athlete after bout 1: *"I feel it a little too much on the outside, so I need to modify the movement
+to get a little more inward."*
+
+**Outside means TFL took a disproportionate share.** TFL flexes the hip but also **abducts and
+internally rotates** it, so it gets recruited whenever the leg drifts away from the midline or the
+toe turns in. Iliopsoas and the midline of rectus femoris — the tissue that actually complains at
+50 km — sit medial to it.
+
+**Cues for bouts 2 and 3, all aimed at the same two things:**
+
+| cue | why |
+|---|---|
+| **Drop the leg slightly ACROSS the midline**, not straight down in its own plane | a few degrees of adduction takes TFL out of its best line of pull |
+| **Toe turned slightly OUT** | TFL internally rotates, so external rotation unloads it and biases medial |
+| **Pelvis square — do not let it rotate toward the working side** | pelvic rotation hands the movement to TFL |
+| **Throw slightly less hard** | a violent throw recruits whatever is most available; position cannot be held while fighting momentum |
+
+**This is a targeting fix, not a dose reduction.** The load was right — soreness 4 the day after
+36 weighted reps per side is expected. It just landed a couple of inches lateral to the target.
+
 ### Dosing — the throw is the risk, not the reps
 
 **A maximal lengthened eccentric is the exact mechanism of a hip flexor strain**, and the race is

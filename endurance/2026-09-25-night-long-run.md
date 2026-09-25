@@ -30,8 +30,22 @@ intent: >
   LOWER B IS DROPPED this week. The Sunday back-to-back moved to Saturday to stay a genuine
   back-to-back on ~20h-old legs.
 
-  THE WATCH IS STALE. Guide j7iuqrlx is published under the 09-26 date; this file is now 09-25
-  and needs a re-push before Friday.
+  THE WATCH GUIDE IS DATED 09-26, AND IT CANNOT BE FIXED. Guide j7iuqrlx carries exactly the right
+  content but is filed under 09-26. A re-push on 2026-09-24 was refused twice with a bare 500,
+  because the Suunto server runs UTC and was already on 09-25 — see rules/publishing.md § A guide
+  cannot be uploaded for today or the past. ON FRIDAY, SELECT THE GUIDE LABELLED 09-26 MANUALLY.
+
+  LIGHTING PLAN — athlete decision 2026-09-24: ZEBRALIGHT LEVEL 5 WITH A PLANNED CELL SWAP.
+  Level 5 measured 2h45 and darkness runs 03:00 to sunrise ~06:40, so one cell does not cover the
+  night. He chose the swap over level 4 (7h20, one cell) deliberately, because swapping an 18650 in
+  the dark on tired legs is a race-night skill he has never performed in the field and this is the
+  only session left long enough to rehearse it.
+  SWAP AT ~05:30, NOT 05:45 — ahead of the first step-down rather than in response to it. Swapping
+  because the light went dim is the failure mode; swapping at a chosen moment is the skill.
+  Two spare cells, so one is still a real backup after the planned swap.
+  The 3D-printed adapter is the single point of failure and has no spare, but ~~do the swap over a
+  pocket~~ is unnecessary: it is printed in GLOW-IN-THE-DARK filament (athlete, 2026-09-24), and it
+  sits under a lamp all night, so it stays charged and is findable if dropped.
 origin: authored
 published:
   suunto: 2026-09-17T12:29:49Z    # guide id j7iuqrlx

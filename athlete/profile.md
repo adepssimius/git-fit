@@ -534,6 +534,13 @@ problem from race day's. Do not count it as having rehearsed the aid-station rou
 | **Nitecore NU25 ×2** | Backup, one per drop bag | built-in Li-ion, **not swappable** | owned |
 | **Nitecore NU21 ×2** | Backup | built-in Li-ion, **not swappable** | owned |
 | **Panasonic NCR18650GA ×10** | feeds both 18650 lights | — | **IN HAND, in use 2026-09-15** |
+| **Noxgear chest strap** | **the chest mount** the Zebralight rides on | — | **IN HAND** (recorded 2026-09-24) |
+| **3D-printed adapter** | joins the Zebralight to the Noxgear strap. **Glow-in-the-dark filament** — findable if dropped, and it sits under a lamp all night so it stays charged | — | **IN HAND** (recorded 2026-09-24) |
+
+**The chest light is a three-part assembly, not one item: Zebralight + 3D-printed adapter + Noxgear
+strap.** Recorded 2026-09-24 because the athlete had to name both when asking for a packing list —
+the inventory listed only the light. **All three go in every night-kit list**, and the adapter is
+the single point of failure with no spare.
 
 **~~"4 legacy headlamps" as a separate line~~ — CORRECTED 2026-09-12.** There is no legacy stock
 behind these. Athlete: *"The 2x NU25 lamps are included in the 4 'legacy' count. The other 2 are

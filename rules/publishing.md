@@ -26,6 +26,22 @@ python3 scripts/pack_guide.py    endurance/2026-08-04-easy-strides.md --base64
 
 Then pass that base64 to `mcp__suuntool__guides_upload`. `suuntool` needs `--allow-write`.
 
+### ⚠ A guide cannot be uploaded for today or the past — the server clock is UTC
+
+**`guides_upload` returns a bare `500 General error` when `localDate` is not in the future by the
+SERVER's clock, and the server runs UTC.** Discovered 2026-09-24 at 22:53 Eastern, which is
+**2026-09-25 02:53 UTC** — so a guide for Friday 09-25 was already "today" server-side and was
+refused twice, while a guide for 09-26 uploaded fine seconds later. The identical step tree had
+uploaded without complaint a week earlier under a future date.
+
+**The practical consequence: from ~20:00 Eastern onward you cannot publish tomorrow's guide.** That
+is exactly when someone would think to do it, and exactly the window before an early-morning
+session. **Publish guides at least a day ahead**, and check `mcp__suuntool__doctor` for
+`servertime` before concluding an upload failure is something else.
+
+**The error says nothing useful.** If an upload 500s, compare `localDate` against the server clock
+before touching the step tree.
+
 1. **Push a rolling ~2-week window**, not the whole plan at once. The plan is meant to adapt to how
    training actually goes (see `rules/progression.md`), and pushing far-future sessions that will
    likely be revised is wasted work and watch clutter.
