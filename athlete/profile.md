@@ -559,6 +559,27 @@ and it works great."* That is the first swappable-cell light on his body, so the
 now only describes the backup lamps. It also means it missed 09-12 and has **never been run on
 trail**. See below for what is still untested.
 
+### ✅ FIELD-TESTED 2026-09-25 — level 5 runtime confirmed, and the swap is a non-event
+
+**The 240min night run was the first time the Zebralight ran past its own level-5 runtime.** Light
+on from ~02:50, dead at **05:50** — **a clean 3h00 of on-time against the 2h45 he measured**, so it
+beat the pessimistic figure. **Plan level 5 at 2h45 and expect ~3h00.**
+
+**The swap is trivial and that is the important finding.** Athlete: *"Swap was easy, did it without
+taking the assembly off. The end cap unscrews."* Done in the dark, on three-hour legs, with the
+light still mounted to the Noxgear strap.
+
+**So runtime stops being a constraint on the level choice.** The earlier worry — that 2h45 does not
+cover the ~100min interval between bag passes comfortably — is moot when a swap costs seconds and
+does not disturb the mount. **Run level 5 all night. Carry cells, not a compromise.** With ten
+NCR18650GA on hand and ~13 hours of darkness, that is roughly 5 cells for the night at level 5 and
+he owns twice that.
+
+**The one thing that did fail was the TIMING, not the kit.** The swap was planned for ~05:30,
+deliberately ahead of the first step-down; he ran to 05:50 and got caught in the dark. **On race
+night this is a lap-boundary task, not a "when I notice" task** — the light gives no warning he can
+act on, and the trail is where he is when it goes.
+
 ### Power — one cell format, three roles (recorded 2026-09-08)
 
 | item | notes |

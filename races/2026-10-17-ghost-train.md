@@ -351,6 +351,273 @@ the sides for porcupines.
 | ears | **Burton headband** | from dusk |
 | head, backup | **beanie, one in each drop bag** | only if needed |
 
+### ⚠ GAP FOUND 2026-09-25, in the field: the night system has NO LEG LAYER
+
+**The table above covers torso, hands, ears and head, and says nothing below the waist.** Found at
+~02:50 on 09-25 while walking a drop bag out before the 240min night run — athlete: *"it's really
+cold. I'm too cold. I should have brought some tights instead of shorts."*
+
+**Race day is mid-October, colder than late September, and the plan walks the hills and the steep
+downs.** Walking generates far less heat than running, so the coldest hours are also the ones with
+the least self-heating. A leg layer is not optional kit for this race and it was never specified.
+
+**TO DECIDE before lap sim 2 (10-03):** tights vs. shorts as the default, whether a leg layer goes
+on from dusk like the Alpha Direct or is a drop-bag item to add, and whether the same answer holds
+for the standing time at bag passes.
+
+### ✅ THE ACTUAL MECHANISM — Alpha Direct is switched by AIRFLOW, and the airflow is his own
+
+**This file got the clothing diagnosis wrong three times in one day** — first ambient wind, then
+insulation quantity once he said there was no wind. **Both were wrong, and this version is grounded
+in how the garment works rather than in whichever fact arrived last.** Athlete, 2026-09-26:
+
+> *"If I'm wearing just that then it's almost like not wearing a shirt when I'm running then warms up
+> immediately when I stop. That's why I love wearing it for intervals with walking breaks. Just the
+> breeze from running is enough to prevent any heat from staying on my skin."*
+
+**Alpha Direct's warmth is a switch, not a level.** Air moving through the open pile strips heat;
+still air in the pile insulates. **Running through 7C still air, HE is the wind** — the slipstream at
+8:00/km is enough to null the garment. Stop and it warms immediately. That is the feature, and it is
+why he uses it for intervals with walking breaks.
+
+**So the conditions were 7C with no AMBIENT wind, and that does not mean no airflow.**
+
+#### What this explains, all at once
+
+| observation | explanation |
+|---|---|
+| cold for 50min of running | the pile was ventilated by his own motion; the Rab was not enough to stop it, and bare legs were dumping heat at 7C on top of that |
+| too warm by 1h30 | Rab on, warmed up, now trapping vapour with nothing to ventilate |
+| the Rab retains moisture | it stops airflow by being a vapour barrier — right job, wrong method |
+| cold ears | the band is thin and the ears face the slipstream directly |
+| the watch is cold | metal against skin in the slipstream |
+
+#### What he actually needs: an outer that resists AIRFLOW and still breathes
+
+| option | stops the slipstream? | breathes? | verdict |
+|---|---|---|---|
+| **tight-knit merino over the top** | **yes** | **yes** | **best aimed** |
+| breathable windshirt (measured CFM) | yes | yes | equivalent, lighter, dries faster |
+| Rab approach jacket | yes | **no** | works, but the vapour cost is the complaint |
+| **60 GSM Cruiser over the top** | **no — equally air-permeable** | yes | **more loft, same ventilation. Weakest of the four** |
+
+**So merino-on-top is the recommendation, and his own reasoning for it was right** — loft stays
+uncompressed, moisture buffers outward, and the knit stops the airflow from outside where it arrives.
+**~~The 60 GSM Cruiser beats merino.~~ — withdrawn.** A second air-permeable layer does not change the
+variable that matters.
+
+**Ear muffs: choose for airflow resistance at the ears, not bulk.** Same logic as the torso — the
+ears are cold because air is moving over them, not because 7C is cold.
+
+**Tights: plain warm tights are fine.** The legs are covered skin either way; there is no open pile
+to ventilate, so the wind-panel question was a red herring in both directions.
+
+**⚠ Race night will be colder than 7C**, with 13 hours of darkness against this run's three, and
+walking sections where the slipstream stops and the Alpha Direct switches back on. **The switch works
+in his favour when walking and against him when running** — which is exactly the range problem, and
+why the over-layer has to come off easily.
+
+### ~~IT WAS 7C WITH NO WIND — an insulation-quantity problem~~ — superseded by the mechanism above
+
+**Conditions, athlete-reported 2026-09-26:** *"it was 7 degrees during almost that entire run with
+basically no wind."* **7C, still air.** The sections below diagnosed every clothing complaint as wind
+management. **With no wind, that framing collapses.** What actually follows:
+
+| complaint | wind reading (wrong) | correct reading at 7C, still |
+|---|---|---|
+| cold ears | wind chill, needs a windproof band | **genuine insulation deficit at the ears** |
+| cold legs | no windproofing below the waist | **bare skin at 7C** |
+| too warm up top | insulated + windproof = too much | **the Rab contributed NOTHING but trapped vapour** |
+| Rab retains moisture | wrong tool on a still night | **the Rab was pure cost — there was no wind to block** |
+
+**This is an insulation-QUANTITY problem, and the answer is loft.** Not tight knits, not wind panels.
+
+**Which reverses two recommendations made the same day:**
+
+1. **EAR MUFFS: choose for warmth, not for a wind-blocking outer.** The shape was right; the reason
+   was wrong.
+2. **TIGHTS: plain warm tights, not a windproof front panel.** The panel was the wrong priority.
+3. **STAGE 2 OVER-LAYER: the 60 GSM Cruiser beats merino**, exactly opposite to what was written an
+   hour earlier. Loft is what he is short of; merino's advantage was wind resistance, which buys
+   nothing here. **His original instinct — Cruiser over Super Cruiser — was right.**
+
+**The merino-on-top reasoning still stands on its own merits** (loft stays uncompressed, moisture
+buffers outward) and is worth testing. **It is just second in line now, not first.**
+
+**⚠ And race night will be colder than this.** He was cold at 7C in Super Cruiser + Rab, for 50
+minutes of running. Mid-October overnight in Brookline is not warmer than late September, and the
+race has 13 hours of darkness against this run's three. **Size the kit for worse than 7C, not for 7C.**
+
+### ~~FIELD-TESTED 2026-09-25 — the problem is WIND MANAGEMENT, not insulation~~ — see the correction above
+
+**He started the 240min night run in Super Cruiser + Rab + Burton headband + light fleece gloves.**
+Result, at ~1h in, athlete verbatim: *"I'm too warm up top and too cold on the bottom. Also my ears
+are cold but if I had my beanie on the rest of my head would be too warm."*
+
+**All three complaints resolve to one variable.** Windproofing is on his torso and nowhere else:
+
+| | insulated | windproof | result |
+|---|---|---|---|
+| torso | yes | **yes — Rab** | **too warm** |
+| legs | no | **no** | **too cold** |
+| ears | yes — headband | **no** | **cold** |
+| scalp | — | — | a beanie would overheat it |
+
+**Cold ears on a warm head is wind chill, not an insulation deficit.** A beanie adds insulation
+where none is needed and still does not block wind at the ears. **The fix is a WINDPROOF ear cover,
+not a warmer one** — a headband with a wind-blocking panel, not a thicker fleece one. This matters
+because the obvious response (bigger hat) makes the scalp problem worse while barely touching the
+ear problem.
+
+**And it settles the walking question from earlier the same morning.** Cold in the Super Cruiser
+*alone* was the hypothesis; the answer is that Super Cruiser **plus** the Rab is too warm while
+running. **So the insulation is not under-specified — the layering rule is right and the shell is
+the thermostat exactly as this section argues.** The gap is that there is no thermostat below the
+waist and none at the ears.
+
+### The torso layering question — athlete's two options, 2026-09-25
+
+**He proposes either a 60 GSM Cruiser OVER the 120 GSM Super Cruiser for the night, or a merino
+underlayer instead**, reasoning that a tighter knit would help — *"since I was pretty cold with the
+super cruiser alone."*
+
+**His merino instinct is the better-aimed of the two, and for exactly the reason he guessed.**
+Alpha Direct's weakness is that air goes straight through it; a tight-knit base cuts that wind
+penetration from the inside. **It also fixes a structural point this file never stated: Alpha Direct
+is an insulator, not a wicking layer, and it wants a base under it.** The table above says "singlet"
+next to skin, which may or may not be doing that job.
+
+**Stacking 60 GSM over 120 GSM does not address wind at all**, and it makes the confirmed
+too-warm-while-running problem worse rather than better. **It buys range at the cold end he is
+already reaching with the Rab**, and the Rab is the cheaper way to get there.
+
+**The honest caveat on merino: it dries slowly and is heavy when wet.** Over 30 hours with rain live
+in mid-October, next-to-skin merino that wets out stays wet. **A thin wool-synthetic blend hedges
+that** and keeps most of the knit benefit.
+
+### ⚠ CORRECTED same day — he was cold for the first 50 MINUTES OF RUNNING, not just standing
+
+**This section first argued to cover the legs and re-test before touching the torso**, on the
+grounds that he was cold standing still in shorts. **That is wrong.** Athlete: *"I was cold standing
+still then for about the first 50 minutes of the run too"* — **in the Super Cruiser AND the Rab.**
+
+**Fifty minutes of running in both layers and still cold means the insulation is genuinely short at
+the cold end.** Tights will help and are still item 1, but they are no longer the whole explanation,
+and the torso decision does not have to wait for them.
+
+**So the real problem is RANGE, not total warmth.** The same two layers left him cold for the first
+50 minutes and too warm by 1h30. He needs more at the cold end **without** more at the warm end —
+and that rules out anything permanent.
+
+**Which makes the 60 GSM Cruiser OVER the Super Cruiser the right architecture after all**, because
+it comes off. Three stages instead of two:
+
+| stage | layer | when |
+|---|---|---|
+| 1 | 120 GSM Super Cruiser | all night, stays on |
+| **2** | **60 GSM Cruiser over it** | **the coldest hours; comes off when working** |
+| 3 | Rab approach jacket | wind, standing, open sections |
+
+**~~Alpha Direct wants a wicking base layer under it.~~ — WRONG, corrected 2026-09-26.** Athlete:
+*"The alpha direct does wick quickly like a base layer."* He is right — Alpha Direct is built to go
+next to skin and moves moisture fast. It does not need anything under it.
+
+**His design is MERINO ON TOP of the Alpha Direct, and it is better than the version this file
+first proposed.** *"I was going to go alpha direct as a base then merino on top of it to leverage the
+alpha direct loft."* Three reasons it works, one of which he named:
+
+| | |
+|---|---|
+| **loft** | sandwiching Alpha Direct compresses the pile and kills its insulation. Next to skin with a layer over keeps it lofted — his point |
+| **wind arrives from outside** | a tight knit on the OUTSIDE cuts wind before it reaches the pile. Underneath, it does nothing about that |
+| **moisture direction** | merino over the top buffers the moisture Alpha Direct pushes out, and stays warm damp. Next to skin it would soak and stay soaked for 30 hours |
+
+**So stage 2 is a choice between two over-layers, and they solve different halves:**
+
+| over-layer | adds | costs |
+|---|---|---|
+| **merino** | **wind resistance** — tight knit | heavier, slow to dry |
+| 60 GSM Cruiser | loft | air-permeable, so no wind benefit |
+
+**The diagnosis was wind management, so merino is the better-aimed of the two.** Both come off, which
+is the property that matters for range. **Test one at 10-03 and the other at 10-10** — there are two
+long sessions left and two candidates.
+
+**One more thing the timing explains.** He started 03:33, the coldest part of the night, and ran
+7:23/km for the first 55 minutes — quicker than any recent easy run. **Some of that early pace was
+him trying to get warm**, which is worth knowing before reading it as fitness.
+
+### THE LEG GAP IS THE CAUSE OF THE TORSO BIND, not a separate complaint
+
+**Further, ~1h30 in:** *"the Rab is retaining too much moisture. If there's not a stiff breeze I
+need something more breathable up top. I'm leaving the rab on because I would be too cold overall
+with it off."*
+
+**So he is stuck: shell off is too cold overall, shell on is too warm and wet.** That looks like a
+contradiction and is not. **He is running the torso hot to defend core temperature against heat loss
+from bare legs.** The torso is over-served because it is compensating for the only uninsulated
+surface on him.
+
+**Which reorders the fix. Tights are the remedy for the TORSO problem, not just for cold legs** —
+insulate the legs and the torso stops having to over-compensate, and only then can the shell come
+off on a still night, which is what he actually wants.
+
+**And this section predicted the moisture half exactly:** *"Leave it on while working hard and it
+will trap the moisture the Alpha Direct is designed to dump."* Confirmed in the field. **The Rab was
+chosen as a WIND tool and on a still night it is blocking vapour with no wind to block.** Leaving it
+on was still the right call — damp beats cold, and there was no third option on the trail.
+
+**TO BUY / DECIDE before lap sim 2 (10-03), in priority order:**
+
+1. **A leg layer — the highest-value item on this list**, because it fixes two problems. Wind-resistant
+   beats heavier: a windproof front panel does more than thicker fabric, same logic as the ears.
+2. **A breathable windshirt as a third torso option**, sitting between bare Alpha Direct and the Rab.
+   **The property to shop for is measured air permeability (CFM), not weight** — the Rab's job is
+   wind and it should stay the wind answer; this covers the still, cold, working case the Rab
+   handles badly.
+3. **EAR MUFFS — athlete decision 2026-09-25**, not a warmer headband: *"I think I want some kind of
+   ear muffs for keeping my ears warm without warming the rest of my head too much."* That is the
+   right shape for the problem, and better than the windproof-headband suggestion this file made
+   first — muffs cover **only** the ears, so the scalp stays uninsulated by construction rather than
+   by luck. **Look for a wind-blocking outer**, since the deficit is wind and not warmth.
+4. **Nothing warmer on the torso.** It is already too much with the shell on — and once the legs are
+   covered it will be more so.
+5. **Nothing to buy for the watch — move it OVER the sleeve.** Athlete, same run: *"I also need to
+   find some way to cover my watch because it gets very cold against my skin."* The case is a heat
+   sink sitting on a high-blood-flow surface. **He can wear it outside the cuff because
+   `athlete/zones.yml` sets `chest_strap_required: true` — ZoneSense does not use optical wrist HR,
+   so skin contact buys him nothing.** Most runners cannot do this; he can, for free. GPS is
+   unaffected and the screen is easier to read with gloves on. A wrist gaiter is only needed if the
+   cuff will not hold it.
+
+**The in-race operational note stands and is now evidence-backed:** shell off while working, on
+while walking, standing, or in the open. He ran too warm because he left it on while running — and
+could not take it off because of the legs.
+
+### ⚠ AND THE INSULATION MAY BE SHORT FOR WALKING — same morning
+
+**"Super Cruiser" IS the 120 GSM Alpha Direct hoodie** (athlete, 2026-09-25). That is the garment's
+name; the table above should be read as naming it. **So this is not a missing item, it is a doubt
+about the one already chosen:** *"if I walk a lap at all then I'm going to need more than the super
+cruiser."*
+
+**That lands on the thesis of this whole section.** The argument for Alpha Direct was that it can
+*stay on* while moving, and the cold hours are the slow hours — laps 5 and 6 at 10:15-11:00/km for
+four hours. **But the plan also walks the hills and the steep downs**, and walking generates far
+less heat than even an 11:00/km shuffle. If the insulation is short for walking, it is short for
+precisely the hours it was picked for.
+
+**The designed answer may already cover it and needs checking before anything is bought:** the
+Rab approach jacket over the top roughly doubles what the Alpha Direct does, because
+air-permeability is the whole mechanism. **The open question is narrow — is he cold in the Super
+Cruiser ALONE, or in the Super Cruiser PLUS the shell?**
+
+- Cold in the hoodie alone → the system works as written, the shell just has to go on earlier than
+  "when cold, standing, or in the open" implies. The card's *"put the layer on BEFORE you need it"*
+  instruction extends to the shell.
+- Cold in both → the insulation is genuinely under-specified for a walking race in mid-October, and
+  that has to be resolved before lap simulation 2 on 10-03.
+
 **The operational point: the shell is the adjustment, not the insulation.** Alpha Direct works by
 letting air through, so putting a windbreaker over it roughly doubles what it does. That gives a
 two-stage system with one action — **shell on when cold, standing, or in the open; shell off on

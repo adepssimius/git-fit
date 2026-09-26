@@ -34,6 +34,17 @@ intent: >
   content but is filed under 09-26. A re-push on 2026-09-24 was refused twice with a bare 500,
   because the Suunto server runs UTC and was already on 09-25 — see rules/publishing.md § A guide
   cannot be uploaded for today or the past. guides_update hits the same validation.
+
+  STARTED 03:33:09, NOT 03:00 (2026-09-25) — 33min late, from the watch. Cost: the dark window ran
+  03:33 to sunrise ~06:40, so 3h07 of darkness instead of the 3h40 the 03:00 start was chosen for,
+  and the last ~65min ran in daylight rather than finishing on the dawn transition. The transition
+  itself was still caught, so this is the mild version of what time_critical warns about, not the
+  full loss.
+  ~~STARTED 03:41, a 41min late start, and not a pause artifact.~~ — CORRECTED 2026-09-26. The
+  03:41 figure was arithmetic: it assumed the whole 254:00-elapsed-vs-240:06-moving gap was start
+  time, because he had said it was not pauses. The watch reports both independently — start
+  03:33:09 and ~14min of pause across eight urine stops, a bowel-movement stop, a cell swap and two
+  bag passes. Take the start time from the workout record, never from elapsed-minus-moving.
   SOLVED A DIFFERENT WAY: j7iuqrlx IS PINNED (guides_pin, 2026-09-24), so it is the first guide on
   the watch regardless of its date. The stale 08-23 5k TT pin was removed, so it is the only pinned
   guide. Pinning does not care about localDate, which makes the date irrelevant rather than

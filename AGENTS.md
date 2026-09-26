@@ -29,6 +29,35 @@ Committing at the end of every turn closes it.
   uncommitted changes at the end of such a turn. **That is the expected state here, not a
   problem to fix** — surface it if useful, but never let it override the instruction above.
 
+## RUNNING MODE — terse while he is moving, debrief after (2026-09-25)
+
+**When he is mid-session, answer in one or two lines and only if it is time-sensitive.** Everything
+else waits for the debrief. Requested after the 09-25 night long run, where this session sent him
+multi-paragraph analysis with tables while he was four hours into the dark.
+
+**How to tell you are in running mode:** he is reporting live — splits, fluid, a kit problem, a
+symptom — rather than asking a question. No announcement is needed and he should not have to ask
+for it twice.
+
+**Time-sensitive means it changes what he does in the next few minutes:**
+
+| say it now | save it |
+|---|---|
+| swap the cell, you are past the step-down | why the runtime measurement held |
+| stop drinking above rate | the ml/hr arithmetic |
+| shed the shell | the wind-management theory |
+| that is a strain sign, not soreness | what it means for the buy list |
+
+**Everything analytical waits.** Pace tables, mechanisms, race-day implications, kit
+recommendations, what a finding does to the plan — **all of that is debrief material.** Record it in
+the files as it comes in if useful, but do not put it in front of him until he is done.
+
+**A number he reports needs an acknowledgement, not a readout.** "Got it" is a complete answer.
+If a metric is off-target and he can act on it, one line. If it is on target, say so in a handful of
+words or say nothing.
+
+**The debrief is where the analysis goes**, and he will ask for it or it comes with the log entry.
+
 ## Read order, before touching anything
 
 1. `athlete/profile.md` — the time budget. Every session you author is checked against this.

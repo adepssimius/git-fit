@@ -33,7 +33,7 @@ HR 41–47. A converted value far outside that is a conversion error, not a phys
 | `balance` (wellness_recovery) | 0–1 | body resources. Ladder: ≥0.70 green, 0.40–0.70 amber. **Worthless when sleep tracking is off — see below** |
 | `stressState` | enum | low integers = calm. Not in the ladder; ignore unless something else is odd |
 | `Temperature` (SML) | **Kelvin, and USELESS** | see below — never report it as ambient |
-| `recoveryTime` | seconds | the watch's own prescription, e.g. `40380` = 11h13m |
+| `recoveryTime` | seconds | the watch's own prescription, e.g. `40380` = 11h13m. **Superlinear in session size — see below; never compare across session sizes as if it were linear** |
 | `totalTime` | seconds | |
 | `totalDistance` | metres | |
 
@@ -60,6 +60,26 @@ The 09-19 brief scored that 0.34 as red, called the whole day red off it, and re
 110min long run to 85min. **Both nights' readings were retracted.** The tell was there the whole
 time: no sleep record for two nights running, while recovery samples arrived normally. Two symptoms,
 one cause.
+
+## `recoveryTime` is superlinear — do not read it as hours, or compare it naively
+
+Three measured points from this athlete:
+
+| session | moving | DFA TSS | `recoveryTime` |
+|---|---|---|---|
+| 2026-09-17 practice 5k | 43min | — | 13h12 |
+| 2026-09-25 night long run | 4h00 | 211 | 30h42 |
+| 2026-09-12 50k | 7h00 | 367 | **120h00** |
+
+**1.7x the DFA load between the last two produced 3.9x the recovery figure.** A moderate session and
+a long one are not two points on a line.
+
+**A session's figure looks alarming only when compared against a much smaller one.** The 09-25 entry
+first called 30h42 "the highest in the log and unexplained" on the strength of a single comparison
+against the 5k — it was neither, and the 50k's 120 hours settled it in one call. **Before calling a
+recoveryTime anomalous, pull a session of comparable size.**
+
+**And 120 hours never meant five days off.** He did not take them and nothing suggested he should.
 
 ## Laps and guide steps ARE in the SML — in the Summary, not the samples
 

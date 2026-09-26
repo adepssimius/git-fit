@@ -440,6 +440,110 @@ of that failure, which narrows the search.
 either argue for dosing above need. In-session guidance is unchanged: a zero-carb electrolyte tab
 at normal dilution in the flask, never a bolus.
 
+### FLUID IN / OUT TRACKING — the bag-pass tally (designed 2026-09-25)
+
+**Requested after the 09-25 night run:** a way to track fluid in against fluid out across 30 hours,
+**readable and actionable by a pacer or anyone helping**, not just by him.
+
+**Design constraints that rule most things out.** It has to work at 03:00, one-handed, with cold
+hands, after 20 hours, alone for most of the race. **So: no app, no typing, no millilitre
+arithmetic in his head.** The unit is not ml — it is **flasks and voids**, both of which he can
+count without doing sums.
+
+**Count flasks, not millilitres.** He carries 2x 700ml Sportiva soft flasks. **One flask = 700 ml**,
+so intake is an integer he already knows. Over ~100 minutes between bag passes, 600 ml/hr is
+**about 1.5 flasks.**
+
+**Log it at the bag, not on the move.** Bags sit at 0, 7.5 and 15 miles — **every ~100 minutes** —
+which is the natural checkpoint and the only place he is stopped anyway.
+
+#### The tally card — one per drop bag, pencil not pen
+
+| bag pass | time | flasks emptied | void: seconds / colour | sodium pkt |
+|---|---|---|---|---|
+| | | | | |
+
+**Four marks per stop.** That is roughly 18 stops over 30 hours, so ~72 marks total, each one a
+digit or a word.
+
+#### The rule a pacer can act on, without knowing anything else
+
+**This is the part that makes it communicable.** Two inputs, both from the void column:
+
+| time since last void | colour | call |
+|---|---|---|
+| **over 2h** | any | **behind — drink a full flask before leaving the bag** |
+| under 2h | **dark** | **behind — extra half flask** |
+| under 2h | light | **on track — hold rate** |
+| **under 1h** | **clear** | **ahead — skip a flask, take the sodium anyway** |
+
+**His own calibration, measured on 09-25 across eight voids in one session:**
+**5 seconds and bright yellow = deficit. 6-7 seconds and clear = surplus.** That range is his, not a
+generic scale, and it is why the rule above can be short.
+
+**The sodium column is not optional.** The rule moves fluid up and down; only the packet keeps the
+concentration right. On 09-25 he took 1,600 ml of plain water before his first electrolyte at 2h45 —
+**over 30 hours that is the failure mode**, so the packet goes in at every bag pass regardless of
+what the fluid column says.
+
+**TO DO before lap sim 2 (10-03):** print the cards, stage one in each bag, and run the tally for
+the whole session. **A tracking system that has not been used in training will not be used at hour
+20.**
+
+### ⚠ NO ELECTROLYTE IN THE FLASK — athlete preference, 2026-09-25, and it overrides the plan
+
+**This section's stated design was wrong for him.** It prescribed *"sodium via a zero-carb
+electrolyte tab in the flask, independent of the carbohydrate."* Athlete, during the 240min night
+run: *"I don't like to run with electrolyte in the flask. I prefer plain water."*
+
+**What he actually did, and it is a better design:** one packet of **Immortal Hydration Salty
+Margarita** taken whole, as a slug, while stopped at his Melendy drop bag at **2h45**, with 250 ml
+of water. Flask refilled with plain water.
+
+**Sodium becomes a discrete dose at bag passes, not a concentration in the fluid.** That maps onto
+the course better than the flask version: bags sit at 0, 7.5 and 15 miles —
+**roughly every 100 minutes** — so a packet per bag pass is a schedule, not a guess. It also removes
+the flask version's real weakness, which is that uneven sipping makes the delivered dose unknowable.
+
+**⚠ THE RISK MOVES, IT DOES NOT DISAPPEAR. He took 1,600 ml of plain water before any sodium at
+all.** On a 4-hour run in the cold that is harmless. **Across 30 hours, 13 of them at night, a
+long plain-water-only opening is exactly how "rather be over than under" becomes dilutional.** The
+fix is not the flask, it is **taking the first packet early rather than at hour three.**
+
+**OPEN — the one number this design needs: mg sodium per Immortal Hydration packet.** That decides
+whether one per bag pass is enough or whether it is two. Ask; do not estimate it.
+
+### ⚠ THIRST IS THE WRONG INSTRUMENT IN THE COLD (found 2026-09-25, pre-run)
+
+**Athlete at ~02:50 before the 240min night run: urine flow 5 seconds, bright yellow.** Concentrated
+and low volume — he was starting a four-hour effort already behind, having woken at 02:30 off a
+5h27 night.
+
+**Cold suppresses thirst.** So his normal default of *"hydration to thirst"*, which works in
+daylight and warmth, silently under-delivers on a cold night: he will not feel behind while getting
+further behind. **On night sessions and on race night, water goes on the gel timer**, at the
+~600 ml/hr this section already specifies, rather than waiting to want it.
+
+**Why this is not a small point: it loads the gut problem.** `log/2026-09-12.md` records trouble
+taking water from about the 3h30 mark. **Starting concentrated makes that arrive earlier**, because
+the deficit has to be made up later at exactly the point where intake is already failing.
+
+**The pre-session check is free and takes five seconds:** a short, dark void before a long night run
+means drink ~400 ml before starting — enough to move the needle, not enough to slosh. Race morning
+is the same check.
+
+**ATHLETE DECISION, 2026-09-25: err on the side of overhydrated.** *"They're not running that tight
+of a race. I can take a couple breaks to pee. I'd rather be overhydrated than under."* **He is
+right, and a session note framing pee stops as a time cost was the wrong axis.** A few minutes of
+stops against a 30-hour clock is nothing; dehydration across 30 hours is a DNF mechanism. The
+asymmetry is not close.
+
+**So do not raise pee-stop time again.** The only caveat that survives is **sodium, not volume** —
+what makes "rather be over than under" go wrong over 30 hours is plain water diluting him out, which
+is handled by dosing sodium at bag passes (see above — **not** by a tab in the flask, which he does
+not want). `athlete/profile.md` records
+`sodium_tolerance: high`, so erring generous on the tab is also cheap for him.
+
 ## Caffeine and the overnight plan
 
 TODO — this matters specifically for the 100-mile stretch goal, which runs through a full night.
