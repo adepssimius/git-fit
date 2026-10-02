@@ -16,7 +16,7 @@ intent: >
   week, so this is the final chance at real volume on genuinely tired legs.
 origin: authored
 published:
-  suunto: null
+  suunto: 2026-10-02T02:25:08Z    # guide id 94zy82s9
 ---
 
 Easy aerobic

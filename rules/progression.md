@@ -85,6 +85,39 @@ improved, update `athlete/zones.yml` deliberately (with the evidence noted in it
 the readiness ladder is running amber/red, don't tighten at all — the "get faster" goal is
 subordinate to the time-budget and injury constraints, not the other way around.
 
+### A fitness gain is banked as margin, never spent as race pace (added 2026-10-01)
+
+**Training-pace ceilings and RACE pace are two different dials, and a gain in the first does not move
+the second.** `pace.easy_ceiling` can tighten on the triggers above. **Ghost Train pace cannot, and
+no evidence from a training session is a reason to raise it.**
+
+The error this records: a 47min easy run came in at 6:11-6:15/km inside `ZS Z1`, and the session that
+found it wrote that *"the race plan's pace assumptions need revisiting."* **Athlete, and he is
+right:** *"I don't plan on running fast during the race. It's 100 miles, genius. That's going to
+cause all kinds of other issues. GI and soft tissue, namely."*
+
+**A higher aerobic threshold means the SAME ground speed sits at a LOWER relative intensity.** That
+is the whole benefit, and it is protective:
+
+- **Gut** — the harder he runs, the less blood the gut gets (splanchnic perfusion): working legs and
+  cooling skin take a bigger share of what the heart pumps, and the arteries feeding the stomach and
+  intestines close down. Less blood means slower emptying, and an emptying failure is already this block's top
+  fuelling finding (`rules/fueling.md` § THE GASTRIC LIMIT). Lower relative intensity at the same
+  pace defends the system that already broke.
+- **Soft tissue** — 100 miles is a cumulative mechanical-load problem. Faster means more load per
+  hour and per step, on hip flexors with a known onset (`log/2026-09-12.md`).
+
+**So the useful measurement is never "how fast can he go at this effort." It is the GAP between race
+pace and the `ZS Z1` ceiling** — headroom, which is good news that changes nothing about the plan.
+
+**This is `AGENTS.md` invariant 5 and 6 in a different costume.** Those exist because Runna
+prescribed marathon pace for a multi-hour ultra effort. **Rediscovering that mistake from the
+athlete's own improving data is the easiest version of it to fall for**, because the data is real.
+`athlete/profile.md`'s *"getting faster is a lever on hours-on-course"* means easy pace gets cheaper —
+**not that the race gets run nearer the ceiling.** Do not quote it the other way round.
+
+## Wednesday's session type
+
 Wednesday's session type should follow the Champion progression across the block: hills → track/
 speed intervals → uphill-treadmill threshold → pre-taper tune-up. Don't run the same Wednesday
 format two blocks in a row without a reason.

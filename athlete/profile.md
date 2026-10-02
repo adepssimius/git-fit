@@ -1443,7 +1443,7 @@ described the protocol; it describes one step of five.
 
 **But this is a RESTING tolerance, and it does not transfer to running** — athlete, 2026-09-20:
 *"Granted I'm not exercising directly after that dose."* The bolus is taken sitting down, after the
-session is over. Prolonged running cuts splanchnic blood flow and slows gastric emptying, which is
+session is over. Prolonged running cuts splanchnic perfusion and slows gastric emptying, which is
 the mechanism behind the 09-12 failure in the first place, so a couch test at ~2,950 mg/L says
 nothing about hour four.
 

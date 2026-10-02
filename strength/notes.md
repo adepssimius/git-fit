@@ -318,6 +318,16 @@ changes the movement.
 **It confounds nothing worth having.** Friday's 240min reaches ~28.8 km and his onset is ~50 km
 (`log/2026-09-12.md`), so it was never going to read the hip flexors anyway.
 
+**RESULT, 2026-09-26: the timing cost nothing.** The run went 28.25 km / 4h00 at 72h post-bout, the
+athlete reported the **hip flexors fine**, and RPE came in at 3 against an expected 5. The next
+morning's soreness was **4 but generalized, not hip flexor** (`log/2026-09-26.md`) — bout 1's DOMS
+had cleared before the session, so it never reached the stride. **Bouts 2 and 3 keep Mon 10-05 and
+Wed 10-07.**
+
+**What it does not prove is tolerance**, only non-interference: 28 km cannot reach a ~50 km onset, so
+"fine" was the expected reading either way. Confirmed: the 3x12 weighted dose is one a long run can
+be scheduled 72h after.
+
 **Two things to watch on the day:**
 
 - **The low back.** Hips elevated plus a weighted straight leg dropping wants to tip the pelvis

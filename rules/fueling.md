@@ -431,9 +431,9 @@ only 1.3x WHO oral-rehydration solution — the 400 ml bolus is chased with ~500
 thirst. **It is a normal dose, not an unusual concentration.**
 
 **That tolerance is measured AT REST and does not transfer to running** — athlete, same day:
-*"Granted I'm not exercising directly after that dose."* Prolonged running cuts splanchnic blood
-flow and slows gastric emptying, which is the mechanism behind the 09-12 failure. **So it sets no
-ceiling for in-session concentration.** What it does is remove sodium sensitivity as a likely cause
+*"Granted I'm not exercising directly after that dose."* Prolonged running cuts splanchnic
+perfusion and slows gastric emptying, which is the mechanism behind the 09-12 failure. **So it sets
+no ceiling for in-session concentration.** What it does is remove sodium sensitivity as a likely cause
 of that failure, which narrows the search.
 
 **Tolerance sets a ceiling; sweat rate sets the need — do not confuse the two**, and do not let

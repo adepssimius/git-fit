@@ -27,9 +27,24 @@ intent: >
 
   A 2026-09-16 reading called this session an hour too short to test the gut. That was anchored on
   4h20, the stoppage, because 4h20 was the only figure the repo had recorded. Wrong anchor.
+
+  ⚠ NOT ON THE POLAR (added 2026-10-01). This session's own ZoneSense and HR trace is the point of
+  it, and the Polar fails late — 1h27 — so a 3h25 session is exactly long enough to lose the data.
+  Run the Garmin here. The Polar retest belongs on Sun 10-04's 105min, after its battery is replaced
+  (log/2026-09-26.md, log/2026-10-01.md).
+
+  ⚠ ONE EXTRA THING TO WATCH, added 2026-10-01 — AND IT IS NOT A REASON TO RUN THIS FASTER.
+  Thursday's 47min easy run held 6:11-6:15/km in ZS Z1 with only 2:06 above Zone 1
+  (log/2026-10-01.md). Run this session exactly as written anyway. What is worth noting at hour three
+  is the GAP between the pace he is running and the pace ZoneSense still calls Zone 1 — margin, not a
+  target. A wide gap is good news that changes nothing; a narrow one means Thursday was a short-run
+  effect. Athlete, 2026-10-01: "I don't plan on running fast during the race. It's 100 miles, genius.
+  That's going to cause all kinds of other issues. GI and soft tissue, namely." He is right — a
+  higher aerobic threshold buys a lower relative intensity at the SAME pace, which protects the gut
+  and the hip flexors. It does not buy speed. See log/2026-10-01.md § What this does for the race.
 origin: authored
 published:
-  suunto: null
+  suunto: 2026-10-02T02:24:28Z    # guide id h09l6vja
 ---
 
 Car -> north terminus (drop bag passed at 5km)
