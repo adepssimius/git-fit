@@ -23,6 +23,26 @@ Entry confirmed 2026-08-04.
 
 *"Assume uncrewed. I might have a pacer for one lap."*
 
+> **⚠ CHANGED 2026-10-02 — PACERS FOR THE WHOLE RUN.** Athlete: *"It looks like I'll have pacers
+> for the whole run after all."* **Not yet reworked into this file, and it should not be reworked
+> until three things are known** — how many pacers and which laps they hand off on, whether they
+> also *crew* (bags, car, fetching) or only run, and whether anything else in the uncrewed
+> rebuild changes.
+>
+> **What it most affects is THE CARD, not the logistics.** The stations already made uncrewed
+> cheap; what it cost was *"judgement, not logistics — a second brain at the hour the first one
+> stops working."* **Pacers for the whole race supply exactly that, for the whole race.** The card
+> still gets carried and still gets read out loud — degraded judgement is why it is printed rather
+> than remembered — but it stops being the only thing standing between him and a bad call at
+> hour 20.
+>
+> **One item changes outright:** card 6's *"IF THE THOUGHT 'I MIGHT NEED TO LIE DOWN' HAS OCCURRED
+> AT ALL — SEND THE TEXT NOW. They need 45 minutes"* was written for nobody being there. With a
+> pacer alongside, the 45-minute summons is not the mechanism any more.
+>
+> **And pacers need their own plan** — aid, lights, cells, how they get to and from the 7.5mi
+> turnaround — none of which exists in this file yet.
+
 Everywhere the old file said "crew stop" or "crew bag", read **self-serve drop bag**. **The
 logistics survive this almost untouched**, because the course is close to the best case for
 running solo:
@@ -258,8 +278,13 @@ lap 3 onward — out loud, because hearing yourself slur is the check you cannot
 > **STIFF ON STANDING UP IS A PHASE, NOT A VERDICT.** It has resolved in ~20 minutes every time.
 > Do not decide anything — do not quit, do not force a walk — while it is happening. **Sitting is
 > allowed; deciding within 20 minutes of standing up is not.**
-> **DECIDE AT THE BAG, NEVER MID-LAP.** Finish the lap you are on. Every quit that has ever been
-> regretted was decided between aid stations.
+> **DECIDE AFTER 20 MINUTES OF PROGRESS AWAY FROM THE BAG, NEVER MID-LAP** (athlete, 2026-10-02 —
+> this replaces "decide at the bag"). **Leave the bag, move for twenty minutes, then decide.**
+> Finish the lap you are on. Every quit that has ever been regretted was decided between aid
+> stations.
+> *Why it moved off the bag: the bag is where you are stiffest and most persuaded to stop — the
+> twenty minutes above and these twenty minutes are the SAME twenty minutes, so the rule now puts
+> the decision on the far side of them, already moving, instead of on a bench.*
 
 **Why the card and not the old tree.** The old tree had six numbered criteria and a default. It
 was correct and it was unusable, because it required the athlete to remember it existed, remember
@@ -915,18 +940,72 @@ ride. Two consequences, and the first is the one that actually bites:
 
 **One thing to be aware of rather than to fix: the contingency nap and the post-race nap now use
 the same bag, on the same mat, in the same spot.** The kit does not know which one is happening.
-What separates them is the decision rule already on the card — **decide at the bag, and never
-inside the twenty minutes after standing up.** That rule is doing more work than it looks like it
-is, because at 04:00 on lap 5 a made-up bed is the most persuasive object on the course.
+What separates them is the decision rule already on the card — **decide after twenty minutes of
+progress away from the bag, never at it** (amended 2026-10-02). That rule is doing more work than
+it looks like it is, because at 04:00 on lap 5 a made-up bed is the most persuasive object on the
+course — **and the amendment matters here most of all, since the old wording put the decision in
+the same place as the bed.**
 
-### The pacer
+### The pacers — PACED END TO END (athlete, 2026-10-02)
 
-- **One lap, and it is the single dose of external judgement available. Spend it in the deep night
-  — lap 5 or 6, not lap 2.** Laps 1-3 he will be lucid and a pacer adds only company; laps 5-6 are
-  the fatigue-plus-sleep-pressure-plus-darkness state this whole block was built around, and that
-  is when a second opinion on feet, cognition and the stop decision is worth most.
-- **The rule does not bind.** Pacers are allowed from lap 2 onward; every lap worth pacing is
-  already legal. No latitude needed from anyone.
+**~~One lap, and it is the single dose of external judgement available.~~ — SUPERSEDED.** There is
+no single dose to spend. Every lap is covered, and **the people are already in the right places**:
+
+| legs | pacer | clock (tier table) | what they are for |
+|---|---|---|---|
+| **laps 1-4, the first 100km** | **Adam** | 09:00 Sat → ~11:47pm Sat | **Holding him back.** This is the A-goal, run entirely in company |
+| **lap 5** | **Amy** (wife) | ~11:56pm → ~04:04am Sun | **The deep night.** An experienced hospital nurse who assesses deteriorating patients |
+| **lap 6 + the final 10mi of lap 7** | **Josh** | ~04:14am → 11:49am Sun | **The far side.** An experienced ultra runner who knows hour 24 passes |
+
+**This is a better allocation than the old "spend it on lap 5 or 6" advice would have produced**,
+and the reasons are specific to who is on which leg:
+
+- **Adam has laps 1-4, and the problem on laps 1-4 is not judgement, it is restraint.** The pace
+  discipline section above says it plainly: early laps feel easy and running them is tempting, and
+  `ZS Z1` is both most reliable and most load-bearing there. **A companion for all four is the
+  single best defence against the one mistake that ruins the back half.**
+- **Amy has lap 5, which is the hardest lap on the course and the one her profession is built
+  for.** Lap 5 is the 00:00-04:00 window — peak sleep pressure, full dark, ~19h in — and the card
+  exists because *"slurring and poor coordination are exactly the symptoms the sufferer cannot
+  self-assess."* **Detecting decline in a patient who cannot self-report is a nurse's core skill.**
+  She is the best-qualified person on the course for the hardest cognitive call in the race, and
+  she happens to be scheduled for the hour it has to be made.
+- **Josh has lap 6 and the last 10 miles, where the question stops being physiological.** By then
+  the instrument is unvalidated and *"whether you keep moving is a decision, not a number."* An
+  experienced ultra runner is the right person for a decision like that, because he has personally
+  had the hour that feels terminal and knows it is not.
+- **The 04:00 handoff is both the risk and the gift.** Amy→Josh lands almost exactly at the low
+  point, where *"a made-up bed is the most persuasive object on the course."* A transition at his
+  weakest moment needs watching — but it also means **a fresh pacer arrives precisely then**, and
+  the amended standing rule gets enforced by someone who has not been awake all night.
+
+**What the pacers are NOT for, and this does not change:** **they are not a crew.** Logistics were
+never the problem; the stations already cover food, fluid and warm savoury food every ~6km.
+
+- **He is not managing their logistics** (athlete, 2026-10-02): *"I am letting them settle their
+  own logistics... they can use the aid stations."* Their aid, lights, cells and transport to the
+  7.5mi turnaround are theirs to arrange. **Nothing about pacer logistics belongs in his drop bags
+  or in this file.**
+- **Bags stay self-serve.** *"Bags aren't something I'm worrying about. I'm sure they will fetch if
+  I ask."* **Fetching on request, not a crew plan** — the uncrewed bag design above stands exactly
+  as written.
+- **His own fuel is unchanged:** *"I have plenty of fuel and electrolytes."*
+
+**ONE CARD ITEM IS NOW DEAD.** Card 6's *"IF THE THOUGHT 'I MIGHT NEED TO LIE DOWN' HAS OCCURRED AT
+ALL — SEND THE TEXT NOW. They need 45 minutes"* was written for nobody being there. **From 09:00
+Saturday there is always somebody there**, so the 45-minute summons is not the mechanism any more —
+the pacer alongside him is. The wakers-and-ride logistics above still stand for the finish itself.
+
+**THE BRIEF IS LIVE, NOT PRINTED** (athlete, 2026-10-02): *"A live brief is a much more powerful
+tool for a pacer than a printed plan 90 miles in."* **He is right, and it settles the open question
+in `AGENTS.md` § RUNNING MODE.** A printed sheet is fixed at the moment it was written; a brief
+written at the handoff knows what has actually gone wrong — which foot, whether food is staying
+down, how long since the last clear sentence. **Produce one per handoff: at the start for Adam, at
+the lap 4/5 bag for Amy, at the lap 5/6 bag for Josh.**
+
+**The card stays printed anyway, and for the same reason it always was** — it is the instrument for
+the athlete's own degraded judgement, read out loud, and a pacer reading it *with* him is stronger
+than either alone. **A live pacer brief never replaces the card.**
 
 Nothing left in the calendar rehearses a full night. The night sessions that inform this: 09-12
 (5 of 7 hours dark), 09-26 night long run, 10-06 taper night run.

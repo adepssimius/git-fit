@@ -35,9 +35,137 @@ Committing at the end of every turn closes it.
 else waits for the debrief. Requested after the 09-25 night long run, where this session sent him
 multi-paragraph analysis with tables while he was four hours into the dark.
 
-**How to tell you are in running mode:** he is reporting live — splits, fluid, a kit problem, a
-symptom — rather than asking a question. No announcement is needed and he should not have to ask
-for it twice.
+**How it starts and ends — AMENDED 2026-10-02, and this replaces guessing.** *"I'll tell you that
+I'm doing the run affirmatively. It should take effect until I tell you to leave running mode."*
+
+- **He declares it.** "I'm doing the run", "starting the lap sim", "heading out" — that is the
+  switch. Do not wait to infer it from live reporting.
+- **It stays on until he says to leave it.** Not until the session looks finished, not until he
+  asks a question that invites a long answer. A question mid-session gets a running-mode answer.
+- The old tell still works as a backstop: if he is reporting live and never announced, assume
+  running mode. He should not have to ask for it twice.
+
+**A short stats summary IS wanted — amended 2026-10-02.** The original rule said a number gets an
+acknowledgement, not a readout. That was too far. **He wants to know how he is doing**, so give a
+short summary of the relevant stats. Three are named and are not optional:
+
+| always report | what it means |
+|---|---|
+| **pace required to hit the time target** | from the lap table in `races/2026-10-17-ghost-train.md`, or the session's own planned duration |
+| **current lap** | which lap he is on |
+| **front half or back half of the lap** | a race lap is 24.1km = **two** 7.5mi (12.1km) out-and-backs from the central start/finish, so "front half" is the first out-and-back |
+
+**That is a status readout, not a prescription.** `races/2026-10-17-ghost-train.md` is explicit that
+the lap paces are *"lap paces at ZS Z1, not instructions"*, and invariant 5 keeps long sessions on
+effort rather than pace. **Telling him the pace he needs is reporting where he stands; it never
+becomes the thing he chases.** If the required pace and `ZS Z1` disagree, `ZS Z1` wins and say so in
+the same breath.
+
+**On a training session, map it to that session's geometry** rather than to race laps — tonight's
+lap sim is one race-lap distance built as a 15km out-and-back, a 6km south leg and a 3.1km top-up,
+so "which leg, and how far into it" is the honest version of the same three numbers.
+
+**STOP BRIEFS — added 2026-10-02 at his request.** As he approaches a stop, give **one line per
+topic he has to deal with there**, prefixed "at the next drop bag" or "at the next aid station".
+Not a paragraph per topic and not the reasoning — the action, so he arrives knowing the list
+instead of standing there remembering it.
+
+The course gives **aid every ~6km and a drop bag every ~12.1km** (`races/2026-10-17-ghost-train.md`
+§ stations), and the two differ in what they can do:
+
+| stop | what belongs in the brief |
+|---|---|
+| **aid station** (mid-out 3.75mi, mid-back 11.25mi) | fluid, real food off the table, candy/soda/Tailwind. Consumables only — no bag access |
+| **drop bag** (start/finish 0/15mi, 7.5mi turnaround) | everything above, plus socks, shoes, blister kit, cell restock, layers, gels, the card, warm savoury food |
+
+**Build the list from what is actually live at that moment**, not from the full bag manifest — a
+cell swap only if he is near the step-down, socks only if he reported a hot spot, a layer only if
+the temperature or the light is about to change. **A stop with nothing to do should be told that
+in those words**, because "nothing at this one" is a useful line and a silent stop is not.
+
+**Stops are self-serve and standing, budgeted at 8-10min per lap across four passes.** So the
+briefs are also a time discipline: the plan prices a sloppy stop as hours over a race, and the
+session file for each lap sim says to time them with a watch. **If he is over budget at a stop,
+that is one line and it is time-sensitive.**
+
+**And the card governs at the bag, not the brief.** From lap 4 onward the decision card in
+`races/2026-10-17-ghost-train.md` is the instrument, and it is deliberately something he reads
+rather than something a session judges for him. **Never substitute a stop brief for the card** —
+list the actions and let the card do the continue/stop call.
+
+**"HELP ME TROUBLESHOOT" — the one phrase that suspends terse mode, added 2026-10-02 at his
+request.** *"'Help me troubleshoot' is an indication that I need you to include some options for me,
+ask clarifying questions, and include your reasoning. This will be during the run."*
+
+When he says it, give all three:
+
+- **Options.** More than one, each one something he can actually do from where he is standing.
+- **Clarifying questions.** Ask them. Normally mid-run questions are a tax on him; here they are
+  what he asked for, because he is the only source for what the problem feels like.
+- **Your reasoning.** Say why, not just what. This is the one place mid-session where the "save it
+  for the debrief" rule yields — he is trying to solve something now and cannot do it on a bare
+  instruction.
+
+**It suspends terse mode for that exchange, it does not leave running mode.** Only he ends running
+mode (above). When the problem is resolved, go back to short.
+
+**Still short even so** — options as a list, not an essay. He is reading it on a watch or a phone,
+in the dark, tired. Lead with the option you would pick.
+
+**PACER BRIEF — added 2026-10-02 at his request.** *"A 'Pacer Brief', for pacers that are coming on
+and things that they need to help me pay attention to."* Produce one when a pacer is about to join.
+
+**The content is set by what the pacer is FOR, and the race file already says it:** uncrewed costs
+*"judgement, not logistics — a second brain at the hour the first one stops working"*, and the card
+exists because slurring and poor coordination are *"exactly the symptoms the sufferer cannot
+self-assess."* **So a pacer brief is not a pace plan. It is a watch-list of the things he cannot
+see in himself**, handed to the one person who can.
+
+What goes in it, each as one line:
+
+| watch for | why it is the pacer's job and not his |
+|---|---|
+| **slurring, tripping, missed turns, lost minutes** | card item 6. He cannot hear his own speech degrade |
+| **gait change** — from a blister, or the left ITB | card items 4 and 5. A limp is visible from behind and invisible from inside |
+| **has he eaten in the last 30min, did it stay down** | card item 3. The thing that slips first when he is working |
+| **shivering, or hands that cannot work tape** | card item 7. Layer goes on BEFORE it is needed |
+| **"I might need to lie down"** — if he says it at all | card item 6. The text goes out NOW; they need 45min |
+
+And the two standing rules the pacer must know, because a well-meaning pacer gets both backwards:
+
+- **Stiff on standing up is a phase, not a verdict** — it has cleared in ~20min every time. **Do
+  not let a pacer help him decide anything inside those 20 minutes.**
+- **Decide after 20 minutes of progress away from the bag, never at it and never mid-lap**
+  (athlete, 2026-10-02). Every regretted quit was decided between aid stations, and the bag is
+  where he is stiffest. A pacer's job is to get him out of the bag and moving for twenty minutes
+  before any continue/stop talk happens at all.
+
+Plus the practical frame: current lap, which half, pace against the tier table, the stop budget,
+and `ZS Z1` governs — the pacer should not pull him faster than Zone 1 because fresh legs feel
+easy alongside a man 90km in.
+
+**RESOLVED 2026-10-02 — IT IS LIVE, NOT PRINTED.** Athlete: *"A live brief is a much more powerful
+tool for a pacer than a printed plan 90 miles in."* A printed sheet is frozen at the moment it was
+written; a brief written at the handoff knows which foot, whether food is staying down, and how
+long since the last clear sentence. **Write it at the handoff, from what is live.**
+
+**And he is paced end to end — three handoffs, three different briefs**
+(`races/2026-10-17-ghost-train.md` § The pacers):
+
+| handoff | pacer | what their brief leans on |
+|---|---|---|
+| start, 09:00 Sat | **Adam**, laps 1-4 | restraint — `ZS Z1`, early laps feel easy, do not let him run them |
+| lap 4/5 bag, ~11:50pm | **Amy** (wife), lap 5 | the deep-night cognitive watch-list. She is a hospital nurse; detecting decline in someone who cannot self-report is her day job |
+| lap 5/6 bag, ~04:10am | **Josh**, lap 6 + last 10mi | keep-moving judgement. Experienced ultra runner — he has had the hour that feels terminal |
+
+**They are pacers, not crew.** He arranges nothing for them and they use the aid stations; bags
+stay self-serve with fetching on request. **Do not turn a pacer brief into a logistics plan.**
+
+**The card still gets carried and read out loud.** A live brief never replaces it — the card is for
+his own degraded judgement, and a pacer reading it with him is stronger than either alone.
+
+**Still terse.** A summary is a handful of lines with numbers in them, not analysis. Everything in
+the "save it" column below still waits for the debrief.
 
 **Time-sensitive means it changes what he does in the next few minutes:**
 
