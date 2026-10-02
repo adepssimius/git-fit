@@ -244,7 +244,7 @@ functions is better than what failed:**
 |---|---|
 | **Carbohydrate** | **gels only** — preferred, known, and works to at least 4h19 |
 | **Fluid** | **water** |
-| **Sodium** | **a zero/low-carb electrolyte tab** — LMNT, SaltStick, Precision, Nuun |
+| **Sodium** | **a Mortal Hydration SALTY packet at each bag pass** — 920 mg Na per 13 g packet, ~550 mg/hr. Not zero-carb: it carries 10 g, which is counted. See § ANSWERED 2026-10-02 |
 
 **Last night two of those dials were welded together.** Decoupled, the flask sits at ~0-2% carb
 instead of 13% and empties fast, while the sodium still does its job.
@@ -441,7 +441,9 @@ that no remaining session could test the gut at all, which is false.
 **Fluid: ~600 ml/hr, set by the gel dose** — see § THE GASTRIC LIMIT above. Sodium via a
 zero-carb electrolyte tab in the flask, independent of the carbohydrate.
 
-TODO — a specific mg/hr sodium figure still needs setting against sweat rate. `athlete/profile.md`
+~~TODO — a specific mg/hr sodium figure still needs setting against sweat rate.~~ **SET 2026-10-02:
+~550 mg/hr, from one Mortal Hydration Salty packet (920 mg) per ~100min bag pass. See § ANSWERED
+2026-10-02 below.** The note below remains true as context: `athlete/profile.md`
 records `sweat_rate: low-average`, which argues for the lower end of typical, but nothing here is
 measured. Rehearse whatever is set on every long run over ~90 min, same as carbs.
 
@@ -475,6 +477,17 @@ count without doing sums.
 **Count flasks, not millilitres.** He carries 2x 700ml Sportiva soft flasks. **One flask = 700 ml**,
 so intake is an integer he already knows. Over ~100 minutes between bag passes, 600 ml/hr is
 **about 1.5 flasks.**
+
+**⚠ NOT TO BE CONFUSED WITH THE QUIT RULE.** `races/2026-10-17-ghost-train.md` says the
+continue-or-stop decision is made **after twenty minutes of progress away from the bag, never at
+it**, because the bag is where he is stiffest and most persuaded to stop (amended 2026-10-02).
+**That is a different decision from this one.** Fluid logging happens AT the bag; the quit decision
+happens twenty minutes after leaving it. **Do not harmonise them** — they share the word "bag" and
+nothing else.
+
+**And the pacer change strengthens the case for millilitres.** The race is now **paced end to end**
+(same amendment), so the card is read by other people for most of 30 hours rather than by him alone
+— which is the same argument his wife's I&O framing makes below.
 
 **Log it at the bag, not on the move.** Bags sit at 0, 7.5 and 15 miles — **every ~100 minutes** —
 which is the natural checkpoint and the only place he is stopped anyway.
@@ -600,7 +613,7 @@ the opposite error.
 electrolyte tab in the flask, independent of the carbohydrate."* Athlete, during the 240min night
 run: *"I don't like to run with electrolyte in the flask. I prefer plain water."*
 
-**What he actually did, and it is a better design:** one packet of **Immortal Hydration Salty
+**What he actually did, and it is a better design:** one packet of **Mortal Hydration Salty
 Margarita** taken whole, as a slug, while stopped at his Melendy drop bag at **2h45**, with 250 ml
 of water. Flask refilled with plain water.
 
@@ -614,8 +627,70 @@ all.** On a 4-hour run in the cold that is harmless. **Across 30 hours, 13 of th
 long plain-water-only opening is exactly how "rather be over than under" becomes dilutional.** The
 fix is not the flask, it is **taking the first packet early rather than at hour three.**
 
-**OPEN — the one number this design needs: mg sodium per Immortal Hydration packet.** That decides
-whether one per bag pass is enough or whether it is two. Ask; do not estimate it.
+#### ANSWERED 2026-10-02 — the packet is 920 mg sodium, and one per bag pass is right
+
+**~~OPEN: the one number this design needs.~~** Brand name corrected at the same time: it is **MORTAL
+Hydration**, not "Immortal", which this file and `log/2026-09-25.md` both had wrong.
+
+**They sell two strengths in the same 0.45 oz / 13 g packet, and they differ by 2x on sodium:**
+
+| per 13 g (0.45 oz) packet | **Salty line** | regular line |
+|---|---|---|
+| **sodium** | **920 mg** | 460 mg |
+| potassium | ~150 mg (stated 6:1 Na:K) | ~150 mg |
+| magnesium / calcium | ~20 mg each | ~20 mg each |
+| carbohydrate / sugar | ~10 g / 8 g | 10 g / 8 g |
+| calories | ~40 | 40 |
+| **designed dilution** | **22 oz / 650 ml** | 650 ml |
+
+The regular figures are off the label itself; the Salty sodium is confirmed by two independent
+sources, and its potassium is inferred from the published 6:1 ratio rather than read off a panel.
+**⚠ He should confirm his own packets say Salty** — picking up the regular line halves the dose.
+
+**THE RULE ON THE CARD WAS ALREADY RIGHT, AND NOW IT HAS A NUMBER.** One packet per bag pass, bags
+every ~100 minutes:
+
+| | |
+|---|---|
+| **one packet per bag pass** | 920 mg / 1.67 h = **~550 mg/hr** |
+| what he actually did on 09-25 | one packet in 4 hours = **230 mg/hr** |
+
+**~550 mg/hr is a defensible ultra figure for a low-average sweater** (`athlete/profile.md`
+→ `sweat_rate`), sitting mid-range of typical guidance rather than at either end. **So one per bag
+pass, not two** — and the 09-25 session at 230 mg/hr was well under, which is consistent with it
+being a single late dose rather than a schedule.
+
+**This also closes the TODO in § Sodium and fluids**, which asked for an mg/hr figure against sweat
+rate.
+
+#### ⚠ BUT THE WAY HE TOOK IT WAS HYPERTONIC, AND THAT IS WORTH FIXING
+
+**He took the packet in 250 ml** (recorded above). **The packet is formulated for 650 ml.**
+
+| | |
+|---|---|
+| as taken, 920 mg in 250 ml | **~3,680 mg sodium/L** |
+| as designed, 920 mg in 650 ml | ~1,415 mg/L |
+
+**At 250 ml that bolus is hypertonic** — roughly 320 mOsm/L from the salt alone before the 10 g of
+carbohydrate, against plasma at ~290. **Hypertonic fluid empties slower and pulls water INTO the
+gut**, which is the opposite of what a 30-hour effort wants and sits badly with this block's one
+documented failure being gastric emptying.
+
+**It caused no trouble on 09-25 — but that was ONE dose. Race day is ~18 of them.**
+
+**The proposed fix is free and does not put electrolyte in the flask**, which is the thing he
+objected to: **mix the packet into 400-650 ml and drink it standing at the bag, then refill the flask
+with plain water.** He is stopped and drinking there anyway. Nothing moves, nothing is carried.
+
+**⚠ NOT DECIDED — athlete deferred it 2026-10-02:** *"Let's have a conversation about that later."*
+**So the 250 ml practice stands as what he does until he says otherwise.** Do not write the dilution
+change into the card, the race file or a session brief before that conversation happens.
+
+**AND THE PACKET IS NOT A ZERO-CARB ELECTROLYTE**, which § The architecture still implies by listing
+LMNT, SaltStick, Precision and Nuun. It carries **10 g carb / 8 g sugar**. At one per bag pass that
+is **~6 g carb/hr** on top of ~60 g/hr from gels — harmless, and in 650 ml it is a 1.5% solution — but
+the architecture table should name what he actually uses rather than brands he does not.
 
 ### ⚠ THIRST IS THE WRONG INSTRUMENT IN THE COLD (found 2026-09-25, pre-run)
 
