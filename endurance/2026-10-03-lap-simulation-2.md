@@ -19,14 +19,23 @@ intent: >
   crew stops with a watch — on race day you'll make 12+ of them, so a sloppy 8-minute stop
   compounds into hours. Whatever fails here, you still have two weeks to fix.
 
-  THE GUT RETEST, and its success criterion is the athlete's own (2026-09-17): "If I can get to the
-  end of that session and still feel like I can get water down fine then the question is answered."
-  On 09-12 the trouble taking water started at ~3h30 and emptying had stopped by ~4h20. This
-  session is 3h25 — right at that onset. So the endpoint is not a clock time, it is whether fluid
-  still goes down easily at the finish. Log it in exactly those terms.
+  ~~THE GUT RETEST~~ — NOT ANY MORE, corrected 2026-10-02. Athlete: "We already answered this with
+  my last 3+ hour, no?" He is right. The 09-25 night run went 4h00 on gels + water at 375 ml per gel
+  plus a separate electrolyte, 2,250 ml in, with the last 400 ml going down in the closing stretch
+  and no distress — and it cleared the ~3h30 point where 09-12's trouble began. THIS SESSION IS 3h25,
+  thirty-five minutes SHORTER. A shorter session cannot test what a longer one passed. His own
+  criterion ("if I can get to the end and still feel like I can get water down fine") was met on
+  09-25. See rules/fueling.md § THE GASTRIC LIMIT and log/2026-09-25.md.
 
-  A 2026-09-16 reading called this session an hour too short to test the gut. That was anchored on
-  4h20, the stoppage, because 4h20 was the only figure the repo had recorded. Wrong anchor.
+  WHAT THIS SESSION'S FUELLING ACTUALLY OWES IS THE AID TABLE. rules/fueling.md is explicit that
+  90-120 g/hr cannot come from carried gels — "one flask per leg funds only ~60-80 g/hr... The
+  balance comes off the aid table — candy, soda, real food" — and that has never been rehearsed. This
+  is the dress rehearsal with the actual drop bags, so it is the last chance to practise taking real
+  food on top of the 40-minute gel timer. Log what food, how much, and whether it sat well.
+
+  Two prior readings of this session's gut role, both now dead: a 2026-09-16 note called it an hour
+  too short (anchored on the 4h20 stoppage), and a 2026-09-17 note called it "long enough as
+  authored" (anchored on the 3h30 onset). Both were written before 09-25 existed.
 
   ⚠ NOT ON THE POLAR (added 2026-10-01). This session's own ZoneSense and HR trace is the point of
   it, and the Polar fails late — 1h27 — so a 3h25 session is exactly long enough to lose the data.

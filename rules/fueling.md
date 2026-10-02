@@ -204,9 +204,26 @@ gels-plus-water would still be working at hour 6.
 **Net: concentration is now the leading hypothesis rather than one of three.** Duration is not
 eliminated, and it cannot be until the missing experiment is run.
 
-**THE MISSING EXPERIMENT IS THE POINT OF 10-03: gels + water + electrolyte, past 4h30.** It has
-never been done. That is the whole job of that session's fuelling, and it is why 09-26 at a 4h cap
-cannot substitute — it stops at exactly the point where the question begins.
+**~~THE MISSING EXPERIMENT IS THE POINT OF 10-03: gels + water + electrolyte, past 4h30. It has
+never been done... and 09-26 at a 4h cap cannot substitute.~~ — OVERTAKEN BY EVENTS 2026-10-02.**
+Athlete: *"We already answered this with my last 3+ hour, no?"* **Yes.**
+
+**The 09-25 night run WAS that experiment, and it passed.** 4h00 moving, gels on the 40-minute timer
+at **375 ml of plain water per gel** (~9.6%, against the ~9% target), **one electrolyte packet taken
+separately** at 2h45, 2,250 ml total — and **the last 400 ml went down in the closing stretch** with
+no sloshing and no distress (`log/2026-09-25.md`).
+
+**It cleared the point where 09-12 first had trouble.** That was ~3h30; 09-25 ran 30 minutes past it
+still drinking.
+
+**What it did NOT reach is the ~4h20 stoppage, by twenty minutes** — and **nothing left in the block
+is long enough to reach it.** 10-03 is 3h25 and 10-10 is 1h50; the race is next. **So the >4h30
+question goes into Ghost Train unanswered, and the taper makes that final.**
+
+**What has to carry it instead:** 09-12's failure ran a ~14% carrier, the corrected architecture ran
+clean to 4h00, and 09-06 ran gels-plus-water to 4h19 hungry at the end. **Three sessions pointing the
+same way is the best evidence this block will produce.** Do not re-open it looking for a longer
+session — see the withdrawn exception below.
 
 ### The architecture — three dials, decoupled (athlete decision 2026-09-13)
 
@@ -402,11 +419,16 @@ that no remaining session could test the gut at all, which is false.
 - **09-26** (night long run, 4h capped) — **~~too short to stress the gut~~ — WRONG on the corrected
   anchor.** 4h00 clears the 3h30 onset by half an hour. It is a genuine second look at the gut,
   not just choreography, and it comes with full race fuelling already prescribed.
-- **10-03** (lap simulation 2) — **the real retest, and it is long enough as authored.** 3h25 lands
-  right at the onset window. **The athlete's own success criterion, 2026-09-17:** *"If I can get to
-  the end of that session and still feel like I can get water down fine then the question is
-  answered."* That is the endpoint — not a time on the clock, but whether fluid still goes down at
-  the finish. Record it in `log/` in those terms.
+- **~~10-03 (lap simulation 2) — the real retest, and it is long enough as authored.~~ — NO, and it
+  never was the retest. CORRECTED 2026-10-02.** 10-03 is **3h25, which is 35 minutes SHORTER than the
+  09-25 night run** that already cleared the criterion. A shorter session cannot test what a longer
+  one passed. **The athlete's own success criterion, 2026-09-17** — *"If I can get to the end of that
+  session and still feel like I can get water down fine then the question is answered"* — **was met on
+  09-25 at four hours.**
+  **What 10-03 does still owe on fuelling is the aid table, not the clock:** this file states that
+  90-120 g/hr cannot come from carried gels and that *"the balance comes off the aid table — candy,
+  soda, real food."* **That has never been rehearsed.** 10-03 is the dress rehearsal with the actual
+  drop bags, so it is the only remaining chance to practise taking real food on top of the gels.
 
 **~~Extend 09-26 to 4h30 on the block's last long-run exception.~~ — PROPOSED AND WITHDRAWN
 2026-09-17.** It was built on the 4h20 anchor. The exception stays unspent.
