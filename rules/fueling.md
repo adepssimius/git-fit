@@ -508,9 +508,91 @@ concentration right. On 09-25 he took 1,600 ml of plain water before his first e
 **over 30 hours that is the failure mode**, so the packet goes in at every bag pass regardless of
 what the fluid column says.
 
-**TO DO before lap sim 2 (10-03):** print the cards, stage one in each bag, and run the tally for
+**TO DO before lap sim 2 (now 10-02):** print the cards, stage one in each bag, and run the tally for
 the whole session. **A tracking system that has not been used in training will not be used at hour
 20.**
+
+#### Turning seconds into millilitres — athlete's idea, 2026-10-02
+
+**Athlete:** *"[A] way that I can estimate urine volume output by measuring stream duration."* **It
+works, and it adds the one thing the card cannot give: a CUMULATIVE balance.**
+
+**Why that is worth having and the colour check is not enough.** The per-stop rule above answers
+*"am I behind right now."* A running total answers *"have I been quietly behind for six hours,"*
+which is the actual 09-12 failure mode — reduced emptying meant less absorbed, which dropped plasma
+volume, which cut splanchnic perfusion further, compounding. **A slow drift is invisible to a
+snapshot.**
+
+**The generic anchor, for expectation-setting only:** healthy adult male average urine flow is
+roughly **10-15 ml/s** (peak 20-25), and a full void is 250-400 ml over 20-30 s. **So his 5-7 second
+voids are only ~50-100 ml each** — small and frequent, consistent with stopping every ~30 min.
+
+**It approximately closes the 09-25 balance, which is the best available check that the method is
+sound:**
+
+| | |
+|---|---|
+| in | 2,650 ml (2,250 during + 400 pre-start) |
+| out, 8 voids at ~70 ml | **~560 ml** |
+| unaccounted | ~2,090 ml / 4h = **~520 ml/hr** sweat + respiratory |
+
+High-ish for 7C, but across four hours of running, with part of it clearing the deficit he started
+with, and cold dry air costing real water through respiration. **It closes.**
+
+**⚠ DO NOT USE THE GENERIC NUMBER — he must calibrate his own.** Flow rate rises with bladder
+fullness, so seconds times a fixed constant over-estimates small voids. He does not need a curve,
+only his own ml/s across the **5-8 second range** he actually produces.
+
+**Calibrate at a drop bag, not at home.** Stage a marked container at the car — a cut 1L bottle with
+marks, or a measuring jug left in the boot — and at two or three stops void into it, time the
+stream, read the volume. **Two or three points is enough.** Doing it mid-session gets the right
+hydration state, standing posture and fatigue; a kitchen measurement at rest does not.
+
+**~~AND THE ML NEVER GOES ON THE CARD.~~ — REVISED 2026-10-02, and the reason is decisive.** Athlete:
+*"I'm logging ml in and I should be able to see ml out. My nurse wife wants to know these things and
+they are important for a race."*
+
+**His wife is a nurse, which changes the design target.** Intake/output charting is a routine
+clinical skill — **she reads I&O natively and can act on it without being taught anything.** That is
+a far better reason to produce millilitres than analytical tidiness, and it outranks the
+keep-it-simple instinct.
+
+**The founding constraint was no ARITHMETIC, not no millilitres** — and a **printed seconds-to-ml
+lookup strip on the card satisfies both.** He writes seconds, which is fast and one-handed; anyone
+reads ml straight off the strip; nobody multiplies anything at 03:00. **Intake is already logged in
+ml, so the card was half-quantified anyway.**
+
+**Add a cumulative column.** Clinical I&O is charted per period with a running total, which is also
+exactly what catches the slow drift a per-stop snapshot misses.
+
+#### ⚠ THE CLINICAL NUMBER — oliguria, and it VALIDATES the rule already on the card
+
+**Oliguria is <0.5 ml/kg/hr. At 73.5 kg that is <37 ml/hr for him**; the normal floor is 0.5-1.0
+ml/kg/hr, so **37-74 ml/hr**.
+
+**Now check the card's existing *"over 2h since last void = behind"* against it:**
+
+| | |
+|---|---|
+| one ~70 ml void in 2 hours | **35 ml/hr = 0.48 ml/kg/hr** |
+| oliguria threshold | **0.50 ml/kg/hr** |
+
+**The two-hour heuristic lands within a hair of the clinical cutoff.** It was right, and now it has a
+number underneath it rather than a feel — **which is what makes it hand-offable to a nurse or a
+pacer.**
+
+**And it quantifies the 09-12 failure retrospectively.** Output went from roughly every 30 minutes to
+*"four low-output stops across a whole lap"* — on the order of **40 ml/hr, i.e. he was oliguric
+through the back half of that run.** That is a sharper and more useful statement than "urine output
+collapsed," and it is the objective marker to watch for on race day.
+
+#### The OTHER failure mode, which the card must also show
+
+**Hyponatremia.** High-volume clear output plus plain water plus 30 hours is precisely the setting
+for it, and `athlete/profile.md` records his decision to err overhydrated. **The defence is already
+mandated — sodium at every bag pass regardless of the fluid column — but the card should surface both
+ends, not just the dry one.** A nurse will look for both; a card that only flags dehydration invites
+the opposite error.
 
 ### ⚠ NO ELECTROLYTE IN THE FLASK — athlete preference, 2026-09-25, and it overrides the plan
 
