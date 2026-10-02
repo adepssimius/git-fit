@@ -196,43 +196,38 @@ tally of missed lifts, do not escalate a run of them into a re-author question, 
 shrinking the program to what will reliably get done. The 08-12 brief did all three and had to be
 corrected. Note the miss in one line, then spend the section on what today's lift actually is.
 
-### 5. Walking
+### 5. Walking — NOT a brief section any more (2026-10-02)
 
-Walking is the third training modality here, not an afterthought — `training/block.md` calls
-meeting-time walking the primary answer to the time-on-feet problem, and it scales from 180 to 465
-min/week across the block.
+**Athlete, 2026-10-02:** *"I haven't really been following your walking plan. The goals you had were
+more just for my reference to motivate me to take meetings while walking instead of sitting."*
 
-The target is stored weekly (one `meeting-walk-week.md` per block week) but executed daily, so the
-number he actually needs is **how many minutes today**. The script computes it: target, done so far,
-and the per-day rate required across the days left. Give him that rate plainly.
+**So the walking targets are a nudge, not a prescription, and were never a plan he was executing.**
+`training/block.md` had already half-noticed this on 09-15, calling the target *"aspirational for
+weeks."*
 
-**Walking happens on working days only** — it's done during work calls. So the target divides across
-Mon–Fri minus holidays, not across seven days, and the script handles that (see `athlete/profile.md`
-§ Working days for the holiday list and the athlete's own observance rule). Quote the working-day
-figure; a 7-day number is wrong in a way that reads as reassuring.
+**What that means for the brief, concretely:**
 
-**And walking/trainer are mutually exclusive per day — athlete-confirmed 2026-08-06.** He has
-~90-120min of meetings total on a given day; a day that carries the fixed Thursday trainer ride
-contributes zero walking minutes, not a reduced share. So the real denominator most weeks is
-**4 days** (Mon/Tue/Wed/Fri), not 5. The script's `trainer_days()` handles this — don't recompute
-the rate from `working_days()` alone. Compounding holidays and the Thursday exclusion can bite
-together: block week 14 contains Labor Day (Monday), leaving only **3** walking days
-(Tue/Wed/Fri) for its 355min target — 118min/day, right at the top of the stated range with
-essentially no slack. Flag weeks like this explicitly rather than quoting a number that happens to
-still be technically feasible.
+| don't | because |
+|---|---|
+| compute a per-day rate | there is no commitment to pace against |
+| say he is "behind pace" or "0 of 120" | he walks more than the watch records, and he never signed up for the number |
+| derive a ramp % from recorded walks | both sides are undercounts of unknown size |
+| give walking a section at all | it is the brief's own rule — a section that recaps what he knows trains him to skim |
 
-Pace is measured in the real walking days too. Mid-week, compare against those days elapsed, not
-calendar Mon-Fri — on a Wednesday in a normal week that's 2 of 4, not 2 of 5 or 2 of 7.
+**And a second, independent reason the numbers do not work:** *"It's not feasible for me to start a
+session on my watch every time I go for a walk."* **`WALKING` activities are a floor.** See
+`rules/progression.md` § Walking ramp.
 
-Flag it when he's behind pace, and say why it matters rather than just noting the gap: the risk isn't
-missing the weekly total, it's making it up with two huge days at the end of the week.
-`rules/progression.md` names this ramp as the block's single most likely source of an overuse injury,
-so a spike is worse than a shortfall. If he's far enough behind that catching up would mean a spike,
-say the honest thing — miss the target.
+**Mention walking only when:** he raises it himself, or a single recorded walk is unusually long
+(a real spike, which he would record). **Otherwise say nothing.**
 
-The ramp figure the script prints is **total time on feet, walking plus hiking**, matching
-`verify_plan.py`. Don't recompute it from the walk target alone; in weeks with family hiking that
-produces a large false alarm.
+**The nudge itself is still worth keeping alive** — taking a call walking instead of sitting is free
+and it is the whole point. **Encouragement, not accounting.**
+
+**Nothing was lost by him not following it**, and the brief should not imply otherwise. The
+durability question walking was meant to support was answered directly by running: 50.31 km in 7h14
+on 09-12 with *"my feet are fine with zero checks and zero sock changes"*
+(`training/block.md` § Meeting walking).
 
 ### 6. Watching, and housekeeping
 
@@ -270,9 +265,13 @@ with it is not.
 
 **Respect the athlete's baselines.** `athlete/profile.md` records what is routine for him —
 gastroc/soleus soreness in the green band is normal and not a signal. Flagging it as an emerging
-pattern trains him to ignore the brief. Arch and plantar soreness is the opposite: it's the early
-warning for the walking ramp (`rules/progression.md` calls that the block's most likely overuse
-injury) and is worth naming every time it appears, including which foot.
+pattern trains him to ignore the brief.
+
+**Arch and plantar soreness: NEVER RAISE IT FIRST (2026-10-02).** *"I don't typically have arch or
+plantar soreness, even after 6 or 7 hour hikes with real elevation and rocky/uneven terrain."* So it
+is a baseline non-event, and warning about it is the same error as flagging green-band calf soreness.
+**But name it immediately if HE reports it** — a symptom with no history is high-signal exactly
+because it never fires. Report, including which foot; never pre-empt.
 
 **The session clock is UTC. It is not the athlete's date, and after 20:00 Eastern it is not even
 the right day.** Added 2026-09-19 after a brief written on Saturday evening was dated Sunday,

@@ -197,10 +197,18 @@ meeting_budget:
     # bust the ramp to hit a target number.
     weekly_min_start: 180          # block week 9
     weekly_min_peak: 120           # VOID as a peak — 120 is the supply, flat. See the ⚠ below.
-    weekly_ramp_max_pct: 15        # max week-over-week increase — check this every week
+    weekly_ramp_max_pct: 15        # max week-over-week increase — a GUIDELINE on deliberate volume,
+                                   # not a measurable constraint. ⚠ 2026-10-02: he does not start a
+                                   # recording for every walk ("not feasible... it's a guideline at
+                                   # best"), so WALKING activities from the watch are a FLOOR and a
+                                   # ramp % derived from them is a ratio of two undercounts. Apply
+                                   # the cap to the planned meeting-walk figures, never to recorded
+                                   # minutes. rules/progression.md § Walking ramp has the full note.
     style: "brisk, sustained; incline pad confirmed but meeting-bound — no weight vest, see below"
-    # ACTUAL per-block-week totals (min), from the endurance/*-meeting-walk-week.md files —
-    # corrected 2026-08-06, the previous version of this comment had drifted from the real files:
+    # PLANNED per-block-week totals (min), from the endurance/*-meeting-walk-week.md files —
+    # corrected 2026-08-06, the previous version of this comment had drifted from the real files.
+    # (Relabelled from "ACTUAL" on 2026-10-02: these are plan figures. No actual walking total
+    # exists for any week — see the ramp note above.)
     # wk9 180 | wk10 205 | wk11 170 | wk12 — (hiking week, no walk target, see Travel weeks below)
     # wk13 220 | wk14 355 | wk15 405 | wk16 465 | wk17 465 | wk18 300 (taper) | wk19 150 (race week)
     #
@@ -1508,6 +1516,168 @@ countermeasure to the block's one recorded injury.
 descent, stay off camber. Stop running the moment gait changes — compensation is how one sore
 knee becomes a hip and an achilles.
 
+#### ITB prehab — what he is doing, and the one thing to add (2026-10-01/02)
+
+**Athlete-initiated, done 10-01 evening in place of the dropped Lower B:** 2x12 single-leg step-ups
+(one foot two stairs higher, stand up, lower down), 2x12/side band clamshells, 2x12/side
+rear-lateral leg raises.
+
+**Well chosen, and the substitution was smart** — it delivered Lower B's stated prehab content
+without the Nordic DOMS the day before a lap simulation.
+
+**The gap: two of the three are non-weightbearing, and the ITB is only loaded in single-leg stance.**
+The driver of ITBS is hip adduction plus internal rotation *during stance* — swing-side pelvic drop
+with the stance knee falling medially. Clamshells build the muscle without training that task, which
+is why their transfer to running is poor.
+
+**And this athlete's own history says it is control under fatigue, not strength:** onset 20-25 km,
+and five kilometres early on 08-15 after 14 minutes at or above LTHR in the first 72. **It holds for
+twenty-odd kilometres and then fails.**
+
+##### THE RESOLVED PROGRAMME (2026-10-02) — this is the list
+
+| | exercise | dose | change from what he did on 10-01 |
+|---|---|---|---|
+| 1 | **Single-leg step-ups** (one foot two stairs higher) | 2x12/side | **slow the lowering to 3-4s** |
+| 2 | **Band clamshells** | 2x12/side | unchanged |
+| 3 | **Rear-lateral leg raises** | 2x12/side | unchanged |
+| 4 | **Standing pelvic drop (hip hike)** — **NEW, the only addition** | 2x12/side | — |
+
+**FREQUENCY: twice a week, Tue and Thu, ~15min.** Motor control responds to frequency more than
+volume, and at 2x12 bodyweight these carry no recovery cost.
+
+**The two halves want different frequencies, and this is worth exploiting:**
+
+- **The pelvic drop is unloaded motor control and is essentially free — daily is fine and arguably
+  better**, since distributed practice is how that skill improves. Clamshells and rear-lateral
+  raises sit at the same end.
+- **The step-ups are a loading exercise** (glute max), so 2-3x/week with recovery between. **Not
+  daily.**
+
+**TAPER — last full session Tue 10-13, four days out:**
+
+| | |
+|---|---|
+| Tue 10-06, Thu 10-08 | full session |
+| Fri 10-09 - Sun 10-11 | nothing extra (10-10 is the 110min GI long run) |
+| **Tue 10-13** | **last full session** |
+| Wed 10-15 | pelvic drop only, if he wants to keep touching it |
+| **Fri 10-16, Sat 10-17** | **nothing** |
+
+**⚠ THE REASON TO STOP THAT EARLY IS AN ASYMMETRY, NOT GENERIC CAUTION.** Prehab is not what protects
+the ITB on race day — that is the mid-run management above (cadence +5-10%, walk every descent, stay
+off camber) plus the fact that **the ITB was already silent through 50.31 km in one effort on
+09-12**. **So stopping early costs approximately nothing, while stopping late risks arriving sore.**
+Never trade a known risk for an unknown benefit inside the final week. **Skipping 10-13 altogether is
+also fine** — it is scheduled because it is free, not because it matters.
+
+**Mon 10-05 and Wed 10-07 are hip flexor bouts 2 and 3 and stay in their OWN sessions**: different
+issue, different tissue, and stacking them makes it impossible to attribute anything that complains.
+**Their placement needs no change** — bout 3 at ten days out is well inside the repeated-bout
+effect's multi-week window (`strength/notes.md`).
+
+**DO NOT ADD ANYTHING ELSE.** Not side planks, not monster walks, not more abduction volume. Fifteen
+days buys motor control, not strength, and a longer list mostly raises the chance of arriving at the
+race with something sore from prehab.
+
+**~~Optional: turn some step-ups into eccentric step-downs.~~ — DROPPED 2026-10-02 on reflection.**
+Slowing the lowering of the step-up delivers the same eccentric control with **no new movement
+pattern and no DOMS risk this close to the race.** A new eccentric exercise 15 days out is a bad
+trade for a marginal increase in valgus moment.
+
+##### Why the pelvic drop is the one worth adding
+
+**ADD ONE: the standing pelvic drop (hip hike).** Stand on one leg on a step with the other foot
+free, let the FREE-side pelvis sink slowly, then lift it by driving the STANCE-side glute medius.
+2x12-15/side, slow, unsupported if possible. **It is the most specific exercise available for his
+mechanism** — weightbearing, and it *is* the stance-phase pelvic control task.
+
+**Optional, as a modification rather than extra volume:** turn some step-ups into **eccentric
+step-downs**, 3-4s controlling the descent, watching for medial knee drift. Larger valgus moment on
+the loaded leg than the step-up.
+
+**Do NOT drop the step-ups in favour of more abduction work.** Glute max also inserts into the ITB,
+and a weak glute max lets TFL dominate — and TFL *tightens* the ITB. **That is general anatomy and it
+is why the step-ups earn their place.**
+
+**~~There is already a hint of TFL dominance on record: the hip flexor leg-drop landed "too much on
+the outside," i.e. TFL taking a disproportionate share. Same structure, possibly the same cause.~~
+— WITHDRAWN 2026-10-02.** Athlete: *"I'm gonna need some evidence before you treat that assertion as
+fact."* **There is none.** The TFL attribution was itself an inference from the single word "outside"
+(struck in `log/2026-09-24.md`), vastus lateralis explains the same report at least as well, and
+**the ITB is LEFT only while the lateral DOMS was never assigned a side at all** — if it was
+bilateral the link fails on this file's own standing rule that bilateral points at equipment and
+unilateral points at the athlete.
+
+**DISPROVEN, not merely unsupported, 2026-10-02.** Asked where the soreness was, he answered: *"Both
+sides, starting around where the crease is on my leg and extending down the front of the leg maybe 5
+inches."* **Bilateral and anterior.** Bilateral cannot explain a unilateral left injury, and anterior
+is not TFL — TFL runs down the side of the hip into the ITB. **The bout landed on proximal rectus
+femoris, the intended target** (`log/2026-09-24.md`).
+
+**No TFL-dominance gait pattern is established for this athlete, and none should be asserted without
+gait evidence.** DOMS location in an unfamiliar supine exercise says nothing about recruitment while
+running.
+
+##### TWO SEPARATE ISSUES — athlete's framing, 2026-10-02, and it is the correct one
+
+**Athlete:** *"Note that these are two separate issues. I have it band pain and the soreness at the
+front. Not necessarily soreness at the front causing it band pain. It's possible the front soreness
+is showing a weak spot that could cause it band pain though."*
+
+**Keep them separate in every file:**
+
+| | **ITB pain** | **anterior hip flexor soreness** |
+|---|---|---|
+| what | injury, lateral left knee | DOMS from a novel eccentric bout |
+| side | **left only** | **bilateral** |
+| when | during running, onset 20-25 km | 24-48h after the bout, gone in 3-4 days |
+| status | recurring, managed | expected response to a first exposure |
+
+**His hypothesis, stated as his and NOT adopted as fact:** the anterior DOMS may mark the hip flexors
+as an unaccustomed or weak link, and a weak link there *could* contribute to ITB pain. **The
+plausible mechanism is recruitment under fatigue** — if iliopsoas and rectus femoris cannot carry
+swing-phase hip flexion late in a long effort, TFL takes up more of the job, and TFL tightens the ITB.
+**That is a hypothesis about fatigue, not about where DOMS landed**, which is exactly what makes it
+better than the version struck above.
+
+**One fact that supports taking it seriously:** both problems are distance-gated and both fail late —
+ITB at 20-25 km, hip flexors at ~50 km (`log/2026-09-12.md`). **A shared theme of fatigue-resistance
+in hip musculature is consistent with the pattern** without either causing the other.
+
+**Two facts that argue against it being the main story:**
+
+1. **THE ITB WENT SILENT BEFORE ANY HIP FLEXOR WORK EXISTED.** It murmured at ~50 km cumulative on
+   09-07; on **09-12** he ran 50.31 km in one effort and it said nothing. **Eccentric bout 1 was
+   09-22, ten days later.** So whatever improved the ITB was not hip flexor eccentric training —
+   most likely the block's volume adaptation, or the mid-run management above.
+2. **The sides do not match.** Bilateral hip flexors cannot by themselves explain a unilateral left
+   ITB. **The hypothesis needs an additional left-specific asymmetry to do the real work** — and that
+   asymmetry, which this file has flagged since 08-15 as *"something about him is asymmetric"*, is
+   still the unexplained part.
+
+**So: worth doing the prehab, not worth building a causal story on.** And **do not fold the two
+issues back together in any future entry** — they have different sides, different timescales and
+different triggers.
+
+**TIMING, and it matters more than the exercise selection:**
+
+| | |
+|---|---|
+| **not before 10-03** | new patterns mean DOMS in untested tissue before the last on-course rehearsal |
+| **not 10-05 or 10-07** | hip flexor eccentric bouts 2 and 3 (`strength/notes.md`) |
+| **realistically 10-06, 10-08** | low volume |
+
+**⚠ AND THE HONEST FRAME: at 15 days out this changes nothing about the ITB's load tolerance.**
+Strength adaptation does not happen inside a taper. Motor control does improve quickly and the work
+is free, so it is worth doing — **but race-day protection is not coming from it.** It comes from the
+mid-run management above, which is already established and already worked.
+
+**The most reassuring fact available: the ITB was silent through the 50k.** It murmured at ~50 km
+*cumulative* on 09-07; on 09-12 he covered 50.31 km in one effort and it said nothing, against a
+documented 20-25 km onset (`log/2026-09-12.md`). **Do not let prehab enthusiasm obscure that the
+trend is already good.**
+
 None other recorded. Log anything that affects session selection here, and reference it from
 `rules/progression.md`'s readiness ladder.
 
@@ -1561,5 +1731,27 @@ and it becomes the constraint everything else is authored against.
 routine for this athlete — "par for the course," his words, not a signal of anything going wrong.
 `rules/logging.md`'s soreness scale is generic; read a green-band calf reading alone as noise, not
 an early-warning sign. What would actually be new information: calf soreness reaching amber (4-6)
-or higher, soreness anywhere else that isn't normally sore for him (arches/plantar in particular,
-per the walking-ramp overuse risk below), or a sharp/one-sided reading per the scale's own anchors.
+or higher, soreness anywhere else that isn't normally sore for him (arches/plantar in particular —
+see the next paragraph for why that would be *very* informative), or a sharp/one-sided reading per
+the scale's own anchors.
+
+**Second baseline, 2026-10-02: HE DOES NOT GET ARCH OR PLANTAR SORENESS.** Athlete: *"I don't
+typically have arch or plantar soreness, even after 6 or 7 hour hikes with real elevation and
+rocky/uneven terrain. I'll be fine."*
+
+**That is stronger evidence than the 50k**, because rocky uneven terrain with real climbing loads the
+foot harder than a flat rail trail does, and it has never produced the symptom.
+
+**Two consequences, and they pull in opposite directions — hold both:**
+
+- **Stop pre-emptively warning about his feet.** No brief, session file or week note should raise
+  arch/plantar risk as a thing to watch. It has never happened at distances and on terrain well past
+  what Ghost Train asks. **Flagging it is the same mistake as flagging green-band calf soreness.**
+- **But if he ever DOES report it, it is high-signal precisely because it never fires.** A symptom
+  with no history appearing in the back half of a 30-hour race is new information, not noise. **Name
+  it immediately if it comes from him.** Never raise it first.
+
+**Blisters and hot spots are a SEPARATE question and are NOT retired by this.** Arch/plantar soreness
+is an overuse-tissue signal; a hot spot is friction and moisture management. He had one at 45.8 km on
+09-12 that never became a blister, with zero sock changes — good, and still a thing the race plan
+manages deliberately. **Do not let "his feet are fine" collapse the two.**

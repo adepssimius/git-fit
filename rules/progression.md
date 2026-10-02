@@ -124,10 +124,50 @@ format two blocks in a row without a reason.
 
 ## Walking ramp (meeting time)
 
+### ⚠ READ THIS BEFORE QUOTING ANY WALKING NUMBER — the ramp cannot be measured (2026-10-02)
+
+**Athlete:** *"There is more walking that happens that you don't see. It's not feasible for me to
+start a session on my watch every time I go for a walk, so it's a guideline at best. I'm not hitting
+240 per week but it's more than 40 minutes per week."*
+
+**So `WALKING` activities from `workouts_list` are a FLOOR, not a total.** They catch the walks he
+remembered to start a recording for. Errands, the school run on foot, moving around the house and
+most meeting-time pacing are real time on feet and are simply absent.
+
+**What breaks as a result:**
+
+| | |
+|---|---|
+| **"he walked 35min last week"** | **wrong** — he *recorded* 35min, and walked more |
+| **a ramp % derived from recorded walks** | **meaningless.** Both sides of the ratio are undercounts, by unknown and different amounts |
+| **"he is behind pace, 0 of 120"** | **unsupported.** Say *"0 recorded"*, which is a statement about the watch |
+| **"his feet are deconditioned to walking"** | **actively wrong**, and it produced bad advice on 2026-10-02 — a shorter walk was recommended on the grounds that two near-zero recorded weeks had detrained his feet. They had not |
+
+**The cap below is still a sound principle and it is still worth honouring.** What it is not is a
+number anyone can check. **Treat it as a guideline on deliberate walking volume** — the thing the
+`endurance/*-meeting-walk-week.md` files plan and the thing he can choose — and never as a measured
+constraint on total foot-time.
+
+**`scripts/verify_plan.py` is unaffected** because its ramp check compares PLANNED week files against
+each other, which is internally consistent. **The error is only ever made by hand, by pulling
+`WALKING` activities and treating the sum as his walking.**
+
+**What the data IS good for:** noticing a single very large recorded walk (a real spike, since he
+would record a long deliberate one), and the arch/plantar signal below, which comes from him rather
+than from the watch.
+
+### The cap itself
+
 Check every week: `sport: Walk` total vs. last week's total must not increase by more than
-`athlete/profile.md` → `meeting_budget.walking.weekly_ramp_max_pct` (15%). This is the most likely
-source of an overuse injury in this entire plan — a sudden jump from incidental walking to hours a
-day is exactly the kind of load spike that causes plantar fascia or achilles problems. If a week's
+`athlete/profile.md` → `meeting_budget.walking.weekly_ramp_max_pct` (15%). ~~This is the most likely
+source of an overuse injury in this entire plan~~ — **DEMOTED 2026-10-02, on two separate grounds:**
+the walking plan was never a plan he was executing (see the note above and `training/block.md`
+§ Meeting walking), and **he does not get the injury it defends against.** Athlete: *"I don't
+typically have arch or plantar soreness, even after 6 or 7 hour hikes with real elevation and
+rocky/uneven terrain."* Rocky uneven terrain with climbing loads the foot harder than this race does.
+**The block's actual most likely overuse site is the hip flexors** — documented, recurring, and
+distance-gated at ~50 km (`log/2026-09-12.md`). The general principle below still holds for anyone,
+and a sudden jump from incidental walking to hours a day is still the mechanism it describes. If a week's
 walking total would need to jump more than 15% to hit the target in `athlete/profile.md`, hold it at
 the capped increase instead and let the peak arrive a week or two later than planned.
 

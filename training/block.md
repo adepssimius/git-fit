@@ -244,6 +244,27 @@ in order of weight:
    block's single most likely source of an overuse injury. A ramp from 405 to 465 that does not
    happen cannot hurt him. Flat 120 is the safest walking line in the block.
 
+### COMPLETED 2026-10-02 — it was never a plan he was following
+
+**Athlete:** *"I haven't really been following your walking plan. The goals you had were more just
+for my reference to motivate me to take meetings while walking instead of sitting."*
+
+**The 09-15 cut treated a prescription as having shrunk. It had never been a prescription.** This
+file's own point 2 above — *"the plan was already ahead of reality... the target has been aspirational
+for weeks"* — was closer to the truth than the framing around it.
+
+**So retire the accounting, keep the nudge.** The targets in `athlete/profile.md` are a reference
+figure to motivate walking a meeting instead of sitting it. **There is no compliance to measure, no
+per-day rate to hit, and no shortfall to adapt around** — and recorded `WALKING` activities are a
+floor anyway, since he does not start a recording for every walk
+(`rules/progression.md` § Walking ramp).
+
+**NOTHING WAS LOST, and the evidence is direct rather than inferred.** The durability case for
+walking was *"foot, calf, and achilles durability over 24+ hours"* — and 09-12 measured exactly that
+at full scale: **50.31 km in 7h14, feet fine, zero sock changes, one hot spot at 45.8 km that never
+blistered.** A real 7-hour read beats any walking total, which is the argument this section already
+made. **Do not add running volume to compensate for walking that was never happening.**
+
 **What this does NOT change.** The remaining open questions are the gut and the feet, and both are
 answered by running, not walking — the gut retest and the bilateral tape A/B both land on the
 10-03 lap sim. Do not respond to this cut by adding running volume to compensate: the time budget

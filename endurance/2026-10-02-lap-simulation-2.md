@@ -1,5 +1,5 @@
 ---
-date: 2026-10-03
+date: 2026-10-02
 sport: Run
 name: Lap Simulation 2 — one lap on course, full dress rehearsal
 type: lap-sim
@@ -37,6 +37,33 @@ intent: >
   too short (anchored on the 4h20 stoppage), and a 2026-09-17 note called it "long enough as
   authored" (anchored on the 3h30 onset). Both were written before 09-25 existed.
 
+  MOVED Sat 10-03 -> FRI 10-02 EVENING on 2026-10-02, athlete's call. His wife wants Saturday for
+  downhill quad bouts before her 10-11 5k, so Saturday is gone. He chose tonight over Sunday:
+  "A long run tonight followed by quality sleep sounds like exactly what I need."
+
+  TWO ARGUMENTS AGAINST TONIGHT WERE MADE AND BOTH WERE WRONG — recorded because they are the kind
+  that will be made again. (1) "Glycogen is depleted after this morning's 89min group ride." Athlete:
+  "You're arguing that I shouldn't run when my glycogen stores are depleted when training for a 100
+  mile race?" He is right — a long EASY session on depleted stores is the ultra-specific stimulus,
+  not a compromise. He will be in deficit for most of 30 hours, and his own 09-25 numbers put carb
+  oxidation at ~29-38 g/hr with fat doing the rest. Depletion only ruins high-intensity work, which
+  this is not. (2) "Running it in daylight matches the 09:00 race start." Athlete: "I don't need
+  daylight specificity. That's just normal running." Correct — daylight is the default condition of
+  nearly every session he does; calling it a stimulus was dressing up nothing.
+  WHAT IS ACTUALLY TRUE: tonight's pace and ZoneSense readings sit downstream of an 89min hard ride
+  (DFA TSS 106, RPE 6 with hills at 9), so do not read them as fitness in either direction.
+
+  LIGHT: ONE CELL, NO SWAP — athlete's call, 2026-10-02. "I'm going to take the light but I won't
+  need a cell swap. I'm going to start early enough to have light and not so late that it disrupts
+  my sleep." Correct, and the arithmetic backs it: sunset is ~18:30, so an afternoon start leaves at
+  most ~2h of darkness against level 5's measured 3h00. A warning that this session was "fully dark
+  end to end" assumed a night start and was wrong for a late-afternoon one.
+
+  AND IT BUYS SOMETHING FOR THE SESSION'S ACTUAL JOB. Running into darkness mid-session means the
+  crew-stop and drop-bag rehearsal spans the light transition — a stop in daylight and a later one
+  by headlamp. Stop choreography is what this session is for, so getting both lighting conditions in
+  one pass is a genuine bonus rather than a specificity story.
+
   ⚠ NOT ON THE POLAR (added 2026-10-01). This session's own ZoneSense and HR trace is the point of
   it, and the Polar fails late — 1h27 — so a 3h25 session is exactly long enough to lose the data.
   Run the Garmin here. The Polar retest belongs on Sun 10-04's 105min, after its battery is replaced
@@ -53,7 +80,7 @@ intent: >
   and the hip flexors. It does not buy speed. See log/2026-10-01.md § What this does for the race.
 origin: authored
 published:
-  suunto: 2026-10-02T02:24:28Z    # guide id h09l6vja
+  suunto: 2026-10-02T14:19:10Z    # guide id yvzoeklw (dated 10-02). h09l6vja was the 10-03 version
 ---
 
 Car -> north terminus (drop bag passed at 5km)

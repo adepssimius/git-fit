@@ -26,27 +26,89 @@ python3 scripts/pack_guide.py    endurance/2026-08-04-easy-strides.md --base64
 
 Then pass that base64 to `mcp__suuntool__guides_upload`. `suuntool` needs `--allow-write`.
 
-### ⚠ A guide cannot be uploaded for today or the past — the server clock is UTC
+### ⚠ ~~A guide cannot be uploaded for today or the past~~ — DISPROVEN 2026-10-02
 
-**`guides_upload` returns a bare `500 General error` when `localDate` is not in the future by the
-SERVER's clock, and the server runs UTC.** Discovered 2026-09-24 at 22:53 Eastern, which is
-**2026-09-25 02:53 UTC** — so a guide for Friday 09-25 was already "today" server-side and was
-refused twice, while a guide for 09-26 uploaded fine seconds later. The identical step tree had
-uploaded without complaint a week earlier under a future date.
+**A guide WAS uploaded with `localDate` equal to the server's current UTC date.** Athlete, after
+being told it would fail: *"Try it anyway."* It worked.
 
-**The practical consequence: from ~20:00 Eastern onward you cannot publish tomorrow's guide.** That
-is exactly when someone would think to do it, and exactly the window before an early-morning
-session. **Publish guides at least a day ahead**, and check `mcp__suuntool__doctor` for
-`servertime` before concluding an upload failure is something else.
+| | |
+|---|---|
+| server clock at the attempt | **2026-10-02 14:18 UTC** |
+| guide `localDate` | **2026-10-02** — the server's own today |
+| result | **accepted**, guide `yvzoeklw`, no error |
 
-**The error says nothing useful.** If an upload 500s, compare `localDate` against the server clock
-before touching the step tree. **`guides_update` hits the same validation**, so replacing an
-existing guide's content is not a way around it.
+**So the rule as written was false**, and the pinning workaround it motivated was never needed for
+same-day guides.
 
-**When the date cannot be fixed, PIN the guide instead.** `guides_pin` is independent of
-`localDate`, so a guide filed under the wrong day still comes up first on the watch. That turns a
-wrong date from something the athlete has to work around at 02:45 into nothing at all. Unpin
-whatever was pinned before, or he gets two candidates.
+#### What actually failed on 2026-09-24, most likely: an externalId collision
+
+**`guides_upload`'s own tool description says so:** *"A guide.json externalId that collides with an
+existing guide returns a server error (exit 5) with the server's own 'Conflict' description — there
+is no dedicated conflict code."* **A bare 500 is exactly what an undifferentiated conflict looks
+like.**
+
+**And 09-24 was a RE-PUSH**, which is the collision case: the night-run guide `j7iuqrlx` already
+existed. Today's upload carried a brand-new externalId (`git-fit-2026-10-02-lap-simulation-2`) and
+sailed through on the server's today.
+
+**The 09-24 evidence fit the date theory only by coincidence** — "today failed, +2 days worked" is
+equally consistent with "the re-push collided, the new file did not."
+
+#### It should never have survived this long, and the reason is a reusable one
+
+**Athlete, 2026-10-02:** *"Runna can push a same day session, you should be able to as well."*
+
+**That argument was available from the day the rule was written, and it is stronger than the test
+that eventually disproved it.** Runna pushes same-day workouts to the same watches through the same
+Suunto API. **A shipping product visibly doing X is strong evidence the platform permits X** — far
+stronger than one 500 from one re-push.
+
+**The general rule, which applies well beyond guides:** when a note in this repo claims the platform
+*cannot* do something, and a product in the athlete's own hands demonstrably does it, **the note is
+wrong until proven otherwise.** A single failed call is evidence about that call, not about the API's
+capabilities. **Write "this failed for me and I do not know why" rather than inventing the
+constraint that would explain it** — the invented constraint then gets obeyed by every later session
+and the workaround calcifies. That is exactly what happened here: one 500 became a rule, the rule
+became a pinning workaround, and the workaround ran for eight days.
+
+#### What to actually believe
+
+- **Uploading for the server's current UTC date works.** Demonstrated.
+- **A strictly PAST `localDate` is still untested.** Do not assume either way.
+- **On any 500, check for an externalId collision FIRST** — a guide already exists for that
+  date-derived id. `guides_list` shows them. Changing the content of an existing guide needs
+  `guides_update` or a delete-then-upload, not a fresh upload.
+- **Publishing a day or more ahead is still good practice**, just not a server requirement.
+- `mcp__suuntool__doctor` gives `servertime` and is still worth checking; it just is not usually the
+  answer.
+
+**The error says nothing useful.** If an upload 500s, **check `guides_list` for an existing guide
+with the same date-derived externalId first** — that is the documented conflict case and the likeliest
+cause. Then compare `localDate` against the server clock. Do not touch the step tree until both are
+ruled out.
+
+### ⚠ AN UNPIN DOES NOT RELIABLY STICK — pin the RIGHT guide instead (2026-10-02)
+
+**`t3gb6ydg`, the 08-23 5k TT, has now been found pinned twice after being unpinned.** It was
+unpinned on 2026-09-24, found pinned again and unpinned on 2026-10-01 (the call returned
+`pinned: false`), and was **pinned again by 2026-10-02**. Cause unknown — the app or the watch may
+re-pin on sync, or the unpin may not persist server-side.
+
+**So unpinning a stale guide is not a reliable way to get the right guide to the top.** Do not treat
+a successful unpin response as the end of it.
+
+**The robust move is to PIN THE SESSION HE IS ABOUT TO RUN.** A deliberate pin puts the right guide
+first regardless of what else drifts back. Unpin the stale one as well if you like — just do not rely
+on it.
+
+**And verify with `guides_list` afterwards rather than trusting the pin/unpin response**, which
+reports the call's immediate result and evidently not the durable state.
+
+**When the date genuinely cannot be fixed, PIN the guide instead.** `guides_pin` is independent of
+`localDate`, so a guide filed under the wrong day still comes up first on the watch. **This is now a
+fallback rather than the standard move** — since a same-day upload works, prefer uploading a
+correctly-dated guide and deleting the stale one. Unpin whatever was pinned before, or he gets two
+candidates.
 
 1. **Push a rolling ~2-week window**, not the whole plan at once. The plan is meant to adapt to how
    training actually goes (see `rules/progression.md`), and pushing far-future sessions that will

@@ -460,58 +460,20 @@ def main() -> int:
         offdays = [x for x in (monday + datetime.timedelta(days=i) for i in range(7))
                    if x.weekday() < 5 and x in hol]
 
-        print(f"  target      {walk_target}min this week")
-        excl = [f"{x.strftime('%a')} trainer" for x in sorted(trainer)]
-        print(f"  walking days {len(all_wd)} this week ({', '.join(x.strftime('%a') for x in all_wd)})"
-              + (f"   [{', '.join(hol[x] + ' ' + x.strftime('%a') for x in offdays)} off]" if offdays else "")
-              + (f"   [{', '.join(excl)} — can't walk and trainer same day]" if excl else ""))
-        print(f"              -> {walk_target / len(all_wd):.0f}min per walking day if spread evenly"
-              if all_wd else "              -> NO walking days this week")
+        print(f"  reference   {walk_target}min/week — A NUDGE, NOT A PRESCRIPTION")
+        print("  -> Athlete, 2026-10-02: \"I haven't really been following your walking plan. The")
+        print("     goals you had were more just for my reference to motivate me to take meetings")
+        print("     while walking instead of sitting.\" So: do NOT compute a per-day rate, do NOT")
+        print("     flag him as behind pace, and do NOT give walking a section in the brief.")
+        print("     He also does not record every walk, so WALKING activities are a FLOOR, never")
+        print("     his total. Mention walking only if HE raises it or a single recorded walk is")
+        print("     unusually long. rules/progression.md § Walking ramp; training/block.md")
+        print("     § Meeting walking.")
+        if all_wd:
+            print(f"  (for context only: {len(all_wd)} weekday(s) Mon/Tue/Wed/Fri this week)")
 
-        if block_week:
-            w_now, h_now = time_on_feet(str(block_week))
-            w_prev, h_prev = time_on_feet(str(int(block_week) - 1))
-            tof_now, tof_prev = w_now + h_now, w_prev + h_prev
-            hike_note = f" (incl. {h_now}min hiking)" if h_now else ""
-            print(f"  time-on-feet {tof_now}min this week{hike_note}, {tof_prev}min last week"
-                  f"   [PLANNED, both sides]")
-            if tof_prev:
-                delta = (tof_now - tof_prev) / tof_prev * 100
-                print(f"  ramp        {delta:+.0f}%   PLANNED vs PLANNED — not the real ramp"
-                      + ("   OVER the 15%/wk cap — check whether hiking drives it, which "
-                         "training/block.md treats as unavoidable rather than a failure"
-                         if delta > 15 else ""))
-            # These figures come from the authored week files, so they say what was PRESCRIBED,
-            # both weeks. The cap in rules/progression.md is about tissue load, which only actual
-            # minutes measure — so re-derive from workouts_list before quoting a percentage.
-            print("  -> the cap is on ACTUAL load: sum last week's WALKING (+HIKING) from "
-                  "workouts_list and re-derive the ramp before quoting a percentage")
-            # ...but a low actual is only a baseline if the week was fully TRACKED. Block week 9
-            # records 97min because walk tracking started mid-week, not because it was a light
-            # week; ramping week 10 against it gives +111% and would cut a comfortable 205min
-            # target to 112 on a number that never measured the right period. Athlete-confirmed
-            # 2026-08-10. Block week 10 is the first complete week of tracking.
-            if int(block_week) - 1 < 10:
-                print("     NOTE block week 9 is NOT a valid baseline — walk tracking started "
-                      "mid-week, so its 97min actual is a partial window, not a low week. "
-                      "Do not ramp-check against it; week 10 is the first full week tracked")
-
-        today_is_workday = d in all_wd
-        why_not = hol.get(d) or ("trainer ride scheduled" if d in trainer else "weekend")
-        print(f"  today       {d.strftime('%a')} — "
-              + ("a walking day" if today_is_workday else f"NOT a walking day ({why_not})"))
-
-        if args.walked is None:
-            print(f"  -> pull WALKING activities (activityId 0) since Mon {monday}, sum the minutes,")
-            print(f"     then re-run with --walked <total> for the exact per-day number")
-        else:
-            done, remaining = args.walked, max(0, walk_target - args.walked)
-            print(f"  done        {done}min | remaining {remaining}min")
-            if left_wd:
-                print(f"  -> {remaining / len(left_wd):.0f}min/day across the "
-                      f"{len(left_wd)} working day(s) left ({', '.join(x.strftime('%a') for x in left_wd)})")
-            else:
-                print(f"  -> no working days left this week; {remaining}min will not be made up")
+        if args.walked is not None:
+            print(f"  recorded    {args.walked}min on the watch this week — a FLOOR, not his total")
             # Pace is measured in working days, not calendar days — a Wednesday check-in with
             # Mon+Tue behind it should compare against 2/5 of the target, not 2/7.
             if done_wd:

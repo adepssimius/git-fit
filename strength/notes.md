@@ -246,13 +246,38 @@ RF-specific option — but it is far less like running, and specificity wins her
 
 ### Bout 1 landed too laterally — the fix, 2026-09-24
 
+**⚠ RESOLVED 2026-10-02: THE BOUT LANDED ON TARGET, AND THESE CUES ARE OPTIONAL.** Asked where the
+soreness actually was, the athlete answered: *"Both sides, starting around where the crease is on my
+leg and extending down the front of the leg maybe 5 inches."*
+
+**That is bilateral and anterior — proximal rectus femoris and the hip flexor tendon region, i.e.
+the intended tissue.** TFL is ruled out by anatomy: it runs down the *side* of the hip into the ITB,
+not the front. Full reasoning in `log/2026-09-24.md`.
+
+**So "it landed too laterally" was overstated.** The athlete's *"a little too much on the outside"*
+describes distribution inside the target zone, not a mis-hit.
+
+**Keep the cues, but as a preference rather than a correction.** He asked for *"a little more
+inward"*, biasing the drop medially costs nothing, and bouts 2 and 3 are reinforcement anyway
+(`strength/notes.md` already records that bout 1 was probably enough). **Do not present them to him
+as fixing a problem** — and do not cite TFL.
+
+**One thing this does kill: any link to the left ITB.** Bilateral soreness cannot explain a unilateral
+injury, per `athlete/profile.md`'s own bilateral-equipment / unilateral-athlete rule.
+
 Athlete after bout 1: *"I feel it a little too much on the outside, so I need to modify the movement
 to get a little more inward."*
 
-**Outside means TFL took a disproportionate share.** TFL flexes the hip but also **abducts and
-internally rotates** it, so it gets recruited whenever the leg drifts away from the midline or the
-toe turns in. Iliopsoas and the midline of rectus femoris — the tissue that actually complains at
-50 km — sit medial to it.
+**~~Outside means TFL took a disproportionate share.~~ — STRUCK 2026-10-02, and then DISPROVEN the
+same day.** The basis was the single word *"outside"*. Asked directly, he placed it **bilaterally,
+from the inguinal crease down the front of the leg about 5 inches** — anterior, which is not where
+TFL is.
+
+**The anatomy below is still correct as anatomy**, and it is why the cues point where they point:
+TFL flexes the hip but also **abducts and internally rotates** it, so it gets recruited whenever the
+leg drifts away from the midline or the toe turns in, while iliopsoas and the midline of rectus
+femoris — the tissue that actually complains at 50 km — sit medial to it. **What is NOT established
+is that TFL is what happened to him.**
 
 **Cues for bouts 2 and 3, all aimed at the same two things:**
 
