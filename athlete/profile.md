@@ -123,9 +123,70 @@ day compresses is running.
 
 Order of precedence when there isn't room for everything:
 
+0. **THE PRIME DIRECTIVE — "happy wife happy life" (athlete, 2026-10-03).** Sits above running and
+   above everything below. See § The prime directive.
 1. **Running** — the prescribed session, at the prescribed intensity.
 2. **Meeting-time walking / trainer** — nearly free in family terms, so it survives most squeezes.
 3. **Lifting** — first to be cut. See below.
+
+### The prime directive — it exists, but it is the EXCEPTION path, not the normal one
+
+**Athlete, 2026-10-03, on the downhill quad bouts: *"It gets overridden by the prime directive.
+'Happy wife happy life.' This was my wife's choice for today."***
+
+**And then the narrowing that matters, same day:** *"Typically if I'm doing something with her it's
+something I have already cleared with you or she is just adamant about."*
+
+**Plus the correction that followed immediately, and it is the whole operative point:** *"Told you
+about != Cleared with you. This was a thing that I didn't ask about."*
+
+**So there are THREE paths. The tell is whether he asked a question:**
+
+| path | what it looks like | how to handle it |
+|---|---|---|
+| **He ASKED** — cleared with me | a question: should I, does this work, what does it cost | **give the view.** This is the only path where an opinion was invited |
+| **He TOLD me** — notified, not asking | a statement of what is happening. *"Saturday is hers"* | **record and adapt. No opinion.** The decision is already made |
+| **She is adamant** | arrives fixed, no notice | same as above, and even less to say |
+
+**Telling is not asking, and treating a notification as a request for input is the error.** Nothing
+about *"my wife wants Saturday"* solicits an assessment — it is him telling the plan what Saturday
+now is, the same way the work travel in `training/weeks/w17.md` did.
+
+**Do not pre-emptively treat "something with my wife" as beyond discussion either** — when he asks,
+answer properly. **The point is to read which mode he is in, not to pick one and apply it always.**
+
+**10-03 was the TOLD path, and misreading it as cleared is what this section fixes.** On 10-02 he
+stated that Saturday was his wife's and moved the lap simulation to Friday evening himself —
+`training/weeks/w17.md` records it as *"athlete's call"* and *"he chose tonight over Sunday."* **He
+announced a decision and re-timed the week around it; he never put the downhill bouts up for
+review.** When he invoked the prime directive on 10-03 he was shutting down a retrospective
+second-guess of something that had never been a question.
+
+**What this changes, on EITHER path, is how the session gets written up AFTERWARDS:**
+
+| do | don't |
+|---|---|
+| record it, measure it, and adapt the surrounding days to it | re-open whether it was the right training call once it is done |
+| say what it costs and what it buys | frame a finished session as a trade-off he should have made differently |
+| re-time the days around it (`rules/progression.md` cut order) | propose moving or shrinking something already agreed |
+
+**On the ASKED path, before it happens, argue freely** — that is what asking is for. **After it
+happens, on every path, it is data.**
+
+**The 10-03 debrief got this wrong and is the reason the section exists.** It called the 403 m of
+descent a "tension" with the ITB programme's no-new-eccentric-work caution. **The observation about
+the files was fair; raising it as a tension was not** — nobody had asked, and the session was
+already run. **A finished session is measured, not adjudicated.**
+
+**This is already the shape of the plan elsewhere**, which is why it costs nothing to make explicit:
+the **Great Island 5k on 10-11** is in `training/weeks/w18.md` because he is pacing his wife to
+sub-30, and that week works around it — including accepting that *"Sunday is no longer a recovery
+day"* six days out from the race. **That entry argues about what it costs the week and never once
+about whether he should do it. Copy that.**
+
+**It does not mean these sessions are invisible.** They are real load and they still get the full
+treatment in `log/` — 10-03's eccentric dose changed what Sunday landed on and put Monday's hip
+flexor bout inside a DOMS window. **Measure it fully; just never second-guess it.**
 
 What follows from this, and it matters most for how `log/` and the daily brief are written:
 
@@ -1645,8 +1706,20 @@ race with something sore from prehab.
 
 **~~Optional: turn some step-ups into eccentric step-downs.~~ — DROPPED 2026-10-02 on reflection.**
 Slowing the lowering of the step-up delivers the same eccentric control with **no new movement
-pattern and no DOMS risk this close to the race.** A new eccentric exercise 15 days out is a bad
-trade for a marginal increase in valgus moment.
+pattern and no DOMS risk this close to the race.** A brand-new exercise 15 days out is not worth it
+for a small extra dose of knee-inward loading. *(Reworded 2026-10-03 — the original said "a bad
+trade for a marginal increase in valgus moment," which is the jargon `AGENTS.md` rule 10 exists to
+catch. "Valgus moment" is the force pulling the knee inward toward the midline while the foot stays
+planted; that inward collapse is the ITB-irritating position, and a step-down deliberately loads it
+so the hip has to fight it. Same meaning, plain words.)*
+
+**⚠ AND THE WHOLE DEBATE WAS OVERTAKEN BY EVENTS ON 2026-10-03.** He ran downhill quad bouts with
+his wife — **403 m of descent in 7.05 km, run deliberately at the collapse limit** — which is a far
+bigger dose of knee-inward loading than any step-down would have delivered, 14 days out instead of
+15 (`log/2026-10-03.md`). **The left ITB fired at 7 km and cleared afterwards.** So the caution above
+is moot for that quality: the exposure happened, and the repeated-bout effect means it most likely
+left him better protected rather than worse. **Do not re-litigate it, and do not add step-downs now
+on the grounds that he tolerated the descents** — the taper schedule above still governs.
 
 ##### Why the pelvic drop is the one worth adding
 
