@@ -407,8 +407,10 @@ course_access:
 ```yaml
 equipment:
   suunto_watch: true
-  hr_strap_polar: true              # RETIRED 2026-09-12 — faulty, do not wear. See note below
-  hr_strap_garmin: true             # THE strap. ZoneSense runs on it (athlete-confirmed 09-10)
+  hr_strap_polar: true              # RACE-DAY STRAP (athlete, 2026-10-03). Fixed by new battery +
+                                    # band; passed 3h27 clean on 10-02. Fresh battery right before
+                                    # the race. See § Chest straps
+  hr_strap_garmin: true             # works, ZoneSense runs on it (athlete-confirmed 09-10)
   bike_trainer: true                # used during meetings
   emtb: true                        # unplanned, active-recovery only
   ebike_commute: true               # TRANSPORT, not training — see the note below
@@ -587,6 +589,24 @@ he owns twice that.
 deliberately ahead of the first step-down; he ran to 05:50 and got caught in the dark. **On race
 night this is a lap-boundary task, not a "when I notice" task** — the light gives no warning he can
 act on, and the trail is where he is when it goes.
+
+### ⚠ One cell came up short — 000-102, 2026-10-02 lap sim 2
+
+**Cell 000-102 gave about 2h25 on level 5**, from the 18:52 start to the north turnaround —
+**20-35 minutes under the 2h45 plan figure** and well under the 3h00 measured on 09-25. Athlete: fully
+charged, level 5, but charged about a week earlier rather than the day before. **A week on the
+shelf doesn't explain it** — these cells lose roughly 2-3% a month in storage, a couple of minutes,
+not thirty. **Most likely 000-102 just holds less than the 09-25 cell.** One data point
+(`log/2026-10-02.md`).
+
+- **Plan each cell at 2h15 until 000-102 is benched.** Ten cells against ~13h of darkness is still
+  ~6 needed, so there are spares.
+- **Don't stage 000-102 first on race night.** If the bench run confirms it's weak, put it in the
+  backup light or retire it.
+- **Bench test:** charge the day before, run level 5 at home, time it. Near 3h00 = fluke; near 2h25 =
+  weak cell.
+- **Record which cell goes in when** from now on, by serial — the 09-25 cell's serial wasn't
+  written down, which is why there's nothing to compare 000-102 against.
 
 ### Power — one cell format, three roles (recorded 2026-09-08)
 
@@ -884,7 +904,24 @@ Two notes that survive anyway, both cheap:
 - **The Aquaphor already staged in both bags is the fallback**, with tape behind it. Nothing extra
   needs staging.
 
-## Chest straps — the Polar was retired on 2026-09-12, and it is still in rotation
+## Chest straps — the Polar is FIXED and is the race-day strap (athlete, 2026-10-03)
+
+**Current state, and it replaces the verdicts below.** The new battery and new band, changed
+together, fixed it. **Lap sim 2 on 2026-10-02 ran 3h27 on the Polar with no HR gaps over 10 seconds
+and no step larger than 20 bpm inside 5 seconds** — past the 1h27 point where it failed before and
+past the 90-minute bar this section set for a valid test (`log/2026-10-02.md`).
+
+**Athlete, 2026-10-03: "Polar becomes my race day preference. It just needs a new battery right
+before the race."** So:
+
+- **Race day: the Polar, with a fresh battery fitted in race week.** A sagging cell was one of the
+  two suspects, so the battery goes in new rather than trusting this one for 30 hours.
+- **The Garmin still works** and ZoneSense runs on it. No backup strap is wanted (below) — his
+  backup is running by feel.
+
+The history below is kept because the reasoning is what gets reused.
+
+### History — the Polar was retired on 2026-09-12, and stayed in rotation
 
 `athlete/zones.yml` requires a chest strap: ZoneSense does not run on optical wrist HR, so the
 strap is the instrument the primary live target depends on.
@@ -906,7 +943,7 @@ on the Polar and it produced the same failure a third time — 66-67 bpm steps i
 ~24 minute dropout, and long stretches reading out of `ZS Z1` on a run he rated RPE 3. That session's
 HR and ZoneSense are void (`log/2026-09-19.md`).
 
-**Race-day: the Garmin is the strap.** ~~The Polar is not a spare.~~
+**~~Race-day: the Garmin is the strap.~~ — SUPERSEDED 2026-10-03: the Polar is.** ~~The Polar is not a spare.~~
 
 **No backup strap is wanted — athlete decision, 2026-09-20.** *"I don't need a backup strap. My
 backup is running by feel."* He has run this course before and paces off effort; a dead strap on
@@ -950,6 +987,25 @@ strap, not a root cause.
 `DYNAMIC_DFA` present in `tssList` (ZoneSense ran), and no HR step larger than ~30 bpm inside 30
 seconds. Clean on both **past the 90-minute mark** and that step was the fix.
 
+**✅ RESULT, 2026-10-02 lap sim 2: clean on both, for 3h27. Step 1 was the fix.**
+
+## Fast finishes — read them as a good day (athlete, 2026-10-03)
+
+**He negative-splits the end of a long effort when he has it in him, deliberately.** *"You know I'm
+gonna negative split at the end of a long effort if I have it in me."*
+
+- **Mid-run: don't flag a speed-up near the end as a pacing problem** and don't tell him to check
+  ZoneSense over it. On 10-02 that warning was sent and was the wrong call.
+- **After the run: look for one on purpose, as a sign he felt good.** Athlete: *"You should
+  specifically look for fast finishes proactively as a sign that I felt good."* Pull the last
+  manual lap or the last ~20min, and report it in the debrief alongside RPE and soreness.
+- **It's also a free read on the Zone 1 margin.** On 10-02 the last 2.55 km went at 6:33/km, HR avg
+  141, after 3h10 and a hard ride that morning, and DFA a1 stayed above 0.75 until the final kick.
+  **A fast finish that stays in Zone 1 is good news that changes nothing** — he doesn't run the race
+  faster (athlete, 2026-10-01).
+- **The one time it means something else:** a fast finish *missing* from a long run he'd normally
+  finish strong on. Note it next to the soreness and RPE; don't conclude from one.
+
 ## Footwear — the Mont Blanc runs small
 
 ### The rotation (recorded 2026-08-15 — none of this was in the repo before)
@@ -972,6 +1028,13 @@ Note he runs **9.5 in the Lone Peak and Escalante but 10 in the Experience Flow*
 by model, so "size 10" was never inherently too big. That mattered on 2026-08-15 when a size-up
 hypothesis for a blister was raised and then ruled out: the 08-12 threshold session was 14min of
 fast running in the size 10 Experience Flow with normal Balega socks and produced nothing.
+
+### Socks — Balega Enduro Quarter is the race sock (2026-10-03)
+
+**First run in them: lap sim 2, 2026-10-02, 24 km in the Mont Blanc 10.** Athlete: *felt the same as
+his usual Balegas, but less chafing at the top of the shoe and kept dirt out of the sock better.*
+The higher cuff is what does both. **Race sock unless something changes.** Toe-box volume is his
+constraint (it ruled out toe socks), and 24 km in the Mont Blanc 10 showed no sign of it.
 
 ### WHY the Mont Blanc — the thing this section never recorded
 

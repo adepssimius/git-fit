@@ -427,8 +427,13 @@ that no remaining session could test the gut at all, which is false.
   09-25 at four hours.**
   **What 10-03 does still owe on fuelling is the aid table, not the clock:** this file states that
   90-120 g/hr cannot come from carried gels and that *"the balance comes off the aid table — candy,
-  soda, real food."* **That has never been rehearsed.** 10-03 is the dress rehearsal with the actual
-  drop bags, so it is the only remaining chance to practise taking real food on top of the gels.
+  soda, real food."* ~~**That has never been rehearsed.** 10-03 is the dress rehearsal with the actual
+  drop bags, so it is the only remaining chance to practise taking real food on top of the gels.~~
+  **— WITHDRAWN 2026-10-03. Real food is a race-day thing, not a training thing.** Athlete: *"Real
+  food off the aid table is practical on race day, just not during training. I can't bring boiled
+  potatoes on the trail to train with."* **Training can't rehearse an aid table it doesn't have**, so
+  no training session owes this. Lap sim 2 ran gels only (~58 g/hr) and that was correct. The
+  race-day plan for the balance off the table stands unchanged.
 
 **~~Extend 09-26 to 4h30 on the block's last long-run exception.~~ — PROPOSED AND WITHDRAWN
 2026-09-17.** It was built on the 4h20 anchor. The exception stays unspent.
