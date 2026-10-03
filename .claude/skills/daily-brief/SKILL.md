@@ -99,7 +99,9 @@ ask the athlete in the brief — it is a one-word answer and the only field he o
 
 **2. Score the readiness ladder** in `rules/progression.md`. Seven signals, worst one wins. Five come
 from Suunto; soreness and RPE trend come from `log/`. Report each with its actual number, not just a
-colour — "sleep 7h18, amber" tells him what to do differently tonight; "amber" doesn't.
+colour — "sleep 7h18" next to an amber tells him what to do differently tonight; amber alone doesn't.
+The number goes in the table's Reading cell and the colour in its Status cell (section 1 below, which
+also says how to write the colour in Discord versus everywhere else).
 
 **3. Write the brief** (shape below).
 
@@ -110,9 +112,27 @@ is worthless.
 
 **Never invent `soreness_0_10` or `rpe_0_10`.** They're the two signals the watch cannot supply, and
 `rules/logging.md` is emphatic that a blank is honest and a guessed number is corruption. If he
-hasn't reported soreness, leave it null and ask for it at the end of the brief. Soreness is defined
+hasn't reported soreness, leave it null and ask for it at the end of the brief — and when he answers,
+step 5 applies. Soreness is defined
 as **on waking, before any warmup** — if he gives you a number later in the day, it belongs to
 tomorrow's entry, not backfilled into a past one.
+
+**5. When he answers, write it into the log entry, then offer to save it.** Added 2026-10-03: he gave
+soreness in reply to the brief, the brief moved on, and the number was never persisted — the one
+signal the watch cannot supply, lost. So:
+
+- **Any rating he gives in reply to the brief goes into today's entry straight away** — soreness, a
+  sleep answer for `sleep_context`, `shade_pct`. A poll vote counts the same as a typed answer. If it
+  changes a row in the readiness table (a `—` soreness becoming a 4), update `readiness:` in the
+  frontmatter and say in one line whether the call moved.
+- **Then end with a one-line offer to save the log**, e.g. *"Soreness 4 is in `log/2026-10-03.md` —
+  want me to save it?"* From the fitcordllm bot, saving means its `ship` tool (a thread's edits sit
+  in that thread's clone and never reach `master` until shipped); in a local session it means a
+  commit. **Offer, don't do it** — `AGENTS.md`'s standing instruction applies here as everywhere:
+  he says yes, then it ships.
+- **Offer at the end of the brief too**, once the readiness signals are in, rather than only after a
+  follow-up — the entry with the readiness call is already worth keeping. One offer per brief, not
+  one per answer; a later answer just goes into the same unsaved entry.
 
 ## Shape of the brief
 
@@ -122,9 +142,51 @@ Then six sections, in this order. The order matters — it runs data → judgeme
 ### 1. The data
 
 Last night and where he stands. A compact table with the actual readings, not just colours: sleep
-duration and quality, HRV, resting HR, body resources, soreness. Add anything from the wellness pull
-that's genuinely unusual — a deep-sleep collapse, a fragmented night, an HRV outlier — and say
-whether it has an obvious cause.
+duration and quality, HRV, resting HR, body resources, soreness, RPE trend. Add anything from the
+wellness pull that's genuinely unusual — a deep-sleep collapse, a fragmented night, an HRV outlier —
+and say whether it has an obvious cause.
+
+**The table has exactly this shape** (athlete, 2026-10-03; shown as it is written for Discord):
+
+| Signal | Reading | Status |
+|---|---|---|
+| Sleep duration | 7h14, one unbroken block (00:59-08:13) | 🟡 |
+| Sleep quality | 0.79, deep 1h21 (19%) | 🟢 |
+| HRV | 95 ms, 83 samples — week high | 🟢 |
+| Resting HR | 41 bpm, on a 40-41 baseline | 🟢 |
+| Body resources | 0.87 at 08:30, climbing all morning | 🟢 |
+| Soreness | 4 on waking, up from 3 | 🟡 |
+| RPE trend | lap sim 4 vs 5 expected; ride 6 vs 6 | 🟢 |
+
+Overall 🟡 — worst signal wins, and today that's the soreness, not the sleep.
+
+**How the Status colour is written depends on where the brief is read — the emoji are Discord-only.**
+(Athlete, 2026-10-03: *"those style edits only apply when you are called from the context of
+discord."*) You are in Discord when the session was started by the fitcordllm bot: its system
+prompt says so, and your replies are posted to a Discord channel.
+
+| context | Status cell | overall line |
+|---|---|---|
+| **Discord (fitcordllm)** | a literal 🟢 / 🟡 / 🔴, nothing else | "Overall 🟡 — …" |
+| **anywhere else** (terminal, desktop app, cloud session) | the plain word: green / amber / red | "Overall amber — …" |
+
+In Discord specifically:
+
+- **Never write the bare words GREEN / AMBER / RED in the Status cell.** They do not render as
+  coloured dots for him. The bot's own formatting note claims it draws dots from those words; his
+  client disagrees, and his client is what he reads. He confirmed the emoji do render.
+- **No emoji on the signal names.** An earlier draft put 😴 💓 🔋 on each signal and he rejected
+  it: *"Not emoji for the things themselves, red/yellow/green lights."*
+
+Everything else about the table applies in every context:
+
+- **Numbers and qualifiers go in Reading, never in Status.** Status is the colour alone, so the
+  column scans in one glance; Reading is where "sleep 7h14" tells him what to do differently tonight.
+- **All seven ladder signals get a row, every morning.** A signal with no number still gets its row,
+  Reading saying so ("no sleep record came through") and Status `—`. A dropped row hides a question
+  he needs to be asked — see "When a ladder signal is missing" below.
+- **Follow the table with a one-line overall call naming which signal drives it**, as above. "Overall
+  amber" alone leaves him hunting the table for the reason; the driving signal is what section 2 acts on.
 
 Then one line of training context from the script's week-to-date section: what he's already done this
 week, what today is, what's left. A 58min session reads differently as 17% of the week than it does
@@ -147,6 +209,24 @@ actually asking: *given this session, does that change anything?* Be concrete ab
 recommending he run something as written despite an amber, justify it rather than letting it slide by.
 
 ### 3. Cardio
+
+**Every brief carries a two-row table of today and tomorrow** (athlete, 2026-10-03 — that morning's
+brief gave today only and he had to ask for it):
+
+| Day | Session | Duration | Instrument | Watch |
+|---|---|---|---|---|
+| Sat 10-03 | Downhill quad bouts — no file, his call on reps | not set | effort | n/a |
+| Sun 10-04 | Sunday Back-to-Back — last real volume of the block | 105min | `ZS Z1` | `94zy82s9` |
+
+**Why tomorrow too:** on a weekend the two days are one decision — what he does today sets what
+tomorrow's session lands on — and on any other day it is the line that tells him whether today's
+amber matters. **A day with no prescribed file still gets its row, saying so** (rest day, his call,
+no file) rather than being dropped; check the week file before deciding which it is (see "When
+there's no session today"). Instrument follows the session's `follow:` and is always qualified
+(`ZS Z1`, never `Z1`), per the zone rule below. Watch is the guide id, or "not pushed" — which is
+worth saying in the same breath, per the paragraph below.
+
+The table is the overview; the rest of this section is today's session in full.
 
 **Lead with what the session develops, in one or two sentences, before the step list.** A brief that
 says what to run but not what it's for reduces him to executing instructions, and an athlete who
@@ -304,7 +384,8 @@ recommendation is not a draft.** So:
 
 - **Missing signals are a question, not a gap to reason across.** "No sleep record came through —
   how did you actually sleep?" is one line and it settles the whole ladder. Ask it *before* the
-  readiness call, not after the recommendation.
+  readiness call, not after the recommendation. In the table the signal keeps its row with Status
+  `—`; it is never coloured from an inference.
 - **One surviving signal is not a ladder.** Worst-signal-wins assumes the signals are there. With
   most of them missing, a single number is a data point, not a verdict — report it and say what it
   would mean if confirmed.
@@ -322,11 +403,14 @@ repo's history came from exactly that.
 
 **Don't pad.** He reads this every morning. A brief that recaps what he already knows is one he
 starts skimming, and then he skims the morning something actually matters. If a section has nothing
-new, drop it.
+new, drop it. **Two things are never padding and never dropped:** the seven-row readiness table
+(section 1) and the today/tomorrow table (section 3). Their value is that they are the same shape
+every morning.
 
 ## When there's no session today
 
 Rest days are prescribed, not gaps — `training/block.md` requires a full leg-recovery day before
 the Saturday long run, and the week file will say so. Check the week file row before calling a day
 empty: a planned rest day and a missing file look identical from the endurance directory. Still
-report readiness; a rest day is exactly when a red signal changes what tomorrow should look like.
+report readiness, and still give today its row in the today/tomorrow table, saying which it is; a
+rest day is exactly when a red signal changes what tomorrow should look like.
