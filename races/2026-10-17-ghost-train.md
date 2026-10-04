@@ -329,7 +329,7 @@ stop and a five-minute one, repeated across the night.
   gloves**
 - **18650 cells** — the restock pile
 - **Gels**
-- **Analgesic** — see open items
+- **Analgesic — acetaminophen (Tylenol). NO ibuprofen** (athlete, 2026-10-04)
 - **The card**
 
 ### Start/finish bag only
@@ -1085,10 +1085,12 @@ training block behind it.
    See § The full night system. **The only thing added rather than confirmed: a spare pair of
    gloves in each drop bag** — wet fleece is worse than none, and cold wet hands are what make the
    blister kit unusable.
-2. **Ibuprofen → acetaminophen.** Both bags currently carry ibuprofen. NSAIDs across 30 hours of
-   dehydration and sustained muscle breakdown carry a real acute-kidney-injury risk, and it is a
-   worse bet uncrewed with nobody watching him. Acetaminophen does the analgesic job without that
-   mechanism. **Athlete's call; the recommendation is to swap.**
+2. **~~Ibuprofen → acetaminophen.~~ — CLOSED 2026-10-04. Athlete: *"Tylenol is in, ibuprofen
+   out."*** Both bags carry acetaminophen only. NSAIDs across 30 hours of dehydration and sustained
+   muscle breakdown carry a real acute-kidney-injury risk, and it was a worse bet uncrewed with
+   nobody watching him; acetaminophen does the analgesic job without that mechanism.
+   **The remaining exposure is someone handing him ibuprofen on course — decline it**
+   (`races/2026-10-17-ghost-train-protocols.md` § Left knee, § Hydration).
 3. **`rules/fueling.md` § Caffeine is still a TODO**, and the sleep plan above is written assuming
    it will say what is written here. Reconcile the two.
 4. **Re-read the goal tiers after 09-12, 09-26 and 10-03.** They are an assessment made on a
