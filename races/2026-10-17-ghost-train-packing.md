@@ -22,7 +22,7 @@ Tick it off race week. Where things came from and why: `races/2026-10-17-ghost-t
 ## On you at the start
 
 - [ ] Altra Mont Blanc Carbon, size 10
-- [ ] Balega Hidden Comfort socks
+- [ ] Balega Hidden Comfort Quarter socks
 - [ ] Singlet
 - [ ] Naked Running Band
 - [ ] Sportiva 700 ml soft flask — water
@@ -39,7 +39,7 @@ Tick it off race week. Where things came from and why: `races/2026-10-17-ghost-t
 ## DPW drop bag (7.5 mi turnaround)
 
 - [ ] Altra Lone Peak 9, size 9.5
-- [ ] Balega Hidden Comfort socks
+- [ ] Balega Hidden Comfort Quarter socks
 - [ ] Gels (~20)
 - [ ] 18650 cells (4)
 - [ ] Mortal SALTY packets (6)
@@ -69,7 +69,7 @@ Blister kit:
 ### Race kit
 
 - [ ] Altra Lone Peak 9, size 9.5
-- [ ] Balega Hidden Comfort socks, several pairs
+- [ ] Balega Hidden Comfort Quarter socks, several pairs
 - [ ] Gels (~20)
 - [ ] 18650 cells (4)
 - [ ] Mortal SALTY packets (6)
@@ -122,4 +122,3 @@ Blister kit:
 - [ ] Sleeping bag
 - [ ] Sleeping mat
 - [ ] Dry change of clothes
-- [ ] Torbot hexane can — for taking the Leukotape off

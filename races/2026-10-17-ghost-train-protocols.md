@@ -163,12 +163,15 @@ Kit is in the tent at start/finish and in the DPW drop bag. Fix it at whichever 
 **Taping, every time:**
 
 1. Nitrile gloves on.
-2. Dry wipe.
-3. Alcohol pad. Let it dry completely.
+2. Dry gauze: wipe off as much Aquaphor as you can.
+3. A few drops of hexane on fresh gauze, wipe the spot. Let it dry completely.
+   Never on broken skin — use an alcohol pad there instead.
 4. Skin-Tac.
 5. Leukotape, no wrinkles.
 6. Dry sock if the old one is wet.
-7. Gloves and wipes into the ziplock.
+7. Gloves, gauze and wipes into the ziplock. Cap the hexane bottle tight.
+
+No hexane left? Alcohol pad instead, and let it dry.
 
 **What to do:**
 
@@ -177,7 +180,7 @@ Kit is in the tent at start/finish and in the DPW drop bag. Fix it at whichever 
 | Hot spot, no blister | Tape it |
 | Small blister, painless | Leave it, tape over it |
 | Big or painful blister | Drain it, keep the skin on, tape over it |
-| Torn open | Clean, antiseptic, non-stick pad, then tape. No plain gauze |
+| Torn open | Alcohol pad around it, non-stick pad on it, then tape. Never gauze on raw skin — it sticks |
 
 **Draining:**
 
@@ -188,7 +191,7 @@ Kit is in the tent at start/finish and in the DPW drop bag. Fix it at whichever 
 5. New needle for each blister.
 6. Recap: lay the cap flat, slide the needle in, tip it up. Don't hold the cap in your hand.
 
-**Removing tape later:** slowly, wet it if it's stuck.
+**Removing tape:** a few drops of hexane along the edge as you peel. Slowly.
 
 ---
 

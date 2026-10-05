@@ -324,7 +324,7 @@ stop and a five-minute one, repeated across the night.
 ### DPW drop bag (7.5mi turnaround) — athlete, 2026-10-04
 
 - **Altra Lone Peak 9 (9.5)** — the spare pair
-- **Balega Hidden Comfort** — spare socks
+- **Balega Hidden Comfort Quarter** — spare socks
 - **Gels** — the restock
 - **18650 cells** — the restock pile
 - **Blister kit** — same contents as the tent's, listed below
@@ -335,7 +335,7 @@ stop and a five-minute one, repeated across the night.
 ### Tent at start/finish — everything, including
 
 - **Altra Lone Peak 9 (9.5)** — one pair here, one at DPW. He owns three; one stays home
-- **Balega Hidden Comfort**, several pairs
+- **Balega Hidden Comfort Quarter**, several pairs
 - **Blister kit** — 1 roll Leukotape P, alcohol wipes, Skin-Tac, 2 non-adherent pads, 4-5 × 25G
   sterile beveled needles, small scissors, nitrile gloves, ziplock. Full protocol in
   `athlete/profile.md` § Blister kit
@@ -773,7 +773,7 @@ fallback when gels stop being palatable in the back half, and it is stocked at e
 |---|---|
 | **Start in** | **Altra Mont Blanc Carbon, size 10** |
 | **Change to** | **Altra Lone Peak 9, 9.5 — at either end, whenever he feels he needs it** (athlete, 2026-10-04). The hot spot below arrived at ~46 km, so expect that to be around the end of lap 2 |
-| **Socks** | Balega Hidden Comfort, changed at any bag where feet feel off or wet |
+| **Socks** | Balega Hidden Comfort Quarter, changed at any bag where feet feel off or wet |
 | **Lube** | Aquaphor between the toes |
 
 **This combination carried 52.7km across 09-06 and 09-07 with zero hot spots.** That is the
