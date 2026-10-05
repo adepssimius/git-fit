@@ -157,6 +157,7 @@ Clear urine + feeling awful + tight hands = stop drinking. Drinking more makes i
 | Tylenol | pain, knee ache | Write down each dose | Too much damages the liver. The label max is per 24h and the race is 30h, so it's easy to go over without a count |
 | Voltaren gel | sore knee | Small area, wipe hands, let it dry. Never under tape | Little of it reaches the blood, so it's safe for the kidneys where ibuprofen isn't. Gel under tape stops the tape sticking |
 | Zofran | nausea, vomiting | One dose only. Do the two checks below first | It can upset heart rhythm, and that risk goes up when 30h of sweating has left potassium and magnesium low |
+| Pepcid AC Maximum Strength (famotidine 20 mg) | heartburn, acid stomach | One tablet with water, don't chew. Max 2 in 24h. Write down each dose | Cuts stomach acid. It does nothing for a stomach that has stopped emptying — for nausea, do the [gut steps](#gut) first |
 | Caffeine (cola, caffeinated gels) | staying awake | See [the caffeine card](#caffeine) | You're used to it, so skipping it brings on a withdrawal headache in the night. More than one per pass stops working and upsets the stomach |
 
 **Before taking Zofran:** it stops the nausea but not the cause. Rule out these two first, because

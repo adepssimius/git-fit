@@ -41,6 +41,12 @@ is **~7-14 g carbs and ~85-170 mg sodium** depending on whether they mixed 1 or 
 |---|---|---|
 | **Torbot Solvent with N-Hexane** | Clear hydrocarbon liquid, sold in an 8 oz screw-top can. Medical adhesive remover | Bought to take Leukotape off after the race. Hexane is non-polar, so it dissolves petrolatum (Aquaphor) far better than alcohol does, and it evaporates fast. **Flammable.** Dries the skin out; keep it off broken skin and drained blisters. Let it evaporate fully before Skin-Tac or tape |
 
+## Meds
+
+| Product | Unit | Dose | Notes |
+|---|---|---|---|
+| **Pepcid AC Maximum Strength** | 1 tablet, famotidine 20 mg | 1 tablet with water, not chewed. **Max 2 in 24 h** | Acid reducer for heartburn. To prevent, take 10-60 min before the food that causes it. Does not help a stomach that has stopped emptying |
+
 ## Sodium equivalents — ~900 mg, one SALTY packet
 
 | To get ~900 mg | Practical? |
@@ -62,5 +68,6 @@ is **~7-14 g carbs and ~85-170 mg sodium** depending on whether they mixed 1 or 
   [The Feed](https://thefeed.com/products/tailwind-endurance-fuel)
 - [SaltStick FastChews — The Feed](https://thefeed.com/products/saltstick-fastchews)
 - [Torbot Solvent with N-Hexane — Exmed](https://www.exmed.net/torbot-solvent-with-n-hexane-adhesive-remover)
+- [Pepcid AC Maximum Strength — DailyMed label](https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2854047f-c5c4-43c3-8ef2-5c0a84a307f2)
 - [Nuun Sport — Nuun](https://nuunlife.com/products/nuun-sport) ·
   [Nuun Sport + Caffeine — Nuun](https://nuunlife.com/products/nuun-sport-caffeine-1)

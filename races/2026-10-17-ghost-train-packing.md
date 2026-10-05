@@ -47,6 +47,7 @@ Tick it off race week. Where things came from and why: `races/2026-10-17-ghost-t
 - [ ] Tylenol
 - [ ] Voltaren gel
 - [ ] Zofran
+- [ ] Pepcid AC Maximum Strength
 - [ ] THE CARD, printed
 - [ ] Protocol cards, printed
 - [ ] Fluid tally card
@@ -81,6 +82,7 @@ Blister kit:
 - [ ] Tylenol
 - [ ] Voltaren gel
 - [ ] Zofran
+- [ ] Pepcid AC Maximum Strength
 - [ ] Nipple shields (2 pairs)
 - [ ] Spare collapsible cup
 - [ ] THE CARD, printed
@@ -128,6 +130,7 @@ Blister kit:
 ### Not bought yet
 
 - [ ] **Caffeine** — a ~200 mg dose source. See the caffeine card
+- [ ] **Pepcid AC Maximum Strength** (famotidine 20 mg)
 
 ### After the race
 

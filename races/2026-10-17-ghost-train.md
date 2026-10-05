@@ -331,7 +331,7 @@ stop and a five-minute one, repeated across the night.
 - **Aquaphor** — to re-lube after taping
 - **Nipple shields**, 2 pairs (athlete, 2026-10-05)
 - **Mortal Hydration packets, regular** — top-ups when the pacer's sodium check says so
-- **Meds** — Tylenol, Voltaren, Zofran. **NO ibuprofen**
+- **Meds** — Tylenol, Voltaren, Zofran, Pepcid. **NO ibuprofen**
 - **The card**
 
 ### Tent at start/finish — everything, including
@@ -346,7 +346,7 @@ stop and a five-minute one, repeated across the night.
   gloves**
 - **18650 cells** — the restock pile
 - **Gels**
-- **Meds** — Tylenol, Voltaren, Zofran. **NO ibuprofen** (athlete, 2026-10-04)
+- **Meds** — Tylenol, Voltaren, Zofran, Pepcid (added 2026-10-05). **NO ibuprofen** (athlete, 2026-10-04)
 - **Mortal Hydration packets, regular** — top-ups when the pacer's sodium check says so
 - **The card**
 
