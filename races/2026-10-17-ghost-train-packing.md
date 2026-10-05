@@ -29,7 +29,7 @@ Tick it off race week. Where things came from and why: `races/2026-10-17-ghost-t
 - [ ] Sportiva 700 ml soft flask — empty
 - [ ] Collapsible cups (2)
 - [ ] Spork
-- [ ] Gels for one aid-station gap plus spare (~3)
+- [ ] Gels (5)
 - [ ] Watch
 - [ ] Chest strap (ZoneSense needs it)
 - [ ] Phone

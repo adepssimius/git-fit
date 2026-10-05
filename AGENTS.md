@@ -127,7 +127,7 @@ What goes in it, each as one line:
 |---|---|
 | **slurring, tripping, missed turns, lost minutes** | card item 6. He cannot hear his own speech degrade |
 | **gait change** — from a blister, or the left ITB | card items 4 and 5. A limp is visible from behind and invisible from inside |
-| **has he eaten in the last 30min, did it stay down** | card item 3. The thing that slips first when he is working |
+| **has he eaten in the last 40min, did it stay down** | card item 3. The thing that slips first when he is working |
 | **shivering, or hands that cannot work tape** | card item 7. Layer goes on BEFORE it is needed |
 | **"I might need to lie down"** — if he says it at all | card item 6. The text goes out NOW; they need 45min |
 

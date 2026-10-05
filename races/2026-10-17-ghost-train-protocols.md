@@ -21,7 +21,7 @@ service on the whole course, so Adam, Amy and Josh can open the links any time.
 
 ### The plan
 
-1. **Gel every 40 minutes on the watch timer.** About 5 per lap. Keep the timer all race, even
+1. **Gel every 40 minutes on the watch timer.** 5-7 per lap, 3-4 between the tent and DPW. Keep the timer all race, even
    when you feel fine.
 2. **400 ml of water with each gel.** That is your ~600 ml/hr. Plain water in the flask — no
    Tailwind, no electrolyte.
@@ -231,11 +231,12 @@ No hexane left? Alcohol pad instead, and let it dry.
 2. [Sodium check](#sodium-check). Packet only if it says so, mixed into the second flask.
 3. Eat something solid off the table.
 4. Two spare headlamp cells on you — zip-tied ones only. Used cells go back in the tent or bag
-   without a zip tie. Restock gels.
-5. Urine check: see [hydration](#hydration).
-6. Feet — only if something hurts.
-7. Start/finish only: put a layer on before you get cold. Night clothes are only here.
-8. Leave.
+   without a zip tie.
+5. Leave with 5 gels on you.
+6. Urine check: see [hydration](#hydration).
+7. Feet — only if something hurts.
+8. Start/finish only: put a layer on before you get cold. Night clothes are only here.
+9. Leave.
 
 **Changes:**
 
@@ -256,18 +257,18 @@ always cleared in about 20 minutes.
 Go through it with him, out loud, top to bottom. He does the work; you fetch from the tent if he
 asks.
 
-- [ ] **Tell him at 5 minutes and at 10 minutes.** Those are the only time checks.
+- [ ] **Tell him at 5 minutes and at 10 minutes.** He needs to know if he's spending too long.
 - [ ] **Flask** refilled with water.
 - [ ] **Sodium check.** Ask: "Tailwind at both aid stations since the last end?" Then check the
       other four in the [sodium check](#sodium-check). Any yes → one regular Mortal packet in his
       second flask, filled with water. All no → nothing.
-- [ ] **Solid food** eaten off the aid table. Ask: "have you eaten in the last 30 minutes, and did
+- [ ] **Solid food** eaten off the aid table. Ask: "have you eaten in the last 40 minutes, and did
       it stay down?"
 - [ ] **Pee:** ask when he last went and what colour. Over 2 hours ago → he drinks a full flask
       before leaving. Clear and under an hour → skip the extra water. Sodium only if his
       hands are puffy or he feels sick.
 - [ ] **Two spare headlamp cells** on him — **zip-tied ones only**. No zip tie means used.
-      Gels restocked.
+- [ ] **5 gels** on him when he leaves.
 - [ ] **Feet:** ask if anything is rubbing. If yes, blister kit is in the tent.
 - [ ] **Shoes:** ask if he wants to swap shoes.
 - [ ] **Layers — this is the only place they are.** If the next lap runs into dark or colder
@@ -284,18 +285,18 @@ asks.
 
 Same as the tent, minus layers. Everything else he needs is in the bag.
 
-- [ ] **Tell him at 5 minutes and at 10 minutes.** Those are the only time checks.
+- [ ] **Tell him at 5 minutes and at 10 minutes.** He needs to know if he's spending too long.
 - [ ] **Flask** refilled with water.
 - [ ] **Sodium check.** Ask: "Tailwind at both aid stations since the last end?" Then check the
       other four in the [sodium check](#sodium-check). Any yes → one regular Mortal packet in his
       second flask, filled with water. All no → nothing.
-- [ ] **Solid food** eaten off the aid table. Ask: "have you eaten in the last 30 minutes, and did
+- [ ] **Solid food** eaten off the aid table. Ask: "have you eaten in the last 40 minutes, and did
       it stay down?"
 - [ ] **Pee:** ask when he last went and what colour. Over 2 hours ago → he drinks a full flask
       before leaving. Clear and under an hour → skip the extra water. Sodium only if his
       hands are puffy or he feels sick.
 - [ ] **Two spare headlamp cells** on him — **zip-tied ones only**. No zip tie means used.
-      Gels restocked.
+- [ ] **5 gels** on him when he leaves.
 - [ ] **Feet:** ask if anything is rubbing. Blister kit and spare socks are in the bag.
 - [ ] **Shoes:** ask if he wants to swap shoes.
 - [ ] **No layers here.** If he is cold, he gets moving and changes at the tent.

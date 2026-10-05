@@ -250,7 +250,7 @@ lap 3 onward — out loud, because hearing yourself slur is the check you cannot
 >
 > **2. CLOCK.** Am I inside cutoff pace for the next tier? *No margin → this lap is the last one.*
 >
-> **3. FUEL.** Have I eaten in the last 30 minutes and did it stay down?
+> **3. FUEL.** Have I eaten in the last 40 minutes and did it stay down?
 > *No → eat something SOLID here, standing, and walk out eating. Do not start a lap behind.*
 >
 > **4. FEET — take the shoe off and look. Do not skip this because it is cold.**
