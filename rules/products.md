@@ -35,6 +35,12 @@ is **~7-14 g carbs and ~85-170 mg sodium** depending on whether they mixed 1 or 
 | **Nuun Sport** | 1 tablet | **300 mg** | 150 mg K, 25 mg Mg, 13 mg Ca, 1 g sugar | 0 mg | Dissolve in ~500 ml (16 oz) |
 | **Nuun Sport + Caffeine** | 1 tablet | **300 mg** | as Nuun Sport | **40 mg** | Dissolve in ~500 ml. Counts toward the caffeine limit |
 
+## Skin and tape
+
+| Product | What it is | Notes |
+|---|---|---|
+| **Torbot Solvent with N-Hexane** | Clear hydrocarbon liquid, sold in an 8 oz screw-top can. Medical adhesive remover | Bought to take Leukotape off after the race. Hexane is non-polar, so it dissolves petrolatum (Aquaphor) far better than alcohol does, and it evaporates fast. **Flammable.** Dries the skin out; keep it off broken skin and drained blisters. Let it evaporate fully before Skin-Tac or tape |
+
 ## Sodium equivalents — ~900 mg, one SALTY packet
 
 | To get ~900 mg | Practical? |
@@ -55,5 +61,6 @@ is **~7-14 g carbs and ~85-170 mg sodium** depending on whether they mixed 1 or 
 - [Tailwind Endurance Fuel — Tailwind](https://tailwindnutrition.com/products/endurance-fuel) ·
   [The Feed](https://thefeed.com/products/tailwind-endurance-fuel)
 - [SaltStick FastChews — The Feed](https://thefeed.com/products/saltstick-fastchews)
+- [Torbot Solvent with N-Hexane — Exmed](https://www.exmed.net/torbot-solvent-with-n-hexane-adhesive-remover)
 - [Nuun Sport — Nuun](https://nuunlife.com/products/nuun-sport) ·
   [Nuun Sport + Caffeine — Nuun](https://nuunlife.com/products/nuun-sport-caffeine-1)

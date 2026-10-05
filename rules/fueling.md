@@ -703,6 +703,14 @@ with plain water.** He is stopped and drinking there anyway. Nothing moves, noth
 **So the 250 ml practice stands as what he does until he says otherwise.** Do not write the dilution
 change into the card, the race file or a session brief before that conversation happens.
 
+**DECIDED 2026-10-04 — never 250 ml; the packet goes in the SECOND FLASK.** Athlete: *"250 ml of
+water with that much sodium sounds like a disaster."* He chose the second flask over a cup at the
+table: one packet in a full flask (~650-700 ml, the designed dilution, ~1,300-1,415 mg/L), sipped
+over the next leg alongside the plain-water flask. **This changes the 09-25 "no electrolyte in the
+flask" preference for the second flask only** — the main flask stays plain water. Both flasks count
+toward the ~600 ml/hr target. At night, sodium is once per lap, so the second flask is free for
+broth on the other pass.
+
 **AND THE PACKET IS NOT A ZERO-CARB ELECTROLYTE**, which § The architecture still implies by listing
 LMNT, SaltStick, Precision and Nuun. It carries **10 g carb / 8 g sugar**. At one per bag pass that
 is **~6 g carb/hr** on top of ~60 g/hr from gels — harmless, and in 650 ml it is a 1.5% solution — but

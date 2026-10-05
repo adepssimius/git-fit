@@ -37,7 +37,7 @@ service on the whole course, so Adam, Amy and Josh can open the links any time.
    carbs: salted potatoes, pretzels, rice, noodles. Skip greasy food.
 8. **Sodium: ~900 mg at each end in the day, ~900 mg per lap once it cools off**
    ([hydration](#hydration)).
-9. **At night:** broth in the second flask, carried out with you. Cola for carbs and caffeine.
+9. **At night:** broth in the second flask on the pass without sodium, carried out with you. Cola for carbs and caffeine.
 
 ### Troubleshooting
 
@@ -69,10 +69,15 @@ Do not switch flavours to fix nausea. It is the stomach, not the taste.
 
 - Fluid: about 600 ml/hr — 400 ml with each gel. Don't drink above that just because the table
   is there.
-- Flask: plain water. Second flask for broth or extra water.
+- Flasks: one plain water. The second carries the SALTY mix — or broth at night, on the pass
+  when you're not taking sodium.
 - Sodium:
+  - Before the start: one SALTY packet in the second flask, finished before 09:00.
   - Day: ~900 mg at start/finish and ~900 mg at DPW (~1,800 mg per lap).
   - Once it cools off: ~900 mg per lap, at either end.
+  - **Mix the packet into the second flask, filled with water** (~650-700 ml, what the packet is
+    made for). Sip it through the next leg alongside the water flask. Both count toward your
+    600 ml/hr. Never in 250 ml — too salty to empty.
   - ~900 mg is one Mortal SALTY packet, two regular Mortal packets, or three Nuun Sport tablets.
     SaltStick FastChews (50 mg each) and salty food are top-ups. Gels carry almost none.
     Full list: `rules/products.md`.
@@ -173,7 +178,6 @@ Kit is in the tent at start/finish and in the DPW drop bag. Fix it at whichever 
 | Small blister, painless | Leave it, tape over it |
 | Big or painful blister | Drain it, keep the skin on, tape over it |
 | Torn open | Clean, antiseptic, non-stick pad, then tape. No plain gauze |
-| Red streaks, pus, spreading redness, hot | Don't drain. Get help |
 
 **Draining:**
 
@@ -192,7 +196,7 @@ Kit is in the tent at start/finish and in the DPW drop bag. Fix it at whichever 
 
 ## Stops — aid stations, tent and drop bag
 
-**Budget 8-10 min per lap total. Time every stop on the watch. Stay standing.**
+**Stay standing. Check the time at 5 minutes and at 10 minutes. Past 10 is too long.**
 
 | Where | Mile | What's there |
 |---|---|---|
@@ -204,7 +208,8 @@ Kit is in the tent at start/finish and in the DPW drop bag. Fix it at whichever 
 **Every pass through start/finish or DPW, in order:**
 
 1. Refill flask with water.
-2. Sodium, ~900 mg (one SALTY packet) — every pass in the day, once per lap at night.
+2. Sodium, ~900 mg (one SALTY packet) mixed into the second flask with water, sipped over the
+   next leg — every pass in the day, once per lap at night.
 3. Eat something solid off the table.
 4. Two spare headlamp cells on you — zip-tied ones only. Used cells go back in the tent or bag
    without a zip tie. Restock gels.
@@ -232,9 +237,9 @@ always cleared in about 20 minutes.
 Go through it with him, out loud, top to bottom. He does the work; you fetch from the tent if he
 asks.
 
-- [ ] **Start a stopwatch when he arrives.** Tell him the time at 4 minutes, and again when he leaves.
+- [ ] **Tell him at 5 minutes and at 10 minutes.** Those are the only time checks.
 - [ ] **Flask** refilled with water.
-- [ ] **Sodium, ~900 mg** (one SALTY packet). Day: every time. Night: only if he hasn't had any
+- [ ] **Sodium, ~900 mg** (one SALTY packet) mixed into his **second flask**, filled with water. Day: every time. Night: only if he hasn't had any
       this lap.
 - [ ] **Solid food** eaten off the aid table. Ask: "have you eaten in the last 30 minutes, and did
       it stay down?"
@@ -243,7 +248,7 @@ asks.
 - [ ] **Two spare headlamp cells** on him — **zip-tied ones only**. No zip tie means used.
       Gels restocked.
 - [ ] **Feet:** ask if anything is rubbing. If yes, blister kit is in the tent.
-- [ ] **Shoes:** ask if he wants the Lone Peaks.
+- [ ] **Shoes:** ask if he wants to swap shoes.
 - [ ] **Layers — this is the only place they are.** If the next lap runs into dark or colder
       weather, he takes the layers for the whole lap now.
 - [ ] **Lap 4 on: read THE CARD out loud with him.**
@@ -257,9 +262,9 @@ asks.
 
 Same as the tent, minus layers. Everything else he needs is in the bag.
 
-- [ ] **Start a stopwatch when he arrives.** Tell him the time at 4 minutes, and again when he leaves.
+- [ ] **Tell him at 5 minutes and at 10 minutes.** Those are the only time checks.
 - [ ] **Flask** refilled with water.
-- [ ] **Sodium, ~900 mg** (one SALTY packet). Day: every time. Night: only if he hasn't had any
+- [ ] **Sodium, ~900 mg** (one SALTY packet) mixed into his **second flask**, filled with water. Day: every time. Night: only if he hasn't had any
       this lap.
 - [ ] **Solid food** eaten off the aid table. Ask: "have you eaten in the last 30 minutes, and did
       it stay down?"
@@ -268,7 +273,7 @@ Same as the tent, minus layers. Everything else he needs is in the bag.
 - [ ] **Two spare headlamp cells** on him — **zip-tied ones only**. No zip tie means used.
       Gels restocked.
 - [ ] **Feet:** ask if anything is rubbing. Blister kit and spare socks are in the bag.
-- [ ] **Shoes:** ask if he wants the Lone Peaks.
+- [ ] **Shoes:** ask if he wants to swap shoes.
 - [ ] **No layers here.** If he is cold, he gets moving and changes at the tent.
 - [ ] **Lap 4 on: read THE CARD out loud with him.**
 - [ ] **Watch him while he does all this:** slurring, clumsy hands, shivering, limping, can't keep

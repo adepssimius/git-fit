@@ -13,9 +13,11 @@ Tick it off race week. Where things came from and why: `races/2026-10-17-ghost-t
 - [ ] **Zip tie on every charged cell.** No zip tie = used. It slides off the end, no
       cutting — only when the cell goes in a light or the bank
 - [ ] Nitecore NU25s charged
-- [ ] Feet pre-taped on clean dry skin: big-toe callus margins and 2nd toes. Lube around the tape,
-      not under it
+- [ ] Big-toe callus margins pre-taped, on clean dry skin
+- [ ] 2nd toes pre-taped, on clean dry skin
 - [ ] Packets checked: they say **SALTY**, not regular Mortal
+- [ ] Torbot hexane decanted into the DPW dropper bottle
+- [ ] Torbot hexane decanted into the tent dropper bottle
 
 ## On you at the start
 
@@ -23,12 +25,16 @@ Tick it off race week. Where things came from and why: `races/2026-10-17-ghost-t
 - [ ] Balega Hidden Comfort socks
 - [ ] Singlet
 - [ ] Naked Running Band
-- [ ] 2 × 700 ml Sportiva soft flasks — one water, one empty
-- [ ] 2 collapsible cups, spork
+- [ ] Sportiva 700 ml soft flask — water
+- [ ] Sportiva 700 ml soft flask — empty
+- [ ] Collapsible cups (2)
+- [ ] Spork
 - [ ] Gels for one aid-station gap plus spare (~3)
-- [ ] Watch + chest strap (ZoneSense needs the strap)
-- [ ] Phone, headphones
-- [ ] Aquaphor between the toes
+- [ ] Watch
+- [ ] Chest strap (ZoneSense needs it)
+- [ ] Phone
+- [ ] Headphones
+- [ ] Aquaphor between the toes — around the tape, not under it
 
 ## DPW drop bag (7.5 mi turnaround)
 
@@ -36,12 +42,27 @@ Tick it off race week. Where things came from and why: `races/2026-10-17-ghost-t
 - [ ] Balega Hidden Comfort socks
 - [ ] Gels (~20)
 - [ ] 18650 cells (4)
-- [ ] Blister kit — Leukotape P, alcohol wipes, Skin-Tac, 2 non-stick pads, 4-5 × 25G sterile
-      needles, small scissors, nitrile gloves, ziplock
-- [ ] Sodium: Mortal SALTY packets (6)
-- [ ] Tylenol, Voltaren gel, Zofran
-- [ ] THE CARD + protocol cards, printed
-- [ ] Fluid tally card + pencil
+- [ ] Mortal SALTY packets (6)
+- [ ] Tylenol
+- [ ] Voltaren gel
+- [ ] Zofran
+- [ ] THE CARD, printed
+- [ ] Protocol cards, printed
+- [ ] Fluid tally card
+- [ ] Pencil
+
+Blister kit:
+
+- [ ] Leukotape P
+- [ ] Alcohol wipes
+- [ ] Skin-Tac wipes
+- [ ] Hexane dropper bottle (a few ml, leak-proof)
+- [ ] Dry gauze squares
+- [ ] Non-stick pads (2)
+- [ ] 25G sterile needles (4-5)
+- [ ] Small scissors
+- [ ] Nitrile gloves
+- [ ] Ziplock bag
 
 ## Tent at start/finish
 
@@ -51,13 +72,30 @@ Tick it off race week. Where things came from and why: `races/2026-10-17-ghost-t
 - [ ] Balega Hidden Comfort socks, several pairs
 - [ ] Gels (~20)
 - [ ] 18650 cells (4)
-- [ ] Blister kit — same as DPW
-- [ ] Sodium: Mortal SALTY packets (6)
-- [ ] Tylenol, Voltaren gel, Zofran
-- [ ] Aquaphor, 2 pairs nipple shields
+- [ ] Mortal SALTY packets (6)
+- [ ] Tylenol
+- [ ] Voltaren gel
+- [ ] Zofran
+- [ ] Aquaphor
+- [ ] Nipple shields (2 pairs)
 - [ ] Spare collapsible cup
-- [ ] THE CARD + protocol cards, printed
-- [ ] Fluid tally card + pencil
+- [ ] THE CARD, printed
+- [ ] Protocol cards, printed
+- [ ] Fluid tally card
+- [ ] Pencil
+
+Blister kit:
+
+- [ ] Leukotape P
+- [ ] Alcohol wipes
+- [ ] Skin-Tac wipes
+- [ ] Hexane dropper bottle (a few ml, leak-proof)
+- [ ] Dry gauze squares
+- [ ] Non-stick pads (2)
+- [ ] 25G sterile needles (4-5)
+- [ ] Small scissors
+- [ ] Nitrile gloves
+- [ ] Ziplock bag
 
 ### Lights — on before dusk
 
@@ -65,13 +103,15 @@ Tick it off race week. Where things came from and why: `races/2026-10-17-ghost-t
 - [ ] Convoy S3 (handheld) — fresh cell at dusk
 - [ ] Foursevens (emergency, carried)
 - [ ] Nitecore NU25 × 2 (backup)
-- [ ] Yanii PD2 power bank (2 × 18650) + 0.5 m right-angle USB-C cables
+- [ ] Yanii PD2 power bank (takes 2 × 18650)
+- [ ] 0.5 m right-angle USB-C cables
 
 ### Night clothes — only here
 
 - [ ] 120 GSM Alpha Direct hoodie
 - [ ] Merino shirt, over the hoodie
-- [ ] Fleece gloves + a spare pair
+- [ ] Fleece gloves
+- [ ] Spare fleece gloves
 - [ ] Burton headband
 - [ ] Beanie (backup)
 - [ ] **Leg layer — not decided.** Tights were the top item after 09-25
@@ -82,3 +122,4 @@ Tick it off race week. Where things came from and why: `races/2026-10-17-ghost-t
 - [ ] Sleeping bag
 - [ ] Sleeping mat
 - [ ] Dry change of clothes
+- [ ] Torbot hexane can — for taking the Leukotape off

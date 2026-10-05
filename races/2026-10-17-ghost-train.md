@@ -308,7 +308,7 @@ ends.
 | | |
 |---|---|
 | **Carry** | Naked Running Band |
-| **Fluid** | 700ml Sportiva soft flask ×2 — **one plain water**, **one carried empty** for broth or extra water. **No Tailwind in the flask** (athlete, 2026-10-04; carbs come from gels, per `rules/fueling.md` § The architecture). ~200ml of regular Tailwind from the table, drunk at each aid station |
+| **Fluid** | 700ml Sportiva soft flask ×2 — **one plain water**, **one for the SALTY mix** (one packet in a full flask, sipped over the next leg — athlete, 2026-10-04), or broth at night on the pass without sodium. **No Tailwind in the flask** (athlete, 2026-10-04; carbs come from gels, per `rules/fueling.md` § The architecture). ~200ml of regular Tailwind from the table, drunk at each aid station |
 | **Eating** | **2 collapsible cups** (the race provides none), spork, gels for one inter-station gap plus reserve |
 | **Lights, after dusk** | Zebralight H600Fc Mk IV on the chest · Convoy S3 in the band's side stretch pocket · Foursevens emergency |
 | **Power** | **2 spare 18650 cells**, restocked to two at every bag pass |
@@ -316,7 +316,7 @@ ends.
 | **Personal** | Phone, headphones. **Signal throughout the course** — the phone is the nap-notice line and the only way to call for help after a fall, alone, at 04:00. That makes its battery load-bearing, which is what the power bank is for |
 | **Warm layer** | **UNRESOLVED — see open items** |
 
-The second flask earns its ~35g three ways: extra water when a leg needs more than one flask,
+The second flask earns its ~35g three ways: **sodium at the right dilution, sipped instead of slugged**,
 backup for a split flask or failed bite valve, and — the one that matters — **broth**. A cup means
 drinking it standing; a flask means taking it with you. That is the difference between a 30-second
 stop and a five-minute one, repeated across the night.
