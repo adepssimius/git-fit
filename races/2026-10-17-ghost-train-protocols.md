@@ -154,8 +154,8 @@ both get worse if you numb the nausea and carry on.
 
 **Never take:**
 
-- **Ibuprofen, naproxen, aspirin or any oral NSAID.** When you're dehydrated, your kidneys depend
-  on exactly what these block. 30h of muscle breakdown already loads the kidneys, NSAIDs make low
+- **Ibuprofen, naproxen, aspirin or any oral NSAID.** They block prostaglandins, which keep
+  blood flowing to your kidneys when you're dehydrated. 30h of muscle breakdown already loads the kidneys, NSAIDs make low
   sodium worse, and they irritate the gut. Decline it if offered.
 - **Imodium.** It slows the gut down, and your problem is a gut that has already stalled.
 - **Benadryl, melatonin, any sleep aid.** The plan is no sleep, and being drowsy alone at hour 20
