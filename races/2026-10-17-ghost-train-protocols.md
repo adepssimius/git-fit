@@ -11,6 +11,14 @@ service on the whole course, so Adam, Amy and Josh can open the links any time.
 - [Stops — aid stations, tent and drop bag](#stops)
   - [Pacer checklist — tent and DPW](#pacer)
 - [Knees](#knees)
+- [Hip flexors](#hip-flexors)
+- [Chafing](#chafing)
+- [Cold](#cold)
+- [Lights — a light dies on the trail](#lights)
+- [Caffeine](#caffeine)
+- [Lying down](#lie-down)
+- [Can't eat anything](#cant-eat)
+- [Pacers — what to watch for](#pacers)
 
 ---
 
@@ -149,7 +157,7 @@ Clear urine + feeling awful + tight hands = stop drinking. Drinking more makes i
 | Tylenol | pain, knee ache | Write down each dose | Too much damages the liver. The label max is per 24h and the race is 30h, so it's easy to go over without a count |
 | Voltaren gel | sore knee | Small area, wipe hands, let it dry. Never under tape | Little of it reaches the blood, so it's safe for the kidneys where ibuprofen isn't. Gel under tape stops the tape sticking |
 | Zofran | nausea, vomiting | One dose only. Do the two checks below first | It can upset heart rhythm, and that risk goes up when 30h of sweating has left potassium and magnesium low |
-| Caffeine (cola, caffeinated gels) | staying awake | One before the start, one on waking Sunday. 01:00-06:00: one each time through start/finish or DPW, no more | You're used to it, so skipping it brings on a withdrawal headache in the night. More than one per pass stops working and upsets the stomach |
+| Caffeine (cola, caffeinated gels) | staying awake | See [the caffeine card](#caffeine) | You're used to it, so skipping it brings on a withdrawal headache in the night. More than one per pass stops working and upsets the stomach |
 
 **Before taking Zofran:** it stops the nausea but not the cause. Rule out these two first, because
 both get worse if you numb the nausea and carry on.
@@ -234,9 +242,9 @@ No hexane left? Alcohol pad instead, and let it dry.
 1. Refill flask with water.
 2. [Sodium check](#sodium-check). Packet only if it says so, mixed into the second flask.
 3. Eat something solid off the table.
-4. After dark: fresh cell in the Zebralight, every leg — at the tent and at DPW. Two spare cells
-   on you — zip-tied ones
-   only. Used cells go back in the tent or bag without a zip tie.
+4. After dark: fresh cell in the Zebralight, every leg — at the tent and at DPW. Power bank on
+   you with two charged cells in it — those are your spares. Used cells go back in the tent or bag
+   without a zip tie.
 5. Leave with 5 gels on you.
 6. Urine check: see [hydration](#hydration).
 7. Feet — only if something hurts.
@@ -282,9 +290,12 @@ tent or the drop bag if he asks.
 - [ ] **Pee:** ask when he last went and what colour. Over 2 hours ago → he drinks a full flask
       before leaving. Clear and under an hour → skip the extra water.
 - [ ] **After dark: fresh cell in his Zebralight**, every leg, even if it's still working.
-- [ ] **Two spare headlamp cells** on him — **zip-tied ones only**. No zip tie means used.
+- [ ] **Power bank on him with two charged cells in it** — those are his spares. Loose spares
+      are zip-tied; no zip tie means used.
 - [ ] **5 gels** on him when he leaves.
 - [ ] **Feet:** ask if anything is rubbing. Blister kit and spare socks are at both ends.
+- [ ] **Chafing and sore spots:** ask if anything is rubbing or sore — armpits, nipples, waistband,
+      anywhere. If yes, [chafing card](#chafing). Aquaphor is at both ends.
 - [ ] **Shoes:** ask if he wants to swap shoes.
 - [ ] **Layers — tent only.** If the next lap runs into dark or colder weather, he takes the
       layers for the whole lap now. At DPW there are none: if he's cold, get him moving.
@@ -341,5 +352,192 @@ Falling is not a reason to stop. The trail is safe to fall on.
 
 ---
 
-Not written yet: cold, headlamp cell swap, hip flexor at ~50 km, caffeine timing, lying down,
-can't eat anything, chafing, pacer handoff.
+<a id="hip-flexors"></a>
+
+## Hip flexors — front of the thigh, from ~50 km
+
+Tightness at the front of both thighs, from about 50 km (around hour 7). It is muscle, not joint
+or tendon.
+
+1. **Tylenol if it gets bad.**
+2. Otherwise, deal with it. Tightness alone is not a reason to stop.
+
+**Stop the race and get checked if:**
+
+- Groin or front-of-hip pain getting worse every step.
+- You can't lift the leg to step forward.
+- Pain on one spot of bone you can cover with a fingertip.
+
+---
+
+<a id="chafing"></a>
+
+## Chafing
+
+Your armpits chafed at 44 and 48 km on 09-12, skin on skin. Nothing else has.
+
+**Before the start:**
+
+1. Aquaphor in both armpits.
+2. Nipple shields on.
+
+**Every pass through start/finish:** re-apply Aquaphor to the armpits.
+
+**If something starts to rub:**
+
+1. Aquaphor on it. There is Aquaphor at both ends.
+2. Shield peeling? Replace it. Spares are in the tent and at DPW.
+3. Raw already? Leukotape over it, Aquaphor around the tape.
+4. Wet skin chafes faster. Dry it with gauze before the Aquaphor.
+
+---
+
+<a id="cold"></a>
+
+## Cold
+
+**Night clothes are only at the tent.** Leaving the tent after dark, take what you need for the
+whole lap.
+
+**Layers, in order:**
+
+1. Alpha Direct hoodie. On from dusk, stays on.
+2. Headband.
+3. Hood up.
+4. Merino shirt over the hoodie — on when walking, standing, or in the open. Off when working
+   hard.
+5. Beanie, if the hood and headband aren't enough.
+6. **Emergency layers, tent only:** down jacket, then the Arc'teryx Beta SL over it.
+
+**Put the next layer on before you're cold.** Warming back up is much harder than staying warm.
+
+**Walking is the cold part.** The hills and the slow night laps make less heat than jogging. Add
+a layer before a long walk, not halfway through it.
+
+**Cold hands:** Black Diamond overmitts over the fleece gloves. They're at the tent.
+
+**Gloves wet?** Swap to the spare pair. Wet fleece is worse than none.
+
+**Shivering, or your hands won't work the tape:** put on the next layer and keep moving. Don't lie
+down — lying down ends the race.
+
+**Cold at DPW:** there are no layers there. Keep moving, hood up, eat something, and add layers at
+the tent.
+
+---
+
+<a id="lights"></a>
+
+## Lights — a light dies on the trail
+
+You run with the Zebralight on your chest and the Convoy in your hand. Spare cells are in the
+power bank.
+
+1. **Slow to a walk.** Use the other light.
+2. Take a cell out of the power bank. Slide the zip tie off.
+3. Swap it in. Put the dead cell in your pocket, no zip tie.
+4. Keep going.
+
+**At the next end:** two charged cells back in the power bank.
+
+**Never be down to your last working light.** Two lights dead and no spares left → walk it in to
+the next end on the Foursevens.
+
+---
+
+<a id="caffeine"></a>
+
+## Caffeine
+
+| When | How much | Why |
+|---|---|---|
+| Before the start | One dose | You're used to it. Without it, a withdrawal headache lands in the night |
+| 01:00-06:00 | One per pass through the tent or DPW, no more | Keeps you awake on laps 5-6 |
+| Morning | One on waking after the finish. Still running at ~08:00? Take it then | Headache again |
+| Before a lie-down | One, right before you lie down | It kicks in as the alarm goes off |
+
+**One dose is ~200 mg — about two cups of coffee. Source not bought yet.**
+
+| ~200 mg is | Note |
+|---|---|
+| 5 Nuun Sport + Caffeine (40 mg each) | Too much water and sodium to dissolve them. Top-up only |
+| Cola off the aid table | ~10-15 mg a cup. Nice to have, not a dose |
+
+**Feeling stupid, not just sleepy?** Caffeine, 20 minutes of walking, real food. Then see
+[lying down](#lie-down).
+
+---
+
+<a id="lie-down"></a>
+
+## Lying down — only if nothing else works
+
+**The plan is no sleep.** This is for card item 6 — sleepy or stupid — that doesn't clear after
+caffeine, food and 20 minutes of walking.
+
+**Tell your pacer** the first time you think "I might need to lie down". They wake you.
+
+**If it still hasn't cleared by the next end:**
+
+1. Only at the tent. Never on the trail.
+2. Caffeine right before you lie down.
+3. Alarm for 15-20 minutes, and your pacer wakes you. Not longer — a 35-minute nap leaves you
+   groggier than a 20.
+4. Sleeping bag on the mat.
+5. Get up when you're woken.
+6. Expect 20 minutes of stiff and slow. Walk it off.
+
+**Budget 35-40 minutes off the clock.**
+
+**BEN MAY NOT DECIDE TO QUIT IN THE TENT.** The bed is the most persuasive thing on the course.
+Walk 20 minutes first.
+
+---
+
+<a id="cant-eat"></a>
+
+## Can't eat anything
+
+Start with the [gut stall steps](#gut). This card is for when they aren't working.
+
+1. **Keep walking.** Don't sit down to wait it out.
+2. **Small sips of water**, a mouthful every few minutes.
+3. **Try one thing at a time,** a few sips or bites: cola, broth, a pretzel, plain candy.
+4. **Threw up?** Walk 10 minutes, then start again with sips. Zofran only after
+   [the two checks](#meds).
+5. **Something stayed down for 20 minutes?** Add a bit more. Work back to gels slowly.
+
+**Stop the race if:**
+
+- Everything you drink comes back up, and it's been an hour.
+- Urine stays dark or nearly stops after an hour of walking and sipping.
+
+---
+
+<a id="pacers"></a>
+
+## Pacers — what to watch for
+
+Adam (laps 1-4), Amy (lap 5), Josh (lap 6 and the last 10 mi). Ben writes you a live brief at the
+handoff. This is the part that doesn't change.
+
+**You see what he can't. Say it out loud:**
+
+| Watch for | Why |
+|---|---|
+| Slurring, tripping, missed turns, lost minutes | He can't hear his own speech go |
+| A limp — blister, left knee | Obvious from behind, invisible from inside |
+| Hasn't eaten in 40 minutes, or it didn't stay down | First thing to slip when he's working |
+| Shivering, or hands that can't work tape | Layer on before he needs it |
+| "I might need to lie down" | Plan the lie-down for the tent: caffeine first, 15-20 min, you wake him. See [lying down](#lie-down) |
+
+**Two rules he will get backwards:**
+
+- **Stiff after standing up is a phase.** It has cleared in about 20 minutes every time. Don't
+  help him decide anything inside those 20 minutes.
+- **BEN MAY NOT DECIDE TO QUIT AT A STOP.** Get him out and moving for 20 minutes first.
+
+**Don't pull him faster than ZoneSense Zone 1.** Fresh legs feel easy next to a man 90 km in.
+
+**From lap 4, read THE CARD out loud with him at every end.** At stops, use the
+[pacer checklist](#pacer).

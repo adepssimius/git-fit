@@ -263,8 +263,8 @@ lap 3 onward — out loud, because hearing yourself slur is the check you cannot
 > **6. AM I SLEEPY OR AM I STUPID?** Tripping, missing turns, losing minutes I cannot account for?
 > *→ Caffeine, 20 minutes of walking, real food. **That is the plan — you are not sleeping this
 > race.**
-> **IF THE THOUGHT "I MIGHT NEED TO LIE DOWN" HAS OCCURRED AT ALL — SEND THE TEXT NOW.** They need
-> 45 minutes and you cannot buy that back later. Sending it and not using it costs nothing.
+> **IF THE THOUGHT "I MIGHT NEED TO LIE DOWN" HAS OCCURRED AT ALL — TELL YOUR PACER NOW.** They
+> wake you. (No text needed: paced end to end, athlete 2026-10-05.)
 > If it still has not cleared by the next bag: 15-20 minutes at the start/finish, alarm set,
 > caffeine taken BEFORE you lie down. Never trailside.*
 >
@@ -311,7 +311,7 @@ ends.
 | **Fluid** | 700ml Sportiva soft flask ×2 — **one plain water**, **one for a sodium top-up or broth** (a top-up packet goes in a full flask and is sipped over the next leg — athlete, 2026-10-04). **No Tailwind in the flask** (athlete, 2026-10-04; carbs come from gels, per `rules/fueling.md` § The architecture). ~200ml of regular Tailwind from the table, drunk at each aid station |
 | **Eating** | **2 collapsible cups** (the race provides none), spork, gels for one inter-station gap plus reserve |
 | **Lights, after dusk** | Zebralight H600Fc Mk IV on the chest · Convoy S3 in the band's side stretch pocket · Foursevens emergency |
-| **Power** | **2 spare 18650 cells**, restocked to two at every bag pass |
+| **Power** | **2 spare 18650 cells, carried in the power bank** after dark (athlete, 2026-10-05), restocked to two at every bag pass |
 | **Instruments** | Watch + **chest strap** |
 | **Personal** | Phone, headphones. **Signal throughout the course** — the phone is the nap-notice line and the only way to call for help after a fall, alone, at 04:00. That makes its battery load-bearing, which is what the power bank is for |
 | **Warm layer** | **UNRESOLVED — see open items** |
@@ -329,6 +329,7 @@ stop and a five-minute one, repeated across the night.
 - **18650 cells** — the restock pile
 - **Blister kit** — same contents as the tent's, listed below
 - **Aquaphor** — to re-lube after taping
+- **Nipple shields**, 2 pairs (athlete, 2026-10-05)
 - **Mortal Hydration packets, regular** — top-ups when the pacer's sodium check says so
 - **Meds** — Tylenol, Voltaren, Zofran. **NO ibuprofen**
 - **The card**
@@ -355,9 +356,11 @@ stop and a five-minute one, repeated across the night.
   object, not two (athlete, 2026-09-08). Picked up when something needs it rather than at a fixed
   time: the right-angle cables exist so a device charges **in the waistband while moving**, so the
   bank rides with him for the duration of a charge and goes back in the bag afterwards. Cells are
-  ~48g each, which is why it does not start on his body at 09:00
+  ~48g each, which is why it does not start on his body at 09:00. **After dark it rides with him
+  all the time: its two cells are his spare headlamp cells** (athlete, 2026-10-05)
 - **Night clothing**: 120 GSM Alpha Direct hoodie, merino shirt over it, fleece gloves, Burton
-  headband. **No Rab** (athlete, 2026-10-04) — available from lap 3 onward. See § The full night system
+  headband. **No Rab** (athlete, 2026-10-04). **Black Diamond overmitts** over the fleece gloves (athlete, 2026-10-05). **Emergency layers: down
+  jacket and Arc'teryx Beta SL** (athlete, 2026-10-05) — put on and keep moving; lying down ends the race — available from lap 3 onward. See § The full night system
 
 Physical packing happens race week — `endurance/2026-10-16-pre-race-shakeout.md`. The tick-off list is
 `races/2026-10-17-ghost-train-packing.md`.

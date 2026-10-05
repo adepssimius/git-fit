@@ -51,6 +51,7 @@ Tick it off race week. Where things came from and why: `races/2026-10-17-ghost-t
 - [ ] Protocol cards, printed
 - [ ] Fluid tally card
 - [ ] Pencil
+- [ ] Nipple shields (2 pairs)
 
 Blister kit:
 
@@ -116,10 +117,17 @@ Blister kit:
 - [ ] Merino shirt, over the hoodie
 - [ ] Fleece gloves
 - [ ] Spare fleece gloves
+- [ ] Black Diamond overmitts
 - [ ] Burton headband
 - [ ] Beanie (backup)
+- [ ] Down jacket (emergency)
+- [ ] Arc'teryx Beta SL (emergency)
 - [ ] **Leg layer — not decided.** Tights were the top item after 09-25
 - [ ] **Ear muffs — not decided.** Your 09-25 call
+
+### Not bought yet
+
+- [ ] **Caffeine** — a ~200 mg dose source. See the caffeine card
 
 ### After the race
 

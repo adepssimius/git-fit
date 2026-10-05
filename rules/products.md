@@ -12,7 +12,7 @@ a number matters.
 | **Enervit Tadej Secret Gel, Mango** | 1 gel, 60 ml | **40 g** | **0 mg** | 0 mg | 160 kcal. Maltodextrin + fructose, 2:1. Same macros in every flavour; the Cola one has caffeine |
 | **Maurten Gel 160** | 1 gel, 65 g | **40 g** | **~30 mg** | 0 mg | 160 kcal. Glucose:fructose 1:0.8. Caffeinated version is a different product (Gel 100 Caf 100) |
 
-**Neither gel carries meaningful sodium.** All sodium comes from the products below or from food.
+**None of the gels carries meaningful sodium.** All sodium comes from the products below or from food.
 
 ## Drink mixes
 

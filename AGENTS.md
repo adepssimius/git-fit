@@ -129,7 +129,7 @@ What goes in it, each as one line:
 | **gait change** — from a blister, or the left ITB | card items 4 and 5. A limp is visible from behind and invisible from inside |
 | **has he eaten in the last 40min, did it stay down** | card item 3. The thing that slips first when he is working |
 | **shivering, or hands that cannot work tape** | card item 7. Layer goes on BEFORE it is needed |
-| **"I might need to lie down"** — if he says it at all | card item 6. The text goes out NOW; they need 45min |
+| **"I might need to lie down"** — if he says it at all | card item 6. Tent only, caffeine first, 15-20min, and the pacer wakes him. No text needed — he is paced end to end (2026-10-05) |
 
 And the two standing rules the pacer must know, because a well-meaning pacer gets both backwards:
 
