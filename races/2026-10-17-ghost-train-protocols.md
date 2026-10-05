@@ -9,8 +9,7 @@ service on the whole course, so Adam, Amy and Josh can open the links any time.
 - [Meds](#meds)
 - [Foot — hot spot or blister](#foot)
 - [Stops — aid stations, tent and drop bag](#stops)
-  - [Pacer checklist — tent](#pacer-tent)
-  - [Pacer checklist — DPW](#pacer-dpw)
+  - [Pacer checklist — tent and DPW](#pacer)
 - [Knees](#knees)
 
 ---
@@ -251,58 +250,38 @@ No hexane left? Alcohol pad instead, and let it dry.
 **BEN MAY NOT DECIDE TO QUIT AT A STOP.** Walk out for 20 minutes first. Stiffness after standing has
 always cleared in about 20 minutes.
 
+<a id="pacer"></a>
 <a id="pacer-tent"></a>
-
-### Pacer checklist — tent (start/finish)
-
-Go through it with him, out loud, top to bottom. He does the work; you fetch from the tent if he
-asks.
-
-- [ ] **Tell him at 5 minutes and at 10 minutes.** He needs to know if he's spending too long.
-- [ ] **Flask** refilled with water.
-- [ ] **Sodium check.** Ask: "Tailwind at both aid stations since the last end?" Then check the
-      other four in the [sodium check](#sodium-check). Any yes → one regular Mortal packet in his
-      second flask, filled with water. All no → nothing.
-- [ ] **Solid food** eaten off the aid table. Ask: "have you eaten in the last 40 minutes, and did
-      it stay down?"
-- [ ] **Pee:** ask when he last went and what colour. Over 2 hours ago → he drinks a full flask
-      before leaving. Clear and under an hour → skip the extra water. Sodium only if his
-      hands are puffy or he feels sick.
-- [ ] **After dark: fresh cell in his Zebralight**, every leg, even if it's still working.
-- [ ] **Two spare headlamp cells** on him — **zip-tied ones only**. No zip tie means used.
-- [ ] **5 gels** on him when he leaves.
-- [ ] **Feet:** ask if anything is rubbing. If yes, blister kit is in the tent.
-- [ ] **Shoes:** ask if he wants to swap shoes.
-- [ ] **Layers — this is the only place they are.** If the next lap runs into dark or colder
-      weather, he takes the layers for the whole lap now.
-- [ ] **Lap 4 on: read THE CARD out loud with him.**
-- [ ] **Watch him while he does all this:** slurring, clumsy hands, shivering, limping, can't keep
-      food down. Say what you see.
-- [ ] **Walk him out. BEN MAY NOT DECIDE TO QUIT AT A STOP.** No quit talk until 20 minutes
-      down the trail.
-
 <a id="pacer-dpw"></a>
 
-### Pacer checklist — DPW drop bag (turnaround)
+### Pacer checklist — tent and DPW
 
-Same as the tent, minus layers. Everything else he needs is in the bag.
+Go through it with him at both ends, out loud, top to bottom. He does the work; you fetch from the
+tent or the drop bag if he asks.
 
 - [ ] **Tell him at 5 minutes and at 10 minutes.** He needs to know if he's spending too long.
 - [ ] **Flask** refilled with water.
-- [ ] **Sodium check.** Ask: "Tailwind at both aid stations since the last end?" Then check the
-      other four in the [sodium check](#sodium-check). Any yes → one regular Mortal packet in his
-      second flask, filled with water. All no → nothing.
+- [ ] **Sodium check.** One regular Mortal packet in his second flask, filled with water, if any
+      of these is true:
+  - [ ] He skipped the Tailwind at both aid stations since the last end.
+  - [ ] Urine is clear and frequent **and** his hands are tight or puffy, or he has a headache,
+        nausea or bloating. He stops drinking too.
+  - [ ] He's cramping. Pickle juice too.
+  - [ ] He's craving salt.
+  - [ ] Hot afternoon and his sweat is leaving salt crust.
+
+  None true → no packet.
 - [ ] **Solid food** eaten off the aid table. Ask: "have you eaten in the last 40 minutes, and did
       it stay down?"
 - [ ] **Pee:** ask when he last went and what colour. Over 2 hours ago → he drinks a full flask
-      before leaving. Clear and under an hour → skip the extra water. Sodium only if his
-      hands are puffy or he feels sick.
+      before leaving. Clear and under an hour → skip the extra water.
 - [ ] **After dark: fresh cell in his Zebralight**, every leg, even if it's still working.
 - [ ] **Two spare headlamp cells** on him — **zip-tied ones only**. No zip tie means used.
 - [ ] **5 gels** on him when he leaves.
-- [ ] **Feet:** ask if anything is rubbing. Blister kit and spare socks are in the bag.
+- [ ] **Feet:** ask if anything is rubbing. Blister kit and spare socks are at both ends.
 - [ ] **Shoes:** ask if he wants to swap shoes.
-- [ ] **No layers here.** If he is cold, he gets moving and changes at the tent.
+- [ ] **Layers — tent only.** If the next lap runs into dark or colder weather, he takes the
+      layers for the whole lap now. At DPW there are none: if he's cold, get him moving.
 - [ ] **Lap 4 on: read THE CARD out loud with him.**
 - [ ] **Watch him while he does all this:** slurring, clumsy hands, shivering, limping, can't keep
       food down. Say what you see.
