@@ -43,6 +43,7 @@ Tick it off race week. Where things came from and why: `races/2026-10-17-ghost-t
 - [ ] Gels (25)
 - [ ] 18650 cells (8)
 - [ ] Mortal regular packets (4)
+- [ ] SaltStick FastChews (one 10-count packet)
 - [ ] Tylenol
 - [ ] Voltaren gel
 - [ ] Zofran
@@ -74,6 +75,7 @@ Blister kit:
 - [ ] Gels (25)
 - [ ] 18650 cells (8)
 - [ ] Mortal regular packets (4)
+- [ ] SaltStick FastChews (one 10-count packet)
 - [ ] Mortal SALTY packet (1) — pre-start
 - [ ] Tylenol
 - [ ] Voltaren gel

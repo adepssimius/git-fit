@@ -83,16 +83,21 @@ Do not switch flavours to fix nausea. It is the stomach, not the taste.
 
 <a id="sodium-check"></a>
 
-**Sodium check — the pacer asks at the tent and at DPW.** One packet if any of these is true:
+**Sodium check — the pacer asks at the tent and at DPW.**
 
-1. He skipped the Tailwind at both aid stations since the last end.
-2. Urine is clear and frequent **and** his hands are tight or puffy, or he has a headache,
-   nausea or bloating. Stop drinking too.
-3. He's cramping. Pickle juice too.
-4. He's craving salt.
-5. Hot afternoon and his sweat is leaving salt crust.
+**Too much water — check this first.** Urine clear and frequent, plus puffy hands, headache,
+nausea or bloating: hold off on water until he's peeing less. Get salt in without water — salty
+food off the table (pretzels, salted potatoes, broth if they have it) or SaltStick FastChews.
+**No packet in the flask.**
 
 Clear and frequent urine on its own, feeling fine → drink less, no packet.
+
+**Otherwise, one packet in the second flask, filled with water,** if any of these is true:
+
+1. He skipped the Tailwind at both aid stations since the last end.
+2. He's cramping. Pickle juice too.
+3. He's craving salt.
+4. Hot afternoon and his sweat is leaving salt crust.
 
 None true → no packet. You haven't raced long enough to know your own need, so this check
 replaces guessing.
@@ -119,7 +124,7 @@ clear is a surplus.
 | Urine | dark, rare, small | clear and frequent |
 | Hands | loose | tight, puffy |
 | Feels like | thirsty, dry mouth | nausea, headache, bloated, sloshing |
-| **Do** | drink to 600 ml/hr | **stop drinking**, take sodium, eat salty food |
+| **Do** | drink to 600 ml/hr | **stop drinking**, salty food or FastChews — no packet in water |
 
 Clear urine + feeling awful + tight hands = stop drinking. Drinking more makes it worse.
 
@@ -261,11 +266,12 @@ tent or the drop bag if he asks.
 
 - [ ] **Tell him at 5 minutes and at 10 minutes.** He needs to know if he's spending too long.
 - [ ] **Flask** refilled with water.
-- [ ] **Sodium check.** One regular Mortal packet in his second flask, filled with water, if any
-      of these is true:
+- [ ] **Sodium check — too much water first.** Urine clear and frequent, plus puffy hands,
+      headache, nausea or bloating? Then no water until he's peeing less, and salt without water:
+      salty food off the table or SaltStick FastChews. **No packet in the flask.**
+- [ ] **Sodium check — otherwise,** one regular Mortal packet in his second flask, filled with
+      water, if any of these is true:
   - [ ] He skipped the Tailwind at both aid stations since the last end.
-  - [ ] Urine is clear and frequent **and** his hands are tight or puffy, or he has a headache,
-        nausea or bloating. He stops drinking too.
   - [ ] He's cramping. Pickle juice too.
   - [ ] He's craving salt.
   - [ ] Hot afternoon and his sweat is leaving salt crust.
