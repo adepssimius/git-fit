@@ -279,6 +279,10 @@ only ~60-80 g/hr. Reaching 90+ from carried gels alone needs ~900 ml/hr, which o
 deliver. **The balance comes off the aid table — candy, soda, real food — where the carbohydrate
 arrives with its own fluid and is not carried a single metre.**
 
+**~200 ml of regular Tailwind from the table at each aid station** (athlete, 2026-10-04): *"it's
+not as carb heavy and it's easy to get down."* Drunk at the table, never in the flask — the flask
+stays plain water. Regular Tailwind is far more dilute than the High Carb mix that failed on 09-12.
+
 ### ⚠ PLACE THE WALKING TO BUY EMPTYING — athlete's idea, 2026-09-13, and it is the best one here
 
 Athlete: *"part of my strategy needs to be strategic about slowing down for parts of the laps to

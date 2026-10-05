@@ -3,7 +3,7 @@
 Race-day steps only. The reasons are in `races/2026-10-17-ghost-train.md`.
 Printed copy is in the start/finish bag. Links are for sending to Adam, Amy and Josh beforehand.
 
-- [Gut — can't eat, stomach not clearing](#gut)
+- [Gut — fueling plan and troubleshooting](#gut)
 - [Hydration and sodium](#hydration)
 - [Meds](#meds)
 - [Foot — hot spot or blister](#foot)
@@ -14,28 +14,44 @@ Printed copy is in the start/finish bag. Links are for sending to Adam, Amy and 
 
 <a id="gut"></a>
 
-## Gut — can't eat, stomach not clearing
+## Gut — fueling plan and troubleshooting
 
-**Signs the stomach has stopped emptying:** nausea, food aversion, "sick of gels", sloshing,
-urine output dropping. Hungry means it is clearing.
+### The plan
 
-**If it has stopped:**
+1. **Gel every 40 minutes on the watch timer.** About 5 per lap. Keep the timer all race, even
+   when you feel fine.
+2. **400 ml of water with each gel.** That is your ~600 ml/hr. Plain water in the flask — no
+   Tailwind, no electrolyte.
+3. **Take two of each lap's gels just before the hill** north of Melendy (~9.7 km out, ~14.4 km
+   back). Walking the hill gives them time to clear.
+4. **Walk a few minutes before each aid station.**
+5. **Arrive at each aid station with the flask empty. Leave with it full.**
+6. **At every aid station, drink ~200 ml of the regular Tailwind from the table** and eat
+   something off it. Gels only cover ~60 g/hr; the rest is Tailwind, candy, soda and real food.
+7. **Eat something solid at every drop bag from lap 1**, before you are hungry. Low-fat salty
+   carbs: salted potatoes, pretzels, rice, noodles. Skip greasy food.
+8. **One SALTY packet at every drop bag** ([hydration](#hydration)).
+9. **At night:** broth in the second flask, carried out with you. Cola for carbs and caffeine.
 
-1. Stop all carbs — no gels, no Tailwind.
+### Troubleshooting
+
+| What you notice | What it means | Do |
+|---|---|---|
+| Hungry | Stomach is clearing | Good. Eat solid food at the next stop |
+| Water still in the flask at the aid station | Stomach is slowing | Walk to the next station. Push the next gel back. Sip water |
+| Gels won't go down, but stomach feels fine | Taste fatigue | Keep the timer. Eat candy or salty snacks on the beep instead |
+| Nausea, sloshing, food aversion, "sick of gels" | Stomach has stopped emptying — **or** you drank too much | Check [too little or too much](#which-one) first. If urine is clear and hands are puffy, stop drinking. Otherwise do the steps below |
+| Vomiting | | Do the steps below. Zofran only after [the two checks](#meds) |
+
+**If the stomach has stopped emptying:**
+
+1. Stop all carbs — no gels, no Tailwind, no candy, no soda.
 2. Water only, small sips.
 3. Keep walking. Do not sit down.
 4. Wait until you are peeing again.
-5. Restart dilute: water in the flask, gels spaced further apart, build back up.
+5. Restart with gels spaced further apart, and build back up to every 40 minutes.
 
-Do not switch flavours. "Sick of gels" means cut the concentration, not change the taste.
-
-**To keep it from happening:**
-
-- Flask at 60-80 g/L carbs. Full-strength Tailwind High Carb (129 g/L) is what broke it on 09-12.
-- Eat solid food from lap 1, at every bag, before you feel hungry.
-- Pick low-fat salty carbs: salted potatoes, pretzels, rice, noodles. Skip greasy food.
-- At night: broth in the second flask, carried out with you.
-- Gels stop working late: switch to candy and salty snacks.
+Do not switch flavours to fix nausea. It is the stomach, not the taste.
 
 ---
 
@@ -45,12 +61,23 @@ Do not switch flavours. "Sick of gels" means cut the concentration, not change t
 
 **Targets:**
 
-- Fluid: about 600 ml/hr. Don't drink above that just because the table is there.
-- Flask: 60-80 g/L carbs. Dilute the Tailwind.
+- Fluid: about 600 ml/hr — 400 ml with each gel. Don't drink above that just because the table
+  is there.
+- Flask: plain water. Second flask for broth or extra water.
 - Sodium: one Mortal Hydration SALTY packet per bag pass.
-- Flasks: two 700 ml. One Tailwind, one empty for water or broth.
+- At night, drink on the gel timer. Cold hides thirst.
 
 **Check urine at every bag.** Normal is about every 30 minutes. It drops first, before you feel sick.
+
+| Last pee | Colour | Do |
+|---|---|---|
+| over 2h ago | any | Behind — drink a full flask before leaving the bag |
+| under 2h | dark | Behind — extra half flask |
+| under 2h | light | On track — hold the rate |
+| under 1h | clear | Ahead — skip a flask, take the sodium anyway |
+
+Your own calibration from 09-25: a 5-second bright-yellow stream is a deficit; 6-7 seconds and
+clear is a surplus.
 
 <a id="which-one"></a>
 
@@ -161,7 +188,7 @@ Kit is in both drop bags. Fix it at the next bag, don't wait a lap.
 
 **Every drop bag, in order:**
 
-1. Refill flask, diluted.
+1. Refill flask with water.
 2. Take one SALTY packet.
 3. Eat something solid.
 4. Two spare headlamp cells on you.
