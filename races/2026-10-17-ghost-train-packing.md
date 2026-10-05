@@ -15,7 +15,7 @@ Tick it off race week. Where things came from and why: `races/2026-10-17-ghost-t
 - [ ] Nitecore NU25s charged
 - [ ] Big-toe callus margins pre-taped, on clean dry skin
 - [ ] 2nd toes pre-taped, on clean dry skin
-- [ ] Packets checked: they say **SALTY**, not regular Mortal
+- [ ] Packets checked: top-up packets are **regular** Mortal, not SALTY
 - [ ] Torbot hexane decanted into the DPW dropper bottle
 - [ ] Torbot hexane decanted into the tent dropper bottle
 
@@ -42,7 +42,7 @@ Tick it off race week. Where things came from and why: `races/2026-10-17-ghost-t
 - [ ] Balega Hidden Comfort Quarter socks
 - [ ] Gels (~20)
 - [ ] 18650 cells (4)
-- [ ] Mortal SALTY packets (6)
+- [ ] Mortal regular packets (4)
 - [ ] Tylenol
 - [ ] Voltaren gel
 - [ ] Zofran
@@ -72,7 +72,8 @@ Blister kit:
 - [ ] Balega Hidden Comfort Quarter socks, several pairs
 - [ ] Gels (~20)
 - [ ] 18650 cells (4)
-- [ ] Mortal SALTY packets (6)
+- [ ] Mortal regular packets (4)
+- [ ] Mortal SALTY packet (1) — pre-start
 - [ ] Tylenol
 - [ ] Voltaren gel
 - [ ] Zofran

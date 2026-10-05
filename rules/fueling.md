@@ -711,6 +711,16 @@ flask" preference for the second flask only** — the main flask stays plain wat
 toward the ~600 ml/hr target. At night, sodium is once per lap, so the second flask is free for
 broth on the other pass.
 
+**REVISED 2026-10-04, later the same day — sodium cut to ~600 mg/lap by day, ~300 mg/lap at
+night.** Athlete: *"I don't lose that much salt when I sweat."* **Baseline is ~200 ml of aid-station
+Tailwind at all four stations** (~85-170 mg each, so ~340-680 mg/lap — `rules/products.md`).
+**Packets become a top-up: one regular Mortal (~450 mg)**, taken only when the pacer's check at
+each end says so — skipped Tailwind at both stations since the last end, clear frequent urine or
+tight hands, cramp, salt craving, or salt-crusted sweat on a hot afternoon. He has no long-race
+evidence for his own need — *"most of my runs have only required 2 top ups"* — so the check stands
+in for experience. The pre-start SALTY packet stays. **This supersedes the ~550 mg/hr and
+per-pass schedules above.**
+
 **AND THE PACKET IS NOT A ZERO-CARB ELECTROLYTE**, which § The architecture still implies by listing
 LMNT, SaltStick, Precision and Nuun. It carries **10 g carb / 8 g sugar**. At one per bag pass that
 is **~6 g carb/hr** on top of ~60 g/hr from gels — harmless, and in 650 ml it is a 1.5% solution — but

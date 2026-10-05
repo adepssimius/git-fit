@@ -35,9 +35,10 @@ service on the whole course, so Adam, Amy and Josh can open the links any time.
 7. **Eat something solid at start/finish and the DPW turnaround**, the two stations with full
    food, from lap 1 and before you are hungry. Low-fat salty
    carbs: salted potatoes, pretzels, rice, noodles. Skip greasy food.
-8. **Sodium: ~900 mg at each end in the day, ~900 mg per lap once it cools off**
-   ([hydration](#hydration)).
-9. **At night:** broth in the second flask on the pass without sodium, carried out with you. Cola for carbs and caffeine.
+8. **Sodium: Tailwind at every aid station covers most of it.** Packets are a top-up when the
+   pacer's check says so ([hydration](#hydration)).
+9. **At night:** if the aid station has broth, fill the second flask with it and carry it out. It
+   counts toward your sodium. No broth → nothing changes. Cola for carbs and caffeine.
 
 ### Troubleshooting
 
@@ -69,18 +70,30 @@ Do not switch flavours to fix nausea. It is the stomach, not the taste.
 
 - Fluid: about 600 ml/hr — 400 ml with each gel. Don't drink above that just because the table
   is there.
-- Flasks: one plain water. The second carries the SALTY mix — or broth at night, on the pass
-  when you're not taking sodium.
-- Sodium:
+- Flasks: one plain water. The second carries a packet when you take one, or broth at night if
+  the aid station has it.
+- Sodium target: **~600 mg per lap in the day, ~300 mg per lap at night.**
   - Before the start: one SALTY packet in the second flask, finished before 09:00.
-  - Day: ~900 mg at start/finish and ~900 mg at DPW (~1,800 mg per lap).
-  - Once it cools off: ~900 mg per lap, at either end.
-  - **Mix the packet into the second flask, filled with water** (~650-700 ml, what the packet is
-    made for). Sip it through the next leg alongside the water flask. Both count toward your
-    600 ml/hr. Never in 250 ml — too salty to empty.
-  - ~900 mg is one Mortal SALTY packet, two regular Mortal packets, or three Nuun Sport tablets.
-    SaltStick FastChews (50 mg each) and salty food are top-ups. Gels carry almost none.
+  - **Baseline: ~200 ml of Tailwind at every aid station.** Four a lap is roughly 340-680 mg,
+    which covers the target on its own.
+  - **Top-up: one regular Mortal packet (~450 mg)** when the check below says so. Mix it into the
+    second flask, filled with water, and sip it through the next leg. Never in 250 ml — too salty
+    to empty.
+  - Other ~450 mg options: 1½ Nuun Sport, or 9 SaltStick FastChews. Gels carry almost none.
     Full list: `rules/products.md`.
+
+<a id="sodium-check"></a>
+
+**Sodium check — the pacer asks at the tent and at DPW.** One packet if any of these is true:
+
+1. He skipped the Tailwind at both aid stations since the last end.
+2. Urine is clear and frequent, or his hands or watch strap feel tight.
+3. He's cramping. Pickle juice too.
+4. He's craving salt.
+5. Hot afternoon and his sweat is leaving salt crust.
+
+None true → no packet. You haven't raced long enough to know your own need, so this check
+replaces guessing.
 - At night, drink on the gel timer. Cold hides thirst.
 
 **Check urine at start/finish and DPW.** Normal is about every 30 minutes. It drops first, before you feel sick.
@@ -104,7 +117,7 @@ clear is a surplus.
 | Urine | dark, rare, small | clear and frequent |
 | Hands / watch strap | loose | tight, puffy |
 | Feels like | thirsty, dry mouth | nausea, headache, bloated, sloshing |
-| **Do** | drink to 600 ml/hr, take ~900 mg sodium | **stop drinking**, take sodium, eat salty food |
+| **Do** | drink to 600 ml/hr | **stop drinking**, take sodium, eat salty food |
 
 Clear urine + feeling awful + tight hands = stop drinking. Drinking more makes it worse.
 
@@ -203,16 +216,15 @@ No hexane left? Alcohol pad instead, and let it dry.
 
 | Where | Mile | What's there |
 |---|---|---|
-| **Start/finish** | 0 / 15 | Full aid station (real food, snacks, Tailwind, water) **plus your tent** with all your kit, night clothes, meds, SALTY packets, the card |
+| **Start/finish** | 0 / 15 | Full aid station (real food, snacks, Tailwind, water) **plus your tent** with all your kit, night clothes, meds, Mortal packets, the card |
 | Mid-out aid | 3.75 | Snacks and drinks only |
-| **DPW turnaround** | 7.5 | Full aid station **plus your drop bag**: spare shoes, spare socks, gels, batteries, blister kit, meds, SALTY packets, the card |
+| **DPW turnaround** | 7.5 | Full aid station **plus your drop bag**: spare shoes, spare socks, gels, batteries, blister kit, meds, Mortal packets, the card |
 | Mid-back aid | 11.25 | Snacks and drinks only |
 
 **Every pass through start/finish or DPW, in order:**
 
 1. Refill flask with water.
-2. Sodium, ~900 mg (one SALTY packet) mixed into the second flask with water, sipped over the
-   next leg — every pass in the day, once per lap at night.
+2. [Sodium check](#sodium-check). Packet only if it says so, mixed into the second flask.
 3. Eat something solid off the table.
 4. Two spare headlamp cells on you — zip-tied ones only. Used cells go back in the tent or bag
    without a zip tie. Restock gels.
@@ -242,8 +254,9 @@ asks.
 
 - [ ] **Tell him at 5 minutes and at 10 minutes.** Those are the only time checks.
 - [ ] **Flask** refilled with water.
-- [ ] **Sodium, ~900 mg** (one SALTY packet) mixed into his **second flask**, filled with water. Day: every time. Night: only if he hasn't had any
-      this lap.
+- [ ] **Sodium check.** Ask: "Tailwind at both aid stations since the last end?" Then check the
+      other four in the [sodium check](#sodium-check). Any yes → one regular Mortal packet in his
+      second flask, filled with water. All no → nothing.
 - [ ] **Solid food** eaten off the aid table. Ask: "have you eaten in the last 30 minutes, and did
       it stay down?"
 - [ ] **Pee:** ask when he last went and what colour. Over 2 hours ago → he drinks a full flask
@@ -267,8 +280,9 @@ Same as the tent, minus layers. Everything else he needs is in the bag.
 
 - [ ] **Tell him at 5 minutes and at 10 minutes.** Those are the only time checks.
 - [ ] **Flask** refilled with water.
-- [ ] **Sodium, ~900 mg** (one SALTY packet) mixed into his **second flask**, filled with water. Day: every time. Night: only if he hasn't had any
-      this lap.
+- [ ] **Sodium check.** Ask: "Tailwind at both aid stations since the last end?" Then check the
+      other four in the [sodium check](#sodium-check). Any yes → one regular Mortal packet in his
+      second flask, filled with water. All no → nothing.
 - [ ] **Solid food** eaten off the aid table. Ask: "have you eaten in the last 30 minutes, and did
       it stay down?"
 - [ ] **Pee:** ask when he last went and what colour. Over 2 hours ago → he drinks a full flask

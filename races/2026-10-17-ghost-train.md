@@ -308,7 +308,7 @@ ends.
 | | |
 |---|---|
 | **Carry** | Naked Running Band |
-| **Fluid** | 700ml Sportiva soft flask ×2 — **one plain water**, **one for the SALTY mix** (one packet in a full flask, sipped over the next leg — athlete, 2026-10-04), or broth at night on the pass without sodium. **No Tailwind in the flask** (athlete, 2026-10-04; carbs come from gels, per `rules/fueling.md` § The architecture). ~200ml of regular Tailwind from the table, drunk at each aid station |
+| **Fluid** | 700ml Sportiva soft flask ×2 — **one plain water**, **one for a sodium top-up or broth** (a top-up packet goes in a full flask and is sipped over the next leg — athlete, 2026-10-04). **No Tailwind in the flask** (athlete, 2026-10-04; carbs come from gels, per `rules/fueling.md` § The architecture). ~200ml of regular Tailwind from the table, drunk at each aid station |
 | **Eating** | **2 collapsible cups** (the race provides none), spork, gels for one inter-station gap plus reserve |
 | **Lights, after dusk** | Zebralight H600Fc Mk IV on the chest · Convoy S3 in the band's side stretch pocket · Foursevens emergency |
 | **Power** | **2 spare 18650 cells**, restocked to two at every bag pass |
@@ -328,7 +328,7 @@ stop and a five-minute one, repeated across the night.
 - **Gels** — the restock
 - **18650 cells** — the restock pile
 - **Blister kit** — same contents as the tent's, listed below
-- **Mortal Hydration SALTY packets**
+- **Mortal Hydration packets, regular** — top-ups when the pacer's sodium check says so
 - **Meds** — Tylenol, Voltaren, Zofran. **NO ibuprofen**
 - **The card**
 
@@ -345,7 +345,7 @@ stop and a five-minute one, repeated across the night.
 - **18650 cells** — the restock pile
 - **Gels**
 - **Meds** — Tylenol, Voltaren, Zofran. **NO ibuprofen** (athlete, 2026-10-04)
-- **Mortal Hydration SALTY packets**
+- **Mortal Hydration packets, regular** — top-ups when the pacer's sodium check says so
 - **The card**
 
 ### Start/finish tent only
