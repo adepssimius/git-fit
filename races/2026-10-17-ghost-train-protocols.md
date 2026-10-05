@@ -9,7 +9,9 @@ service on the whole course, so Adam, Amy and Josh can open the links any time.
 - [Meds](#meds)
 - [Foot — hot spot or blister](#foot)
 - [Stops — aid stations, tent and drop bag](#stops)
-- [Left knee — ITB](#itb)
+  - [Pacer checklist — tent](#pacer-tent)
+  - [Pacer checklist — DPW](#pacer-dpw)
+- [Knees](#knees)
 
 ---
 
@@ -120,7 +122,7 @@ Clear urine + feeling awful + tight hands = stop drinking. Drinking more makes i
 | Take | For | Rule | Why |
 |---|---|---|---|
 | Tylenol | pain, knee ache | Write down each dose | Too much damages the liver. The label max is per 24h and the race is 30h, so it's easy to go over without a count |
-| Voltaren gel | left outside knee only | Small area, wipe hands, let it dry. Never under tape | Little of it reaches the blood, so it's safe for the kidneys where ibuprofen isn't. Gel under tape stops the tape sticking |
+| Voltaren gel | sore knee | Small area, wipe hands, let it dry. Never under tape | Little of it reaches the blood, so it's safe for the kidneys where ibuprofen isn't. Gel under tape stops the tape sticking |
 | Zofran | nausea, vomiting | One dose only. Do the two checks below first | It can upset heart rhythm, and that risk goes up when 30h of sweating has left potassium and magnesium low |
 | Caffeine (cola, caffeinated gels) | staying awake | One before the start, one on waking Sunday. 01:00-06:00: one each time through start/finish or DPW, no more | You're used to it, so skipping it brings on a withdrawal headache in the night. More than one per pass stops working and upsets the stomach |
 
@@ -204,7 +206,8 @@ Kit is in the tent at start/finish and in the DPW drop bag. Fix it at whichever 
 1. Refill flask with water.
 2. Sodium, ~900 mg (one SALTY packet) — every pass in the day, once per lap at night.
 3. Eat something solid off the table.
-4. Two spare headlamp cells on you. Restock gels.
+4. Two spare headlamp cells on you — zip-tied ones only. Used cells go back in the tent or bag
+   without a zip tie. Restock gels.
 5. Urine check: see [hydration](#hydration).
 6. Feet — only if something hurts.
 7. Start/finish only: put a layer on before you get cold. Night clothes are only here.
@@ -213,7 +216,7 @@ Kit is in the tent at start/finish and in the DPW drop bag. Fix it at whichever 
 **Changes:**
 
 - Shoes: Mont Blanc → Lone Peak 9 at either end, whenever you want them.
-- Night clothes (Alpha Direct hoodie, Rab jacket, gloves, headband) are only at start/finish. Take
+- Night clothes (Alpha Direct hoodie, merino shirt over it, gloves, headband) are only at start/finish. Take
   what you need for the whole next lap before you leave.
 - Lap 4 on: read THE CARD out loud with whoever is there. There is a copy at both ends.
 
@@ -222,22 +225,74 @@ Kit is in the tent at start/finish and in the DPW drop bag. Fix it at whichever 
 **Don't decide to quit at a stop.** Walk out for 20 minutes first. Stiffness after standing has
 always cleared in about 20 minutes.
 
+<a id="pacer-tent"></a>
+
+### Pacer checklist — tent (start/finish)
+
+Go through it with him, out loud, top to bottom. He does the work; you fetch from the tent if he
+asks.
+
+- [ ] **Start a stopwatch when he arrives.** Tell him the time at 4 minutes, and again when he leaves.
+- [ ] **Flask** refilled with water.
+- [ ] **Sodium, ~900 mg** (one SALTY packet). Day: every time. Night: only if he hasn't had any
+      this lap.
+- [ ] **Solid food** eaten off the aid table. Ask: "have you eaten in the last 30 minutes, and did
+      it stay down?"
+- [ ] **Pee:** ask when he last went and what colour. Over 2 hours ago → he drinks a full flask
+      before leaving. Clear and under an hour → skip the extra water, sodium anyway.
+- [ ] **Two spare headlamp cells** on him — **zip-tied ones only**. No zip tie means used.
+      Gels restocked.
+- [ ] **Feet:** ask if anything is rubbing. If yes, blister kit is in the tent.
+- [ ] **Shoes:** ask if he wants the Lone Peaks.
+- [ ] **Layers — this is the only place they are.** If the next lap runs into dark or colder
+      weather, he takes the layers for the whole lap now.
+- [ ] **Lap 4 on: read THE CARD out loud with him.**
+- [ ] **Watch him while he does all this:** slurring, clumsy hands, shivering, limping, can't keep
+      food down. Say what you see.
+- [ ] **Walk him out.** No quit talk until 20 minutes down the trail.
+
+<a id="pacer-dpw"></a>
+
+### Pacer checklist — DPW drop bag (turnaround)
+
+Same as the tent, minus layers. Everything else he needs is in the bag.
+
+- [ ] **Start a stopwatch when he arrives.** Tell him the time at 4 minutes, and again when he leaves.
+- [ ] **Flask** refilled with water.
+- [ ] **Sodium, ~900 mg** (one SALTY packet). Day: every time. Night: only if he hasn't had any
+      this lap.
+- [ ] **Solid food** eaten off the aid table. Ask: "have you eaten in the last 30 minutes, and did
+      it stay down?"
+- [ ] **Pee:** ask when he last went and what colour. Over 2 hours ago → he drinks a full flask
+      before leaving. Clear and under an hour → skip the extra water, sodium anyway.
+- [ ] **Two spare headlamp cells** on him — **zip-tied ones only**. No zip tie means used.
+      Gels restocked.
+- [ ] **Feet:** ask if anything is rubbing. Blister kit and spare socks are in the bag.
+- [ ] **Shoes:** ask if he wants the Lone Peaks.
+- [ ] **No layers here.** If he is cold, he gets moving and changes at the tent.
+- [ ] **Lap 4 on: read THE CARD out loud with him.**
+- [ ] **Watch him while he does all this:** slurring, clumsy hands, shivering, limping, can't keep
+      food down. Say what you see.
+- [ ] **Walk him out.** No quit talk until 20 minutes down the trail.
+
 ---
 
+<a id="knees"></a>
 <a id="itb"></a>
 
-## Left knee — ITB
+## Knees
 
-Pain on the outside of the left knee. Expect it after 20-25 km, or sooner on downhills.
+Usually ITB: pain on the outside of the knee. The left has flared after 20-25 km, or sooner on
+downhills. Either knee can go.
 
 **When it starts, in order:**
 
 1. Walk.
 2. Shorter, quicker steps.
 3. Walk every downhill.
-4. Move to the side of the trail where the left foot is not the low one.
+4. Move to the side of the trail where the sore leg is not the low one.
 5. Wider stance — don't cross your feet.
-6. Tylenol. Voltaren gel on the outside of the knee.
+6. Tylenol. Voltaren gel on the sore spot.
 
 **Don't:**
 
@@ -248,7 +303,8 @@ Pain on the outside of the left knee. Expect it after 20-25 km, or sooner on dow
 **Limping = stop running and walk.** That is not quitting. Ask your pacer if you're limping and
 believe them.
 
-**Pain alone is not a reason to stop.** ITB pain doesn't cause permanent damage.
+**Pain alone is not a reason to stop.** ITB pain doesn't cause permanent damage. Anything that
+isn't ITB is covered by the list below.
 
 **Stop the race and get checked if:**
 

@@ -355,10 +355,11 @@ stop and a five-minute one, repeated across the night.
   time: the right-angle cables exist so a device charges **in the waistband while moving**, so the
   bank rides with him for the duration of a charge and goes back in the bag afterwards. Cells are
   ~48g each, which is why it does not start on his body at 09:00
-- **Night clothing**: 120 GSM Alpha Direct hoodie, Rab approach jacket (windbreaker), fleece
-  gloves, Burton headband — available from lap 3 onward. See § The full night system
+- **Night clothing**: 120 GSM Alpha Direct hoodie, merino shirt over it, fleece gloves, Burton
+  headband. **No Rab** (athlete, 2026-10-04) — available from lap 3 onward. See § The full night system
 
-Physical packing happens race week — `endurance/2026-10-16-pre-race-shakeout.md`.
+Physical packing happens race week — `endurance/2026-10-16-pre-race-shakeout.md`. The tick-off list is
+`races/2026-10-17-ghost-train-packing.md`.
 
 ### The warm layer — 120 GSM Alpha Direct hoodie (athlete, 2026-09-08)
 
@@ -383,11 +384,15 @@ the sides for porcupines.
 
 ### The full night system, and the shell is the thermostat
 
+**DECIDED 2026-10-04 — the Rab is out; a merino shirt goes on top of the Alpha Direct instead.**
+This confirms what the 09-25 and 09-26 night runs found below: the Rab trapped vapour and was too
+warm with the Alpha Direct, and merino on top is the better-aimed wind layer.
+
 | layer | item | when |
 |---|---|---|
 | next to skin | singlet | all race |
 | insulation | **120 GSM Alpha Direct hoodie** | from dusk; **stays on** |
-| shell | **Rab approach jacket** (lightweight windbreaker) | **on and off as needed** |
+| over-layer | **merino shirt, over the Alpha Direct** — replaces the Rab (2026-10-04) | **on and off as needed** |
 | hands | **fleece gloves** | from dusk |
 | ears | **Burton headband** | from dusk |
 | head, backup | **beanie, one in each drop bag** | only if needed |
@@ -1106,7 +1111,7 @@ training block behind it.
    muscle breakdown carry a real acute-kidney-injury risk, and it was a worse bet uncrewed with
    nobody watching him; acetaminophen does the analgesic job without that mechanism.
    **The remaining exposure is someone handing him ibuprofen on course — decline it**
-   (`races/2026-10-17-ghost-train-protocols.md` § Left knee, § Hydration).
+   (`races/2026-10-17-ghost-train-protocols.md` § Knees, § Hydration).
 3. **`rules/fueling.md` § Caffeine is still a TODO**, and the sleep plan above is written assuming
    it will say what is written here. Reconcile the two.
 4. **Re-read the goal tiers after 09-12, 09-26 and 10-03.** They are an assessment made on a
