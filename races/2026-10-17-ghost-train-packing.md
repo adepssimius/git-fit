@@ -62,6 +62,7 @@ Blister kit:
 - [ ] 25G sterile needles (4-5)
 - [ ] Small scissors
 - [ ] Nitrile gloves
+- [ ] Aquaphor
 - [ ] Ziplock bag
 
 ## Tent at start/finish
@@ -77,7 +78,6 @@ Blister kit:
 - [ ] Tylenol
 - [ ] Voltaren gel
 - [ ] Zofran
-- [ ] Aquaphor
 - [ ] Nipple shields (2 pairs)
 - [ ] Spare collapsible cup
 - [ ] THE CARD, printed
@@ -96,6 +96,7 @@ Blister kit:
 - [ ] 25G sterile needles (4-5)
 - [ ] Small scissors
 - [ ] Nitrile gloves
+- [ ] Aquaphor
 - [ ] Ziplock bag
 
 ### Lights — on before dusk

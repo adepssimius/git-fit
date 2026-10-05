@@ -519,7 +519,7 @@ digit or a word.
 | **over 2h** | any | **behind — drink a full flask before leaving the bag** |
 | under 2h | **dark** | **behind — extra half flask** |
 | under 2h | light | **on track — hold rate** |
-| **under 1h** | **clear** | **ahead — skip a flask, take the sodium anyway** |
+| **under 1h** | **clear** | **ahead — skip a flask. Sodium only with puffy hands, headache, nausea or bloating** (revised 2026-10-04) |
 
 **His own calibration, measured on 09-25 across eight voids in one session:**
 **5 seconds and bright yellow = deficit. 6-7 seconds and clear = surplus.** That range is his, not a
@@ -676,8 +676,9 @@ rate.
 not packets: any source counts (equivalents in `rules/products.md`). Athlete: *"During the day
 I'll probably need two per lap but once it cools off I should be good with one per lap."* Packets
 are staged at both ends and taken as needed. Two per lap is the one-per-pass rate above
-(~550 mg/hr); one per lap at night is ~275 mg/hr, on lower sweat in the cold. **The urine table
-still overrides:** clear and frequent means take the sodium anyway.
+(~550 mg/hr); one per lap at night is ~275 mg/hr, on lower sweat in the cold. ~~**The urine table
+still overrides:** clear and frequent means take the sodium anyway.~~ Revised the same day: clear
+and frequent alone means drink less; sodium only with puffy hands, headache, nausea or bloating.
 
 #### ⚠ BUT THE WAY HE TOOK IT WAS HYPERTONIC, AND THAT IS WORTH FIXING
 

@@ -328,6 +328,7 @@ stop and a five-minute one, repeated across the night.
 - **Gels** — the restock
 - **18650 cells** — the restock pile
 - **Blister kit** — same contents as the tent's, listed below
+- **Aquaphor** — to re-lube after taping
 - **Mortal Hydration packets, regular** — top-ups when the pacer's sodium check says so
 - **Meds** — Tylenol, Voltaren, Zofran. **NO ibuprofen**
 - **The card**

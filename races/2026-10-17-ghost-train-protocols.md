@@ -87,10 +87,13 @@ Do not switch flavours to fix nausea. It is the stomach, not the taste.
 **Sodium check — the pacer asks at the tent and at DPW.** One packet if any of these is true:
 
 1. He skipped the Tailwind at both aid stations since the last end.
-2. Urine is clear and frequent, or his hands or watch strap feel tight.
+2. Urine is clear and frequent **and** his hands are tight or puffy, or he has a headache,
+   nausea or bloating. Stop drinking too.
 3. He's cramping. Pickle juice too.
 4. He's craving salt.
 5. Hot afternoon and his sweat is leaving salt crust.
+
+Clear and frequent urine on its own, feeling fine → drink less, no packet.
 
 None true → no packet. You haven't raced long enough to know your own need, so this check
 replaces guessing.
@@ -103,7 +106,7 @@ replaces guessing.
 | over 2h ago | any | Behind — drink a full flask before leaving |
 | under 2h | dark | Behind — extra half flask |
 | under 2h | light | On track — hold the rate |
-| under 1h | clear | Ahead — skip a flask, take the sodium anyway |
+| under 1h | clear | Ahead — skip a flask. Sodium only if hands are puffy or he feels sick |
 
 Your own calibration from 09-25: a 5-second bright-yellow stream is a deficit; 6-7 seconds and
 clear is a surplus.
@@ -115,7 +118,7 @@ clear is a surplus.
 | | Too little | Too much (low sodium) |
 |---|---|---|
 | Urine | dark, rare, small | clear and frequent |
-| Hands / watch strap | loose | tight, puffy |
+| Hands | loose | tight, puffy |
 | Feels like | thirsty, dry mouth | nausea, headache, bloated, sloshing |
 | **Do** | drink to 600 ml/hr | **stop drinking**, take sodium, eat salty food |
 
@@ -181,8 +184,9 @@ Kit is in the tent at start/finish and in the DPW drop bag. Fix it at whichever 
    Never on broken skin — use an alcohol pad there instead.
 4. Skin-Tac.
 5. Leukotape, no wrinkles.
-6. Dry sock if the old one is wet.
-7. Gloves, gauze and wipes into the ziplock. Cap the hexane bottle tight.
+6. Re-lube: Aquaphor around the tape and between the toes, not on the tape.
+7. Dry sock if the old one is wet.
+8. Gloves, gauze and wipes into the ziplock. Cap the hexane bottle tight.
 
 No hexane left? Alcohol pad instead, and let it dry.
 
@@ -242,7 +246,7 @@ No hexane left? Alcohol pad instead, and let it dry.
 
 **Cramp:** drink pickle juice from the aid table, even if you just had sodium.
 
-**Don't decide to quit at a stop.** Walk out for 20 minutes first. Stiffness after standing has
+**BEN MAY NOT DECIDE TO QUIT AT A STOP.** Walk out for 20 minutes first. Stiffness after standing has
 always cleared in about 20 minutes.
 
 <a id="pacer-tent"></a>
@@ -260,7 +264,8 @@ asks.
 - [ ] **Solid food** eaten off the aid table. Ask: "have you eaten in the last 30 minutes, and did
       it stay down?"
 - [ ] **Pee:** ask when he last went and what colour. Over 2 hours ago → he drinks a full flask
-      before leaving. Clear and under an hour → skip the extra water, sodium anyway.
+      before leaving. Clear and under an hour → skip the extra water. Sodium only if his
+      hands are puffy or he feels sick.
 - [ ] **Two spare headlamp cells** on him — **zip-tied ones only**. No zip tie means used.
       Gels restocked.
 - [ ] **Feet:** ask if anything is rubbing. If yes, blister kit is in the tent.
@@ -270,7 +275,8 @@ asks.
 - [ ] **Lap 4 on: read THE CARD out loud with him.**
 - [ ] **Watch him while he does all this:** slurring, clumsy hands, shivering, limping, can't keep
       food down. Say what you see.
-- [ ] **Walk him out.** No quit talk until 20 minutes down the trail.
+- [ ] **Walk him out. BEN MAY NOT DECIDE TO QUIT AT A STOP.** No quit talk until 20 minutes
+      down the trail.
 
 <a id="pacer-dpw"></a>
 
@@ -286,7 +292,8 @@ Same as the tent, minus layers. Everything else he needs is in the bag.
 - [ ] **Solid food** eaten off the aid table. Ask: "have you eaten in the last 30 minutes, and did
       it stay down?"
 - [ ] **Pee:** ask when he last went and what colour. Over 2 hours ago → he drinks a full flask
-      before leaving. Clear and under an hour → skip the extra water, sodium anyway.
+      before leaving. Clear and under an hour → skip the extra water. Sodium only if his
+      hands are puffy or he feels sick.
 - [ ] **Two spare headlamp cells** on him — **zip-tied ones only**. No zip tie means used.
       Gels restocked.
 - [ ] **Feet:** ask if anything is rubbing. Blister kit and spare socks are in the bag.
@@ -295,7 +302,8 @@ Same as the tent, minus layers. Everything else he needs is in the bag.
 - [ ] **Lap 4 on: read THE CARD out loud with him.**
 - [ ] **Watch him while he does all this:** slurring, clumsy hands, shivering, limping, can't keep
       food down. Say what you see.
-- [ ] **Walk him out.** No quit talk until 20 minutes down the trail.
+- [ ] **Walk him out. BEN MAY NOT DECIDE TO QUIT AT A STOP.** No quit talk until 20 minutes
+      down the trail.
 
 ---
 
