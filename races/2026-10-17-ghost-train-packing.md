@@ -40,8 +40,8 @@ Tick it off race week. Where things came from and why: `races/2026-10-17-ghost-t
 
 - [ ] Altra Lone Peak 9, size 9.5
 - [ ] Balega Hidden Comfort Quarter socks
-- [ ] Gels (~20)
-- [ ] 18650 cells (4)
+- [ ] Gels (25)
+- [ ] 18650 cells (8)
 - [ ] Mortal regular packets (4)
 - [ ] Tylenol
 - [ ] Voltaren gel
@@ -71,8 +71,8 @@ Blister kit:
 
 - [ ] Altra Lone Peak 9, size 9.5
 - [ ] Balega Hidden Comfort Quarter socks, several pairs
-- [ ] Gels (~20)
-- [ ] 18650 cells (4)
+- [ ] Gels (25)
+- [ ] 18650 cells (8)
 - [ ] Mortal regular packets (4)
 - [ ] Mortal SALTY packet (1) — pre-start
 - [ ] Tylenol

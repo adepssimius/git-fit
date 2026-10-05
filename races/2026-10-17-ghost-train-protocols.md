@@ -230,8 +230,9 @@ No hexane left? Alcohol pad instead, and let it dry.
 1. Refill flask with water.
 2. [Sodium check](#sodium-check). Packet only if it says so, mixed into the second flask.
 3. Eat something solid off the table.
-4. Two spare headlamp cells on you — zip-tied ones only. Used cells go back in the tent or bag
-   without a zip tie.
+4. After dark: fresh cell in the Zebralight, every leg — at the tent and at DPW. Two spare cells
+   on you — zip-tied ones
+   only. Used cells go back in the tent or bag without a zip tie.
 5. Leave with 5 gels on you.
 6. Urine check: see [hydration](#hydration).
 7. Feet — only if something hurts.
@@ -267,6 +268,7 @@ asks.
 - [ ] **Pee:** ask when he last went and what colour. Over 2 hours ago → he drinks a full flask
       before leaving. Clear and under an hour → skip the extra water. Sodium only if his
       hands are puffy or he feels sick.
+- [ ] **After dark: fresh cell in his Zebralight**, every leg, even if it's still working.
 - [ ] **Two spare headlamp cells** on him — **zip-tied ones only**. No zip tie means used.
 - [ ] **5 gels** on him when he leaves.
 - [ ] **Feet:** ask if anything is rubbing. If yes, blister kit is in the tent.
@@ -295,6 +297,7 @@ Same as the tent, minus layers. Everything else he needs is in the bag.
 - [ ] **Pee:** ask when he last went and what colour. Over 2 hours ago → he drinks a full flask
       before leaving. Clear and under an hour → skip the extra water. Sodium only if his
       hands are puffy or he feels sick.
+- [ ] **After dark: fresh cell in his Zebralight**, every leg, even if it's still working.
 - [ ] **Two spare headlamp cells** on him — **zip-tied ones only**. No zip tie means used.
 - [ ] **5 gels** on him when he leaves.
 - [ ] **Feet:** ask if anything is rubbing. Blister kit and spare socks are in the bag.

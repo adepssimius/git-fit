@@ -710,7 +710,13 @@ Yanii bank, everything USB.
 in the brush to the side of the trail so I have to pick them out by color."* Under this canopy,
 with a documented recurring hazard, colour rendering is the property that does the job.
 
-**The policy is RUN TO EMPTY, RESTOCK AT EVERY BAG — not scheduled swaps.** Athlete, 2026-09-07:
+**CHANGED 2026-10-04 — the Zebralight gets a fresh cell every leg after dark** (at the tent and at
+DPW), even if it is still working. Ten more cells removed the reason for running to
+empty. Athlete's expected use beyond that: **the Convoy once, the power bank once (two cells) —
+three cells**, so ~8 Zebralight swaps plus 3 is ~11 cells across the night. The Convoy still
+follows the policy below. Charged cells carry a zip tie; no zip tie means used.
+
+~~**The policy is RUN TO EMPTY, RESTOCK AT EVERY BAG — not scheduled swaps.**~~ Athlete, 2026-09-07:
 *"If I run out with one then the other light will still be functional and I'll slow to a walk while
 I change the battery."* He is right: a dead light is not a crisis when a working one is on his
 chest, walking to swap costs nothing he is not already paying at a hill, and scheduled swapping
