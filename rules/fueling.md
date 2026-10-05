@@ -672,6 +672,13 @@ being a single late dose rather than a schedule.
 **This also closes the TODO in § Sodium and fluids**, which asked for an mg/hr figure against sweat
 rate.
 
+**AMENDED 2026-10-04 — ~900 mg per pass in the day, ~900 mg per lap at night.** Stated as sodium,
+not packets: any source counts (equivalents in `rules/products.md`). Athlete: *"During the day
+I'll probably need two per lap but once it cools off I should be good with one per lap."* Packets
+are staged at both ends and taken as needed. Two per lap is the one-per-pass rate above
+(~550 mg/hr); one per lap at night is ~275 mg/hr, on lower sweat in the cold. **The urine table
+still overrides:** clear and frequent means take the sodium anyway.
+
 #### ⚠ BUT THE WAY HE TOOK IT WAS HYPERTONIC, AND THAT IS WORTH FIXING
 
 **He took the packet in 250 ml** (recorded above). **The packet is formulated for 650 ml.**

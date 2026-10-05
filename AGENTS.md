@@ -198,6 +198,10 @@ words or say nothing.
    `m` = minutes trap) are easy to get wrong from memory.
 6. `rules/progression.md`, `rules/fueling.md`, `rules/logging.md` and `rules/conditions.md` as
    needed for the specific decision at hand.
+7. `rules/products.md` — carbs, sodium and caffeine per unit for every gel, drink,
+   electrolyte and supplement he uses. **When he names a product that is not in it, look up the label and add it
+   before writing it into a plan** (athlete, 2026-10-04). Write fueling targets as grams of carbs
+   and mg of sodium, then say which products meet them — never as a product count alone.
 
 `seed/` is historical input only — read it for context (what paces the athlete was already hitting,
 what the professionally designed plan says), never edit it, never treat it as current instruction.

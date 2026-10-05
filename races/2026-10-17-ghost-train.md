@@ -47,11 +47,11 @@ Everywhere the old file said "crew stop" or "crew bag", read **self-serve drop b
 logistics survive this almost untouched**, because the course is close to the best case for
 running solo:
 
-| station | position | stock | drop bag |
+| station | position | stock | his kit |
 |---|---|---|---|
-| **Start/finish** | 0 / 15mi | full — *"all kinds of good food"*, candy, soda, Tailwind | **yes** |
+| **Start/finish** | 0 / 15mi | full — *"all kinds of good food"*, candy, soda, Tailwind | **his tent — all kit** |
 | mid-out | 3.75mi | snacks, drinks, candy/soda/Tailwind | no |
-| **7.5mi turnaround** | 7.5mi | full — *"all kinds of good food"*, candy, soda, Tailwind | **yes** |
+| **7.5mi turnaround** | 7.5mi | full — *"all kinds of good food"*, candy, soda, Tailwind | **one drop bag** |
 | mid-back | 11.25mi | snacks, drinks, candy/soda/Tailwind | no |
 
 So: **aid every ~6km, a drop bag every ~12.1km**. Warm savoury food needs no crew capability —
@@ -238,7 +238,7 @@ Saturday.** From lap 4 onward the governing instrument is the card below.
 
 ## THE CARD — carry it, do not improvise it
 
-**Print two. One in each drop bag.** Replaces the old "evaluate at every crew stop" decision tree,
+**Print two. One in the tent at start/finish, one in the DPW drop bag.** Replaces the old "evaluate at every crew stop" decision tree,
 which assumed a crew and assumed working judgement. Read it out loud at every drop-bag pass from
 lap 3 onward — out loud, because hearing yourself slur is the check you cannot run in your head.
 
@@ -296,8 +296,12 @@ detect the state in which the other seven answers cannot be trusted.
 
 ## Drop bags and carry — DECIDED 2026-09-08
 
-Both bags are near-identical, deliberately: **a problem gets fixed wherever it surfaces, rather
-than carried 12km to the bag that has the fix.**
+**UPDATED 2026-10-04 — one drop bag, not two.** Athlete: the only drop bag is at the DPW
+turnaround. **Start/finish is his tent**, beside the full aid station, holding all his kit plus a
+sleeping bag and a change of clothes for after the race. **Food comes from the two full aid
+stations, never from a bag.** The principle survives: **a problem gets fixed wherever it surfaces**
+— the things a problem needs (shoes, blister kit, cells, gels, meds, sodium, the card) are at both
+ends.
 
 ### On the body
 
@@ -317,9 +321,20 @@ backup for a split flask or failed bite valve, and — the one that matters — 
 drinking it standing; a flask means taking it with you. That is the difference between a 30-second
 stop and a five-minute one, repeated across the night.
 
-### Both bags — start/finish (0/15mi) and 7.5mi turnaround
+### DPW drop bag (7.5mi turnaround) — athlete, 2026-10-04
 
-- **Altra Lone Peak 9 (9.5)**, one pair in each. He owns three; one stays home
+- **Altra Lone Peak 9 (9.5)** — the spare pair
+- **Balega Hidden Comfort** — spare socks
+- **Gels** — the restock
+- **18650 cells** — the restock pile
+- **Blister kit** — same contents as the tent's, listed below
+- **Mortal Hydration SALTY packets**
+- **Meds** — Tylenol, Voltaren, Zofran. **NO ibuprofen**
+- **The card**
+
+### Tent at start/finish — everything, including
+
+- **Altra Lone Peak 9 (9.5)** — one pair here, one at DPW. He owns three; one stays home
 - **Balega Hidden Comfort**, several pairs
 - **Blister kit** — 1 roll Leukotape P, alcohol wipes, Skin-Tac, 2 non-adherent pads, 4-5 × 25G
   sterile beveled needles, small scissors, nitrile gloves, ziplock. Full protocol in
@@ -329,10 +344,11 @@ stop and a five-minute one, repeated across the night.
   gloves**
 - **18650 cells** — the restock pile
 - **Gels**
-- **Analgesic — acetaminophen (Tylenol). NO ibuprofen** (athlete, 2026-10-04)
+- **Meds** — Tylenol, Voltaren, Zofran. **NO ibuprofen** (athlete, 2026-10-04)
+- **Mortal Hydration SALTY packets**
 - **The card**
 
-### Start/finish bag only
+### Start/finish tent only
 
 - **Yanii PD2 power bank** + 0.5m right-angle USB-C cables. **This IS the phone charger** — one
   object, not two (athlete, 2026-09-08). Picked up when something needs it rather than at a fixed
@@ -751,7 +767,7 @@ fallback when gels stop being palatable in the back half, and it is stocked at e
 | | |
 |---|---|
 | **Start in** | **Altra Mont Blanc Carbon, size 10** |
-| **Change to** | **Altra Lone Peak 9, 9.5 — at the END OF LAP 2 (~48 km)**, at the start/finish bag |
+| **Change to** | **Altra Lone Peak 9, 9.5 — at either end, whenever he feels he needs it** (athlete, 2026-10-04). The hot spot below arrived at ~46 km, so expect that to be around the end of lap 2 |
 | **Socks** | Balega Hidden Comfort, changed at any bag where feet feel off or wet |
 | **Lube** | Aquaphor between the toes |
 
