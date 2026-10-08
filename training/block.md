@@ -329,8 +329,15 @@ squeeze hit that pool too, w15-w19 need a second pass.
 10. **Keep speed work, concentrated into Wednesday** — one big midweek workout plus quality embedded
     in the long run. Progress the easy-pace ceiling per `athlete/zones.yml` and follow the Champion
     Wednesday progression (hills → track/speed → uphill-treadmill threshold → tune-up).
-11. **Taper 2–3 weeks** (the seed's weeks 17–19 already trend 23km → 13km → race) but keep one short
-    night run in the taper so the circadian rehearsal stays fresh.
+11. **Taper 2–3 weeks** (the seed's weeks 17–19 already trend 23km → 13km → race). **AMENDED
+    2026-10-08 — no night run in the taper.** This rule used to require one "so the circadian
+    rehearsal stays fresh." The athlete: *"I don't care about more night running at all. I have
+    done so much I don't need to practice and there is a real sleep cost to it."* Rule 7 already
+    said darkness is not a skill gap for him; this rule contradicted it, and in the taper the
+    sleep cost is the whole point of the taper. **Never put a night session in the taper for
+    rehearsal, and never flag a missed one as a loss** — the 10-06 night run was skipped and
+    nothing needs replacing. Kit validation is the only reason left to run after dark, and it was
+    finished in the lap simulations.
 12. **Strength runs on the 4-day Upper/Lower spec** (`rules/strength-authoring.md`), placed by the
     weekly template above. Taper Lower A toward Lower B in character in the final 6 weeks; lifting
     is always first in the cut order.

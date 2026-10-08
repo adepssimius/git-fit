@@ -4,10 +4,10 @@ sport: Run
 name: Thursday Easy — time on feet
 type: easy
 block_week: 18
-duration_s: 1800
+duration_s: 3000
 target_mode: effort
 brief: >
-  30min easy. Pure time on feet — no target, no pace to hit.
+  50min easy. Pure time on feet — no target, no pace to hit.
 follow: >
   ZoneSense Zone 1 the whole way, and no target is set — the first ~10min has no reading, so run
   the opening by feel. Go slower whenever that's what it needs.
@@ -21,10 +21,14 @@ intent: >
   calf and Nordic work), not this run. CORRECTED 2026-08-13: this note said the exact reverse
   until then, which contradicted the athlete's own verbatim spec in rules/strength-authoring.md
   § House rules. It entered eight session files in a single commit with no rationale given.
+changed: >
+  2026-10-08, athlete's call on the morning: 30min -> 50min, same effort. Soreness came in at 2
+  (green) and the three prescribed easy runs Mon-Wed have no watch record, so this is easy volume
+  going back into a taper week that had room. Still `ZS Z1`, still no target.
 origin: authored
 published:
   suunto: null
 ---
 
 Easy aerobic
-- 30m ZoneSense Z1
+- 50m ZoneSense Z1

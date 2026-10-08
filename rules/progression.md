@@ -67,8 +67,10 @@ Inherited from the Champion Plan mapping in `training/block.md`:
 - Block week 13 is the **Big Day** — a moderately hard ~50k-effort long run with full race fueling,
   deliberately run to accumulate real fatigue. Do not schedule Wednesday's workout at full intensity
   that same week; let the Saturday effort be the week's single hard stimulus alongside it.
-- Block weeks 18–19 are **taper** — volume drops (23km → 13km → race) but keep one short night run
-  in week 18 so the circadian rehearsal doesn't go stale. Strength recedes in a specific shape
+- Block weeks 18–19 are **taper** — volume drops (23km → 13km → race). **No night run in the
+  taper (amended 2026-10-08, athlete's call — see `training/block.md` rule 11).** This used to
+  require one in week 18 for circadian rehearsal; he does not need the practice and the sleep cost
+  is real, which is the opposite of what a taper is for. Strength recedes in a specific shape
   (see `strength/notes.md` § Taper handling): week 16 — the peak *running* week — cuts Lower A to
   reduced volume, because lifting is first in the cut order exactly when running stress peaks;
   week 17 takes the one final full Lower A (the last squat day, ~2.5 weeks out); from week 18 it's
