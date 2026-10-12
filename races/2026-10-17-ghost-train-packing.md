@@ -9,9 +9,13 @@ Tick it off race week. Where things came from and why: `races/2026-10-17-ghost-t
 
 - [ ] Watch charged to full Friday night. Don't run with it Friday
 - [ ] Phone charged
-- [ ] All 18650 cells charged — lights, restock piles, and the 2 that go in the power bank
+- [x] All 18650 cells charged — lights, restock piles, and the 2 that go in the power bank
+      *(athlete, 2026-10-11)*
 - [ ] **Zip tie on every charged cell.** No zip tie = used. It slides off the end, no
       cutting — only when the cell goes in a light or the bank
+      **— BLOCKED: zip ties ETA Wednesday 10-14 (athlete, 2026-10-11).** Until they are on, the
+      charged/used marking does not exist, so keep the charged cells physically separate from
+      anything used in the meantime.
 - [ ] Nitecore NU25s charged
 - [ ] Big-toe callus margins pre-taped, on clean dry skin
 - [ ] 2nd toes pre-taped, on clean dry skin
@@ -125,12 +129,16 @@ Blister kit:
 - [ ] Down jacket (emergency)
 - [ ] Arc'teryx Beta SL (emergency)
 - [ ] **Leg layer — not decided.** Tights were the top item after 09-25
-- [ ] **Ear muffs — not decided.** Your 09-25 call
+- [ ] **Ear muffs — IN.** Owned, athlete 2026-10-11. No longer a decision
 
 ### Not bought yet
 
-- [ ] **Caffeine** — a ~200 mg dose source. See the caffeine card
-- [ ] **Pepcid AC Maximum Strength** (famotidine 20 mg)
+- [ ] **Caffeine** — a ~200 mg dose source. See the caffeine card.
+      **The last unbought item, and the only one that is not optional** — maintenance dosing
+      prevents a withdrawal headache in the night
+
+Bought since this list was written: **Pepcid AC Maximum Strength** (famotidine 20 mg), athlete
+2026-10-11 — now a tent and DPW packing item above, not a shopping item.
 
 ### After the race
 
