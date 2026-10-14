@@ -7,7 +7,7 @@ race's sign-up sheet so he knows who is out there and can thank each of them by 
 this file when they do. Names are first name + last initial, as the sheet gives them.
 
 These are the race's bike volunteers on the trail, **not his pacers** — Adam, Amy and Josh are in
-`races/2026-10-17-ghost-train.md` § The pacers. Nothing here changes the plan.
+`races/2026-10-17-ghost-train/race.md` § The pacers. Nothing here changes the plan.
 
 ## By shift
 

@@ -242,7 +242,7 @@ Saturday.** From lap 4 onward the governing instrument is the card below.
 which assumed a crew and assumed working judgement. Read it out loud at every drop-bag pass from
 lap 3 onward — out loud, because hearing yourself slur is the check you cannot run in your head.
 
-**The card itself lives in its own printable file: `races/2026-10-17-ghost-train-card.md`.** Edit it
+**The card itself lives in its own printable file: `races/2026-10-17-ghost-train/card.md`.** Edit it
 there, not here.
 
 **Why the card and not the old tree.** The old tree had six numbered criteria and a default. It
@@ -322,7 +322,7 @@ stop and a five-minute one, repeated across the night.
   jacket and Arc'teryx Beta SL** (athlete, 2026-10-05) — put on and keep moving; lying down ends the race — available from lap 3 onward. See § The full night system
 
 Physical packing happens race week — `endurance/2026-10-16-pre-race-shakeout.md`. The tick-off list is
-`races/2026-10-17-ghost-train-packing.md`.
+`races/2026-10-17-ghost-train/packing.md`.
 
 ### The warm layer — 120 GSM Alpha Direct hoodie (athlete, 2026-09-08)
 
@@ -1080,7 +1080,7 @@ training block behind it.
    muscle breakdown carry a real acute-kidney-injury risk, and it was a worse bet uncrewed with
    nobody watching him; acetaminophen does the analgesic job without that mechanism.
    **The remaining exposure is someone handing him ibuprofen on course — decline it**
-   (`races/2026-10-17-ghost-train-protocols.md` § Knees, § Hydration).
+   (`races/2026-10-17-ghost-train/protocols.md` § Knees, § Hydration).
 3. **`rules/fueling.md` § Caffeine is still a TODO**, and the sleep plan above is written assuming
    it will say what is written here. Reconcile the two.
 4. **Re-read the goal tiers after 09-12, 09-26 and 10-03.** They are an assessment made on a

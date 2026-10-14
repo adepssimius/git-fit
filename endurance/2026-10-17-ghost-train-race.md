@@ -16,11 +16,11 @@ stale_pace_correction: >
   zones were rebuilt on the athlete's actual PRs. Laps 1-2 read 8:15-8:30/km, which is the
   EASY-DAY CEILING, while the text called it "absurdly easy". That is structurally the same
   error as Runna's discarded 50km-at-5:35 prescription, and it contradicted this repo's own
-  race model. Bands below now match races/2026-10-17-ghost-train.md exactly.
+  race model. Bands below now match races/2026-10-17-ghost-train/race.md exactly.
 intent: >
   RACE DAY. 9:00 AM start, 30-hour cutoff Sunday 3:00 PM. Goal: 100km primary, 100 miles
   stretch. Full pacing table, crew-stop decision tree, and darkness plan live in
-  races/2026-10-17-ghost-train.md — follow that, not this file. Lap 1 should feel absurdly
+  races/2026-10-17-ghost-train/race.md — follow that, not this file. Lap 1 should feel absurdly
   easy; the race starts at lap 4. Think Z2, fuel constantly, and decide at crew stops only.
 origin: authored
 ---

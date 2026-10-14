@@ -12,7 +12,7 @@ Block week 9 starts **2026-08-03** (Monday); the race is block week 19, **2026-1
 Two problems with the inherited Runna plan drove the redesign:
 
 1. **The race was modeled wrong.** Runna prescribed `50km at 5:35-5:55/km` — road-marathon logic
-   for an event that's actually a flat, crewed, lapped ultra. See `races/2026-10-17-ghost-train.md`.
+   for an event that's actually a flat, crewed, lapped ultra. See `races/2026-10-17-ghost-train/race.md`.
 2. **The plan was a marathon plan.** It peaked at a 40km long run with no back-to-backs, no night
    running, no lap rehearsal, and no fueling rehearsal — none of which are optional for a
    100km-to-100mile attempt.
@@ -30,7 +30,7 @@ Two athlete-specific facts then shaped everything else:
 
 ## The lap rhythm and the goal
 
-See `races/2026-10-17-ghost-train.md` for the full model. Short version: 100km primary goal, 100
+See `races/2026-10-17-ghost-train/race.md` for the full model. Short version: 100km primary goal, 100
 miles stretch goal, crew every ~12km, and the 30h cutoff is generous — the limiter is durability and
 logistics, not raw speed.
 
@@ -123,7 +123,7 @@ mileage. Ghost Train is flat, so:
   in long runs. Note the distinction this sentence used to blur: what 15-mile rail-trail laps demand
   is the *rhythm* — one cadence and effort held for hours with nothing in the terrain to break it up
   — not this intensity. Race pacing itself is far easier, **ZS Z1** throughout
-  (`races/2026-10-17-ghost-train.md`). The training stimulus and the race demand are different
+  (`races/2026-10-17-ghost-train/race.md`). The training stimulus and the race demand are different
   intensities that this bullet originally ran together as a bare "Z2/Z3".
 - **Skip the heat-suit block** — mid-October NH won't be hot; keep passive sauna/hot tub only.
 - **Drop hiking specificity** — a flat rail trail is run and walked, not power-hiked.
@@ -147,7 +147,7 @@ course. Not optional for this race:
 - **Lap simulations** — staging point → real 7.5mi turnaround → staging (20.9km), plus a 3.1km
   top-up to cover a true race-lap distance. Crew contact every ~10.5km, close to race day's ~12.1km,
   so fueling and stop cadence transfer directly.
-- **The crew-stop decision tree** and per-lap logistics — see `races/2026-10-17-ghost-train.md`.
+- **The crew-stop decision tree** and per-lap logistics — see `races/2026-10-17-ghost-train/race.md`.
 
 ## The weekly template
 
@@ -204,7 +204,7 @@ IT band (`athlete/profile.md` § Injuries).
 - **The walking ramp turns out to be right for the right reason** — time on feet builds the
   durability that actually fails, not the engine.
 - **The conservative pace table is a symptom of the same misdiagnosis** — see
-  `races/2026-10-17-ghost-train.md` and `athlete/zones.yml`.
+  `races/2026-10-17-ghost-train/race.md` and `athlete/zones.yml`.
 
 **Honest caveat, and it matters:** easy at 23.5km is the EXPECTED state, not proof — that is 15%
 of the race. This does not establish that the engine holds for 160km. It establishes that what

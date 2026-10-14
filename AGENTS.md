@@ -51,11 +51,11 @@ short summary of the relevant stats. Three are named and are not optional:
 
 | always report | what it means |
 |---|---|
-| **pace required to hit the time target** | from the lap table in `races/2026-10-17-ghost-train.md`, or the session's own planned duration |
+| **pace required to hit the time target** | from the lap table in `races/2026-10-17-ghost-train/race.md`, or the session's own planned duration |
 | **current lap** | which lap he is on |
 | **front half or back half of the lap** | a race lap is 24.1km = **two** 7.5mi (12.1km) out-and-backs from the central start/finish, so "front half" is the first out-and-back |
 
-**That is a status readout, not a prescription.** `races/2026-10-17-ghost-train.md` is explicit that
+**That is a status readout, not a prescription.** `races/2026-10-17-ghost-train/race.md` is explicit that
 the lap paces are *"lap paces at ZS Z1, not instructions"*, and invariant 5 keeps long sessions on
 effort rather than pace. **Telling him the pace he needs is reporting where he stands; it never
 becomes the thing he chases.** If the required pace and `ZS Z1` disagree, `ZS Z1` wins and say so in
@@ -70,7 +70,7 @@ topic he has to deal with there**, prefixed "at the next drop bag" or "at the ne
 Not a paragraph per topic and not the reasoning — the action, so he arrives knowing the list
 instead of standing there remembering it.
 
-The course gives **aid every ~6km and a drop bag every ~12.1km** (`races/2026-10-17-ghost-train.md`
+The course gives **aid every ~6km and a drop bag every ~12.1km** (`races/2026-10-17-ghost-train/race.md`
 § stations), and the two differ in what they can do:
 
 | stop | what belongs in the brief |
@@ -89,7 +89,7 @@ session file for each lap sim says to time them with a watch. **If he is over bu
 that is one line and it is time-sensitive.**
 
 **And the card governs at the bag, not the brief.** From lap 4 onward the decision card in
-`races/2026-10-17-ghost-train-card.md` is the instrument, and it is deliberately something he reads
+`races/2026-10-17-ghost-train/card.md` is the instrument, and it is deliberately something he reads
 rather than something a session judges for him. **Never substitute a stop brief for the card** —
 list the actions and let the card do the continue/stop call.
 
@@ -150,7 +150,7 @@ written; a brief written at the handoff knows which foot, whether food is stayin
 long since the last clear sentence. **Write it at the handoff, from what is live.**
 
 **And he is paced end to end — three handoffs, three different briefs**
-(`races/2026-10-17-ghost-train.md` § The pacers):
+(`races/2026-10-17-ghost-train/race.md` § The pacers):
 
 | handoff | pacer | what their brief leans on |
 |---|---|---|
@@ -189,7 +189,7 @@ words or say nothing.
 ## Read order, before touching anything
 
 1. `athlete/profile.md` — the time budget. Every session you author is checked against this.
-2. `races/2026-10-17-ghost-train.md` — what the race actually is, and the goal tiers.
+2. `races/2026-10-17-ghost-train/race.md` — what the race actually is, and the goal tiers.
 3. `training/block.md` — the policy: block-week ↔ Champion-week mapping, the weekly template, and
    the numbered reshaping rules. This is the thing you're implementing every time you author a week.
 4. The specific `training/weeks/wNN.md` you're working on, if it already exists.
@@ -232,7 +232,7 @@ what the professionally designed plan says), never edit it, never treat it as cu
 5. **Long/ultra-effort sessions use `target_mode: hr` or `effort`, never `pace`.** Pace targets are
    for sessions under ~2h. This is the fix for Runna's core mistake (prescribing marathon pace for a
    multi-hour ultra effort).
-6. **Never invent a race distance or pace target that contradicts `races/2026-10-17-ghost-train.md`.**
+6. **Never invent a race distance or pace target that contradicts `races/2026-10-17-ghost-train/race.md`.**
    The Runna seed's `50km at 5:35-5:55/km` is wrong and stays discarded.
 7. **Frontmatter `published.suunto` is the only idempotency mechanism.** Don't re-push a session
    whose body hasn't changed since it was last published. See `rules/publishing.md`.

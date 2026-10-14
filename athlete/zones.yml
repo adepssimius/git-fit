@@ -59,7 +59,7 @@ pace:
   # 8:15-8:30/km (ultra_lap_early below, and the 1.2km opener in the lap-sim and race files).
   # That is INSIDE the dead band. It means lap 1 cannot be run as a steady jog — it is a
   # run/walk or a deliberate shuffle from the gun. Not changed here, because that is exactly
-  # what races/2026-10-17-ghost-train.md's pacing is for and what the lap sims exist to test,
+  # what races/2026-10-17-ghost-train/race.md's pacing is for and what the lap sims exist to test,
   # but do not let the lap sims pass without answering it.
   locomotion_floors:
     jog_floor_min: "7:30"
@@ -181,7 +181,7 @@ pace:
   # Ultra targets. Deliberately far slower than anything above: at an 11:11/km cutoff average
   # for 100mi, the failure mode is starting anywhere near normal easy pace. Lap 1 should feel
   # almost embarrassingly slow. These are MOVING paces, excluding crew stops, and match the
-  # per-lap splits in races/2026-10-17-ghost-train.md exactly (laps 1-7: 8:15, 8:30, 8:54, 9:24,
+  # per-lap splits in races/2026-10-17-ghost-train/race.md exactly (laps 1-7: 8:15, 8:30, 8:54, 9:24,
   # 10:00, 10:42, 11:12) — update both together or verify_plan.py check 9 loses its anchor.
   ultra_lap_early: "8:15-8:30"    # laps 1-2
   ultra_lap_mid: "8:54-9:24"      # laps 3-4

@@ -1,6 +1,6 @@
 # Ghost Train 2026 — protocol cards
 
-Race-day steps only. The reasons are in `races/2026-10-17-ghost-train.md`.
+Race-day steps only. The reasons are in `races/2026-10-17-ghost-train/race.md`.
 Printed copies at both ends: in the tent at start/finish and in the DPW drop bag. There is cell
 service on the whole course, so Adam, Amy and Josh can open the links any time.
 

@@ -487,7 +487,7 @@ count without doing sums.
 so intake is an integer he already knows. Over ~100 minutes between bag passes, 600 ml/hr is
 **about 1.5 flasks.**
 
-**⚠ NOT TO BE CONFUSED WITH THE QUIT RULE.** `races/2026-10-17-ghost-train.md` says the
+**⚠ NOT TO BE CONFUSED WITH THE QUIT RULE.** `races/2026-10-17-ghost-train/race.md` says the
 continue-or-stop decision is made **after twenty minutes of progress away from the bag, never at
 it**, because the bag is where he is stiffest and most persuaded to stop (amended 2026-10-02).
 **That is a different decision from this one.** Fluid logging happens AT the bag; the quit decision
@@ -762,7 +762,7 @@ not want). `athlete/profile.md` records
 
 TODO — this matters specifically for the 100-mile stretch goal, which runs through a full night.
 Plan caffeine timing (when to start, how to dose across ~24+ hours without a crash or tolerance
-wall) and cross-reference `races/2026-10-17-ghost-train.md` § "Sleep-deprivation plan" — the two
+wall) and cross-reference `races/2026-10-17-ghost-train/race.md` § "Sleep-deprivation plan" — the two
 need to be designed together, not separately.
 
 ## What to rehearse on each long-run type
@@ -781,5 +781,5 @@ need to be designed together, not separately.
 
 TODO once the above is dialed in through training — this section should end up as a lap-by-lap table
 (what's consumed between which aid stations, what's handed over at each crew stop) that mirrors the
-pacing table in `races/2026-10-17-ghost-train.md`. Build it from what actually worked in the lap
+pacing table in `races/2026-10-17-ghost-train/race.md`. Build it from what actually worked in the lap
 simulations, not from a generic template.

@@ -2,7 +2,7 @@
 
 Print two, one-page each: **tent at start/finish** and **DPW drop bag**. Read it out loud at every
 drop-bag pass from lap 3 onward — out loud, because hearing yourself slur is the check you cannot
-run in your head. The reasons are in `races/2026-10-17-ghost-train.md` § THE CARD. This file is the
+run in your head. The reasons are in `races/2026-10-17-ghost-train/race.md` § THE CARD. This file is the
 single copy; edit it here.
 
 ### AT EVERY DROP BAG — say each answer out loud
@@ -53,6 +53,6 @@ the decision on the far side of them, already moving, instead of on a bench.*
 
 **Step-by-step for anything above — scan:**
 
-![QR code linking to the protocol cards](2026-10-17-ghost-train-protocols-qr.png)
+![QR code linking to the protocol cards](protocols-qr.png)
 
-<https://github.com/adepssimius/git-fit/blob/master/races/2026-10-17-ghost-train-protocols.md>
+<https://github.com/adepssimius/git-fit/blob/master/races/2026-10-17-ghost-train/protocols.md>

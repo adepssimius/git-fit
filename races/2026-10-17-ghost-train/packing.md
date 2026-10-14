@@ -1,6 +1,6 @@
 # Ghost Train 2026 — packing list
 
-Tick it off race week. Where things came from and why: `races/2026-10-17-ghost-train.md`
+Tick it off race week. Where things came from and why: `races/2026-10-17-ghost-train/race.md`
 § Drop bags and carry and § The full night system. What is in each product: `rules/products.md`.
 
 **Counts assume up to 7 laps** (100 mi is ~6.7 laps of 24.1 km).

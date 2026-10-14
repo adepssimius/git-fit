@@ -355,7 +355,7 @@ travel:
 **He is running this race uncrewed.** Directive, not an inference: *"Assume uncrewed. I might have
 a pacer for one lap."*
 
-**This file and `races/2026-10-17-ghost-train.md` were written throughout on an assumption of crew
+**This file and `races/2026-10-17-ghost-train/race.md` were written throughout on an assumption of crew
 contact every ~12km.** `grep -l crew` returns 19 files. Everywhere "crew stop" or "crew bag"
 appears, read **self-serve drop bag**, at the start/finish and at the 7.5mi turnaround — both of
 which take drop bags (athlete-confirmed) and both of which are full-service aid stations.
@@ -1111,7 +1111,7 @@ after distance**, and measured against that it is working:
 - **Zero toe-joint pain** — the 9.5's reliable signature, absent in the 10.
 - Less general leg soreness than the Lone Peak produces by 20km.
 
-Feet are the primary attrition mechanism in a 30-hour race — `races/2026-10-17-ghost-train.md`
+Feet are the primary attrition mechanism in a 30-hour race — `races/2026-10-17-ghost-train/race.md`
 makes "feet: hot spots vs actual damage" one of six go/no-go criteria at every crew stop. A shoe
 that eliminates foot soreness at 23.5km is winning the axis that decides the race, and losing one
 that tape and sock choice can fix. **"Correct fit" (Lone Peak) and "right for the job" are
@@ -1277,7 +1277,7 @@ distance. Once I go above 20k I get some nail pain."*
   2026-09 read it as a too-small-shoe signal and had to withdraw that.
 - **His nails are already bruised** from previous Lone Peak runs, and he regards losing toenails
   as routine for him. He starts the race with damaged nails; that is the baseline, not a change.
-- **NOT a go/no-go criterion.** `races/2026-10-17-ghost-train.md` makes "feet: hot spots vs actual
+- **NOT a go/no-go criterion.** `races/2026-10-17-ghost-train/race.md` makes "feet: hot spots vs actual
   damage" a stop check. **Big-toe nail soreness is neither** — he crosses 20km inside lap 1 of 7
   and spends ~80km above onset at the A-goal, so treating it as a stop signal would burn time and
   possibly a needless shoe change on something that was always going to appear.
@@ -1433,7 +1433,7 @@ included, and it still went at 45.8 km.
 
 ### The planned shoe change may already be the fix — and should probably move earlier
 
-**`races/2026-10-17-ghost-train.md` already schedules Mont Blanc Carbon 10 → Lone Peak 9.5 around
+**`races/2026-10-17-ghost-train/race.md` already schedules Mont Blanc Carbon 10 → Lone Peak 9.5 around
 lap 3-4.** The Lone Peak is this athlete's **correct-fit reference** and has a **wider toe box** than
 the Mont Blanc.
 
