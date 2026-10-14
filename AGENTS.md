@@ -126,15 +126,15 @@ What goes in it, each as one line:
 | watch for | why it is the pacer's job and not his |
 |---|---|
 | **slurring, tripping, missed turns, lost minutes** | card item 6. He cannot hear his own speech degrade |
-| **gait change** — from a blister, or the left ITB | card items 4 and 5. A limp is visible from behind and invisible from inside |
+| **gait change** — from a blister, or the ITB | card items 4 and 5. A limp is visible from behind and invisible from inside |
 | **has he eaten in the last 40min, did it stay down** | card item 3. The thing that slips first when he is working |
 | **shivering, or hands that cannot work tape** | card item 7. Layer goes on BEFORE it is needed |
-| **"I might need to lie down"** — if he says it at all | card item 6. Tent only, caffeine first, 15-20min, and the pacer wakes him. No text needed — he is paced end to end (2026-10-05) |
+| **"I might need to lie down"** — if he says it at all | not on the card — `protocols.md` § Lying down. Tent only, caffeine first, 15-20min, and the pacer wakes him. No text needed — he is paced end to end (2026-10-05) |
 
 And the two standing rules the pacer must know, because a well-meaning pacer gets both backwards:
 
-- **Stiff on standing up is a phase, not a verdict** — it has cleared in ~20min every time. **Do
-  not let a pacer help him decide anything inside those 20 minutes.**
+- **Stiff after sitting is normal** — it has eased within ~20min of moving every time. **Do
+  not let a pacer help him decide to quit while it lasts.**
 - **Decide after 20 minutes of progress away from the bag, never at it and never mid-lap**
   (athlete, 2026-10-02). Every regretted quit was decided between aid stations, and the bag is
   where he is stiffest. A pacer's job is to get him out of the bag and moving for twenty minutes

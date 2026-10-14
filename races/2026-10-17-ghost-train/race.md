@@ -248,7 +248,7 @@ there, not here.
 **Why the card and not the old tree.** The old tree had six numbered criteria and a default. It
 was correct and it was unusable, because it required the athlete to remember it existed, remember
 its contents, and apply judgement to each — at 03:00, alone, at hour 18. The card is read, not
-recalled; it forces the shoe off rather than asking how the feet feel; and item 1 exists solely to
+recalled; it puts the feet question to him at every bag, where the pacer asks it too; and item 1 exists solely to
 detect the state in which the other seven answers cannot be trusted.
 
 ---

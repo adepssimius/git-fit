@@ -294,9 +294,13 @@ tent or the drop bag if he asks.
 - [ ] **Power bank on him with two charged cells in it** — those are his spares. Loose spares
       are zip-tied; no zip tie means used.
 - [ ] **5 gels** on him when he leaves.
-- [ ] **Feet:** ask if anything is rubbing. Blister kit and spare socks are at both ends.
-- [ ] **Chafing and sore spots:** ask if anything is rubbing or sore — armpits, nipples, waistband,
-      anywhere. If yes, [chafing card](#chafing). Aquaphor is at both ends.
+- [ ] **Feet:** ask about hot spots, blisters or numbness. Shoes come off only if he says so.
+      Blister kit and spare socks are at both ends.
+- [ ] **ITB:** ask if he needs to manage it, and if he wants Tylenol or Voltaren gel. That's the
+      whole question — no talk of stopping over it. See [knees](#knees) and [meds](#meds).
+- [ ] **Chafing:** ask about his armpits first — they're the spot that has chafed (skin on skin,
+      44 and 48 km on 09-12). Then nipples, waistband, anywhere else rubbing or sore. If yes,
+      [chafing card](#chafing). Aquaphor is at both ends.
 - [ ] **Shoes:** ask if he wants to swap shoes.
 - [ ] **Layers — tent only.** If the next lap runs into dark or colder weather, he takes the
       layers for the whole lap now. At DPW there are none: if he's cold, get him moving.
@@ -474,7 +478,8 @@ the next end on the Foursevens.
 ## Lying down — only if nothing else works
 
 **The plan is no sleep.** This is for card item 6 — sleepy or stupid — that doesn't clear after
-caffeine, food and 20 minutes of walking.
+caffeine, food and 20 minutes of walking. The lie-down plan is not on the card (athlete,
+2026-10-14: the card is kept short); it lives here.
 
 **Tell your pacer** the first time you think "I might need to lie down". They wake you.
 
@@ -492,6 +497,11 @@ caffeine, food and 20 minutes of walking.
 
 **BEN MAY NOT DECIDE TO QUIT IN THE TENT.** The bed is the most persuasive thing on the course.
 Walk 20 minutes first.
+
+**History — what the card no longer carries (athlete, 2026-10-14):** the lap number (he forgets
+it; the watch and pacer know), "I might need to lie down" and this plan, shoes off at every bag
+(the pacer asks about feet), and any last-lap rule for the ITB (the pacer only asks if he needs to
+manage it). Item 2 is the pace needed for 100km and 100mi against the 3:00pm Sunday cutoff.
 
 ---
 
@@ -529,15 +539,15 @@ handoff. This is the part that doesn't change.
 | Watch for | Why |
 |---|---|
 | Slurring, tripping, missed turns, lost minutes | He can't hear his own speech go |
-| A limp — blister, left knee | Obvious from behind, invisible from inside |
+| A limp — blister, ITB | Obvious from behind, invisible from inside |
 | Hasn't eaten in 40 minutes, or it didn't stay down | First thing to slip when he's working |
 | Shivering, or hands that can't work tape | Layer on before he needs it |
 | "I might need to lie down" | Plan the lie-down for the tent: caffeine first, 15-20 min, you wake him. See [lying down](#lie-down) |
 
 **Two rules he will get backwards:**
 
-- **Stiff after standing up is a phase.** It has cleared in about 20 minutes every time. Don't
-  help him decide anything inside those 20 minutes.
+- **Stiff after sitting is normal.** It has eased within about 20 minutes of moving every time.
+  Don't help him decide to quit while it lasts.
 - **BEN MAY NOT DECIDE TO QUIT AT A STOP.** Get him out and moving for 20 minutes first.
 
 **Don't pull him faster than ZoneSense Zone 1.** Fresh legs feel easy next to a man 90 km in.
