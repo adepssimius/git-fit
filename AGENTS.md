@@ -89,7 +89,7 @@ session file for each lap sim says to time them with a watch. **If he is over bu
 that is one line and it is time-sensitive.**
 
 **And the card governs at the bag, not the brief.** From lap 4 onward the decision card in
-`races/2026-10-17-ghost-train.md` is the instrument, and it is deliberately something he reads
+`races/2026-10-17-ghost-train-card.md` is the instrument, and it is deliberately something he reads
 rather than something a session judges for him. **Never substitute a stop brief for the card** —
 list the actions and let the card do the continue/stop call.
 
