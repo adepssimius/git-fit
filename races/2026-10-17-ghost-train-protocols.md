@@ -519,6 +519,8 @@ Start with the [gut stall steps](#gut). This card is for when they aren't workin
 
 ## Pacers — what to watch for
 
+**Race tracking (live):** <https://runsignup.com/Race/FindARunner/?raceId=216765>
+
 Adam (laps 1-4), Amy (lap 5), Josh (lap 6 and the last 10 mi). Ben writes you a live brief at the
 handoff. This is the part that doesn't change.
 
