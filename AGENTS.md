@@ -24,6 +24,8 @@ Committing at the end of every turn closes it.
   an imposition on him.
 - **When an edit leaves the watch stale, say so in one line** — he needs to know the guide no
   longer matches the file, especially before a session. Tell him; do not fix it unilaterally.
+  **Training sessions only (2026-10-14).** Race files (`races/2026-10-17-ghost-train/`) have no
+  guide and he does not want one; say nothing about staleness there unless he asks for one.
 - Running `scripts/verify_plan.py` is fine and expected — it only reads.
 - A stop hook (`~/.claude/stop-hook-git-check.sh`, global to all his repos) will complain about
   uncommitted changes at the end of such a turn. **That is the expected state here, not a
