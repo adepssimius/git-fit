@@ -125,6 +125,8 @@ Blister kit:
       so no sunscreen (athlete, 2026-10-14)
 - [ ] Spare collapsible cup
 - [ ] Toothbrush and toothpaste
+- [ ] Blood pressure cuff — Amy's, so she can assess him (athlete, 2026-10-14)
+- [ ] KardiaMobile 6L — same, for Amy
 - [ ] Lip balm
 - [ ] THE CARD, printed
 - [ ] Protocol cards, printed
