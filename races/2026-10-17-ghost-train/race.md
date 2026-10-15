@@ -273,7 +273,8 @@ ends.
 | **Power** | **2 spare 18650 cells, carried in the power bank** after dark (athlete, 2026-10-05), restocked to two at every bag pass |
 | **Instruments** | Watch + **chest strap** |
 | **Personal** | Phone, headphones. **Signal throughout the course** — the phone is the nap-notice line and the only way to call for help after a fall, alone, at 04:00. That makes its battery load-bearing, which is what the power bank is for |
-| **Warm layer** | **UNRESOLVED — see open items** |
+| **Warm layer** | 120 GSM Alpha Direct hoodie — decided 2026-09-08, see § The warm layer |
+| **Night, below 0 °C (added 2026-10-14)** | **La Sportiva running vest worn over the Naked Running Band after dark**, carrying the **down jacket** and an **emergency blanket** in case of injury. The band stays on |
 
 The second flask earns its ~35g three ways: **sodium at the right dilution, sipped instead of slugged**,
 backup for a split flask or failed bite valve, and — the one that matters — **broth**. A cup means
@@ -319,7 +320,7 @@ stop and a five-minute one, repeated across the night.
   all the time: its two cells are his spare headlamp cells** (athlete, 2026-10-05)
 - **Night clothing**: 120 GSM Alpha Direct hoodie, merino shirt over it, fleece gloves, Burton
   headband. **No Rab** (athlete, 2026-10-04). **Black Diamond overmitts** over the fleece gloves (athlete, 2026-10-05). **Emergency layers: down
-  jacket and Arc'teryx Beta SL** (athlete, 2026-10-05) — put on and keep moving; lying down ends the race — available from lap 3 onward. See § The full night system
+  jacket and Arc'teryx Beta SL** (athlete, 2026-10-05) — put on and keep moving; lying down ends the race — available from lap 3 onward. **AMENDED 2026-10-14 (athlete): at night the down jacket goes with him** in a running vest, with an emergency blanket, because it is going below 0 °C and an injured runner cannot walk back to the tent. The Beta SL stays at the tent. See § The full night system
 
 Physical packing happens race week — `endurance/2026-10-16-pre-race-shakeout.md`. The tick-off list is
 `races/2026-10-17-ghost-train/packing.md`.
