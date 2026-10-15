@@ -77,8 +77,8 @@ The course gives **aid every ~6km and a drop bag every ~12.1km** (`races/2026-10
 
 | stop | what belongs in the brief |
 |---|---|
-| **aid station** (mid-out 3.75mi, mid-back 11.25mi) | fluid, real food off the table, candy/soda/Tailwind. Consumables only — no bag access |
-| **drop bag** (start/finish 0/15mi, 7.5mi turnaround) | everything above, plus socks, shoes, blister kit, cell restock, layers, gels, the card, warm savoury food |
+| **aid station** (mid-out 3.75mi, mid-back 11.25mi) | fluid, real food off the table, warm savoury food, candy/soda/Tailwind. Consumables only — no bag access |
+| **drop bag** (start/finish 0/15mi, 7.5mi turnaround) | everything above, plus socks, shoes, blister kit, cell restock, layers, gels, the card. Warm savoury food is aid-station only, never in his bags |
 
 **Build the list from what is actually live at that moment**, not from the full bag manifest — a
 cell swap only if he is near the step-down, socks only if he reported a hot spot, a layer only if
