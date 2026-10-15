@@ -29,7 +29,8 @@ Tick it off race week. Where things came from and why: `races/2026-10-17-ghost-t
 - [ ] Balega Hidden Comfort Quarter socks
 - [ ] Singlet
 - [ ] Janji 2-in-1 shorts
-- [ ] Naked Running Band
+- [ ] Naked Running Band — carries the bib
+- [ ] Race bib (on the band)
 - [ ] Sportiva 700 ml soft flask — water
 - [ ] Sportiva 700 ml soft flask — empty
 - [ ] Collapsible cups (2)
@@ -39,6 +40,8 @@ Tick it off race week. Where things came from and why: `races/2026-10-17-ghost-t
 - [ ] Polar H10 (HR strap) — ZoneSense needs it
 - [ ] Phone
 - [ ] Headphones
+- [ ] Emergency TP, in the band
+- [ ] Emergency contact card, on you
 - [ ] Aquaphor between the toes
 
 ## DPW drop bag (7.5 mi turnaround)
@@ -86,7 +89,8 @@ Blister kit:
 - [ ] Canopy
 - [ ] Canopy walls
 - [ ] Canopy weight jugs
-- [ ] Stakes
+- [ ] Stakes — **option not picked yet**
+- [ ] Hammer, for the stakes
 - [ ] Cots (2)
 - [ ] Mini folding table
 - [ ] Kelty collapsible love seat
@@ -120,6 +124,8 @@ Blister kit:
 - [ ] Patagonia sun hoodie — mid-day sun patches only; the course is otherwise fully shaded,
       so no sunscreen (athlete, 2026-10-14)
 - [ ] Spare collapsible cup
+- [ ] Toothbrush and toothpaste
+- [ ] Lip balm
 - [ ] THE CARD, printed
 - [ ] Protocol cards, printed
 - [ ] Fluid tally card
@@ -163,7 +169,7 @@ Blister kit:
 - [ ] Emergency blanket — carried in the vest at night
 - [ ] HotHands hand warmer (1 pair) — into the vest when it goes on
 - [ ] Down jacket (emergency) — **carried in the vest at night** in case of injury; below 0 °C overnight
-- [ ] Arc'teryx Beta SL (emergency)
+- [ ] Arc'teryx Beta SL (emergency) — waterproof, so it is also the rain shell
 - [ ] **Tights — IN**, 1 pair (athlete, 2026-10-14). 1 more pair in the DPW bag — 2 owned
 - [ ] **Ear muffs — IN.** Owned, athlete 2026-10-11. No longer a decision
 
