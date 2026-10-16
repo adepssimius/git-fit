@@ -18,6 +18,7 @@ Tick it off race week. Where things came from and why: `races/2026-10-17-ghost-t
 - [ ] Nitecore NU25s charged
 - ~~Pre-tape big-toe margins and 2nd toes~~ — **not doing it** (athlete, 2026-10-14): it takes
   volume out of the footbox. Toes start bare; tape only when a hot spot shows
+- [ ] Fexofenadine: take one race morning, before the start (athlete, 2026-10-16)
 - [ ] Packets checked: top-up packets are **regular** Mortal, not SALTY
 - [ ] Torbot hexane decanted into the DPW dropper bottle
 - [ ] Torbot hexane decanted into the tent dropper bottle
@@ -42,6 +43,13 @@ Tick it off race week. Where things came from and why: `races/2026-10-17-ghost-t
 - [ ] Headphones
 - [ ] Emergency TP, in the band
 - [ ] Emergency contact card, on you
+- [ ] Meds in one tiny plastic bag, in the band (athlete, 2026-10-16):
+  - Zofran: 2 half-pills of 4 mg = 4 mg total (small white, "9" showing on each half)
+  - 12-hour Sudafed × 2 (long white, marked 204) — for a head cold coming on (athlete, 2026-10-16)
+  - Tylenol 500 mg × 2 (white, marked Tylenol 500)
+  - Loperamide × 2, in labelled blister packs (athlete, 2026-10-16)
+  - Pepcid AC × 1, individually wrapped
+  - Throat lozenges × 2, in a labelled blister pack — each 7.5 mg benzocaine + 5 mg dextromethorphan HBr (athlete, 2026-10-16)
 - [ ] Aquaphor between the toes
 
 ## DPW drop bag (7.5 mi turnaround)
@@ -116,6 +124,7 @@ Blister kit:
 - [ ] Voltaren gel
 - [ ] Zofran
 - [ ] Pepcid AC Maximum Strength
+- [ ] Fexofenadine — lasts 24h, so not carried on the course (athlete, 2026-10-16)
 - [ ] Nipple shields (2 pairs) — Rock Tape, homemade
 - [ ] White Monster (1) — caffeine, athlete 2026-10-14
 - [ ] Instant coffee packets (8) — 2 per dose, cold water
