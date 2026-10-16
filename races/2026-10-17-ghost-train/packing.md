@@ -15,7 +15,7 @@ Tick it off race week. Where things came from and why: `races/2026-10-17-ghost-t
 - [x] **Zip tie on every charged cell.** No zip tie = used. It slides off the end, no
       cutting — only when the cell goes in a light or the bank
       *(zip ties arrived, athlete, 2026-10-14 — still to be put on the cells)*
-- [ ] Nitecore NU25s charged
+- [ ] Nitecore NU21s (2) charged — the NU25s go to Amy
 - ~~Pre-tape big-toe margins and 2nd toes~~ — **not doing it** (athlete, 2026-10-14): it takes
   volume out of the footbox. Toes start bare; tape only when a hot spot shows
 - [ ] Fexofenadine: take one race morning, before the start (athlete, 2026-10-16)
@@ -30,6 +30,7 @@ Tick it off race week. Where things came from and why: `races/2026-10-17-ghost-t
 - [ ] Balega Hidden Comfort Quarter socks
 - [ ] Singlet
 - [ ] Janji 2-in-1 shorts
+- [ ] LOTR One Ring headband
 - [ ] Naked Running Band — carries the bib
 - [ ] Race bib (on the band)
 - [ ] Sportiva 700 ml soft flask — water
@@ -57,7 +58,8 @@ Tick it off race week. Where things came from and why: `races/2026-10-17-ghost-t
 - [ ] Altra Lone Peak 9, size 9.5 — grey pair
 - [ ] Balega Hidden Comfort Quarter socks (2 pairs)
 - [ ] Tights (1 pair)
-- [ ] 120 GSM Alpha Direct hoodie (second one — the other is in the tent)
+- [ ] 120 GSM Alpha Direct hoodie
+- [ ] Nitecore NU21 (backup light) — replaces an NU25
 - [ ] HotHands hand warmers (2 pairs)
 - [ ] Gels (25)
 - [ ] GU caffeinated gels (2) — on top of the 25
@@ -161,23 +163,24 @@ Blister kit:
 - [ ] Zebralight H600Fc Mk IV (chest) — fresh cell at dusk
 - [ ] Convoy S3 (handheld) — fresh cell at dusk
 - [ ] Foursevens (emergency, carried)
-- [ ] Nitecore NU25 × 2 (backup)
-- [ ] Yanii PD2 power bank (takes 2 × 18650)
-- [ ] 0.5 m right-angle USB-C cables
+- [ ] Nitecore NU21 (backup), in the cold bin — the NU25s go to Amy
+- [ ] Yanii PD2 power bank (takes 2 × 18650) — stays in the tent, exact spot TBD. He takes it when the phone is low (athlete, 2026-10-16)
+- [ ] 0.5 m right-angle USB-C cables — with the power bank
 
 ### Night clothes — only here
 
-- [ ] 120 GSM Alpha Direct hoodie
-- [ ] Merino shirt, over the hoodie
+- [ ] 60 GSM Alpha Direct hoodie (the 120 GSM is in the DPW bag; the second 120 GSM goes to Amy)
+- [ ] Merino long sleeve, over the hoodie
 - [ ] Fleece gloves
 - [ ] Spare fleece gloves
+- [ ] Thick Thinsulate gloves — added, thicker than the fleece
+- [ ] Darn Tough insulated socks (2 pairs) — added late for the cold; tent only. Run in before without issue
 - [ ] Black Diamond overmitts
-- [ ] HotHands hand warmers (4 pairs here) — 7 owned: 4 tent, 2 DPW bag, 1 in the vest (athlete, 2026-10-14)
+- [ ] HotHands hand warmers (6 pairs here) — includes spares for pacers (athlete, 2026-10-16). DPW bag has 2, 1 goes in the vest
 - [ ] Burton headband
-- [ ] LOTR One Ring headband
-- [ ] Beanie (backup)
+- [ ] North Face beanie (backup)
 - [ ] La Sportiva running vest — worn at night **in addition to** the Naked Running Band (athlete, 2026-10-14)
-- [ ] Emergency blanket — carried in the vest at night
+- [ ] Emergency blankets (3) — 1 carried in the vest at night, 2 spare in the bin
 - [ ] HotHands hand warmer (1 pair) — into the vest when it goes on
 - [ ] Down jacket (emergency) — **carried in the vest at night** in case of injury; below 0 °C overnight
 - [ ] Arc'teryx Beta SL (emergency) — waterproof, so it is also the rain shell
