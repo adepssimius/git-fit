@@ -20,8 +20,8 @@ Tick it off race week. Where things came from and why: `races/2026-10-17-ghost-t
   volume out of the footbox. Toes start bare; tape only when a hot spot shows
 - [ ] Fexofenadine: take one race morning, before the start (athlete, 2026-10-16)
 - [ ] Packets checked: top-up packets are **regular** Mortal, not SALTY
-- [ ] Torbot hexane decanted into the DPW dropper bottle
-- [ ] Torbot hexane decanted into the tent dropper bottle
+- [x] Torbot hexane decanted into the DPW dropper bottle *(athlete, 2026-10-16)*
+- [x] Torbot hexane decanted into the tent dropper bottle *(athlete, 2026-10-16)*
 - [ ] Nipple shields made from Rock Tape — 4 pairs, not made yet (athlete, 2026-10-14)
 
 ## On you at the start
@@ -92,20 +92,20 @@ Blister kit:
 
 ## Base camp
 
-*(athlete, 2026-10-14 — first draft, he said it is not done yet)*
+*(athlete, 2026-10-14 — first draft. 2026-10-16: tent set up on site with cots, love seat and table; bin there with the pads and bags)*
 
-- [ ] Canopy
-- [ ] Canopy walls
-- [ ] Canopy weight jugs
-- [ ] Stakes — **option not picked yet**
-- [ ] Hammer, for the stakes
-- [ ] Cots (2)
-- [ ] Mini folding table
-- [ ] Kelty collapsible love seat
-- [ ] Inflatable sleeping pads (2)
-- [ ] Sleeping bags (2)
+- [x] Canopy — on site
+- [x] Canopy walls — on site
+- [x] Canopy weight jugs — on site
+- [x] Stakes — handled (athlete, 2026-10-16)
+- [x] Hammer, for the stakes — handled
+- [x] Cots (2) — on site
+- [x] Mini folding table — on site
+- [x] Kelty collapsible love seat — on site
+- [x] Inflatable sleeping pads (2) — on site
+- [x] Sleeping bags (2) — on site
 - [ ] Lantern (own battery)
-- [ ] Black/yellow bin — holds the loose items
+- [x] Black/yellow bin — holds the loose items — on site
 - [ ] Trash bag
 
 ## Tent at start/finish
@@ -195,9 +195,7 @@ Blister kit:
 - [ ] **EMT scissors × 2** — one per blister kit, replaces the small scissors
 - [ ] **Zofran — confirm you have enough for both bags** (athlete, 2026-10-14). Tylenol,
       Voltaren and Pepcid are covered
-- [ ] **Canopy stakes** — need to identify an option; ground at the tent not known (athlete, 2026-10-14)
-- [ ] **White Monster × 2** — one for the tent, one for the DPW bag. Not bought yet
-      (athlete, 2026-10-14)
+- [x] **White Monster × 2** — one for the tent, one for the DPW bag. Covered (athlete, 2026-10-16)
 
 Bought since this list was written: **Pepcid AC Maximum Strength** (famotidine 20 mg), athlete
 2026-10-11 — now a tent and DPW packing item above, not a shopping item.
