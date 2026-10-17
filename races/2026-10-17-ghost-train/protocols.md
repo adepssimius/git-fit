@@ -4,6 +4,21 @@ Race-day steps only. The reasons are in `races/2026-10-17-ghost-train/race.md`.
 Printed copies at both ends: in the tent at start/finish and in the DPW drop bag. There is cell
 service on the whole course, so Adam, Amy and Josh can open the links any time.
 
+**Lap schedule if laps go 3h45, 3h45, 4h, 4h, 4h30, 4h30.** A guide to where everyone is, not a pace target.
+Lap 7 is the last 10 miles, the Ghost Train convention. Start is Saturday 09:00.
+
+| Lap | Pacer | Cum km | Time | Starts | Ends |
+|---|---|---|---|---|---|
+| 1 | Adam | 24.1 | 3h45 | Sat 09:00 | Sat 12:45 |
+| 2 | Adam | 48.2 | 3h45 | Sat 12:45 | Sat 16:30 |
+| 3 | Adam | 72.3 | 4h00 | Sat 16:30 | Sat 20:30 |
+| 4 | Adam | 96.4 | 4h00 | Sat 20:30 | Sun 00:30 |
+| 5 | Amy | 120.5 | 4h30 | Sun 00:30 | Sun 05:00 |
+| 6 | Josh | 144.6 | 4h30 | Sun 05:00 | Sun 09:30 |
+| 7 (last 10 mi) | Josh | 160.9 | ~3h03 | Sun 09:30 | Sun ~12:33 |
+
+Cutoff is Sunday 15:00.
+
 - [Gut — fueling plan and troubleshooting](#gut)
 - [Hydration and sodium](#hydration)
 - [Meds](#meds)
