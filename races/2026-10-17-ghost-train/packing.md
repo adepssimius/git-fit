@@ -52,7 +52,7 @@ Tick it off race week. Where things came from and why: `races/2026-10-17-ghost-t
   - Loperamide × 2, in labelled blister packs (athlete, 2026-10-16)
   - Pepcid AC × 1, individually wrapped
   - Throat lozenges × 2, in a labelled blister pack — each 7.5 mg benzocaine + 5 mg dextromethorphan HBr (athlete, 2026-10-16)
-- [ ] Aquaphor between the toes
+- [ ] Aquaphor/vaseline between the toes
 
 ## DPW drop bag (7.5 mi turnaround)
 
@@ -89,7 +89,7 @@ Blister kit:
 - [ ] 25G sterile needles (4-5)
 - [ ] EMT scissors
 - [ ] Nitrile gloves
-- [ ] Aquaphor
+- [ ] Aquaphor/vaseline
 - [ ] Ziplock bag
 
 ## Base camp
@@ -158,7 +158,7 @@ Blister kit (in the bin — packed as one item):
 - [ ] 25G sterile needles (4-5)
 - [ ] EMT scissors
 - [ ] Nitrile gloves
-- [ ] Aquaphor
+- [ ] Aquaphor/vaseline
 - [ ] Ziplock bag
 
 ### Lights — on before dusk
@@ -196,7 +196,7 @@ Blister kit (in the bin — packed as one item):
       (athlete, 2026-10-14). His normal morning is 2 packets at ~07:00 and 2 more at ~09:00,
       so **one dose = 2 packets**, mixed in cold water. Also a few GU gels, soda off the aid
       table, and the White Monster in each bag above
-- [x] **Aquaphor tubes** — handled (athlete, 2026-10-16). Also does the chafing job; no Body Glide
+- [x] **Aquaphor/vaseline tubes** — handled (athlete, 2026-10-16). Also does the chafing job; no Body Glide
 - [x] **EMT scissors × 2** — handled (athlete, 2026-10-16)
 - [x] **White Monster × 2** — one for the tent, one for the DPW bag. Covered (athlete, 2026-10-16)
 

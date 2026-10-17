@@ -288,7 +288,7 @@ stop and a five-minute one, repeated across the night.
 - **Gels** — the restock
 - **18650 cells** — the restock pile
 - **Blister kit** — same contents as the tent's, listed below
-- **Aquaphor** — to re-lube after taping
+- **Aquaphor/vaseline** — to re-lube after taping
 - **Nipple shields**, 2 pairs (athlete, 2026-10-05)
 - **Sodium top-up: SaltStick FastChews, 450 mg (9) per top-up** when the pacer's sodium check says so. **Changed 2026-10-16: he has only SALTY Mortal packets (920 mg), no regular.** SALTY is kept for the pre-start dose and hot-afternoon cramps
 - **Meds** — Tylenol, Voltaren, Pepcid. **NO ibuprofen**. Zofran is on him only (below)
@@ -301,7 +301,7 @@ stop and a five-minute one, repeated across the night.
 - **Blister kit** — 1 roll Leukotape P, alcohol wipes, Skin-Tac, 2 non-adherent pads, 4-5 × 25G
   sterile beveled needles, small scissors, nitrile gloves, ziplock. Full protocol in
   `athlete/profile.md` § Blister kit
-- **Aquaphor** · **2 pairs nipple shields** · **1 spare collapsible cup** · **1 Nitecore NU25**
+- **Aquaphor/vaseline** · **2 pairs nipple shields** · **1 spare collapsible cup** · **1 Nitecore NU25**
 - **Beanie** (athlete, 2026-09-08 — staged as backup, not expected to be needed) · **spare fleece
   gloves**
 - **18650 cells** — the restock pile
@@ -744,7 +744,7 @@ fallback when gels stop being palatable in the back half, and it is stocked at e
 | **Start in** | **Altra Mont Blanc Carbon, size 10** |
 | **Change to** | **Altra Lone Peak 9, 9.5 — at either end, whenever he feels he needs it** (athlete, 2026-10-04). The hot spot below arrived at ~46 km, so expect that to be around the end of lap 2 |
 | **Socks** | Balega Hidden Comfort Quarter, changed at any bag where feet feel off or wet |
-| **Lube** | Aquaphor between the toes |
+| **Lube** | Aquaphor/vaseline between the toes |
 
 **This combination carried 52.7km across 09-06 and 09-07 with zero hot spots.** That is the
 strongest footwear evidence in the block and it is why the Mont Blanc starts.
@@ -786,7 +786,7 @@ read as one doing worse. Expect it; do not act on it.
 Aggressive work stops **~10-03**; light maintenance can continue after.
 
 **Pre-taping the known sites before the start is the better move if it survives testing** — clean
-dry skin at home beats degreasing an Aquaphor-lubed toe in a parking lot at 03:00. **It is in
+dry skin at home beats degreasing an Aquaphor/vaseline-lubed toe in a parking lot at 03:00. **It is in
 tension with this shoe's failure mode**, which was compression, so **09-12 is the test slot**. If
 it fails there, the mid-race kit stays a surprises-only kit.
 

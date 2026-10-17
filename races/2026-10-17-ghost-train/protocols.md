@@ -194,12 +194,12 @@ Kit is in the tent at start/finish and in the DPW drop bag. Fix it at whichever 
 **Taping, every time:**
 
 1. Nitrile gloves on.
-2. Dry gauze: wipe off as much Aquaphor as you can.
+2. Dry gauze: wipe off as much Aquaphor/vaseline as you can.
 3. A few drops of hexane on fresh gauze, wipe the spot. Let it dry completely.
    Never on broken skin — use an alcohol pad there instead.
 4. Skin-Tac.
 5. Leukotape, no wrinkles.
-6. Re-lube: Aquaphor around the tape and between the toes, not on the tape.
+6. Re-lube: Aquaphor/vaseline around the tape and between the toes, not on the tape.
 7. Dry sock if the old one is wet.
 8. Gloves, gauze and wipes into the ziplock. Cap the hexane bottle tight.
 
@@ -302,7 +302,7 @@ tent or the drop bag if he asks.
       whole question — no talk of stopping over it. See [knees](#knees) and [meds](#meds).
 - [ ] **Chafing:** ask about his armpits first — they're the spot that has chafed (skin on skin,
       44 and 48 km on 09-12). Then nipples, waistband, anywhere else rubbing or sore. If yes,
-      [chafing card](#chafing). Aquaphor is at both ends.
+      [chafing card](#chafing). Aquaphor/vaseline is at both ends.
 - [ ] **Shoes:** ask if he wants to swap shoes.
 - [ ] **Layers — tent only.** If the next lap runs into dark or colder weather, he takes the
       layers for the whole lap now. At DPW there are none: if he's cold, get him moving.
@@ -385,17 +385,17 @@ Your armpits chafed at 44 and 48 km on 09-12, skin on skin. Nothing else has.
 
 **Before the start:**
 
-1. Aquaphor in both armpits.
+1. Aquaphor/vaseline in both armpits.
 2. Nipple shields on.
 
-**Every pass through start/finish:** re-apply Aquaphor to the armpits.
+**Every pass through start/finish:** re-apply Aquaphor/vaseline to the armpits.
 
 **If something starts to rub:**
 
-1. Aquaphor on it. There is Aquaphor at both ends.
+1. Aquaphor/vaseline on it. There is Aquaphor/vaseline at both ends.
 2. Shield peeling? Replace it. Spares are in the tent and at DPW.
-3. Raw already? Leukotape over it, Aquaphor around the tape.
-4. Wet skin chafes faster. Dry it with gauze before the Aquaphor.
+3. Raw already? Leukotape over it, Aquaphor/vaseline around the tape.
+4. Wet skin chafes faster. Dry it with gauze before the Aquaphor/vaseline.
 
 ---
 
