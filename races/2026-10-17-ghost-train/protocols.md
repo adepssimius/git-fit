@@ -83,10 +83,12 @@ Do not switch flavours to fix nausea. It is the stomach, not the taste.
   - Before the start: one SALTY packet in the second flask, finished before 09:00.
   - **Baseline: ~200 ml of Tailwind at every aid station.** Four a lap is roughly 340-680 mg,
     which covers the target on its own.
-  - **Top-up: one regular Mortal packet (~450 mg)** when the check below says so. Mix it into the
-    second flask, filled with water, and sip it through the next leg. Never in 250 ml — too salty
-    to empty.
-  - Other ~450 mg options: 1½ Nuun Sport, or 9 SaltStick FastChews. Gels carry almost none.
+  - **Top-up: 450 mg sodium** when the check below says so — 9 SaltStick FastChews at 50 mg each,
+    chewed over the next leg, no water needed. **Changed 2026-10-16: you have no regular Mortal
+    packets, only SALTY.** A SALTY packet is 920 mg, double a top-up, so it is for a hot afternoon
+    with cramps or salt crust only, in the second flask filled with water. Never in 250 ml — too
+    salty to empty.
+  - Other ~450 mg options: 1½ Nuun Sport. Gels carry almost none.
     Full list: `rules/products.md`.
 
 <a id="sodium-check"></a>
@@ -150,7 +152,7 @@ Clear urine + feeling awful + tight hands = stop drinking. Drinking more makes i
 
 ## Meds
 
-**In the tent at start/finish and in the DPW drop bag:**
+**In the tent at start/finish and in the DPW drop bag** — except Zofran. **Zofran is not in either: he carries all he has, 4 mg (two half-pills), in the pouch on his band** (athlete, 2026-10-16):
 
 | Take | For | Rule | Why |
 |---|---|---|---|
@@ -278,8 +280,8 @@ tent or the drop bag if he asks.
 - [ ] **Sodium check — too much water first.** Urine clear and frequent, plus puffy hands,
       headache, nausea or bloating? Then no water until he's peeing less, and salt without water:
       salty food off the table or SaltStick FastChews. **No packet in the flask.**
-- [ ] **Sodium check — otherwise,** one regular Mortal packet in his second flask, filled with
-      water, if any of these is true:
+- [ ] **Sodium check — otherwise,** 450 mg sodium (9 FastChews) over the next leg, if any of
+      these is true:
   - [ ] He skipped the Tailwind at both aid stations since the last end.
   - [ ] He's cramping. Pickle juice too.
   - [ ] He's craving salt.

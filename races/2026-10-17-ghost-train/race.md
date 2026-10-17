@@ -290,8 +290,8 @@ stop and a five-minute one, repeated across the night.
 - **Blister kit** — same contents as the tent's, listed below
 - **Aquaphor** — to re-lube after taping
 - **Nipple shields**, 2 pairs (athlete, 2026-10-05)
-- **Mortal Hydration packets, regular** — top-ups when the pacer's sodium check says so
-- **Meds** — Tylenol, Voltaren, Zofran, Pepcid. **NO ibuprofen**
+- **Sodium top-up: SaltStick FastChews, 450 mg (9) per top-up** when the pacer's sodium check says so. **Changed 2026-10-16: he has only SALTY Mortal packets (920 mg), no regular.** SALTY is kept for the pre-start dose and hot-afternoon cramps
+- **Meds** — Tylenol, Voltaren, Pepcid. **NO ibuprofen**. Zofran is on him only (below)
 - **The card**
 
 ### Tent at start/finish — everything, including
@@ -306,8 +306,8 @@ stop and a five-minute one, repeated across the night.
   gloves**
 - **18650 cells** — the restock pile
 - **Gels**
-- **Meds** — Tylenol, Voltaren, Zofran, Pepcid (added 2026-10-05). **NO ibuprofen** (athlete, 2026-10-04)
-- **Mortal Hydration packets, regular** — top-ups when the pacer's sodium check says so
+- **Meds** — Tylenol, Voltaren, Pepcid (added 2026-10-05). **NO ibuprofen** (athlete, 2026-10-04). **Zofran is not in the tent or the drop bag** — he carries all he has, 4 mg, in the pouch on his band (athlete, 2026-10-16)
+- **Sodium top-up: SaltStick FastChews, 450 mg (9) per top-up** when the pacer's sodium check says so. **Changed 2026-10-16: he has only SALTY Mortal packets (920 mg), no regular.** SALTY is kept for the pre-start dose and hot-afternoon cramps
 - **The card**
 
 ### Start/finish tent only

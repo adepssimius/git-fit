@@ -19,10 +19,11 @@ Tick it off race week. Where things came from and why: `races/2026-10-17-ghost-t
 - ~~Pre-tape big-toe margins and 2nd toes~~ — **not doing it** (athlete, 2026-10-14): it takes
   volume out of the footbox. Toes start bare; tape only when a hot spot shows
 - [ ] Fexofenadine: take one race morning, before the start (athlete, 2026-10-16)
-- [ ] Packets checked: top-up packets are **regular** Mortal, not SALTY
+- [x] Packets checked: **all his Mortal packets are SALTY (920 mg). He has no regular (450 mg).**
+      *(athlete, 2026-10-16)* The top-up rule in `protocols.md` is written for regular — see below
 - [x] Torbot hexane decanted into the DPW dropper bottle *(athlete, 2026-10-16)*
 - [x] Torbot hexane decanted into the tent dropper bottle *(athlete, 2026-10-16)*
-- [ ] Nipple shields made from Rock Tape — 4 pairs, not made yet (athlete, 2026-10-14)
+- [ ] Nipple shields made from Rock Tape — 4 pairs. 1 pair made (in the tent bin); 3 still to make from the Rock Tape roll
 
 ## On you at the start
 
@@ -45,7 +46,7 @@ Tick it off race week. Where things came from and why: `races/2026-10-17-ghost-t
 - [ ] Emergency TP, in the band
 - [ ] Emergency contact card, on you
 - [ ] Meds in one tiny plastic bag, in the band (athlete, 2026-10-16):
-  - Zofran: 2 half-pills of 4 mg = 4 mg total (small white, "9" showing on each half)
+  - Zofran: 2 half-pills of 4 mg = 4 mg total (small white, "9" showing on each half). **All the Zofran he has — none in the tent or the DPW bag** (athlete, 2026-10-16)
   - 12-hour Sudafed × 2 (long white, marked 204) — for a head cold coming on (athlete, 2026-10-16)
   - Tylenol 500 mg × 2 (white, marked Tylenol 500)
   - Loperamide × 2, in labelled blister packs (athlete, 2026-10-16)
@@ -64,18 +65,17 @@ Tick it off race week. Where things came from and why: `races/2026-10-17-ghost-t
 - [ ] Gels (25)
 - [ ] GU caffeinated gels (2) — on top of the 25
 - [ ] 18650 cells (8)
-- [ ] Mortal regular packets (4)
-- [ ] SaltStick FastChews (one 10-count packet)
+- [ ] Mortal SALTY packets — no regular on hand; count not decided (athlete, 2026-10-16)
+- [ ] SaltStick FastChews (3 ten-count packets) — one top-up is 9 chews, ~450 mg
 - [ ] Tylenol
 - [ ] Voltaren gel
-- [ ] Zofran
 - [ ] Pepcid AC Maximum Strength
 - [ ] THE CARD, printed
 - [ ] Protocol cards, printed
 - [ ] Fluid tally card
 - [ ] Pencil
 - [ ] Nipple shields (2 pairs) — Rock Tape, homemade
-- [ ] White Monster (1) — caffeine, athlete 2026-10-14
+- [ ] White Monster (1) — caffeine, athlete 2026-10-14. **Currently in the tent; move it to this bag**
 - [ ] Instant coffee packets (8) — 2 per dose, cold water
 
 Blister kit:
@@ -114,37 +114,40 @@ Blister kit:
 
 ### Race kit
 
-- [ ] Altra Lone Peak 9, size 9.5 — blue pair (a third pair stays at home)
-- [ ] Balega Hidden Comfort Quarter socks (2 pairs)
-- [ ] Gels (25)
-- [ ] GU caffeinated gels (2) — on top of the 25
-- [ ] 18650 cells (8)
-- [ ] Mortal regular packets (4)
-- [ ] SaltStick FastChews (one 10-count packet)
-- [ ] Mortal SALTY packet (1) — pre-start
-- [ ] Tylenol
-- [ ] Voltaren gel
-- [ ] Zofran
-- [ ] Pepcid AC Maximum Strength
-- [ ] Fexofenadine — lasts 24h, so not carried on the course (athlete, 2026-10-16)
-- [ ] Nipple shields (2 pairs) — Rock Tape, homemade
-- [ ] White Monster (1) — caffeine, athlete 2026-10-14
-- [ ] Instant coffee packets (8) — 2 per dose, cold water
-- [ ] Black running shorts — favourite pair, brand unknown
-- [ ] Underwear (2 pairs) — 1 to wear with the black shorts, 1 spare
-- [ ] Patagonia sun hoodie — mid-day sun patches only; the course is otherwise fully shaded,
-      so no sunscreen (athlete, 2026-10-14)
-- [ ] Spare collapsible cup
+*Staged 2026-10-16 in a second black/yellow bin (athlete): gels, SALTY packets, blister kit, spare underwear, sun hoodie, coffee, power bank and cable, spare TPU cup, Voltaren, Cepacol, Tylenol, 3 gym towels, and the cold/night bin packed as listed below.*
+
+- [x] Altra Lone Peak 9, size 9.5 — blue pair (a third pair stays at home) — in bin
+- [x] Balega Hidden Comfort Quarter socks (2 pairs) — in bin
+- [x] Gels (25) — in bin
+- [x] GU caffeinated gels (2) — on top of the 25 — in bin
+- [x] 18650 cells (8) — in bin
+- [x] Mortal SALTY packets — 1 pre-start plus top-ups; no regular on hand; count not decided (athlete, 2026-10-16) — in bin
+- [x] SaltStick FastChews (3 ten-count packets) — one top-up is 9 chews, ~450 mg — in bin
+- [x] Tylenol — in bin
+- [x] Voltaren gel — in bin
+- [x] Pepcid AC Maximum Strength — 2 tablets, in bin
+- [x] Cepacol lozenges (benzocaine + dextromethorphan) — in bin
+- [x] Fexofenadine — lasts 24h, so not carried on the course (athlete, 2026-10-16) — in bin
+- [ ] Nipple shields — 1 pair made and in the bin, plus a whole roll of Rock Tape to make more
+- [x] White Monster (1) — caffeine, athlete 2026-10-14 — in the tent
+- [x] Instant coffee packets (8) — 2 per dose, cold water — in bin
+- [x] Black running shorts — favourite pair, brand unknown — in bin
+- [x] Underwear (2 pairs) — 1 to wear with the black shorts, 1 spare — in bin
+- [x] Patagonia sun hoodie — mid-day sun patches only; the course is otherwise fully shaded,
+      so no sunscreen (athlete, 2026-10-14) — in bin
+- [x] Spare collapsible cup (TPU) — in bin
+- [x] Gym towels (3) — in bin
 - [ ] Toothbrush and toothpaste
-- [ ] Blood pressure cuff — Amy's, so she can assess him (athlete, 2026-10-14)
-- [ ] KardiaMobile 6L — same, for Amy
-- [ ] Lip balm
+- [x] Blood pressure cuff — Amy's, so she can assess him (athlete, 2026-10-14) — in bin
+- [x] KardiaMobile 6L — same, for Amy — in bin
+- [x] Thermometer — in bin (athlete, 2026-10-16)
+- [x] Lip balm — in bin
 - [ ] THE CARD, printed
 - [ ] Protocol cards, printed
 - [ ] Fluid tally card
 - [ ] Pencil
 
-Blister kit:
+Blister kit (in the bin — packed as one item):
 
 - [ ] Leukotape P
 - [ ] Alcohol wipes
@@ -164,8 +167,8 @@ Blister kit:
 - [ ] Convoy S3 (handheld) — fresh cell at dusk
 - [ ] Foursevens (emergency, carried)
 - [ ] Nitecore NU21 (backup), in the cold bin — the NU25s go to Amy
-- [ ] Yanii PD2 power bank (takes 2 × 18650) — stays in the tent, exact spot TBD. He takes it when the phone is low (athlete, 2026-10-16)
-- [ ] 0.5 m right-angle USB-C cables — with the power bank
+- [x] Yanii PD2 power bank (takes 2 × 18650) — in the tent bin; stays in the tent, exact spot TBD. He takes it when the phone is low (athlete, 2026-10-16)
+- [x] 0.5 m right-angle USB-C cables — in the tent bin with the power bank
 
 ### Night clothes — only here
 
@@ -196,8 +199,6 @@ Blister kit:
 - [ ] **Aquaphor tubes** — count not decided (athlete, 2026-10-14). Aquaphor now also does
       the chafing job; no Body Glide
 - [ ] **EMT scissors × 2** — one per blister kit, replaces the small scissors
-- [ ] **Zofran — confirm you have enough for both bags** (athlete, 2026-10-14). Tylenol,
-      Voltaren and Pepcid are covered
 - [x] **White Monster × 2** — one for the tent, one for the DPW bag. Covered (athlete, 2026-10-16)
 
 Bought since this list was written: **Pepcid AC Maximum Strength** (famotidine 20 mg), athlete
