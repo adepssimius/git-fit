@@ -7,15 +7,15 @@ Tick it off race week. Where things came from and why: `races/2026-10-17-ghost-t
 
 ## Before you leave home
 
-- [ ] Watch charged to full Friday night. Don't run with it Friday
-- [ ] Phone charged
-- [ ] Fresh battery in the Polar H10 (HR strap). No spare carried
+- [x] Watch charged to full Friday night. Don't run with it Friday *(athlete, 2026-10-16: charged)*
+- [ ] Phone charged — he says it will be
+- [x] Fresh battery in the Polar H10 (HR strap). No spare carried *(athlete, 2026-10-16)*
 - [x] All 18650 cells charged — lights, restock piles, and the 2 that go in the power bank
       *(athlete, 2026-10-11)*
 - [x] **Zip tie on every charged cell.** No zip tie = used. It slides off the end, no
       cutting — only when the cell goes in a light or the bank
-      *(zip ties arrived, athlete, 2026-10-14 — still to be put on the cells)*
-- [ ] Nitecore NU21s (2) charged — the NU25s go to Amy
+      *(zip ties arrived, athlete, 2026-10-14 — on the cells 2026-10-16)*
+- [x] Nitecore NU21s (2) charged and packed *(athlete, 2026-10-16)* — the NU25s go to Amy
 - ~~Pre-tape big-toe margins and 2nd toes~~ — **not doing it** (athlete, 2026-10-14): it takes
   volume out of the footbox. Toes start bare; tape only when a hot spot shows
 - [ ] Fexofenadine: take one race morning, before the start (athlete, 2026-10-16)
@@ -23,7 +23,7 @@ Tick it off race week. Where things came from and why: `races/2026-10-17-ghost-t
       *(athlete, 2026-10-16)* The top-up rule in `protocols.md` is written for regular — see below
 - [x] Torbot hexane decanted into the DPW dropper bottle *(athlete, 2026-10-16)*
 - [x] Torbot hexane decanted into the tent dropper bottle *(athlete, 2026-10-16)*
-- [ ] Nipple shields made from Rock Tape — 4 pairs. 1 pair made (in the tent bin); 3 still to make from the Rock Tape roll
+- [x] Nipple shields made from Rock Tape — 4 pairs, handled (athlete, 2026-10-16)
 
 ## On you at the start
 
@@ -196,9 +196,8 @@ Blister kit (in the bin — packed as one item):
       (athlete, 2026-10-14). His normal morning is 2 packets at ~07:00 and 2 more at ~09:00,
       so **one dose = 2 packets**, mixed in cold water. Also a few GU gels, soda off the aid
       table, and the White Monster in each bag above
-- [ ] **Aquaphor tubes** — count not decided (athlete, 2026-10-14). Aquaphor now also does
-      the chafing job; no Body Glide
-- [ ] **EMT scissors × 2** — one per blister kit, replaces the small scissors
+- [x] **Aquaphor tubes** — handled (athlete, 2026-10-16). Also does the chafing job; no Body Glide
+- [x] **EMT scissors × 2** — handled (athlete, 2026-10-16)
 - [x] **White Monster × 2** — one for the tent, one for the DPW bag. Covered (athlete, 2026-10-16)
 
 Bought since this list was written: **Pepcid AC Maximum Strength** (famotidine 20 mg), athlete
