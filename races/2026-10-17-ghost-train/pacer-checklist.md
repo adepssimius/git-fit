@@ -5,6 +5,8 @@ tent or the drop bag if he asks.
 
 - [ ] *[not on the card]* **Tell him at 5, 10, 15, etc. minutes.** He needs to know if he's spending too long.
 - [ ] *[not on the card]* **Flask** refilled with water.
+- [ ] *[not on the card]* **Pee:** ask when he last went and what colour. Over 2 hours ago → he drinks a full flask
+      before leaving. Clear and under an hour → skip the extra water.
 - [ ] *[not on the card]* **Sodium check — too much water first.** Urine clear and frequent, plus puffy hands,
       headache, nausea or bloating? Then no water until he's peeing less, and salt without water:
       salty food off the table or SaltStick FastChews. **No packet in the flask.**
@@ -16,8 +18,6 @@ tent or the drop bag if he asks.
   - [ ] Hot afternoon and his sweat is leaving salt crust.
 
   None true → no packet.
-- [ ] *[not on the card]* **Pee:** ask when he last went and what colour. Over 2 hours ago → he drinks a full flask
-      before leaving. Clear and under an hour → skip the extra water.
 - [ ] *[this is the self check card]* **Lap 4 on: read the SELF CHECK CARD out loud with him.**
 - [ ] *[card 2 · PACE]* **Pace:** discuss pace — what's needed to hit 100 miles in 30h, and how the pace of the last lap felt.
 - [ ] *[card 3 · FUEL]* **Solid food** eaten off the aid table. Ask: "have you eaten in the last 40 minutes, and did
