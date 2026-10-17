@@ -27,7 +27,7 @@ tent or the drop bag if he asks.
       Blister kit and spare socks are at both ends.
 - [ ] *[card 4 · FEET]* **Shoes:** ask if he wants to swap shoes.
 - [ ] *[card 5 · ITB]* **ITB:** ask if he needs to manage it, and if he wants Tylenol or Voltaren gel. That's the
-      whole question — no talk of stopping over it. See [knees](protocols.md#knees) and [meds](protocols.md#meds).
+      whole question — no talk of stopping over it. See [knees](protocols.md#knees) (protocols page) and [meds](protocols.md#meds) (protocols page).
 - [ ] *[card 6 · SLEEPY OR STUPID, and card 7 · WARM ENOUGH]* **Watch him while he does all this:** slurring, clumsy hands, shivering, limping, can't keep
       food down. Say what you see.
 - [ ] *[card 7 · WARM ENOUGH]* **Layers — tent only.** If the next lap runs into dark or colder weather, he takes the
@@ -37,8 +37,8 @@ tent or the drop bag if he asks.
       are zip-tied; no zip tie means used.
 - [ ] *[card 9 · CHAFING]* **Chafing:** ask about his armpits first — they're the spot that has chafed (skin on skin,
       44 and 48 km on 09-12). Then nipples, waistband, anywhere else rubbing or sore. If yes,
-      [chafing card](protocols.md#chafing). Aquaphor/vaseline is at both ends.
+      [chafing card](protocols.md#chafing) (protocols page). Aquaphor/vaseline is at both ends.
 - [ ] *[card · TWO RULES]* **Walk him out. BEN MAY NOT DECIDE TO QUIT AT A STOP.** No quit talk until 20 minutes
       down the trail.
 
-The rest of the pacer notes, what to watch for and the protocol cards: [`protocols.md`](protocols.md#pacers).
+The rest of the pacer notes, what to watch for and the protocol cards: [`protocols.md`](protocols.md#pacers) (protocols page).
