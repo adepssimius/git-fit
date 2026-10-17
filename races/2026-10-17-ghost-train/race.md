@@ -29,7 +29,7 @@ Entry confirmed 2026-08-04.
 > also *crew* (bags, car, fetching) or only run, and whether anything else in the uncrewed
 > rebuild changes.
 >
-> **What it most affects is THE CARD, not the logistics.** The stations already made uncrewed
+> **What it most affects is the SELF CHECK CARD, not the logistics.** The stations already made uncrewed
 > cheap; what it cost was *"judgement, not logistics — a second brain at the hour the first one
 > stops working."* **Pacers for the whole race supply exactly that, for the whole race.** The card
 > still gets carried and still gets read out loud — degraded judgement is why it is printed rather
@@ -236,7 +236,7 @@ Saturday.** From lap 4 onward the governing instrument is the card below.
 
 ---
 
-## THE CARD — carry it, do not improvise it
+## SELF CHECK CARD — carry it, do not improvise it
 
 **Print two. One in the tent at start/finish, one in the DPW drop bag.** Replaces the old "evaluate at every crew stop" decision tree,
 which assumed a crew and assumed working judgement. Read it out loud at every drop-bag pass from

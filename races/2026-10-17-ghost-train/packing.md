@@ -70,7 +70,7 @@ Tick it off race week. Where things came from and why: `races/2026-10-17-ghost-t
 - [ ] Tylenol
 - [ ] Voltaren gel
 - [ ] Pepcid AC Maximum Strength
-- [ ] THE CARD, printed
+- [ ] SELF CHECK CARD, printed
 - [ ] Protocol cards, printed
 - [ ] Fluid tally card
 - [ ] Pencil
@@ -142,7 +142,7 @@ Blister kit:
 - [x] KardiaMobile 6L — same, for Amy — in bin
 - [x] Thermometer — in bin (athlete, 2026-10-16)
 - [x] Lip balm — in bin
-- [ ] THE CARD, printed
+- [ ] SELF CHECK CARD, printed
 - [ ] Protocol cards, printed
 - [ ] Fluid tally card
 - [ ] Pencil

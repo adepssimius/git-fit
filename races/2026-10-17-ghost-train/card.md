@@ -1,4 +1,4 @@
-# THE CARD — Ghost Train 2026
+# SELF CHECK CARD — Ghost Train 2026
 
 ### AT EVERY BAG
 
@@ -11,7 +11,7 @@
 *No → solid food now, standing. Walk out eating.*
 
 **4. FEET.** Any hot spot, blister or numbness?
-*Hot spot → tape now. Blister → `athlete/profile.md` § Blister kit. Numb, or gait changing → stop the lap.*
+*Hot spot → tape now. Blister → blister kit (see protocols). Numb, or gait changing → stop the lap.*
 
 **5. ITB.** Whisper, or changing how I run?
 *Need meds?*

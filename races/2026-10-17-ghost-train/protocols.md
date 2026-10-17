@@ -9,7 +9,7 @@ service on the whole course, so Adam, Amy and Josh can open the links any time.
 - [Meds](#meds)
 - [Foot — hot spot or blister](#foot)
 - [Stops — aid stations, tent and drop bag](#stops)
-  - [Pacer checklist — tent and DPW](#pacer)
+  - [Pacer checklist — tent and DPW](pacer-checklist.md)
 - [Knees](#knees)
 - [Hip flexors](#hip-flexors)
 - [Chafing](#chafing)
@@ -259,7 +259,7 @@ No hexane left? Alcohol pad instead, and let it dry.
 - Shoes: Mont Blanc → Lone Peak 9 at either end, whenever you want them.
 - Night clothes (Alpha Direct hoodie, merino shirt over it, gloves, headband) are only at start/finish. Take
   what you need for the whole next lap before you leave.
-- Lap 4 on: read THE CARD out loud with whoever is there. There is a copy at both ends.
+- Lap 4 on: read the SELF CHECK CARD out loud with whoever is there. There is a copy at both ends.
 
 **Cramp:** drink pickle juice from the aid table, even if you just had sodium.
 
@@ -267,50 +267,10 @@ No hexane left? Alcohol pad instead, and let it dry.
 always cleared in about 20 minutes.
 
 <a id="pacer"></a>
-<a id="pacer-tent"></a>
-<a id="pacer-dpw"></a>
 
 ### Pacer checklist — tent and DPW
 
-Go through it with him at both ends, out loud, top to bottom. He does the work; you fetch from the
-tent or the drop bag if he asks.
-
-- [ ] **Tell him at 5 minutes and at 10 minutes.** He needs to know if he's spending too long.
-- [ ] **Flask** refilled with water.
-- [ ] **Sodium check — too much water first.** Urine clear and frequent, plus puffy hands,
-      headache, nausea or bloating? Then no water until he's peeing less, and salt without water:
-      salty food off the table or SaltStick FastChews. **No packet in the flask.**
-- [ ] **Sodium check — otherwise,** 450 mg sodium (9 FastChews) over the next leg, if any of
-      these is true:
-  - [ ] He skipped the Tailwind at both aid stations since the last end.
-  - [ ] He's cramping. Pickle juice too.
-  - [ ] He's craving salt.
-  - [ ] Hot afternoon and his sweat is leaving salt crust.
-
-  None true → no packet.
-- [ ] **Solid food** eaten off the aid table. Ask: "have you eaten in the last 40 minutes, and did
-      it stay down?"
-- [ ] **Pee:** ask when he last went and what colour. Over 2 hours ago → he drinks a full flask
-      before leaving. Clear and under an hour → skip the extra water.
-- [ ] **After dark: fresh cell in his Zebralight**, every leg, even if it's still working.
-- [ ] **Power bank on him with two charged cells in it** — those are his spares. Loose spares
-      are zip-tied; no zip tie means used.
-- [ ] **5 gels** on him when he leaves.
-- [ ] **Feet:** ask about hot spots, blisters or numbness. Shoes come off only if he says so.
-      Blister kit and spare socks are at both ends.
-- [ ] **ITB:** ask if he needs to manage it, and if he wants Tylenol or Voltaren gel. That's the
-      whole question — no talk of stopping over it. See [knees](#knees) and [meds](#meds).
-- [ ] **Chafing:** ask about his armpits first — they're the spot that has chafed (skin on skin,
-      44 and 48 km on 09-12). Then nipples, waistband, anywhere else rubbing or sore. If yes,
-      [chafing card](#chafing). Aquaphor/vaseline is at both ends.
-- [ ] **Shoes:** ask if he wants to swap shoes.
-- [ ] **Layers — tent only.** If the next lap runs into dark or colder weather, he takes the
-      layers for the whole lap now. At DPW there are none: if he's cold, get him moving.
-- [ ] **Lap 4 on: read THE CARD out loud with him.**
-- [ ] **Watch him while he does all this:** slurring, clumsy hands, shivering, limping, can't keep
-      food down. Say what you see.
-- [ ] **Walk him out. BEN MAY NOT DECIDE TO QUIT AT A STOP.** No quit talk until 20 minutes
-      down the trail.
+Moved to its own file: [pacer-checklist.md](pacer-checklist.md).
 
 ---
 
@@ -554,5 +514,5 @@ handoff. This is the part that doesn't change.
 
 **Don't pull him faster than ZoneSense Zone 1.** Fresh legs feel easy next to a man 90 km in.
 
-**From lap 4, read THE CARD out loud with him at every end.** At stops, use the
-[pacer checklist](#pacer).
+**From lap 4, read the SELF CHECK CARD out loud with him at every end.** At stops, use the
+[pacer checklist](pacer-checklist.md).
