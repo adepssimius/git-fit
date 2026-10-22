@@ -115,6 +115,23 @@ written down. Use these.
 Sharp or one-sided beats high-and-symmetrical: 4 in one achilles matters more than 7 across both
 quads after a long run.
 
+**The number is MUSCULAR soreness only — joint and tendon pain is NOT scored in it** (athlete,
+2026-10-22: *"I still have IT band pain in my left knee and some soreness behind the knee at the
+base of my hamstring. I'm not counting that into my soreness, which I treat as muscular
+soreness."*). So:
+
+- **A green soreness number does not mean nothing hurts.** On 10-22 he reported **3** with the ITB
+  and the posterior-knee site both still present. Reading a 3 as "the knee resolved" is exactly the
+  wrong inference, and a brief that makes it is telling him his own injury went away.
+- **Pain goes in the body of the entry, named by site and side**, every day it is present — that is
+  what `athlete/profile.md` § "If something actually hurts" acts on, and it is a different category
+  from the cut order.
+- **The 9–10 row above is the one place the two blur, and it is a referral, not a scoring
+  instruction.** If something is sharp, one-sided or worsening, the point is to write it up under
+  Injuries — not to inflate the muscular number so the ladder notices.
+- **Never translate a pain report into a soreness score, in either direction.** Ask for the number;
+  he knows which one it is.
+
 **RPE (0–10)**, session-RPE for the whole session, rated after it settles:
 
 | Score | Anchor |
