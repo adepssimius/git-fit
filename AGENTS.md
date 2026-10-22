@@ -208,6 +208,34 @@ words or say nothing.
 `seed/` is historical input only — read it for context (what paces the athlete was already hitting,
 what the professionally designed plan says), never edit it, never treat it as current instruction.
 
+## AFTER A RACE — the race files freeze, and `lessons.md` carries the corrections (2026-10-22)
+
+**Athlete's instruction, given during the Ghost Train debrief:** *"Lessons should be the distilled
+learnings. the source files should not change. The source files are used to derive the plan and are
+historical artifacts after the race. Lessons describes what I got wrong in those."* And, on the one
+permitted exception: *"It's ok to add a debrief lessons section to those files but they should
+otherwise stay as is."*
+
+**So once a race has been run, everything that was written to plan it becomes an artifact** — the
+whole `races/<race>/` directory (`race.md`, `packing.md`, `protocols.md`, `card.md`), and the
+pre-race state of `athlete/profile.md`, `rules/*` and this file. **They record what was believed
+beforehand and that is their value.** Treat them the way `seed/` is treated.
+
+| Do | Don't |
+|---|---|
+| Write the findings into **`races/<race>/lessons.md`** — the distilled carry-forward document | Rewrite a claim in `race.md` or `profile.md` because the race proved it wrong |
+| **Append a clearly-marked debrief/lessons section** to a race file if it belongs there | Edit the existing body of a race file, correct its numbers, or delete a superseded plan |
+| Say in `lessons.md` *"file X says Y; this race showed Z"* | Say *"go fix file X"*, or quietly fix it |
+| Put the full narrative in `log/YYYY-MM-DD.md` | Leave findings only in the log — nobody authoring a block months later will read it |
+
+**Why this matters more than it looks: the stale claims stay in the files the read order above sends
+you to.** `lessons.md` is the only thing that warns you. **So after a race, read
+`races/<race>/lessons.md` before anything in the read order**, and trust it over the planning files
+wherever they disagree.
+
+**This section itself is the kind of edit that IS allowed** — he asked for it explicitly. **Changes
+to `AGENTS.md` come from him asking, not from a session deciding a race invalidated a rule.**
+
 ## Hard invariants — never violate these
 
 1. **The time budget in `athlete/profile.md` is a hard constraint, not a target.** Before finalizing
