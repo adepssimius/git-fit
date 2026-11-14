@@ -259,3 +259,50 @@ Same session, same failure. Anchoring fixed 20 s windows on each rep (because th
 **Find the reps by thresholding `Speed`** (e.g. contiguous runs above 2.5 m/s) and measure each
 one over its own actual start and end. A `<name> Nx` header tells you how many to expect, which
 is a check, not a window.
+
+## The watch's VO2max estimate — where it actually lives
+
+**As of 2026-11-14 this is the athlete's tracked goal metric** for the New Castle 10k block
+(2027-04-25): *"My watch number as an estimate is what I'm going to aim to improve."* Lab testing
+is ruled out.
+
+**`workouts_extensions` returns a 500 for every key and every `types` combination tried** — the
+`FitnessExtension` route does not work on this account. **Do not keep retrying it.**
+
+**The number is in the SML header instead**, as `MAXVO2`, alongside `FitnessAge`,
+`FitnessAgeClassification`, `EPOC` and `PeakTrainingEffect`. Retrieve it without pulling the whole
+blob by filtering the samples away and keeping only the summary:
+
+```
+mcp__suuntool__workouts_sml(key=<key>, streams=["Nonexistent"],
+                            downsample=100000, include_summary=true)
+```
+
+`streams` matching no field drops every sample, so even a 19-hour race comes back well under the
+1 MB cap. The header is the last entry in `summary.Samples`.
+
+### Readings so far
+
+| date | workout | `MAXVO2` | `FitnessAge` | `EPOC` | `PeakTrainingEffect` |
+|---|---|---|---|---|---|
+| 2026-08-23 | 5k PR time trial, 25:44 | **48.6** | 33 | 199.2 | 5.0 |
+| 2026-10-17 | Ghost Train, 100.1km in 19h27 | **48.0** | 34 | 46.5 | 2.8 |
+
+**Trust the 5k reading and discount the race one.** The estimate is modelled from the HR/pace
+relationship during running, so it needs sustained running at a decent intensity to be meaningful.
+The race was 19h27 at 62% of max HR with 67,574s of its 70,035s in ZS Z1 — that is close to the
+worst possible input for it, and the lower `PeakTrainingEffect` (2.8 vs 5.0) says the watch agrees.
+
+**So the baseline to beat is 48.6, from 2026-08-23.**
+
+### Two things to say when reporting it
+
+- **It barely moved across the entire Ghost Train block** — 48.6 to 48.0 in eight weeks of ultra
+  training. Flat is the honest reading, and it is the strongest available argument for making this
+  the next block's target.
+- **Expect it to DROP first.** After 30 days with no running, the early restart runs are slow and
+  deconditioned, which is exactly what the estimator reads as a lower number. A dip in
+  November/December is the expected shape, not a failure, and the athlete should be told that
+  before he sees it.
+- **A 1-2 point move is noise.** Two readings eight weeks apart differed by 0.6 through a whole
+  training block. Look for a trend across several good-quality readings, not a single number.
