@@ -186,6 +186,32 @@ This matters because `rules/progression.md` scores fragmentation as its own sign
 that **3+ fragments is red regardless of total hours**. Summing durations and reporting "8h, green"
 inverts the actual reading. Count the items before trusting the total.
 
+### The segments arrive separately, and a lie-in delays them (2026-11-15)
+
+**The watch uploads the night when the athlete gets up, not when he wakes.** So the segments of one
+night can land minutes apart, and on a morning he sleeps in the early ones arrive alone.
+
+2026-11-15, pulled twice 27 minutes apart:
+
+| pulled | items for the night | total | HRV | resting HR | ladder |
+|---|---|---|---|---|---|
+| 08:32 | 23:20-03:34 only | 4h13 | 79 (48 samples) | 45 | **red** |
+| 08:59 | + 03:48-08:09 | **8h34** | **86** (97 samples) | **40** | **green** |
+
+**A 14-minute waking is enough to split a record in two.** Two segments is a bathroom trip, not
+fragmentation — `rules/progression.md` sets the red line at 3+.
+
+**How to spot a night that has not finished syncing**, before scoring it:
+
+- one segment, timestamped before midnight, ending well before he got up;
+- `avgHrvSampleCount` roughly half the usual (49 vs 80-100 here);
+- **`wellness_recovery` balance disagrees.** Resources is sampled through the morning against the
+  whole night, so 0.99 next to a "4-hour night" means the sleep data is incomplete, not that he is
+  mysteriously recovered. It was right both times here.
+
+**Re-pull rather than scoring it**, and see `SKILL.md` for the athlete's standing instruction to
+offer the re-pull as a poll option.
+
 ## Treadmill distance is unreliable, and the laps stay raw after calibration
 
 With no foot pod (`Settings.FootPodUsed: false`) the watch derives treadmill distance from wrist

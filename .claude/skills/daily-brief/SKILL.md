@@ -370,6 +370,30 @@ do not reason about the data until it is right.
 **A related trap: the newest sleep record is supposed to be missing in the evening.** He has not
 slept yet. "No sleep record for last night" only means something in the morning.
 
+**And in the morning, a short or missing night often just means he is still in bed. OFFER A
+RE-PULL AS A POLL OPTION (athlete, 2026-11-15).** His words: *"In future polls you should offer to
+re-pull. I got to sleep in and Suunto doesn't report until I'm out of bed."*
+
+**The watch does not sync the night until he is up**, so an early brief on a lie-in morning reads a
+partial night — or none at all — and the gap is the brief being early, not the sleep being bad.
+The failure that produced this rule, the same morning: the 08:32 pull had only the first half of
+the night (4h13, 23:20-03:34) and the ladder scored it **red on duration**. He asked for a re-pull
+at 08:59; the second fragment (03:48-08:09) had landed, the night was **8h34**, and every signal it
+touched inverted — HRV 79 → 86, resting HR 45 → 40, quality 0.72 → 0.80. **Resources had read 0.99
+throughout and was the only signal seeing the whole night.**
+
+So, whenever sleep looks short, fragmented or absent:
+
+- **Put "re-pull, I was still in bed" in the poll** alongside the real answers, and say in the brief
+  that the data may simply be early. Do not make him type it.
+- **Re-pull before scoring, not after he complains.** The tell is cheap to read: a single block
+  timestamped before midnight, a low `avgHrvSampleCount` (49 against the usual 80-100), and body
+  resources that disagree with the sleep verdict. Resources is sampled through the morning and sees
+  the whole night; sleep records arrive in pieces.
+- **Never cut a session on a partial night.** `rules/progression.md`'s red rule for a long run is
+  "shorten, not intensify" — applying it to a night that has not finished syncing takes real
+  training away over a sync delay. Ask, re-pull, then decide.
+
 **When a ladder signal is missing, ask him. Do not score the ones that are left and call it a
 readiness call.** Added 2026-09-19 after the brief did exactly that. Four of seven signals were
 missing — no sleep record for the second night running, so duration, quality, HRV and resting HR
